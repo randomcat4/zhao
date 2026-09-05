@@ -1,0 +1,51 @@
+{
+  "terminal_status": "DENSE_FIBRE_ELIMINATED_AND_AUDITED",
+  "frozen_package": "G=F_5^4, S is a 21-element set with no nonempty positional zero-sum subset of length 1..13; m=Z14(S) is any of 20,25,...,binomial(21,7).",
+  "stronger_result": "Every 21-element set in F_5^4 has a nonempty zero-sum positional subset of length at most 13.",
+  "proof": "proof_zh.md",
+  "red_team": "RED_TEAM.md",
+  "verification_level": "Self-contained mathematical reductions, exact finite inequality, complete root enumeration, two differently implemented full extension searches, independent interface checks, and a complete package replay. Not proof-assistant formalization or external third-party certification.",
+  "candidate_B_dependency": "Not used. The squarefree twenty-point interface is proved independently in proof section3.1.",
+  "counterexample": null,
+  "m_coverage": {
+    "total": 23253,
+    "closed": 23253,
+    "low_range": [20, 7750, 5],
+    "low_count": 1547,
+    "high_range": [7755, 116280, 5],
+    "high_count": 21706
+  },
+  "profile_coverage": {
+    "total": 9590,
+    "checked": 9590,
+    "scalar_orbits": 2406,
+    "minimum_score": 0,
+    "summed_rhs": -2844400
+  },
+  "rank3_coverage": {
+    "recursion_nodes": 450754,
+    "maximum_size": 9,
+    "normalized_total": 406416,
+    "normalized_checked": 406416,
+    "root_total": 1786,
+    "root_checked": 1786,
+    "roots_by_h": {"7":1084,"8":659,"9":43}
+  },
+  "extension_coverage": {
+    "raw_total_decimal": "17972093794219884182340301482",
+    "raw_closed_decimal": "17972093794219884182340301482",
+    "reference_nodes": 34000509,
+    "independent_nodes": 24371246,
+    "reference_exit": 0,
+    "independent_exit": 0,
+    "largest_denominator_bits": 94,
+    "arithmetic_bits": 128
+  },
+  "full_replay": {
+    "commands": 16,
+    "all_return_codes_zero": true,
+    "stderr_empty": true,
+    "source_hashes_match_record": true,
+    "record": "execution_report.json"
+  }
+}

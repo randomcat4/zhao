@@ -1,0 +1,9 @@
+{
+  "profiles": 2406,
+  "multipliers": [-46635855,436436,46526,2431,1232,752,328,196,84,100,59,98,55,107,0,0,0,0,1857,3382,5831,7341,50244,-110852],
+  "names": ["mass","z1","z2","z3","z4","z5","z6","z7","z8","z9","z10","z11","z12","z13","z14","z15","z16","z17","z18","z19","z20","z21","equal","bothzero"],
+  "right_hand_side": -2844400,
+  "minimum_coefficient": 0,
+  "scope": "all projectively distinct 21-position sets with no nonempty zero sum of lengths 1..13 and 18..21, and all n0<=6",
+  "zero_count_coefficients_14_through_17": [0,0,0,0]
+}

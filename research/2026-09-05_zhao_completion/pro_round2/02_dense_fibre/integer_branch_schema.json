@@ -1,0 +1,28 @@
+{
+  "scope": "All low-order integer data of the full fibres in the frozen dense package. No integer relaxation is asserted sufficient for actual labels.",
+  "positions": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+  "j_values": [4,5,6,7],
+  "count_ranges_after_proved_bounds": {
+    "Z14": {"minimum":20,"maximum":7750,"step":5},
+    "Z15": {"minimum":11,"maximum":3391,"step":5},
+    "Z16": {"exceptional":[0],"minimum_nonzero":10,"maximum":1195,"step":5},
+    "Z17": {"exceptional":[0],"minimum_nonzero":10,"maximum":330,"step":5}
+  },
+  "count_quadruple_rectangle_size": 16520409906,
+  "count_quadruple_note": "This is an overinclusive finite rectangle of count slots, not a number of realizable models or a claim of separately enumerating each slot. The actual-label theorem uniformly excludes every slot and all degree/codegree refinements.",
+  "variables": "lambda_j(D) for every j in {4,5,6,7} and every positional D subset of [21] with |D|<=4; d_j(x)=lambda_j({x}); lambda_j(empty)=Z_(21-j)",
+  "integrality": "All lambda are nonnegative integers, bounded by binomial(21-|D|,j-|D|)",
+  "point_residues_mod5": {"d7":0,"d6":1,"d5":0,"d4":0},
+  "point_degree_parameter": "m=5q; d7(x)=5(1+e_x), 0<=e_x<=q-1; sum e_x=7q-21",
+  "extension_double_count": "sum_{x notin D} lambda_j(D union {x})=(j-|D|)lambda_j(D)",
+  "all_deletion_equations": "For n=21-|D| and every r=0,...,n-17: binomial(n,r)+sum_{k=14}^17(-1)^k binomial(n-k,r)lambda_(21-k)(D)=0 mod5",
+  "deletion_position_sets": 7547,
+  "deletion_equations": 9364,
+  "pair_residues": "(lambda7,lambda6,lambda5,lambda4)=(t,1+3t,3t,t) mod5; do not discard lambda4",
+  "triple_residues": "(lambda7,lambda6,lambda5,lambda4)=(c+3d,1+2c+2d,c,d) mod5",
+  "quadruple_residue": "1+lambda7-lambda6+lambda5-lambda4=0 mod5",
+  "completion_bounds": "lambda_j(D)<=4 for |D|=j-2; <=1 for |D|=j-1",
+  "block_conditions": "Same-size distinct blocks intersect in at most j-2 positions. Distinct-size same-sum blocks cannot contain one another.",
+  "six_six_blocks": "Fully eliminated: common core size3, six disjoint petals size3; induced lambda4 codegrees force total C4 degree270, not divisible by4.",
+  "realizability": "A single actual 4x21 matrix over F5 with nonzero distinct columns; every fibre is the complete family defined by its column sums. All such matrices under this package are ruled out by the complete normalization and searches."
+}

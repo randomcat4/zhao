@@ -1,0 +1,18 @@
+{
+  "root_denominator": 1786,
+  "reference_roots_closed": 1786,
+  "independent_roots_closed": 1786,
+  "raw_extension_denominator": 17972093794219884182340301482,
+  "raw_extensions_closed": 17972093794219884182340301482,
+  "reference_nodes": 34000509,
+  "independent_nodes": 24371246,
+  "independent_maximum_depth": 12,
+  "normalized_rank3_objects": 406416,
+  "profile_denominator": 9590,
+  "profile_rhs": -2844400,
+  "m_values_total": 23253,
+  "pool_ranges_by_h": {"7":[358,402],"8":[340,368],"9":[336,343]},
+  "all_denominators_equal": true,
+  "exit": "NORMAL",
+  "scope": "Complete computational interfaces and exact log reconciliation; hand-proof reductions must also be audited."
+}

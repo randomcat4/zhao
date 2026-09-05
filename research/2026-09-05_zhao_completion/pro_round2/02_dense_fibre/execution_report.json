@@ -1,0 +1,28 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "threads": 4,
+  "source_sha256": {
+    "audit_interfaces.py": "8fca5606370e24211a12889fe034e69e4c17cc3fbbde227879037b98d4e1ade1",
+    "audit_legacy_models.py": "1ac0a6da1b6728b31eb82e0b081af80edbdb98509d286a1a6c4b1b752cf3d3a1",
+    "farkas_certificate.json": "d4b0b57db523b0e609bcbab553b1d3c4090abb547074507f7655f81def9d381c",
+    "generate_roots.cpp": "36d25c55ecbc89e8efe21f184baca96bf0def54af769d26e7afcdc6199f668ff",
+    "negative_controls.py": "80acb25727a700573f2b2f350dcd6c88b60ce96055f8ce2a826eea09c46d3129",
+    "rank3_roots.txt": "4d6927a84fc893c8a39a278d2b4134e310984a1a470fd939ec80e2070fdbf2fe",
+    "run_all.py": "8a3105289c1dd33351f80a00b6cb11c23f49775f1f3aa5878519f32ee00ee604",
+    "search_reference.cpp": "b02dea991fb2c630107d6cd299c413ab59133b2a63536bcd22841e77a8763a16",
+    "unit_search_reference.cpp": "58d4b938abc7ffa2456eb6caaaac7d9bd09e87a9310dc503d179a3038f48c2bb",
+    "unit_verify_extensions.cpp": "112a84b04bd0524f0b31a2606644b08ed17fc6534af94b158c5cd9cc3cee3747",
+    "verify_extensions.cpp": "302074eeb44d3bcefea33d3f6a71b559cb4412ae0e70effbf3e1ab86f5bb9997",
+    "verify_farkas.py": "b8dc70f571cab10ee866254eec1180d1e73b9ab8233c33f898104291fb4c7662",
+    "verify_logs.py": "f5d40599d21137438991123c0265e140b2b214efc49956559676524cb3b6fe4c",
+    "verify_roots.py": "016775835cedbe953630d0819c83dca7ae9a97b9f49801bdab2ff27f850daac9"
+  },
+  "commands": 16,
+  "exit": "NORMAL",
+  "elapsed_seconds": 623.8873153570003,
+  "all_commands_exit_zero": true,
+  "note": "Full argv and per-command timing are in the original local execution record; repository replay is specified by run_all.py."
+}
