@@ -6,11 +6,11 @@ This directory preserves the second-round result for the frozen multiplicity cel
 |S|=21,\qquad h(S)\le 2,\qquad 1\le b\le 6,
 \]
 
-where exactly \(b\) actual values occur twice and all other actual values occur once. Subsequences are positional. The reported and independently rechecked conclusion is:
+where exactly \(b\) actual values occur twice and all other actual values occur once.  Subsequences are positional.  The reported and independently rechecked conclusion is:
 
 > Every such sequence over \(\mathbb F_5^4\) has a nonempty zero-sum subsequence of length at most 13.
 
-The proof is a hand proof. It does not use an exhaustive classification of all sequences, the rescued B proof, the earlier stabilizer lemma, or an assumption that equal-valued positions can be merged. Its auxiliary programs check finite arithmetic, complement, deletion-sign, and positional-incidence interfaces only.
+The proof is a hand proof.  It does not use an exhaustive classification of all sequences, the rescued B proof, the earlier stabilizer lemma, or an assumption that equal-valued positions can be merged.  Its auxiliary programs check finite arithmetic, complement, deletion-sign, and positional-incidence interfaces only.
 
 ## Verification record
 
@@ -20,7 +20,7 @@ The proof is a hand proof. It does not use an exhaustive classification of all s
 - The independent checker does not import either submitted checker.
 - This is not a Lean/Coq kernel certificate and is not represented as external institutional sign-off.
 
-The repository-wide A endpoint remains open because the 21-element squarefree cell is not closed. The archived three-anchor proof is also kept under its own stated verification boundary.
+The repository-wide A endpoint remains open because the 21-element squarefree cell is not closed.  The archived three-anchor proof is also kept under its own stated verification boundary.
 
 ## Contents
 
@@ -35,7 +35,7 @@ The repository-wide A endpoint remains open because the 21-element squarefree ce
 
 ## Original package hashes
 
-The two original response ZIPs were used for the recorded independent replay. Their decompressed contents are committed below; the binary ZIPs are not duplicated in this PR.
+The two original response ZIPs were used for the recorded independent replay.  Their decompressed contents are committed below; the binary ZIPs are not duplicated in this PR.
 
 ```text
 99451451102aa38ff1959fe375510ae4deed4558886d8ca3edc3ba4b8de5fad3  zhao_double_only_proved_and_audited.zip
