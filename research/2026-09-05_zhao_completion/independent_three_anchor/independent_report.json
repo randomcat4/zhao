@@ -1,0 +1,66 @@
+{
+  "anchor_split": {
+    "anchor_rows": 50,
+    "split_rows": 19
+  },
+  "deletion": {
+    "actual_rows": 11232,
+    "congruent_rows": 2304,
+    "exception_rows": 96
+  },
+  "graph": {
+    "admissible": 420,
+    "all_graphs": 2097152,
+    "counterexamples": 0,
+    "n": 7
+  },
+  "partitions": {
+    "max_part_le_4": 84,
+    "part_at_least_5": 301,
+    "total": 385,
+    "triple_histogram": {
+      "1": 30,
+      "2": 20,
+      "3": 16,
+      "4": 9,
+      "5": 6,
+      "6": 2,
+      "7": 1
+    }
+  },
+  "ring": {
+    "rows": [
+      {
+        "d": 3,
+        "max_degree": 12,
+        "monomials": 125,
+        "nilpotence": 13
+      },
+      {
+        "d": 4,
+        "max_degree": 16,
+        "monomials": 625,
+        "nilpotence": 17
+      }
+    ],
+    "total_monomials": 750
+  },
+  "scope": "finite interfaces only; analytic proof is PROOF.md + AUDIT.md",
+  "signed_identity": {
+    "seed": 20260905,
+    "specs": [
+      [
+        3,
+        13,
+        4
+      ],
+      [
+        4,
+        17,
+        2
+      ]
+    ],
+    "subsets_checked": 294912
+  },
+  "status": "PASS"
+}
