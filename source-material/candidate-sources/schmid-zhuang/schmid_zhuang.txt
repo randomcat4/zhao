@@ -1,0 +1,425 @@
+On short zero-sum subsequences over p-groups
+W. A. Schmid ∗ J. J. Zhuang †
+Abstract
+Let G be a ﬁnite abelian group with exponent n. Let s(G) denote
+the smallest integer l such that every sequence over G of length
+at least l has a zero-sum subsequence of length n. For p-groups
+whose exponent is odd and suﬃciently large (relative to Davenport’s
+constant of the group) we obtain an improved upper bound on s(G),
+which allows to determine s(G) precisely in special cases. Our results
+contain Kemnitz’ conjecture, which was recently proved, as a special
+case.
+Keywords: Davenport’s constant, ﬁnite abelian group, Kemnitz’ conjec-
+ture, zero-sum sequence
+MSC (2000): 11B75, 11P21, 20K01
+1 Introduction
+Let G be a ﬁnite abelian group. In this paper we investigate the invariant
+s(G). Two further invariants, η(G) and D(G), will be of importance as
+well. We recall their deﬁnitions.
+Deﬁnition 1.1. Let G be a ﬁnite abelian group with exponent n.
+1. Let s(G) denote the smallest integer l such that every sequence over
+G of length at least l has a zero-sum subsequence of length n.
+2. Let η(G) denote the smallest integer l such that every sequence over
+G of length at least l has a non-empty zero-sum subsequence of length
+at most n.
+∗Institut f¨ ur Mathematik und wissenschaftliches Rechnen, Karl-Franzens-Universit¨ at
+Graz, Heinrichstraße 36, 8010 Graz, Austria, email: wolfgang.schmid@uni-graz.at. Sup-
+ported by the FWF (P18779-N13).
+†Department of Mathematics, Dalian Maritime University, Dalian, 116024. Corre-
+sponding email: jjzhuang1979@yahoo.com.cn.
+1
+3. Let D(G) denote the smallest integer l such that every sequence over
+G of length at least l has a non-empty zero-sum subsequence. (This
+invariant is called Davenport’s constant of G.)
+The investigation of s(G) has a long tradition. It was initiated at the
+beginning of the 1960s when P. Erd˝ os, A. Ginzburg, and A. Ziv [3] proved
+s(G) = 2 n − 1 if G is a cyclic group. First results for more general groups
+are due to H. Harborth [10]. We refer to [2] for an overview of the numerous
+contributions to this problem.
+Still, the precise value of s(G) is known only if G has rank at most 2, G
+is a special type of 2-group, or a very special type of 3-group with rank at
+most 5. Indeed, the case of groups of rank 2 was settled only recently when
+C. Reiher [12] proved, the longstanding Kemnitz’ conjecture, s(C 2
+p ) = 4 p− 3
+(cf. [13, 4, 7] for earlier contributions and variants and [9, Theorem 5.8.3]
+for the general result on groups of rank at most 2). For the precise results
+for 2- and 3-groups cf. [2] (in particular Corollary 4.4 and Remarks 4.7).
+Here, we obtain the following result on s(G).
+Theorem 1.2. Let p be an odd prime and let G be a ﬁnite abelian p-group
+with exp(G) = n and D(G) ≤ 2n − 1. Then
+2 D(G) − 1 ≤ η(G) + n − 1 ≤ s(G) ≤ D(G) + 2n − 2.
+In particular, if D(G) = 2 n − 1, then
+s(G) = η(G) + n − 1 = 4 n − 3.
+We emphasize that the lower bounds on s(G) are already known (see
+[8, Theorem 1.5] or [2, Lemma 3.2]). The contribution of this paper is
+a new upper bound on s(G), which sharpens recent results obtained in [8,
+Theorem 1.5] and [2, Theorem 1.3.2], and allows to obtain the precise value
+of s(G) for certain groups. Our result conﬁrms a conjecture of W.D. Gao.
+He conjectured (cf. [6, Conjecture 2.3]) that
+s(G) = η(G) + exp(G) − 1
+for every ﬁnite abelian group. This conjecture holds for every group for
+which s(G) has been determined so far (cf. above), and additionally it is
+known to hold for groups with exp( G) ≤ 4 (see [6, Theorem 2.5]) and for
+C 3
+5 (see [5]).
+It is well-known that D(C 2
+p ) = 2 p − 1 (cf. Lemma 2.3). Thus, our result
+contains the result of C. Reiher (cf. above) as a special case. In fact, recently
+S. Savchev and F. Chen [14] obtained a result that gives some structural
+insight into the variety of zero-sum subsequences of “long” sequences in
+C 2
+p that, among others, implies Reiher’s result. We adapt their method to
+2
+our more general situation and obtain an analogue of their result (Theorem
+3.1) that in turn yields Theorem 1.2.
+In the following section, we recall and introduce some notation, and
+recall some well-known results that we will apply in our proofs. Then,
+we state Theorem 3.1 and derive Theorem 1.2 from it. We end the paper
+with a conjecture on the precise value of s(G) for the groups considered in
+Theorem 1.2.
+2 Notation and some results
+Throughout, let G denote an, additively written, ﬁnite abelian group.
+We denote by Z the integers, and by N and N0 the positive and non-negative
+integers respectively. For r, s ∈ Z, we denote by [ r, s ] = {z ∈ Z : r ≤ z ≤ s}
+the interval of integers. For r, n ∈ N we denote by Cn a cyclic group of
+order n and by C r
+n the direct sum of r copies of Cn.
+If |G|> 1, then there exist uniquely determined 1 < n 1 | · · · |nr such
+that G ∼= Cn1 ⊕ · · · ⊕Cnr . We denote by exp( G) = nr the exponent of G
+and r is called the rank of G. We call G a p-group if exp( G) = pk where p
+is a prime and k ∈ N.
+We denote by F(G) the multiplicatively written free abelian monoid
+over G. We refer to its elements as sequences (over G). Let S ∈ F (G).
+By deﬁnition, S is equal to a (formal, commutative) product S = ∏ l
+i=1 gi
+with l ∈ N0 and gi ∈ G; this representation is unique up to the order of
+the factors. We denote by |S|= l ∈ N0 the length of S and by σ(S) =∑ l
+i=1 gi ∈ G its sum. We say that T ∈ F (G) is a subsequence of S if T
+divides S (in F(G)), i.e., there exists some T ′ ∈ F (G) such that S = T T ′;
+we use the notation T − 1S to denote this sequence T ′. A sequence whose
+sum is equal to 0 is called a zero-sum sequence. The unit element of F(G)
+is called the empty sequence; its length and sum equal 0 (in N0 and G
+respectively).
+2.1 Induced subsequences with prescribed sum
+The “counting” of certain subsequences will play a main role in our proofs.
+Therefore, we introduce some notation related to this problem. Similar
+considerations can be found in [14].
+Let S = g1 . . . g l ∈ F (G). For I ⊂ [1, l ], let SI = ∏
+i∈ I gi denote
+the subsequence induced by I. Let d ∈ N, i = ( i1, . . . , i d) ∈ Zd and
+h = (h1, . . . , h d) ∈ Gd. We denote by
+Ni
+h(S) = |{(I1, . . . , I d) : Ij ⊂ [1, l ], |Ij|= ij, σ (SIj ) = hj,
+Ij ∩ Ik = ∅ for all j, k ∈ [1, d ]}| ,
+3
+i.e., the number of (ordered) d-tuples of disjoint subsets of [1 , l ] with pre-
+scribed number of elements and prescribed sum of the induced subsequence.
+For d = 1 this coincides with the usual terminology, cf. [9, Deﬁnition 5.3.7].
+For 0 = (0, . . . , 0), we omit the subscript and write Ni(S) instead of Ni
+0(S).
+Though we deﬁned Ni
+h(S) with respect to a particular representation of
+S as a product of elements gi, Ni
+h(S) is clearly invariant under permutation
+of the factors of this product and actually just depends on S. If any of the
+ij is negative, then Ni
+h(S) = 0.
+In the following lemma we record some basic properties of Ni
+h(S) that
+we will use frequently.
+Lemma 2.1. Let S ∈ F (G) with |S|= l, and let d ∈ N, i = (i1, . . . , i d) ∈
+Zd and h = (h1, . . . , h d) ∈ Gd.
+1. Suppose d ≥ 2. Let k ∈ [1, d ], and ik = ( i1, . . . , ˆik, . . . , i d) ∈ Zd− 1
+and hk = ( h1, . . . , ˆhk, . . . , h d) ∈ Gd− 1 where the ˆ indicates that the
+coordinate is omitted. Then
+Ni
+h(S) =
+∑
+I⊂ [1,l ], |I|=ik, σ (SI )=hk
+Nik
+hk
+(S− 1
+I S).
+2. Let i = ∑ d
+j=1 ij and h = ∑ d
+j=1 hj. Then
+Ni
+h(S) =
+∑
+I⊂ [1,l ], |I|=i, σ (SI )=h
+Ni
+h(SI ).
+Proof. The ﬁrst assertion is a direct consequence of the deﬁnition. To get
+the second one, we observe that d disjoint sets I1, . . . , I d with |Ij| = ij
+are contained in a unique set I with |I|= i and that necessarily σ(SI ) =∑ d
+j=1 σ(SIj ) = h.
+2.2 Two results
+We recall two well-known results. Important special cases of the following
+result can be found in [1] and [8].
+Lemma 2.2. Let S ∈ F (G) and suppose D(G ⊕ Cn) < 3n. If Nn(S) = 0 ,
+then N(2i+1)n(S) = 0 for each i ∈ N0.
+Proof. See Proposition 5.7.7.3 in [9].
+The following result is due to J.E. Olson [11] and D. Kruyswijk (cf. [15]).
+4
+Lemma 2.3. Let G ∼= Cn1 ⊕ · · · ⊕Cnr be a p-group. Then D(G) = 1 +∑ r
+i=1(ni − 1). Moreover, if |S| ≥ D(G), then for each g ∈ G
+∑
+i∈ Z
+(− 1)i Ni
+g(S) ≡ 0 (mod p).
+Proof. See Proposition 5.5.8.2 in [9].
+3 Main technical result
+The following theorem is the main technical result of this paper.
+Theorem 3.1. Let p be an odd prime and let G be a ﬁnite abelian p-group
+with exp(G) = n and D(G) ≤ 2n − 1. Further, let l ∈ [1, n ] and S ∈ F (G)
+with D(G) + (n − 2) + l ≤ |S|< 4n.
+1. For each {0} ⊂ I ⊂ [0, l − 1] we have
+∑
+i∈ I
+(− 1)i(
+N(i,n − i)(S) + N(i, 3n− i)(S)
+)
++
+∑
+i∈ [0,n − 1]\ I
+(− 1)i N(i, 2n− i)(S)
+≡ 1 + 2− 1 N(n,n )(S) (mod p).
+2. One of the following two statements holds:
+(a) S has a zero-sum subsequence B with |B|= n.
+(b) S has a zero-sum subsequence B with |B|= 2n such that B has
+a zero-sum subsequence B′ with |B′| ∈[l, n − 1].
+Now, using Theorem 3.1, we prove Theorem 1.2.
+Proof of Theorem 1.2. For a proof of the lower bound on η(G) we refer to
+[2, Lemma 3.2], and a proof that η(G) + n − 1 ≤ s(G) may be found in [9,
+Lemma 5.7.2].
+To show the upper bound on s(G), let S ∈ F (G) be a sequence of length
+|S| ≥ D(G)+2n− 2. We may suppose that |S|= D(G)+2n− 2; otherwise we
+consider a subsequence of S of that length. We apply Theorem 3.1.2 with
+l = n. Since in case l = n statement (b) cannot hold, we infer that S has
+a zero-sum subsequence of length n. Consequently, s(G) ≤ D(G) + 2n − 2.
+Obviously, the assertion on the case of equality follows from the upper
+and lower bound.
+The rest of the section is concerned with the proof of Theorem 3.1.
+5
+3.1 Auxiliary results
+Lemma 3.2. Let p be an odd prime and let G be a p-group. Let d ∈ N
+and k ∈ [1, d ]. Further, let i = (ij)d
+j=1 ∈ Zd and h = (hj)d
+j=1 ∈ Gd, and let
+ek = (δj,k )d
+j=1 ∈ Zd denote the k-th unit vector. If |S| ≥ D(G) + pm − 1 +∑
+j∈ [1,d ]\{ k} ij, then
+∑
+j∈ Z
+(− 1)j Ni+jpmek
+h (S) ≡ 0 (mod p).
+Proof. We prove the result by induction on d. For d = 1 we have to show
+that if |S| ≥ D(G) + pm − 1, then ∑
+j∈ Z(− 1)j Ni1+jpm
+h1
+(S) ≡ 0 (mod p).
+Thus, suppose that |S| ≥ D(G) + pm − 1. Let G ⊕ Cpm = G ⊕ ⟨e⟩ and let
+ϕ :
+{
+G → G ⊕ Cpm
+g ↦→g + e .
+By Lemma 2.3 |ϕ (S)| ≥ D(G ⊕ Cpm ) and for each g′ ∈ G ⊕ Cpm ,
+∑
+j∈ Z
+(− 1)j Nj
+g′ (ϕ (S)) ≡ 0 (mod p). (1)
+We note that for g′ = g1 + i1e,
+Nj
+g′ (ϕ (S)) =
+{
+Nj
+g1(S) if j ≡ i1 (mod pm)
+0 otherwise .
+Consequently by (1),
+∑
+j∈ Z
+(− 1)i1+jpm
+Ni1+jpm
+h1
+(S) ≡ 0 (mod p).
+Since p is odd, ( − 1)jpm
+= (− 1)j and the claim follows.
+Now, let d ≥ 2 and we assume that the result holds for d − 1. Let l ∈
+[1, d ] \ {k}. By Lemma 2.1.1 we have
+∑
+j∈ Z
+(− 1)j Ni+jpmek
+h (S)
+=
+∑
+j∈ Z
+(− 1)j ∑
+I⊂ [1, |S|], σ (SI )=hl, |I|=il
+N(i+jpmek)l
+hl
+(S− 1
+I S)
+=
+∑
+I⊂ [1, |S|], σ (SI )=hl, |I|=il
+∑
+j∈ Z
+(− 1)j N(i+jpmek)l
+hl
+(S− 1
+I S),
+6
+where, as in Lemma 2.1.1, ( i + jpmek)l ∈ Zd− 1 and hl ∈ Gd− 1 are obtained
+by omitting the l-th coordinate. If |S| ≥ D(G)+pm− 1+∑
+j∈ [1,d ]\{ k} ij, then
+|S− 1
+I S|= |S| −il ≥ D(G) +pm − 1 +∑
+j∈ [1,d ]\{ k,l } ij and consequently each
+sum ∑
+j∈ Z(− 1)j N(i+jpmek)l
+hl
+(S− 1
+I S) is equal to 0 modulo p by the induction
+hypothesis.
+Lemma 3.3. Let G be a p-group, g ∈ G, and S ∈ F (G). Further, let l ∈ N
+such that 2l ≥ D(G).
+1. If |S|= 2l and σ(S) = 2 g, then
+2
+l− 1∑
+i=0
+(− 1)i Ni
+g(S) ≡ (− 1)l− 1 Nl
+g(S) (mod p).
+2.
+2
+l− 1∑
+i=0
+(− 1)i N(i, 2l− i)
+(g,g ) (S) ≡ (− 1)l− 1 N(l,l )
+(g,g )(S) (mod p).
+Proof. 1. Suppose |S|= 2l and σ(S) = 2 g. By Lemma 2.3
+2l∑
+i=0
+(− 1)i Ni
+g(S) ≡ 0 (mod p).
+We note that Ni
+g(S) = N|S|−i
+σ (S)− g(S) = N2l− i
+g (S) for each i ∈ Z. Since clearly
+i ≡ 2l − i (mod 2), the result follows.
+2. We have
+2
+l− 1∑
+i=0
+(− 1)i N(i, 2l− i)
+(g,g ) (S) = 2
+l− 1∑
+i=0
+(− 1)i ∑
+I⊂ [1,l ], σ (SI )=2g, |I|=2l
+Ni
+g(SI )
+=
+∑
+I⊂ [1,l ], σ (SI )=2g, |I|=2l
+2
+l− 1∑
+i=0
+(− 1)i Ni
+g(SI )
+≡
+∑
+I⊂ [1,l ], σ (SI )=2g, |I|=2l
+(− 1)l− 1 Nl
+g(SI )
+= (− 1)l− 1 N(l,l )
+(g,g )(S)
+where the congruence holds modulo p and we applied Lemma 2.1.2 to obtain
+the ﬁrst and the last equality, and the ﬁrst assertion of this lemma to get
+the congruence.
+7
+3.2 Proof of Theorem 3.1
+Proof of Theorem 3.1. 1. Since 2 n ≥ D(G), Lemma 3.3.2 yields (note that
+n − 1 is even)
+2
+n− 1∑
+i=0
+(− 1)i N(i, 2n− i)(S) ≡ N(n,n )(S) (mod p). (2)
+For each k ∈ [0, l − 1], by Lemma 3.2 (with pm = n),
+∑
+j∈ Z
+(− 1)j N(k,jn − k)(S) ≡ 0 (mod p). (3)
+Since |S|< 4n, for k = 0 this simpliﬁes to
+N(0, 0)(S) − N(0,n )(S) + N(0, 2n)(S) − N(0, 3n)(S) ≡ 0 (mod p).
+Since N(0, 0)(S) = 1, substituting in (2) gives
+2
+(
+− 1+N(0,n )(S)+N(0, 3n)(S)+
+n− 1∑
+i=1
+(− 1)i N(i, 2n− i)(S)
+)
+≡ N(n,n )(S) (mod p),
+which yields the claimed congruence in the special case I = {0}. To obtain
+the general case, it suﬃces to note that (3) for k ∈ [1, l − 1] implies
+N(k,n − k)(S) + N(k, 3n− k)(S) ≡ N(k, 2n− k)(S) (mod p).
+2. We note that (a) is equivalent to Nn(S) ̸= 0 and (b) to N(k, 2n− k)(S) ̸= 0
+for some k ∈ [l, n − 1]. By the ﬁrst assertion of this theorem (with I =
+[0, l − 1]) at least one of the following has to hold:
+• N(n,n )(S) ̸= 0.
+• N(k,n − k)(S) ̸= 0 or N(k, 3n− k)(S) ̸= 0 for some k ∈ [0, l − 1].
+• N(k, 2n− k)(S) ̸= 0 for some k ∈ [l, n − 1].
+If the ﬁrst or the last assertion holds, then (a) or (b) respectively holds. If
+N(k,n − k)(S) ̸= 0 for k ∈ [0, l − 1], then there exist two zero-sum subsequences
+of S of length k and n − k respectively and their product is a zero-sum
+subsequence of S of length n. Similarly, if N(k, 3n− k)(S) ̸= 0, then N3n(S) ̸=
+0 and, since by Lemma 2.3 D(G ⊕ Cn) = D(G) + n − 1 < 3n, by Lemma
+2.2 Nn(S) ̸= 0.
+8
+4 Concluding remark
+In view of the known results the following conjecture on s(G) (and η(G))
+for p-groups with “large” exponent seems conceivable.
+Conjecture 4.1. Let G be a ﬁnite abelian p-group with exp( G) = n and
+D(G) ≤ 2n − 1. Then
+2 D(G) − 1 = η(G) + n − 1 = s(G).
+In other words, equality holds at the lower bounds in Theorem 1.2.
+This conjecture is conﬁrmed in case G has rank at most 2 (cf. [9, The-
+orem 5.8.3]) and in case D(G) = 2 n − 1 by Theorem 1.2.
+References
+[1] N. Alon and M. Dubiner. Zero-sum sets of prescribed size. In Combi-
+natorics, Paul Erd˝ os is eighty, Vol. 1, Bolyai Soc. Math. Stud., pages
+33–50. J´ anos Bolyai Math. Soc., Budapest, 1993.
+[2] Y. Edel, C. Elsholtz, A. Geroldinger, S. Kubertin, and L. Rackham.
+Zero-sum problems in ﬁnite abelian groups and aﬃne caps, submitted.
+Preprint available at Elsholtz’ website:
+http://www.ma.rhul.ac.uk/∼ elsholtz/
+[3] P. Erd˝ os, A. Ginzburg, and A. Ziv. Theorem in the additive number
+theory. Bull. Res. Council Israel , 10F:41–43, 1961.
+[4] W. D. Gao. Note on a zero-sum problem. J. Combin. Theory Ser. A ,
+95(2):387–389, 2001.
+[5] W. D. Gao and A. Geroldinger. Zero-sum problems in ﬁnite abelian
+groups: a survey, submitted.
+[6] W. D. Gao. On zero-sum subsequences of restricted size. II. Discrete
+Math., 271(1-3):51–59, 2003.
+[7] W. D. Gao and R. Thangadurai. A variant of Kemnitz conjecture. J.
+Combin. Theory Ser. A , 107(1):69–86, 2004.
+[8] W. D. Gao and J. Zhou. On short zero-sum subsequences. Ars Com-
+bin., 74:231–238, 2005.
+[9] A. Geroldinger and F. Halter-Koch. Non-unique factorizations. Alge-
+braic, Combinatorial and Analytic Theory . Pure and Applied Mathe-
+matics vol. 278, Chapman & Hall/CRC, 2006.
+9
+[10] H. Harborth. Ein Extremalproblem f¨ ur Gitterpunkte. J. Reine Angew.
+Math., 262/263:356–360, 1973.
+[11] J. E. Olson. A combinatorial problem on ﬁnite Abelian groups. I. J.
+Number Theory, 1:8–10, 1969.
+[12] C. Reiher. On Kemnitz’ conjecture concerning lattice points in the
+plane. Ramanujan J. , to appear.
+[13] L. R´ onyai. On a conjecture of Kemnitz.Combinatorica, 20(4):569–573,
+2000.
+[14] S. Savchev and F. Chen. Kemnitz’ conjecture revisited. Discrete Math.,
+297(1-3):196–201, 2005.
+[15] P. van Emde Boas. A combinatorial problem on ﬁnite Abelian groups.
+II. Technical report, Math. Centrum, Amsterdam, Afd. Zuivere Wisk.
+ZW 1969-007, 60 p., 1969.
+10

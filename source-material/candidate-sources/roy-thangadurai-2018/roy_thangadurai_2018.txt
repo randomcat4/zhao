@@ -1,0 +1,762 @@
+                               Journal of Number Theory 191 (2018) 246–257
+
+
+
+                                  Contents lists available at ScienceDirect
+
+
+                               Journal of Number Theory
+                                         www.elsevier.com/locate/jnt
+
+
+
+
+On zero-sum subsequences in a ﬁnite abelian
+p-group of length not exceeding a given number
+Bidisha Roy ∗ , R. Thangadurai
+Harish-Chandra Research Institute, HBNI, Chhatnag Road, Jhunsi,
+Allahabad 211019, India
+
+
+
+a r t i c l e        i n f o                   a b s t r a c t
+
+Article history:                               Let G be a ﬁnite abelian group. For any integer a ≥ 1, we
+Received 17 August 2017                        deﬁne the constant s≤a (G) as the least positive integer t such
+Received in revised form 16                    that any sequence S over G of length at least t has a zero-sum
+February 2018
+                                               subsequence of length ≤ a in it. In this article, we compute this
+Accepted 6 March 2018
+Available online 16 April 2018                 constant for many classes of abelian p-groups. In particular,
+Communicated by L. Smajlovic                   it proves a conjecture of Schmid and Zhuang [20].
+                                                                     © 2018 Elsevier Inc. All rights reserved.
+Keywords:
+Davenport constant
+Zero sum sequences
+Abelian p-groups
+
+
+
+
+1. Introduction
+
+   Let G be a ﬁnite abelian additive group with exponent exp(G). A sequence S over G
+is written as
+                                  |S|
+                                               
+                            S=          gi =         g vg (S) with vg (S) ∈ Z≥0
+                                  i=1          g∈G
+
+
+
+ * Corresponding author.
+   E-mail addresses: bidisharoy@hri.res.in (B. Roy), thanga@hri.res.in (R. Thangadurai).
+
+https://doi.org/10.1016/j.jnt.2018.03.006
+0022-314X/© 2018 Elsevier Inc. All rights reserved.
+             B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257        247
+
+
+
+where vg (S) is called the multiplicity of g in S and |S| denotes the length of the sequence
+S. By the deﬁnition of multiplicity, we see that
+                                          
+                                  |S| =         vg (S) ∈ Z≥0 .
+                                          g∈G
+
+
+The sum of all the terms of the sequence S is given by
+                                           
+                                 σ(S) =          vg (S)g ∈ G.
+                                           g∈G
+
+
+A sequence S over G is called a zero-sum sequence if σ(S) = 0. For any integer k ∈ Z>0
+and for a sequence S over G, we deﬁne
+                                                               
+                                                                
+                                                                 
+                     N k (S) =  I ⊂ [1, |S|] :   gi = 0, |I| = k  ,
+                                                                 
+                                                    i∈I
+
+
+which denotes the number of zero-sum subsequences, counted with multiplicities, of S
+of length k.
+   For a given positive integer k ≥ 1, we deﬁne a constant s≤k (G) which is the least
+positive integer t such that given any sequence S over G of length |S| ≥ t satisﬁes
+N m (S) ≥ 1 for some integer 1 ≤ m ≤ k. The well-known Davenport constant, D(G), is
+deﬁned as the least positive integer t such that any given sequence S over G of length
+≥ t satisﬁes N k (S) ≥ 1 for some integer k ≥ 1. The other well-known constant η(G) is
+nothing but η(G) = s≤exp(G) (G).
+   These constants D(G) and η(G) have received a lot of attention (see for instance [1,4,
+5,7–9,11,13–15,20,21]). When G is a cyclic group, we have η(G) = |G| and D(G) = |G|.
+When G ∼  = Cp2 for a prime p, Olson [18,19] proved in 1969 that η(Cp2 ) = 3p − 2 and
+for any p-group G, he proved that D(G) = D∗ (G) where, for any ﬁnite abelian group
+G ∼= Cm1 ⊕ · · · ⊕ Cmr with 1 < m1 ≤ m2 ≤ · · · ≤ mr are integers satisfying mi |mi+1 ,
+the constant D∗ (G ) is deﬁned by
+
+                                                  
+                                                  r
+                                D∗ (G ) = 1 +          (mi − 1).
+                                                  i=1
+
+
+If G ∼= Cm ⊕ Cn with m|n is an abelian group of rank 2, then it is known that η(G) =
+2m + n − 2 as given in [15] and D(G) = m + n − 1.
+   When G is of rank ≥ 3, nothing much is known. For any odd prime p, it is known that
+η(Cp3 ) ≥ 8p − 7 ([5]) and η(Cp4 ) ≥ 19p − 18 ([4]) and their exact values are still unkonwn.
+Recently, Fan, Gao, Wang and Zhong [7] determined the value η(G) for special types of
+abelian groups of rank 3. Apart from these results, Schmid and Zhuang [20] proved that
+if G is a ﬁnite abelian p-group with D(G) = 2 exp(G) − 1, then η(G) = 2D(G) − exp(G).
+Moreover, they conjectured the following.
+248          B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257
+
+
+
+Conjecture 1. ([20]) Let G be a ﬁnite abelian p-group with D(G) ≤ 2 exp(G) − 1. Then
+
+                                 η(G) = 2D(G) − exp(G).
+
+   The constants s≤k (G) was introduced by Delorme, Ordaz and Quiroz [3]. It is easy
+to see that if k ≥ D(G), then s≤k (G) = D(G) and if 1 ≤ k < exp(G), we see that
+s≤k (G) = ∞. In general, the problem of determining exact value of s≤k (G) is quite
+diﬃcult. In 2010, Freeze and Schmid [10] proved that s≤3 (C2r ) = 2r−1 + 1. In 2017,
+Wang and Zhao [22] proved that when G = Cm ⊕ Cn , the constant s≤D(G)−k (G) is equal
+                                                                               
+to D(G) +k for all integers k ∈ [0, m −1] and sr−k (C2r ) = r +2 for all r −k ∈ 2r+2
+                                                                                  3    ,r .
+   By the deﬁnition of η(G), it is clear that s≤exp(G)+ (G) ≤ η(G) for all integers  ≥ 0.
+In this article, we prove that s≤exp(G)+ (G) ≤ η(G) −  for many classes of ﬁnite abelian
+p-groups and for many integers  ≥ 0. In particular, we get the following results.
+
+ • For many classes of ﬁnite abelian p-groups G, we get η(G) = 2D(G) − exp(G), which
+   proves Conjecture 1. More recently, S. Luo [17] proved Conjecture 1 using entirely
+   diﬀerent method.
+ • When G ∼ = Cpm ⊕ Cpn with n ≥ m + 1, we get
+
+                             s≤exp(G)+ (G) = 2D(G) − exp(G) − 
+
+      for all integers 0 ≤  ≤ pm − 1, which matches with the result of Wang and Zhao
+      [22].
+
+More precisely, we prove the following theorem.
+
+Theorem 1.1. Let H be a ﬁnite abelian p-group with exponent exp(H) = pm for some
+integer m ≥ 1 and for a prime number p > 2r(H) where r(H) is the rank of H. Suppose
+the Davenport constant D(H) satisﬁes D(H) − 1 = kpm + t for some integers k ≥ 1
+and 0 ≤ t ≤ pm − 1. Let G = Cpn ⊕ H be a ﬁnite abelian p-group for some integer n
+satisfying pn ≥ 2(D(H) − 1). Let  be any integer satisfying  = apm + t for some integer
+a satisfying 0 ≤ a ≤ k − 1 and for some integer t satisfying 0 ≤ t ≤ t. Then, we have
+
+           s≤exp(G)+ (G) ≤ exp(G) + 2(D(H) − 1) −  = 2D(G) − exp(G) − .
+
+In particular, we get η(G) = 2D(G) − exp(G); when H ∼
+                                                    = Cpm and n ≥ m + 1, for all
+integers 0 ≤  ≤ p − 1, we get
+                  m
+
+
+
+                          s≤exp(G)+ (G) = 2D(G) − exp(G) − .
+
+  Earlier, in 2016, Gao, Han and Zhang [12] proved Conjecture 1 for the abelian p-groups
+                              2D(H)
+G satisfying p > 2r(H) and exp(H)    is either even or at most 3. Recently, Chintamani,
+Paul and Thangadurai [2] considered similar problem for the complementary case that
+             B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257       249
+
+
+
+of [12] and obtained an upper bound. By reﬁning the method employed in [12], we shall
+prove Theorem 1.1.
+
+2. Preliminaries
+
+  We shall start with the following useful lemmas.
+
+Lemma 2.1. ([12]) Let G be a ﬁnite abelian p-group and let m be a positive integer. If S
+is a sequence over G of length |S| ≥ D(G) + pm − 1, then we have
+                                       
+                                 |S|
+
+                                pm
+                                                   m
+                           1+          (−1)j N jp (S) ≡ 0 (mod p).
+                                j=1
+
+
+Lemma 2.2. ([6]) Let H be a ﬁnite abelian p-group with D(H) ≤ pn − 1 and let G =
+Cpn ⊕ H. Then, D(G) = pn + D(H) − 1 = exp(G) + D(H) − 1.
+
+Lemma 2.3. ([20]) Let G be any ﬁnite abelian p-group with exponent exp(G) such that
+D(G) ≤ 2 exp(G) − 1. Then η(G) ≥ 2D(G) − exp(G).
+
+   Throughout this section, now on, we take H to be a ﬁnite abelian p-group of rank
+r(H) and exponent exp(H) = pm for some positive integer m. Also, we write D(H) −1 =
+kpm +t for some positive integer k and a non-negative integer t satisfying 0 ≤ t ≤ pm −1.
+Choose any integer n such that pn ≥ 2(D(H) − 1) and let G = Cpn ⊕ H. Let  be any
+integer satisfying  = apm + t for some integer a with 0 ≤ a ≤ k − 1 and for some integer
+t with 0 ≤ t ≤ t.
+   We need the following lemma which was proved in ([12]) for the case when  = 0. We
+prove for all integers  satisfying as above.
+
+Lemma 2.4. Let v = (k + 1)pm − D(H) = pm − t − 1. Let S be a sequence over G of length
+|S| = pn + 2(D(H) − 1) −  such that N b (S) = 0 for all integers b with 1 ≤ b ≤ pn + .
+Then for any integers i ∈ [0, k − a − 1], h ∈ [0, v + ] or i = k − a and h = v +  and for
+any subsequence T of S of length |T | = |S| − ipm , we have
+
+                     h   
+                          k
+                        h
+                                           (−1)j−1 N p +jp −u (T ) ≡ 0
+                                                       n   m
+                1+                                                       (mod p).      (1)
+                     u=0
+                           u    j=a+1
+
+
+Proof. First, we claim the following.
+
+Claim. N i (S) = 0 for all i ∈ [1, pn + ] ∪ [pn + D(H), |S|].
+
+  Since S has no zero-sum subsequence of length ≤ pn +, by the hypothesis, we assume
+that N i (S) = 0 for some integer i ∈ [pn + D(H), |S|]. Let W be a subsequence of S of
+250            B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257
+
+
+
+length |W | = i ≥ pn + D(H). Since D(G) = pn + D(H) − 1, there exist two disjoint
+zero-sum subsequences W1 and W2 such that |W1 | ≤ |W2 | and W = W1 W2 . Since
+N j (S) = 0 for any j ∈ [1, pn + ], it is clear that |Wx | ≥ pn +  + 1 for all integers
+x = 1, 2. Therefore, |S| ≥ |W | = |W1 | + |W2 | ≥ 2pn + 2 + 2, which is a contradiction to
+the assumption that |S| ≤ pn + 2(D(H) − 1) ≤ 2pn . Therefore, we get the claim.
+
+    In order to get those congruences, we need to apply Lemma 2.1 suitably. In order to
+apply Lemma 2.1, we shall consider the ﬁnite abelian group G = G ⊕ Cpm and consider
+the map f : G → G given by f (g) = g + e where e is a generator of the cyclic group
+Cpm . Under this map, we consider the image of the given sequence f (S).
+    Let i be a ﬁxed integer with 0 ≤ i ≤ k − a − 1. Let T be a subsequence of S of length
+|T | = |S| − ipm = pn + 2(D(H) − 1) −  − ipm . Let h be a ﬁxed integer with 0 ≤ h ≤ v + 
+and consider the sequence T 0h . Then,
+
+                |T 0h | = |T | + h = pn + D(H) − 1 + D(H) − 1 + h −  − ipm
+                      = D(G) + kpm + t + h − apm − t − ipm
+                      = D(G) + (k − a − i)pm + t − t + h
+                      ≥ D(G) + pm
+
+holds true for all integers i ∈ [0, k − a − 1] and for all integers h ∈ [0, v + ] as t ≤ t.
+Also, when i = k − a, we take h = v +  so that we get
+
+      |T 0v+ | = D(G) + t −  + v +  = D(G) + t + pm − t − 1 = D(G) + pm − 1.
+
+Now, we apply Lemma 2.1 to the sequence f (T 0h ) to get
+
+                                
+                                z
+                                                m
+                          1+          (−1)j N jp (f (T 0h )) ≡ 0 (mod p)                      (2)
+                                j=1
+
+                   
+            |T 0h |
+where z =             , for all integers i ∈ [0, k − a − 1] and h ∈ [0, v + ] and when i = k − a,
+             pm
+take h = v + . Note that for each integer j = 1, 2, . . . , z, we have
+
+                                                     h  
+                                                       h
+                                jpm
+                                                               N jp −u (T ).
+                                                                   m
+                                            h
+                            N         (f (T 0 )) =
+                                                     u=0
+                                                           u
+
+Therefore, for all integers i ∈ [0, k − a − 1] and h ∈ [0, v + ] or when i = k − a, we take
+h = v + , we get,
+
+                          h  z
+                              h
+                                    (−1)j−1 N jp −u (T ) ≡ 0
+                                                m
+                     1+                                                  (mod p).
+                          u=0
+                              u j=1
+                  B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257                      251
+
+
+
+Since, by claim, we know that N b (T ) = 0 for all b ∈ [1, pn + ] ∪ [pn + D(H), |T |], and
+pn + D(H) = pn + (k + 1)pm − v, we get
+
+                              h   
+                                   k
+                                 h
+                                                      (−1)j−1 N p +jp −u (T ) ≡ 0 (mod p)
+                                                                  n      m
+                      1+
+                              u=0
+                                     u       j=a+1
+
+
+is true for all integers i ∈ [0, k − a − 1] and h ∈ [0, v + ] and when i = k − a, take
+h = v + . From this, we get the required congruences. 2
+
+    Now, we shall prove the following reﬁnement of Lemma 3.1 (3.3) in [12].
+
+Lemma 2.5. Let v = (k + 1)pm − D(H) = pm − t − 1. Let S be a sequence over G of length
+|S| = pn + 2(D(H) − 1) −  for some integer  satisfying  = apm + t for some integer
+a with 0 ≤ a ≤ k − 1 and for some integer t with 0 ≤ t ≤ t such that N b (S) = 0 for all
+integers b with 1 ≤ b ≤ pn + . For any integers i and h satisfying 0 ≤ i ≤ k − a − 1 and
+0 ≤ h ≤ v + , we have
+
+                
+                  k                  h  
+                                                            
+   |S|                                  h |S| − pn − jpm + u
+                                                                                 N p +jp −u (S) ≡ 0 (mod p),
+                                                                                     n   m
+                               j−1
+             +           (−1)
+  ipm            j=a+1               u=0
+                                              u                ipm
+
+                                                                                                            (3)
+
+and
+                            v+ 
+                                       k                                              
+          |S|                       v+                              |S| − pn − jpm + u
+                                                                                           N p +jp −u (S)
+                                                                                              n   m
+                                                               j−1
+                          +                               (−1)
+      (k − a)pm               u=0
+                                         u        j=a+1
+                                                                           (k − a)pm
+
+        ≡0        (mod p).                                                                                  (4)
+
+Proof. In order to get (3), we take a subsequence T of S such that |T | = |S| − ipm for a
+given integer i with 0 ≤ i ≤ k − a − 1. Then for any integer h ∈ [0, v + ], by (1), we get
+
+                              h   
+                                   k
+                                 h
+                                                      (−1)j−1 N p +jp −u (T ) ≡ 0
+                                                                  n      m
+                      1+                                                                 (mod p).
+                              u=0
+                                     u       j=a+1
+
+
+Now we sum over all the subsequences T with |T | = |S| − ipm and we get
+                              ⎛                                                          ⎞
+                                     h   
+                                           k
+                              ⎝1 +       h
+                                                              (−1)j−1 N p +jp −u (T )⎠ ≡ 0 (mod p).
+                                                                             n   m
+                                                                                                            (5)
+                                                  u
+         T,|T |=|S|−ipm               u=0             j=a+1
+
+
+Since each subsequence W of S with |W | ≤ |S| − ipm can be extended to a subsequence
+T of length |T | = |S| − ipm in
+252                   B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257
+
+                                                                                          
+                                          |S| − |W |                |S| − |W |      |S| − |W |
+                                                               =                 =
+                                          |T | − |W |                |S| − |T |        ipm
+
+ways, by starting with 0 length subsequence W   of S, we see that the number of ways to
+                                                    |S|
+get subsequences T of S with |T | = |S| − ip is
+                                            m
+                                                         . Then, using this and expanding
+                                                   ipm
+the sum in (5), we arrive at (3). To get (4), we put i = k − a and h = v +  in (1) and
+apply the same procedure. This proves the lemma. 2
+
+Corollary 2.1. Let S be a sequence over G as deﬁned in Lemma 2.5. For any integer i
+with 0 ≤ i ≤ k − a − 1 and for every integer h with 1 ≤ h ≤ v + , we have
+
+                                   
+                                     k                                    
+                      |S|                                   |S| − pn − jpm      n   m
+                                +             (−1)   j−1
+                                                                             N p +jp (S) ≡ 0         (mod p)    (6)
+                     ipm            j=a+1
+                                                                  ip m
+
+
+
+and
+
+                      
+                      k                                             
+                                                  |S| − pn − jpm + h
+                                                                       N p +jp −h (S) ≡ 0
+                                                                          n   m
+                                        j−1
+                                (−1)                                                               (mod p).     (7)
+                     j=a+1
+                                                          ipm
+
+Proof. To prove (6), we put h = 0 in (3) (Lemma 2.5) and we get the congruence.
+  We shall prove (7) by induction on h. When h = 1, by (3) (Lemma 2.5), we get,
+
+                                   
+                                     k                                    
+                   |S|                                       1 |S| − pn − jpm      n   m
+                                +             (−1)j−1                           N p +jp (S)
+                  ipm               j=a+1
+                                                             0       ip m
+
+                                                                           
+                                       1 |S| − pn − jpm + 1     pn +jpm −1
+                                    +                         N            (S)   ≡ 0 (mod p).
+                                       1         ipm
+
+Therefore, by (6), we get (7) with h = 1.
+  Suppose we assume (7) is true for all integers b < h and we shall prove for h. We shall
+rewrite (3) with h as follows.
+
+                     
+                       k                      h  
+                                                                     
+       |S|                                       h |S| − pn − jpm + b
+                                                                       N p +jp −b (S) ≡ 0 (mod p)
+                                                                          n   m
+                 +              (−1)j−1
+      ipm            j=a+1
+                                                 b         ip m
+                                              b=0
+                                  
+                                    h−1         
+                                                 k                                          
+                      |S|                     h                            |S| − pn − jpm + b
+                                                                                               N p +jp −b (S)
+                                                                                                  n   m
+      =⇒                        +                          (−1)j−1
+                     ipm                      b    j=a+1
+                                                                                   ip m
+                                    b=0
+
+                  
+                  k                                          
+                                            |S| − pn − jpm + h
+                                                                N p +jp −h (S) ≡ 0 (mod p)
+                                                                   n   m
+         +                  (−1)j−1                   m
+                 j=a+1
+                                                    ip
+                 B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257       253
+
+
+
+By applying the induction hypothesis, we get,
+
+                 
+                 k                                    
+                                    |S| − pn − jpm + h
+                                                         N p +jp −h (S) ≡ 0
+                                                            n   m
+                          j−1
+                     (−1)                                                         (mod p)
+                j=a+1
+                                            ipm
+
+as required. 2
+
+   The following theorems are very crucial for proving our main result. We record them
+as follows.
+
+Theorem 2.1. ([16]) Let p be a prime number. Let a and b be positive integers with
+a = an pn +an−1 pn−1 +· · ·+a0 with ai ∈ {0, 1, . . . , p−1} and b = bn pn +bn−1 pn−1 +· · ·+b0
+with bi ∈ {0, 1, . . . , p − 1}. Then
+
+                                           
+                             a   an an−1         a0
+                               ≡            ···     (mod p),
+                             b   bn  bn−1        b0
+        ai                           0
+where    bi     = 0, if ai < bi and     0    = 1.
+
+Theorem 2.2. ([12]) Let n and k be positive integers with 1 ≤ 2k ≤ n. Let A be the
+following (k + 1) × (k + 1) matrix with positive integers
+
+                                        ⎛                                  ⎞
+                                     1                 1     ···       1
+                                  ⎜  n             n−1           n−k ⎟
+                                  ⎜ 1                        ···           ⎟
+                                  ⎜                  1
+                                                     n−1           n−k ⎟
+                                                                       1
+                                A=⎜
+                                  ⎜ 2
+                                      n
+                                                             ···           ⎟.
+                                                                           ⎟
+                                  ⎜                    2               2
+                                                                           ⎟
+                                  ⎝ ···                      ···           ⎠
+                                     n             n−1           n−k
+                                             k         k     ···       k
+
+
+Then, the determinant of A is given by
+
+                                          k −1
+                                                              
+                                det(A) =    t!                         (i − j).
+                                                 t=1         1≤i<j≤k
+
+
+  The following is the crucial observation for the proof of Theorem 1.1.
+
+Theorem 2.3. Let S be a sequence over G which is deﬁned as in Lemma 2.5 and let p be
+a prime number satisfying p > 2r(H). Then for every integer j ∈ [a + 1, k] and for every
+integer h ∈ [1, v + ], we get,
+
+                                      N p +jp −h (S) ≡ 0
+                                         n       m
+                                                                   (mod p).
+254          B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257
+
+
+
+Proof. Since pn ≥ 2(D(H) − 1) = 2(kpm + t) and p > 2r(H), we see that 2k + 1 < p.
+Let h be a ﬁxed integer such that 1 ≤ h ≤ v + . For any integer j = a + 1, a + 2, . . . , k,
+we see that
+
+
+ |S| − pn − jpm + h = pn + 2(kpm + t) − pn − jpm + h −  = (2k − j)pm + 2t + h − .
+
+
+Note that
+
+
+2t + h −  ≤ 2t + v +  −  = 2t + pm − t − 1 = t + pm − 1 ≤ pm − 1 + pm − 1 = 2pm − 2,
+
+
+as t ≤ pm − 1. Hence, for each integer j = a + 1, a + 2, . . . , k, we see that
+
+
+                          |S| − pn − jpm + h = (2k − j + c)pm + f
+
+
+where c = 0 or 1 depending on values t and h and for some integer 0 ≤ f < pm .
+Therefore, by Theorem 2.1, we get
+
+                                                                              
+        |S| − pn − jpm + h                (2k − j)pm + 2t + h            2k − j + c
+                                  =                                 ≡                  (mod p)   (8)
+                ipm                               ipm                        i
+
+for all integers j = a + 1, a + 2, . . . , k and i = 0, 1, . . . , k − a − 1 where c = 0 or 1.
+   Let h be a ﬁxed integer with 1 ≤ h ≤ v +  and let
+
+
+                                  Xj = (−1)j−1 N p +jp −h (S)
+                                                      n   m
+
+
+
+
+for every integer j = a + 1, a + 2, . . . , k. Then by the congruence (7) in Corollary 2.1, we
+get a system of k − a linear equations in k − a variables over Fp as follows.
+
+
+                             Xa+1 + Xa+2 + · · · + Xk = 0;
+                                                            
+              |S| − pn − pm + h              |S| − pn − 2pm + h
+                                   X a+1 +                       Xa+2 + · · ·
+                      pm                             pm
+                                      
+                    |S| − pn − kpm + h
+               +                         Xk = 0;
+                            pm
+                                   ···    ···      ···
+                                                           
+              |S| − p − p + h
+                      n    m
+                                            |S| − pn − 2pm + h
+                                   Xa+1 +                       Xa+2 + · · ·
+                (k − a − 1)pm                  (k − a − 1)pm
+                                      
+                    |S| − pn − kpm + h
+               +                         Xk = 0;
+                       (k − a − 1)pm
+                B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257                255
+
+
+
+By (8), the coeﬃcient matrix of the above system of linear equations over Fp is
+                             ⎛                                                     ⎞
+                                        1            ···    1                  1
+                             ⎜ 2k−a−1+c 2k−a−2+c · · ·                2k−k+c ⎟
+                             ⎜                                                     ⎟
+                             ⎜     1          1
+                                                                          2k−k+c ⎟
+                                                                              1
+                             ⎜ 2k−a−1+c 2k−a−2+c                                ⎟
+                             ⎜                       ···                           ⎟
+                             ⎜      2          2                              2    ⎟
+                             ⎝     ···               ···                           ⎠
+                               2k−a−1+c 2k−a−2+c                      2k−k+c
+                                  k−a−1      k−a−1   · ··                  k−a−1
+
+whose determinant, by Theorem 2.2, is non-zero modulo p, by taking n = 2k − 1 + c in
+Theorem 2.2. Hence the only solution of the above system is Xn+1 = · · · = Xk = 0 in
+Fp . This proves the theorem. 2
+
+3. Proof of Theorem 1.1
+
+   We prove that s≤pn + (G) ≤ pn +2(D(H)−1)− for all integers  satisfying  = apm +t
+for some integer a with 0 ≤ a ≤ k − 1 and for some integer t with 0 ≤ t ≤ t where t is
+an integer satisfying D(H) − 1 = kpm + t with 0 ≤ t ≤ pm − 1.
+   Let S be a sequence over G of length |S| = pn + 2(D(H) − 1) − . Suppose that
+N (S) = 0 for all integers 1 ≤ b ≤ pn + . Then, by Theorem 2.3, we know that
+  b
+
+
+
+                                        N p +jp −h (S) ≡ 0
+                                              n        m
+                                                                     (mod p)
+
+for all integers j ∈ [a + 1, k] and integers h ∈ [1, v + ]. Therefore, by Lemma 2.5, we get,
+                               
+                                 k                                    
+             |S|                                        |S| − pn − jpm      n   m
+                            +           (−1)  j−1
+                                                                         N p +jp (S) ≡ 0 (mod p)    (9)
+         (k − a)pm              j=a+1
+                                                          (k − a)pm
+
+and by Corollary 2.1 (6), we get,
+                           
+                             k                                      
+              |S|                                     |S| − pn − jpm      n   m
+                        +           (−1)    j−1
+                                                                       N p +jp (S) ≡ 0 (mod p)     (10)
+             ipm            j=a+1
+                                                            ipm
+
+holds true for all integers i ∈ [0, k − a − 1].
+  Now, we put
+                                                                 n    m
+                                            Xj = (−1)j−1 N p +jp (S)
+
+for all j = a + 1, a + 2, . . . , k and Xa = 1. Then, by (9) and (10), we get a system of
+(k − a + 1) linear equations in (k − a + 1) unknowns over Fp as follows.
+                                                            
+      |S|         |S| − pn − pm                   |S| − pn − kpm
+           Xa +                  Xa+1 + · · · +                    Xk ≡ 0 (mod p);
+       0                 0                               0
+                                  ···     ···       ···
+256          B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257
+
+                                                                   
+       |S|               |S| − pn − pm                   |S| − pn − kpm
+                 X a +                   X a+1 +· · ·+                    Xk ≡ 0 (mod p);
+ (k − a − 1)pm           (k − a − 1)pm                    (k − a − 1)pm
+                                                                   
+      |S|             |S| − pn − pm                     |S| − pn − kpm
+              Xa +                    Xa+1 + · · · +                     Xk ≡ 0 (mod p).
+  (k − a)pm             (k − a)pm                          (k − a)pm
+
+Now, we need to compute the determinant of the coeﬃcient matrix of the above system.
+We shall prove that this determinant is non-zero modulo p, which in turn implies that the
+only solution of the above system is Xa = · · · = Xk = 0 in Fp . This is a contradiction to
+Xa ≡ 0 (mod p), which proves the theorem. Hence, we need to compute the coeﬃcients
+modulo p and its determinant. Since the calculation is the same as in the proof of
+Theorem 2.3, we omit the details here. This proves the upper bound for s≤pn + (G).
+   Note that when  = 0, by Lemma 2.2, Lemma 2.3 and by the above upper bound, we
+get
+
+                    s≤exp(G) (G) = s≤pn (G) = η(G) = pn + 2(D(H) − 1).
+
+Now, we shall assume that G ∼  = Cpm ⊕ Cpn with n ≥ m + 1. Then H = Cpm and
+D(H) − 1 = p − 1. Hence t = pm − 1 and 0 ≤  ≤ t = pm − 1. In order to prove the
+              m
+
+lower bound for s≤exp(G)+ (Cpm ⊕ Cpn ), we consider the following sequence
+
+                             S = (0, e)p −1 (f, 0)p −1 (f, e)p −1−
+                                         n          m              m
+
+
+
+
+over G ∼= Cpm ⊕ Cpn of length pn + 2(pm − 1) −  = exp(G) + 2(D(H) − 1) − , where e
+is a generator of Cpn and f is a generator of Cpm . If T is a zero-sum subsequence of S
+of length ≤ pn + , then
+
+                                     T = (0, e)a (f, 0)b (f, e)c
+
+for some non-negative integers a, b and c. Since pn ≥ ppm with p ≥ 5 and T is a zero-sum
+sequence, we see that a + c = pn and b + c = pm . Therefore, a + 2c + b = pn + pm . Since
+|T | = a + b + c = pn + z where z ≤ , then we get c = pm − z ≥ pm − , which is
+a contradiction to the fact that c ≤ pm − 1 − . Therefore, N b (S) = 0 for all integers
+0 ≤ b ≤ pn + . This proves the lower bound. 2
+
+Acknowledgments
+
+   We thank the referee for going through the manuscript meticulously and gave sugges-
+tions to improve the presentation of the paper.
+
+References
+
+ [1] R. Chi, S.Y. Ding, W.D. Gao, A. Geroldinger, W.A. Schmid, On zero-sum subsequences of restricted
+     size IV, Acta Math. Hungar. 107 (2005) 337–344.
+ [2] M.N. Chintamani, Prabal Paul, R. Thangadurai, On short zero-sum sequences over abelian p-groups,
+     Integers 17 (2017) A50.
+              B. Roy, R. Thangadurai / Journal of Number Theory 191 (2018) 246–257                   257
+
+
+
+ [3] C. Delorme, O. Ordaz, D. Quiroz, Some remarks on Davenport constant, Discrete Math. 237 (2001)
+     119–128.
+ [4] Y. Edel, C. Elsholtz, A. Geroldinger, S. Kubertin, L. Rackham, Zero-sum problems in ﬁnite Abelian
+     groups and aﬃne gaps, Quart. J. Math. 58 (2007) 159–186.
+ [5] C. Elsholtz, Lower bounds for multidimensional zero sums, Combinatorica 24 (3) (2004) 351–358.
+ [6] P. van Embde Boas, A combinatorial problem on ﬁnite abelian groups II, in: Reports of the Math-
+     matisch Centrum Amsterdam, ZW-1969-007.
+ [7] Y.S. Fan, W.D. Gao, L.L. Wang, Q.H. Zhong, Two zero-sum invariants on ﬁnite Abelian groups,
+     European J. Combin. 34 (2013) 1331–1337.
+ [8] Y.S. Fan, W.D. Gao, G.Q. Wang, Q.H. Zhong, J.J. Zhuang, On short zero-sum subsequences of
+     zero-sum sequences, Electron. J. Combin. 19 (3) (2012) P31.
+ [9] Y.S. Fan, W.D. Gao, Q.H. Zhong, On the Erdős–Ginzburg–Ziv constant of ﬁnite Abelian groups of
+     high rank, J. Number Theory 131 (2011) 1864–1874.
+[10] M. Freeze, W. Schmid, Remarks on a generalization of the Davenport constant, Discrete Math. 310
+     (2010) 3373–3389.
+[11] W.D. Gao, A. Geroldinger, Zero-sum problems in abelian groups; a survey, Expo. Math. 24 (2006)
+     337–369.
+[12] W.D. Gao, D. Han, H. Zhang, The EGZ-constant and short zero-sum sequences over ﬁnite abelian
+     groups, J. Number Theory 162 (2016) 601–613.
+[13] W.D. Gao, R. Thangadurai, On zero-sum sequences of prescribed length, Aequationes Math. 72 (3)
+     (2006) 201–212.
+[14] A. Geroldinger, D.J. Grynkiewicz, W.A. Schmid, Zero-sum problems with congruence conditions,
+     Acta Math. Hungar. 131 (2011) 323–345.
+[15] A. Geroldinger, F. Halter-Koch, Non-unique factorizations, in: Algebraic, Combinatorial and Ana-
+     lytic Theory, in: Pure Appl. Math., vol. 278, Chapman & Hall/CRC, 2006.
+[16] F.E.A. Lucas, Sur les congruences des nombres eulériens et les coeﬃcients diﬀérentiels des functions
+     trigonométriques suivant un module premier, Bull. Soc. Math. France 6 (1878) 49–54 (in French).
+[17] S. Luo, Short zero-sum sequences over abelian p-groups of large exponent, J. Number Theory 177
+     (2017) 28–36.
+[18] J.E. Olson, A combinatorial problem on ﬁnite Abelian groups I, J. Number Theory 1 (1969) 8–10.
+[19] J.E. Olson, A combinatorial problem on ﬁnite Abelian groups II, J. Number Theory 1 (1969)
+     195–199.
+[20] W.A. Schmid, J.J. Zhuang, On short zero-sum subsequences over p-groups, Ars Combin. 95 (2010)
+     343–352.
+[21] R. Thangadurai, Interplay between four conjectures on certain zero-sum problems, Expo. Math.
+     20 (3) (2002) 215–228.
+[22] C. Wang, K. Zhao, On zero-sum subsequences of length not exceeding a given number, J. Number
+     Theory 176 (2017) 365–374.
+

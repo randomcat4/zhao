@@ -1,0 +1,1816 @@
+COLLOQUIUM MATHEMATICUM
+                                    Online First version
+
+
+
+
+ON ZERO-SUM SUBSEQUENCES OVER FINITE ABELIAN GROUPS
+      OF LENGTH NOT EXCEEDING A GIVEN NUMBER
+                                            BY
+
+
+                             KEVIN ZHAO and SIAO HONG
+
+      Abstract. Let G be a finite abelian group and let k be an integer with k ∈ [exp(G),
+D(G) − 1], where exp(G) and D(G) are the exponent and the Davenport constant of G,
+respectively. Denote by s≤k (G) the smallest positive integer l ∈ N ∪ {+∞} such that each
+sequence of length l over G has a nontrivial zero-sum subsequence of length at most k.
+We prove that s≤D(G)−2 (G) ≤ D(G) + 2 for all finite non-cyclic abelian groups except for
+C23 , C24 and C2 ⊕ C2n . For some classes of p-groups G, we show that s≤k (G) ≤ 2D(G) − k
+for k = c1 pt+1 ∈ D(G)+1
+                                 
+                        2
+                            , D(G) with c1 ∈ [0, p − 1] and t ≥ 0. In addition, some lower
+bounds are obtained.
+
+    1. Introduction and the main results. Let (G, +, 0) be a finite
+abelian group and G∗ = G \ {0}. It is well-known that either |G| = 1 or
+G = Cn1 ⊕ Cn2 ⊕ · · · ⊕ Cnr , where r ∈ N and 1 < n1 | n2 | · · · | nr . Then
+r(G) := r is called the rank of G and exp(G) = nr is called exponent of G.
+Let
+                                S = g1 . . . gl
+be a sequence with terms from G. We say S is a zero-sum sequence if g1 +
+· · · + gl = 0. Let F (G) denote the monoid of all sequences over G. Let B(G)
+denote the monoid of all zero-sum sequences over G, and denote by 1 the
+identity element of B(G), i.e., the trivial sequence over G. The Davenport
+constant D(G) of G is defined as the smallest positive integer t such that
+every sequence S over G of length t has a nontrivial zero-sum subsequence.
+Set
+                                        X r
+                             ∗
+                           D (G) := 1 +     (ni − 1).
+                                                  i=1
+
+A simple construction shows that D(G) ≥ D∗ (G).
+
+2020 Mathematics Subject Classification: Primary 11B75; Secondary 11R27.
+Key words and phrases: zero-sum subsequence, Davenport constant, abelian group, invari-
+ant s≤k (G).
+Received 16 March 2025; revised 12 May 2026.
+Published online 1 September 2026.
+
+DOI: 10.4064/cm9599-7-2026                  [1]            © Instytut Matematyczny PAN, 2026
+2                           K. ZHAO AND S. A. HONG
+
+
+    In zero-sum theory, people often consider the following two problems:
+    The direct zero-sum problem is to find the smallest integer ℓ ∈ N such
+that every sequence S over G of length |S| ≥ ℓ has a zero-sum subsequence
+with prescribed length.
+    The inverse zero-sum problem asks about the structure of the sequence S
+over G without zero-sum subsequences of prescribed length.
+    Let L ⊂ N be a nonempty subset and let sL (G) be the smallest inte-
+ger ℓ ∈ N ∪ {∞} such that every sequence S over G of length |S| ≥ ℓ
+has a zero-sum subsequence T of length |T | ∈ L. Thus D(G) = sN (G),
+η(G) = s[1,exp(G)] (G), s(G) = s{exp(G)} (G), and sk exp(G) (G) = s{k exp(G)} (G),
+where η(G), the Erdős–Ginzburg–Ziv constant s(G), and the generalized
+Erdős–Ginzburg–Ziv constant sk exp(G) (G) are all classical zero-sum invari-
+ants. The invariant sL (G) is also investigated for various other sets L (see
+e.g. (15, 17–19, 29, 38). The readers may want to consult one of the surveys
+or monographs (14, 20–22, 24).
+    In 2001, Delorme, Ordaz and Quiroz [6] systematically investigated the
+invariant sL (G) for the case L = [1, k]. We denote
+                      s≤k (G) := s[1,k] (G)   for all k ∈ N.
+It is easy to see that s≤k (G) = D(G) if k ≥ D(G), s≤k (G) = D(G) + 1 if
+k = D(G) − 1, s≤k (G) = η(G) if k = exp(G), and s≤k (G) = ∞ if 1 ≤ k <
+exp(G). Thus it suffices to consider s≤k (G) for k ∈ [exp(G), D(G) − 2].
+     The invariant s≤k (G) is a variant of the Erdős–Ginzburg–Ziv constant
+s(G), one of the most investigated invariants in zero-sum theory. For more,
+one can see [34]. The invariant s≤k (G) also has a close connection with other
+invariants. In [15, 16], Gao et al. studied sk exp(G) (G) and conjectured that
+sk exp(G) (G) = s≤k exp(G) (G) + k exp(G) − 1. Bhowmik and Schlage-Puchta [1]
+used s≤k (G) to study the Davenport constant D(G). For more results related
+to the Davenport constant, one can see [2, 6]. Freeze and Schmid [10] used
+s≤k (G) to study the kth Davenport constant Dk (G), which is the smallest
+ℓ ∈ N such that every sequence S over G of length |S| ≥ ℓ has k disjoint
+nontrivial zero-sum subsequences. In [4], Cohen and Zémor pointed out a
+connection between s≤k (G) and coding theory.
+     Even though the direct and inverse zero-sum problems of s≤k (G) have
+been widely studied, those problems are still widely open. Freeze and
+Schmid [10] obtained the exact value s≤3 (C2r ) = 1 + 2r−1 . Lindström [30]
+studied s≤4 (C2r ) when r → ∞. In [32], Luo proved that for a finite abelian
+p-group G with a large exponent,
+                     s≤exp(G) = η(G) = 2D(G) − exp(G).
+For rank 2 groups G, Wang and Zhao [39] proved that
+            s≤k (G) = 2D(G) − k       when k ∈ [exp(G), D(G) − 1].
+    ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                3
+
+
+For finite abelian p-groups G with a large exponent, Roy and Thangadu-
+rai [33] showed that
+            s≤k (G) ≤ 2D(G) − k     under mild conditions on k.
+Recently, Zhang [40] continued to study this problem for abelian groups
+of rank 3. For the inverse problem, few results are known. Davydov and
+Tombakis [5] studied the inverse problem by using the methods from coding
+theory. Recently, the inverse problem of s≤k (G) for rank-2 groups has also
+been completely solved (8, 25–27).
+    Most of the known results are for finite abelian p-groups. In this paper,
+we study the invariant s≤k (G) for general finite abelian groups.
+    Theorem 1.1. Let G be a finite abelian group with r(G) ≥ 2. If G ∼ ̸ C23 ,
+                                                                        =
+C2 , C2 ⊕ C2n , then s≤D(G)−2 (G) ≤ D(G) + 2. In particular, if D(G) = D∗ (G)
+  4
+
+and exp(G) ≥ D(G)−12   , then s≤D(G)−2 (G) = D(G) + 2.
+
+   Remark. For G ∼ = C23 , we have D(G) = 4 and s≤2 (G) = 8. For G ∼
+                                                                   = C24 ,
+                                3
+we have D(G) = 5 and s≤3 (G) = 2 +1 = 9. These follow from Lemma 2.3(iii).
+   For abelian p-groups, we have the following results.
+    Theorem 1.2. Let G be a finite abelian p-group and k − 1 = c1 pt+1 ∈
+ D(G)+1           
+     2   , D(G) − 1 with t ≥ 0 and c1 ∈ [1, p − 1]. Then s≤k−1 (G) ≤
+2D(G) − k + 1 provided that either
+(1) p > 2 and c1 ≤ p−1
+                    3 , or
+(2) p = 2.
+   Theorem 1.3. Let G be a finite abelian p-group. Then s≤k−1 (G) ≤
+2D(G) − k + 1 provided that either
+(1) G ∼
+      = Cp4 and k − 1 = 2p with p ≥ 5, or
+(2) G ∼
+      = Cpd and k − 1 = (d − 1)p ∈ [p, D(Cpd )].
+    Remark. Theorems 1.2 and 1.3 improve greatly some known results
+given in Lemmas 2.2 and 2.3.
+    The paper is organized as follows. In Section 2, we recall some basic no-
+tions and collect several known results and some lower bounds of s≤k (G).
+We give the proof of Theorem 1.1 in Section 3. In Section 4, we consider
+the problem when there exists a nontrivial zero-sum subsequence of length
+bounded by k for zero-sum sequences over finite abelian p-groups. By con-
+sidering this problem, we obtain the upper bound s≤k (G) ≤ 2D(G) − k for
+some classes of p-groups G in Section 4, and we prove Theorems 1.2 and 1.3
+in Section 5.
+4                              K. ZHAO AND S. A. HONG
+
+
+    2. Preliminaries. Throughout the paper, let N denote the set of posi-
+tive integers, and N0 = N ∪ {0} and N≥k = {n ∈ N : n ≥ k} for any k ∈ N.
+For real a ≤ b, we let [a, b] = {x ∈ Z : a ≤ x ≤ b} be the discrete inter-
+val. Let ⊎ denote the union of pairwise disjoint sets. We consider sequences
+as elements of the free abelian monoid F (G) over G and our notation and
+terminology coincides with [14, 22, 24].
+    Let                                        Y
+                         S = g1 · . . . · gℓ =   g vg (α)
+                                                  g∈G
+
+ be a sequence overPG, where vg (S) ∈ N0 is called the multiplicity of g in
+ S and |S| = ℓ = g∈G vg (S) ∈ N0 is called the length of S. The sum of
+ elements in S is denoted by σ(S) = ℓi=1 gi = g∈G vg (S) · g ∈ G, and the
+                                           P         P
+
+ maximal multiplicity of a term in S is denoted by h(S).
+     A sequence S is called a zero-sum sequence if ℓi=1 gi = 0 ∈ G. We say
+                                                       P
+ that T is a subsequence of S if vg (S) ≥ vg (T ) for all g ∈ G, and write T | S.
+ In particular, if T is a subsequence of S and T ̸= S, then we say that T is a
+ proper subsequence of S. If T is trivial, then we denote T = 1 ∈ B(G). We
+ say that S is zero-sum free if it contains no nontrivial zero-sum subsequence.
+ If S is a zero-sum sequence and each proper subsequence is zero-sum free,
+ then S is called a minimal zero-sum sequence.
+     We denote by supp(S) the subset of G consisting of all elements with
+vQg (S) > 0 and by ⟨supp(S)⟩ the subgroup generated by supp(S). If T n =
+          nvg (T ) is a subsequence of S for some n ∈ N, then we denote by ST −n
+    g∈G g
+the sequence obtained from S by deleting T n . Moreover, we let
+                           Σ(S) = {σ(T ) : T | S, T ̸= 1}.
+    Now we collect some results for the direct zero-sum problem of s≤k (G).
+   Lemma 2.1 ([39, Lemma 8]). Let G be a finite abelian group with r(G)
+≥ 2. Then s≤D(G)−1 (G) = D(G) + 1.
+    Lemma 2.2 ([1]). We have s≤ 3p−1 (Cpd ) ≤ (6p − 4)pd−3 + 1 for d ≥ 3,
+                                          2
+s≤2p (Cpd ) ≤ (6p − 4)pd−4 + 1 for d ≥ 4 and s≤(d−1)p (Cpd ) ≤ (d − 1)p.
+    Lemma 2.3. We have
+  (i) s≤3 (C33 ) = 17, s≤4 (C33 ) = 10, s≤5 (C33 ) = 9, s≤6 (C33 ) = 8, s≤7 (C33 ) =
+      D(C33 ) = 7 ([2]);
+ (ii) s≤5 (C53 ) = 33, s≤6 (C53 ) = 24, s≤7 (C53 ) = 19, s≤8 (C53 ) = 18, s≤9 (C53 ) =
+      17, s≤10 (C53 ) = 15, s≤11 (C53 ) = 14, s≤12 (C53 ) = 14, s≤13 (C53 ) = D(C53 ) =
+      13 ([37]);
+(iii) s≤2 (C2r ) = 2r ; s≤3 (C2r ) =  2r−1+ 1;
+                                    2r+2
+                                                      d
+                                               s≤4 (C2 ) r≤ 2
+                                                               (d+1)/2 + 1; s         r
+                                                                              ≤r−k (C2 ) =
+      r + 2 for all r − k ∈             3  , r ; s≤2m (C2 ) ≤ (m + 1) + (m!2 )1/m   r
+
+      ([10, 30, 39]);
+    ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                 5
+
+
+(iv) s≤k (G) = 2D(G) − k for a finite abelian group G with r(G) = 2 and
+     k ∈ [exp(G), D(G)] ([39]);
+ (v) s≤D(G)−2 (G) = D(G) + 1 for G = Cpr with 3 ≤ r < p; s≤D(G)−pn (G) =
+     D(G) + pn for G = Cp3n with p odd prime ([40]).
+    Lemma 2.4 ([33, Theorem 1.1]). Let H be a finite abelian p-group with
+exponent exp(H) = pm for some integer m ≥ 1 and for a prime number
+p > 2r(H). Suppose that D(H) − 1 = kpm + t for some integers k ≥ 1 and
+0 ≤ t ≤ pm − 1. Let G = Cpn ⊕ H be a finite abelian p-group for some integer
+n satisfying pn ≥ 2(D(H) − 1). Let ℓ be any integer satisfying ℓ = apm + t′
+for some integer a satisfying 0 ≤ a ≤ k − 1 and for some integer t′ satisfying
+0 ≤ t′ ≤ t. Then
+                   s≤exp(G)+ℓ (G) ≤ 2D(G) − exp(G) − ℓ.
+    Lemma 2.5 ([32, 36]). Let p be an odd prime and let G be a finite abelian
+p-group with exp(G) = n and D(G) ≤ 2n − 1. Then
+            2D(G) − 1 ≤ η(G) + n − 1 ≤ s(G) ≤ D(G) + 2n − 2.
+   Furthermore, if D(G) = 2n − 1, then s(G) = η(G) + n − 1 = 4n − 3; if
+G′ = G ⊕ C                                                             ′
+           k where k is a positive integer not divisible by p, then η(G ) =
+     ′        ′
+2D(G ) − exp(G ).
+    Here, we list some results for the inverse zero-sum problem for
+s≤k (Cn ⊕ Cn ).
+   Lemma 2.6 ([8, 25, 26, 27]). Let n ≥ 2, let G = Cn ⊕Cn , let k ∈ [2, n−2],
+and let S be a sequence of terms from G of length |S| = D(G) + k − 1 =
+2n − 2 + k having no nontrivial zero-sum subsequence of length at most
+D(G) − k = 2n − 1 − k. Then there exists a basis (e1 , e2 ) for G such that
+                         S = en−1
+                              1   · en−1
+                                     2   · (e1 + e2 )k .
+   We also collect some results on the groups G with D(G) = D∗ (G).
+    Lemma 2.7. Let G be a finite abelian group. Then D(G) = D∗ (G), pro-
+vided that one of the following holds:
+(a) r(G) ≤ 2 ([20, Theorem 4.2.10] or [22, Theorem 5.8.3]);
+(b) G is a finite abelian p-group ([20, Theorem 2.2.6] or [22, Theorem 5.5.9]);
+(c) G = K ⊕ Ckm , where K is a p-group with D(K) ≤ m and m is a power
+    of p ([20, Corollary 4.2.13]);
+(d) G = C2 ⊕ C2m ⊕ C2n with m|n ([11, 13]);
+(e) G = C3 ⊕ C6m ⊕ C6n with m|n ([11, 13]);
+(f) G = C2pa ⊕ C2pb ⊕ C2pc with a ≤ b ≤ c being nonnegative integers, and
+    p being a prime ([11]);
+(g) G = C23 ⊕ C2n ([11]);
+6                             K. ZHAO AND S. A. HONG
+
+
+(h) G = C24 ⊕ C2n with n ≥ 70 and n even ([35, Theorem 5.8]);
+(i) G = C25 ⊕ C2n with n ≥ 149 and n even. ([41, Theorem 2]).
+    We first get some lower bounds of s≤k (G).
+   Lemma 2.8. Let G = Cnr with n, r ∈ N≥2 and k ∈ [0, n − 1] be an integer.
+Then s≤2n−1−k (G) ≥ 2r−1 (n − 1) + 1 + k.
+   Remark. By Lemma 2.3(iii)–(iv), one can easily see that the lower
+bound is sharp for n = 2 or r = 2.
+    Proof of Lemma 2.8. By induction on r, we can show that there exists a
+sequence S = T0n−1 g0k over Cnr of length 2r−1 (n − 1) + k such that each zero-
+sum subsequence of S has length ≥ 2n − k. If r = 2, then Lemma 2.6 implies
+our result. Assume that we have proved the results for cases ≤ r −1 and that
+S1′ = g ′ n−1
+          1   . . . g ′ n−1 ′k
+                        m g 0 is the sequence over Cn
+                                                       r−1 of length 2r−2 (n − 1) + k
+                                                   ′
+such that each zero-sum subsequence of S1 has length ≥ 2n − k. Set Cnr =
+Cnr−1 ⊕ ⟨er ⟩. Let S1 = g1n−1 . . . gm   n−1 g k be a sequence over C r obtained by
+                                              0                        n
+                                       ′
+attaching 0 to each element of S1 as the rth entry. Obviously, each zero-sum
+subsequence of S1 has length ≥ 2n − k. Let
+                                                    m
+                                                    Y
+                 S = S1 (S1 g0−k + er ) = g0k             gin−1 (gi + er )n−1 .
+                                                    i=1
+It is easy to see that each nontrivial zero-sum subsequence T in S must have
+the form                          Y v Y
+                         T = g0k0    gi i    (gi + er )ui ,
+                                   i∈I1          i∈I2
+
+where k0 ∈ [0, k], I1 , I2 ⊂ [1, m], and ui , vi ∈ [1, n − 1]. It suffices to prove
+that |T | ≥ 2n − k.
+               P
+   Obviously, i∈I2 ui ≡ 0 mod n. In addition,
+                                        Y v Y
+                            T ′ := g0k0  gi i     (gi )ui
+                                          i∈I1          i∈I2
+
+is zero-sum and has the form
+                                            n
+                                         T ′ 1 T2′ g0k0
+with vg (T2′ g0k0 ) < n for any g | T2′ . It is easy to see that σ(T ′ n1 ) = 0 and
+T2′ g0k0 | S1 . Hence, T2′ g0k0 is a zero-sum subsequence of S1 of length |T2′ g0k0 | ≤
+|T ′ | = |T |. Combining this with the structure of S1 shows that either |T | ≥
+|T2′ g0k0 | ≥ 2n − k or T2′ g0k0 is empty. If the former holds, then we are done. If
+the latter holds, then k0 = 0 and
+                                                            n
+                                       Y v Y u
+                                 T′ =      gi i  gi i = T ′ 1 .
+                                  i∈I1          i∈I2
+     ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                  7
+
+
+As ui , vi ∈ [1, n − 1] we must have I1 = I2 = I and ui + vi = n for any i ∈ I.
+Hence,
+                                Y n−u Y
+                           T =     gi i     (gi + er )ui
+                                  i∈I               i∈I
+                                      P
+with I ⊂ [1, m], ui ∈ [1, n − 1], i∈I ui ≡ 0 mod n and |T | = |I|n. If |I| ≥ 2,
+then we are done. If |I| = 1, then T = gin−ui (gi + er )ui for some i ∈ [1, m],
+where ui ∈ [1, n − 1] and ui ≡ 0 mod n. Obviously, this is impossible. So
+Lemma 2.8 is proved.
+    Lemma 2.9. Let G be a finite abelian group with r(G) ≥ 2. If exp(G) ≤
+D∗ (G) − k ≤ 2 exp(G) − 1, then s≤D∗ (G)−k (G) ≥ D∗ (G) + k.
+    In particular, if G is a finite abelian p-group with r(G) ≥ 2 and D(G) ≤
+2 exp(G) − 1, then s≤k (G) ≥ 2D(G) − k for exp(G) ≤ k ≤ D(G).
+   Remark. By the above result one can easily see that s≤D(G)−k (G) =
+D(G) + k in Lemma 2.4.
+   Proof of Lemma 2.9. Set
+   G = H ⊕ Cnr = Cn1 ⊕ · · · ⊕ Cnr−1 ⊕ Cnr = ⟨e1 ⟩ ⊕ · · · ⊕ ⟨er−1 ⟩ ⊕ ⟨er ⟩,
+where 1 < n1 | · · · | nr−1 | nr and ord(ei ) = ni . Let
+                                      r−1
+                                            eni i −1 (er − ei )ni −1
+                                      Y
+                            S = exr
+                                      i=1
+
+be a sequence over G of length D∗ (G) + k − 1. Since exp(G) ≤ D∗ (G) − k ≤
+2 exp(G) − 1, we have k + 1 ≤ D∗ (H) ≤ exp(G) + k and
+                  r−1
+                  X
+      x = |S| −         2(ni − 1) = exp(G) + k − D∗ (H) ∈ [0, exp(G) − 1].
+                  i=1
+
+Obviously, each nontrivial zero-sum subsequence T of S has the form
+                                   Y v
+                         T = exr 1  ei i (er − ei )vi ,
+                                          i∈I
+
+where
+P      x1 ∈ [0, x], vi ∈ [1, ni − 1]P  and I ⊂ [1, r − 1]. Since σ(T ) = x1 +
+     v
+  i∈I i re  =  0, we have  n r   x 1 +   i∈I vi , which implies that
+                         X                   X 
+             |T | = x1 +       2vi = 2 x1 +       vi − x1 ≥ 2nr − x
+                            i∈I                           i∈I
+                                                ∗
+                  = 2nr − (nr + k − D (H)) = D∗ (G) − k + 1.
+Hence, s≤D∗ (G)−k (G) ≥ |S| + 1 = D∗ (G) + k and the first assertion is proved.
+The second assertion follows immediately from the first.
+8                           K. ZHAO AND S. A. HONG
+
+
+   3. Proof of Theorem 1.1. In this section, we prove Theorem 1.1. In
+the proof, we use a technique from [28].
+    Lemma 3.1 ([22]). Let G be a finite abelian group and S be a minimal
+zero-sum sequence over G of length D(G). Then Σ(S) = G.
+   Lemma 3.2 ([22]). Let G be a cyclic group of order n and S be a sequence
+over G of length n. If S is minimal zero-sum, then S = g n , where g is a
+generator of G.
+    By the above we can easily see that the following result holds.
+   Corollary 3.3. Let G be a cyclic group of order n and S be a sequence
+over G of length ≥ n. If every zero-sum subsequence of S has length ≥ n,
+then S = g |S| , where g is a generator of G.
+   Let G be a finite abelian group and let A be a finite nonempty subset
+of G. The stabilizer of A is defined by Stab(A) = {g ∈ G : g + A = A}.
+    Lemma 3.4 ([22]). Let G be a finite abelian group, and let A and B be
+finite nonempty subsets of G. If B ⊂ Stab(A), then ⟨B⟩ is a subgroup of
+Stab(A).
+    Furthermore, the following statements are equivalent:
+(a) B ⊂ Stab(A).
+(b) A = A + B.
+(c) A = (g1 + ⟨B⟩) ∪ · · · ∪ (gr + ⟨B⟩) for some r ∈ N and g1 , . . . , gr ∈ A.
+    Lemma 3.5. Let G be a finite abelian group with r(G) ≥ 2 and suppose G
+is not isomorphic to C2 ⊕ C2m for any m ≥ 2. Let S be a sequence over G of
+length D(G) + 1. If every zero-sum subsequence of S has length ≥ D(G) − 1,
+then the rank of ⟨supp(S)⟩ is at least 2.
+    Proof. Assume to the contrary that the rank of ⟨supp(S)⟩ is 1. Thus
+⟨supp(S)⟩ ∼= Cn . Since r(G) ≥ 2, ⟨supp(S)⟩ is a proper subgroup of G, which
+implies that D(G) ≥ n + 1. It follows that every zero-sum subsequence of S
+has length ≥ D(G) − 1 ≥ n. By Corollary 3.3 we have S = g D(G)+1 , where
+g is a generator of ⟨supp(S)⟩. Obviously, S has a zero-sum subsequence of
+length n. Hence, n ≥ D(G) − 1 ≥ n, i.e., D(G) = n + 1. By a simple analysis,
+we must have G ∼ = C2 ⊕ Cn with 2 | n, where Cn = ⟨supp(S)⟩ = ⟨g⟩, contrary
+to assumption.
+   Lemma 3.6. Let G be a finite abelian group with r(G) ≥ 2 and suppose
+G is not isomorphic to C2 ⊕ C2m for any m ≥ 2. Let S = T g 2 be a sequence
+over G of length D(G) + 1, where T is a zero-sum subsequence of length
+D(G) − 1. Then S has a zero-sum subsequence of length at most D(G) − 2.
+   Proof. Assume to the contrary that every zero-sum subsequence of S
+has length ≥ D(G) − 1. For any g1 | S with g1 ̸∈ {g, 2g}, we have σ(Sg1−1 ) =
+     ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                       9
+
+
+σ(T ) + 2g − g1 = 2g − g1 ̸= 0. Since |Sg1−1 | = |S| − 1 = D(G) and every zero-
+sum subsequence of Sg1−1 has length ≥ D(G)−1, every zero-sum subsequence
+of Sg1−1 must have length D(G) − 1. It follows that Sg1−1 has an element
+σ(Sg1−1 ) = 2g − g1 . Hence g1 (2g − g1 ) | S.
+   We claim that every zero-sum subsequence of S ′ := S(g1 (2g − g1 ))−1 g 2
+has length ≥ D(G) − 1 for any g1 | S with g1 ̸∈ {g, 2g}. As g1 ̸∈ {g, 2g}, we
+know that g1 and 2g − g1 are not equal to g. Hence,
+                S ′ = S(g1 (2g − g1 ))−1 g 2 = T (g1 (2g − g1 ))−1 g 4 .
+It follows that every zero-sum subsequence T ′ of S ′ has the form T ′ = T1′ g x
+with T1′ | T (g1 (2g − g1 ))−1 and x ≤ 4. If x ≤ 2, then T ′ | S, which implies
+that |T ′ | ≥ D(G) − 1. If x = 3 or 4, then T ′ = T1′ g x = (T1′ g 2 )g x−2 with 1 ≤
+x−2 ≤ 2 and σ(T1′ g 2 ) = σ(T1′ g1 (2g −g1 )). Obviously, T1′ g1 (2g −g1 )g x−2 | T g 2
+and σ(T1′ g1 (2g − g1 )g x−2 ) = σ(T ′ ) = 0. Hence
+            |T1′ g1 (2g − g1 )g x−2 | = |(T1′ g 2 )g x−2 | = |T ′ | ≥ D(G) − 1.
+     For any g1 | S with g1 ̸∈ {g, 2g}, we may repeat the replacement procedure
+S(g1 (2g − g1 ))−1 g 2 . Finally, we can obtain a sequence S1 = g a (2g)b with
+|S1 | = |S| = D(G) + 1 such that every zero-sum subsequence of S1 has
+length ≥ D(G) − 1. Obviously, r(⟨S1 ⟩) = 1, contradicting Lemma 3.5.
+    Lemma 3.7. Let G be a finite abelian group with r(G) ≥ 3. Let S =
+T g1 g2 g3 be a sequence over G of length D(G)+2, where g1 , g2 , g3 are pairwise
+distinct and T is a zero-sum subsequence of length D(G) − 1. If every zero-
+sum subsequence of S has length ≥ D(G) − 1, then S must have each of the
+following forms:
+                           ℓ
+                           Y
+(3.1)               S=           ai (g1 + g2 − ai )(g1 + g2 )σ g1 g2 g3
+                           i=1
+                           Yℓ
+                       =         bi (g1 + g3 − bi )(g1 + g3 )σ g1 g2 g3
+                           i=1
+                           Yℓ
+                       =         ci (g2 + g3 − ci )(g2 + g3 )σ g1 g2 g3 ,
+                           i=1
+
+with all elements of S pairwise distinct, σ = 0 or 1, ℓ = D(G)−1−σ
+                                                              2    and
+gj + gk ̸∈ {gi , 2gi } for {i, j, k} = {1, 2, 3}.
+   Proof. Since r(G) ≥ 3, G is not isomorphic to C2 ⊕ C2m for any m ≥ 2.
+By the assumption , it is also easy to see that T is minimal zero-sum.
+    Claim 1. Let i, j ∈ {1, 2, 3} and i ̸= j. For any g | T with g ̸∈ {gi , gj ,
+gi + gj } we have g(gi + gj − g) | T and g ̸= gi + gj − g.
+10                              K. ZHAO AND S. A. HONG
+
+
+   Obviously, every zero-sum subsequence of T g −1 gi gj has length ≥ D(G)
+− 1, |T g −1 gi gj | = D(G) and σ(T g −1 gi gj ) = gi + gj − g ̸= 0. Thus every
+zero-sum subsequence of T g −1 gi gj must have length D(G) − 1, which implies
+that σ(T g −1 gi gj ) = gi + gj − g | T g −1 gi gj . Since g ̸∈ {gi , gj , gi + gj }, we see
+that gi + gj − g ̸∈ {gi , gj }. Hence, gi + gj − g | T g −1 , i.e., g(gi + gj − g) | T .
+   If g = gi + gj − g, then
+             S = T g1 g2 g3 = T1 g(gi + gj − g)g1 g2 g3 = (T1 gi gj g 2 )gk ,
+where {i, j, k} = {1, 2, 3}. Obviously, T1 gi gj is a zero-sum subsequence of S
+of length D(G) − 1 and every zero-sum subsequence of T1 gi gj g 2 has length
+≥ D(G) − 1. By Lemma 3.6 this is impossible and the claim is proved.
+     Claim 2. gj + gk ̸∈ {gi , 2gi } for {i, j, k} = {1, 2, 3}.
+    Without loss of generality, we can let i = 1, j = 2 and k = 3. If 2g1 =
+g2 + g3 , then consider the sequence T g12 . Note that T is minimal zero-sum.
+Thus any zero-sum subsequence T ′ of T g12 has one of the following forms:
+(1) T ; (2) T1 g1 , where T1 | T with σ(T1 ) = −g1 ; (3) T2 g12 , where T2 | T with
+σ(T2 ) = −2g1 . If (1) holds, then |T ′ | = |T | = D(G) − 1. If (2) holds, then
+obviously T1 g1 | S, which implies that |T ′ | = |T1 g1 | ≥ D(G) − 1. If (3) holds,
+then 2g1 = g2 + g3 implies that σ(T2 g12 ) = σ(T2 g2 g3 ) = 0, and T2 g2 g3 is a
+zero-sum subsequence of S of length ≥ D(G) − 1, whence |T ′ | = |T2 g12 | =
+|T2 g2 g3 | ≥ D(G) − 1. Hence, every zero-sum subsequence of T g12 has length
+≥ D(G) − 1. This is impossible by Lemma 3.6.
+    If g1 = g2 + g3 and there exists some g | T with g ̸∈ {g1 , g2 , g3 }, then by
+Claim 1 we know that g(g2 + g3 − g) | T and
+                  S = T g1 g2 g3 = g(g2 + g3 − g)T ′ g2 g3 (g2 + g3 )
+with σ(T ′ ) = −g2 − g3 . Thus T ′ (g2 + g3 ) is a zero-sum subsequence of S of
+length |T | − 1 = D(G) − 2 < D(G) − 1, a contradiction.
+     If g1 = g2 + g3 and supp(T ) = {g1 , g2 , g3 }, then set T = g1a−1 g2b−1 g3c−1
+with a, b, c being positive integers, so that S = g1a g2b g3c . If a − 1 > 0, then as
+g1 = g2 + g3 we find that T g1−1 g2 g3 is a zero-sum subsequence of S of length
+|T | + 1 = D(G). Obviously, T g1−1 g2 g3 is minimal zero-sum, since otherwise
+T g1−1 g2 g3 has a nontrivial zero-sum subsequence of length < D(G) − 1. By
+Lemma 3.1, Σ(T g1−1 g2 g3 ) = G, whence r(⟨supp(S)⟩) = r(G) ≥ 3. This is
+impossible since r(⟨supp(S)⟩) = r(⟨g1 , g2 , g3 ⟩) = r(⟨g2 + g3 , g2 , g3 ⟩) ≤ 2. If
+b − 1 > 0 and c − 1 > 0, then T (g2 g3 )−1 g1 is a zero-sum subsequence of S of
+length |T | − 1 = D(G) − 2 < D(G) − 1, a contradiction. If either a − 1 = 0,
+b − 1 = 0 or a − 1 = 0, c − 1 = 0, then T = g2b−1 or g3c−1 is minimal zero-sum
+of length D(G) − 1. Thus D(G) − 1 = ord(g2 ) or ord(g3 ). It follows that G
+must be isomorphic to C2 ⊕ C2m for some positive integer m and C2m ∼           = ⟨g2 ⟩
+or ⟨g3 ⟩. This contradicts r(G) ≥ 3 and the claim is proved.
+     ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                        11
+
+
+    Claim 3. g1 , g2 , g3 ∤ T .
+    Assume to the contrary that there exists some i ∈ {1, 2, 3}, say i = 3,
+such that g3 | T . By Claim 2 we have g1 +g2 ̸= g3 . Since g1 , g2 , g3 are pairwise
+distinct, we see that g3 ̸∈ {g1 , g2 , g1 + g2 }. This together with Claim 1 shows
+that g3 (g1 + g2 − g3 ) | T . Thus
+    S = T g1 g2 g3 = T1 g3 (g1 + g2 − g3 )g1 g2 g3 = (T1 g1 g2 g32 )(g1 + g2 − g3 )
+with σ(T1 ) = −g1 − g2 . It follows that T1 g1 g2 is a zero-sum subsequence of S
+of length D(G) − 1 and every zero-sum subsequence of T1 g1 g2 g32 has length
+≥ D(G) − 1. By Lemma 3.6 this is impossible and we obtain the result.
+    Claim 4. For any g | T , we have vg (T ) = 1.
+   Assume to the contrary that there exists some g | T with vg (T ) ≥ 2. By
+Claim 3 we know that g ̸∈ {g1 , g2 , g3 }. If g ̸= g1 +g2 , then g ̸∈ {g1 , g2 , g1 +g2 }
+and Claim 1 implies that g(g1 + g2 − g) | T and g ̸= g1 + g2 − g. Thus
+     S = T g1 g2 g3 = g(g1 + g2 − g)T ′ g1 g2 g3 = (T ′ g1 g2 )g(g1 + g2 − g)g3
+with g | T ′ and σ(T ′ ) = −g1 −g2 . Obviously, T ′ g1 g2 is a zero-sum subsequence
+of S of length D(G) − 1. By Lemma 3.6, g, g1 + g2 − g, g3 must be pairwise
+distinct, since otherwise S has a subsequence of the form (T ′ g1 g2 )gx2 and
+(T ′ g1 g2 )gx2 has a zero-sum subsequence with length at most D(G) − 2. By
+Claim 3 we have g ∤ T ′ g1 g2 , which contradicts g | T ′ . Hence, vg (T ) = 1
+for any g | T with g ̸= g1 + g2 . Similarly, vg (T ) = 1 for any g | T with
+g ̸∈ {g1 + g3 , g2 + g3 }. Since g1 , g2 , g3 are pairwise distinct, we find that
+g1 + g2 ̸∈ {g1 + g3 , g2 + g3 }. Hence, vg1 +g2 (T ) = 1 if g1 + g2 | T . The claim is
+proved.
+    By the above claims, we can easily see that S must have each of the
+following forms:
+                     Yℓ1
+                 S=      ai (g1 + g2 − ai )(g1 + g2 )σ1 g1 g2 g3
+                           i=1
+                           ℓ2
+                           Y
+                       =         bi (g1 + g3 − bi )(g1 + g3 )σ2 g1 g2 g3
+                           i=1
+                           ℓ3
+                           Y
+                       =         ci (g2 + g3 − ci )(g2 + g3 )σ3 g1 g2 g3 ,
+                           i=1
+
+with all elements of S pairwise distinct, and each σi being 0 or 1. Since
+|S| = 2ℓ1 + σ1 + 3 = 2ℓ2 + σ2 + 3 = 2ℓ3 + σ3 + 3 = D(G) + 2 and σi = 0 or 1,
+one can easily see that σ := σ1 = σ2 = σ3 = 0 or 1 and ℓ := ℓ1 = ℓ2 = ℓ3 =
+D(G)−1−σ
+    2     . Thus Lemma 3.7 is proved.
+12                            K. ZHAO AND S. A. HONG
+
+
+    Lemma 3.8. Let G be a finite abelian group. Then D(G) − 2 < exp(G)
+if and only if either G is cyclic or G is isomorphic to C2 ⊕ C2m for some
+positive integer m.
+   Proof. Set G = Cn1 ⊕ Cn2 ⊕ · · · ⊕ Cnr with 1 < n1 | n2 | · · · | nr . If
+D(G) − 2 < exp(G), then since D(G) ≥ D∗ (G), we have
+                                          r−1
+                                          X
+                                        ∗
+                  nr + 1 ≥ D(G) ≥ D (G) =     (ni − 1) + nr .
+                                                  i=1
+                 Pr−1
+It follows that i=1 (ni − 1) ≤ 1, i.e., either r = 1 or r = 2, n1 = 2. Hence,
+either G is cyclic or G is isomorphic to C2 ⊕ C2m for some positive integer m.
+By Lemma 2.7(a), the converse is obvious.
+    Proof of Theorem 1.1. If r(G) = 2, then by Lemmas 3.8 and 2.3(iv) we
+are done. Hence we can suppose that r(G) ≥ 3.
+     Claim 1. D(G) ≥ 6 and ord(g) ≤ D(G) − 2 for any g ∈ G.
+   Since D(G) − 2 ≥ exp(G) ≥ 2, we have D(G) ≥ 4. If D(G) = 4, then
+exp(G) = 2 and G ∼  = C23 , a contradiction. If D(G) = 5, then by a simple
+analysis, we find that either r(G) ≤ 2 or G ∼ = C24 , a contradiction. Hence,
+D(G) ≥ 6. If there exists some g ∈ G such that ord(g) ≥ D(G) − 1, then
+D(G) − 1 ≤ exp(G) ≤ D(G) − 2, a contradiction. The claim is proved.
+   Let S be a sequence over G of length D(G) + 2. It suffices to prove
+that S has a zero-sum subsequence of length ≤ D(G) − 2. Assume to the
+contrary that every zero-sum subsequence of S has length ≥ D(G) − 1. Since
+s≤D(G)−1 (G) = D(G) + 1 < |S|, S has a zero-sum subsequence T of length
+D(G) − 1. Thus we can set
+                                    S = T g1 g2 g3 ,
+where T is a minimal zero-sum subsequence of S of length D(G) − 1. By
+Lemma 3.6, g1 , g2 , g3 are pairwise distinct. It follows from Lemma 3.7 that S
+must have the form (3.1) with σ = 0 or 1 and |S| = 2ℓ+σ+3 = D(G)+2 ≥ 8,
+which implies that ℓ ≥ 2.
+     Claim 2. σ = 0.
+    Assume to the contrary that σ = 1. Since g1 , g2 , g3 are pairwise distinct,
+g1 + g2 , g1 + g3 , g2 + g3 are pairwise distinct elements in S. By (3.1) we can
+suppose that g1 + g3 = a1 , g2 + g3 = b1 , g1 + g2 = c1 , which implies that
+T contains g1 + g2 − a1 = g2 − g3 , g1 + g3 − b1 = g1 − g2 , g2 + g3 − c1 =
+g3 − g1 . By Lemma 3.7 we have gj + gk ̸= 2gi for {i, j, k} = {1, 2, 3}. Thus
+g1 − g2 , g2 − g3 , g3 − g1 are pairwise distinct. Hence, (g1 − g2 )(g2 − g3 )(g3 − g1 )
+is a zero-sum subsequence of S of length 3 ≤ D(G) − 2, a contradiction.
+    ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                       13
+
+
+   Since σ = 0, by (3.1) all elements of T are pairwise distinct, and T can
+be viewed as a subset of G.
+   Claim 3. T has the form
+                t
+                [                                        s
+                                                         [
+          T =         {vx + g1 + H, −vx + g1 + H} ∪           (ey + g1 + H),
+                x=1                                     y=1
+
+where H = ⟨g1 − g2 , g1 − g3 ⟩ is a subgroup of Stab(T ), 2vx ̸∈ H and ey ∈ G
+with ord(ey ) ≤ 2. In particular, if s > 0, then H is of even order.
+   Since gj + gk − g ∈ T and g ̸= gj + gk − g for any g ∈ T and j, k ∈ {1, 2, 3}
+with j ̸= k, we have
+                        {g1 + g2 , g1 + g3 , g2 + g3 } − T = T.
+It follows that
+       T = {g1 + g2 , g1 + g3 , g2 + g3 } − T
+         = {g1 + g2 , g1 + g3 , g2 + g3 } − ({g1 + g2 , g1 + g3 , g2 + g3 } − T )
+         = {gi − gj : i, j ∈ {1, 2, 3}} + T.
+Thus
+         Stab(T ) ⊇ ⟨gi − gj : i, j ∈ {1, 2, 3}⟩ = ⟨g1 − g2 , g1 − g3 ⟩ = H.
+By Lemma 3.4, there exist some t′ ∈ N and w1 , . . . , wt′ ∈ T − g1 such that
+                                          t′
+                                          [
+                          T =T +H =            (wi + g1 + H).
+                                         i=1
+Note that g1 + H = g2 + H = g3 + H. For any h ∈ H, i ∈ [1, t′ ] and
+j, k ∈ {1, 2, 3} with j ̸= k, we have
+gj + gk − (wi + g1 + h) = −wi + gj + (gk − g1 − h)
+             ∈ −wi + gj + (gk − g1 + H) = −wi + gj + H = −wi + g1 + H.
+Note that gj + gk − g ∈ T for any g ∈ T and j, k ∈ {1, 2, 3} with j ̸= k.
+Hence, we can set
+                t
+                [                                       s
+                                                        [
+          T =         {vx + g1 + H, −vx + g1 + H} ∪           (uy + g1 + H),
+                x=1                                     y=1
+
+where 2vx ̸∈ H and 2uy is in H. Since each 2uy is in H, there must exist some
+ey ∈ G of order ≤ 2 such that uy + H = ey + H and we obtain the structure
+of T . Since H = ⟨g1 − g2 , g1 − g3 ⟩, we find that gj + gk − (ey + g1 + h) ∈
+ey + g1 + H for any h ∈ H and j, k ∈ {1, 2, 3} with j ̸= k. Note that
+ey + g1 + h ̸= gj + gk − (ey + g1 + h). Thus |H| is even and the claim is
+proved.
+14                              K. ZHAO AND S. A. HONG
+
+
+    Denote by H1 the set of elements of order ≤ 2 in H. Thus there exists
+A ⊂ H such that H = H1 ⊎ A ⊎ (−A), where H1 , A and −A are pairwise
+disjoint sets. Since T is minimal zero-sum of length D(G) − 1, by Claim 3
+we have
+                        |T | = 2t|H| + s|H| = D(G) − 1
+and
+             Yt Y
+      T ′ :=        ((vx + g1 + h) + (−vx + g1 − h))
+              x=1 h∈H
+              Ys Y                                             s X
+                                                               Y
+          ·             ((ey + g1 + h) + (ey + g1 − h))                  (ey + g1 + h)
+              y=1 h∈A                                         y=1 h∈H1
+                              s X
+                              Y
+         = (2g1 )t|H|+s|A|               (ey + g1 + h)
+                              y=1 h∈H1
+is minimal zero-sum. Since H = ⟨g1 − g2 , g1 − g3 ⟩, we have r(H) ≤ 2. This
+together with |H| even (if s > 0) shows that H1 ∼ = C2 or C22 if s > 0. Hence,
+               
+                       t|H|
+               (2g1 )
+                                           if s = 0,
+(3.2)      ′
+         T = (2g1 )    t|H|+s|A| (2g1 + e)s if s > 0 and H1 = ⟨e⟩ ∼ = C2 ,
+                                            if s > 0 and H1 ∼
+                      t|H|+s|A|       s                          2
+                 (2g1 )          (4g1 )                     = C2 ,
+               
+
+is minimal zero-sum.
+   Claim 4. If t|H| + s|A| > 0, then ord(g1 ) = ord(2g1 ) = D(G)−1     2   is
+                      D(G)−1                        ′
+odd, and for any i ∈ 1, 2        , there exists L | T of length ≤ i such that
+σ(L) = i(2g1 ).
+                                            |H|−|H1 |
+   If H1 = ⟨e⟩ ∼= C2 and 2 ∤ s, then |A| =            = |H|−2 and
+                                                         2          2
+      σ(T ′ ) = (t|H| + s|A| + s)(2g1 ) + e = (t + s/2)|H|(2g1 ) + e = 0,
+whence e = (t + s/2)|H|(2g1 ). Since 2t|H| + s|H| = D(G) − 1, we have 2e =
+(2t|H| + s|H|)(2g1 ) = (D(G) − 1)(2g1 ), which implies that ord(2g1 ) | (D(G)
+− 1). Since T ′ = (2g1 )t|H|+s|A| (2g1 + e)s is minimal zero-sum, the sequence
+                                                             s|H|
+          (2g1 )t|H|+s|A| (2g1 + e)s−1 = (2g1 )t|H|+ 2 −s (2g1 + e)s−1
+is zero-sum free. Since t|H| + s|A| > 0 and 2t|H| + s|H| = D(G) − 1, we have
+                  Σ(T ′ ) ⊃ {i(2g1 ) : i ∈ [1, t|H| + s|H|/2 − 1]}
+                                                        
+                                                 D(G) − 3
+                          = i(2g1 ) : i ∈ 1,                 ̸∋ 0.
+                                                    2
+It follows that ord(2g1 ) > D(G)−3
+                               2   . By Claim 1 we have ord(2g1 ) < D(G) − 1.
+Since ord(2g1 ) | (D(G) − 1), we must have
+                                        D(G) − 1
+                            ord(2g1 ) =          .
+                                            2
+     ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                    15
+
+
+Since 0 ∈ Σ(T ′ ), it follows that
+                                                    
+                          ′                  D(G) − 1
+                    Σ(T ) ⊃ i(2g1 ) : i ∈ 1,            .
+                                                2
+From the structure (3.2) of T ′ , it is easy to see that for any i ∈ 1, D(G)−1
+                                                                                 
+                                                                              2    ,
+there exists L | T ′ of length ≤ i such that σ(L) = i(2g1 ).
+   If s = 0 or H1 = ⟨e⟩ ∼  = C2 with 2 | s or H1 ∼= C22 , then it follows from (3.2)
+that the sequence
+          
+                    t|H|+s|A|
+          (2g1 )
+          
+                                     s
+                                       if s = 0,
+     ′′
+   T := (2g1 )      t|H|+s|A| (4g1 ) 2 if s > 0 and H1 = ⟨e⟩ ∼ = C2 with 2 | s,
+                                                         ∼
+                   t|H|+s|A|       s                        2
+             (2g1 )           (4g1 )   if s > 0 and H1 = C2 ,
+          
+
+is minimal zero-sum. Since t|H| + s|A| > 0 and 2t|H| + s|H| = D(G) − 1, by
+a simple calculation we find that
+                                                        
+                   ′       ′′                   D(G) − 1
+              Σ(T ) ⊃ Σ(T ) = i(2g1 ) : i ∈ 1,               .
+                                                    2
+This together with the minimality of T ′′ yields
+                                      D(G) − 1
+                          ord(2g1 ) =            .
+                                           2
+From the structure (3.2) of T ′ , it is easy to see that for any i ∈ 1, D(G)−1
+                                                                              
+                                                                           2    ,
+                  ′
+there exists L | T of length ≤ i such that σ(L) = i(2g1 ).
+   Since ord(2g1 ) = D(G)−1
+                         2   | ord(g1 ) and ord(g1 ) < D(G) − 1 (by Claim 1),
+we must have ord(g1 ) = ord(2g1 ) = D(G)−1  2    . It follows that D(G)−1
+                                                                      2   is odd
+and we obtain the result.
+   In the following, we will distinguish two cases to complete our proof.
+    Case 1: t|H| + s|A| > 0. Since t|H| + s|A| > 0, Claim 4 implies
+that ord(g1 ) = ord(2g1 ) = D(G)−12    is odd, and there exists L | T ′ of length
+≤ D(G)−3
+      4     such that σ(L) = D(G)−3
+                                  4   (2g1 ). Since any element of T ′ is the sum
+of at most four elements in T , there must exist a subsequence T1 | T of length
+≤ D(G)−3
+      4    × 4 = D(G) − 3 such that σ(T1 ) = D(G)−3 4    (2g1 ). Since S = T g1 g2 g3
+                 D(G)−1                             D(G)−3
+and ord(g1 ) =      2   , we find that σ(T1 g1 ) =     4    (2g1 ) + g1 = 0. Hence,
+T1 g1 is a zero-sum subsequence of S with |T1 g1 | ≤ D(G) − 3 + 1 < D(G) − 1,
+a contradiction.
+    Case 2: t|H| + s|A| = 0. Since t|H| + s|A| = 0 and 2t|H| + s|H| =
+D(G) − 1, we must have s > 0 and t = |A| = 0, which implies that H = H1
+and 2t|H| + s|H| = s|H1 | = D(G) − 1. If H1 = ⟨e⟩ ∼         = C2 , then H = H1 =
+⟨g1 − g2 , g1 − g3 ⟩ = ⟨e⟩. Since g1 , g2 , g3 are pairwise distinct, it follows that
+g1 − g2 , g1 − g3 are both distinct and nonzero. This is impossible. Hence H =
+16                                K. ZHAO AND S. A. HONG
+
+
+                                                                       D(G)−1
+H1 ∼            D(G)−1 D(G)−1
+   = C22 and s = |H1 |    4   . It follows from (3.2) that T ′ = (4g1 ) 4
+is minimal zero-sum. Thus ord(4g1 ) = D(G)−1
+                                         4   = s, and by Claim 3, we have
+                                         s
+                                         [
+                                   T =         (ey + g1 + H).
+                                         y=1
+It is easy to see that
+                                  D(G) − 1
+                             ord(4g1 ) =     = s is odd,
+                                       4
+since otherwise ord(g1 ) = 2ord(2g1 ) = 4ord(4g1 ) = D(G)−1, a contradiction
+to Claim 4. Since H = ⟨g1 − g2 , g1 − g3 ⟩ ∼
+                                           = C22 , and g1 − g2 , g1 − g3 are both
+distinct and nonzero, we see that e1 := g1 − g2 and e2 := g1 − g3 are of
+order 2 and constitute a basis of H. Combining the structures of T yields
+       S = g1 g2 g3 T
+         = g1 (g1 + e1 )(g1 + e2 )
+             Ys
+           ·    (ey + g1 )(ey + g1 + e1 )(ey + g1 + e2 )(ey + g1 + e1 + e2 )
+              y=1
+
+with s = D(G)−1
+             4  ≥ 2 odd (since D(G) ≥ 6). Since ord(4g1 ) = D(G)−1
+                                                               4   | ord(g1 )
+and ord(g1 ) < D(G) − 1 (by Claim 1), we have
+                                         D(G) − 1    D(G) − 1
+                            ord(g1 ) =            or          .
+                                            4           2
+   If ord(g1 ) = D(G)−1
+                    2   , then since s ≥ 2 is odd, we have 0 ≤ s−3
+                                                                2 < s−1
+and
+     (g1 + e1 )(g1 + e2 )(es + g1 )(es + g1 + e1 )(es−1 + g1 )(es−1 + g1 + e2 )
+                   s−3
+                   2
+                   Y
+               ·         (ey + g1 )(ey + g1 + e1 )(ey + g1 + e2 )(ey + g1 + e1 + e2 )
+                   y=1
+
+is a zero-sum subsequence of S of length 2s = D(G)−1
+                                                 2   < D(G) − 1. This is a
+contradiction.
+    If ord(g1 ) = D(G)−1
+                     4   and s = D(G)−1
+                                    4   ≡ 1 mod 4, then s ≥ 5 and
+     g1 (g1 + e1 )(g1 + e2 )(es + g1 + e1 )(es + g1 + e2 )
+                   s−5
+                   4
+                   Y
+               ·         (ey + g1 )(ey + g1 + e1 )(ey + g1 + e2 )(ey + g1 + e1 + e2 )
+                   y=1
+
+is a zero-sum subsequence of S of length s = D(G)−1
+                                                4   < D(G) − 1. This is a
+contradiction.
+    ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                         17
+
+
+   If ord(g1 ) = D(G)−1
+                    4   and s = D(G)−1
+                                   4   ≡ 3 mod 4, then s ≥ 3 and
+   (g1 + e1 )(es + g1 )(es + g1 + e1 )
+                 s−3
+                 4
+                 Y
+             ·         (ey + g1 )(ey + g1 + e1 )(ey + g1 + e2 )(ey + g1 + e1 + e2 )
+                 y=1
+
+is a zero-sum subsequence of S of length s = D(G)−1
+                                                 4    < D(G) − 1. This is a
+contradiction which completes the proof of the first assertion.
+    The second assertion immediately follows from the first assertion and
+Lemma 2.9.
+
+   4. The upper bound of s≤k (G). In this section, to obtain our upper
+bound, we first study the problem of when there exists a nontrivial zero-
+sum subsequence of length bounded by k for zero-sum sequences over finite
+abelian p-groups. For this problem, one can also see [9, 32].
+   We will use the following lemmas repeatedly.
+    Lemma 4.1 (Lucas’ Theorem, [31]; see also [7] and [23, p. 271]). Let a, b
+be positive integers with a = an pn +· · ·+a1 p+a0 and b = bn pn +· · ·+b1 p+b0
+being the p-adic expansions, where p is a prime. Then
+                                           
+                      a       an    an−1         a0
+                          ≡                 ···     mod p.
+                      b       bn     bn−1        b0
+   For any k ∈ N0 , g ∈ G, and a sequence S over G, we denote by
+                         n              X                 o
+               Nkg (S) = I ⊂ [1, |S|] :   gi = g, |I| = k
+                                               i∈I
+the number of subsequences T of S having sum σ(T ) = g and length |T | = k
+(counted with the multiplicity of their appearance in S). Denote by N+     g (S)
+(resp. N−g (S)) the number  of subsequences   T of S of even (resp. odd) length
+having sum σ(T ) = g (each counted with the multiplicity of its appearance
+in S). If g = 0, we also write Nk0 (S) as Nk (S).
+    Lemma 4.2 ([22, Proposition 5.5.8]). Let p be a prime, let G be an abelian
+p-group, and let S = g1 · . . . · gℓ ∈ F (G). If ℓ ≥ D(G), then N+    g (S) ≡
+  −                                          +         −
+Ng (S) mod p for all g ∈ G. In particular, N0 (S) ≡ N0 (S) mod p.
+   Lemma 4.3. Let x be an integer and c, k, u1 , u2 , λ be positive integers. Let
+                                                     
+                1+x        1       1     ···      1
+              c+u1  c+u2  c+k                 c 
+                                                    
+              1           1       1     ···      1 
+        A= .             ..      ..     ..      ..               .
+              .  .         .       .      .       . 
+                                                      
+                c+u1
+                      c+u2  c+k                c
+                                                    
+                  λ        λ       λ     ···      λ     (λ+1)×(k+3)
+18                            K. ZHAO AND S. A. HONG
+
+
+Then by some row transformations, A can be transferred to the form
+                                                               
+                   u1           0x × c      u2
+                                               k          0
+                         + (−1)                        · ·  ·
+               u01            1x × c
+                                      0    0
+                                            u2
+                                                  0
+                                                  k
+                                                              0
+                                                              0 
+              
+                   1   + (−1)       1    1    1   · ·  · 1 
+                                                                  
+               u                    c+1    u2    k           0 
+         A′ =  21 + (−1)2 x × 2            2     2    ···    2 .
+                            .
+                             ..              .
+                                             ..   .
+                                                  ..     .
+                                                         ..   .. 
+              
+                                                              . 
+                u1           λ      λ+c−1   u2    k           0
+                                                            
+                λ + (−1) x ×          λ     λ     λ    ···    λ
+
+   Proof. We make some row transformations       of A (executed from top to
+bottom each time by using ni − n−1            n−1
+                                      
+                                  i−1     =    i ). It is easy to see that
+                  c+u1 −1
+                              + x c+u02 −1
+                                               c+k−1           c−1
+                                                                      
+                       0                            0      ···    0
+                        c+u1         c+u2          c+k            c 
+                                                                 
+                                                           ···
+                 
+                         1             1           1             1    
+      A = A0,0 =         .             .           .       .     .    .
+                 
+                         ..            ..          ..      ..    ..  
+                        c+u1         c+u2          c+k            c
+                                                                 
+                          λ            λ            λ      ···    λ
+Multiplying the first row of A0,0 by −1 and then adding it to the second row
+of A0,0 yields
+                  c+u1 −1
+                              + x c+u02 −1
+                                             c+k−1        c−1
+                                                                 
+                       0                        0    ···     0
+                  c+u1 −1
+                              − x c+u12 −1
+                                             c+k−1        c−1 
+                                                                 
+                      1                        1    ···     1     
+          A0,1 =         ..           ..       ..    ..      ..  .
+                           .            .        .     .       . 
+                 
+                 
+                        c+u1         c+u2      c+k            c
+                                                             
+                          λ            λ        λ    ···     λ
+
+Repeat this process λ − 1 times, i.e., for 1 ≤ i ≤ λ − 1 multiply the (i + 1)th
+row of A0,i by −1 and then add it to the (i + 2)th row of A0,i . It follows that
+                                                                             
+              c+u1 −1                 c+u2 −1
+                              0x
+                                                c+k−1                c−1
+                         + (−1)                               · ·  ·
+            c+u01 −1         1x
+                                           0
+                                      c+u2 −1
+                                                c+k−10                  0 
+                                                                       c−1 
+           
+                1       + (−1)            1          1       · ·  ·      1 
+                                                                                
+            c+u1 −1 + (−1)2 x c+u2 −1 c+k−1 · · ·                  c−1 
+   A0,λ =       2                         2          2                   2 
+                       .
+                        ..                 .
+                                           ..          .
+                                                       ..       .
+                                                                ..        .. 
+           
+                                                                          .   
+              c+u1 −1          λ      c+u2 −1       c+k−1              c−1
+                                                                           
+                λ        + (−1) x         λ           λ       ···         λ
+                                                                                    
+              c+u1 −2           0      1      c+u2 −2      c+k−2                 c−2
+                                                                  
+                         + (−1)   x ×                                  · ·  ·
+            c+u01 −1          1x × 1
+                                       0        0
+                                              c+u2 −1
+                                                       c+k−10                   0 
+                                                                                 c−1 
+           
+                1       + (−1)        1         1           1         · ·  ·     1 
+                                                                                       
+            c+u1 −1 + (−1)2 x × 2 c+u2 −1 c+k−1 · · ·                       c−1 
+        =       2                     2         2           2                    2 .
+                           ..                   ..          ..          ..       .. 
+           
+                            .                    .           .           .        .  
+              c+u1 −1          λ       λ      c+u2 −1      c+k−1                 c−1
+                                                                                 
+                λ        + (−1) x × λ            λ           λ         ···        λ
+Multiplying the first row of A0,λ by −1 and then adding it to the second row
+    ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                                                      19
+
+
+of A0,λ yields
+                                                                                                             
+                 c+u1 −2                            1    c+u2 −2              c+k−2                   c−2
+                          + (−1)0 x ×
+                                                                                         
+                    0                               0      0                   0              ···    0 
+                 c+u1 −2                            2    c+u2 −2              c+k−2                   c−2 
+                          + (−1)1 x ×
+                                                              
+          
+                   1                               1      1                   1              ···    1 
+                                                                                                           
+                 c+u1 −1                            2    c+u2 −1              c+k−1                   c−1 
+                          + (−1)2 x ×
+                                                               
+   A1,1 = 
+          
+                    2                               2       2                   2               ···    2 .
+                                   ..                      ..                    ..             ..    .. 
+          
+                                    .                       .                     .              .     .  
+                 c+u1 −1                                 c+u2 −1
+                               + (−1)λ x × λλ                                 c+k−1                   c−1
+                                                                                                      
+                   λ                                       λ                    λ               ···       λ
+
+Repeat this process λ − 1 times, i.e., for 1 ≤ i ≤ λ − 1 multiply the (i + 1)th
+row of A1,i by −1 and then add it to the (i + 2)th row of A1,i . It follows that
+                                                                           
+              c+u1 −2           0x × 2      c+u2 −2
+                                                  c+k−2            c−2
+                        + (−1)                                 · ·  ·
+          c+u01 −2                 0
+                                1x × 2
+                                               0
+                                            c+u2 −2
+                                                         0 
+                                                    c+k−2              0 
+                                                                       c−2 
+         
+                 1     + (−1)       1         1         1    · ·  ·   1 
+                                                                              
+          c+u1 −2 + (−1)2 x × 3          c+u2 −2
+                                                    c+k−2
+                                                               ···     c−2 
+  A1,λ =         2                  2         2         2              2 .
+                          .
+                           ..                  .
+                                               ..        .
+                                                         ..      ..      .. 
+         
+                                                                 .       .  
+             c+u1 −2          λ x × λ+1     c+u2 −2   c+k−2            c−2
+                                                                        
+               λ      +  (−1)        λ        λ          λ     · ·  ·   λ
+
+Again repeating the above row transformations l − 1 (1 ≤ l ≤ c) times, one
+obtains
+                                                                         
+               c+u1 −l           0x × l      c+u2 −l
+                                                    c+k−l         c−l
+                         + (−1)                                · ·  ·
+           c+u01 −l            1x × l
+                                       0      0
+                                             c+u2 −l
+                                                         0 
+                                                      c+k−l           0 
+                                                                      c−l 
+          
+                  1    + (−1)        1      1         1    · ·  ·  1 
+                                                                            
+           c+u1 −l + (−1)2 x × l+1          c+u2 −l
+                                                      c+k−l
+                                                               ···    c−l 
+ Al−1,λ =       2                     2       2         2             2 .
+                           .
+                            ..                  .
+                                                ..       .
+                                                         ..      .
+                                                                 ..    .. 
+          
+                                                                       .  
+            c+u1 −l            λ     λ+l−1   c+u2 −l   c+k−l          c−l
+                                                                      
+               λ      + (−1) x × λ             λ         λ     ···     λ
+
+In particular,
+                                                                                                      
+                                 u1          0   c                       u2            k              0
+                                                                                         
+                                  0  + (−1) x × 0                      0            0       ···   0
+                                u1          1   c                       u2            k              0 
+                                  1 + (−1) x × 1                                              ···
+                                                                        1            1
+                                                                                                         
+                                                                                                      1 
+                  
+                                u1         2    c+1                      u2            k              0 
+   A′ := Ac−1,λ =              2 + (−1) x ×                                                    ···   2 .
+                  
+                                                 2                       2             2
+                                              ..                        ..            ..        ..   .. 
+                  
+                                               .                         .             .         .    . 
+                               u1
+                                         + (−1)λ x × λ+c−1               u2            k              0
+                                                                                                    
+                               λ                       λ                 λ             λ        ···   λ
+
+   We now give some conditions for a zero-sum sequence T over a p-group
+G of length |T | ≥ 2k to have a zero-sum subsequence of length ≤ k − 1 .
+
+    Lemma 4.4. Let p be a prime and k be a positive integer. Let G be a
+finite abelian p-group and T be a zero-sum sequence over G of length |T | ≥
+20                              K. ZHAO AND S. A. HONG
+
+
+2k ≥ D(G) + 2. If there exists some i ∈ [1, 2k − D(G)] such that
+                                                  
+                 |T | − k         i |T | − k + i − 1
+         ai :=              + (−1)                     ̸≡ 0 mod p,
+                   k−i                    k−1
+then T has a nontrivial zero-sum subsequence of length ≤ k − 1.
+   Proof. Note that a1 = 0. Assume to the contrary that each zero-sum
+subsequence of T has length ≥ k. Since σ(T ) = 0 and |T | ≥ 2k ≥ D(G) + 2,
+T is not minimal zero-sum and each proper zero-sum subsequence of T has
+length ≤ |T | − k. Hence,
+                Ni (T ) = 0   for i ∈ [1, k − 1] ∪ [|T | − k + 1, |T | − 1].
+It follows from Lemma 4.2 that
+
+(4.1)      1 + (−1)k Nk (T ) + · · · + (−1)|T |−k N|T |−k (T ) + (−1)|T | N|T | (T )
+     = (1 + (−1)|T | ) + (−1)k Nk (T ) + · · · + (−1)|T |−k N|T |−k (T ) ≡ 0 mod p,
+and for any T1 | T with |T1 | ∈ [D(G), |T | − 1],
+             1 + (−1)k Nk (T1 ) + · · · + (−1)|T |−k N|T |−k (T1 ) ≡ 0 mod p.
+Thus for 1 ≤ t ≤ |T | − D(G),
+      X
+                1 + (−1)k Nk (T1 ) + · · · + (−1)|T |−k N|T |−k (T1 ) ≡ 0 mod p.
+                                                                     
+
+  T1 |T, |T1 |=|T |−t
+
+Analyzing the number of times each subsequence is counted, we obtain
+                                
+          |T |         k |T | − k
+(4.2)            + (−1)              Nk (T )
+         |T1 |           |T1 | − k
+                                                                  
+                                         |T |−k |T | − (|T | − k)
+                          + · · · + (−1)                             N|T |−k (T )
+                                                 |T1 | − (|T | − k)
+                                                    
+                            |T |           k |T | − k
+                        =          + (−1)                 Nk (T )
+                              t                   t
+                                                
+                                         |T |−k k
+                          + · · · + (−1)             N|T |−k (T ) ≡ 0 mod p.
+                                                 t
+Set X := (1, (−1)k Nk (T ), . . . , (−1)|T |−k N|T |−k (T ))T and
+                 |T |                     |T |−k                  k
+                                                                        
+                                    |T |
+                                                   
+                        +    (−1)                       · ·  ·
+                 0 |T |                      0 
+                                            |T |−k
+                                                                    0
+                                                                    k
+                                                        · ·  ·
+                                                                           
+                           1                  1                   1
+                                                                          
+                                                                          
+                          |T |              |T |−k                  k
+          A := 
+                
+                           2                   2        · ·  ·      2      .
+                                                                           
+                          ..                  ..         ..        ..     
+                
+                           .                   .          .         .     
+                                                                           
+                          |T |             |T |−k                 k
+                                                                         
+                      |T |−D(G)           |T |−D(G)
+                                                        · ·  · |T |−D(G)
+     ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                                                       21
+
+
+On the one hand, it can be deduced from (4.1) and (4.2) that
+                                                  AX ≡ 0 mod p.
+Since |T | ≥ 2k ≥ D(G) + 2, Lemma 4.3 implies that by some row transfor-
+mations, A can be transformed into
+                  
+  ′    A11 A12
+A =                    =
+       A21 A22
+             |T |−k
+                        0   |T | k
+                                               |T |−2k
+                                                               0
+                                                                    
+                       0
+                             + (−1) (−1)       0
+                                                                               |        0
+                                                                                                  ···      0
+                    |T |−k         1      |T | k                                    |T |−2k                0
+                                                                                                          
+ 
+                      1
+                             + (−1)  (−1)      1
+                                                                               |        1
+                                                                                                  ···      1
+                                                                                                                    
+                                                                                                                    
+                  |T |−k                                                            |T |−2k
+                           + (−1)2 (−1)|T | k+1                                                            0
+                                                                                                          
+ 
+                    2                         2
+                                                                               |        2
+                                                                                                  ···      2
+                                                                                                                    
+                                                                                                                    
+                                    ..                                                ..          ..          ..   
+ 
+                                     .                                        |        .           .           .   
+            |T |−k
+                                                                                                                   
+                                  |T |−2k
+                                            (−1)|T | |T|T|−k−1                      |T |−2k                   0
+                                                                                            
+ 
+          |T |−2k
+                         + (−1)                           |−2k
+                                                                               |    |T |−2k
+                                                                                                  ···     |T |−2k   .
+                                                                                                                    
+                                                                                                                   
+          |T |−k
+                   + (−1)|T |−2k+1 (−1)|T | |T|T  |−k                               |T |−2k                   0
+                                                                                                                
+ 
+       |T |−2k+1                               |−2k+1
+                                                                               |   |T |−2k+1
+                                                                                                  ···   |T |−2k+1 
+                                                                                                                    
+          |T |−k         |T |−2k+2      |T | |T |−k+1                                |T |−2k                  0
+                                                                                                                
+ 
+       |T |−2k+2
+                   + (−1)          (−1)      |T |−2k+2
+                                                                               |   |T |−2k+2
+                                                                                                  ···   |T |−2k+2 
+                                    ..                                                ..          ..         ..    
+                                     .                                        |        .           .          .    
+       |T |−k
+                  + (−1)|T |−D(G) (−1)|T | |T |−D(G)+k−1                            |T |−2k                  0
+                                                                                                              
+     |T |−D(G)                                 |T |−D(G)
+                                                                               |   |T |−D(G)
+                                                                                                  ···   |T |−D(G)
+
+              j   
+Since    |T |−2k+i = 0 for j < |T | − 2k + i, each element in A22 is 0. Obviously,
+
+                                                 A′ X ≡ 0 mod p.
+For the ith component of A21 , we have
+                                                             
+        |T | − k          |T |−2k+i       |T | |T | − k + i − 1
+                    + (−1)          (−1)
+     |T | − 2k + i                               |T | − 2k + i
+                                                                     
+                                 |T | − k             i |T | − k + i − 1
+                            =                 + (−1)                      = ai .
+                                  k−i                         k−1
+Thus                                                                        
+                                                           0         a1
+                                                      .           ..
+                                                       ≡  ..  mod p.
+                 (A21       A22 ) X = A21 = 
+                                                                   .
+                                             a2k−D(G)      0
+This contradicts the existence of some i ∈ [1, 2k − D(G)] such that ai ̸≡ 0
+mod p, completing the proof.
+  In the following results, we obtain some values of i such that ai ̸≡ 0
+mod p.
+    Lemma 4.5. Let p be a prime and k = c1 pt+1 + d be a positive integer
+with t ≥ 0, d ∈ [0, p − 1] and c1 ∈ [1, p − 1]. Let G be a finite abelian
+p-group and T be a zero-sum sequence over G of length |T | ≥ 2k. Suppose
+22                            K. ZHAO AND S. A. HONG
+
+
+that |T | − k = u1 pt+1 + v1 with v1 ∈ [0, pt+1 − 1], u1 ∈ [1, p − 1] and
+u1 + c1 + 1 ̸≡ 0 mod p.
+
+(1) If 2k − D(G) ≥ p + d − v, then ap+d−v ̸≡ 0 mod p.
+(2) If d = 1 and 2k − D(G) ≥ 2, then a2 ̸≡ 0 mod p.
+
+     Proof. Set v1 = u2 p + v with v ∈ [0, p − 1]. Since |T | ≥ 2k, we have
+
+                 |T | − k = u1 pt+1 + u2 p + v ≥ k = c1 pt+1 + d,
+
+which implies that
+
+(4.3)                           p − 1 ≥ u1 ≥ c1 ≥ 1.
+
+   Claim. c1u−1        + (−1)l u1c+1
+                                   
+                   1
+                                  1
+                                      ̸≡ 0 mod p for any integer l.
+   If l is odd, then
+                                                          
+    u1                l u1 + 1          u1         u1 + 1           u1
+             + (−1)              =            −              =−           ̸≡ 0 mod p,
+  c1 − 1                  c1          c1 − 1          c1            c1
+
+where uc11 ̸≡ 0 mod p since p − 1 ≥ u1 ≥ c1 ≥ 1. If l is even, then
+           
+
+                                                        
+          u1               l u1 + 1          u1            u1       u1 + 1
+                    + (−1)             =            +            ·
+        c1 − 1                 c1          c1 − 1        c1 − 1        c1
+                                                 
+                                             u1       u1 + c1 + 1
+                                       =            ·              ̸≡ 0 mod p,
+                                           c1 − 1          c1
+
+where c1u−1     ̸≡ 0 mod p because p−1 ≥ u1 ≥ c1 ≥ 1, and u1 +c       1 +1
+              
+           1
+                                                                    c1      ̸≡ 0 mod p
+because u1 + c1 + 1 ̸≡ 0 mod p and p − 1 ≥ c1 ≥ 1.
+
+   (1) Since 2k − D(G) ≥ p + d − v, by the definition of ai in Lemma 4.4 we
+have
+                                                                        
+                    |T | − k              p+d−v |T | − k + (p + d − v) − 1
+  ap+d−v =                         + (−1)
+              k − (p + d − v)                                k−1
+                   t+1                                 t+1
+                                                                          
+              u1 p      + u2 p + v          p+d−v u1 p     + u2 p + p + d − 1
+         =                           + (−1)
+                c1 pt+1 − p + v                          c1 pt+1 + d − 1
+              u1 pt + u2                       t
+                                                       
+                                     p+d−v u1 p + u2 + 1
+         ≡                   + (−1)                            mod p.
+               c1 pt − 1                         c1 pt
+The last congruence follows from Lemma 4.1 If t = 0, then u2 = 0 and by
+the Claim we have
+                                              
+                        u1          p+d−v u1 + 1
+           ap+d−v ≡           + (−1)               ̸≡ 0 mod p.
+                      c1 − 1                c1
+    ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                 23
+
+
+   Now suppose that t ≥ 1. If u2 ∈ [0, pt − 2], then
+                  u1 pt + u2                       t
+                                                         
+                                       p+d−v u1 p + u2 + 1
+        ap+d−v ≡               + (−1)
+                   c1 pt − 1                         c1 pt
+                                                           
+                     u1        u2             p+d−v u1     u2 + 1
+               ≡                      + (−1)
+                  c1 − 1 pt − 1                       c1      0
+                              
+                              u1
+               = (−1)p+d−v         ̸≡ 0 mod p (by (4.3)).
+                              c1
+If u2 = pt − 1, then
+              u1 pt + u2                      t
+                                                        
+                                   p+d−v u1 p + u2 + 1
+  ap+d−v ≡                   + (−1)
+               c1 pt − 1                        c1 pt
+                         t                                 t
+                                                          
+              (u1 + 1)p − 1            p+d−v (u1 + 1)p
+          =                      + (−1)
+                  c1 pt − 1                         c1 pt
+                      t                               
+                u1       p −1            p+d−v u1 + 1         0
+          ≡                t
+                                  + (−1)
+              c1 − 1 p − 1                          c1        0
+                                           
+                u1                     u1 + 1
+          =             + (−1)p+d−v              ̸≡ 0 mod p (by the Claim).
+              c1 − 1                     c1
+   (2) Since 2k − D(G) ≥ 2, by the definition of ai in Lemma 4.4 we have
+                                                   
+                      |T | − k         2 |T | − k + 1
+                a2 =             + (−1)
+                       k−2                   k−1
+                           t+1              t+1
+                                                       
+                      u1 p     + v1     u1 p     + v1 + 1
+                   =                 +                     .
+                       c1 pt+1 − 1            c1 pt+1
+If v1 ∈ [0, pt+1 − 2], then v1 + 1 ∈ [1, pt+1 − 1], and by Lemma 4.1,
+                           u1 pt+1 + v1         u1 pt+1 + v1 + 1
+                                                               
+                   a2 =                     +
+                            c1 pt+1 − 1               c1 pt+1
+                                                            
+                             u1          v1         u1      v1 + 1
+                      ≡                         +
+                           c1 − 1 pt − 1             c1        0
+                          
+                           u1
+                      =          ̸≡ 0 mod p,
+                           c1
+where uc11 ̸≡ 0 mod p because p − 1 ≥ u1 ≥ c1 ≥ 1. If v1 = pt+1 − 1, then
+           
+
+by Lemma 4.1 we have
+                          u1 pt+1 + v1         u1 pt+1 + v1 + 1
+                                                              
+                  a2 ≡                     +
+                           c1 pt+1 − 1               c1 pt+1
+                          (u1 + 1)pt+1 − 1           (u1 + 1)pt+1
+                                                                
+                     =                          +
+                                c1 pt − 1                c1 pt+1
+24                            K. ZHAO AND S. A. HONG
+
+                        t+1                
+                   u1     p    −1        u1 + 1 0
+             ≡                       +
+                 c1 − 1 pt+1 − 1           c1    0
+                                 
+                   u1        u1 + 1
+             =           +            ̸≡ 0 mod p (by the Claim).
+                 c1 − 1        c1
+    In the following, we will prove the upper bound s≤k (G) ≤ 2D(G) − k for
+some classes of p-groups G by using Lemmas 4.4 and 4.5. In our proofs, the
+following lemma is important.
+   Lemma 4.6. Let G be a finite abelian p-group and k ∈ [exp(G) + 1, D(G)]
+be a positive integer. Let S be a sequence over G of length 2D(G) − k + 1.
+Suppose that D(G)                    i
+                   
+                k−1 ̸≡ 0 mod p. If N (S) = 0 for i ∈ [D(G) + 1, |S|], then S
+has a nontrivial zero-sum subsequence T with |T | ≤ k − 1.
+    Proof. Assume to the contrary that each zero-sum subsequence of S has
+length ≥ k. Since Ni (S) = 0 for i ∈ [D(G) + 1, |S|], by Lemma 4.2 the
+following congruence holds for any T | S with |T | ∈ [D(G), |S|]:
+              1 + (−1)k Nk (T ) + · · · + (−1)D(G) ND(G) (T ) ≡ 0 mod p.
+Thus for 0 ≤ t ≤ |S| − D(G),
+       X
+                1 + (−1)k Nk (T ) + · · · + (−1)D(G) ND(G) (T ) ≡ 0 mod p.
+                                                               
+
+     T |S, |T |=|S|−t
+
+Analyzing the number of times each subsequence is counted, one obtains
+                               
+         |S|        k |S| − k
+(4.4)         + (−1)                Nk (S)
+         |T |            |T | − k
+                                                     
+                                   D(G) |S| − D(G)
+                   + · · · + (−1)                       ND(G) (S)
+                                          |T | − D(G)
+                                             
+                     |S|            k |S| − k
+                 =          + (−1)                Nk (S)
+                      t                     t
+                                                     
+                                   D(G) |S| − D(G)
+                   + · · · + (−1)                      ND(G) (S) ≡ 0 mod p.
+                                                t
+Set X := (1, (−1)k Nk (S), . . . , (−1)D(G) ND(G) (S))T and
+                                                    
+              |S|        |S|−k               |S|−D(G)
+                                
+               0           0        · ·  ·     0
+              |S|        |S|−k               |S|−D(G) 
+                                                    
+       
+               1            1         · ·  ·     1
+  A :=                                                                          .
+                                                      
+               ..           ..          ..       ..    
+       
+               .            .           .        .    
+                                                       
+              |S|       |S|−k              |S|−D(G)
+          |S|−D(G)     |S|−D(G)
+                                      · ·  · |S|−D(G)   (|S|−D(G)+1)(D(G)−k+2)
+
+     On the one hand, it can be deduced from (4.4) that
+                                  AX ≡ 0 mod p.
+      ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                                 25
+
+
+It follows from Lemma 4.3 that by some row transformations, A can be
+transformed into
+                                             
+              D(G)    D(G)−k              0
+                            
+                0        0     ···        0
+          D(G)      D(G)−k
+                                         0
+                                              
+         
+                1        1     · ·  ·     1
+                                                
+   A′ = 
+                                               
+                ..       ..      ..       ..    
+         
+                .        .       .        .    
+              D(G)   D(G)−k             0
+                                               
+            |S|−D(G) |S|−D(G)
+                               ···    |S|−D(G)                  (|S|−D(G)+1)(D(G)−k+2)
+
+and
+                               AX ≡ A′ X ≡ 0 mod p.
+Since |S| = 2D(G) − k + 1, we have |S| − D(G) + 1 = D(G) − k + 2. It follows
+that A′ is a square matrix and |S| − D(G) > D(G) − k. Note that ab = 0 if
+0 ≤ a < b. We have
+                                                 
+                    D(G) − k                   0
+                                = ··· =               = 0.
+                   |S| − D(G)             |S| − D(G)
+Thus
+         D(G)      D(G)−k                   0
+                                                   
+       |S|−D(G)    |S|−D(G)
+                                ···       |S|−D(G)      X
+                                                                            
+                                                 D(G)                   D(G)
+                                      =                         =                  ≡ 0 mod p.
+                                              |S| − D(G)                k−1
+                   D(G)
+This contradicts   k−1 ̸≡ 0 mod p.
+   By Lemma 4.6, we can obtain the following result.
+    Theorem 4.7. Let G be a finite abelian p-group and k = c1 pt+1 + d ∈
+[exp(G) + 1, D(G)] with d ∈ [0, p − 1], t ≥ 0 and c1 ∈ [1, p − 1]. Let S be
+a sequence over G of length 2D(G) − k + 1. Suppose that D(G)
+                                                               
+                                                           k−1 ̸≡ 0 mod p
+and 2k − D(G) ≥ p + d − v with v ∈ [0, p − 1].
+    If either
+(1) p > 2 and 2D(G) − k + 1 < (p − 1)pt+1 , or
+(2) p = 2 and 2D(G) − 2k + 1 < pt+2 ,
+then S has a nontrivial zero-sum subsequence T with |T | ≤ k − 1.
+   Proof. If Ni (S) = 0 for i ∈ [D(G) + 1, |S|], then by Lemma 4.6 we are
+done.
+   Now suppose that S has a zero-sum subsequence T of length |T | ∈
+[D(G) + 1, |S|]. If |T | < 2k, then since T is a zero-sum subsequence of S of
+length |T | ≥ D(G) + 1, by the definition of D(G) we find that T has proper
+zero-sum subsequences T1 , T T1−1 . Obviously, min{|T1 |, |T T1−1 |} ≤ k − 1, and
+we are done.
+26                           K. ZHAO AND S. A. HONG
+
+
+   Suppose that |T | ≥ 2k.
+   (1) Since p > 2 and |T | ≤ |S| = 2D(G) − k + 1 < (p − 1)pt+1 with
+k = c1 pt+1 + d, d ∈ [0, p − 1], t ≥ 0 and c1 ∈ [1, p − 1], we have
+                         |T | − k ≥ k = c1 pt+1 + d ≥ pt+1
+and
+|T | − k ≤ |S| − k < (p − 1)pt+1 − (c1 pt+1 + d) = (p − 1 − c1 )pt+1 − d < pt+2 .
+Hence, we can set |T | − k = u1 pt+1 + v1 with u1 ∈ [1, p − 1] and v1 ∈
+[0, pt+1 − 1]. Since 2k − D(G) ≥ p + d − v, by Lemmas 4.4 and 4.5(1), it
+suffices to prove that
+                           u1 + c1 + 1 ̸≡ 0 mod p.
+Since
+     |T | = |T | − k + k = u1 pt+1 + v1 + c1 pt+1 + d = (u1 + c1 )pt+1 + v1 + d
+        ≤ |S| < (p − 1)pt+1 ,
+we have u1 + c1 < p − 1, which implies that
+                                u1 + c1 + 1 ̸≡ 0 mod p
+as required.
+    (2) Since p = 2 and |T | ≤ |S| = 2D(G) − k + 1, 2D(G) − 2k + 1 < pt+2
+and k = c1 pt+1 + d with d ∈ [0, p − 1], t ≥ 0 and c1 ∈ [1, p − 1], we have
+c1 = 1,
+                        |T | − k ≥ k = 2t+1 + d ≥ 2t+1
+and
+                |T | − k ≤ |S| − k = 2D(G) − 2k + 1 < 2t+2 .
+Hence, we can set |T | − k = u1 2t+1 + v1 with u1 = 1 and v1 ∈ [0, 2t+1 − 1].
+Since 2k − D(G) ≥ p + d − v and u1 + c1 + 1 = 3 ̸≡ 0 mod 2, by Lemmas 4.4
+and 4.5(1), we get (2).
+     Similarly, we can also obtain the following result.
+   Theorem 4.8. Let G be a finite abelian p-group and k = c1 pt+1 + 1 ∈
+[exp(G) + 1, D(G)] with t ≥ 0 and c1 ∈ [1, p − 1]. Let S be a sequence over
+G of length 2D(G) − k + 1. Suppose that D(G) < pt+2 and 2k − D(G) ≥ 2.
+   If either
+(1) p > 2 and 2D(G) − k + 1 < (p − 1)pt+1 , or
+(2) p = 2 and 2D(G) − 2k + 1 < pt+2 ,
+then S has a nontrivial zero-sum subsequence T with |T | ≤ k − 1.
+   Proof. Since k = c1 pt+1 + 1 ≤ D(G) < pt+2 with c1 ≥ 1, we can set
+D(G) = apt+1 + b with p − 1 ≥ a ≥ c1 ≥ 1 and b ∈ [0, pt+1 − 1]. Thus
+                t+1              
+          D(G)       ap     +b       a    b      a
+                 =         t+1
+                                ≡           =         ̸≡ 0 mod p,
+          k−1         c1 p          c1   0       c1
+    ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                  27
+
+
+where ca1 ̸≡ 0 mod p because p − 1 ≥ a ≥ c1 ≥ 1. This together with
+           
+
+Lemma 4.6 shows that if Ni (S) = 0 for i ∈ [D(G) + 1, |S|], then we are done.
+    Now suppose that S has a zero-sum subsequence T of length |T | ∈
+[D(G) + 1, |S|]. Then by imitating the proof of Theorem 4.7 we get the
+assertion.
+
+   5. Proofs of Theorems 1.2 and 1.3
+
+     Proof of Theorem 1.2. Let S be a sequence over G of length 2D(G)−k+1.
+It suffices to prove that S has a nontrivial zero-sum subsequence T with
+|T | ≤ k − 1.
+   (1) Since c1 ≤ p−1                   t+1 ∈ [ D(G)+1 , D(G) − 1] with t ≥ 0
+                     3 and k − 1 = c1 p            2
+and c1 ∈ [1, p − 1], we have
+                                              p − 1 t+1
+    D(G) ≤ 2(k − 1) − 1 = 2c1 pt+1 − 1 ≤ 2         p    −1
+                                                3
+           2       2
+         = pt+2 − pt+1 − 1 < pt+2 ,
+           3       3
+    2k − D(G) ≥ 2k − (2k − 3) = 3 ≥ 2,
+                                                                p − 1 t+1
+    2D(G) − k + 1 ≤ 2(2k − 3) − k + 1 = 3c1 pt+1 − 2 ≤ 3             p    −2
+                                                                  3
+                     < (p − 1)pt+1 .
+By Theorem 4.8(1), we get (1).
+   (2) Since p = 2, we have c1 = 1. Since k − 1 = 2t+1 ≥ D(G)+1
+                                                            2   with t ≥ 0,
+we have
+                      D(G) + 1
+        2k − D(G) ≥ 2(          + 1) − D(G) = 3 > 2,
+                           2
+        D(G) ≤ 2(k − 1) − 1 = 2t+2 − 1 < 2t+2 ,
+        2D(G) − 2k + 1 ≤ 2(2k − 3) − 2k + 1 = 2k − 5 = 2t+2 − 3 < 2t+2 .
+By Theorem 4.8(2), we deduce (2).
+
+     Proof of Theorem 1.3. Let S be a sequence over G of length |S| =
+2D(G)−k+1. In the following, we will prove that S has a nontrivial zero-sum
+subsequence of length ≤ k − 1. If there exists some i ∈ [D(G) + 1, 2k − 1]
+such that Ni (S) ̸= 0, then S has a zero-sum subsequence T of length
+|T | ∈ [D(G) + 1, 2k − 1]. By the definition of D(G), T has proper zero-sum
+subsequences T1 , T T1−1 . Obviously, min {|T1 |, |T T1−1 |} ≤ k − 1 and we are
+done. Hence we can suppose that
+(5.1)                Ni (S) = 0   for i ∈ [D(G) + 1, 2k − 1].
+28                            K. ZHAO AND S. A. HONG
+
+
+     (1) Since D(Cp4 ) = 4p − 3 and k − 1 = 2p, by Lemma 4.1 we have
+              D(Cp4 )
+                                          
+                           4p − 3      3 p−3
+                       =            ≡              = 3 ̸≡ 0 mod p,
+               k−1           2p        2      0
+because p ≥ 5. If Ni (S) = 0 for i ∈ [D(Cp4 ) + 1, |S|] = [4p − 3, 6p − 6],
+then by Lemma 4.6 we are done. If there exists some i ∈ [D(Cp4 ) + 1, |S|] =
+[4p−3, 6p−6] such that Ni (S) ̸= 0, then since 2k = 4p+2 > D(Cp4 )+1, (5.1)
+implies that S has a zero-sum subsequence T of length |T | ∈ [4p + 2, 6p − 6].
+Thus |T | ≥ 4p + 2 = 2k and |T | − k ∈ [2p + 1, 4p − 7].
+     If 3p − 1 ̸∈ [2p + 1, 4p − 7], i.e., p = 5, then |T | − k ∈ [2p + 1, 3p − 2]. Set
+|T | − k = 2p + v1 with v1 ∈ [1, p − 2]. Thus by Lemma 4.1 we have
+                                                                       
+                |T | − k      |T | − k + 1         2p + v1        2p + v1 + 1
+        a2 =              +                   =              +
+                 k−2              k−1              2p − 1             2p
+                                       
+                2      v1         2 v1 + 1
+           ≡                 +                   = 1 ̸≡ 0 mod p.
+                1 p−1             2        0
+   If 3p − 1 ∈ [2p + 1, 4p − 7], i.e., p ≥ 6, then set |T | − k = u1 p + v1 with
+u1 = 2 or 3 and v1 ∈ [0, p − 1]. If |T | − k ̸= 3p − 1, then v1 ∈ [0, p − 2]. This
+together with Lemma 4.1 yields
+                                                                      
+            |T | − k      |T | − k + 1         u1 p + v1       u1 p + v1 + 1
+    a2 =                +                  =               +
+             k−2              k−1               2p − 1               2p
+                                        
+            u1       v1        u1    v1 + 1         u1
+       ≡                  +                    =         ̸≡ 0 mod p.
+             1     p−1          2        0           2
+If |T | − k = 3p − 1, then
+                                                      
+                   |T | − k     |T | − k + 1       3p − 1    3p
+            a2 =             +                =            +
+                    k−2             k−1            2p − 1    2p
+                             
+                   2 p−1            3 0
+               ≡               +            = 5 ̸≡ 0 mod p.
+                   1 p−1            2 0
+because p ≥ 6. Since 2k − D(Cp4 ) = 5 ≥ 2, by Lemma 4.4, S has a zero-sum
+subsequence of length ≤ k − 1, proving (1).
+   (2) Since D(Cpd ) = (p − 1)d + 1 and k − 1 = (d − 1)p ∈ [p, D(Cpd )], we
+have (p − 1)d + 1 ≥ (d − 1)p ≥ p, i.e., 2 ≤ d ≤ p + 1. It follows that
+p − d + 1 ∈ [0, p − 1]. This together with Lemma 4.1 yields
+         D(Cpd )
+                                                         
+                        (d − 1)p + p − d + 1    d−1 p−d+1
+                   =                          ≡
+          k−1                 (d − 1)p          d−1         0
+                   = 1 ̸≡ 0 mod p.
+If Ni (S) = 0 for i ∈ [D(Cpd ) + 1, |S|] = [(p − 1)d + 2, (d + 1)p − 2d + 2],
+then by Lemma 4.6, we are done. If there exists some i ∈ [D(Cpd ) + 1, |S|] =
+     ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                          29
+
+
+[(p − 1)d + 2, (d + 1)p − 2d + 2] such that Ni (S) ̸= 0, then since
+    2k − (D(Cpd ) + 1) = 2(d − 1)p + 2 − (p − 1)d − 2 = (d − 2)p + d > 0
+(as d ≥ 2), (5.1) implies that S has a zero-sum subsequence T with |T | ∈
+[2(d−1)p+2, (d+1)p−2d+2]. It follows that 2(d−1)p+2 ≤ (d+1)p−2d+2.
+It is also easy to see that
+           2(d − 1)p + 2 − ((d + 1)p − 2d + 2) = (d − 3)p + 2d > 0
+if d ≥ 3. Hence d = 2. Note that s≤p (Cp2 ) = 3p − 2 = 2D(Cp2 ) − p and the
+proof is complete.
+
+   6. Concluding remarks and a conjecture. We close the paper by
+making the following conjecture for finite abelian groups G. Obviously, this
+conjecture covers most of the results in Theorems 1.1–1.3 and Lemmas 2.1–2.5.
+   Conjecture 6.1. Let G be a finite abelian group with r(G) ≥ 2 and
+D(G) = D∗ (G). Let k be a positive integer such that k ∈ [exp(G), D(G)]. If
+k ≥ D(G)+1
+       2   , then
+                          s≤k (G) ≤ 2D(G) − k.
+    Acknowledgements. The authors would like to thank the anonymous
+referees for very helpful comments and suggestions that improved the pre-
+sentation of the paper greatly. They also wish to thank Dr. Qinghai Zhong
+for his helpful comments on the paper.
+    Funding. K. Zhao was supported by the National Natural Science Foun-
+dation of China (No. 12301425) and by the Guangxi Natural Science Foun-
+dation (No. 2026GXNSFAA00640198). S. A. Hong was supported by the
+National Natural Science Foundation of China (No. 12401439), and by the
+Sichuan Science and Technology Program (No. 2025ZNSFSC0810).
+
+
+                                     REFERENCES
+
+ [1] G. Bhowmik and J. Schlage-Puchta, Davenport’s constant for groups with large ex-
+     ponent, in: Theory and Applications of Finite Fields (Ghent, 2011), Contemp. Math.
+     579, Amer. Math. Soc., 2012, 21–31.
+ [2] G. Bhowmik and J. Schlage-Puchta, Davenport’s constant for groups of the form
+     Z3 ⊕ Z3 ⊕ Z3d , in: Additive Combinatorics, CRM Proc. Lecture Notes 43, Amer.
+     Math. Soc., 2007, 307–326.
+ [3] R. Chi, S. Ding, W. Gao, A. Geroldinger and W. Schmid, On zero-sum subsequences
+     of restricted size IV, Acta Math. Hungar. 107 (2005), 337–344.
+ [4] G. Cohen and G. Zémor, Subset sums and coding theory, Astérisque 258 (1999),
+     327–339.
+ [5] A. Davydov and L. Tombak, Quasi-perfect linear binary codes with distance 4 and
+     complete caps in projective geometry, Problemy Peredachi Informatsii 25 (1989), no. 4,
+     11–23 (in Russian).
+30                             K. ZHAO AND S. A. HONG
+
+
+ [6] C. Delorme, O. Ordaz and D. Quiroz, Some remarks on Davenport constant, Discrete
+     Math. 237 (2001), 119–128.
+ [7] L. Dickson, The History of the Theory of Numbers, Vol. I, Chelsea, New York, 1966.
+ [8] J. Ebert and D. Grynkiewicz, Structure of a sequence with prescribed zero-sum sub-
+     sequences: Rank two p-groups, Eur. J. Combin. 118 (2024), art. 103888, 13 pp.
+ [9] Y. Fan, W. Gao, G. Wang, Q. Zhong and J. Zhuang, On short zero-sum subsequences
+     of zero-sum sequences, Electron. J. Combin. 19 (2012), art. 31, 23 pp.
+[10] M. Freeze and W. Schmid, Remarks on a generalization of the Davenport constant,
+     Discrete Math. 310 (2010), 3373–3389.
+[11] P. van Emde Boas, A combinatorial problem on finite abelian groups II, Report
+     ZW1969C007, Math. Centre, Amsterdam, 1969.
+[12] W. Gao, On zero sum subsequences of restricted size III, Ars Combin. 61 (2001),
+     65–72.
+[13] W. Gao, A. Geroldinger and D. Grynkiewicz, Inverse zero-sum problems III, Acta
+     Arith. 141 (2010), 103–152.
+[14] W. Gao and A. Geroldinger, Zero-sum problems in finite abelian groups: a survey,
+     Expo. Math. 24 (2006), 337–369.
+[15] W. Gao, D. Han, J. Peng and F. Sun, On zero-sum subsequences of length k exp(G),
+     J. Combin. Theory Ser. A 125 (2014), 240–253.
+[16] W. Gao, S. Hong and J. Peng, On zero-sum subsequences of length k exp(G) II, J.
+     Combin. Theory Ser. A 187 (2022), art. 105563, 34 pp.
+[17] W. Gao, Y. Li, J. Peng and G. Wang, A unifying look at zero-sum invariants, Int. J.
+     Number Theory 14 (2018), 705–711.
+[18] W. Gao and R. Thangadurai, On zero-sum sequences of prescribed length, Aequations
+     Math. 72 (2006), 201–212.
+[19] W. Gao, P. Zhao and J. Zhuang, Zero-sum subsequences of distinct lengths, Int. J.
+     Number Theory 11 (2015), 2141–2150.
+[20] A. Geroldinger, Additive group theory and non-unique factorizations, in: Combina-
+     torial Number Theory and Additive Group Theory, Adv. Courses in Math. CRM
+     Barcelona, Birkhäuser, 2009, pp. 1–86.
+[21] A. Geroldinger, D. Grynkiewicz and W. Schmid, Zero-sum problems with congruence
+     conditions, Acta Math. Hungar. 131 (2011), 323–345.
+[22] A. Geroldinger and F. Halter-Koch, Non-Unique Factorizations, Algebraic, Combi-
+     natorial and Analytic Theory, Pure Appl. Math. 278, Chapman & Hall/CRC, Boca
+     Raton, FL, 2006.
+[23] A. Granville, Arithmetic properties of binomial coefficients. I. Binomial coefficients
+     modulo prime powers, in: Organic Mathematics (Burnaby, BC, 1995), CMS Conf.
+     Proc. 20, Amer. Math. Soc., Providence, RI, 1997, 253–275.
+[24] D. Grynkiewicz, Structural Additive Theory, Dev. Math. 30, Springer, 2013.
+[25] D. Grynkiewicz and C. Liu, A multiplicative property for zero-sums I, Discrete Math.
+     345 (2022), art. 112974, 21 pp.
+[26] D. Grynkiewicz and C. Liu, A multiplicative property for zero-sums II, Electron. J.
+     Combin. 29 (2022), art. P3.12, 16 pp.
+[27] D. Grynkiewicz, C.L. Wang and K. Zhao, The structure of a sequence with prescribed
+     zero-sum subsequences, Integers 20 (2020), art. A3, 31 pp.
+[28] H. Guan, P. Yuan and X. Zeng, Normal sequences over finite abelian groups, J. Com-
+     bin. Theory Ser. A 118 (2011), 1519–1524.
+[29] S. Kubertin, Zero-sums of length kq in Zdq , Acta Arith. 116 (2005), 145–152.
+[30] B. Lindström, Determination of two vectors from the sum, J. Combin. Theory Ser.
+     A 6 (1969), 402–407.
+     ZERO-SUM SEQUENCES OF LENGTH NOT EXCEEDING A GIVEN NUMBER                           31
+
+
+[31] É. Lucas, Sur les congruences des nombres eulériens et les coefficients différentiels
+     des functions trigonométriques suivant un module premier, Bull. Soc. Math. France
+     6 (1878), 49–54.
+[32] S. Luo, Short zero-sum sequences over abelian p-groups of large exponent, J. Number
+     Theory 177 (2017), 28–36.
+[33] B. Roy and R. Thangadurai, On zero-sum subsequences in a finite abelian p-group of
+     length not exceeding a given number, J. Number Theory 191 (2018), 246–257.
+[34] L. Sauermann and D. Zakharov, On the Erdős–Ginzburg–Ziv problem in large dimen-
+     sion, Amer. J. Math., to appear; arXiv:2302.14737v1 (2023).
+[35] S. Savchev and F. Chen, Long minimal zero-sum sequences in the groups C2r−1 ⊕ C2k ,
+     Integers 14 (2014), art. 23, 29 pp.
+[36] W. Schmid and J. Zhuang, On short zero-sum subsequences over p-groups, Ars Com-
+     bin. 95 (2010), 343–352.
+[37] A. Sheikh, The Davenport Constant of Finite Abelian Groups, PhD thesis, Royal
+     Holloway, Univ. of London, 2017.
+[38] A. Sidorenko, On generalized Erdős–Ginzburg–Ziv constants for Zd2 , J. Combin. The-
+     ory Ser. A 174 (2020), art. 105254, 19 pp.
+[39] C. Wang and K. Zhao, On zero-sum subsequences of length not exceeding a given
+     number, J. Number Theory 176 (2017), 365–374.
+[40] S. Zhang, On some zero-sum invariants for abelian groups of rank three, Publ. Math.
+     Debrecen 106 (2023), 225–240.
+[41] K. Zhao, On Davenport constant of the group C2r−1 ⊕ C2k , Electron. J. Combin. 30.1
+     (2023), art. 1.498, 24 pp.
+
+
+Kevin Zhao                                              Siao Hong (corresponding author)
+School of Mathematics and Statistics                              School of Mathematics
+& Center for Applied Mathematics of Guangxi                Southwest Jiaotong University
+Nanning Normal University                                   Chengdu 610031, P. R. China
+Nanning 530100, P. R. China                                   E-mail: sahongnk@163.com
+E-mail: zhkw-hebei@163.com
+        kevinnnnu@nnnu.edu.cn
+

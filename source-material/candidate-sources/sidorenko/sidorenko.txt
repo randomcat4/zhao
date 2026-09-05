@@ -1,0 +1,973 @@
+arXiv:1808.06555v6  [math.CO]  25 Mar 2020
+On generalized Erd˝ os–Ginzburg–Ziv constants for Zd
+2
+Alexander Sidorenko
+sidorenko.ny@gmail.com
+Abstract
+Let G be a ﬁnite abelian group, and r be a multiple of its exponent. The
+generalized Erd˝ os–Ginzburg–Ziv constantsr(G) is the smallest integer s such
+that every sequence of length s over G has a zero-sum subsequence of length r.
+We ﬁnd exact values of s2m(Zd
+2) for d ≤ 2m + 1. Connections to linear binary
+codes of maximal length and codes without a forbidden weight are dis cussed.
+Keywords: Erd˝ os–Ginzburg–Ziv constant, zero-sum subsequence
+2010 MSC: 05C35, 20K01
+1. Introduction
+Let G be a ﬁnite abelian group written additively. We denote by exp( G) the
+exponent of G that is the least common multiple of the orders of its elements.
+Let r be a multiple of exp( G). The generalized Erd˝ os–Ginzburg–Ziv constant
+sr(G) is the smallest integer s such that every sequence of length s over G has
+a zero-sum subsequence of length r. If r = exp( G), then s(G) = sexp(G)(G) is
+the classical Erd˝ os–Ginzburg–Ziv constant.
+In the case when k is a power of a prime, Gao [12] proved skm(Zd
+k) = km +
+(k − 1)d for m ≥ kd− 1 and conjectured that the same equality holds when
+km > (k − 1)d.
+In this paper, we consider the case G = Zd
+2. We show that the problem of
+determining s2m(Zd
+2) is essentially equivalent to ﬁnding the lowest redundancy
+of a linear binary code of given length which does not contain words of Hamming
+weight 2m. When m = 2, this problem is also equivalent to ﬁnding the maximal
+length of a linear binary code of redundancy d and distance 5 or higher.
+We prove that s2m(Zd
+2) = 2 m+ d for d < 2m, validating the Gao’s conjecture
+for k = 2. We also prove s2m(Z2m
+2 ) = 4 m + 1, s2m(Z2m+1
+2 ) = 4 m + 2 for even
+m, and s2m(Z2m+1
+2 ) = 4 m + 5 for odd m. Our results provide counterexamples
+to Conjectures 4.4 and 4.6 from [10].
+This paper is organized as follows. We discuss maximal length linear bina ry
+codes in Section 2, linear codes without a forbidden weight in Section 3 , and
+generalized Erd˝ os–Ginzburg–Ziv constants in Section 4. We prese nt our results
+for s2m(Zd
+2) in Section 5. Section 6 contains the proofs.
+Preprint submitted to Elsevier March 27, 2020
+2. Linear binary codes of maximal length
+In this section, we will provide basic deﬁnitions and some results from coding
+theory (for details, see [26]).
+Let F2 be the binary ﬁeld and Fn
+2 be the n-dimensional vector space over
+F2. The Hamming weight of vector x ∈ Fn
+2 is the number of its entries equal
+to 1. The dot product of vectors x = (x1, x2, . . . , xn) and y = (y1, y2, . . . , yn) is
+deﬁned as x ·y = x1y1 + x2y2 + . . .+ xnyn. A linear binary code of length n is a
+subspace in Fn
+2 . Its elements are called words. The distance of a linear code is
+the smallest Hamming weight of its nonzero word. A trivial code of dime nsion
+0 has distance ∞ . A linear binary code C is called an ( n, k, d) code when it
+has length n, dimension k and distance d. The dual code C⊥ is the subspace of
+vectors in Fn
+2 orthogonal to C. The redundancy of C is the dimension of its dual
+code, r = n − k, which may be interpreted as the number of parity check bits.
+If y(1), y(2), . . . , y(r) form a basis of C⊥ , then C consists of vectors x such that
+x·y(i) = 0 for every i = 1, 2, . . . , r. If y(i) = (yi1, yi2, . . . , yin), the ( r × n)-matrix
+[yij] is called a parity-check matrix of C. In fact, any binary r × n matrix of
+rank r is a parity-check matrix of some linear code of length n and redundancy
+r.
+An ( n, k, 2t + 1) code is capable of correcting up to t errors in a word of
+length n that carries k bits of information. It is natural to seek codes of maxi-
+mal possible length with prescribed error-correction capabilities. W e denote by
+N (r, d) the largest length of a linear code with redundancy r and distance d or
+higher, that is the largest n such that an ( n, n − r, ≥ d) code exists.
+It follows from the well known Hamming bound (see [26]) that
+t∑
+i=0
+(N (r, 2t + 1)
+i
+)
+≤ 2r . (2.1)
+The primitive binary BCH code (see [3, 19]) is a (2 m − 1, 2m − 1 − mt, 2t + 1)
+code. It gives the lower bound
+N (mt, 2t + 1) ≥ 2m − 1 . (2.2)
+It is easy to see that N (m, 3) = 2 m − 1. When t ≥ 2, the bound (2.2) is not
+sharp: some codes of slightly larger length are known. Goppa [13] co nstructed
+(2m, 2m − mt, 2t + 1) codes. Chen [4] found (2 m + 1, 2m + 1 − 2m, 5) codes
+for even m. Sloane, Reddy, and Chen [4, 25] obtained (2 m + 2⌈m/2⌉ − 1, 2m +
+2⌈m/2⌉ − 1 − (2m + 1), 5) codes. Hence,
+N (4s, 5) ≥ 22s + 1 , N (4s + 2, 5) ≥ 22s+1 ,
+N (4s + 1, 5) ≥ 22s + 2s − 1 , N (4s + 3, 5) ≥ 22s+1 + 2s+1 − 1 .
+The values of N (r, d) for small r and d can be derived from tables in [14].
+We list these values for 4 ≤ r ≤ 14, d = 5 :
+r 4 5 6 7 8 9 10 11 12 13 14
+N (r, 5) 5 6 8 11 17 23 33 47–57 65–88 81–124 128–179
+2
+It follows from (2.1) that N (r, 5) ≤ 2(r+1)/2. When r is large, the best known
+lower and upper bounds for N (r, 5) diﬀer by a factor of
+√
+2 if r is even, and by
+a factor of 2 if r is odd. For a > 1, not a single (2 m + a, 2m + a − 2m, 5) code
+is known.
+For future use we need
+Theorem 2.1 (MacWilliams identities [22]) . Let C be a k-dimensional linear
+binary code of length n. Let Aj denote the number of words of Hamming weight
+j in C, and Bj denote the number of words of Hamming weight j in the dual
+code C⊥ . Then for every λ = 0, 1, . . . , n,
+2n− k
+λ∑
+j=0
+(n − j
+λ − j
+)
+Aj = 2 λ
+n− λ∑
+j=0
+(n − j
+λ
+)
+Bj . (2.3)
+3. Codes without a forbidden weight
+Let R2m(n) be the smallest redundancy of a linear code of length n which
+has no words of Hamming weight 2 m. The problem of determining R2m(n) was
+studied in [1, 7] in notation l(n, 2m) = n − R2m(n). It follows from Theorem 1.1
+of [7] that
+R2m(n) = n − 2m + 1 for 2 m − 1 ≤ n ≤ 4m − 1 , (3.1)
+R2m(4m) = 2 m . (3.2)
+We will solve some new cases with n > 4m in Corollary 5.18.
+It follows from Theorem 6 of [1] that
+R2m(n)/m = log 2 n + O(1) , (3.3)
+when m is ﬁxed and n → ∞ .
+The proof of (3.1) and (3.2) in [7] uses the notion of binormal form of a
+binary matrix. Following [7], we say that a k × n binary matrix M = [ aij]
+is in binormal form if n ≥ 2k, ai,2j− 1 = ai,2j for i ̸= j, and ai,2i− 1 ̸= ai,2i
+(i, j = 1, 2, . . . , k).
+Lemma 3.1 (Proposition 2.1 [7]) . If k× n binary matrix M is in binormal form,
+then for any k-dimensional binary vector x, there is a unique choice of k indices
+ji ∈ { 2i − 1, 2i} (i = 1 , 2, . . . , k) such that the sum of columns j1, j2, . . . , jk of
+M is equal to x. In particular, one can pick up k columns in M whose sum is
+the k-dimensional zero vector.
+Lemma 3.2 (Lemma 2.2 [7]) . Let n be odd, 2k < n , and M be a k × n binary
+matrix of rank k. If the sum of entries in each row is 0, then M can be brought to
+binormal form by such operations as permutations of the colu mns and additions
+of one row to another.
+Lemmas 3.1 and 3.2 yield
+Corollary 3.3. Let n be odd and 2k < n . Let M be a k × n binary matrix of
+rank k where the sum of entries in each row is 0. One can pick up k columns
+in M whose sum is the k-dimensional zero vector.
+3
+4. Generalized Erd˝ os–Ginzburg–Ziv constant
+Let G be a ﬁnite abelian group written additively. The classical Erd˝ os–
+Ginzburg–Ziv constant s(G) is the smallest integer s such that every sequence
+of length s over G has a zero-sum subsequence of length exp( G) (see [5, 6, 9,
+12, 17, 20, 23]). In 1961, Erd˝ os, Ginzburg, and Ziv [8] proved s(Zk) = 2 k − 1.
+Kemnitz’ conjecture, s(Z2
+k) = 4 k − 3 (see [20]), was open for more than twenty
+years and ﬁnally was proved by Reiher [23] in 2007.
+The following generalization of the classical Erd˝ os–Ginzburg–Ziv co nstant
+was introduced by Gao [12]. If r is a multiple of exp( G), then sr(G) denotes the
+smallest integer s such that every sequence of length s over G has a zero-sum
+subsequence of length r. (Notice that if r is not a multiple of exp( G), then
+there is an element x ∈ G whose order is not a divisor of r, and the inﬁnite
+sequence x, x, x, . . . contains no zero-sum subsequence of length r.) Obviously,
+sexp(G)(G) = s(G). Constants sr(G) were studied in [2, 10–12, 15, 16, 18, 21].
+A sequence that consists of ( km − 1) copies of the zero vector and ( k − 1)
+copies of each of the basis vectors demonstrates that
+skm(Zd
+k) ≥ km + (k − 1)d . (4.1)
+If km ≤ (k − 1)d, we can add (1 , 1, . . . ,1) to this sequence. Hence,
+skm(Zd
+k) ≥ km + (k − 1)d + 1 when km ≤ (k − 1)d . (4.2)
+It is easy to see that
+skm(Zd
+k) + (k − 1) ≤ skm(Zd+1
+k ) . (4.3)
+Indeed, consider a sequence S over Zd
+k that does not have zero-sum subsequences
+of size km. Attach 0 to each vector in S as the ( d + 1)th entry and add to the
+sequence ( k − 1) copies of a vector whose ( d + 1)th entry is 1. The resulting
+sequence over Zd+1
+k will not contain a zero-sum subsequence of length km, either.
+In the case when k is a power of a prime, Gao [12] proved the equality in
+(4.1) for m ≥ kd− 1 and conjectured
+skm(Zd
+k) = km + (k − 1)d for km > (k − 1)d . (4.4)
+The connection between generalized Erd˝ os–Ginzburg–Ziv consta nts of Zd
+2
+and linear binary codes is evident from the following observation. Let S be a
+sequence of length n over Zd
+2. Write its n vectors column-wise to get a d × n
+binary matrix M . Obviously, S has a zero-sum subsequence of length r if and
+only if M has r columns that sum up to a zero vector. Let C be the subspace
+in Zn
+2 generated by the rows of M . If M has r columns that sum up to a zero
+vector, then the same will be true for any basis of C written row-wise. The
+n-dimensional vector, whose non-zero entries are positioned in the se r columns,
+will be orthogonal to any word of C. It means that the dual code C⊥ has a
+word of weight r. The same arguments work in the opposite way, too. If a
+4
+linear binary code has a word of weight r then any its parity check matrix has
+r columns that sum up to a zero vector.
+When k > 2 is a power of a prime, a similar connection exists between the
+generalized Erd˝ os–Ginzburg–Ziv constants ofZd
+k and linear k-ary codes (which
+are subspaces of vector spaces over ﬁeld Fk), but unfortunately, it works only
+one way. If a sequence over Fd
+k has a zero-sum subsequence of length r, then
+being written column-wise, it serves as a parity check matrix of a k-ary code
+which has a word whose r entries are equal to 1 and the rest are equal to 0.
+However, the fact that a k-ary code has a word with r nonzero entries does
+not guarantee that its parity-check matrix has r columns that sum up to a zero
+vector.
+5. Summary of results
+In this section, we consider the case G = Zd
+2. We will show (see Theorem 5.9)
+that Gao’s conjecture (4.4) holds for k = 2. We will also show that constants
+N (d, 5) from Section 2 and s4(Zd
+2) are equivalent (namely, s4(Zd
+2) = N (d, 5) + 4)
+while constants R2m(n) from Section 3 and s2m(Zd
+2) are closely related.
+To simplify notation, we will write s2m(d) instead of s2m(Zd
+2). Let W be a
+set of positive integers which contains at least one even number. We denote
+by βW (d) the largest size of a set in Zd
+2 which has no zero-sum subsets of size
+w ∈ W . We will use the following shortcuts:
+β2m(d) = β{2m} (d), β 2[k,m](d) = β{2k,2k+2,...,2m} (d),
+β[1,2m](d) = β{1,2,...,2m} (d).
+As it should be expected, s2m(d) and β2m(d) are close:
+β2m(d) + 1 ≤ s2m(d) ≤ β2m(d) + 2m − 1 . (5.1)
+The lower bound in (5.1) is trivial. The upper bound was proved in [24, Th e-
+orem 4.1]. The set of d basis vectors in Zd
+2 with addition of vector (1 , 1, . . . ,1)
+demonstrates that
+β[1,2m](d) ≥ d + 1 for d ≥ 2m . (5.2)
+If d ≥ 3m, there exist vectors x, y ∈ Zd
+2 such that each of the three vectors
+x, y, x + y has Hamming weight 2 m. Then x, y and the d basis vectors demon-
+strate that
+β[1,2m](d) ≥ d + 2 for d ≥ 3m . (5.3)
+Theorem 5.1. β[1,2m](d) = N (d, 2m + 1) .
+Theorem 5.2. β2[1,m](d) = β[1,2m](d) + 1 .
+It is easy to see that β2m(d) = 2 d if 2 m > 2d.
+5
+Theorem 5.3. β2m(d) =
+{
+2m + 2, if 2d− 1 ≤ 2m < 2d, m ̸= 2 d− 1 − 2,
+2m, if m = 2 d− 1 − 2.
+Theorem 5.4. Let m be odd. Then β2m(d) ≥ 2β2[1,m](d − 1). If b is even and
+m < b ≤ β2[1,m](d − 1), then β2b− 2m(d) ≥ 2b.
+Theorem 5.5. s2m(d) = 1 + max
+1≤ j≤ m
+{
+β2[j,m](d) + (2m − 2j)
+}
+.
+Theorem 5.6. s4(d) = β4(d) + 3 = N (d, 5) + 4 .
+Theorem 5.7. s6(d) = β6(d) + 1 for d ≥ 3.
+R2m(n) and s2m(d) are related, because R2m(n) is, in fact, the smallest
+number of rows in a binary matrix with n columns that does not contain 2 m
+columns summing up to a zero vector, while s2m(d) is the largest number of
+columns in a matrix with d rows that has the same property.
+Theorem 5.8. R2m(n) = d ⇐ ⇒ s2m(d − 1) ≤ n < s2m(d) .
+Theorem 5.9. s2m(d) = 2 m + d for d < 2m .
+Theorem 5.10. s2m(2m) = 4 m + 1 .
+Theorems 5.2 and 5.4 together with (5.2) and (5.3) yield
+Corollary 5.11. If m is odd, then β2m(d) ≥ 2d + 2 for d ≥ 2m + 1 , and
+β2m(d) ≥ 2d + 4 for d ≥ 3m + 1.
+Theorem 5.12. s2m(2m + 1) = 4 m + 5 for odd m.
+Theorem 5.13. If m ≥ 3 is odd and 2m − 3 ≤ d ≤ 2m + 1, then β2m(d) =
+s2m(d) − 1.
+In line with Corollary 5.11 and Theorem 5.12, we propose
+Conjecture 5.14. If m is odd, s2m(d) = 2 d + 3 for 2m + 1 ≤ d ≤ 3m.
+When d > 2m, the cases of even and odd m diﬀer signiﬁcantly. For even
+m and 2 m < d < 3m, the best lower bound we know follows from (4.3) and
+Theorem 5.10: s2m(d) ≥ s2m(2m) + (d − 2m) = d + 2m + 1.
+Theorem 5.15. s2m(2m + 1) = 4 m + 2 for even m.
+Conjecture 5.16. If m is even, s2m(d) = d + 2m + 1 for 2m + 1 ≤ d ≤ 3m − 1.
+To prove Conjecture 5.16, it would be suﬃcient to show that s4k(6k − 1) ≤
+10k. This is equivalent to the statement that every (4 k + 1)-dimensional code
+of length 10 k has a word of weight 4 k.
+Computer search conﬁrmed that Conjectures 5.14 and 5.16 hold fo r m = 3
+and m = 4, respectively.
+6
+Conjecture 4.4 of [10] in the case G = Zd
+2 claims s2(d) − 2 > s4(d) − 4 > · · ·>
+s2m(d) − 2m, where m = ⌊d/2⌋. Theorems 5.6 and 5.12 provide a counterexam-
+ple: s4(7) − 4 = s6(7) − 6 = 11. Computer search showed that s8(11) = 20, and
+by Theorem 5.12, s10(11) = 25, which gives another example: s8(11) − 8 = 12,
+s10(11) − 10 = 15.
+Conjecture 4.6 of [10] claims s2m(d) = β[1,2m](d) + 2 m for every m. (In
+notation of [10], η2m(Zd
+2) = β[1,2m](d) + 1.) The equality holds for m = 2 (see
+our Theorem 5.6), and is likely to hold for even m in general. Our Theorem 5.12
+disproves this conjecture for odd m ≥ 3 and d = 2 m + 1. Indeed, it is easy to
+see that a two-dimensional binary code of length n ≥ 7 and distance n − 2 or
+higher can not exist. Therefore, β[1,2m](2m + 1) = N (2m + 1, 2m + 1) < 2m + 3.
+By applying (5.2), we get β[1,2m](2m + 1) = 2m + 2 while s2m(2m + 1) = 4m + 5.
+Observation 5.17. If s2m(d)− s2m− 2(d) ≥ 3 then β2m(d) = s2m(d)− 1. Indeed,
+consider a sequence S of length s2m(d) − 1 over Zd
+2 that does not contain a zero-
+sum subsequence of length 2 m. If β2m(d) < s2m(d) − 1, there is z ∈ Zd
+2 which
+appears in S at least twice. Remove two copies of z to obtain a sequence S′
+of length s2m(d) − 3. As s2m(d) − 3 ≥ s2m− 2(d), S′ must contain a zero-sum
+subsequence of length 2 m − 2. By adding back two copies of z we get a zero-sum
+subsequence of length 2 m in S.
+In light of Conjectures 5.12, 5.12, and Observation 5.17, we expect β2m(d) =
+s2m(d) − 1 to hold for all odd m and 2 m − 3 ≤ d ≤ 3m.
+It follows from Theorem 5.15 and (4.3) that s2m(2m + 2) ≥ 4m + 3 for even
+m. By Corollary 5.11 and (5.1), s2m(2m + 2) ≥ 4m + 7 for odd m. Hence,
+Theorems 5.8, 5.10, 5.12, and 5.15 yield
+Corollary 5.18.
+R2m(n) =
+
+
+
+
+
+
+
+
+
+2m + 1, if n = 4m + 1,
+2m + 1, if 4m + 2 ≤ n ≤ 4m + 4, m is odd ,
+2m + 2, if 4m + 5 ≤ n ≤ 4m + 6, m is odd ,
+2m + 2, if n = 4m + 2, m is even .
+The next statement (which was also proved in [24]) can be easily derive d
+from Theorem 5.8 and (3.3):
+Corollary 5.19. For any ﬁxed m, s2m(d) = Θ
+(
+2d/m)
+as d → ∞ .
+It follows from (2.2) and Theorem 5.8 that lim sup d→∞ s2m(d) 2− d/m ≥ 1.
+We can improve this bound for odd m. Namely, (5.1) and Theorems 5.1, 5.2,
+5.4 yield s2m(d) ≥ 2N (d − 1, 2m + 1) + 2. Coupled with (2.2), it leads to
+Corollary 5.20. If m is odd, lim sup
+d→∞
+s2m(d) 2− d/m ≥ 21− 1/m .
+By Theorem 5.6, bounds on N (d, 5) from Section 2 translate into bounds on
+s4(d). For d ≤ 10, we get the exact values:
+7
+d 1 2 3 4 5 6 7 8 9 10
+s4(d) 5 6 7 9 10 12 15 21 27 37
+6. Proofs of theorems
+For A ⊆ Zd
+2, we denote the sum of elements of A by ∑A.
+Proof of Theorem 5.1. First, we will prove β[1,2m](d) ≥ N (d, 2m + 1). Con-
+sider a linear code C of length n = N (d, 2m + 1), redundancy d and distance at
+least 2 m + 1. Its parity check matrix M has size d × n. Since C has no words
+of weights 1 , 2, . . . ,2m, the sum of any k ∈ { 1, 2, . . . ,2m} columns of M is not
+a zero vector. It means that the columns of M , being interpreted as n vectors
+in Zd
+2, form a set without zero-sum subsets of sizes 2 m and less.
+To prove β[1,2m](d) ≤ N (d, 2m + 1), consider a set A of size β[1,2m](d) in Zd
+2
+which has no zero-sum subsets of sizes 2 m and less. If A does not contain a
+basis in Zd
+2, then there exists a vector x ∈ Zd
+2 which cannot be represented as
+a sum of some vectors from A. Then A ∪ { x} would have no zero-sum subsets
+of sizes 2 m and less which contradicts with the maximality of |A|. Hence, A
+contains a basis. Then a d × | A| matrix, whose columns are the vectors in A,
+has rank d and is a parity check matrix of a code of length n, redundancy d and
+distance at least 2 m + 1.
+Proof of Theorem 5.2. Consider a set A of size β[1,2m](d) in Zd
+2 which has no
+zero-sum subsets of sizes 1 , 2, . . . ,2m. In particular, 0 /∈ A. It is obvious that
+A∪{ 0} does not have zero-sum subsets of sizes 2 , 4, . . . ,2m. Hence, β2[1,m](d) ≥
+β[1,2m](d) + 1.
+To prove the opposite inequality, consider a set B of size β2[1,m](d) in Zd
+2
+which has no zero-sum subsets of sizes 2 , 4, . . . ,2m. Select y ∈ B and deﬁne
+By = {x + y |x ∈ B}. Notice that By does not have zero-sum subsets of sizes
+2, 4, . . . ,2m and contains the zero vector. Then By\{0} will have no zero-sum
+subsets of sizes 1 , 2, . . . ,2m. Therefore, β[1,2m](d) ≥ | By\{0}| = β2[1,m](d) −
+1.
+Lemma 6.1. If A ⊂ Zd
+2, |A| > 2d− 1 and ∑A ̸= 0 , then there exists B ⊂ A
+such that |B|= |A| − 2 and ∑B = 0.
+Proof. There are exactly 2 d solutions (x, y) of the equation x + y = ∑A where
+x, y ∈ Zd
+2. Let
+A = Zd
+2\A. The number of solutions with x ∈
+A or y ∈ A is
+at most 2 |A| = 2(2 d − | A|) < 2d. Hence, there exists a solution ( x, y) where
+x, y ∈ A. As x + y = ∑A ̸= 0, we get x ̸= y. Set B = A\{x, y}. Then
+|B|= |A| − 2 and ∑B = 0.
+Lemma 6.2. If A ⊂ Zd
+2, |A| ≥ 2d− 1 + 2, then there exists B ⊂ A such that
+|B|= |A| − 3 and ∑B = 0.
+Proof. As |A| ≥ 2, there exists x ∈ A such that x ̸= ∑A. Set A1 = A\{x},
+then ∑A1 ̸= 0. By Lemma 6.1, there exists B ⊂ A1 such that |B| = |A| − 3
+and ∑B = 0. 8
+Proof of Theorem 5.3. We will prove the lower bound ﬁrst. In the case m ̸=
+2d− 1 − 2, select A ⊆ Zd
+2 such that |A| = 2 m + 2 and ∑A = 0. If B ⊂ A,
+|B|= 2 m, and A\B = {x, y}, then ∑B = ∑A − (x + y) = x + y ̸= 0. Hence,
+β2m(d) ≥ 2m + 2. In the case m = 2 d− 1 − 2, the bound β2m(d) ≥ 2m is trivial.
+Now we will prove the upper bound. If m ̸= 2 d− 1 − 2, consider A ⊂ Zd
+2
+where |A|= 2 m + 3 ≥ 2d− 1 + 3. By Lemma 6.2, there exists B ⊂ A such that
+|B|= 2m and ∑B = 0. Therefore, β2m(d) ≤ 2m + 2. If m = 2 d− 1 − 2, consider
+A ⊂ Zd
+2 where |A|= 2m + 1 = 2 d − 3. Let x = ∑A, and Zd
+2\A = {a, b, c}. Since
+x = ∑A = a + b + c = a + (b + c) ̸= a (and similarly, x ̸= b, c), we conclude that
+x ∈ A. Set B = A\{x}. Then |B|= 2m and ∑B = 0, so β2m(d) ≤ 2m.
+Proof of Theorem 5.4. Consider a set A of size b ≤ β2[1,m](d − 1) in Zd− 1
+2
+which does not have zero-sum subsets of sizes 2 , 4, . . . ,2m. For i = 0, 1, obtain
+Ai ⊂ Zd
+2 by attaching i to each vector of A as the d’th entry. We claim that
+A0 ∪ A1 does not have zero-sum subsets of size 2 m. Indeed, suppose X ⊆
+(A0 ∪ A1), |X| = 2 m. Let Xi = {(z1, z2, . . . , zd− 1)| (z1, z2, . . . , zd− 1, i) ∈ X}
+and Y = ( X0 ∪ X1)\(X0 ∩ X1). Then X0, X1, Y are subsets of A. If ∑X = 0
+then |X0|, |X1| are even and ∑X0 + ∑X1 = 0. Notice that |X0 ∩ X1| = m
+is impossible, as it would imply |X0| = |X1| = m, but m is odd. Hence,∑Y = ∑X0 + ∑X1 − 2 ∑(X0 ∩ X1) = 0 while |Y | = 2 m − 2|X0 ∩ X1|
+is even and not equal to zero. Selecting b = β2[1,m](d − 1) in Zd− 1
+2 , we get
+β2m(d) ≥ | A0 ∪ A1|= 2β2[1,m](d − 1).
+When b is even, ∑(A0 ∪ A1) = 0, so A0 ∪ A1 does not have zero-sum subsets
+of size 2 b − 2m either. Hence, β2b− 2m(d) ≥ | A0 ∪ A1|= 2b.
+Proof of Theorem 5.5. We will show ﬁrst that s2m(d) ≥ 1+β2[j,m](d)+(2m−
+2j). Indeed, consider a set A of size β2[j,m](d) in Zd
+2 which does not have zero-
+sum subsets of sizes 2 j, 2j + 2, . . . ,2m. Select x ∈ A and form a sequence from
+all the elements of A plus (2 m − 2j) extra copies of x. It is easy to see that
+this sequence does not have zero-sum subsequences of size 2 m. Hence, s2m(d) ≥
+1 + max 1≤ j≤ m
+{
+β2[j,m](d) + (2m − 2j)
+}
+. Now we need to prove the opposite
+inequality. Let s be an integer such that s > β 2[j,m](d) + (2 m − 2j) for every
+j = 1 , 2, . . . , m. Deﬁne the product of an integer n and z ∈ Zd
+2 as z if n is odd,
+and 0 if n is even. Let f (z) be the number of appearances of z ∈ Zd
+2 in a sequence
+of length s over Zd
+2. We are going to show that there exists a nonnegative integer
+function g on Zd
+2 such that g ≤ f , ∑
+z∈ Zd
+2
+g(z) = 2 m, and ∑
+z∈ Zd
+2
+g(z)z = 0.
+Indeed, set f1(z) = 1 if f (z) is odd, and f1(z) = 0 if f (z) is even. Set f2(z) =
+f (z)− f1(z). All values of f2(z) are even. If ∑
+z∈ Zd
+2
+f2(z) ≥ 2m, then there exists
+g ≤ f2 such that all values of g are even and ∑
+z∈ Zd
+2
+g(z) = 2 m. Hence, we can
+assume that ∑
+z∈ Zd
+2
+f2(z) = 2( m − j) where j ∈ { 1, 2, . . . , m}. Let A = {z ∈
+Zd
+2 : f1(z) = 1 }. Since |A|= ∑
+z∈ Zd
+2
+(f (z) − f2(z)) = s − 2(m − j) > β 2[j,m](d),
+there exists B ⊆ A such that |B| = k ∈ { 2j, 2j + 2, . . . ,2m} and ∑
+z∈ B z = 0.
+Set fB(z) = 1 if z ∈ B, and fB(z) = 0 otherwise. Choose a function f3 ≤ f2
+such that all values of f3 are even and ∑
+z∈ Zd
+2
+f3(z) = 2 m − k. Then f3 + fB is
+the required function g.
+9
+Proof of Theorem 5.6. By deﬁnition, β4(d) = β{2,4} (d). Thus, Theorems 5.1
+and 5.2 imply β4(d) = N (d, 5) + 1, while Theorem 5.5 implies s4(d) = β4(d) +
+3.
+Proof of Theorem 5.8. We will show ﬁrst that n < s2m(d) implies R2m(n) ≤
+d, and then show that n ≥ s2m(d − 1) implies R2m(n) ≥ d. As s2m(d − 1) <
+s2m(d) (see (4.3)), these two statements establish the theorem.
+Let n < s2m(d). Then there exists a sequence S of length n over Zd
+2 which
+does not have zero-sum subsequences of size 2 m. Write the vectors of S as d × n
+binary matrix M . This matrix does not have 2 m columns that sum up to a zero
+vector. Its rank is r ≤ d. Take r independent rows of M to get an r × n matrix
+M1 of rank r. We claim that M1 does not have 2 m columns that sum up to a
+zero vector. Indeed, any row of M that is not in M1 is the sum of some rows
+of M1. If M1 had a set of 2 m columns which sum up to a zero vector, then the
+same columns in M would also sum up to a zero vector. Let C be the linear
+code whose parity check matrix is M1. This code has length n, redundancy r
+and does not have a word of weight 2 m. Hence, R2m(n) ≤ r ≤ d.
+Let n ≥ s2m(d − 1). Consider a linear code C of length n and redundancy
+r which does not have words of weight 2 m. Let M be an r × n parity check
+matrix of C. If r ≤ d − 1, then n ≥ s2m(r), and there exists a set of 2 m columns
+in M that sum up to a zero vector. It contradicts with the assumption t hat
+C does not have words of weight 2 m. Hence, r ≥ d. We have proved that
+R2m(n) ≥ d.
+Proof of Theorem 5.9. It follows from (3.1) that R2m(2m + d) = d + 1 when
+d < 2m. Hence, by Theorem 5.8, s2m(d) ≤ 2m + d. The opposite inequality is
+provided by (4.1).
+Observation 6.3. The following operations do not change the fact whether a
+binary matrix has a set of 2 m columns that sum up to a zero vector: permuta-
+tions of columns (rows), additions of one row to another, additions of the same
+vector to each column. In particular, bringing a matrix to binormal f orm by
+Lemma 3.2 does not change the fact whether such a set of 2 m columns exists.
+Lemma 6.4. Let M be an d × n binary matrix whose rank is less than d. If
+n ≥ s2m(d − 1), then M contains 2m columns that sum up to a zero vector.
+Proof. Use additions of one row to another to make the last row entirely zer o.
+By Observation 6.3, it does not change the fact whether there is a s et of 2 m
+columns that sum up to a zero vector. As n > s2m(d − 1), such a set of columns
+must exist. By Observation 6.3, the same is true for the original mat rix.
+Proof of Theorem 5.10. When k = 2 and d = 2 m, (4.2) yields s2m(2m) ≥
+4m + 1. To prove s2m(2m) ≤ 4m + 1, consider a sequence S of size 4 m + 1 over
+Z2m
+2 . We need to prove that S has a zero-sum subsequence of size 2 m. Let x
+be the sum of all elements of S. Add x to each element of S and denote the
+resulting sequence by S0. If S0 has a zero-sum subsequence of size 2 m, then S
+has it, too.
+10
+Consider a (2 m) × (4m + 1) binary matrix M whose columns represent the
+vectors from S0. By Theorem 5.9, 4 m + 1 ≥ s2m(2m − 1). If the rank of M is
+less than 2 m, then by Lemma 6.4, it has a set of 2 m columns that sum up to a
+zero vector. Suppose that the rank of M is 2 m. Since the sum of all vectors of
+S0 is a zero vector, M satisﬁes the conditions of Corollary 3.3. Thus, there are
+2m columns in M whose sum is a zero vector.
+Lemma 6.5. Let C = [ cij] be a t × t binary matrix. If C does not have a row
+where all oﬀ-diagonal entries are equal, then it has three di stinct rows i, j, k such
+that cij + cik = 1 and cji + cjk = 1.
+Proof. Let ai be the number of oﬀ-diagonal nonzero entries in row i, and bi =
+(t− 1)− ai be the number of oﬀ-diagonal zero entries. Let a = min{a1, a2, . . . , at},
+b = min{b1, b2, . . . , bt}. Since the statement of the lemma holds for matrix [ cij]
+if and only if it holds for matrix [1 − cij], we may assume that a ≤ b. Let index
+i be such that ai = a. Since ai > 0, there exists index j ̸= i such that cij = 1.
+Consider two cases for cji.
+0). cji = 0. As aj > a i − 1, there exists k ̸= i, j such that cik = 0 and
+cjk = 1.
+1). cji = 1. As ai + aj = ai + (t − 1 − bj) ≤ (t − 1) + ai − b < t , there exists
+k ̸= i, j such that cik = cjk = 0.
+Let M be an r × c matrix, and 1 ≤ r′ ≤ r′′≤ r, 1 ≤ c′ ≤ c′′≤ c. We denote
+by M [r′ : r′′, c ′ : c′′] the submatrix of M formed by rows r′, r′ + 1, . . . , r′′ and
+columns c′, c′ + 1, . . . , c′′.
+Lemma 6.6. Let k be even, and M be a (k + 1) × (2k + 5) matrix in binormal
+form. One can pick up k columns in M whose sum is the (k + 1)-dimensional
+zero vector.
+Proof. Let M = [ aij]. Let C = [ cij] be a ( k + 1) × (k + 1) binary matrix
+where cij = ai,2j− 1 = ai,2j for i ̸= j. The values of diagonal entries cii are not
+important and may be set arbitrarily. Suppose, there is a row in C where the
+sum of oﬀ-diagonal entries is 0. Without loss of generality, we may as sume that it
+is the last row, so ∑k
+i=1 ck+1,i = 0. Since M [1 : k, 1 : 2 k] is in binormal form, by
+Lemma 3.1, there is a set of k indices j(i) ∈ { 2i− 1, 2i} (i = 1, 2, . . . , k) such that
+the sum of columns j(1), j(2), . . . , j(k) in M [1 : k, 1 : 2 k] is the k-dimensional
+zero vector. Since ak+1,j(i) = ck+1,i, the condition ∑k
+i=1 ck+1,i = 0 guarantees
+that the sum of columns j(1), j(2), . . . , j(k) in M is the ( k + 1)-dimensional
+zero vector. Thus, we may assume that the sum of oﬀ-diagonal en tries in each
+row of C is equal to 1. It means that C satisﬁes the conditions of Lemma 6.5.
+Hence, without loss of generality, we may assume that ck− 1,k + ck− 1,k+1 = 1
+and ck,k− 1 + ck,k+1 = 1. Since the sum of oﬀ-diagonal entries in any row of C
+is 1, we get ∑k− 2
+j=1 cij = 0 for i = k − 1, k. Let x = ∑k− 2
+j=1 ck+1,j. Then the sum
+of all columns in the 3 × (k − 2) matrix C[k − 1 : k + 1, 1 : k − 2] is equal to
+(0, 0, x)T . We claim that the 3 × 9 matrix M [k − 1 : k + 1, 2k − 3 : 2 k + 5]
+has two columns whose sum is (0 , 0, x)T . Indeed, among 9 columns there must
+11
+be two equal, their sum is (0 , 0, 0)T . Since M is in binormal form, its columns
+(2k + 1) and (2k + 2) diﬀer only in the last entry. Hence, M [k − 1 : k + 1, 2k − 3 :
+2k + 5] contains two rows whose sum is (0 , 0, 1)T . Now we select two columns
+in M [k − 1 : k + 1, 2k − 3 : 2 k + 5] whose sum is (0 , 0, x)T and call the columns
+of M which contain them special. Let ( y1, y2, . . . , yk+1)T be the sum of the two
+special columns. We already know that yk− 1 = yk = 0 and yk+1 = x. Since
+M [1 : k − 2, 1 : 2 k − 4] is in binormal form, by Lemma 3.1, there is a set of k − 2
+indices l(i) ∈ { 2i − 1, 2i} (i = 1 , 2, . . . , k − 2) such that the sum of columns
+l(1), l(2), . . . , l(k − 2) in M [1 : k − 2, 1 : 2 k − 4] is equal to ( y1, y2, . . . , yk− 2)T .
+Then the sum of these k − 2 columns plus the two special columns in M is the
+(k + 1)-dimensional zero vector.
+Proof of Theorem 5.12. By (5.1) and Corollary 5.11, s2m(2m + 1) ≥
+β2m(2m + 1) + 1 ≥ 4m + 5. To prove s2m(2m + 1) ≤ 4m + 5, consider a
+sequence S of size 4 m + 5 over Z2m+1
+2 . We need to prove that S has a zero-sum
+subsequence of size 2 m. Let x be the sum of all elements of S. Add x to each
+element of S and denote the resulting sequence by S0. If S0 has a zero-sum
+subsequence of size 2 m, then S has it, too.
+Consider a (2 m + 1) × (4m + 5) binary matrix M whose columns represent
+the vectors from S0. By Theorem 5.10, 4 m + 5 ≥ s2m(2m). If the rank of M is
+less than 2 m + 1, then by Lemma 6.4, it has a set of 2 m columns that sum up
+to a zero vector.
+Suppose that the rank of M is 2 m + 1. Since the sum of all vectors of S0 is
+a zero vector, M satisﬁes the conditions of Lemma 3.2 and can be brought to
+matrix M ′ in binormal form by permutations of columns and additions of one
+row to another. By Lemma 6.6, M ′ has a set of 2 m columns that sum up to a
+zero vector. Then by Observation 6.3, M has such a set, too.
+Proof of Theorem 5.13. By (5.1), β2m(d) ≤ s2m(d) − 1. It remains to prove
+β2m(d) ≥ s2m(d) − 1. The values of s2m(d) for d ≤ 2m + 1 were determined in
+Theorems 5.9, 5.10, and 5.12. Theorems 5.2 and 5.4 yield β2m(d) ≥ 2β[1,2m](d −
+1) + 2. The set of d − 1 basis vectors in Zd− 1
+2 demonstrates that β[1,2m](d − 1) ≥
+d − 1, so we get
+β2m(2m − 1) ≥ 2(2m − 2) + 2 = 4 m − 2 = s2m(2m − 1) − 1,
+β2m(2m) ≥ 2(2m − 1) + 2 = 4 m = s2m(2m) − 1.
+By (5.2), β[1,2m](2m) ≥ 2m + 1, and hence,
+β2m(2m + 1) ≥ 2(2m + 1) + 2 = 4 m + 4 = s2m(2m + 1) − 1.
+We use Theorem 5.4 with odd m ≥ 1 and b = 2 m + 2 ≤ β2[1,m](2m) to get
+β2m+4(2m + 1) = β2b− 2m(2m + 1) ≥ 2b = 4 m + 4 for m ≥ 1. Substituting
+m − 2 ≥ 1 instead of m, we get
+β2m(2m − 3) ≥ 4m − 4 = s2m(2m − 3) − 1 for m ≥ 3.
+12
+Finally,
+β2m(2m − 2) ≥ β2m(2m − 3) + 1 ≥ 4m − 3 = s2m(2m − 2) − 1 for m ≥ 3.
+Lemma 6.7. Let C be a linear binary code of length n ≥ 10. If C does not
+have words of Hamming weight 2 and 4, then its dual code C⊥ has a nonzero
+word of weight l where |l − n/2| ≥ 2.
+Proof. Suppose, to the contrary, that the weights of nonzero words of C⊥ lay
+in the interval [( n − 3)/2, (n + 3)/2]. Let Dn = {0, (n − 3)/2, (n − 1)/2, (n +
+1)/2, (n + 3)/2} if n is odd, and Dn = {0, (n − 2)/2, n/ 2, (n + 2)/2} if n is
+even. Let r be the dimension of C⊥ , so the dimension of C is k = n − r. Let
+Aj (Bj) denote the number of words of weight j in C (C⊥ ). Then A0 = 1,
+A2 = A4 = 0, B0 = 1, Bj = 0 for j /∈ Dn, and ∑
+j∈ Dn Bj = 2 r. Consider
+a linear combination of MacWilliams identities (2.3) with λ = 1 , 2, 3, 4, where
+coeﬃcients cλ will be selected later:
+4∑
+λ=1
+cλ 2r
+λ∑
+j=0
+(n − j
+λ − j
+)
+Aj =
+4∑
+λ=1
+cλ 2λ
+n− λ∑
+j=0
+(n − j
+λ
+)
+Bj .
+As Dn ⊆ [0, n − λ] for n ≥ 10, λ ≤ 4, and Bj = 0 for j /∈ Dn, we can rewrite it
+as
+2r
+4∑
+λ=1
+cλ
+λ∑
+j=0
+(n − j
+λ − j
+)
+Aj =
+∑
+j∈ Dn
+fjBj , (6.1)
+where
+fj =
+4∑
+λ=1
+cλ 2λ
+n− λ∑
+j=0
+(n − j
+λ
+)
+.
+As A2 = A4 = 0, the left hand side of (6.1) is a linear combination of A0, A1, A3.
+We are going to choose coeﬃcients c1, c2, c3, c4 in such a way that A1 and A3
+are eliminated while the values of fj are equal for all j ∈ Dn\{0}.
+If n is even, set c1 = 4 n(n − 1)(n − 2), c2 = − 12(n − 2)2, c3 = 24( n − 3),
+c4 = − 24. In this case, we get f0 = 0, fj = n2(n + 2)(n − 2) for j ∈ Dn\{0},
+and (6.1) is reduced to
+2rn(n − 1)(n − 2)(n + 3)A0 = n2(n + 2)(n − 2)
+∑
+j∈ Dn\{ 0}
+Bj .
+Since A0 = 1 and ∑
+j∈ Dn\{ 0} Bj = 2 r − 1, we can simplify it further to
+n(n − 2)(3 ·2r − n(n + 2)) = 0 ,
+which has no integer solutions for n > 6.
+13
+If n is odd, set c1 = 4( n + 1)(n − 1)(n − 3), c2 = − 12(n − 1)(n − 3), c3 =
+24(n− 3), c4 = − 24. In this case, we get f0 = 0, fj = (n+ 3)(n+ 1)(n− 1)(n− 3)
+for j ∈ Dn\{0}, and (6.1) is reduced to
+2rn(n − 1)(n − 3)(n + 4)A0 = ( n + 3)(n + 1)(n − 1)(n − 3)
+∑
+j∈ Dn\{ 0}
+Bj .
+Since A0 = 1 and ∑
+j∈ Dn\{ 0} Bj = 2 r − 1, we can simplify it further to
+(n − 1)(n − 3)(3 ·2r − (n + 1)(n + 3)) = 0 ,
+which has no integer solutions for n > 3.
+Lemma 6.8. β2[1,m](d) ≤ max{9, 2β2[1,m](d − 1) − 4} .
+Proof. Suppose, β2[1,m](d) ≥ 10. We need to prove β2[1,m](d) ≤ 2β2[1,m](d −
+1) − 4. Consider a set A of size n = β2[1,m](d) in Zd
+2 which does not have
+zero-sum subsets of sizes 2 , 4, . . . ,2m. Write n vectors of A column-wise as a
+d × n binary matrix M . Similarly to the proof of Theorem 5.1, the maximality
+of |A| ensures that M has rank d. Let C be the linear code of length n whose
+parity check matrix is M . This code does not have words of weight 2 , 4, . . . ,2m.
+As n ≥ 10, by Lemma 6.7, the dual code C⊥ has a word of weight l where
+|l − n/2| ≥ 2. Then there exists a parity check matrix M1 of code C such that
+this word is the ﬁrst row of M1. Notice that the sum of any 2 k columns of M1
+is not a zero vector ( k = 1 , 2, . . . , m). If l ≥ (n + 4)/2, remove from M1 all
+columns which contain 0 in the ﬁrst row. If l ≤ (n − 4)/2, remove from M1 all
+columns which contain 1 in the ﬁrst row. The resulting matrix M2 is of size
+d × t where t ≥ (n + 4)/2. All entries in the ﬁrst row of M2 are equal. Remove
+the ﬁrst row to get matrix M3 of size ( d − 1) × t. As M2 does not have sets of
+columns of size 2 k (k = 1, 2, . . . , m) which sum up to a zero vector, the same is
+true for M3. Therefore, β2[1,m](d − 1) ≥ t ≥ (n + 4)/2 = ( β2[1,m](d) + 4)/2.
+Proof of Theorem 5.7. For 3 ≤ d ≤ 7, the statement of the theorem follows
+from Theorem 5.13. If d ≥ 8, (5.2) and Theorem 5.2 yield β{2,4,6} (d) ≥ 10. We
+may apply Lemma 6.8 to get β{2,4,6} (d) ≤ 2β{2,4,6}(d − 1) − 4. By Theorem 5.4,
+β6(d) ≥ 2β{2,4,6} (d − 1) ≥ β{2,4,6} (d) + 4. By deﬁnition, β{4,6} (d) = β{2,4,6} (d),
+hence, Theorem 5.5 yields s6(d) = 1 + max {β{2,4,6}(d) + 4, β 6(d)} = 1 + β6(d).
+Lemma 6.9. Let D be a digraph with n ≡ 1 (mod 4) vertices where every
+vertex has odd out-degree. Then one can ﬁnd in D either 3 vertices that span
+a subgraph with 2 vertices of odd out-degree, or 5 vertices that span a subgraph
+with 3 vertices of odd out-degree.
+Proof. Let the vertex set of D be {1, 2, . . . , n}. Let C = [cij] be the adjacency
+matrix: cij = 1 if the arc ( i, j) is present in D, otherwise, cij = 0 ( i ̸= j). The
+diagonal entries cii are zeros.
+14
+For a subset A of vertices we deﬁne the type of A as the number of vertices of
+odd out-degree in the subgraph of D spanned by A. We need to show that there
+exists either a triple of type 2 or a quintuple of type 3. For a triple {i, j, k},
+let t(i, j, k) denote its type. Similarly, for a quintuple {i, j, k, l, m}, its type is
+denoted by t(i, j, k, l, m). Suppose, D contains no triple of type 2, so every triple
+of even type must have type 0. We are going to show that there is a q uintuple
+of type 3.
+The size of C is odd, and the sum of the entries in each row is odd. Hence,
+the sum of all entries of C is odd. In the sum of expressions f (i, j, k) = cij +cji +
+cik + cki + cjk + ckj over all triples {i, j, k}, each oﬀ-diagonal entry of C appears
+n − 2 ≡ 1 (mod 2) times. Notices, that t(i, j, k) is odd (even) when f (i, j, k) is
+odd (even). Hence, the sum of the types of all triples is odd. As n ≡ 1 (mod 4),
+the number of all triples,
+(n
+3
+)
+, is even. It means that there exists at least one
+triple of even type, and at least one triple of odd type. Then we can ﬁ nd a
+triple of even type and a triple of odd type that share a pair. Notice t hat the
+expression f (i, j, k) + f (i, j, l) + f (i, j, l) + f (j, k, l) is always even, because each
+arc of the subgraph spanned by {i, j, k, l} is counted there twice. Thus, the sum
+of types of the 4 triples within one quadruple is even. In particular, a quadruple
+which contains a triple of even type and a triple of odd type must cont ain two
+triples of even type and two triples of odd type. Without limiting gener ality, we
+can assume that triples {1, 2, 3}, {2, 3, 4} are of type 0, and {1, 2, 4}, {1, 3, 4}
+are of odd type. Hence,
+c12 = c13, c 42 = c43, c 21 = c23 = c24, c 31 = c32 = c34, c 14 ̸= c41.
+Notice that the following operation on D preserves the types of all subsets
+of odd sizes (in particular of sizes 3 , 5, n): for a given vertex i, remove all arcs
+(i, j) that were present in D, and add all arcs ( i, j) that were not present. It
+is equivalent to replacing each oﬀ-diagonal entry cij in row i of C with 1 − cij.
+We apply this switching operation, if necessary, to some of vertices 1 , 2, 3, 4 to
+ensure
+c12 = c13 = c42 = c43 = c21 = c23 = c24 = c31 = c32 = c34 = 0. (6.2)
+As indices 1 and 4 appear in (6.2) symmetrically, and c14 ̸= c41, we can assume,
+without limiting generality, that c14 = 1 and c41 = 0. Deﬁne
+V1 = {i ∈ { 4, 5, . . . , n} : t(i, 2, 3) = 0 ,
+t(i, 1, 2) ≡ 1 (mod 2) , t (i, 1, 3) ≡ 1 (mod 2) } ,
+V2 = {i ∈ { 4, 5, . . . , n} : t(i, 1, 3) = 0 ,
+t(i, 2, 3) ≡ 1 (mod 2) , t (i, 1, 2) ≡ 1 (mod 2) } ,
+V3 = {i ∈ { 4, 5, . . . , n} : t(i, 1, 2) = 0 ,
+t(i, 1, 3) ≡ 1 (mod 2) , t (i, 2, 3) ≡ 1 (mod 2) } ,
+15
+W0 = {i ∈ { 4, 5, . . . , n} : t(i, 1, 2) = t(i, 1, 3) = t(i, 2, 3) = 0 } ,
+W1 = V1 ∪ { 1} , W 2 = V2 ∪ { 2} , W 3 = V3 ∪ { 3} .
+As the sum of types of all triples within one quadruple is even, {W0, W1, W2, W3}
+form a partition of {1, 2, . . . , n}. Notice that 4 ∈ V1.
+We claim that t(i, j, 3) = 0 for any i ∈ V1 and j ∈ V2 (if V2 is empty, this
+statement becomes trivial). Indeed, by the deﬁnition of V1 and V2, t(1, 2, 3) =
+t(i, 2, 3) = t(1, j, 3) = 0 while t(i, 1, 2), t(i, 1, 3), t(j, 2, 3), t(j, 1, 2) are odd.
+Suppose, t(i, j, 3) is odd. Then t(i, j, 1) ≡ t(i, j, 3) + t(i, 1, 3) + t(j, 1, 3) ≡ 0
+(mod 2) and t(i, j, 2) ≡ t(i, j, 3) +t(i, 2, 3) +t(j, 2, 3) ≡ 0 (mod 2), which means
+that there are 5 triples of type 0 in cyclic pattern:
+t(i, j, 1) = t(j, 1, 3) = t(1, 3, 2) = t(3, 2, i) = t(2, i, j) = 0 .
+If so, the principal minor of C, formed by rows and columns i, j, 1, 2, 3, must
+carry equal oﬀ-diagonal entries within each row. But then we would have
+t(i, j, 3) = 0 which contradicts with the initial assumption t(i, j, 3) ≡ 1 (mod 2).
+Therefore, t(i, j, 3) = 0.
+Similarly, t(i, 2, k) = 0 for any i ∈ V1, k ∈ V3.
+For every i ∈ (W0 ∪ W1\{1, 4}), we have t(i, 2, 3) = 0, hence c2i = c23 = 0,
+c3i = c32 = 0, and ci2 = ci3. If ci2 = 1, apply switching operation to vertex i to
+ensure ci2 = ci3 = 0. Now we have c2i = c23 = c3i = c32 = ci2 = ci3 = 0 for all
+i ∈ W0 ∪ W1.
+For any i ∈ V1 and j ∈ V2, we have t(i, j, 3) = 0, hence cij = ci3 = 0. The
+same is true when i = 1 or j = 2. Therefore, cij = 0 for all i ∈ W1 and j ∈ W2,
+and similarly, cik = 0 for all i ∈ W1 and k ∈ W3.
+Denote by F the subgraph of D spanned by W1. If i, j ∈ W1, i ̸= j, and
+cij = cji = 1, then t(i, j, 2) = 2 (since ci2 = c2i = cj2 = c2j = 0). Hence, F does
+not have a pair of opposite arcs.
+We know that c14 = 1, c41 = 0, so F contains a transitive tournament of
+size 2 spanned by vertices 1 and 4, and 1 is the vertex of zero in-deg ree in
+this tournament. Let T be a transitive tournament of the largest possible size
+contained in F such that 1 is its vertex of zero in-degree. Let i denote the vertex
+of zero out-degree in T . As the out-degree of i in the whole D is odd, there
+exists vertex j, distinct from i and 1, such that cij = 1. As cij = 1, j cannot
+belong to W2 or W3. The two remaining cases are j ∈ W1 and j ∈ W0.
+If j ∈ W1, then cji = 0. By the maximality of T , there exists a vertex k in
+T such that ckj = 0. As i is the zero out-degree vertex in tournament T , we
+get cki = 1 and cik = 0. If cjk = 0, we get t(k, i, j) = 2. If cjk = 1, we get
+t(k, i, j, 2, 3) = 3.
+If j ∈ W0, then t(1, 2, j) = 0. Hence, c1j = c12 = 0 and cj1 = cj2 = 0. As
+1 is the zero in-degree vertex in tournament T , we get c1i = 1 and ci1 = 0. If
+cji = 0, we get t(1, i, j) = 2. If cji = 1, we get t(1, i, j, 2, 3) = 3.
+Lemma 6.10. Let m be even, and M be a (2m+1)× (4m+2) matrix in binormal
+form. One can pick up 2m columns in M whose sum is the (2m+1)-dimensional
+zero vector.
+16
+Proof. Let n = 2 m + 1, M = [ aij]. Let C = [ cij] be an n × n binary matrix
+where cij = ai,2j− 1 = ai,2j for i ̸= j. The values of diagonal entries cii are not
+important and may be set to zero. For a subset I ⊆ { 1, 2, . . . , n} and i ∈ I, we
+denote σi(I) = ∑
+j∈ I\{ i} cij. We say that I is of type t if among |I|values σi(I)
+with i ∈ I there are exactly t that are equal to 1. Let t(I) denote the type of I.
+Similarly to the proof of Lemma 6.6, we can assume that the sum of oﬀ-
+diagonal entries in each row of C is equal to 1. Hence, t({1, 2, . . . , n}) = n.
+We claim that if there exists I ⊆ { 1, 2, . . . , n} such that |I|= 2t(I) − 1, then
+one can pick up 2 m columns in M with zero sum. Indeed, as t(1, 2, . . . , n) = n,
+we have |I| ̸= n, so |I| ≤ n − 2. Without limiting generality, we may assume
+that I = {n − 2t + 2, n − 2t + 3, . . . , n} where t = t(I), 2 t ≤ n − 1, σi(I) = 1
+for n − 2t + 2 ≤ i ≤ n − t + 1, and σi(I) = 0 for n − t + 2 ≤ i ≤ n. As
+M [1 : n − 2t + 1, 1 : 2( n − 2t + 1)] is in binormal form, by Lemma 3.1, there is
+a set of indices j(i) ∈ { 2i − 1, 2i} (i = 1 , 2, . . . , n− 2t + 1) such that the sum
+of columns j(1), j(2), . . . , j(n − 2t + 1) in M [1 : n − 2t + 1, 1 : 2( n − 2t + 1)] is
+equal to the ( n − 2t + 1)-dimensional zero vector. As
+n− 2t+1∑
+j=1
+cij = 1 − σi(I) for
+n − 2t + 2 ≤ i ≤ n, the sum of columns j(1), j(2), . . . , j(n − 2t + 1) in M has the
+last t − 1 entries equal to 1, and the rest equal to 0. Columns 2 r − 1 and 2 r in M
+diﬀer only in the r’th row, so the sum of columns 2 n − 2t + 3, 2n − 2t + 4, . . . ,2n
+in M also has the last t − 1 entries equal to 1, and the rest equal to 0. Set
+j(i) = n + 1 + i for n − 2t + 2 ≤ i ≤ n − 1. Then the sum of columns
+j(1), j(2), . . . , j(n − 1) in M is the n-dimensional zero vector.
+Let D be a digraph with vertices 1 , 2, . . . , n where an arc ( i, j) is present if
+and only if cij = 1. As n ≡ 1 (mod 4), and every vertex has odd out-degree,
+D satisﬁes conditions of Lemma 6.9. Thus, there is a subset I ⊂ { 1, 2, . . . , n}
+(a triple or a quintuple) such that |I| = 2 t(I) − 1. As we just have shown, it
+guarantees the existence of 2 m columns in M with zero sum.
+Lemma 6.11. Let m be even, and M be a (2m + 1) × (4m + 3) matrix in
+binormal form where the sum of all columns is a zero vector. If M has two
+identical columns, then it also has a set of 2m columns with zero sum that
+includes at most one of the two identical columns.
+Proof. Set n = 2 m + 1. Let xi = ( a1i, a2i, . . . , ani)T be the ith column of M
+(i = 1 , 2, . . . ,2n + 1). As M is in binormal form, we can deﬁne n × n matrix
+C = [cij] where cij = ai,2j− 1 = ai,2j for i ̸= j. The values of diagonal entries cii
+are not important and may be set arbitrarily.
+If one of the two columns that are identical is the last column, then t he
+statement of the lemma follows from Lemma 6.10. Hence, without limitin g
+generality, we may assume that the two identical columns are 2 n − 2 and 2 n.
+Suppose, cn,n− 1 = 1. Then an,2n− 2 = 1. As x2n = x2n− 2, we get an,2n = 1
+and an,2n− 1 = 0. As M is in binormal form, x1 + x2 + . . .+ x2n = (1, 1, . . . ,1)T .
+As the sum of all columns of M is a zero vector, x2n+1 = (1 , 1, . . . ,1)T . Add
+row n to each row i ∈ { 1, 2, . . . , n− 1} where ai,2n− 1 ̸= ai,2n+1. After this is
+done, columns 2 n − 1 and 2 n + 1 diﬀer only in the last entry. Now swap columns
+17
+2n and 2 n + 1. The resulting matrix M ′ is in binormal form. By Lemma 6.10,
+there is a set of 2 m = n − 1 columns in M ′ with zero sum that does not include
+column 2 n + 1 of M ′ (which originated from column 2 n of M ). In this case, M
+has a set of 2 m columns with zero sum that does not include column 2 n. Hence,
+we may assume cn,n− 1 = 0, and similarly, cn− 1,n = 0.
+The (n − 1) × (2n − 2) submatrix M [1 : n − 1, 1 : 2 n − 2] is in binormal form.
+By Lemma 3.1, there is a set of indices j(i) ∈ { 2i − 1, 2i} (i = 1 , 2, . . . , n− 1)
+such that the sum of columns j(1), j(2), . . . , j(n − 1) in M [1 : n − 1, 1 : 2 n − 2] is
+the (n− 1)-dimensional zero vector. We recall that cn,n− 1 = 0. If ∑n− 2
+j=1 cn,j = 0,
+then the sum of columns j(1), j(2), . . . , j(n − 1) in M is the n-dimensional zero
+vector. Hence, we may assume ∑n− 2
+j=1 cn,j = 1, and similarly, ∑n− 2
+j=1 cn− 1,j = 1.
+The (n − 2) × (2n − 4) submatrix M [1 : n − 2, 1 : 2 n − 4] is in binormal form.
+By Lemma 3.1, there is a set of indices j(i) ∈ { 2i − 1, 2i} (i = 1 , 2, . . . , n− 2)
+such that xj(1) + xj(2) + . . . + xj(n− 2) has the ﬁrst n − 2 entries equal to 1.
+Since ∑n− 2
+j=1 cn− 1,j = 1 and ∑n− 2
+j=1 cn,j = 1, the last two entries of xj(1) +
+xj(2) + . . . + xj(n− 2) are also equal to 1. As x2n+1 = (1 , 1, . . . ,1)T , we get
+xj(1) + xj(2) + . . . + xj(n− 2) + x2n+1 = 0.
+Proof of Theorem 5.15. By (4.3) and Theorem 5.10, s2m(2m + 1) ≥
+s2m(2m) + 1 = 4 m + 2. To prove s2m(2m + 1) ≤ 4m + 2, consider a sequence
+S of size 4 m + 2 over Z2m+1
+2 . Let M be a (2 m + 1) × (4m + 2) binary matrix
+whose columns represent the vectors from S. We need to prove that M has a
+set of 2 m columns whose sum is a zero vector.
+By Theorem 5.10, 4 m + 2 ≥ s2m(2m). If the rank of M is less than 2 m + 1,
+then by Lemma 6.4, there is a set of 2 m columns that sum up to a zero vector.
+Suppose that the rank of M is 2 m + 1. Let x ∈ Z2m+1
+2 be the sum of all
+columns of M , and x4m+2 ∈ Z2m+1
+2 be the last column. Add x + x4m+2 to
+each column of M , and expand the matrix by a new column equal to x. In the
+resulting (2m + 1)× (4m + 3) matrix M ′, the sum of all columns is a zero vector,
+and the last two columns are equal to x. M ′ satisﬁes conditions of Lemma 3.2
+and can be brought to binormal form M ′′ by permutations of the columns and
+additions of one row to another. There are two identical columns in M ′′ that
+originated from the last two columns of M ′. By Lemma 6.11, there is a set
+of 2 m columns in M ′′ with zero sum which includes at most one of these two
+columns. By Observation 6.3, M ′ has a set of 2 m columns with zero sum that
+does not include the last column. Therefore, M has a set of 2 m columns with
+zero sum.
+Acknowledgment
+The author thanks the anonymous referees for careful reading and helpful
+suggestions.
+18
+References
+[1] L. Bassalygo, G. Cohen, G. Z´ emor, Codes with forbidden distan ces, Dis-
+crete Math. 213 (1) (2000) 3–11, doi:10.1016/S0012-365X(99)0 0161-2.
+[2] J. Bitz, C. Griﬃth, X. He, Exponential lower bounds on the gener alized
+Erd˝ os-Ginzburg-Ziv constant, https://arxiv.org/abs/1712.00861, 2017.
+[3] R. C. Bose, D. Ray-Chaudhuri, On a class of error correcting bin ary group
+codes, Information and Control 3 (1) (1960) 68–79, doi:10.1016/ S0019-
+9958(60)90287-4.
+[4] C. L. Chen, Construction of some binary linear codes of minimum dis -
+tance ﬁve, IEEE Trans. Inform. Theory 37 (5) (1991) 1429–143 2, doi:
+10.1109/18.133262.
+[5] Y. Edel, C. Elsholtz, A. Geroldinger, S. Kubertin, L. Rackham, Ze ro-sum
+problems in ﬁnite abelian groups and aﬃne caps, Q. J. Math. 58 (2007 )
+159–186, doi:10.1093/qmath/ham003.
+[6] J. S. Ellenberg, D. Gijswijt, On large subsets of Fn
+q with no three-term
+arithmetic progression, Ann. of Math., (2) 185 (1) (2017) 339–34 3, doi:
+10.4007/annals.2017.185.1.8.
+[7] H. Enomoto, P. Frankl, N. Ito, K. Nomura, Codes with given dista nces,
+Graphs and Combinatorics 3 (1) (1987) 25–38, doi:10.1007/BF0178 8526.
+[8] P. Erd˝ os, A. Ginzburg, A. Ziv, Theorem in the additive number th eory,
+Bull. Res. Council Israel, Sect. F Math. Phys. 10F (1961) 41–43.
+[9] W. Gao, A. Geroldinger, Zero-sum problems in ﬁnite abelian groups : a sur-
+vey, Expo. Math. 24 (4) (2006) 337–369, doi:10.1016/j.exmath.20 06.07.002.
+[10] W. Gao, D. Han, J. Peng, F. Sun, On zero-sum subsequences o f
+length k exp(G), J. Comb. Theory Ser. A 125 (2014) 240–253, doi:
+10.1016/j.jcta.2014.03.006.
+[11] W. Gao, R. Thangadurai, On zero-sum sequences of prescribe d length,
+Aequationes Math. 72 (3) (2006) 201–212, doi:10.1007/s00010-0 06-2841-y.
+[12] W. D. Gao, On zero-sum subsequences of restricted size, II, Discrete Math.
+271 (1–3) (2003) 51–59, doi:10.1016/S0012-365X(03)00038-4.
+[13] V. D. Goppa, Rational representation of codes and ( l; g)-codes, Probl. In-
+form. Transm. 7 (3) (1971) 41–49.
+[14] M. Grassl, Bounds on the minimum distance of linear codes and qua ntum
+codes, http://www.codetables.de (accessed August 18, 2018), 2 007.
+[15] D. Han, H. Zhang, On zero-sum subsequences of prescribed le ngth, Int. J.
+Number Theory 14 (2018) 167–191, doi:10.1142/S1793042118500 112.
+19
+[16] D. Han, H. Zhang, On generalized Erd˝ os-Ginzburg-Ziv consta nts of Cr
+n,
+Discrete Math. 342 (4) (2019) 1117–1127, doi:10.1016/j.disc.2018 .12.018.
+[17] H. Harborth, Ein Extremalproblem f¨ ur Gitterpunkte, J. Reine Angew.
+Math. 262 (1973) 356–360.
+[18] X. He, Zero-sum subsequences of length kq over ﬁnite abelian p-groups,
+Discrete Math. 339 (1) (2016) 399–407, doi:10.1016/j.disc.2015.09 .005.
+[19] A. Hocquenghem, Codes correcteurs d’erreurs, Chiﬀres 2 (1 959) 147–156.
+[20] A. Kemnitz, On a lattice point problem, Ars Combin. 16b (1983) 15 1–160.
+[21] S. Kubertin, Zero-sums of length kq in Zd
+q , Acta Arith. 116 (2) (2005)
+145–152, doi:10.4064/aa116-2-3.
+[22] F. J. MacWilliams, A theorem on the distribution of weights in a syst em-
+atic code, Bell System Techn. J. 42 (1) (1963) 79–94, doi:10.1002/ j.1538-
+7305.1963.tb04003.x.
+[23] C. Reiher, On Kemnitz conjecture concerning lattice-points in t he plane,
+Ramanujan J. 13 (1–3) (2007) 333–337, doi:10.1007/s11139-006 -0256-y.
+[24] A. Sidorenko, Extremal problems on the hypercube and the co degree Tur´ an
+density of complete r-graphs, SIAM J. Discrete Math. 32 (4) (2018) 2667–
+2674, doi:10.1137/17M1151171.
+[25] N. Sloane, S. Reddy, C. L. Chen, New binary codes, IEEE Trans . Inform.
+Theory 18 (4) (1972) 500–510, doi:10.1109/TIT.1972.1054833.
+[26] M. Tomlinson, C. J. Tjhai, M. A. Ambroze, M. Ahmed, M. Jibril, Err or-
+Correction Coding and Decoding, Springer, doi:10.1007/978-3-319 -51103-0,
+2017.
+20

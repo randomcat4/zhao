@@ -3,6 +3,7 @@
 
 # Preserve exact bytes for user-provided and candidate-source originals.
 source-material/user-provided/** -text
+source-material/candidate-sources/** -text
 research/2026-09-04_zhao_exact/sources/** -text
 research/2026-09-04_zhao_response/sources/** -text
 research/2026-09-04_zhao_audit/*.pdf -text
