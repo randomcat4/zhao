@@ -1,0 +1,16 @@
+{
+  "method": "fresh signed-cycle-index inclusion-exclusion plus independent no-prune histogram recursion",
+  "toy_direct_enumeration_tests": [
+    {"parameters": [4,2,2,1], "formula": 3, "brute_force": 3},
+    {"parameters": [4,2,4,2], "formula": 3, "brute_force": 3},
+    {"parameters": [5,2,5,2], "formula": 12, "brute_force": 12},
+    {"parameters": [6,3,2,1], "formula": 10, "brute_force": 10},
+    {"parameters": [6,2,3,1], "formula": 15, "brute_force": 15}
+  ],
+  "full_parameters": [21,7,15,5],
+  "cycle_types_processed": 84,
+  "cache": {"hits": 7850590, "misses": 143137, "size": 143137},
+  "association_total": "860662922414727068051994283870582495183777624400448",
+  "matches_candidate": true,
+  "normal_exit": 0
+}
