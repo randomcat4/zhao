@@ -2,14 +2,14 @@
 
 本仓库保存对赵凯文笔记、作者回复、Claude 回应及相关文献来源的独立核验。它同时保存后续针对 \(G=C_5^4\) 端点问题的证明尝试、有限计算证据、独立复核和已发现的勘误。
 
-仓库是研究档案，不把尚未闭合的端点写成定理。当前完整猜想 A、B 均为 **INCOMPLETE**。截至 2026-09-04，已认证的数值范围为
+仓库是研究档案，不把尚未闭合的端点写成定理。截至 2026-09-04 已独立认证的完整猜想 A、B 均为 **INCOMPLETE**，已认证的数值范围为
 
 \[
 19\le s_{\le14}(C_5^4)\le s_{\le13}(C_5^4)\le22,
 \qquad K(C_5^4)\in\{10,14,15\}.
 \]
 
-最新证明进展已将假想 B 反例的支持压到 13 至 16，并排除了若干完整结构类；剩余关键分支尚未关闭。详细状态见 [最新进展](research/2026-09-04_zhao_attack/answer_continue.md) 和 [全新上下文独立终审](research/2026-09-04_zhao_attack/proofs/verify_continuation_final_fresh.md)。
+2026-09-05 新收到的抢救稿给出了 B 的候选闭合证明，一条新的自包含“三份锚点”论证则候选关闭 A 中所有含三重值的情形。二者均通过本轮逐行初审，但尚未升级为独立认证结论；A 的平方自由与仅双重值两大结构仍未关闭。详见 [2026-09-05 收件审计](research/2026-09-05_zhao_completion/README.md)。此前的已认证状态见 [最新进展](research/2026-09-04_zhao_attack/answer_continue.md) 和 [全新上下文独立终审](research/2026-09-04_zhao_attack/proofs/verify_continuation_final_fresh.md)。
 
 ## 快速入口
 
@@ -20,6 +20,7 @@
 - [作者回复后的重构](research/2026-09-04_zhao_response/answer.md)：对“照搬”、原猜想与更正方向的分析。
 - [逐源追查](research/2026-09-04_zhao_exact/source_audit.md)：Schmid–Zhuang、Gao–Geroldinger、Gao–Zhou、Luo 等来源的精确核对。
 - [攻坚总报告](research/2026-09-04_zhao_attack/answer_continue.md)：最新局部定理、反例范围、失败路线和投入判断。
+- [2026-09-05 收件审计](research/2026-09-05_zhao_completion/README.md)：B 候选闭合、四条 PRO 回报、未闭分支和验证等级。
 
 ## 目录结构
 
@@ -32,6 +33,7 @@ research/
   2026-09-04_zhao_response/      作者回复后的分析、Sloane 来源及形式化材料
   2026-09-04_zhao_exact/         Claude 来源说法的逐条核查及候选来源原文
   2026-09-04_zhao_attack/        端点攻坚、证明、程序证据、复核与勘误
+  2026-09-05_zhao_completion/    抢救稿、PRO 首轮输出与收件审计
 ```
 
 四个研究阶段均完整保留，包括相互独立的验证报告、失败分支和反例记录。`local_deps`、解释器缓存及编译缓存未纳入版本库；它们是可重建的本机依赖，不属于数学证据。
