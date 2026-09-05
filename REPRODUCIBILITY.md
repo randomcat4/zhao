@@ -2,6 +2,35 @@
 
 本仓库以“先读证明范围，再运行对应证据”为原则。不要把某个脚本成功运行等同于完整猜想已被证明。
 
+## 2026-09-05 端点终审
+
+最终裁决及依赖账见：
+
+```text
+research/2026-09-05_zhao_completion/fresh_audit/HARVEST_VERDICT.md
+research/2026-09-05_zhao_completion/fresh_audit/B_endpoint_review.md
+research/2026-09-05_zhao_completion/fresh_audit/projection_proof_review.md
+```
+
+平方自由投影证书的独立重建只需 Python 标准库：
+
+```bash
+python3 -I research/2026-09-05_zhao_completion/fresh_audit/projection_recheck.py
+```
+
+预期检查全部 11,931 个原始轮廓、214,758 个 \(R_{\mathbf c}\) 值，输出 JSON 中应有：
+
+```text
+positive_profile_count = 0
+maximum_P = 0
+K = -978253109306
+125Y14 = 700000000
+125Y15 = 800000000
+Y16 = 0
+```
+
+候选稠密纤维路线的 PR 包漏交 `rank3_roots.txt` 与逐根日志，不能直接视为可重放证据。补救工作流 `.github/workflows/audit-dense-fibre.yml` 会先从 `generate_roots.cpp` 重建根表，再运行完整搜索。该路线是第二证明；端点 A 的最终认证使用上面的投影证明与独立证书重建。
+
 ## 建议阅读顺序
 
 1. `research/2026-09-04_zhao_attack/problem.md`

@@ -1,14 +1,14 @@
 # Zhao endpoint completion intake — 2026-09-05
 
-This directory records the rescued B manuscript, the four first-round PRO outputs, the second-round prompts, the completed second-round double-only proof with a separate verification package, and the independent three-anchor audit. It is an audit archive, not a declaration that the full endpoint problem has been solved.
+This directory records the rescued B manuscript, the four first-round PRO outputs, the second-round proofs, and the fresh terminal audit. The historical sections below preserve what each round knew at the time; the controlling current verdict is `fresh_audit/HARVEST_VERDICT.md`.
 
 ## Current status
 
 | target | intake status | present audit conclusion |
 |---|---|---|
-| B: every 20-position sequence in \(\mathbb F_5^4\) has a nonempty zero-sum of length at most 14 | rescue manuscript reports a complete proof | candidate-closed, conditional on the explicitly listed certified repository inputs; no critical hand-proof gap found in the present line audit |
+| B: every 20-position sequence in \(\mathbb F_5^4\) has a nonempty zero-sum of length at most 14 | rescue manuscript reports a complete proof | **CORRECT**, relative to the explicitly listed and re-audited repository inputs; see `fresh_audit/B_endpoint_review.md` |
 | A, at least one value of multiplicity 3 | round-1 route 3 reports `PROVED`; round-2 independent audit completed | the frozen three-anchor theorem is now supported by a self-contained analytic proof, a different mathematical re-derivation, and a separately written deterministic finite-interface checker; no gap was found |
-| A, squarefree | round-1 route 1 reports `INCOMPLETE` | open; the 15-block 5-regular complement-fibre branch and all larger block-count branches remain |
+| A, squarefree | early route 1 was incomplete; later dense-fibre and projection routes claimed completion | **CORRECT** by the independently reconstructed projection certificate; the dense-fibre archive remains a non-load-bearing second route with a replay gap |
 | A, only double and single values, \(1\le b\le6\) | round-2 prompt 3 reports `PROVED_AND_AUDITED` | a new two-anchor hand proof closes all six frozen cells; a separate second-pass report and independently written finite-interface checker found no gap and replay successfully |
 | A, two triple values | round-1 route 4 reports `INCOMPLETE` | its dedicated computation is incomplete, but this whole regime is subsumed by the independently re-audited three-anchor theorem |
 
@@ -18,7 +18,7 @@ Consequently, from the point of view of multiplicity cells:
 
 > the cells \(a=0,\ b=1,\ldots,6\) are closed by the new two-anchor proof, while every cell with at least one exactly-triple value is closed by the independently re-audited three-anchor theorem. Under the previously certified height bound, the only remaining A cell is the 21-element squarefree case \((a,b)=(0,0)\).
 
-The full A endpoint is still open in this archive because the squarefree cell is not closed.
+The three rows exhaust the certified multiplicity cases, so the full A endpoint is closed. Together with B and the previously audited tail reduction, this gives \(K(C_5^4)=10\).
 
 ## Verification levels
 
@@ -29,7 +29,9 @@ The repository uses the following levels for this intake:
 3. **replayed** — all claimed finite certificates have been regenerated in a clean environment;
 4. **independently certified** — a genuinely separate verifier has checked both reductions and evidence.
 
-The B manuscript remains at the locally audited level in this intake. The rescue bundle's smoke replay could not be rerun on the original host because no GNU C++ compiler was installed; this was recorded as not replayed, not as a pass.
+The B manuscript has now received a fresh adversarial line audit and targeted replays of its inherited 16/17-atom interfaces. Its remaining large computational and published inputs are listed explicitly in `fresh_audit/B_endpoint_review.md`.
+
+The squarefree projection proof has also received a fresh adversarial audit. A separately written standard-library checker reconstructed all 11,931 raw profiles and all 214,758 certificate features from the displayed definitions, with no positive certificate row. This closes squarefree A without relying on the dense-fibre search package.
 
 The three-anchor package now contains a self-contained analytic proof, a different mathematical re-derivation of the load-bearing identities and endgame, and a separately written deterministic finite-interface checker whose committed run passes. The double-only package likewise includes a second-pass re-derivation plus a checker written independently of the submitted checkers. Because these verification passes were produced within the same research exchange, the archive records them as separate verification packages rather than external institutional, proof-assistant, or third-party certification.
 
@@ -91,9 +93,9 @@ Future work must continue to treat all six as intermediate checkpoints, not term
 - `independent_three_anchor/`: the self-contained three-anchor proof, independent mathematical audit, compact deterministic checker, report, run log, and hashes.
 - `SOURCE_SHA256SUMS.txt`: hashes of the intake files.
 
-## Non-claims
+## Historical non-claims and current boundary
 
-- The full A endpoint is not proved by this intake; the squarefree 21-element cell remains open.
+- Earlier round-one and round-two partial reports did not prove full A. The later projection proof and fresh independent reconstruction do prove the squarefree 21-element cell; `fresh_audit/HARVEST_VERDICT.md` supersedes those historical status lines.
 - The three-anchor result is independently re-audited within this research exchange, but is not claimed as external institutional, proof-assistant, or third-party certification.
 - A threshold-limited enumeration is not a finite classification.
 - A self-reported terminal label is not accepted without examining its proof and evidence.
