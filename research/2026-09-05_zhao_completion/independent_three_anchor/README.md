@@ -37,16 +37,15 @@ The self-contained checker recorded:
 
 ```text
 INDEPENDENT_AUDIT: PASS
-signed_identity_subsets=1769472
+signed_identity_subsets=294912
 deletion_actual_rows=11232
 graphs_n7=2097152; counterexamples=0
 partitions=385
-hard_core_anchors=620; maximum_min_zero=10
-random_trials=2500; maximum_min_zero=10
-report_sha256=a425544135fbd6e430e92df3e5755c68545e3ae81be1a9576398b611066fd5e8
+anchor_rows=50; split_rows=19
+report_sha256=fb2b907b2f12a217715bf426ebb3b4c72e57637c8160fc1bb03f63152be8fdb8
 ```
 
-The hard-core and fixed-seed searches are red-team checks only; the universal theorem is analytic.
+The exhaustive graph, deletion, capacity, split, and partition checks are finite-interface checks only; the universal theorem is analytic.
 
 ## Reproduction
 
