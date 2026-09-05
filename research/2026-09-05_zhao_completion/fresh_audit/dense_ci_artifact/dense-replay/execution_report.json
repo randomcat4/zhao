@@ -1,0 +1,223 @@
+{
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "threads": 4,
+  "source_sha256": {
+    "audit_interfaces.py": "a6af58a267ffbf563395e96c12feedcf3b38c325ec90d59f4525d71d8fc4c209",
+    "audit_legacy_models.py": "1ac0a6da1b6728b31eb82e0b081af80edbdb98509d286a1a6c4b1b752cf3d3a1",
+    "farkas_certificate.json": "5370a35fc07a464ce91561384da995998d85a82a54bee41119bb63bbedf58db3",
+    "generate_roots.cpp": "36d25c55ecbc89e8efe21f184baca96bf0def54af769d26e7afcdc6199f668ff",
+    "negative_controls.py": "80acb25727a700573f2b2f350dcd6c88b60ce96055f8ce2a826eea09c46d3129",
+    "rank3_roots.txt": "4d6927a84fc893c8a39a278d2b4134e310984a1a470fd939ec80e2070fdbf2fe",
+    "run_all.py": "8a3105289c1dd33351f80a00b6cb11c23f49775f1f3aa5878519f32ee00ee604",
+    "search_reference.cpp": "b02dea991fb2c630107d6cd299c413ab59133b2a63536bcd22841e77a8763a16",
+    "unit_search_reference.cpp": "58d4b938abc7ffa2456eb6caaaac7d9bd09e87a9310dc503d179a3038f48c2bb",
+    "unit_verify_extensions.cpp": "112a84b04bd0524f0b31a2606644b08ed17fc6534af94b158c5cd9cc3cee3747",
+    "verify_extensions.cpp": "302074eeb44d3bcefea33d3f6a71b559cb4412ae0e70effbf3e1ab86f5bb9997",
+    "verify_farkas.py": "b0ccdd10c5af084b2c229deb1d2a2e3fba550a701ff4abb1fcaef56a742a7726",
+    "verify_logs.py": "743fbc196325614be561d022c6ef48878e0d025aef9f3be8fa03e190baf3f22d",
+    "verify_roots.py": "bc74cc0a3ed92fcd38f68cfa21c4408e67ec9b1ce88b5f22bb32889c93db4cb4"
+  },
+  "commands": [
+    {
+      "name": "build_generate_roots",
+      "argv": [
+        "/usr/bin/g++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/generate_roots.cpp",
+        "-o",
+        "/home/runner/work/_temp/dense-replay/generate_roots"
+      ],
+      "returncode": 0,
+      "seconds": 1.0145322489999984
+    },
+    {
+      "name": "build_search_reference",
+      "argv": [
+        "/usr/bin/g++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/search_reference.cpp",
+        "-o",
+        "/home/runner/work/_temp/dense-replay/search_reference"
+      ],
+      "returncode": 0,
+      "seconds": 1.7151534270000042
+    },
+    {
+      "name": "build_verify_extensions",
+      "argv": [
+        "/usr/bin/g++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-fopenmp",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/verify_extensions.cpp",
+        "-o",
+        "/home/runner/work/_temp/dense-replay/verify_extensions"
+      ],
+      "returncode": 0,
+      "seconds": 1.7488053749999963
+    },
+    {
+      "name": "build_unit_search_reference",
+      "argv": [
+        "/usr/bin/g++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/unit_search_reference.cpp",
+        "-o",
+        "/home/runner/work/_temp/dense-replay/unit_search_reference"
+      ],
+      "returncode": 0,
+      "seconds": 1.307937133000003
+    },
+    {
+      "name": "build_unit_verify_extensions",
+      "argv": [
+        "/usr/bin/g++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-fopenmp",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/unit_verify_extensions.cpp",
+        "-o",
+        "/home/runner/work/_temp/dense-replay/unit_verify_extensions"
+      ],
+      "returncode": 0,
+      "seconds": 2.0341337759999973
+    },
+    {
+      "name": "generate_roots",
+      "argv": [
+        "/home/runner/work/_temp/dense-replay/generate_roots",
+        "/home/runner/work/_temp/dense-replay/rank3_roots.regenerated.txt"
+      ],
+      "returncode": 0,
+      "seconds": 0.836974620999996
+    },
+    {
+      "name": "verify_roots",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/verify_roots.py"
+      ],
+      "returncode": 0,
+      "seconds": 13.566585201999999
+    },
+    {
+      "name": "verify_farkas",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/verify_farkas.py"
+      ],
+      "returncode": 0,
+      "seconds": 1.278767686000002
+    },
+    {
+      "name": "audit_interfaces",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/audit_interfaces.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.03561356499999846
+    },
+    {
+      "name": "audit_legacy_models",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/audit_legacy_models.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.5513827810000009
+    },
+    {
+      "name": "negative_controls",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/negative_controls.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.21597403299999485
+    },
+    {
+      "name": "unit_search_reference",
+      "argv": [
+        "/home/runner/work/_temp/dense-replay/unit_search_reference"
+      ],
+      "returncode": 0,
+      "seconds": 0.02768995000000274
+    },
+    {
+      "name": "unit_verify_extensions",
+      "argv": [
+        "/home/runner/work/_temp/dense-replay/unit_verify_extensions"
+      ],
+      "returncode": 0,
+      "seconds": 0.4685494280000029
+    },
+    {
+      "name": "search_reference",
+      "argv": [
+        "/home/runner/work/_temp/dense-replay/search_reference",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/rank3_roots.txt"
+      ],
+      "returncode": 0,
+      "seconds": 534.180293528
+    },
+    {
+      "name": "verify_extensions",
+      "argv": [
+        "/home/runner/work/_temp/dense-replay/verify_extensions",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/rank3_roots.txt",
+        "4"
+      ],
+      "returncode": 0,
+      "seconds": 381.57571464800003
+    },
+    {
+      "name": "verify_logs",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre/verify_logs.py",
+        "--source",
+        "/home/runner/work/zhao/zhao/research/2026-09-05_zhao_completion/pro_round2/02_dense_fibre",
+        "--logs",
+        "/home/runner/work/_temp/dense-replay"
+      ],
+      "returncode": 0,
+      "seconds": 0.0624293990000524
+    }
+  ],
+  "exit": "NORMAL",
+  "elapsed_seconds": 940.641981535,
+  "all_commands_exit_zero": true
+}

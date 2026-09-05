@@ -8,7 +8,7 @@ This directory records the rescued B manuscript, the four first-round PRO output
 |---|---|---|
 | B: every 20-position sequence in \(\mathbb F_5^4\) has a nonempty zero-sum of length at most 14 | rescue manuscript reports a complete proof | **CORRECT**, relative to the explicitly listed and re-audited repository inputs; see `fresh_audit/B_endpoint_review.md` |
 | A, at least one value of multiplicity 3 | round-1 route 3 reports `PROVED`; round-2 independent audit completed | the frozen three-anchor theorem is now supported by a self-contained analytic proof, a different mathematical re-derivation, and a separately written deterministic finite-interface checker; no gap was found |
-| A, squarefree | early route 1 was incomplete; later dense-fibre and projection routes claimed completion | **CORRECT** by the independently reconstructed projection certificate; the dense-fibre archive remains a non-load-bearing second route with a replay gap |
+| A, squarefree | early route 1 was incomplete; later dense-fibre and projection routes claimed completion | **CORRECT** by the independently reconstructed projection certificate; a clean Linux full replay also repaired and passed the non-load-bearing dense-fibre second route |
 | A, only double and single values, \(1\le b\le6\) | round-2 prompt 3 reports `PROVED_AND_AUDITED` | a new two-anchor hand proof closes all six frozen cells; a separate second-pass report and independently written finite-interface checker found no gap and replay successfully |
 | A, two triple values | round-1 route 4 reports `INCOMPLETE` | its dedicated computation is incomplete, but this whole regime is subsumed by the independently re-audited three-anchor theorem |
 
