@@ -1,0 +1,8 @@
+COMPLETE H10_g=82 class=5 interval=1:124 roots=310124 cores=1501000 dense=0 capacity_pass=0 color_pass=0 nodes=0 max_capacity=3 A_endpoints=0
+COMPLETE H10_g=83 class=5 interval=1:124 roots=310124 cores=1576050 dense=0 capacity_pass=0 color_pass=0 nodes=0 max_capacity=2 A_endpoints=0
+COMPLETE H10_g=84 class=5 interval=1:124 roots=310124 cores=1501000 dense=0 capacity_pass=0 color_pass=0 nodes=0 max_capacity=3 A_endpoints=0
+COMPLETE H10_g=86 class=5 interval=1:124 roots=310124 cores=1501000 dense=0 capacity_pass=0 color_pass=0 nodes=0 max_capacity=3 A_endpoints=0
+COMPLETE H10_g=91 class=5 interval=1:124 roots=310124 cores=1576050 dense=0 capacity_pass=0 color_pass=0 nodes=0 max_capacity=2 A_endpoints=0
+COMPLETE H10_g=96 class=5 interval=1:124 roots=310124 cores=1501000 dense=0 capacity_pass=0 color_pass=0 nodes=0 max_capacity=3 A_endpoints=0
+COMPLETE H10_g=108 class=5 interval=1:124 roots=310124 cores=1876250 dense=0 capacity_pass=250 color_pass=0 nodes=0 max_capacity=16 A_endpoints=0
+COMPLETE H10_g=116 class=5 interval=1:124 roots=310124 cores=1876250 dense=0 capacity_pass=250 color_pass=0 nodes=0 max_capacity=16 A_endpoints=0

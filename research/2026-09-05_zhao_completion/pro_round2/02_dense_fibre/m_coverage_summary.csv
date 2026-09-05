@@ -1,0 +1,4 @@
+start,end,step,count,closure
+20,7750,5,1547,uniform actual-label elimination
+7755,116280,5,21706,six-position subset uniqueness
+TOTAL,,,,23253 closed of 23253

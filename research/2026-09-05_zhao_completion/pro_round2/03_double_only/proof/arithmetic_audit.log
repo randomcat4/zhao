@@ -1,0 +1,3 @@
+ARITHMETIC_AUDIT_OK
+group_ring_ranks=3,4; frozen_b_cases=6; n14_branches=1; n15_branches=5
+This is an auxiliary audit, not an exhaustive sequence search.

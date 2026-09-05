@@ -1,0 +1,17 @@
+{
+  "terminal_status": "L15_ELIMINATED_AND_AUDITED",
+  "basis": "Self-contained universal proof in PROOF.md; auxiliary computations do not replace the proof.",
+  "association_count": "860662922414727068051994283870582495183777624400448",
+  "label_assignment_cover_per_structure": "35570685950608679852511243773708828929716151089034690560000",
+  "all_covered_pairs": "30614370522547340373319059057504496303938468641021766365795208292385997229902706898092528355993793205370880000",
+  "true_realizations_satisfying_the_entire_frozen_package": 0,
+  "proof_final_equation": "4*|C4|=210-20*t, impossible modulo 4",
+  "partition_total": 176,
+  "partition_covered": 176,
+  "dp_rows_total": 8997,
+  "dp_rows_independently_checked": 8997,
+  "dp_transitions_independently_checked": 527250,
+  "old_model_full_subsets_each_algorithm": 2097152,
+  "all_final_audit_commands_exit": 0,
+  "formal_proof_assistant_used": false
+}

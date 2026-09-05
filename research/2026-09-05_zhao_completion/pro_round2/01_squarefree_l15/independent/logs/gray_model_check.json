@@ -1,0 +1,9 @@
+{
+  "method": "Gray-code single-bit modular update",
+  "processed": 2097152,
+  "zero_counts_0_through_21": [1,0,0,4,17,34,89,236,332,450,637,641,454,328,238,94,32,18,5,0,0,0],
+  "short_zero_count_1_through_13": 3222,
+  "full_fiber_counts_4_through_7": {"4":18,"5":32,"6":94,"7":238},
+  "reference_agreement": true,
+  "normal_exit": 0
+}

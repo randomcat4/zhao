@@ -1,0 +1,11 @@
+{
+  "entry": "https://github.com/randomcat4/zhao/pull/1",
+  "pinned_commit": "9d33328880a13609f047905af14e530172b42ae3",
+  "files_consulted": [
+    "research/2026-09-05_zhao_completion/README.md",
+    "research/2026-09-05_zhao_completion/pro_round1/01_squarefree.md",
+    "research/2026-09-05_zhao_completion/rescue/B_proof_A_progress.md",
+    "research/2026-09-05_zhao_completion/independent_three_anchor/PROOF.md"
+  ],
+  "treatment": "Status labels were not treated as mathematical evidence. The group-ring/quotient interfaces are rederived in the self-contained proof. Legacy countermodels are recomputed by two positional algorithms. The rescued B computational dependencies are not used."
+}

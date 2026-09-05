@@ -1,0 +1,4 @@
+$ /mnt/data/zhao_result/build/verify_class7
+INDEPENDENT COMPLETE roots=310124 normalized_sevens=3472 max_extension_capacity=4 max_same_coset_extensions=0 cap_hist=0:42,1:1848,2:1344,3:189,4:49,
+$ /mnt/data/zhao_result/build/oracle_check
+PASS H_core_types=45 full_cores=2160 exact_length_queries=12150000 mismatches=0

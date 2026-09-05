@@ -1,0 +1,8 @@
+INDEPENDENT_AUDIT: PASS
+signed_identity_subsets=294912
+deletion_actual_rows=11232
+graphs_n7=2097152; counterexamples=0
+partitions=385
+anchor_rows=50; split_rows=19
+report_sha256=fb2b907b2f12a217715bf426ebb3b4c72e57637c8160fc1bb03f63152be8fdb8
+elapsed=0:01.96 maxrss=92852KB exit=0

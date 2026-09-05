@@ -1,0 +1,426 @@
+{
+  "purpose": "auxiliary arithmetic, not a sequence classification",
+  "field_characteristic": 5,
+  "group_ring": [
+    {
+      "rank": 3,
+      "basis_monomials": 125,
+      "maximum_degree": 12,
+      "nilpotency_exponent": 13
+    },
+    {
+      "rank": 4,
+      "basis_monomials": 625,
+      "maximum_degree": 16,
+      "nilpotency_exponent": 17
+    }
+  ],
+  "eighteen_position_pairs_Z16_Z17": [
+    [
+      0,
+      1
+    ]
+  ],
+  "core_coverage": {
+    "0": {
+      "mask": 0,
+      "length": 0
+    },
+    "1": {
+      "mask": 1,
+      "length": 1
+    },
+    "2": {
+      "mask": 4,
+      "length": 1
+    },
+    "3": {
+      "mask": 5,
+      "length": 2
+    },
+    "4": {
+      "mask": 7,
+      "length": 3
+    }
+  },
+  "allowed_short_lifts": [
+    1,
+    2
+  ],
+  "balanced_forbidden_intervals": {
+    "14": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "15": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "fixed_sum_components": [
+    {
+      "type": "K1,1",
+      "edges": 1,
+      "matching": 1
+    },
+    {
+      "type": "K1,2",
+      "edges": 2,
+      "matching": 1
+    },
+    {
+      "type": "K2,1",
+      "edges": 2,
+      "matching": 1
+    },
+    {
+      "type": "K2,2",
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "type": "half-value K2",
+      "edges": 1,
+      "matching": 1
+    }
+  ],
+  "n14_possible_pair_counts": [],
+  "n15_branches": [
+    {
+      "e": 0,
+      "f_mod_5": 0,
+      "(f_i-e_i)_mod_5": 2,
+      "outside_degree_candidates_up_to_8": [
+        2,
+        7
+      ]
+    },
+    {
+      "e": 1,
+      "f_mod_5": 4,
+      "(f_i-e_i)_mod_5": 1,
+      "outside_degree_candidates_up_to_8": [
+        1,
+        6
+      ]
+    },
+    {
+      "e": 2,
+      "f_mod_5": 3,
+      "(f_i-e_i)_mod_5": 0,
+      "outside_degree_candidates_up_to_8": [
+        0,
+        5
+      ]
+    },
+    {
+      "e": 3,
+      "f_mod_5": 2,
+      "(f_i-e_i)_mod_5": 4,
+      "outside_degree_candidates_up_to_8": [
+        4
+      ]
+    },
+    {
+      "e": 4,
+      "f_mod_5": 1,
+      "(f_i-e_i)_mod_5": 3,
+      "outside_degree_candidates_up_to_8": [
+        3,
+        8
+      ]
+    }
+  ],
+  "deletion_matrices": {
+    "17": [
+      {
+        "retained_positions": 17,
+        "constant": 1,
+        "Z14_Z15_Z16_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "18": [
+      {
+        "retained_positions": 17,
+        "constant": 3,
+        "Z14_Z15_Z16_Z17": [
+          4,
+          2,
+          2,
+          4
+        ]
+      },
+      {
+        "retained_positions": 18,
+        "constant": 1,
+        "Z14_Z15_Z16_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "19": [
+      {
+        "retained_positions": 17,
+        "constant": 1,
+        "Z14_Z15_Z16_Z17": [
+          0,
+          4,
+          3,
+          4
+        ]
+      },
+      {
+        "retained_positions": 18,
+        "constant": 4,
+        "Z14_Z15_Z16_Z17": [
+          0,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "retained_positions": 19,
+        "constant": 1,
+        "Z14_Z15_Z16_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "20": [
+      {
+        "retained_positions": 17,
+        "constant": 0,
+        "Z14_Z15_Z16_Z17": [
+          0,
+          0,
+          4,
+          4
+        ]
+      },
+      {
+        "retained_positions": 18,
+        "constant": 0,
+        "Z14_Z15_Z16_Z17": [
+          0,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "retained_positions": 19,
+        "constant": 0,
+        "Z14_Z15_Z16_Z17": [
+          1,
+          0,
+          4,
+          2
+        ]
+      },
+      {
+        "retained_positions": 20,
+        "constant": 1,
+        "Z14_Z15_Z16_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "21": [
+      {
+        "retained_positions": 17,
+        "constant": 0,
+        "Z14_Z15_Z16_Z17": [
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "retained_positions": 18,
+        "constant": 0,
+        "Z14_Z15_Z16_Z17": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "retained_positions": 19,
+        "constant": 0,
+        "Z14_Z15_Z16_Z17": [
+          1,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "retained_positions": 20,
+        "constant": 1,
+        "Z14_Z15_Z16_Z17": [
+          2,
+          4,
+          0,
+          1
+        ]
+      },
+      {
+        "retained_positions": 21,
+        "constant": 1,
+        "Z14_Z15_Z16_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ]
+  },
+  "frozen_cases": [
+    {
+      "b": 1,
+      "single_values": 19,
+      "support": 20,
+      "delete_double_position_choices": 2,
+      "after_delete_double": {
+        "doubles": 0,
+        "singles": 20
+      },
+      "delete_single_position_choices": 19,
+      "after_delete_single": {
+        "doubles": 1,
+        "singles": 18
+      },
+      "after_remove_both_anchors": {
+        "doubles": 0,
+        "singles": 19
+      }
+    },
+    {
+      "b": 2,
+      "single_values": 17,
+      "support": 19,
+      "delete_double_position_choices": 4,
+      "after_delete_double": {
+        "doubles": 1,
+        "singles": 18
+      },
+      "delete_single_position_choices": 17,
+      "after_delete_single": {
+        "doubles": 2,
+        "singles": 16
+      },
+      "after_remove_both_anchors": {
+        "doubles": 1,
+        "singles": 17
+      }
+    },
+    {
+      "b": 3,
+      "single_values": 15,
+      "support": 18,
+      "delete_double_position_choices": 6,
+      "after_delete_double": {
+        "doubles": 2,
+        "singles": 16
+      },
+      "delete_single_position_choices": 15,
+      "after_delete_single": {
+        "doubles": 3,
+        "singles": 14
+      },
+      "after_remove_both_anchors": {
+        "doubles": 2,
+        "singles": 15
+      }
+    },
+    {
+      "b": 4,
+      "single_values": 13,
+      "support": 17,
+      "delete_double_position_choices": 8,
+      "after_delete_double": {
+        "doubles": 3,
+        "singles": 14
+      },
+      "delete_single_position_choices": 13,
+      "after_delete_single": {
+        "doubles": 4,
+        "singles": 12
+      },
+      "after_remove_both_anchors": {
+        "doubles": 3,
+        "singles": 13
+      }
+    },
+    {
+      "b": 5,
+      "single_values": 11,
+      "support": 16,
+      "delete_double_position_choices": 10,
+      "after_delete_double": {
+        "doubles": 4,
+        "singles": 12
+      },
+      "delete_single_position_choices": 11,
+      "after_delete_single": {
+        "doubles": 5,
+        "singles": 10
+      },
+      "after_remove_both_anchors": {
+        "doubles": 4,
+        "singles": 11
+      }
+    },
+    {
+      "b": 6,
+      "single_values": 9,
+      "support": 15,
+      "delete_double_position_choices": 12,
+      "after_delete_double": {
+        "doubles": 5,
+        "singles": 10
+      },
+      "delete_single_position_choices": 9,
+      "after_delete_single": {
+        "doubles": 6,
+        "singles": 8
+      },
+      "after_remove_both_anchors": {
+        "doubles": 5,
+        "singles": 9
+      }
+    }
+  ],
+  "checks_passed": true
+}

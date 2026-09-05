@@ -1,0 +1,382 @@
+{
+  "scope": "finite interfaces and integrity; universal proof audited separately",
+  "package": "/mnt/data/zhao_double_only_proved_and_audited.zip",
+  "outer_zip_sha256": "99451451102aa38ff1959fe375510ae4deed4558886d8ca3edc3ba4b8de5fad3",
+  "manifest_files": [
+    {
+      "name": "README.md",
+      "sha256": "dddb639cbc739cc471620d3e0d660d328a1e030bbddae6c1fbb32c78a95aed00"
+    },
+    {
+      "name": "RED_TEAM.md",
+      "sha256": "9bcacdca9c64a99b35d1c4a257879be43d1d8e4bb0bc7e498eed8ed1a6c9b288"
+    },
+    {
+      "name": "proof_zh.md",
+      "sha256": "3e568809817f0344c0f5f39dc616de5307e1ed103eebcb44a6eb89a5d0df9e88"
+    },
+    {
+      "name": "audit_arithmetic.py",
+      "sha256": "73840a90ef857fb8f25eadfd692dc7342a889da5f80bd49f966353e16d58c027"
+    },
+    {
+      "name": "verify_positions.py",
+      "sha256": "c2a1d362fe94575c7dcc37607e7e296e7fe27bc126f1d5bad23ddca0b7c0bb60"
+    },
+    {
+      "name": "arithmetic_audit.json",
+      "sha256": "899e1f0b44706064c03f3edafabc6eb4edbb7aa6d0ce79c262c7d331c95fcf75"
+    },
+    {
+      "name": "arithmetic_audit.log",
+      "sha256": "5413baea0b124bd52228d266fcc05d45fb3524c59dbd24aeceaaaf51daaacd72"
+    },
+    {
+      "name": "positional_audit.log",
+      "sha256": "d6dbc9573049d6b5c9a838e3f3030f1df405ba03776b5879fded2824555b8f10"
+    },
+    {
+      "name": "exit_status.log",
+      "sha256": "28670437330f4103ec033b740ab63f5d4893d6249b3f69f819c66473c6f92bd5"
+    }
+  ],
+  "augmentation": {
+    "3": {
+      "dimension": 125,
+      "top_degree": 12,
+      "vanishing_power": 13
+    },
+    "4": {
+      "dimension": 625,
+      "top_degree": 16,
+      "vanishing_power": 17
+    }
+  },
+  "eighteen_position": [
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "core_subsum_witnesses": {
+    "0": {
+      "mask": "000",
+      "size": 0
+    },
+    "1": {
+      "mask": "001",
+      "size": 1
+    },
+    "2": {
+      "mask": "100",
+      "size": 1
+    },
+    "3": {
+      "mask": "101",
+      "size": 2
+    },
+    "4": {
+      "mask": "111",
+      "size": 3
+    }
+  },
+  "two_anchor_lift": {
+    "cancelled": {
+      "0": 0,
+      "3": 2,
+      "4": 1
+    },
+    "allowed": [
+      1,
+      2
+    ]
+  },
+  "balanced_intervals": {
+    "14": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "15": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "fixed_sum_components": [
+    {
+      "type": "K_{1,1}",
+      "edges": 1,
+      "matching": 1
+    },
+    {
+      "type": "K_{1,2}",
+      "edges": 2,
+      "matching": 1
+    },
+    {
+      "type": "K_{2,1}",
+      "edges": 2,
+      "matching": 1
+    },
+    {
+      "type": "K_{2,2}",
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "type": "half-value K_2",
+      "edges": 1,
+      "matching": 1
+    }
+  ],
+  "n14_survivors": [],
+  "n15_deleted_incidences": {
+    "records": 8400,
+    "total_residues": {
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ]
+    }
+  },
+  "n15_modular_branches": [
+    {
+      "e": 0,
+      "f_mod_5": 0,
+      "fi_minus_ei_mod_5": 2
+    },
+    {
+      "e": 1,
+      "f_mod_5": 4,
+      "fi_minus_ei_mod_5": 1
+    },
+    {
+      "e": 2,
+      "f_mod_5": 3,
+      "fi_minus_ei_mod_5": 0
+    },
+    {
+      "e": 3,
+      "f_mod_5": 2,
+      "fi_minus_ei_mod_5": 4
+    },
+    {
+      "e": 4,
+      "f_mod_5": 1,
+      "fi_minus_ei_mod_5": 3
+    }
+  ],
+  "branch_arithmetic": {
+    "e0_all_degrees_2": {
+      "f": 10,
+      "block_pairs": 45,
+      "available_shared_point_counts": 15
+    },
+    "e0_degree_7": {
+      "outside_degree_lower_sum": 28,
+      "outside_incidence_if_star": 14
+    },
+    "e1": {
+      "outside_points": 13,
+      "incidences_per_block": 2,
+      "parity_obstruction": 1
+    },
+    "e2": {
+      "outside_degree_upper": 3,
+      "forced_residue": 0,
+      "f_mod_5": 3
+    },
+    "e3": {
+      "outside_degree_upper": 2,
+      "forced_residue": 4
+    },
+    "e4": {
+      "outside_degree_upper": 2,
+      "forced_residue": 3
+    }
+  },
+  "deletion_matrices": {
+    "17": [
+      {
+        "retained": 17,
+        "constant": 1,
+        "coeff_Z14_to_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "18": [
+      {
+        "retained": 17,
+        "constant": 3,
+        "coeff_Z14_to_Z17": [
+          4,
+          2,
+          2,
+          4
+        ]
+      },
+      {
+        "retained": 18,
+        "constant": 1,
+        "coeff_Z14_to_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "19": [
+      {
+        "retained": 17,
+        "constant": 1,
+        "coeff_Z14_to_Z17": [
+          0,
+          4,
+          3,
+          4
+        ]
+      },
+      {
+        "retained": 18,
+        "constant": 4,
+        "coeff_Z14_to_Z17": [
+          0,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "retained": 19,
+        "constant": 1,
+        "coeff_Z14_to_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "20": [
+      {
+        "retained": 17,
+        "constant": 0,
+        "coeff_Z14_to_Z17": [
+          0,
+          0,
+          4,
+          4
+        ]
+      },
+      {
+        "retained": 18,
+        "constant": 0,
+        "coeff_Z14_to_Z17": [
+          0,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "retained": 19,
+        "constant": 0,
+        "coeff_Z14_to_Z17": [
+          1,
+          0,
+          4,
+          2
+        ]
+      },
+      {
+        "retained": 20,
+        "constant": 1,
+        "coeff_Z14_to_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "21": [
+      {
+        "retained": 17,
+        "constant": 0,
+        "coeff_Z14_to_Z17": [
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "retained": 18,
+        "constant": 0,
+        "coeff_Z14_to_Z17": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "retained": 19,
+        "constant": 0,
+        "coeff_Z14_to_Z17": [
+          1,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "retained": 20,
+        "constant": 1,
+        "coeff_Z14_to_Z17": [
+          2,
+          4,
+          0,
+          1
+        ]
+      },
+      {
+        "retained": 21,
+        "constant": 1,
+        "coeff_Z14_to_Z17": [
+          1,
+          4,
+          1,
+          4
+        ]
+      }
+    ]
+  },
+  "manual_universal_obligations_checked_in_report": [
+    "triangle-free pair graph with matching number at most one is a star",
+    "link graph at a triple-center has at least four disjoint edges when it has seven edges",
+    "all five e-branches use only legal positional intersections and codegree at most two",
+    "the quotient and complement length arguments preserve nonempty positional blocks"
+  ],
+  "status": "PASS"
+}
