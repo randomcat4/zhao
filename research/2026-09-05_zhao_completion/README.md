@@ -73,6 +73,7 @@ Future prompts must treat all six as intermediate checkpoints. They must require
 - `rescue/B_proof_A_progress.md`: rescued proof manuscript, preserved with provenance and caveats.
 - `rescue/bundle/zhao_result/`: source, logs, and replay entrypoint from the rescued archive.
 - `pro_round1/`: exact final responses from the four recent ChatGPT PRO tasks.
+- `pro_round2_prompts.md`: four unsent second-round prompts with explicit anti-stopping terminal contracts.
 - `SOURCE_SHA256SUMS.txt`: hashes of the intake files.
 
 ## Non-claims
