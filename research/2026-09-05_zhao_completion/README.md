@@ -1,22 +1,22 @@
 # Zhao endpoint completion intake — 2026-09-05
 
-This directory records the rescued B manuscript, the four first-round PRO outputs, the second-round prompts, and the completed second-round double-only proof with a separate verification package. It is an audit archive, not a declaration that the full endpoint problem has been solved.
+This directory records the rescued B manuscript, the four first-round PRO outputs, the second-round prompts, the completed second-round double-only proof with a separate verification package, and the independent three-anchor audit. It is an audit archive, not a declaration that the full endpoint problem has been solved.
 
 ## Current status
 
 | target | intake status | present audit conclusion |
 |---|---|---|
 | B: every 20-position sequence in \(\mathbb F_5^4\) has a nonempty zero-sum of length at most 14 | rescue manuscript reports a complete proof | candidate-closed, conditional on the explicitly listed certified repository inputs; no critical hand-proof gap found in the present line audit |
-| A, at least one value of multiplicity 3 | round-1 route 3 reports `PROVED` | the self-contained three-anchor proof passes the present line audit; still retained as a candidate theorem until a genuinely separate verifier checks it |
+| A, at least one value of multiplicity 3 | round-1 route 3 reports `PROVED`; round-2 independent audit completed | the frozen three-anchor theorem is now supported by a self-contained analytic proof, a different mathematical re-derivation, and a separately written deterministic finite-interface checker; no gap was found |
 | A, squarefree | round-1 route 1 reports `INCOMPLETE` | open; the 15-block 5-regular complement-fibre branch and all larger block-count branches remain |
 | A, only double and single values, \(1\le b\le6\) | round-2 prompt 3 reports `PROVED_AND_AUDITED` | a new two-anchor hand proof closes all six frozen cells; a separate second-pass report and independently written finite-interface checker found no gap and replay successfully |
-| A, two triple values | round-1 route 4 reports `INCOMPLETE` | its dedicated computation is incomplete, but this whole regime is subsumed if the stronger three-anchor proof from route 3 is certified |
+| A, two triple values | round-1 route 4 reports `INCOMPLETE` | its dedicated computation is incomplete, but this whole regime is subsumed by the independently re-audited three-anchor theorem |
 
 The double-only theorem does not depend on the rescued B proof, the earlier stabilizer lemma, or an exhaustive sequence classification. It uses positional group-ring congruences, a two-anchor quotient argument, and a complete five-branch incidence analysis for the 15-position case.
 
 Consequently, from the point of view of multiplicity cells:
 
-> the cells \(a=0,\ b=1,\ldots,6\) are closed by the new two-anchor proof; if the archived three-anchor proof also survives genuinely separate review, the only remaining A cell is the 21-element squarefree case \((a,b)=(0,0)\).
+> the cells \(a=0,\ b=1,\ldots,6\) are closed by the new two-anchor proof, while every cell with at least one exactly-triple value is closed by the independently re-audited three-anchor theorem. Under the previously certified height bound, the only remaining A cell is the 21-element squarefree case \((a,b)=(0,0)\).
 
 The full A endpoint is still open in this archive because the squarefree cell is not closed.
 
@@ -29,9 +29,9 @@ The repository uses the following levels for this intake:
 3. **replayed** — all claimed finite certificates have been regenerated in a clean environment;
 4. **independently certified** — a genuinely separate verifier has checked both reductions and evidence.
 
-The B manuscript and three-anchor proof currently reach level 2, not levels 3 or 4. The rescue bundle's smoke replay could not be rerun on the original host because no GNU C++ compiler was installed; this was recorded as not replayed, not as a pass.
+The B manuscript remains at the locally audited level in this intake. The rescue bundle's smoke replay could not be rerun on the original host because no GNU C++ compiler was installed; this was recorded as not replayed, not as a pass.
 
-The double-only package reaches level 3 and includes a second-pass re-derivation plus a checker written independently of the submitted checkers. Because the two passes were produced within the same research exchange, the archive records this accurately as a separate verification package rather than external institutional or proof-assistant certification.
+The three-anchor package now contains a self-contained analytic proof, a different mathematical re-derivation of the load-bearing identities and endgame, and a separately written deterministic finite-interface checker whose committed run passes. The double-only package likewise includes a second-pass re-derivation plus a checker written independently of the submitted checkers. Because these verification passes were produced within the same research exchange, the archive records them as separate verification packages rather than external institutional, proof-assistant, or third-party certification.
 
 ## What the first-round PRO runs actually accomplished
 
@@ -53,11 +53,11 @@ It supplied a short self-contained proof. The load-bearing pieces were rechecked
 - the split of a 14- or 15-position zero-sum into a block \(U\) of size at most 7;
 - replacement of \(U\) by one external anchor, producing a nonempty zero-sum of length at most 13.
 
-No illegal translation, fourth copy of the anchor, or collapse of equal-valued positions was found in that line audit.
+No illegal translation, fourth copy of the anchor, or collapse of equal-valued positions was found in the line audit. The new `independent_three_anchor/` package then re-derived the signed zero-sum identity via a Boolean-cube polynomial argument, re-proved the 15-label step by reverse-value classes, rechecked the endgame without the “choose the shorter block” presentation, and ran an independently written deterministic checker over the finite interfaces.
 
 ### Route 4 — two triples
 
-It completed only roots whose candidate pool had size at most 40. It certified 622 roots for \(b=0\) and 1,583 roots for \(b=1\), while leaving 7,246 and 18,643 frontier roots respectively: 25,889 roots in total. The cutoff 40 was explicitly human-chosen. It is not a theorem and not a complexity barrier.
+It completed only roots whose candidate pool had size at most 40. It certified 622 roots for \(b=0\) and 1,583 roots for \(b=1\), while leaving 7,246 and 18,643 frontier roots respectively: 25,889 roots in total. The cutoff 40 was explicitly human-chosen. It is not a theorem and not a complexity barrier. This route is no longer load-bearing for the two-triple regime because the uniform three-anchor theorem subsumes it.
 
 ## Round 2 — double-only six-type closure
 
@@ -88,12 +88,13 @@ Future work must continue to treat all six as intermediate checkpoints, not term
 - `pro_round1/`: exact final responses from the four first-round PRO tasks.
 - `pro_round2_prompts.md`: four second-round prompts with explicit anti-stopping terminal contracts.
 - `pro_round2/03_double_only/`: the two-anchor proof, decompressed submitted package contents, recorded ZIP hashes, separate verification report, independent checker, outputs, and manifests.
+- `independent_three_anchor/`: the self-contained three-anchor proof, independent mathematical audit, compact deterministic checker, report, run log, and hashes.
 - `SOURCE_SHA256SUMS.txt`: hashes of the intake files.
 
 ## Non-claims
 
 - The full A endpoint is not proved by this intake; the squarefree 21-element cell remains open.
-- The archived three-anchor proof has not been promoted to external independent certification.
+- The three-anchor result is independently re-audited within this research exchange, but is not claimed as external institutional, proof-assistant, or third-party certification.
 - A threshold-limited enumeration is not a finite classification.
 - A self-reported terminal label is not accepted without examining its proof and evidence.
 - A missing compiler is not evidence for or against a mathematical claim.
