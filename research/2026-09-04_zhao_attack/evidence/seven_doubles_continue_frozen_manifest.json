@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_CANDIDATE_PENDING_FRESH_CONTEXT_INDEPENDENT_AUDIT",
+  "work_directory": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack",
+  "prior_input_sha256": {
+    "scripts/verify_finite_double_blocks.py": "7ac2c608c29c72dad649da0b9e608d4c1ea72115cb745cdad47547f2d70a43fe",
+    "proofs/hyperplane_dense12.md": "3bd7e246c77a212ebe353b26b99c866fe8c66c2595b89ba68047e1d9dd5d1f22",
+    "scripts/verify_finite_cores_fresh.py": "841ef9d2d53a55bedc4f81f093d553e898cf917ea06ff5c8a9b60fc73d8d6c07",
+    "proofs/atom_127_core.md": "9554f3e453174571a5f685694c30fe05dd7d7e961dcf246fa09fa9cb6110828b",
+    "scripts/atom_double_blocks.ps1": "e44566b7e3acb0c28c0cfe2963729d9e533c8a54cc1db99e8bd44a8aab4598da",
+    "evidence/atom_2222_m13_blocks.jsonl": "1a22286631b5ab48fb083cc95ca1edac3bc931b473cf9f6ba84bfb965af62791"
+  },
+  "all_prior_input_hashes_unchanged": true,
+  "frozen_file_sha256": {
+    "scripts/seven_doubles_continue_probe.cs": "508a7f6bae16fa664bb895909ff44678f06e719c8ee268440370828a2e719c7c",
+    "scripts/seven_doubles_continue_probe.ps1": "1716a8126f2f582becc38ee3f596bad018cd92c28fa146da0cbd5c3dc9b213ce",
+    "scripts/seven_doubles_continue_h12.py": "2255ad8e62c4c682e244b5e08e4ddfd820a7902ec50fd71a65d63ae1f4132536",
+    "scripts/seven_doubles_continue_replay.py": "e53b6648e361796abb079379666995c91b542439f8f814557622a936576d987f",
+    "evidence/seven_doubles_continue_probe.json": "62fe399cf176c2d02f084c356211bf92910e45d48ae4f95270ca5754cd8abcb1",
+    "evidence/seven_doubles_continue_probe_cores.jsonl": "4446e0d7c9ec946e334fe923524be0f82157b9211431a429dd9c71b56c97ee1e",
+    "evidence/seven_doubles_continue_h12.json": "711463eed36e951b8c453e926072bc4c21800691fe8a661467905997a807266c",
+    "evidence/seven_doubles_continue_replay.json": "1e4e0c81aa87ce55eec496acc28f90b7f0655b2b834c53dd7ec717922f9bb6f1",
+    "proofs/seven_doubles_continue.md": "dcdabbdac9bba313b2ee093d7d5efdc929ecc3159041f75860db0242c51ab7c6"
+  },
+  "initial_probe_seconds": 3.4902494,
+  "different_implementation_replay_seconds": 11.839627299981657,
+  "fresh_context_review": "required",
+  "scope": "Seven distinct doubled values plus six new distinct singleton values in F5^4; complete H12 six-double classification as a corollary",
+  "new_search_after_freeze": false
+}

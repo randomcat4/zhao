@@ -1,0 +1,571 @@
+{
+  "status": "PASS",
+  "scope": "two finite exclusions, with h(S)<=3 explicit",
+  "input_sha256": {
+    "frozen_theorem_v1.md": "92c313dd758c6dbcc53d977dbf04d52d8405751238bdce796935a9a62617d2fe",
+    "proofs/atom_structure.md": "304acf1ee055b72dc788b6a40164f03262969265ca2928bc68233d602156f612",
+    "scripts/atom_five_triples.py": "67c5758efd4d0827447fd47e9c473f88d57aae5dec592626336c9d4fd1c5feee",
+    "scripts/atom_four_independent.py": "00c4bd746100865ab279f5a2933aa7c8179b9be50740ed540f8f82679a506d7d",
+    "scripts/verify_finite_cores_fresh.py": "841ef9d2d53a55bedc4f81f093d553e898cf917ea06ff5c8a9b60fc73d8d6c07",
+    "scripts/verify_finite_core_audit.py": "bc0611b6f694c8fe03db6da83bc76ded3a5308746814fe10e21322a44fc5e1c4",
+    "evidence/atom_five_triples.json": "6238d696d62bd1504fc8da2daebf2bfa6a4f85aa2ae39519864ef0774a510662",
+    "evidence/atom_four_independent_A.json": "05edfdd75aa3d231beccc0193537a2deb7eab1591880a2461daf7c0ecae6f1a0",
+    "evidence/atom_four_longest18_graycheck.json": "e8d47bcbfb399739631ab02f56760335f2c15cf82fc143dbc79edde2da640e87",
+    "evidence/verify_finite_original_five_rerun.json": "ad26d6251c4e3eb5145712cde4941668e9d83a73cf2d45545a38c03de8edd1dc",
+    "evidence/verify_finite_original_four_rerun.json": "e5f917ea0975fe4ad133db40ca3e5cf98a2e89ecdbb209b321e7aa70e8a8a65e",
+    "evidence/verify_finite_cores_independent.json": "d34744adc6b267eb16bd9f0faddfd6fc53e40a193ed6c9df97e24ae1db0a8d37"
+  },
+  "original_tables_all_390625_pairs_match": true,
+  "original_and_replay_logs_have_all_required_roots": true,
+  "original_replay_tree_counts_match": true,
+  "four_aggregate_levels": {
+    "13": 34,
+    "14": 5113,
+    "15": 141061,
+    "16": 412433,
+    "17": 97530,
+    "18": 4
+  },
+  "four_max_root_nodes": 88013,
+  "four_original_recorded_root_seconds_sum": 21.219,
+  "four_rerun_recorded_root_seconds_sum": 21.0,
+  "positional_gray_checks": [
+    {
+      "positions": 0,
+      "subsets_checked": 0,
+      "minimum_nonempty_zero_sum": null,
+      "zero_sum_counts_by_length": {},
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "edge_case_0"
+    },
+    {
+      "positions": 1,
+      "subsets_checked": 1,
+      "minimum_nonempty_zero_sum": 1,
+      "zero_sum_counts_by_length": {
+        "1": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "edge_case_1"
+    },
+    {
+      "positions": 5,
+      "subsets_checked": 31,
+      "minimum_nonempty_zero_sum": 5,
+      "zero_sum_counts_by_length": {
+        "5": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "edge_case_2"
+    },
+    {
+      "positions": 2,
+      "subsets_checked": 3,
+      "minimum_nonempty_zero_sum": 2,
+      "zero_sum_counts_by_length": {
+        "2": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "edge_case_3"
+    },
+    {
+      "positions": 3,
+      "subsets_checked": 7,
+      "minimum_nonempty_zero_sum": 3,
+      "zero_sum_counts_by_length": {
+        "3": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "edge_case_4"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=21_core=[0, 1, 2, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=21_core=[1, 1, 2, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=21_core=[1, 2, 2, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=21_core=[1, 2, 3, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 3,
+        "16": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=21_core=[1, 2, 3, 4]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=20_core=[0, 1, 2, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=20_core=[1, 1, 2, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=20_core=[1, 2, 2, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=20_core=[1, 2, 3, 3]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "five_n=20_core=[1, 2, 3, 4]"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 30,
+        "15": 6
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=6"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=7"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=8"
+    },
+    {
+      "positions": 18,
+      "subsets_checked": 262143,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 39,
+        "15": 9,
+        "16": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=9"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 3,
+        "15": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=31"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=32"
+    },
+    {
+      "positions": 18,
+      "subsets_checked": 262143,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 39,
+        "15": 9,
+        "16": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=33"
+    },
+    {
+      "positions": 18,
+      "subsets_checked": 262143,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 136,
+        "17": 2
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=34"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 3,
+        "16": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=37"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 15,
+      "zero_sum_counts_by_length": {
+        "15": 6
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=38"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 3,
+        "16": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=39"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=43"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=44"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=49"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 1,
+        "15": 12
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=156"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=157"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=158"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 3,
+        "16": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=159"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 3,
+        "15": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=162"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=163"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 3,
+        "16": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=164"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=168"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=169"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=174"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=187"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=188"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=189"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=193"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=194"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=199"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=218"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=219"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=224"
+    },
+    {
+      "positions": 17,
+      "subsets_checked": 131071,
+      "minimum_nonempty_zero_sum": 17,
+      "zero_sum_counts_by_length": {
+        "17": 1
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "four_root=249"
+    },
+    {
+      "positions": 18,
+      "subsets_checked": 262143,
+      "minimum_nonempty_zero_sum": 14,
+      "zero_sum_counts_by_length": {
+        "14": 39,
+        "15": 9,
+        "16": 9
+      },
+      "all_625_minimum_lengths_match_original_dp": true,
+      "source": "atom_four_longest18_graycheck"
+    }
+  ],
+  "total_nonempty_position_subsets_checked": 6422525,
+  "five_forced_node_limit_completed": false,
+  "four_forced_node_limit_completed": false,
+  "four_forced_deadline_completed": false,
+  "cli_limit_and_selection_checks": [
+    {
+      "kind": "global_expired",
+      "file": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\evidence\\verify_finite_global_expired.json",
+      "sha256": "a7c10f982a0bb7ac70297a346f3e2f1e733fd5c13cce0a7cd5a4dca5bc66af91",
+      "all_selected_roots_completed": false,
+      "all_roots_selected": true,
+      "roots_run": 0
+    },
+    {
+      "kind": "single_root",
+      "file": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\evidence\\verify_finite_single_root.json",
+      "sha256": "4e7d718b83c96704259167b67e7f10a067c1545ae71cac5945025d55fe0f4e3c",
+      "all_selected_roots_completed": true,
+      "all_roots_selected": false,
+      "roots_run": 1
+    }
+  ],
+  "seconds": 3.625
+}

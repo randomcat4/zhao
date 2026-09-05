@@ -1,0 +1,323 @@
+arXiv:1608.05157v1  [math.NT]  18 Aug 2016
+Short Zero-Sum Sequences Over Abelian
+p-Groups of Large Exponent
+Sammy Luo
+October 3, 2018
+Abstract
+Let G be a ﬁnite abelian group with exponent n. Let η(G) denote the
+smallest integer ℓ such that every sequence over G of length at least ℓ has
+a zero-sum subsequence of length at most n. We determine the precise
+value of η(G) when G is a p-group whose Davenport constant is at most
+2n − 1. This conﬁrms one of the equalities in a conjecture by Schmid and
+Zhuang from 2010.
+1 Introduction
+Throughout this paper, let G be an additive ﬁnite abelian group. By the Fun-
+damental Theorem of Finite Abelian Groups, we can uniquely w rite
+G ∼
+= Cn1 ⊕ · · · ⊕Cnr ,
+where 1 < n 1 | · · · |nr. Here r = r(G) is called the rank of G, and nr = exp(G)
+is called the exponent of G. The exponent is, for a ﬁnite abelian group, the
+largest order attained by an element of G.
+We consider sequences of elements of G. A sequence of length k over G is a
+tuple S = ( g1, . . . , g k) of k elements of G, where repetition is allowed and the
+order of elements is disregarded. Algebraically, we can con sider sequences over G
+as elements of the free abelian monoid over G, a viewpoint that facilitates many
+algebraic applications. Accordingly, we can write sequenc es in multiplicative
+notation; for example, S = g1 ·. . . ·gk. We say that S is a zero-sum sequence
+(ZSS) if ∑k
+i=1 gi = 0 . A zero-sum sequence of length at most exp(G) is called
+a short zero-sum sequence .
+One important class of problems on zero-sum sequences asks f or extremal
+conditions on a sequence S guaranteeing the containment of a zero-sum sub-
+sequence with speciﬁed properties, such as having a length s atisfying various
+constraints. The exploration of this class of problems cent ers on a family of
+invariants associated with a group G, called the zero-sum invariants sL(G).
+Deﬁnition 1. For L ⊆ N+, let sL(G) be the minimum length ℓ ∈ N+ such that
+every sequence S over G of length at least ℓ contains a zero-sum subsequence of
+some length t ∈ L. Let sL(G) = ∞ if such a length ℓ does not exist.
+1
+A few examples of zero-sum invariants are of particular inte rest.
+• sN+ (G) = D(G) is called the Davenport constant.
+• s{exp(G)} (G) = s(G) is called the Erdős-Ginzburg-Ziv (EGZ) constant .
+• s[1,exp(G)](G) = η(G) is called the η-invariant.
+The study of these invariants has applications ranging from non-unique fac-
+torizations [7, 8] to zero-sum Ramsey theory [11] and ﬁnite g eometry [1].
+The precise values of s(G) and η(G) are known only for some very special
+types of groups G. For example, for groups of rank at most 2, we have the
+following result.
+Theorem 1.1 (Geroldinger, Halter-Koch, [7, Theorem 5.8.3]) . Let G = Cn1 ⊕
+Cn2 with 1 ≤ n1|n2. Then
+s(G) = 2 n1 + 2n2 − 3 and η(G) = 2 n1 + n2 − 2.
+In other cases, some bounds on s(G) and η(G) are known. Schmid and
+Zhuang [10] obtained the following result for the case of a p-group with D(G) ≤
+2 exp(G) − 1. We will call such a group a p-group with large exponent .
+Theorem 1.2 (Schmid, Zhuang, [10, Theorem 1.2]) . Let p be an odd prime and
+let G be a ﬁnite abelian p-group with D(G) ≤ 2 exp(G) − 1. Then
+2D(G) − 1 ≤ η(G) + exp(G) − 1 ≤ s(G) ≤ D(G) + 2 exp(G) − 2.
+Note that equality holds everywhere when D(G) = 2 exp( G)− 1. Schmid and
+Zhuang conjectured that equality holds between the three le ftmost expressions
+without this extra condition.
+Conjecture 1.3 (Schmid, Zhuang, [10, Conjecture 4.1]) . Let G be a ﬁnite
+abelian p-group with D(G) ≤ 2 exp(G) − 1. Then
+2D(G) − 1 = η(G) + exp(G) − 1 = s(G).
+Gao, Han, and Zhang made progress on this conjecture in [5], p roving the
+ﬁrst equality under additional conditions on the rank and Da venport constant
+of G. Their result is stated here.
+Theorem 1.4 (Gao, Han, Zhang, [5, Theorem 1.2]) . Let G be a ﬁnite abelian
+p-group with exp(G) = n and D(G) ≤ 2n − 1. Write G = Cn ⊕ H, and let
+G′ = Can ⊕ H for some a ≥ 1. Then
+2D(G′) − 1 = η(G′) + exp(G′) − 1,
+provided that p > 2r(H) and
+⌈
+2D(H)
+exp(H)
+⌉
+is either even or at most 3.
+Here taking a = 1 yields the relevant progress towards Conjecture 1.3.
+The second equality in the conjecture is a special case of a co njecture by
+Gao.
+2
+Conjecture 1.5 (Gao, [3, Conjecture 2.3]) . For any ﬁnite abelian group G,
+η(G) = s(G) − exp(G) + 1.
+This conjecture holds for every G for which η(G) and s(G) have been deter-
+mined, and is also known to hold in a few other special cases (s ee Theorem 6.6
+in [4]).
+In this paper, we prove the ﬁrst equality in Conjecture 1.3 in general.
+Theorem 1.6. Let G be a ﬁnite abelian p-group with D(G) ≤ 2 exp(G) − 1.
+Then
+2D(G) − 1 = η(G) + exp(G) − 1.
+We also give an extension of Theorem 1.6 to groups of the form G′ = Ca ⊕ G,
+where G is a p-group with D(G) ≤ 2 exp(G) − 1 and a is not divisible by p.
+In the process of proving Theorem 1.6, we introduce some addi tional zero-
+sum invariants and techniques for using them, whose study ma y prove inter-
+esting in their own right or when applied to proving the secon d equality in
+Conjecture 1.3.
+In the next section, we recall some useful previous results o n zero-sum in-
+variants in various settings. Afterwards, we give a simple p roof of our main
+result and the extension. Finally, we extend the methods we u se to make some
+progress on tackling the second half of Conjecture 1.3 and di scuss some ideas
+for further work.
+2 Background and T ools
+We start by giving some bounds on the invariants D(G), η(G), and s(G) for
+general G.
+Theorem 2.1. For any ﬁnite abelian group G,
+D(G) ≤ η(G) ≤ s(G) − exp(G) + 1 ≤ | G|.
+This result can be found in Lemma 5.7.2 and Theorem 5.7.4 of [7 ]. Conjec-
+ture 1.5 is just the claim that equality always holds in the se cond inequality.
+Let D∗ (G) = ∑r
+i=1(ni − 1) + 1. A simple construction shows that D∗ (G) ≤
+D(G) for any G. We have already seen that equality holds for a group of rank
+at most two. Equality also holds for p-groups and in another case of interest.
+Theorem 2.2 (Kruyswijk, Olson, [9]) . If G is a p-group, then D(G) = D∗ (G).
+Theorem 2.3 (Geroldinger, [8, Corollary 4.2.13]) . If G′ = Ca ⊕ G, where G is
+a p-group with D(G) ≤ 2 exp(G) − 1 and a ∈ N+, then D(G′) = D∗ (G′).
+We will need the following result on short zero-sum subseque nces of zero-sum
+sequences.
+3
+Theorem 2.4 (Fan, Gao, Wang, Zhong, Zhuang, [2, Theorem 2]) . If G =
+Cmpn ⊕ H for some m, n ≥ 1, where H is a p-group with D(H) ≤ pn, then any
+zero-sum sequence over G of length at least D(G) + 1 contains a short zero-sum
+subsequence.
+We are particularly interested in the case m = 1.
+Corollary 2.5. If G is a p-group and D(G) ≤ 2 exp(G) − 1, then any zero-
+sum sequence over G of length at least D(G) + 1 contains a short zero-sum
+subsequence.
+Proof. A p-group G with D(G) ≤ 2 exp(G) − 1 can be written in the form G =
+Cpn ⊕ H, where pn = exp(G) and, by Theorem 2.2, D(H) = D(G)− (pn− 1) ≤ pn.
+So, the conclusion of Theorem 2.4 holds for such p-groups G.
+Finally, we will use the following tools to prove the extensi on of our main
+result.
+Lemma 2.6 (Edel, Elsholtz, Geroldinger, Kubertin, Rackham, [1, Lemm a 3.2]).
+Let H be a ﬁnite abelian group and G′ = Cn ⊕ H, where exp(H) |n. Then
+η(G′) ≥ 2(D(H) − 1) + n.
+Proposition 2.7 (Geroldinger, Halter-Koch, [7, Proposition 5.7.11]) . If H is
+a subgroup of G such that exp(G) = exp( H) exp(G/H ), then
+η(G) ≤ (η(H) − 1) exp(G/H ) + η(G/H ).
+Proposition 2.7 is an example of an application of the inductive method [7],
+an approach used to obtain bounds on the zero-sum invariants of a group G in
+terms of the zero-sum invariants of its subgroups.
+3 Proof of the Main Result
+3.1 The Invariants ζi
+As the ﬁrst step in the proof of Theorem 1.6, we deﬁne the invar iants ζi(G) and
+compute them for a p-group G.
+Deﬁnition 2. Let G be a ﬁnite abelian group and let n = exp(G). For 1 ≤ i ≤
+n, let
+ζi(G) = s[i− n,0]+nN+(G).
+That is, ζi(G) is the shortest length ℓ for which any sequence over G of
+length at least ℓ contains a nonempty zero-sum subsequence T such that T is
+congruent mod exp(G) to some residue between i and exp(G), inclusive.
+Note that ζ1(G) = D(G) by deﬁnition, and ζexp(G) = sexp(G)N+ (G). When
+G is a p-group, the precise value of sexp(G)N+(G) is known.
+4
+Lemma 3.1 (Gao, Geroldinger, [4, Theorem 6.7]) . If G is a p-group with n =
+exp(G), then
+snN+ (G) = D(G) + n − 1.
+This allows us to compute ζi(G) for all i ∈ [1, n ] for a p-group G.
+Lemma 3.2. Let G be a p-group and let n = exp(G). For 1 ≤ i ≤ n, we have
+ζi(G) = D(G) + i − 1.
+Proof. Let 1 ≤ i ≤ n − 1. For any t > 1 and sequence S, if the sequence 0S
+obtained by prepending 0 to S contains a zero-sum subsequence of length t, then
+S contains a zero-sum sequence of length t − 1 or t. So ζi(G) ≤ ζi+1(G) − 1.
+Thus, by Lemma 3.1,
+D(G) = ζ1(G) < ζ2(G) < · · ·< ζn(G) = D(G) + n − 1,
+implying that ζi(G) = D(G) + i − 1 for each i, as desired.
+Now we can proceed with the proof of Theorem 1.6 itself.
+3.2 Main Proof
+Proof of Theorem 1.6. Let G be a p-group with D(G) ≤ 2 exp(G) − 1. Let
+n = exp( G). By Theorem 1.2, η(G) ≥ 2D(G) − n, so it suﬃces to show that
+η(G) ≤ 2D(G) − n.
+Let S be a sequence of length 2D(G) − n over G. We wish to show that S
+contains a short zero-sum subsequence. Note that 1 ≤ D(G) − n + 1 ≤ n, so
+by Lemma 3.2, |S| = ζD(G)− n+1(G). Thus, S contains a nonempty zero-sum
+subsequence T whose length t is congruent mod n to some residue between
+D(G) − n + 1 and n, inclusive. Then either t ≤ n or t ≥ D(G) + 1.
+If t ≤ n, then T ⊆ S is a short zero-sum subsequence of S, as desired.
+Otherwise, t ≥ D(G) + 1, so by Corollary 2.5, T contains a short zero-sum
+subsequence, meaning S contains a short zero-sum subsequence. So S contains
+a short zero-sum subsequence in any case.
+Thus, η(G) = 2 D(G) − n, which rearranges to the desired equality.
+4 Extension to Ca ⊕ G
+As with Theorem 1.4, our main result can be extended to groups of the form
+G′ = Ca⊕ G, where G is a p-group with D(G) ≤ 2 exp(G)− 1 and a is not divisible
+by p. The proof is essentially the same as the derivation of Theor em 1.4 from
+the a = 1 case, given in [5].
+Theorem 4.1. Let G be a ﬁnite abelian p-group with D(G) ≤ 2 exp(G) − 1.
+Then for any positive integer a not divisible by p, G′ = Ca ⊕ G satisﬁes
+2D(G′) − 1 = η(G′) + exp(G′) − 1.
+5
+Proof. Let n = exp( G). By Theorem 2.3 we have D(G′) = D∗ (G′) = D(G) +
+(a − 1)n, and by Lemma 2.6 we have η(G′) ≥ 2(D(G) − n) + an = 2D(G′) − an.
+By Proposition 2.7, we have
+η(G′) ≤ (η(Ca) − 1) exp(G) + η(G) = ( a − 1)n + η(G).
+Finally, by Theorem 1.6, we have η(G) = 2 D(G) − n, so
+η(G′) ≤ 2D(G) + (a − 2)n = 2D(G′) − an.
+Thus η(G′) = 2 D(G′) − exp(G′), which rearranges to the desired equality.
+Note that Theorem 4.1 is an extension of Theorem 4.2.1 in [6]. Remark 4.3
+in [6] pointed out that a result like this would follow given T heorem 1.6.
+5 T owards Evaluating s(G)
+It would be interesting to see if a similar method suﬃces for v erifying the second
+half of Conjecture 1.3, showing that s(G) = 2 D(G) − 1 for G a p-group with
+D(G) ≤ 2 exp(G) − 1. Here we describe an approach that seems promising and
+use it to make some progress.
+Let n = exp( G). For 1 ≤ i ≤ n, let ηi(G) = s[i,n](G). Since a sequence S
+contains a zero-sum subsequence of length i or i + 1 if 0S contains a zero-sum
+subsequence of length i + 1, it is easy to see that
+η(G) = η1(G) < · · ·< η n(G) = s(G).
+So, if Conjecture 1.5 holds in general, ηi(G) = ηi− 1(G) + 1 = η(G) + i − 1
+should always hold for 2 ≤ i ≤ n.
+The following partial result is known.
+Lemma 5.1 (Gao, [3, Lemma 2.6]) . For any ﬁnite abelian group G, ηi(G) =
+η(G) + i − 1 for 2 ≤ i ≤ ⌊ n
+2 ⌋ + 1.
+Unfortunately, the approach used to prove this lemma does no t directly
+generalize to the case where i > ⌊n
+2 ⌋ + 1. However, we can apply the same idea
+to get an improved result when specializing to a p-group of large exponent, via
+a result generalizing Corollary 2.5 on short zero-sum subse quences of zero-sum
+sequences.
+Theorem 5.2. Let G be a p-group with D(G) ≤ 2 exp(G) − 1. For 1 ≤ i ≤
+2 exp(G) − D(G), any zero-sum sequence S of length exactly D(G) + i over G
+contains a short zero-sum subsequence of length at least i.
+Proof. We use strong induction on i. The base case i = 1 is Corollary 2.5.
+Assume the result is true for 1 ≤ i ≤ j − 1, and take i = j ≤ 2 exp(G) − D(G).
+Let n = exp(G) and consider a zero-sum sequence S of length D(G) + j over
+G. Let S′ be the subsequence of S consisting of all but the last element, so S′
+6
+has length |S′|= D(G) +j − 1. By Lemma 3.2, S′ contains a zero-sum sequence
+T whose length |T | is congruent mod n to some residue between j and n,
+inclusive. Since D(G) + j ≤ 2n, either j ≤ | T | ≤ n or n + j ≤ | T | ≤ 2n − 1. In
+the former case, T is a short zero-sum subsequence of S of length at least j, as
+desired. In the latter case, the complement T ′ of T in S is a nonempty zero-sum
+subsequence of S of length |T ′| ≤ (D(G) + j) − (n + j) = D(G) − n ≤ n − j.
+If |T ′| ≥ j, we again have a short zero-sum subsequence of S of length at
+least j, as desired. Otherwise, |T |= D(G) + j − |T ′|> D(G). By the inductive
+hypothesis, T contains a short zero-sum subsequence U of length at least j −| T ′|.
+If |U | ≥ j, we are again done, so assume j − |T ′| ≤ |U | ≤ j − 1. Then
+j ≤ | T ′|+ |U | ≤ n − 1,
+so T ′U is a short zero-sum subsequence of S of length at least j, as desired.
+So the result holds for i = j as well, and thus by induction holds for all i ≤
+2 exp(G) − D(G).
+This gives the following extension of Theorem 1.6 as an immed iate corollary.
+Corollary 5.3. Let G be a ﬁnite abelian p-group with D(G) ≤ 2 exp(G) − 1.
+Then for 1 ≤ i ≤ max
+(
+2 exp(G) − D(G),
+⌊
+exp(G)
+2
+⌋
++ 1
+)
+, we have
+ηi(G) = 2 D(G) − exp(G) + (i − 1).
+Proof. Let n = exp(G), and let R be a sequence of length D(G) + n − 1 over G.
+Since D(G)+ n− 1 < 3n, by Lemma 3.1, R contains a zero-sum subsequence S of
+length n or 2n. If |S|= 2n, then Theorem 5.2 gives a short zero-sum subsequence
+T of length at least 2n − D(G). So, in either case, R contains a short zero-sum
+subsequence of length at least 2n − D(G), meaning η2n− D(G)(G) ≤ D(G) +n − 1.
+Since η(G) = 2 D(G) − n, the bounds ηi− 1(G) < η i(G) yield the desired result
+for all i ≤ 2 exp(G) − D(G).
+The result for i ≤
+⌊n
+2
+⌋
++ 1 is a direct consequence of Theorem 1.6 and
+Lemma 5.1.
+The argument used in Theorem 3.1 of [10] to prove that s(G) ≤ D(G)+2 n− 2
+for a p-group G of large exponent relies on the fact that a sequence S over G of
+length at least D(G)+(n− 2)+ℓ contains either a zero-sum subsequence of length
+n, or a zero-sum subsequence of length 2n that itself contains a short zero-sum
+subsequence of length at least ℓ. Our Theorem 5.2 provides a strengthening
+of this result for ℓ = 1 , giving a short zero-sum subsequence of length at least
+(2n − 1) − D(G) + ℓ = 2n − D(G) in the zero-sum subsequence of length 2n. It
+is conceivable that this strengthening could generalize to larger values of ℓ, as
+the following conjecture voices.
+Conjecture 5.4. Let G be a ﬁnite abelian p-group with exp(G) = n and D(G) ≤
+2n − 1. Let ℓ ∈ [1, D(G) + 1 − n], and let S be a sequence over G of length at
+least D(G) + (n − 2) + ℓ. Then one of the following statements holds:
+7
+1. S has a zero-sum subsequence B with |B|= n.
+2. S has a zero-sum subsequence B with |B|= 2n such that B has a zero-sum
+subsequence B′ with |B′| ∈ [(2n − 1) − D(G) + ℓ, n − 1].
+This conjecture, if true, would yield the desired bound of s(G) ≤ D(G) +
+(n − 2) + (D(G) − n + 1) = 2 D(G) − 1. Perhaps in this or some other way, the
+argument used in [10], extended by the arguments we use, coul d lead to the full
+resolution of Conjecture 1.3.
+Acknowledgements
+This research was conducted at the University of Minnesota D uluth REU and
+was supported by NSF grant 1358659 and NSA grant H98230-16-1 -0026. The
+author thanks Joe Gallian for suggesting the problem and Lev ent Alpoge, Alfred
+Geroldinger, Wolfgang Schmid, and Qinghai Zhong for helpfu l comments on the
+manuscript.
+References
+[1] Edel, Y., Elsholtz, C., Geroldinger, A., Kubertin, S., and Ra ck-
+ham, L. Zero-sum problems in ﬁnite abelian groups and aﬃne caps. Q. J.
+Math. 58 , 2 (2007), 159–186.
+[2] F an, Y., Gao, W., W ang, G., Zhong, Q., and Zhuang, J. On short
+zero-sum subsequences of zero-sum sequences. Electron. J. Combin. 19 , 3
+(2012), P31.
+[3] Gao, W. On zero-sum subsequences of restricted size II. Discrete Mathe-
+matics 271 , 1 (2003), 51–59.
+[4] Gao, W., and Geroldinger, A. Zero-sum problems in ﬁnite abelian
+groups: a survey. Expo. Math. 24 , 4 (2006), 337–369.
+[5] Gao, W., Han, D., and Zhang, H. The EGZ-constant and short zero-
+sum sequences over ﬁnite abelian groups. J. Number Theory 162 (2016),
+601–613.
+[6] Geroldinger, A., Grynkiewicz, D. J., and Schmid, W. A. Zero-sum
+problems with congruence conditions. Acta Math. Hungar. 131 , 4 (2011),
+323–345.
+[7] Geroldinger, A., and Halter-Koch, F. Non-unique Factorizations:
+Algebraic, Combinatorial and Analytic Theory . Chapman & Hall/CRC
+Pure and Applied Mathematics. CRC Press, 2006.
+[8] Geroldinger, A., and Ruzsa, I. Combinatorial Number Theory and Ad-
+ditive Group Theory. Advanced Courses in Mathematics - CRM Barcelona.
+Birkhäuser Basel, 2009.
+8
+[9] Olson, J. E. A combinatorial problem on ﬁnite abelian groups, II. J.
+Number Theory 1 , 2 (1969), 195–199.
+[10] Schmid, W. A., and Zhuang, J. On short zero-sum subsequences over
+p-groups. Ars Combin. 95 (2010), 343–352.
+[11] Zhang, H., and W ang, G. On the Erdős–Ginzburg–Ziv invariant and
+zero-sum Ramsey number for intersecting families. Int. J. Number Theory
+10, 07 (2014), 1637–1647.
+9

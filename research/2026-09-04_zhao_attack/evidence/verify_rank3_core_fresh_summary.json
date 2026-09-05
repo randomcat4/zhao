@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "sources": {
+    "proof": {
+      "relative_path": "proofs\\four_triples_rank3.md",
+      "sha256": "12d52a4a3a01fef9f389b5059e0b2a2dba76d0209c90c005bd7fb97b2b410783"
+    },
+    "frozen_v1": {
+      "relative_path": "frozen_theorem_v1.md",
+      "sha256": "92c313dd758c6dbcc53d977dbf04d52d8405751238bdce796935a9a62617d2fe"
+    }
+  },
+  "core": {
+    "targets": 125,
+    "forward_coefficients": 256,
+    "reverse_target_t_pairs": 500,
+    "distribution": {
+      "0": 1,
+      "1": 4,
+      "2": 10,
+      "3": 18,
+      "4": 21,
+      "5": 24,
+      "6": 21,
+      "7": 14,
+      "8": 7,
+      "9": 4,
+      "12": 1
+    },
+    "zero_free_fourth_vectors": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        1
+      ]
+    ],
+    "witness_csv": "verify_rank3_core_fresh_125_targets.csv",
+    "normal_form_csv": "verify_rank3_core_fresh_normal_forms.csv"
+  },
+  "quotient_patterns": {
+    "A": {
+      "total": 220,
+      "support_size_counts": {
+        "1": 4,
+        "2": 48,
+        "3": 112,
+        "4": 56
+      },
+      "dispositions": {
+        "forces_multiplicity_at_least_4": 24,
+        "inconsistent_with_C_nonzero": 192,
+        "needs_five_point_sumset_argument": 4
+      }
+    },
+    "B": {
+      "total": 165,
+      "support_size_counts": {
+        "1": 4,
+        "2": 42,
+        "3": 84,
+        "4": 35
+      },
+      "dispositions": {
+        "inconsistent_with_C_nonzero": 32,
+        "opposite_pair_gives_length_at_most_14": 133
+      }
+    }
+  },
+  "quotient_csv": "verify_rank3_core_fresh_quotient_patterns.csv",
+  "sorted_pairing": {
+    "equality_patterns": 81,
+    "tested_pairs": 324,
+    "all_pairs_have_distinct_values": true
+  },
+  "two_dimensional_sumset_check": {
+    "scope": "Supplementary bounded check; general statement audited by proof",
+    "direction_multisets": 17550,
+    "cardinality_distribution": {
+      "5": 210,
+      "8": 960,
+      "9": 540,
+      "10": 2880,
+      "11": 1440,
+      "12": 4560,
+      "13": 1920,
+      "14": 1920,
+      "15": 960,
+      "16": 2160
+    },
+    "rank_two_minimum": 8
+  }
+}

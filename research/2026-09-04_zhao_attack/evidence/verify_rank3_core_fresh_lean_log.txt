@@ -1,0 +1,36 @@
+Independent audit on 2026-09-04.
+Working directory: C:\game\gameproject\showa100
+No lean-toolchain file exists in the working directory, math directory,
+2026-09-04_zhao_attack run directory, or its formal directory.
+
+Command: elan toolchain list
+Exit code: 0
+leanprover/lean4:v4.29.0
+leanprover/lean4:v4.30.0
+leanprover/lean4:v4.32.0
+
+Command: lean --version
+Exit code: 0
+Lean (version 4.32.0, x86_64-w64-windows-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)
+
+Command: lake --version
+Exit code: 0
+Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)
+
+Command: lean C:\game\gameproject\showa100\math\2026-09-04_zhao_attack\formal\Rank3Core.lean
+Exit code: 0
+Reported wall time: 8.1250203 seconds
+'core_cover9' depends on axioms: [propext, Quot.sound]
+'core_cover8' depends on axioms: [propext, Quot.sound]
+
+Checked source SHA256:
+C45E5F10CF8433EF982045EFF150BE1F665DD8F7B19D61FD3617D12D94029431
+An identical source copy is verify_rank3_core_fresh_checked_lean_snapshot.lean.
+The token scan found no sorry, admit, newly declared axiom, or unsafe.
+The scan's rg exit code was 1, meaning no matching forbidden token.
+
+STATUS: LEAN_PARTIALLY_CHECKED
+Coverage: the two finite upper-bound cover statements only.
+Not covered by this Lean file: the full A/B structural exclusion, the exact
+minimal-distance distribution, the lower bounds at exceptional targets,
+the normal-form reduction, the quotient argument, and the sumset lemma.

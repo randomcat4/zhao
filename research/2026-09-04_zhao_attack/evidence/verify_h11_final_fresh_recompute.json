@@ -1,0 +1,220 @@
+{
+  "final_orbit_keys": [
+    [
+      9,
+      31
+    ],
+    [
+      9,
+      49
+    ],
+    [
+      38,
+      47
+    ],
+    [
+      38,
+      108
+    ]
+  ],
+  "frozen_sha256": {
+    "formal/H11ScalarCertificate.lean": "15f4a1912584e0f0fa4a2438fa2995eca4fcded0d4915e47926f0ffd6a528fac",
+    "h11_continue_B_proof.md": "e4be4106f26daee5bf27a121dc36e37c1b7ad52c3654fa450113c016702f0d1c",
+    "h11_continue_certificate.json": "df5f463fe6312ba47492ce3932d50de1cc1374e0a38b29fe38aa65d3460b14e4",
+    "h11_continue_certify.py": "148a0e2422317bab7ef382eddba8a9b4c6cc7fe2757935ca025928afe94d2cc9",
+    "h11_continue_scalar_egz_v2.json": "6f7b9c8a7018b016fa6cb9f73524bd9c8c3120dee70415fd7cb6265f8e6dfbdc"
+  },
+  "geometry": {
+    "38,108": {
+      "M": [
+        102,
+        107,
+        112,
+        117,
+        122
+      ],
+      "property_checks_for_M": {
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          102,
+          107,
+          112,
+          117,
+          122
+        ]
+      },
+      "property_checks_for_minus_M": {
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          28,
+          33,
+          38,
+          43,
+          48
+        ]
+      }
+    },
+    "38,47": {
+      "M": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "property_checks_for_M": {
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          4,
+          9,
+          14,
+          19,
+          24
+        ]
+      },
+      "property_checks_for_minus_M": {
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          1,
+          6,
+          11,
+          16,
+          21
+        ]
+      }
+    },
+    "9,31": {
+      "M": [
+        4,
+        23,
+        29,
+        54,
+        79,
+        104,
+        105
+      ],
+      "property_checks_for_M": {
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          4,
+          29,
+          54,
+          79,
+          104
+        ]
+      },
+      "property_checks_for_minus_M": {
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          1,
+          26,
+          51,
+          76,
+          101
+        ]
+      }
+    },
+    "9,49": {
+      "M": [
+        4,
+        23,
+        48,
+        73,
+        98,
+        117,
+        123
+      ],
+      "property_checks_for_M": {
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          23,
+          48,
+          73,
+          98,
+          123
+        ]
+      },
+      "property_checks_for_minus_M": {
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "five_cliques_for_untranslated_target": 1,
+        "large_translate_intersections": 4,
+        "main_line": [
+          7,
+          32,
+          57,
+          82,
+          107
+        ]
+      }
+    }
+  },
+  "method": "all 2^11 actual-position subsets for every unordered nonbasis pair; no import of author checker",
+  "orbit_cases": {
+    "F0_empty": 94,
+    "M_at_most_4": 33,
+    "line_geometry": 4
+  },
+  "orbit_core_count": 131,
+  "raw_cases": {
+    "F0_empty": 519,
+    "M_at_most_4": 195,
+    "line_geometry": 24
+  },
+  "raw_core_count": 738,
+  "scalar": {
+    "count_vectors": 715,
+    "forced_residue2_exception_vectors": 20,
+    "independent_residue0_vectors": 695,
+    "supplied_residue_counts": {
+      "0": 695,
+      "2": 20
+    }
+  },
+  "status": "INDEPENDENT_FINITE_RECOMPUTATION_PASSED"
+}

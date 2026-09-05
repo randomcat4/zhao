@@ -1,0 +1,6 @@
+Lean (version 4.30.0, x86_64-w64-windows-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+'H11ScalarCertificate.all_counts_covered' does not depend on any axioms
+'H11ScalarCertificate.all_selections_valid' does not depend on any axioms
+'H11ScalarCertificate.number_of_counts' does not depend on any axioms
+H11ScalarCertificate.lean: process exit code 0
+Forbidden token scan: no matches for sorry|admit|^axiom|unsafe

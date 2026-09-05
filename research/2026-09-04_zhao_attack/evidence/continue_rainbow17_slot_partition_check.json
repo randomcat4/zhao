@@ -1,0 +1,23 @@
+{
+  "status": "INDEPENDENT_CLASSIFICATION_MATCH",
+  "method": "restricted-growth partitions of 12 ordered endpoint slots",
+  "ordered_slot_partitions_without_rainbow": 37808,
+  "ordered_slot_partition_vertex_count_histogram": {
+    "4": 128,
+    "5": 3584,
+    "6": 19072,
+    "7": 14336,
+    "8": 688
+  },
+  "color_preserving_isomorphism_types": 92,
+  "isomorphism_type_vertex_count_histogram": {
+    "4": 1,
+    "5": 7,
+    "6": 46,
+    "7": 31,
+    "8": 7
+  },
+  "primary_evidence_sha256": "2b9786d4f02ec27ea2f1b7d97c654d550f7138009611d002f3d721423910bc33",
+  "canonical_type_sets_equal": true,
+  "script_sha256_before_output": "b6a3495b44f43b8b16568d754238e72255a9e331dadbeb35bb77379634ff9c37"
+}

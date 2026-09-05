@@ -1,0 +1,9 @@
+{
+  "status": 1,
+  "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+  "elapsed_seconds": 45.28100000001723,
+  "block_orbits": 798,
+  "modular_rows": 73,
+  "packing_rows": 255,
+  "restriction": "Only 15-zero blocks; invariant under a 19-cycle fixing the 20th point; no Johnson-adjacent pair."
+}

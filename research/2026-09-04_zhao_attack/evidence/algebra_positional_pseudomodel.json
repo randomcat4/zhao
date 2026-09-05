@@ -1,0 +1,421 @@
+{
+  "status": "RELAXATION_FEASIBLE_NOT_A_GROUP_SEQUENCE",
+  "n": 20,
+  "complement_size": 5,
+  "zero_block_size": 15,
+  "zero_blocks": 15126,
+  "removed_ground_sets": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12,
+      18
+    ]
+  ],
+  "checked_rows_by_d": [
+    1,
+    20,
+    190,
+    1140,
+    4845
+  ],
+  "all_containment_counts_mod_5": 1,
+  "zero_blocks_mod_25": 1,
+  "A_extension": "Append position 20 to every complement; leave every zero block unchanged.",
+  "swap_forced_equal_classes": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  ],
+  "swap_equal_spanning_tree": [
+    {
+      "i": 14,
+      "j": 13,
+      "complement_1": [
+        0,
+        1,
+        2,
+        3,
+        14
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "i": 15,
+      "j": 13,
+      "complement_1": [
+        0,
+        1,
+        2,
+        3,
+        15
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "i": 16,
+      "j": 13,
+      "complement_1": [
+        0,
+        1,
+        2,
+        3,
+        16
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "i": 17,
+      "j": 13,
+      "complement_1": [
+        0,
+        1,
+        2,
+        3,
+        17
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "i": 19,
+      "j": 13,
+      "complement_1": [
+        0,
+        1,
+        2,
+        3,
+        19
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "i": 10,
+      "j": 9,
+      "complement_1": [
+        0,
+        1,
+        2,
+        4,
+        10
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 11,
+      "j": 9,
+      "complement_1": [
+        0,
+        1,
+        2,
+        4,
+        11
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 12,
+      "j": 9,
+      "complement_1": [
+        0,
+        1,
+        2,
+        4,
+        12
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 4,
+      "j": 3,
+      "complement_1": [
+        0,
+        1,
+        2,
+        4,
+        13
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "i": 13,
+      "j": 9,
+      "complement_1": [
+        0,
+        1,
+        2,
+        4,
+        13
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 18,
+      "j": 9,
+      "complement_1": [
+        0,
+        1,
+        2,
+        4,
+        18
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 5,
+      "j": 4,
+      "complement_1": [
+        0,
+        1,
+        2,
+        5,
+        9
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 6,
+      "j": 4,
+      "complement_1": [
+        0,
+        1,
+        2,
+        6,
+        9
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 7,
+      "j": 4,
+      "complement_1": [
+        0,
+        1,
+        2,
+        7,
+        9
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 8,
+      "j": 4,
+      "complement_1": [
+        0,
+        1,
+        2,
+        8,
+        9
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 9,
+      "j": 3,
+      "complement_1": [
+        0,
+        1,
+        2,
+        9,
+        13
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "i": 3,
+      "j": 2,
+      "complement_1": [
+        0,
+        1,
+        3,
+        4,
+        9
+      ],
+      "complement_2": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 2,
+      "j": 1,
+      "complement_1": [
+        0,
+        2,
+        3,
+        4,
+        9
+      ],
+      "complement_2": [
+        0,
+        1,
+        3,
+        4,
+        9
+      ]
+    },
+    {
+      "i": 1,
+      "j": 0,
+      "complement_1": [
+        1,
+        2,
+        3,
+        4,
+        9
+      ],
+      "complement_2": [
+        0,
+        2,
+        3,
+        4,
+        9
+      ]
+    }
+  ],
+  "scope": "All individual deletion congruences plus binary membership and the new scalar mod-25 identity. Does not satisfy bounded multiplicity or rank-four realizability."
+}

@@ -1,0 +1,95 @@
+{
+  "status": "TARGETED_D3_M1_EXHAUSTIVE_EXTENSION_TEST_FIXED",
+  "scope": "Two forced normalized 13-position cores; W has seven positions and at most one doubled value",
+  "corrected_defect": "Each RunCore result now owns a cloned nodes_by_W_length snapshot; the frozen original evidence aliased the static nodes array",
+  "cores_with_true_support_filter": [
+    {
+      "name": "k=(2,1,1), m on the k=2 value",
+      "exclude_forced_support": true,
+      "complete": true,
+      "timed_out": false,
+      "found_safe_B20_witness": false,
+      "target_W_sum": 458,
+      "nodes_by_W_length": [
+        1,
+        228,
+        8466,
+        28905,
+        4843,
+        0,
+        0,
+        0
+      ],
+      "leaf_sum_tests": 0,
+      "witness_W": null
+    },
+    {
+      "name": "k=(2,1,1), m on a k=1 value",
+      "exclude_forced_support": true,
+      "complete": true,
+      "timed_out": false,
+      "found_safe_B20_witness": false,
+      "target_W_sum": 458,
+      "nodes_by_W_length": [
+        1,
+        164,
+        3338,
+        6318,
+        958,
+        0,
+        0,
+        0
+      ],
+      "leaf_sum_tests": 0,
+      "witness_W": null
+    }
+  ],
+  "support_relaxed_all_625_values_crosscheck": [
+    {
+      "name": "k=(2,1,1), m on the k=2 value",
+      "exclude_forced_support": false,
+      "complete": true,
+      "timed_out": false,
+      "found_safe_B20_witness": false,
+      "target_W_sum": 458,
+      "nodes_by_W_length": [
+        1,
+        233,
+        9220,
+        39942,
+        15691,
+        0,
+        0,
+        0
+      ],
+      "leaf_sum_tests": 0,
+      "witness_W": null
+    },
+    {
+      "name": "k=(2,1,1), m on a k=1 value",
+      "exclude_forced_support": false,
+      "complete": true,
+      "timed_out": false,
+      "found_safe_B20_witness": false,
+      "target_W_sum": 458,
+      "nodes_by_W_length": [
+        1,
+        169,
+        3838,
+        10342,
+        3507,
+        0,
+        0,
+        0
+      ],
+      "leaf_sum_tests": 0,
+      "witness_W": null
+    }
+  ],
+  "input_sha256": {
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "proofs/continue_atom16_star_addendum.md": "3f6747de90bc560396604ed588c6efa57f01485a4ad3cfb28ad94e7fbaf10e79",
+    "scripts/continue_atom16_star_addendum_d3_fixed.cs": "4455a58ccdeb51dda9af52667fd2f0769841e7b07a25746bd644135bf9187f0d",
+    "scripts/continue_atom16_star_addendum_d3_fixed.ps1": "da2def4df549e9f96fcf97916a0f22e7c66e75d5503e3253e1cdea13a23b63d8"
+  }
+}

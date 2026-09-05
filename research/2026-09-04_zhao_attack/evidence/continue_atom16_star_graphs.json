@@ -1,0 +1,421 @@
+{
+  "status": "TINY_GRAPH_AND_RESIDUAL_ACCOUNTING_PASS",
+  "scope": "Abstract graph types and integer accounting only; not an F5^4 search",
+  "component_possibilities_before_structural_exclusions": [
+    {
+      "m": 0,
+      "components": [
+        "K1,2"
+      ],
+      "edges": 2,
+      "matching": 1
+    },
+    {
+      "m": 1,
+      "components": [
+        "K1,3"
+      ],
+      "edges": 3,
+      "matching": 1
+    },
+    {
+      "m": 2,
+      "components": [
+        "K2,2"
+      ],
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "m": 1,
+      "components": [
+        "half_K3"
+      ],
+      "edges": 3,
+      "matching": 1
+    },
+    {
+      "m": 1,
+      "components": [
+        "K1,1",
+        "K1,2"
+      ],
+      "edges": 3,
+      "matching": 2
+    },
+    {
+      "m": 2,
+      "components": [
+        "K1,1",
+        "K1,3"
+      ],
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "m": 0,
+      "components": [
+        "K1,1",
+        "half_K2"
+      ],
+      "edges": 2,
+      "matching": 2
+    },
+    {
+      "m": 2,
+      "components": [
+        "K1,1",
+        "half_K3"
+      ],
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "m": 1,
+      "components": [
+        "K1,2",
+        "half_K2"
+      ],
+      "edges": 3,
+      "matching": 2
+    },
+    {
+      "m": 2,
+      "components": [
+        "K1,3",
+        "half_K2"
+      ],
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "m": 2,
+      "components": [
+        "half_K2",
+        "half_K3"
+      ],
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "m": 0,
+      "components": [
+        "K1,1",
+        "K1,1"
+      ],
+      "edges": 2,
+      "matching": 2
+    },
+    {
+      "m": 2,
+      "components": [
+        "K1,2",
+        "K1,2"
+      ],
+      "edges": 4,
+      "matching": 2
+    },
+    {
+      "m": 0,
+      "components": [
+        "half_K2",
+        "half_K2"
+      ],
+      "edges": 2,
+      "matching": 2
+    }
+  ],
+  "surviving_pair_graph_types": [
+    {
+      "m": 0,
+      "components": [
+        "K1,2"
+      ],
+      "edges": 2,
+      "matching": 1
+    },
+    {
+      "m": 1,
+      "components": [
+        "K1,3"
+      ],
+      "edges": 3,
+      "matching": 1
+    }
+  ],
+  "cross_intersecting_star_pairs_checked": 4270,
+  "different_center_cross_pairs_all_share_an_edge": 105,
+  "squarefree_two_by_two_cross_matchings": [
+    [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ],
+  "squarefree_three_edge_family_has_crossing_edge": false,
+  "labelled_residual_types": [
+    {
+      "R_multiplicities": [
+        3,
+        1
+      ],
+      "m_in_T": [
+        0,
+        0
+      ],
+      "M": 0,
+      "forced_excess": 4,
+      "remaining_excess_budget": 3,
+      "forced_T_positions": 5,
+      "W_length": 11
+    },
+    {
+      "R_multiplicities": [
+        3,
+        1
+      ],
+      "m_in_T": [
+        0,
+        1
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 7,
+      "W_length": 9
+    },
+    {
+      "R_multiplicities": [
+        2,
+        2
+      ],
+      "m_in_T": [
+        0,
+        0
+      ],
+      "M": 0,
+      "forced_excess": 4,
+      "remaining_excess_budget": 3,
+      "forced_T_positions": 5,
+      "W_length": 11
+    },
+    {
+      "R_multiplicities": [
+        2,
+        2
+      ],
+      "m_in_T": [
+        0,
+        1
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 7,
+      "W_length": 9
+    },
+    {
+      "R_multiplicities": [
+        2,
+        2
+      ],
+      "m_in_T": [
+        1,
+        0
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 7,
+      "W_length": 9
+    },
+    {
+      "R_multiplicities": [
+        2,
+        1,
+        1
+      ],
+      "m_in_T": [
+        0,
+        0,
+        0
+      ],
+      "M": 0,
+      "forced_excess": 4,
+      "remaining_excess_budget": 3,
+      "forced_T_positions": 7,
+      "W_length": 9
+    },
+    {
+      "R_multiplicities": [
+        2,
+        1,
+        1
+      ],
+      "m_in_T": [
+        0,
+        0,
+        1
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 9,
+      "W_length": 7
+    },
+    {
+      "R_multiplicities": [
+        2,
+        1,
+        1
+      ],
+      "m_in_T": [
+        0,
+        1,
+        0
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 9,
+      "W_length": 7
+    },
+    {
+      "R_multiplicities": [
+        2,
+        1,
+        1
+      ],
+      "m_in_T": [
+        1,
+        0,
+        0
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 9,
+      "W_length": 7
+    },
+    {
+      "R_multiplicities": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "m_in_T": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": 0,
+      "forced_excess": 4,
+      "remaining_excess_budget": 3,
+      "forced_T_positions": 9,
+      "W_length": 7
+    },
+    {
+      "R_multiplicities": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "m_in_T": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 11,
+      "W_length": 5
+    },
+    {
+      "R_multiplicities": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "m_in_T": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 11,
+      "W_length": 5
+    },
+    {
+      "R_multiplicities": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "m_in_T": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 11,
+      "W_length": 5
+    },
+    {
+      "R_multiplicities": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "m_in_T": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": 1,
+      "forced_excess": 6,
+      "remaining_excess_budget": 1,
+      "forced_T_positions": 11,
+      "W_length": 5
+    }
+  ],
+  "labelled_type_count": 14,
+  "types_mod_equal_multiplicity_symmetry": 9,
+  "input_sha256": {
+    "frozen_theorem_v1.md": "92c313dd758c6dbcc53d977dbf04d52d8405751238bdce796935a9a62617d2fe",
+    "proofs/atom_structure.md": "dbe97c8b0776e148e88ac5c9b369362d42cac4884f2ff32680d129b8e48901fd",
+    "proofs/global_continue_squarefree_B.md": "222e940c9a8fc062212f892e72797c0594a6d83506aaad2e8240e587b2dd2922",
+    "proofs/global_continue_support18_B.md": "e54019cf7b7792ba67d13e481deed8c3fb7b7323c2852d42868ad180c131a2eb",
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "scripts/continue_atom16_star_graphs.py": "43a1be6f6c41f58f33e8fc4128919d142afbc3b3c11705f129c16b02cad95772"
+  }
+}

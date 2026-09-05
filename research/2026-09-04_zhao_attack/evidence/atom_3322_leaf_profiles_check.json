@@ -1,0 +1,44 @@
+{
+  "status": "ALL_LEAF_PROFILES_REBUILT_AND_MATCHED",
+  "mode": "3322",
+  "cutoff": 13,
+  "root_count": 122,
+  "leaf_count": 15684,
+  "leaf_denominator_matches_original_tree": true,
+  "safe_single_addition_count_distribution": {
+    "0": 977,
+    "1": 3970,
+    "2": 3012,
+    "3": 801,
+    "4": 6316,
+    "5": 604,
+    "6": 4
+  },
+  "maximum_distance_distribution": {
+    "9": 117,
+    "10": 288,
+    "11": 484,
+    "12": 88,
+    "13": 832,
+    "14": 850,
+    "15": 683,
+    "16": 12330,
+    "99": 12
+  },
+  "coverage_distribution": {
+    "623": 12,
+    "625": 15672
+  },
+  "safe_additions_already_in_support_count_distribution": {
+    "0": 11297,
+    "1": 3884,
+    "2": 485,
+    "3": 18
+  },
+  "seconds": 1.25,
+  "leaf_source": "math\\2026-09-04_zhao_attack\\evidence\\atom_3322_leaf_profiles.jsonl",
+  "leaf_source_sha256": "448bef714e3f458b035e2ef332f30ce1ce2ccb61736f3b9a0797814f36c44671",
+  "tree_source": "math\\2026-09-04_zhao_attack\\evidence\\atom_3322_m13_blocks.jsonl",
+  "tree_source_sha256": "38bab7dba7eac503c7e2fafaa69e48ea4af44a8e9f517ab4a2c5644780a79018",
+  "script_sha256": "778f7d8311178864b83a5fdf09e5d47b71c79355de547f65b105ee0beec1c13b"
+}

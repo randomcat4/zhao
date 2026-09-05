@@ -1,0 +1,5076 @@
+{
+  "scope": "exactly three tripled elements and an independent doubled element",
+  "uncovered_scope": "all doubled elements lie in the span of the three tripled elements",
+  "dependency": "root candidate exclusion of four tripled elements, pending independent verification",
+  "case": "A",
+  "n": 21,
+  "m": 13,
+  "core_multiplicities": [
+    3,
+    3,
+    3,
+    2
+  ],
+  "script_sha256": "2d32d129ed24f402fe4098933e8d3bc1dab49f7955398c7437360cf082de3ad0",
+  "helper_sha256": "67c5758efd4d0827447fd47e9c473f88d57aae5dec592626336c9d4fd1c5feee",
+  "initial_safe_candidates": [
+    6,
+    7,
+    8,
+    9,
+    11,
+    16,
+    21,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    51,
+    55,
+    56,
+    57,
+    58,
+    59,
+    61,
+    66,
+    71,
+    76,
+    80,
+    81,
+    82,
+    83,
+    84,
+    86,
+    91,
+    96,
+    101,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    116,
+    121,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    376,
+    380,
+    381,
+    382,
+    383,
+    384,
+    386,
+    391,
+    396,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    426,
+    430,
+    431,
+    432,
+    433,
+    434,
+    436,
+    441,
+    446,
+    451,
+    455,
+    456,
+    457,
+    458,
+    459,
+    461,
+    466,
+    471,
+    476,
+    480,
+    481,
+    482,
+    483,
+    484,
+    486,
+    491,
+    496,
+    501,
+    505,
+    506,
+    507,
+    508,
+    509,
+    511,
+    516,
+    521,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    551,
+    555,
+    556,
+    557,
+    558,
+    559,
+    561,
+    566,
+    571,
+    576,
+    580,
+    581,
+    582,
+    583,
+    584,
+    586,
+    591,
+    596,
+    601,
+    605,
+    606,
+    607,
+    608,
+    609,
+    611,
+    616,
+    621
+  ],
+  "canonical_roots": [
+    6,
+    7,
+    8,
+    9,
+    31,
+    32,
+    33,
+    34,
+    37,
+    38,
+    39,
+    43,
+    44,
+    49,
+    126,
+    127,
+    128,
+    129,
+    131,
+    132,
+    133,
+    134,
+    137,
+    138,
+    139,
+    143,
+    144,
+    149,
+    156,
+    157,
+    158,
+    159,
+    162,
+    163,
+    164,
+    168,
+    169,
+    174,
+    187,
+    188,
+    189,
+    193,
+    194,
+    199,
+    218,
+    219,
+    224,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    256,
+    257,
+    258,
+    259,
+    262,
+    263,
+    264,
+    268,
+    269,
+    274,
+    281,
+    282,
+    283,
+    284,
+    287,
+    288,
+    289,
+    293,
+    294,
+    299,
+    312,
+    313,
+    314,
+    318,
+    319,
+    324,
+    343,
+    344,
+    349,
+    374,
+    376,
+    381,
+    382,
+    383,
+    384,
+    406,
+    407,
+    408,
+    409,
+    412,
+    413,
+    414,
+    418,
+    419,
+    424,
+    501,
+    506,
+    507,
+    508,
+    509,
+    531,
+    532,
+    533,
+    534,
+    537,
+    538,
+    539,
+    543,
+    544,
+    549
+  ],
+  "runs": [
+    {
+      "type": "root",
+      "root": 6,
+      "completed_exhaustively": true,
+      "nodes": 2205531,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 345,
+        "14": 30922,
+        "15": 548955,
+        "16": 1413298,
+        "17": 212010
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 4200,
+        "15": 285451,
+        "16": 1263405,
+        "17": 212010
+      },
+      "one_longest_extension": [
+        6,
+        26,
+        34,
+        126,
+        126,
+        129
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 7.42861
+    },
+    {
+      "type": "root",
+      "root": 7,
+      "completed_exhaustively": true,
+      "nodes": 2534079,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 346,
+        "14": 31246,
+        "15": 565675,
+        "16": 1541099,
+        "17": 395712
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 4265,
+        "15": 292704,
+        "16": 1317776,
+        "17": 395712
+      },
+      "one_longest_extension": [
+        7,
+        9,
+        26,
+        126,
+        126,
+        153
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 8.342531
+    },
+    {
+      "type": "root",
+      "root": 8,
+      "completed_exhaustively": true,
+      "nodes": 2659657,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 346,
+        "14": 31246,
+        "15": 565675,
+        "16": 1549178,
+        "17": 513211
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 4204,
+        "15": 292627,
+        "16": 1321130,
+        "17": 513211
+      },
+      "one_longest_extension": [
+        8,
+        8,
+        26,
+        126,
+        126,
+        153
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 8.815198
+    },
+    {
+      "type": "root",
+      "root": 9,
+      "completed_exhaustively": true,
+      "nodes": 2223877,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 345,
+        "14": 30922,
+        "15": 548955,
+        "16": 1407669,
+        "17": 235985
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 4193,
+        "15": 283165,
+        "16": 1256709,
+        "17": 235985
+      },
+      "one_longest_extension": [
+        9,
+        26,
+        31,
+        126,
+        126,
+        129
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 5.897766
+    },
+    {
+      "type": "root",
+      "root": 31,
+      "completed_exhaustively": true,
+      "nodes": 708172,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 306,
+        "14": 20350,
+        "15": 227664,
+        "16": 377912,
+        "17": 81939
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 2727,
+        "15": 133116,
+        "16": 325671,
+        "17": 81939
+      },
+      "one_longest_extension": [
+        31,
+        35,
+        45,
+        126,
+        126,
+        134
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.430775
+    },
+    {
+      "type": "root",
+      "root": 32,
+      "completed_exhaustively": true,
+      "nodes": 577305,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 307,
+        "14": 20562,
+        "15": 227551,
+        "16": 292605,
+        "17": 36279
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 2991,
+        "15": 138725,
+        "16": 266494,
+        "17": 36279
+      },
+      "one_longest_extension": [
+        32,
+        34,
+        101,
+        126,
+        126,
+        153
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.215215
+    },
+    {
+      "type": "root",
+      "root": 33,
+      "completed_exhaustively": true,
+      "nodes": 762503,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 307,
+        "14": 20616,
+        "15": 238363,
+        "16": 421252,
+        "17": 81964
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 2784,
+        "15": 136665,
+        "16": 366484,
+        "17": 81964
+      },
+      "one_longest_extension": [
+        33,
+        33,
+        48,
+        126,
+        126,
+        130
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.606018
+    },
+    {
+      "type": "root",
+      "root": 34,
+      "completed_exhaustively": true,
+      "nodes": 572072,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 306,
+        "14": 20303,
+        "15": 220986,
+        "16": 296597,
+        "17": 33879
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 3006,
+        "15": 134446,
+        "16": 274043,
+        "17": 33879
+      },
+      "one_longest_extension": [
+        34,
+        37,
+        126,
+        126,
+        134,
+        170
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.194872
+    },
+    {
+      "type": "root",
+      "root": 37,
+      "completed_exhaustively": true,
+      "nodes": 562569,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 310,
+        "14": 21287,
+        "15": 243028,
+        "16": 277573,
+        "17": 20370
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 3481,
+        "15": 155164,
+        "16": 261256,
+        "17": 20370
+      },
+      "one_longest_extension": [
+        37,
+        39,
+        45,
+        126,
+        126,
+        129
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.210425
+    },
+    {
+      "type": "root",
+      "root": 38,
+      "completed_exhaustively": true,
+      "nodes": 663713,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 310,
+        "14": 21326,
+        "15": 249699,
+        "16": 355979,
+        "17": 36398
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 3182,
+        "15": 152277,
+        "16": 326064,
+        "17": 36398
+      },
+      "one_longest_extension": [
+        38,
+        38,
+        45,
+        126,
+        126,
+        129
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.421077
+    },
+    {
+      "type": "root",
+      "root": 39,
+      "completed_exhaustively": true,
+      "nodes": 572484,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 309,
+        "14": 21046,
+        "15": 239204,
+        "16": 294402,
+        "17": 17522
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 3263,
+        "15": 149543,
+        "16": 279445,
+        "17": 17522
+      },
+      "one_longest_extension": [
+        39,
+        42,
+        126,
+        126,
+        139,
+        149
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.255032
+    },
+    {
+      "type": "root",
+      "root": 43,
+      "completed_exhaustively": true,
+      "nodes": 550096,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 306,
+        "14": 20311,
+        "15": 214804,
+        "16": 273369,
+        "17": 41305
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 2829,
+        "15": 134956,
+        "16": 245007,
+        "17": 41305
+      },
+      "one_longest_extension": [
+        43,
+        43,
+        108,
+        126,
+        126,
+        151
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.217593
+    },
+    {
+      "type": "root",
+      "root": 44,
+      "completed_exhaustively": true,
+      "nodes": 524217,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 305,
+        "14": 20055,
+        "15": 209471,
+        "16": 262841,
+        "17": 31544
+      },
+      "leaves_by_length": {
+        "13": 4,
+        "14": 2967,
+        "15": 132606,
+        "16": 236445,
+        "17": 31544
+      },
+      "one_longest_extension": [
+        44,
+        44,
+        107,
+        126,
+        126,
+        150
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.146134
+    },
+    {
+      "type": "root",
+      "root": 49,
+      "completed_exhaustively": true,
+      "nodes": 386545,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 303,
+        "14": 19519,
+        "15": 185804,
+        "16": 161079,
+        "17": 19839
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 3114,
+        "15": 127232,
+        "16": 146330,
+        "17": 19839
+      },
+      "one_longest_extension": [
+        49,
+        57,
+        107,
+        126,
+        126,
+        132
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.839975
+    },
+    {
+      "type": "root",
+      "root": 126,
+      "completed_exhaustively": true,
+      "nodes": 514161,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 275,
+        "14": 18133,
+        "15": 204434,
+        "16": 266032,
+        "17": 25286
+      },
+      "leaves_by_length": {
+        "13": 15,
+        "14": 3468,
+        "15": 128696,
+        "16": 246849,
+        "17": 25286
+      },
+      "one_longest_extension": [
+        126,
+        126,
+        129,
+        130,
+        150,
+        406
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 1.017655
+    },
+    {
+      "type": "root",
+      "root": 127,
+      "completed_exhaustively": true,
+      "nodes": 444579,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 274,
+        "14": 17935,
+        "15": 194622,
+        "16": 216008,
+        "17": 15739
+      },
+      "leaves_by_length": {
+        "13": 15,
+        "14": 3509,
+        "15": 129832,
+        "16": 203272,
+        "17": 15739
+      },
+      "one_longest_extension": [
+        127,
+        127,
+        130,
+        177,
+        227,
+        409
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.893383
+    },
+    {
+      "type": "root",
+      "root": 128,
+      "completed_exhaustively": true,
+      "nodes": 423231,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 273,
+        "14": 17740,
+        "15": 187621,
+        "16": 201608,
+        "17": 15988
+      },
+      "leaves_by_length": {
+        "13": 15,
+        "14": 3494,
+        "15": 127316,
+        "16": 189958,
+        "17": 15988
+      },
+      "one_longest_extension": [
+        128,
+        128,
+        130,
+        175,
+        225,
+        406
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.833582
+    },
+    {
+      "type": "root",
+      "root": 129,
+      "completed_exhaustively": true,
+      "nodes": 396136,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 272,
+        "14": 17543,
+        "15": 182531,
+        "16": 186870,
+        "17": 8919
+      },
+      "leaves_by_length": {
+        "13": 15,
+        "14": 3425,
+        "15": 123906,
+        "16": 179693,
+        "17": 8919
+      },
+      "one_longest_extension": [
+        129,
+        129,
+        130,
+        178,
+        228,
+        408
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.778438
+    },
+    {
+      "type": "root",
+      "root": 131,
+      "completed_exhaustively": true,
+      "nodes": 193312,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 246,
+        "14": 12799,
+        "15": 96486,
+        "16": 80940,
+        "17": 2840
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 2701,
+        "15": 68505,
+        "16": 78729,
+        "17": 2840
+      },
+      "one_longest_extension": [
+        131,
+        131,
+        134,
+        145,
+        150,
+        401
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.377821
+    },
+    {
+      "type": "root",
+      "root": 132,
+      "completed_exhaustively": true,
+      "nodes": 174375,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 245,
+        "14": 12581,
+        "15": 89464,
+        "16": 69443,
+        "17": 2641
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 2899,
+        "15": 66035,
+        "16": 67546,
+        "17": 2641
+      },
+      "one_longest_extension": [
+        132,
+        132,
+        137,
+        137,
+        150,
+        409
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.349208
+    },
+    {
+      "type": "root",
+      "root": 133,
+      "completed_exhaustively": true,
+      "nodes": 169524,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 244,
+        "14": 12513,
+        "15": 89811,
+        "16": 64818,
+        "17": 2137
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 2739,
+        "15": 66197,
+        "16": 63274,
+        "17": 2137
+      },
+      "one_longest_extension": [
+        133,
+        133,
+        135,
+        140,
+        150,
+        401
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.350792
+    },
+    {
+      "type": "root",
+      "root": 134,
+      "completed_exhaustively": true,
+      "nodes": 159868,
+      "max_reached_length": 18,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 243,
+        "14": 12291,
+        "15": 84638,
+        "16": 61313,
+        "17": 1381,
+        "18": 1
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 2821,
+        "15": 62395,
+        "16": 60186,
+        "17": 1380,
+        "18": 1
+      },
+      "one_longest_extension": [
+        134,
+        134,
+        154,
+        154,
+        253,
+        253,
+        408
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.329234
+    },
+    {
+      "type": "root",
+      "root": 137,
+      "completed_exhaustively": true,
+      "nodes": 128891,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 240,
+        "14": 11809,
+        "15": 72373,
+        "16": 42698,
+        "17": 1770
+      },
+      "leaves_by_length": {
+        "13": 9,
+        "14": 3029,
+        "15": 56854,
+        "16": 41454,
+        "17": 1770
+      },
+      "one_longest_extension": [
+        137,
+        137,
+        138,
+        139,
+        150,
+        421
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.270095
+    },
+    {
+      "type": "root",
+      "root": 138,
+      "completed_exhaustively": true,
+      "nodes": 123289,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 239,
+        "14": 11724,
+        "15": 71999,
+        "16": 38183,
+        "17": 1143
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 2902,
+        "15": 56719,
+        "16": 37233,
+        "17": 1143
+      },
+      "one_longest_extension": [
+        138,
+        138,
+        139,
+        186,
+        236,
+        410
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.259815
+    },
+    {
+      "type": "root",
+      "root": 139,
+      "completed_exhaustively": true,
+      "nodes": 117054,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 238,
+        "14": 11537,
+        "15": 69019,
+        "16": 35681,
+        "17": 578
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 2851,
+        "15": 53874,
+        "16": 35147,
+        "17": 578
+      },
+      "one_longest_extension": [
+        139,
+        139,
+        150,
+        262,
+        521,
+        536
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.246504
+    },
+    {
+      "type": "root",
+      "root": 143,
+      "completed_exhaustively": true,
+      "nodes": 112103,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 234,
+        "14": 11125,
+        "15": 66423,
+        "16": 33525,
+        "17": 795
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 2587,
+        "15": 52114,
+        "16": 32875,
+        "17": 795
+      },
+      "one_longest_extension": [
+        143,
+        143,
+        145,
+        145,
+        150,
+        416
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.234943
+    },
+    {
+      "type": "root",
+      "root": 144,
+      "completed_exhaustively": true,
+      "nodes": 114773,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 233,
+        "14": 10948,
+        "15": 64855,
+        "16": 37352,
+        "17": 1384
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 2503,
+        "15": 48594,
+        "16": 36088,
+        "17": 1384
+      },
+      "one_longest_extension": [
+        144,
+        144,
+        150,
+        252,
+        516,
+        541
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 0.261502
+    },
+    {
+      "root": 149,
+      "root_coordinates": [
+        4,
+        4,
+        0,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 89741,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 228,
+        "14": 10221,
+        "15": 52945,
+        "16": 25432,
+        "17": 914
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 2519,
+        "15": 40428,
+        "16": 24524,
+        "17": 914
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        149,
+        149,
+        150,
+        263,
+        507,
+        534
+      ],
+      "terminal_extensions": [],
+      "seconds": 2.813
+    },
+    {
+      "root": 156,
+      "root_coordinates": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 79701,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 203,
+        "14": 8157,
+        "15": 44150,
+        "16": 26158,
+        "17": 1032
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 1337,
+        "15": 31183,
+        "16": 25233,
+        "17": 1032
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        156,
+        156,
+        159,
+        170,
+        225,
+        476
+      ],
+      "terminal_extensions": [],
+      "seconds": 2.5
+    },
+    {
+      "root": 157,
+      "root_coordinates": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 70330,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 202,
+        "14": 7928,
+        "15": 39419,
+        "16": 22080,
+        "17": 700
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1694,
+        "15": 28839,
+        "16": 21458,
+        "17": 700
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        157,
+        157,
+        162,
+        162,
+        202,
+        382
+      ],
+      "terminal_extensions": [],
+      "seconds": 2.203
+    },
+    {
+      "root": 158,
+      "root_coordinates": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 70562,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 201,
+        "14": 7977,
+        "15": 40742,
+        "16": 20950,
+        "17": 691
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 1575,
+        "15": 29813,
+        "16": 20344,
+        "17": 691
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        158,
+        158,
+        160,
+        165,
+        225,
+        476
+      ],
+      "terminal_extensions": [],
+      "seconds": 2.218
+    },
+    {
+      "root": 159,
+      "root_coordinates": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 65955,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 200,
+        "14": 7765,
+        "15": 37966,
+        "16": 19400,
+        "17": 623
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1623,
+        "15": 27773,
+        "16": 18839,
+        "17": 623
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        159,
+        159,
+        170,
+        248,
+        258,
+        258
+      ],
+      "terminal_extensions": [],
+      "seconds": 2.063
+    },
+    {
+      "root": 162,
+      "root_coordinates": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 55487,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 197,
+        "14": 7375,
+        "15": 31981,
+        "16": 15677,
+        "17": 256
+      },
+      "leaves_by_length": {
+        "13": 11,
+        "14": 2035,
+        "15": 24856,
+        "16": 15444,
+        "17": 256
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        162,
+        162,
+        163,
+        164,
+        210,
+        386
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.719
+    },
+    {
+      "root": 163,
+      "root_coordinates": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 55670,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 196,
+        "14": 7412,
+        "15": 33205,
+        "16": 14574,
+        "17": 282
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1886,
+        "15": 25643,
+        "16": 14302,
+        "17": 282
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        163,
+        163,
+        164,
+        371,
+        505,
+        506
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.703
+    },
+    {
+      "root": 164,
+      "root_coordinates": [
+        4,
+        2,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 52278,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 195,
+        "14": 7229,
+        "15": 31227,
+        "16": 13380,
+        "17": 246
+      },
+      "leaves_by_length": {
+        "13": 9,
+        "14": 1864,
+        "15": 24089,
+        "16": 13148,
+        "17": 246
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        164,
+        164,
+        168,
+        373,
+        501,
+        507
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.703
+    },
+    {
+      "root": 168,
+      "root_coordinates": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 53157,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 191,
+        "14": 7157,
+        "15": 32684,
+        "16": 12817,
+        "17": 307
+      },
+      "leaves_by_length": {
+        "13": 4,
+        "14": 1621,
+        "15": 25037,
+        "16": 12516,
+        "17": 307
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        168,
+        168,
+        170,
+        170,
+        225,
+        491
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.687
+    },
+    {
+      "root": 169,
+      "root_coordinates": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 52281,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 190,
+        "14": 6985,
+        "15": 31417,
+        "16": 13314,
+        "17": 374
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1570,
+        "15": 23602,
+        "16": 12946,
+        "17": 374
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        169,
+        169,
+        175,
+        352,
+        516,
+        616
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.641
+    },
+    {
+      "root": 174,
+      "root_coordinates": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 45029,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 185,
+        "14": 6508,
+        "15": 27309,
+        "16": 10726,
+        "17": 300
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 1542,
+        "15": 21067,
+        "16": 10432,
+        "17": 300
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        174,
+        174,
+        178,
+        313,
+        506,
+        532
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.438
+    },
+    {
+      "root": 187,
+      "root_coordinates": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 29715,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 172,
+        "14": 5396,
+        "15": 17709,
+        "16": 6351,
+        "17": 86
+      },
+      "leaves_by_length": {
+        "13": 12,
+        "14": 2018,
+        "15": 15139,
+        "16": 6265,
+        "17": 86
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        187,
+        187,
+        189,
+        193,
+        323,
+        323
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.921
+    },
+    {
+      "root": 188,
+      "root_coordinates": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 30650,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 171,
+        "14": 5434,
+        "15": 18703,
+        "16": 6171,
+        "17": 170
+      },
+      "leaves_by_length": {
+        "13": 11,
+        "14": 1933,
+        "15": 15667,
+        "16": 6005,
+        "17": 170
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        188,
+        188,
+        192,
+        198,
+        318,
+        318
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.984
+    },
+    {
+      "root": 189,
+      "root_coordinates": [
+        4,
+        2,
+        2,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 28624,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 170,
+        "14": 5292,
+        "15": 17653,
+        "16": 5380,
+        "17": 128
+      },
+      "leaves_by_length": {
+        "13": 9,
+        "14": 1733,
+        "15": 14493,
+        "16": 5262,
+        "17": 128
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        189,
+        189,
+        191,
+        199,
+        317,
+        317
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.891
+    },
+    {
+      "root": 193,
+      "root_coordinates": [
+        3,
+        3,
+        2,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 28418,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 166,
+        "14": 5235,
+        "15": 18154,
+        "16": 4745,
+        "17": 117
+      },
+      "leaves_by_length": {
+        "13": 9,
+        "14": 1700,
+        "15": 15076,
+        "16": 4628,
+        "17": 117
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        193,
+        193,
+        228,
+        317,
+        528,
+        543
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.891
+    },
+    {
+      "root": 194,
+      "root_coordinates": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 28409,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 165,
+        "14": 5106,
+        "15": 17695,
+        "16": 5316,
+        "17": 126
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1565,
+        "15": 14152,
+        "16": 5193,
+        "17": 126
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        194,
+        194,
+        195,
+        223,
+        373,
+        373
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.906
+    },
+    {
+      "root": 199,
+      "root_coordinates": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 24904,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 160,
+        "14": 4768,
+        "15": 15286,
+        "16": 4563,
+        "17": 126
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1390,
+        "15": 12229,
+        "16": 4441,
+        "17": 126
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        199,
+        199,
+        203,
+        363,
+        557,
+        606
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.766
+    },
+    {
+      "root": 218,
+      "root_coordinates": [
+        3,
+        3,
+        3,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 24421,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 141,
+        "14": 4506,
+        "15": 15508,
+        "16": 4119,
+        "17": 146
+      },
+      "leaves_by_length": {
+        "13": 4,
+        "14": 1141,
+        "15": 12389,
+        "16": 3975,
+        "17": 146
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        218,
+        218,
+        220,
+        391,
+        391,
+        584
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.766
+    },
+    {
+      "root": 219,
+      "root_coordinates": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 26644,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 140,
+        "14": 4400,
+        "15": 15814,
+        "16": 5990,
+        "17": 299
+      },
+      "leaves_by_length": {
+        "13": 4,
+        "14": 1034,
+        "15": 11817,
+        "16": 5698,
+        "17": 299
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        219,
+        219,
+        225,
+        302,
+        516,
+        516
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.438
+    },
+    {
+      "root": 224,
+      "root_coordinates": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 24304,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 135,
+        "14": 4124,
+        "15": 14246,
+        "16": 5616,
+        "17": 182
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 1028,
+        "15": 10848,
+        "16": 5448,
+        "17": 182
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        224,
+        224,
+        228,
+        288,
+        580,
+        583
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.328
+    },
+    {
+      "root": 249,
+      "root_coordinates": [
+        4,
+        4,
+        4,
+        1
+      ],
+      "completed_exhaustively": true,
+      "nodes": 15591,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 110,
+        "14": 3135,
+        "15": 8669,
+        "16": 3658,
+        "17": 18
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 759,
+        "15": 6679,
+        "16": 3640,
+        "17": 18
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        249,
+        249,
+        263,
+        318,
+        413,
+        535
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.844
+    },
+    {
+      "root": 250,
+      "root_coordinates": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 87351,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 183,
+        "14": 7850,
+        "15": 49292,
+        "16": 30025
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 1016,
+        "15": 22499,
+        "16": 30025
+      },
+      "max_reached_length": 16,
+      "one_longest_extension": [
+        250,
+        251,
+        255,
+        275,
+        281
+      ],
+      "terminal_extensions": [],
+      "seconds": 4.687
+    },
+    {
+      "root": 251,
+      "root_coordinates": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 50646,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 166,
+        "14": 6136,
+        "15": 29614,
+        "16": 13828,
+        "17": 901
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1114,
+        "15": 19337,
+        "16": 12930,
+        "17": 901
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        251,
+        255,
+        275,
+        501,
+        505,
+        525
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.641
+    },
+    {
+      "root": 252,
+      "root_coordinates": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 51677,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 167,
+        "14": 6272,
+        "15": 31433,
+        "16": 13130,
+        "17": 674
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1237,
+        "15": 21971,
+        "16": 12462,
+        "17": 674
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        252,
+        255,
+        278,
+        278,
+        356,
+        403
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.703
+    },
+    {
+      "root": 253,
+      "root_coordinates": [
+        3,
+        0,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 66641,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 167,
+        "14": 6360,
+        "15": 35318,
+        "16": 23296,
+        "17": 1499
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1237,
+        "15": 22846,
+        "16": 21801,
+        "17": 1499
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        253,
+        253,
+        255,
+        303,
+        353,
+        405
+      ],
+      "terminal_extensions": [],
+      "seconds": 2.109
+    },
+    {
+      "root": 254,
+      "root_coordinates": [
+        4,
+        0,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 45701,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 166,
+        "14": 6136,
+        "15": 28489,
+        "16": 10776,
+        "17": 133
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1240,
+        "15": 19553,
+        "16": 10643,
+        "17": 133
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        254,
+        255,
+        401,
+        401,
+        530,
+        601
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.438
+    },
+    {
+      "root": 256,
+      "root_coordinates": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 31209,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 149,
+        "14": 4640,
+        "15": 19520,
+        "16": 6581,
+        "17": 318
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1145,
+        "15": 14644,
+        "16": 6265,
+        "17": 318
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        256,
+        260,
+        290,
+        290,
+        351,
+        415
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.015
+    },
+    {
+      "root": 257,
+      "root_coordinates": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 28365,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 150,
+        "14": 4696,
+        "15": 17831,
+        "16": 5392,
+        "17": 295
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1265,
+        "15": 13816,
+        "16": 5098,
+        "17": 295
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        257,
+        259,
+        275,
+        505,
+        521,
+        525
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.953
+    },
+    {
+      "root": 258,
+      "root_coordinates": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 43245,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 150,
+        "14": 4836,
+        "15": 23703,
+        "16": 13666,
+        "17": 889
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1193,
+        "15": 16825,
+        "16": 12807,
+        "17": 889
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        258,
+        258,
+        263,
+        263,
+        275,
+        405
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.422
+    },
+    {
+      "root": 259,
+      "root_coordinates": [
+        4,
+        1,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 28458,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 149,
+        "14": 4653,
+        "15": 18123,
+        "16": 5358,
+        "17": 174
+      },
+      "leaves_by_length": {
+        "13": 7,
+        "14": 1171,
+        "15": 13780,
+        "16": 5185,
+        "17": 174
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        259,
+        275,
+        276,
+        506,
+        525,
+        601
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.922
+    },
+    {
+      "root": 262,
+      "root_coordinates": [
+        2,
+        2,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 29811,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 153,
+        "14": 4968,
+        "15": 18801,
+        "16": 5608,
+        "17": 280
+      },
+      "leaves_by_length": {
+        "13": 10,
+        "14": 1409,
+        "15": 14779,
+        "16": 5328,
+        "17": 280
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        262,
+        264,
+        290,
+        290,
+        371,
+        415
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.953
+    },
+    {
+      "root": 263,
+      "root_coordinates": [
+        3,
+        2,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 38859,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 153,
+        "14": 5067,
+        "15": 22450,
+        "16": 10640,
+        "17": 548
+      },
+      "leaves_by_length": {
+        "13": 10,
+        "14": 1386,
+        "15": 16863,
+        "16": 10092,
+        "17": 548
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        263,
+        263,
+        268,
+        273,
+        275,
+        405
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.234
+    },
+    {
+      "root": 264,
+      "root_coordinates": [
+        4,
+        2,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 30449,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 152,
+        "14": 4928,
+        "15": 18962,
+        "16": 6166,
+        "17": 240
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1328,
+        "15": 14374,
+        "16": 5926,
+        "17": 240
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        264,
+        267,
+        267,
+        291,
+        292,
+        416
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.969
+    },
+    {
+      "root": 268,
+      "root_coordinates": [
+        3,
+        3,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 38940,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 149,
+        "14": 4739,
+        "15": 21436,
+        "16": 12029,
+        "17": 586
+      },
+      "leaves_by_length": {
+        "13": 10,
+        "14": 1259,
+        "15": 16176,
+        "16": 11446,
+        "17": 586
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        268,
+        268,
+        269,
+        275,
+        276,
+        391
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.235
+    },
+    {
+      "root": 269,
+      "root_coordinates": [
+        4,
+        3,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 32693,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 148,
+        "14": 4621,
+        "15": 19187,
+        "16": 8397,
+        "17": 339
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1213,
+        "15": 14413,
+        "16": 8072,
+        "17": 339
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        269,
+        269,
+        287,
+        294,
+        369,
+        419
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.031
+    },
+    {
+      "root": 274,
+      "root_coordinates": [
+        4,
+        4,
+        0,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 25138,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 146,
+        "14": 4410,
+        "15": 15635,
+        "16": 4716,
+        "17": 230
+      },
+      "leaves_by_length": {
+        "13": 6,
+        "14": 1102,
+        "15": 12236,
+        "16": 4486,
+        "17": 230
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        274,
+        275,
+        382,
+        382,
+        507,
+        527
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.828
+    },
+    {
+      "root": 281,
+      "root_coordinates": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 14960,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 115,
+        "14": 2617,
+        "15": 9097,
+        "16": 2960,
+        "17": 170
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 683,
+        "15": 6877,
+        "16": 2791,
+        "17": 170
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        281,
+        285,
+        295,
+        525,
+        605,
+        621
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.453
+    },
+    {
+      "root": 282,
+      "root_coordinates": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 13036,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 116,
+        "14": 2592,
+        "15": 8001,
+        "16": 2213,
+        "17": 113
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 745,
+        "15": 6293,
+        "16": 2101,
+        "17": 113
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        282,
+        284,
+        380,
+        380,
+        545,
+        621
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.406
+    },
+    {
+      "root": 283,
+      "root_coordinates": [
+        3,
+        1,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 20766,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 116,
+        "14": 2768,
+        "15": 12018,
+        "16": 5646,
+        "17": 217
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 735,
+        "15": 9064,
+        "16": 5430,
+        "17": 217
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        283,
+        283,
+        288,
+        288,
+        328,
+        382
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.656
+    },
+    {
+      "root": 284,
+      "root_coordinates": [
+        4,
+        1,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 13642,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 115,
+        "14": 2650,
+        "15": 8485,
+        "16": 2287,
+        "17": 104
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 668,
+        "15": 6717,
+        "16": 2184,
+        "17": 104
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        284,
+        287,
+        383,
+        386,
+        516,
+        516
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.422
+    },
+    {
+      "root": 287,
+      "root_coordinates": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 10872,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 119,
+        "14": 2677,
+        "15": 6757,
+        "16": 1261,
+        "17": 57
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 884,
+        "15": 5722,
+        "16": 1205,
+        "17": 57
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        287,
+        289,
+        295,
+        525,
+        605,
+        616
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.344
+    },
+    {
+      "root": 288,
+      "root_coordinates": [
+        3,
+        2,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 17171,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 119,
+        "14": 2811,
+        "15": 10167,
+        "16": 3922,
+        "17": 151
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 854,
+        "15": 8133,
+        "16": 3773,
+        "17": 151
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        288,
+        288,
+        293,
+        298,
+        328,
+        382
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.531
+    },
+    {
+      "root": 289,
+      "root_coordinates": [
+        4,
+        2,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 12361,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 118,
+        "14": 2735,
+        "15": 7707,
+        "16": 1737,
+        "17": 63
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 755,
+        "15": 6330,
+        "16": 1675,
+        "17": 63
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        289,
+        292,
+        384,
+        396,
+        505,
+        506
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.39
+    },
+    {
+      "root": 293,
+      "root_coordinates": [
+        3,
+        3,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 19793,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 115,
+        "14": 2709,
+        "15": 11420,
+        "16": 5362,
+        "17": 186
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 756,
+        "15": 8944,
+        "16": 5177,
+        "17": 186
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        293,
+        293,
+        294,
+        344,
+        441,
+        526
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.657
+    },
+    {
+      "root": 294,
+      "root_coordinates": [
+        4,
+        3,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 16537,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 114,
+        "14": 2660,
+        "15": 9743,
+        "16": 3836,
+        "17": 183
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 688,
+        "15": 7558,
+        "16": 3658,
+        "17": 183
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        294,
+        294,
+        312,
+        344,
+        369,
+        419
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.547
+    },
+    {
+      "root": 299,
+      "root_coordinates": [
+        4,
+        4,
+        1,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 11684,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 112,
+        "14": 2558,
+        "15": 7268,
+        "16": 1648,
+        "17": 97
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 607,
+        "15": 6012,
+        "16": 1552,
+        "17": 97
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        299,
+        302,
+        307,
+        525,
+        582,
+        582
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.39
+    },
+    {
+      "root": 312,
+      "root_coordinates": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 13276,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 126,
+        "14": 3168,
+        "15": 8273,
+        "16": 1628,
+        "17": 80
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1024,
+        "15": 6848,
+        "16": 1548,
+        "17": 80
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        312,
+        314,
+        359,
+        505,
+        566,
+        566
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.453
+    },
+    {
+      "root": 313,
+      "root_coordinates": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 16216,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 126,
+        "14": 3208,
+        "15": 9888,
+        "16": 2881,
+        "17": 112
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 1045,
+        "15": 8066,
+        "16": 2769,
+        "17": 112
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        313,
+        313,
+        318,
+        323,
+        352,
+        383
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.5
+    },
+    {
+      "root": 314,
+      "root_coordinates": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 15743,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 125,
+        "14": 3216,
+        "15": 9646,
+        "16": 2613,
+        "17": 142
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 894,
+        "15": 7577,
+        "16": 2471,
+        "17": 142
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        314,
+        317,
+        317,
+        342,
+        366,
+        491
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.516
+    },
+    {
+      "root": 318,
+      "root_coordinates": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 15700,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 122,
+        "14": 2946,
+        "15": 9338,
+        "16": 3195,
+        "17": 98
+      },
+      "leaves_by_length": {
+        "13": 8,
+        "14": 997,
+        "15": 7729,
+        "16": 3097,
+        "17": 98
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        318,
+        318,
+        319,
+        341,
+        360,
+        491
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.5
+    },
+    {
+      "root": 319,
+      "root_coordinates": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 16124,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 121,
+        "14": 2969,
+        "15": 9576,
+        "16": 3306,
+        "17": 151
+      },
+      "leaves_by_length": {
+        "13": 5,
+        "14": 852,
+        "15": 7484,
+        "16": 3157,
+        "17": 151
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        319,
+        319,
+        322,
+        551,
+        555,
+        556
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.546
+    },
+    {
+      "root": 324,
+      "root_coordinates": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 14744,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 119,
+        "14": 2924,
+        "15": 8993,
+        "16": 2559,
+        "17": 148
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 746,
+        "15": 7099,
+        "16": 2412,
+        "17": 148
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        324,
+        327,
+        327,
+        336,
+        347,
+        461
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.469
+    },
+    {
+      "root": 343,
+      "root_coordinates": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 9033,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 101,
+        "14": 1791,
+        "15": 5320,
+        "16": 1796,
+        "17": 24
+      },
+      "leaves_by_length": {
+        "13": 4,
+        "14": 658,
+        "15": 4606,
+        "16": 1772,
+        "17": 24
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        343,
+        343,
+        413,
+        483,
+        505,
+        535
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.297
+    },
+    {
+      "root": 344,
+      "root_coordinates": [
+        4,
+        3,
+        3,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 9568,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 100,
+        "14": 1836,
+        "15": 5774,
+        "16": 1780,
+        "17": 77
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 567,
+        "15": 4715,
+        "16": 1703,
+        "17": 77
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        344,
+        344,
+        346,
+        347,
+        455,
+        509
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.297
+    },
+    {
+      "root": 349,
+      "root_coordinates": [
+        4,
+        4,
+        3,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 8893,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 95,
+        "14": 1699,
+        "15": 5246,
+        "16": 1683,
+        "17": 169
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 482,
+        "15": 4089,
+        "16": 1516,
+        "17": 169
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        349,
+        349,
+        357,
+        506,
+        533,
+        533
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.281
+    },
+    {
+      "root": 374,
+      "root_coordinates": [
+        4,
+        4,
+        4,
+        2
+      ],
+      "completed_exhaustively": true,
+      "nodes": 7266,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 85,
+        "14": 1428,
+        "15": 4647,
+        "16": 997,
+        "17": 108
+      },
+      "leaves_by_length": {
+        "13": 4,
+        "14": 331,
+        "15": 3866,
+        "16": 889,
+        "17": 108
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        374,
+        382,
+        382,
+        407,
+        407,
+        545
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.219
+    },
+    {
+      "root": 376,
+      "root_coordinates": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 24561,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 122,
+        "14": 3456,
+        "15": 14676,
+        "16": 6064,
+        "17": 241,
+        "18": 1
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 678,
+        "15": 10353,
+        "16": 5847,
+        "17": 240,
+        "18": 1
+      },
+      "max_reached_length": 18,
+      "one_longest_extension": [
+        376,
+        376,
+        380,
+        380,
+        400,
+        400,
+        531
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.813
+    },
+    {
+      "root": 381,
+      "root_coordinates": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 21554,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 120,
+        "14": 3324,
+        "15": 13635,
+        "16": 4329,
+        "17": 145
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 668,
+        "15": 10436,
+        "16": 4184,
+        "17": 145
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        381,
+        381,
+        384,
+        396,
+        400,
+        400
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.718
+    },
+    {
+      "root": 382,
+      "root_coordinates": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 19702,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 119,
+        "14": 3257,
+        "15": 12184,
+        "16": 3963,
+        "17": 178
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 649,
+        "15": 9140,
+        "16": 3792,
+        "17": 178
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        382,
+        382,
+        396,
+        423,
+        432,
+        482
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.625
+    },
+    {
+      "root": 383,
+      "root_coordinates": [
+        3,
+        1,
+        0,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 17886,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 118,
+        "14": 3170,
+        "15": 11158,
+        "16": 3331,
+        "17": 108
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 620,
+        "15": 8495,
+        "16": 3226,
+        "17": 108
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        383,
+        383,
+        396,
+        420,
+        430,
+        480
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.579
+    },
+    {
+      "root": 384,
+      "root_coordinates": [
+        4,
+        1,
+        0,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 27941,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 117,
+        "14": 3338,
+        "15": 15991,
+        "16": 8090,
+        "17": 404
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 515,
+        "15": 10955,
+        "16": 7686,
+        "17": 404
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        384,
+        384,
+        396,
+        396,
+        400,
+        412
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.937
+    },
+    {
+      "root": 406,
+      "root_coordinates": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 15233,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 107,
+        "14": 2744,
+        "15": 9868,
+        "16": 2424,
+        "17": 89
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 590,
+        "15": 7822,
+        "16": 2335,
+        "17": 89
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        406,
+        406,
+        409,
+        420,
+        480,
+        496
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.5
+    },
+    {
+      "root": 407,
+      "root_coordinates": [
+        2,
+        1,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 14946,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 106,
+        "14": 2698,
+        "15": 9474,
+        "16": 2557,
+        "17": 110
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 566,
+        "15": 7399,
+        "16": 2453,
+        "17": 110
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        407,
+        407,
+        412,
+        412,
+        476,
+        483
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.484
+    },
+    {
+      "root": 408,
+      "root_coordinates": [
+        3,
+        1,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 14147,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 105,
+        "14": 2640,
+        "15": 9012,
+        "16": 2288,
+        "17": 101
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 552,
+        "15": 7091,
+        "16": 2191,
+        "17": 101
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        408,
+        408,
+        410,
+        415,
+        480,
+        496
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.469
+    },
+    {
+      "root": 409,
+      "root_coordinates": [
+        4,
+        1,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 22068,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 104,
+        "14": 2775,
+        "15": 12219,
+        "16": 6727,
+        "17": 242
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 438,
+        "15": 8225,
+        "16": 6485,
+        "17": 242
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        409,
+        409,
+        413,
+        418,
+        482,
+        496
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.719
+    },
+    {
+      "root": 412,
+      "root_coordinates": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 12799,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 101,
+        "14": 2455,
+        "15": 7739,
+        "16": 2384,
+        "17": 119
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 500,
+        "15": 5796,
+        "16": 2269,
+        "17": 119
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        412,
+        412,
+        413,
+        413,
+        476,
+        496
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.391
+    },
+    {
+      "root": 413,
+      "root_coordinates": [
+        3,
+        2,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 11891,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 100,
+        "14": 2398,
+        "15": 7328,
+        "16": 1988,
+        "17": 76
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 486,
+        "15": 5638,
+        "16": 1912,
+        "17": 76
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        413,
+        413,
+        414,
+        414,
+        482,
+        491
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.375
+    },
+    {
+      "root": 414,
+      "root_coordinates": [
+        4,
+        2,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 18734,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 99,
+        "14": 2537,
+        "15": 10610,
+        "16": 5262,
+        "17": 225
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 358,
+        "15": 7332,
+        "16": 5042,
+        "17": 225
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        414,
+        414,
+        436,
+        436,
+        461,
+        461
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.625
+    },
+    {
+      "root": 418,
+      "root_coordinates": [
+        3,
+        3,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 9813,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 95,
+        "14": 2119,
+        "15": 5812,
+        "16": 1692,
+        "17": 94
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 467,
+        "15": 4426,
+        "16": 1598,
+        "17": 94
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        418,
+        418,
+        420,
+        420,
+        480,
+        486
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.312
+    },
+    {
+      "root": 419,
+      "root_coordinates": [
+        4,
+        3,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 16680,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 94,
+        "14": 2260,
+        "15": 9065,
+        "16": 4989,
+        "17": 271
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 347,
+        "15": 6081,
+        "16": 4723,
+        "17": 271
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        419,
+        419,
+        423,
+        423,
+        482,
+        486
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.547
+    },
+    {
+      "root": 424,
+      "root_coordinates": [
+        4,
+        4,
+        1,
+        3
+      ],
+      "completed_exhaustively": true,
+      "nodes": 19477,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 89,
+        "14": 2212,
+        "15": 10378,
+        "16": 6609,
+        "17": 188
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 310,
+        "15": 7028,
+        "16": 6421,
+        "17": 188
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        424,
+        424,
+        458,
+        480,
+        480,
+        481
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.625
+    },
+    {
+      "root": 501,
+      "root_coordinates": [
+        1,
+        0,
+        0,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 2947,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 45,
+        "14": 451,
+        "15": 1600,
+        "16": 850
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 75,
+        "15": 943,
+        "16": 850
+      },
+      "max_reached_length": 16,
+      "one_longest_extension": [
+        501,
+        505,
+        506,
+        525,
+        534
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.094
+    },
+    {
+      "root": 506,
+      "root_coordinates": [
+        1,
+        1,
+        0,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 561,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 31,
+        "14": 184,
+        "15": 300,
+        "16": 45
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 46,
+        "15": 255,
+        "16": 45
+      },
+      "max_reached_length": 16,
+      "one_longest_extension": [
+        506,
+        525,
+        526,
+        531,
+        580
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.015
+    },
+    {
+      "root": 507,
+      "root_coordinates": [
+        2,
+        1,
+        0,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 835,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 32,
+        "14": 212,
+        "15": 446,
+        "16": 144
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 53,
+        "15": 330,
+        "16": 144
+      },
+      "max_reached_length": 16,
+      "one_longest_extension": [
+        507,
+        509,
+        525,
+        526,
+        534
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.032
+    },
+    {
+      "root": 508,
+      "root_coordinates": [
+        3,
+        1,
+        0,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 1189,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 32,
+        "14": 219,
+        "15": 567,
+        "16": 338,
+        "17": 32
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 39,
+        "15": 336,
+        "16": 306,
+        "17": 32
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        508,
+        508,
+        528,
+        528,
+        548,
+        608
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.031
+    },
+    {
+      "root": 509,
+      "root_coordinates": [
+        4,
+        1,
+        0,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 661,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 31,
+        "14": 184,
+        "15": 300,
+        "16": 145
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 46,
+        "15": 198,
+        "16": 145
+      },
+      "max_reached_length": 16,
+      "one_longest_extension": [
+        509,
+        525,
+        526,
+        530,
+        531
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.031
+    },
+    {
+      "root": 531,
+      "root_coordinates": [
+        1,
+        1,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 58,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 9,
+        "14": 24,
+        "15": 24
+      },
+      "leaves_by_length": {
+        "13": 1,
+        "14": 8,
+        "15": 24
+      },
+      "max_reached_length": 15,
+      "one_longest_extension": [
+        531,
+        535,
+        545,
+        551
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 532,
+      "root_coordinates": [
+        2,
+        1,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 43,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 10,
+        "14": 18,
+        "15": 14
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 8,
+        "15": 14
+      },
+      "max_reached_length": 15,
+      "one_longest_extension": [
+        532,
+        534,
+        551,
+        601
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 533,
+      "root_coordinates": [
+        3,
+        1,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 240,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 10,
+        "14": 41,
+        "15": 106,
+        "16": 75,
+        "17": 7
+      },
+      "leaves_by_length": {
+        "14": 1,
+        "15": 54,
+        "16": 68,
+        "17": 7
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        533,
+        533,
+        538,
+        543,
+        548,
+        558
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 534,
+      "root_coordinates": [
+        4,
+        1,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 37,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 9,
+        "14": 15,
+        "15": 12
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 7,
+        "15": 12
+      },
+      "max_reached_length": 15,
+      "one_longest_extension": [
+        534,
+        551,
+        557,
+        601
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 537,
+      "root_coordinates": [
+        2,
+        2,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 57,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 13,
+        "14": 26,
+        "15": 15,
+        "16": 2
+      },
+      "leaves_by_length": {
+        "13": 4,
+        "14": 14,
+        "15": 13,
+        "16": 2
+      },
+      "max_reached_length": 16,
+      "one_longest_extension": [
+        537,
+        539,
+        545,
+        571,
+        621
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.016
+    },
+    {
+      "root": 538,
+      "root_coordinates": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 148,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 13,
+        "14": 37,
+        "15": 61,
+        "16": 32,
+        "17": 4
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 10,
+        "15": 36,
+        "16": 28,
+        "17": 4
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        538,
+        538,
+        543,
+        543,
+        608,
+        608
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 539,
+      "root_coordinates": [
+        4,
+        2,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 38,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 12,
+        "14": 18,
+        "15": 7
+      },
+      "leaves_by_length": {
+        "13": 3,
+        "14": 11,
+        "15": 7
+      },
+      "max_reached_length": 15,
+      "one_longest_extension": [
+        539,
+        542,
+        542,
+        549
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 543,
+      "root_coordinates": [
+        3,
+        3,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 123,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 9,
+        "14": 31,
+        "15": 61,
+        "16": 21
+      },
+      "leaves_by_length": {
+        "14": 2,
+        "15": 40,
+        "16": 21
+      },
+      "max_reached_length": 16,
+      "one_longest_extension": [
+        543,
+        543,
+        544,
+        544,
+        566
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 544,
+      "root_coordinates": [
+        4,
+        3,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 61,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 8,
+        "14": 18,
+        "15": 22,
+        "16": 11,
+        "17": 1
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 5,
+        "15": 13,
+        "16": 10,
+        "17": 1
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        544,
+        544,
+        566,
+        566,
+        591,
+        591
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    },
+    {
+      "root": 549,
+      "root_coordinates": [
+        4,
+        4,
+        1,
+        4
+      ],
+      "completed_exhaustively": true,
+      "nodes": 16,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 6,
+        "14": 7,
+        "15": 2
+      },
+      "leaves_by_length": {
+        "13": 2,
+        "14": 5,
+        "15": 2
+      },
+      "max_reached_length": 15,
+      "one_longest_extension": [
+        549,
+        582,
+        582,
+        586
+      ],
+      "terminal_extensions": [],
+      "seconds": 0.0
+    }
+  ],
+  "attempt_history": [
+    {
+      "root": 218,
+      "root_coordinates": [
+        3,
+        3,
+        3,
+        1
+      ],
+      "completed_exhaustively": false,
+      "nodes": 23641,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 104,
+        "14": 4234,
+        "15": 15059,
+        "16": 4096,
+        "17": 146
+      },
+      "leaves_by_length": {
+        "14": 1062,
+        "15": 11963,
+        "16": 3952,
+        "17": 146
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        218,
+        218,
+        220,
+        391,
+        391,
+        584
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.297
+    },
+    {
+      "root": 144,
+      "root_coordinates": [
+        4,
+        3,
+        0,
+        1
+      ],
+      "completed_exhaustively": false,
+      "nodes": 100001,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 145,
+        "14": 8629,
+        "15": 56334,
+        "16": 33676,
+        "17": 1215
+      },
+      "leaves_by_length": {
+        "14": 1954,
+        "15": 42342,
+        "16": 32581,
+        "17": 1215
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        144,
+        144,
+        150,
+        252,
+        516,
+        541
+      ],
+      "terminal_extensions": [],
+      "seconds": 3.125
+    },
+    {
+      "root": 143,
+      "root_coordinates": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "completed_exhaustively": false,
+      "nodes": 100001,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 149,
+        "14": 8983,
+        "15": 58862,
+        "16": 31246,
+        "17": 759
+      },
+      "leaves_by_length": {
+        "14": 2097,
+        "15": 46040,
+        "16": 30632,
+        "17": 759
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        143,
+        143,
+        145,
+        145,
+        150,
+        416
+      ],
+      "terminal_extensions": [],
+      "seconds": 3.141
+    },
+    {
+      "root": 139,
+      "root_coordinates": [
+        4,
+        2,
+        0,
+        1
+      ],
+      "completed_exhaustively": false,
+      "nodes": 100001,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 132,
+        "14": 8360,
+        "15": 59173,
+        "16": 31846,
+        "17": 488
+      },
+      "leaves_by_length": {
+        "14": 1820,
+        "15": 46586,
+        "16": 31402,
+        "17": 488
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        139,
+        139,
+        150,
+        262,
+        521,
+        536
+      ],
+      "terminal_extensions": [],
+      "seconds": 3.25
+    },
+    {
+      "root": 138,
+      "root_coordinates": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "completed_exhaustively": false,
+      "nodes": 100001,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 116,
+        "14": 7451,
+        "15": 57665,
+        "16": 33707,
+        "17": 1060
+      },
+      "leaves_by_length": {
+        "14": 1593,
+        "15": 45860,
+        "16": 32840,
+        "17": 1060
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        138,
+        138,
+        139,
+        186,
+        236,
+        410
+      ],
+      "terminal_extensions": [],
+      "seconds": 3.093
+    },
+    {
+      "root": 137,
+      "root_coordinates": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "completed_exhaustively": false,
+      "nodes": 100001,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 96,
+        "14": 6717,
+        "15": 54268,
+        "16": 37263,
+        "17": 1655
+      },
+      "leaves_by_length": {
+        "14": 1404,
+        "15": 42852,
+        "16": 36134,
+        "17": 1655
+      },
+      "max_reached_length": 17,
+      "one_longest_extension": [
+        137,
+        137,
+        138,
+        139,
+        150,
+        421
+      ],
+      "terminal_extensions": [],
+      "seconds": 3.235
+    },
+    {
+      "root": 134,
+      "root_coordinates": [
+        4,
+        1,
+        0,
+        1
+      ],
+      "completed_exhaustively": false,
+      "nodes": 40534,
+      "node_limit": 100000,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 7,
+        "14": 882,
+        "15": 15243,
+        "16": 23806,
+        "17": 593,
+        "18": 1
+      },
+      "leaves_by_length": {
+        "14": 154,
+        "15": 9995,
+        "16": 23319,
+        "17": 592,
+        "18": 1
+      },
+      "max_reached_length": 18,
+      "one_longest_extension": [
+        134,
+        134,
+        154,
+        154,
+        253,
+        253,
+        408
+      ],
+      "terminal_extensions": [],
+      "seconds": 1.297
+    },
+    {
+      "type": "root",
+      "root": 9,
+      "completed_exhaustively": false,
+      "nodes": 2000001,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 55,
+        "14": 12534,
+        "15": 412685,
+        "16": 1345245,
+        "17": 229480
+      },
+      "leaves_by_length": {
+        "14": 586,
+        "15": 182753,
+        "16": 1199492,
+        "17": 229480
+      },
+      "one_longest_extension": [
+        9,
+        26,
+        31,
+        126,
+        126,
+        129
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 4.130324
+    },
+    {
+      "type": "root",
+      "root": 8,
+      "completed_exhaustively": false,
+      "nodes": 2000001,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 28,
+        "14": 7081,
+        "15": 280923,
+        "16": 1234737,
+        "17": 477230
+      },
+      "leaves_by_length": {
+        "14": 66,
+        "15": 110091,
+        "16": 1031277,
+        "17": 477230
+      },
+      "one_longest_extension": [
+        8,
+        8,
+        26,
+        126,
+        126,
+        153
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 4.033124
+    },
+    {
+      "type": "root",
+      "root": 7,
+      "completed_exhaustively": false,
+      "nodes": 2000001,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 31,
+        "14": 7863,
+        "15": 310379,
+        "16": 1308192,
+        "17": 373534
+      },
+      "leaves_by_length": {
+        "14": 72,
+        "15": 118136,
+        "16": 1105242,
+        "17": 373534
+      },
+      "one_longest_extension": [
+        7,
+        9,
+        26,
+        126,
+        126,
+        153
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 4.060635
+    },
+    {
+      "type": "root",
+      "root": 6,
+      "completed_exhaustively": false,
+      "nodes": 2000001,
+      "max_reached_length": 17,
+      "nodes_by_length": {
+        "12": 1,
+        "13": 60,
+        "14": 13277,
+        "15": 424873,
+        "16": 1355323,
+        "17": 206466
+      },
+      "leaves_by_length": {
+        "14": 616,
+        "15": 194272,
+        "16": 1210079,
+        "17": 206466
+      },
+      "one_longest_extension": [
+        6,
+        26,
+        34,
+        126,
+        126,
+        129
+      ],
+      "terminal_count": 0,
+      "first_terminal": null,
+      "seconds": 4.072456
+    }
+  ],
+  "completed_roots": 113,
+  "all_roots_completed": true,
+  "complete_record_node_total": 20707001,
+  "max_reached_length": 18,
+  "merged_jsonl_sources": [
+    "math\\2026-09-04_zhao_attack\\evidence\\atom_three_double_fast_remaining.jsonl",
+    "math\\2026-09-04_zhao_attack\\evidence\\atom_three_double_fast_last4.jsonl"
+  ]
+}

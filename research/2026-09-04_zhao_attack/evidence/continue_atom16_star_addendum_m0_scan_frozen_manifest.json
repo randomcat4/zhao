@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_BOUNDED_D4_M0_ONE_STEP_SCAN",
+  "branch_status": "INCOMPLETE",
+  "no_suffix_search": true,
+  "denominators": {
+    "basis_chart_parameters": 1250,
+    "eligible_distinct_supports": 1217,
+    "short_zero_free_cores": 105,
+    "next_values_per_core": 625
+  },
+  "file_sha256": {
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "proofs/continue_atom16_star_addendum.md": "3f6747de90bc560396604ed588c6efa57f01485a4ad3cfb28ad94e7fbaf10e79",
+    "proofs/continue_atom16_star_addendum_m0_scan.md": "1b3726a48c141d62377ca38584eba2e463360e5790c80098692c59b3b039096e",
+    "scripts/continue_atom16_star_addendum_m0_scan.py": "03172e5efe8ef843d11800732a96ad542e898a42fbf9a78cd4062179b83c5477",
+    "evidence/continue_atom16_star_addendum_m0_scan.json": "95fe96db9d854ef831886c0e7d7c8cb8b2d79d25f26deed0ae70fd9a78c28eef"
+  },
+  "input_sha256": {
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "proofs/continue_atom16_star_addendum.md": "3f6747de90bc560396604ed588c6efa57f01485a4ad3cfb28ad94e7fbaf10e79",
+    "scripts/continue_atom16_star_addendum_m0_scan.py": "03172e5efe8ef843d11800732a96ad542e898a42fbf9a78cd4062179b83c5477"
+  }
+}

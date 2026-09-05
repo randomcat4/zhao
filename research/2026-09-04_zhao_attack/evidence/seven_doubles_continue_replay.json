@@ -1,0 +1,22 @@
+{
+  "status": "DIFFERENT_IMPLEMENTATION_FULL_REPLAY_PASS",
+  "fresh_context_independent_review": "still required; checker written by producer instance",
+  "expected_cores": 166195,
+  "reconstructed_cores": 166195,
+  "graph_colored_cores": 166180,
+  "residuals_verified": 15,
+  "all_pair_checks": 35295586,
+  "literal_h12_position_subsets_checked": 61440,
+  "six_subset_denominator": 4961379937313,
+  "seven_subset_denominator": 171921339634017,
+  "seconds": 11.839627299981657,
+  "input_sha256": {
+    "evidence/atom_2222_m13_blocks.jsonl": "1a22286631b5ab48fb083cc95ca1edac3bc931b473cf9f6ba84bfb965af62791",
+    "evidence/seven_doubles_continue_probe.json": "62fe399cf176c2d02f084c356211bf92910e45d48ae4f95270ca5754cd8abcb1",
+    "evidence/seven_doubles_continue_probe_cores.jsonl": "4446e0d7c9ec946e334fe923524be0f82157b9211431a429dd9c71b56c97ee1e",
+    "evidence/seven_doubles_continue_h12.json": "711463eed36e951b8c453e926072bc4c21800691fe8a661467905997a807266c",
+    "scripts/seven_doubles_continue_replay.py": "e53b6648e361796abb079379666995c91b542439f8f814557622a936576d987f",
+    "scripts/verify_finite_cores_fresh.py": "841ef9d2d53a55bedc4f81f093d553e898cf917ea06ff5c8a9b60fc73d8d6c07",
+    "scripts/verify_finite_double_blocks.py": "7ac2c608c29c72dad649da0b9e608d4c1ea72115cb745cdad47547f2d70a43fe"
+  }
+}

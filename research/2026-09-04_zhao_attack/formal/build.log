@@ -1,0 +1,7 @@
+Lean 4.30.0 (x86_64-w64-windows-gnu), commit d024af099ca4bf2c86f649261ebf59565dc8c622
+Rank3Core.lean: process exit code 0
+'core_cover9' depends on axioms: [propext, Quot.sound]
+'core_cover8' depends on axioms: [propext, Quot.sound]
+Forbidden token scan: no matches for sorry|admit|^axiom|unsafe
+LowerBound18.lean: process exit code 0
+'noShortZero18' does not depend on any axioms

@@ -1,0 +1,193 @@
+{
+  "status": "CERTIFIED_LENGTH_17_SURVIVOR_NOT_AN_ENDPOINT_COUNTEREXAMPLE",
+  "group": "C_5^4",
+  "sequence_length": 17,
+  "support_vectors": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      3,
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      1,
+      1,
+      1
+    ],
+    [
+      4,
+      2,
+      4,
+      1
+    ]
+  ],
+  "multiplicities": [
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "expanded_vectors": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      3,
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      1,
+      1,
+      1
+    ],
+    [
+      3,
+      1,
+      1,
+      1
+    ],
+    [
+      4,
+      2,
+      4,
+      1
+    ],
+    [
+      4,
+      2,
+      4,
+      1
+    ]
+  ],
+  "coefficient_tuples_checked_including_empty": 8748,
+  "position_subsets_covered_including_empty": 131072,
+  "zero_sum_counts_by_length": {
+    "15": 6
+  },
+  "all_nonempty_zero_sum_coefficient_tuples": [
+    {
+      "coefficients": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "length": 15,
+      "position_subsequence_count": 6
+    }
+  ],
+  "minimum_zero_sum_length": 15,
+  "source_sha256": "174c5e1e8cb2e3197fec55639bf8dea480f32aca06b7beb62e9b0c9829554e9d",
+  "script_sha256": "13e69187e99596794b3922d1df79e86a5611ebf93a934bdb0e5a5af37cedd222"
+}

@@ -1,0 +1,48 @@
+CONFIG N=20 M=14 seed=99991 restarts=150 steps=3000 weight=2 mode=affine domain=125
+BEST score=75088 bad=2213 support=8 run=0 step=0 moves=0 evaluations=0 ms=1 seq=1,5,25,125,1,5,25,125,1,5,25,125,1,5,25,125,347,22,170,583 spectrum=5:80,10:2133,15:424
+BEST score=56512 bad=1238 support=9 run=0 step=1 moves=1 evaluations=122 ms=3 seq=1,5,25,125,1,5,25,125,1,5,25,125,1,5,25,219,347,22,170,583 spectrum=5:74,10:1164,15:161
+BEST score=48400 bad=1382 support=10 run=0 step=2 moves=2 evaluations=245 ms=3 seq=1,5,25,125,38,5,25,125,1,5,25,125,1,5,25,219,347,22,170,583 spectrum=5:53,10:1329,15:117
+BEST score=32320 bad=1462 support=10 run=0 step=3 moves=3 evaluations=368 ms=5 seq=1,5,25,125,38,5,25,125,1,5,25,125,1,5,25,219,347,206,170,583 spectrum=5:18,10:1444,15:132
+BEST score=32096 bad=1448 support=11 run=0 step=5 moves=5 evaluations=616 ms=5 seq=1,5,25,125,38,5,25,125,1,5,25,125,1,5,210,219,347,206,170,583 spectrum=5:18,10:1430,15:148
+BEST score=30880 bad=1279 support=10 run=0 step=6 moves=6 evaluations=740 ms=6 seq=1,5,25,125,38,5,25,125,1,5,25,125,1,5,206,219,347,206,170,583 spectrum=5:21,10:1258,15:153
+BEST score=17520 bad=909 support=9 run=0 step=8 moves=8 evaluations=988 ms=6 seq=1,5,25,125,38,5,25,125,1,5,25,125,1,5,206,219,347,206,25,583 spectrum=5:6,10:903,15:268
+BEST score=14320 bad=709 support=9 run=0 step=28 moves=28 evaluations=3457 ms=7 seq=1,5,25,125,125,25,1,125,223,5,25,591,5,5,125,219,223,18,25,583 spectrum=5:6,10:703,15:208
+BEST score=13424 bad=653 support=9 run=0 step=35 moves=35 evaluations=4324 ms=7 seq=1,5,25,125,125,25,1,125,223,5,25,38,5,223,230,583,223,18,18,583 spectrum=5:6,10:647,15:157
+BEST score=13120 bad=634 support=11 run=0 step=40 moves=40 evaluations=4949 ms=7 seq=1,5,25,125,206,25,38,125,223,5,25,38,5,223,230,583,223,18,18,70 spectrum=5:6,10:628,15:308
+BEST score=10816 bad=490 support=11 run=0 step=43 moves=43 evaluations=5324 ms=8 seq=1,5,25,125,206,25,583,125,223,5,25,38,18,223,230,583,223,18,18,70 spectrum=5:6,10:484,15:264
+BEST score=10416 bad=434 support=11 run=0 step=47 moves=47 evaluations=5824 ms=8 seq=1,5,25,125,206,25,583,125,223,5,25,38,18,223,230,38,223,18,18,70 spectrum=5:7,10:427,15:411
+BEST score=10096 bad=383 support=11 run=0 step=48 moves=48 evaluations=5949 ms=8 seq=1,5,25,125,206,25,583,125,223,18,25,38,18,223,230,38,223,18,18,70 spectrum=5:8,10:375,15:433
+BEST score=9264 bad=424 support=11 run=0 step=49 moves=49 evaluations=6073 ms=8 seq=1,5,25,125,206,25,583,125,223,18,25,38,18,223,230,223,223,18,18,70 spectrum=5:5,10:419,15:425
+BEST score=8512 bad=377 support=10 run=0 step=50 moves=50 evaluations=6196 ms=9 seq=1,5,25,125,583,25,583,125,223,18,25,38,18,223,230,223,223,18,18,70 spectrum=5:5,10:372,15:293
+BEST score=7872 bad=306 support=11 run=0 step=51 moves=51 evaluations=6319 ms=9 seq=1,5,25,125,583,25,583,323,223,18,25,38,18,223,230,223,223,18,18,70 spectrum=5:6,10:300,15:425
+BEST score=7648 bad=385 support=10 run=0 step=60 moves=60 evaluations=7429 ms=9 seq=1,5,25,125,583,25,583,125,223,18,25,38,18,223,230,223,223,206,18,25 spectrum=5:3,10:382,15:420
+BEST score=6880 bad=337 support=10 run=0 step=67 moves=67 evaluations=8294 ms=10 seq=1,5,25,125,583,25,583,125,223,18,25,38,230,223,230,223,18,206,18,25 spectrum=5:3,10:334,15:442
+BEST score=6464 bad=404 support=10 run=0 step=130 moves=130 evaluations=16129 ms=12 seq=1,5,25,125,583,230,583,125,223,18,25,38,230,230,223,230,18,199,25,25 spectrum=10:404,15:425
+BEST score=5712 bad=326 support=10 run=0 step=131 moves=131 evaluations=16252 ms=12 seq=1,5,25,125,583,230,583,125,18,18,25,38,230,230,223,230,18,199,25,25 spectrum=5:1,10:325,15:435
+BEST score=5616 bad=227 support=10 run=0 step=136 moves=136 evaluations=16868 ms=12 seq=1,5,25,125,583,230,18,125,18,18,25,38,230,230,223,230,18,199,25,25 spectrum=5:4,10:223,15:390
+BEST score=4704 bad=170 support=9 run=0 step=164 moves=164 evaluations=20313 ms=13 seq=1,5,25,125,18,230,18,125,583,18,25,38,230,230,223,230,18,583,25,25 spectrum=5:4,10:166,15:4,20:1
+BEST score=4544 bad=253 support=8 run=0 step=324 moves=323 evaluations=39901 ms=19 seq=1,5,25,125,603,583,18,443,443,18,125,583,125,25,603,443,583,603,603,18 spectrum=5:1,10:252,15:267
+BEST score=2224 bad=139 support=9 run=0 step=839 moves=835 evaluations=103099 ms=36 seq=1,5,25,125,559,583,583,506,25,5,506,58,58,1,5,58,58,5,526,583 spectrum=10:139,15:440
+BEST score=2144 bad=134 support=8 run=0 step=843 moves=839 evaluations=103593 ms=37 seq=1,5,25,125,583,583,583,506,25,5,506,58,58,1,5,58,58,5,526,583 spectrum=10:134,15:480
+BEST score=2064 bad=129 support=8 run=0 step=2960 moves=2945 evaluations=363229 ms=106 seq=1,5,25,125,202,5,5,347,125,125,343,343,467,467,343,125,347,467,5,343 spectrum=10:129,15:650
+BEST score=2000 bad=125 support=9 run=1 step=2137 moves=5110 evaluations=629995 ms=175 seq=1,5,25,125,5,34,34,25,299,170,34,299,34,390,14,170,25,170,299,170 spectrum=10:125,15:486
+BEST score=1904 bad=119 support=9 run=1 step=2449 moves=5420 evaluations=668154 ms=193 seq=1,5,25,125,5,34,178,34,34,178,78,1,34,1,154,5,226,226,5,1 spectrum=10:119,15:440
+BEST score=1536 bad=96 support=8 run=1 step=2467 moves=5438 evaluations=670357 ms=194 seq=1,5,25,125,5,34,226,34,34,178,78,1,34,1,226,5,226,226,5,1 spectrum=10:96,15:612
+PROGRESS runs=10 best=1536 moves=29828 evaluations=3678466 ms=961
+BEST score=1456 bad=91 support=7 run=10 step=976 moves=30799 evaluations=3798062 ms=991 seq=1,5,25,125,125,1,5,210,66,66,166,1,125,25,5,25,210,5,25,66 spectrum=10:91,15:432
+BEST score=1056 bad=66 support=6 run=10 step=1002 moves=30825 evaluations=3801270 ms=992 seq=1,5,25,125,125,1,5,210,66,66,210,210,125,25,5,25,1,5,25,66 spectrum=10:66,15:432
+PROGRESS runs=20 best=1056 moves=59652 evaluations=7354961 ms=1893
+PROGRESS runs=30 best=1056 moves=89484 evaluations=11033451 ms=2840
+PROGRESS runs=40 best=1056 moves=119323 evaluations=14714221 ms=3800
+PROGRESS runs=50 best=1056 moves=149153 evaluations=18392978 ms=4751
+PROGRESS runs=60 best=1056 moves=178986 evaluations=22071330 ms=5704
+PROGRESS runs=70 best=1056 moves=208819 evaluations=25749376 ms=6638
+PROGRESS runs=80 best=1056 moves=238655 evaluations=29427737 ms=7581
+PROGRESS runs=90 best=1056 moves=268484 evaluations=33107686 ms=8522
+PROGRESS runs=100 best=1056 moves=298321 evaluations=36786712 ms=9454
+PROGRESS runs=110 best=1056 moves=328146 evaluations=40464226 ms=10391
+PROGRESS runs=120 best=1056 moves=357974 evaluations=44142362 ms=11334
+PROGRESS runs=130 best=1056 moves=387810 evaluations=47821689 ms=12282
+PROGRESS runs=140 best=1056 moves=417642 evaluations=51499104 ms=13228
+PROGRESS runs=150 best=1056 moves=447473 evaluations=55176413 ms=14180
+FINAL score=1056 bad=66 moves=447473 evaluations=55176413 restarts=150 steps=3000 ms=14180 seq=1,5,25,125,125,1,5,210,66,66,210,210,125,25,5,25,1,5,25,66 spectrum=10:66,15:432

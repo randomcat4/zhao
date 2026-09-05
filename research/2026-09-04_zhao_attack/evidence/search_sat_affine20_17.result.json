@@ -1,0 +1,18 @@
+{
+  "status": "INCOMPLETE",
+  "reason": "canceled",
+  "config": {
+    "n": 20,
+    "m": 14,
+    "cap": 3,
+    "mode": "affine",
+    "seed": 17,
+    "seconds": 120.0,
+    "max_iterations": 5000
+  },
+  "z3": "5.1.0",
+  "iterations": 121,
+  "cuts": 68994,
+  "elapsed_seconds": 120.01500000001397,
+  "candidate_sequence": null
+}

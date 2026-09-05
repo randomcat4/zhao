@@ -1,0 +1,29 @@
+{
+  "status": "PROVED_D3_D4_M1_EXCLUSION_AND_ATOM_REPLACEMENT_CONSTRAINTS",
+  "full_16_atom_exclusion": "INCOMPLETE",
+  "frozen_parent_proof_sha256": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+  "claims": [
+    "z16 >= 10 whenever B20 contains a 16-atom",
+    "A second 16-atom omitting the original star center has its own center in the atom intersection",
+    "d=3,M=1 excluded in both multiplicity placements",
+    "d=4,M=1 excluded in all three basis charts"
+  ],
+  "file_sha256": {
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "proofs/continue_atom16_star_addendum.md": "3f6747de90bc560396604ed588c6efa57f01485a4ad3cfb28ad94e7fbaf10e79",
+    "scripts/continue_atom16_star_addendum_d3.cs": "b7a8e15cbcfa28434522e74e3552582d3fc63c4ce845a4ffa8c9d82fe93c383e",
+    "scripts/continue_atom16_star_addendum_d3.ps1": "25b466f12556caf6291e2c9446f987b1beb7effeed41f41de4a8160bc0552a54",
+    "scripts/continue_atom16_star_addendum_d4.py": "de53570e3c065539c918778ff3eed33b0417a9611d2d8114dd2c83582979b70f",
+    "evidence/continue_atom16_star_addendum_d3.json": "44107ff946e70143e887f07cedbfecef663d6b790173b37156b33f1b3695079d",
+    "evidence/continue_atom16_star_addendum_d4.json": "64ad4dea92a7976780db2ff8dcbd2ecca5fa112af68ed0a7911c68c6a0af8231"
+  },
+  "d3_bound_inputs": {
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "scripts/continue_atom16_star_addendum_d3.cs": "b7a8e15cbcfa28434522e74e3552582d3fc63c4ce845a4ffa8c9d82fe93c383e",
+    "scripts/continue_atom16_star_addendum_d3.ps1": "25b466f12556caf6291e2c9446f987b1beb7effeed41f41de4a8160bc0552a54"
+  },
+  "d4_bound_inputs": {
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "scripts/continue_atom16_star_addendum_d4.py": "de53570e3c065539c918778ff3eed33b0417a9611d2d8114dd2c83582979b70f"
+  }
+}

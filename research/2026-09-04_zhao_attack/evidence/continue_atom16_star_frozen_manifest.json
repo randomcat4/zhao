@@ -1,0 +1,21 @@
+{
+  "status": "PROVED_LOCAL_STRUCTURE_AND_SQUAREFREE_16_ATOM_EXCLUSION",
+  "full_B_status": "INCOMPLETE",
+  "local_claims": [
+    "For each outside position g, P_g is a 2- or 3-edge star with a common center x",
+    "The forced residual system is equations (6)-(9) in proofs/continue_atom16_star.md",
+    "A B20 counterexample with a 16-atom has 4 <= 2a+b <= 7 and support <= 16",
+    "No B20 counterexample contains a squarefree 16-atom"
+  ],
+  "proof_sha256": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+  "checker_sha256": "43a1be6f6c41f58f33e8fc4128919d142afbc3b3c11705f129c16b02cad95772",
+  "evidence_sha256": "d370b9d99e8c2426cd8020228389d1110d2c7ddc9ccfda0c40bc0a7282a9b2dc",
+  "input_sha256": {
+    "frozen_theorem_v1.md": "92c313dd758c6dbcc53d977dbf04d52d8405751238bdce796935a9a62617d2fe",
+    "proofs/atom_structure.md": "dbe97c8b0776e148e88ac5c9b369362d42cac4884f2ff32680d129b8e48901fd",
+    "proofs/global_continue_squarefree_B.md": "222e940c9a8fc062212f892e72797c0594a6d83506aaad2e8240e587b2dd2922",
+    "proofs/global_continue_support18_B.md": "e54019cf7b7792ba67d13e481deed8c3fb7b7323c2852d42868ad180c131a2eb",
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "scripts/continue_atom16_star_graphs.py": "43a1be6f6c41f58f33e8fc4128919d142afbc3b3c11705f129c16b02cad95772"
+  }
+}

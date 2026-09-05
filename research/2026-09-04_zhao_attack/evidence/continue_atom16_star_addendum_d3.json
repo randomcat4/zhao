@@ -1,0 +1,51 @@
+{
+  "status": "TARGETED_D3_M1_EXHAUSTIVE_EXTENSION_TEST",
+  "scope": "Two forced normalized 13-position cores; W has seven positions, all distinct or one double",
+  "cores": [
+    {
+      "name": "k=(2,1,1), m on the k=2 value",
+      "complete": true,
+      "timed_out": false,
+      "found_safe_B20_witness": false,
+      "target_W_sum": 458,
+      "nodes_by_W_length": [
+        1,
+        164,
+        3338,
+        6318,
+        958,
+        0,
+        0,
+        0
+      ],
+      "leaf_sum_tests": 0,
+      "witness_W": null,
+      "seconds": 0.2898015
+    },
+    {
+      "name": "k=(2,1,1), m on a k=1 value",
+      "complete": true,
+      "timed_out": false,
+      "found_safe_B20_witness": false,
+      "target_W_sum": 458,
+      "nodes_by_W_length": [
+        1,
+        164,
+        3338,
+        6318,
+        958,
+        0,
+        0,
+        0
+      ],
+      "leaf_sum_tests": 0,
+      "witness_W": null,
+      "seconds": 0.1074871
+    }
+  ],
+  "input_sha256": {
+    "proofs/continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "scripts/continue_atom16_star_addendum_d3.cs": "b7a8e15cbcfa28434522e74e3552582d3fc63c4ce845a4ffa8c9d82fe93c383e",
+    "scripts/continue_atom16_star_addendum_d3.ps1": "25b466f12556caf6291e2c9446f987b1beb7effeed41f41de4a8160bc0552a54"
+  }
+}

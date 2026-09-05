@@ -1,0 +1,1679 @@
+{
+  "status": "ALL_COMPARISONS_PASSED",
+  "verification": "separate NumPy gather implementation and explicit orbit minima",
+  "seconds": 1.7820000000065193,
+  "script_sha256": "da69c6d9391e99543cfe62c5058b7d3d6a9c61b1366e4fa686fbfcba4ce9e88d",
+  "runs": [
+    {
+      "source": "math\\2026-09-04_zhao_attack\\evidence\\atom_3222_m13_blocks.jsonl",
+      "source_sha256": "174c5e1e8cb2e3197fec55639bf8dea480f32aca06b7beb62e9b0c9829554e9d",
+      "mode": "3222",
+      "m": 13,
+      "root_count": 106,
+      "all_roots_identical": true,
+      "nodes": 121866,
+      "maximum_length": 17,
+      "checked_roots": [
+        {
+          "root": 6,
+          "nodes": 8736,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 293,
+            "15": 8424,
+            "17": 18
+          },
+          "leaves_by_length": {
+            "15": 8406,
+            "13": 20
+          },
+          "max_reached_length": 17,
+          "terminal_count": 18
+        },
+        {
+          "root": 7,
+          "nodes": 8736,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 293,
+            "15": 8424,
+            "17": 18
+          },
+          "leaves_by_length": {
+            "15": 8406,
+            "13": 19
+          },
+          "max_reached_length": 17,
+          "terminal_count": 18
+        },
+        {
+          "root": 8,
+          "nodes": 8736,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 293,
+            "15": 8424,
+            "17": 18
+          },
+          "leaves_by_length": {
+            "15": 8406,
+            "13": 21
+          },
+          "max_reached_length": 17,
+          "terminal_count": 18
+        },
+        {
+          "root": 9,
+          "nodes": 8736,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 293,
+            "15": 8424,
+            "17": 18
+          },
+          "leaves_by_length": {
+            "15": 8406,
+            "13": 20
+          },
+          "max_reached_length": 17,
+          "terminal_count": 18
+        },
+        {
+          "root": 13,
+          "nodes": 7856,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 283,
+            "15": 7572
+          },
+          "leaves_by_length": {
+            "15": 7572,
+            "13": 25
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 16,
+          "nodes": 7856,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 283,
+            "15": 7572
+          },
+          "leaves_by_length": {
+            "15": 7572,
+            "13": 25
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 30,
+          "nodes": 3160,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 246,
+            "15": 2845,
+            "17": 68
+          },
+          "leaves_by_length": {
+            "15": 2777,
+            "13": 6
+          },
+          "max_reached_length": 17,
+          "terminal_count": 68
+        },
+        {
+          "root": 31,
+          "nodes": 1583,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 224,
+            "15": 1358
+          },
+          "leaves_by_length": {
+            "15": 1358,
+            "13": 16
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 32,
+          "nodes": 1957,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 228,
+            "15": 1728
+          },
+          "leaves_by_length": {
+            "15": 1728,
+            "13": 12
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 33,
+          "nodes": 1940,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 228,
+            "15": 1709,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 1707,
+            "13": 16
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 34,
+          "nodes": 1607,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 224,
+            "15": 1382
+          },
+          "leaves_by_length": {
+            "15": 1382,
+            "13": 14
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 35,
+          "nodes": 1718,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 221,
+            "15": 1492,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 1488,
+            "13": 26
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 36,
+          "nodes": 1292,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 207,
+            "15": 1074,
+            "17": 10
+          },
+          "leaves_by_length": {
+            "15": 1064,
+            "13": 27
+          },
+          "max_reached_length": 17,
+          "terminal_count": 10
+        },
+        {
+          "root": 37,
+          "nodes": 1012,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 205,
+            "15": 798,
+            "17": 8
+          },
+          "leaves_by_length": {
+            "15": 790,
+            "13": 29
+          },
+          "max_reached_length": 17,
+          "terminal_count": 8
+        },
+        {
+          "root": 38,
+          "nodes": 1045,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 205,
+            "15": 833,
+            "17": 6
+          },
+          "leaves_by_length": {
+            "15": 827,
+            "13": 31
+          },
+          "max_reached_length": 17,
+          "terminal_count": 6
+        },
+        {
+          "root": 39,
+          "nodes": 1010,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 204,
+            "15": 801,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 797,
+            "13": 29
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 40,
+          "nodes": 1460,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 219,
+            "15": 1236,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 1232,
+            "13": 30
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 41,
+          "nodes": 1010,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 204,
+            "15": 801,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 797,
+            "13": 32
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 42,
+          "nodes": 1045,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 205,
+            "15": 833,
+            "17": 6
+          },
+          "leaves_by_length": {
+            "15": 827,
+            "13": 30
+          },
+          "max_reached_length": 17,
+          "terminal_count": 6
+        },
+        {
+          "root": 43,
+          "nodes": 1020,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 205,
+            "15": 806,
+            "17": 8
+          },
+          "leaves_by_length": {
+            "15": 798,
+            "13": 30
+          },
+          "max_reached_length": 17,
+          "terminal_count": 8
+        },
+        {
+          "root": 44,
+          "nodes": 1161,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 206,
+            "15": 944,
+            "17": 10
+          },
+          "leaves_by_length": {
+            "15": 934,
+            "13": 29
+          },
+          "max_reached_length": 17,
+          "terminal_count": 10
+        },
+        {
+          "root": 45,
+          "nodes": 3565,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 249,
+            "15": 3247,
+            "17": 68
+          },
+          "leaves_by_length": {
+            "15": 3179,
+            "13": 6
+          },
+          "max_reached_length": 17,
+          "terminal_count": 68
+        },
+        {
+          "root": 46,
+          "nodes": 2019,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 227,
+            "15": 1788,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 1785,
+            "13": 8
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 47,
+          "nodes": 2090,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 229,
+            "15": 1855,
+            "17": 5
+          },
+          "leaves_by_length": {
+            "15": 1850,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 5
+        },
+        {
+          "root": 48,
+          "nodes": 1957,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 228,
+            "15": 1728
+          },
+          "leaves_by_length": {
+            "15": 1728,
+            "13": 9
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 49,
+          "nodes": 1583,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 224,
+            "15": 1358
+          },
+          "leaves_by_length": {
+            "15": 1358,
+            "13": 9
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 63,
+          "nodes": 1037,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 202,
+            "15": 834
+          },
+          "leaves_by_length": {
+            "15": 834,
+            "13": 45
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 65,
+          "nodes": 2001,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 223,
+            "15": 1773,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 1769,
+            "13": 18
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 66,
+          "nodes": 1437,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 208,
+            "15": 1228
+          },
+          "leaves_by_length": {
+            "15": 1228,
+            "13": 26
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 67,
+          "nodes": 1418,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 208,
+            "15": 1205,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 1201,
+            "13": 25
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 68,
+          "nodes": 1146,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 205,
+            "15": 936,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 932,
+            "13": 27
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 69,
+          "nodes": 1278,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 207,
+            "15": 1062,
+            "17": 8
+          },
+          "leaves_by_length": {
+            "15": 1054,
+            "13": 30
+          },
+          "max_reached_length": 17,
+          "terminal_count": 8
+        },
+        {
+          "root": 73,
+          "nodes": 1111,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 204,
+            "15": 896,
+            "17": 10
+          },
+          "leaves_by_length": {
+            "15": 886,
+            "13": 40
+          },
+          "max_reached_length": 17,
+          "terminal_count": 10
+        },
+        {
+          "root": 91,
+          "nodes": 976,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 203,
+            "15": 762,
+            "17": 10
+          },
+          "leaves_by_length": {
+            "15": 752,
+            "13": 39
+          },
+          "max_reached_length": 17,
+          "terminal_count": 10
+        },
+        {
+          "root": 96,
+          "nodes": 783,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 200,
+            "15": 582
+          },
+          "leaves_by_length": {
+            "15": 582,
+            "13": 37
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 155,
+          "nodes": 709,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 115,
+            "15": 587,
+            "17": 6
+          },
+          "leaves_by_length": {
+            "15": 581,
+            "13": 14
+          },
+          "max_reached_length": 17,
+          "terminal_count": 6
+        },
+        {
+          "root": 156,
+          "nodes": 480,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 103,
+            "15": 376
+          },
+          "leaves_by_length": {
+            "15": 376,
+            "13": 14
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 157,
+          "nodes": 593,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 109,
+            "15": 483
+          },
+          "leaves_by_length": {
+            "15": 483,
+            "13": 12
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 158,
+          "nodes": 534,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 109,
+            "15": 424
+          },
+          "leaves_by_length": {
+            "15": 424,
+            "13": 13
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 159,
+          "nodes": 533,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 103,
+            "15": 429
+          },
+          "leaves_by_length": {
+            "15": 429,
+            "13": 14
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 160,
+          "nodes": 391,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 87,
+            "15": 301,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 299,
+            "13": 16
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 161,
+          "nodes": 376,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 84,
+            "15": 289,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 287,
+            "13": 9
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 162,
+          "nodes": 362,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 84,
+            "15": 276,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 275,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 163,
+          "nodes": 353,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 82,
+            "15": 269,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 268,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 164,
+          "nodes": 359,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 78,
+            "15": 279,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 278,
+            "13": 9
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 165,
+          "nodes": 321,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 85,
+            "15": 233,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 231,
+            "13": 19
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 166,
+          "nodes": 315,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 80,
+            "15": 234
+          },
+          "leaves_by_length": {
+            "15": 234,
+            "13": 13
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 167,
+          "nodes": 353,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 82,
+            "15": 269,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 268,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 168,
+          "nodes": 316,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 84,
+            "15": 231
+          },
+          "leaves_by_length": {
+            "15": 231,
+            "13": 14
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 169,
+          "nodes": 317,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 79,
+            "15": 235,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 233,
+            "13": 9
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 170,
+          "nodes": 940,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 124,
+            "15": 812,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 809,
+            "13": 16
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 171,
+          "nodes": 647,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 108,
+            "15": 538
+          },
+          "leaves_by_length": {
+            "15": 538,
+            "13": 18
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 172,
+          "nodes": 701,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 114,
+            "15": 586
+          },
+          "leaves_by_length": {
+            "15": 586,
+            "13": 21
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 173,
+          "nodes": 644,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 113,
+            "15": 530
+          },
+          "leaves_by_length": {
+            "15": 530,
+            "13": 19
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 174,
+          "nodes": 524,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 105,
+            "15": 418
+          },
+          "leaves_by_length": {
+            "15": 418,
+            "13": 19
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 185,
+          "nodes": 279,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 85,
+            "15": 191,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 189,
+            "13": 24
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 186,
+          "nodes": 307,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 84,
+            "15": 220,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 218,
+            "13": 14
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 187,
+          "nodes": 305,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 85,
+            "15": 218,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 217,
+            "13": 20
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 188,
+          "nodes": 293,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 78,
+            "15": 211,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 208,
+            "13": 14
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 189,
+          "nodes": 327,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 82,
+            "15": 238,
+            "17": 6
+          },
+          "leaves_by_length": {
+            "15": 232,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 6
+        },
+        {
+          "root": 190,
+          "nodes": 365,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 83,
+            "15": 281
+          },
+          "leaves_by_length": {
+            "15": 281,
+            "13": 29
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 191,
+          "nodes": 363,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 78,
+            "15": 283,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 282,
+            "13": 18
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 192,
+          "nodes": 335,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 76,
+            "15": 253,
+            "17": 5
+          },
+          "leaves_by_length": {
+            "15": 248,
+            "13": 20
+          },
+          "max_reached_length": 17,
+          "terminal_count": 5
+        },
+        {
+          "root": 193,
+          "nodes": 301,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 74,
+            "15": 223,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 220,
+            "13": 20
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 194,
+          "nodes": 304,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 75,
+            "15": 228
+          },
+          "leaves_by_length": {
+            "15": 228,
+            "13": 15
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 195,
+          "nodes": 452,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 89,
+            "15": 359,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 356,
+            "13": 12
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 196,
+          "nodes": 402,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 81,
+            "15": 317,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 314,
+            "13": 6
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 197,
+          "nodes": 386,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 84,
+            "15": 299,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 297,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 198,
+          "nodes": 377,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 81,
+            "15": 293,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 291,
+            "13": 8
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 199,
+          "nodes": 331,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 79,
+            "15": 249,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 247,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 215,
+          "nodes": 250,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 74,
+            "15": 174,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 173,
+            "13": 21
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 216,
+          "nodes": 284,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 73,
+            "15": 209,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 208,
+            "13": 6
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 217,
+          "nodes": 272,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 69,
+            "15": 199,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 196,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 218,
+          "nodes": 284,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 76,
+            "15": 206,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 205,
+            "13": 17
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 219,
+          "nodes": 263,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 74,
+            "15": 186,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 184,
+            "13": 15
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 220,
+          "nodes": 418,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 80,
+            "15": 337
+          },
+          "leaves_by_length": {
+            "15": 337,
+            "13": 14
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 221,
+          "nodes": 384,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 73,
+            "15": 310
+          },
+          "leaves_by_length": {
+            "15": 310,
+            "13": 8
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 222,
+          "nodes": 352,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 75,
+            "15": 276
+          },
+          "leaves_by_length": {
+            "15": 276,
+            "13": 11
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 223,
+          "nodes": 361,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 76,
+            "15": 284
+          },
+          "leaves_by_length": {
+            "15": 284,
+            "13": 9
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 224,
+          "nodes": 317,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 75,
+            "15": 241
+          },
+          "leaves_by_length": {
+            "15": 241,
+            "13": 7
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 245,
+          "nodes": 615,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 95,
+            "15": 515,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 511,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 246,
+          "nodes": 493,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 85,
+            "15": 407
+          },
+          "leaves_by_length": {
+            "15": 407,
+            "13": 14
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 247,
+          "nodes": 450,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 87,
+            "15": 362
+          },
+          "leaves_by_length": {
+            "15": 362,
+            "13": 10
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 248,
+          "nodes": 440,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 86,
+            "15": 353
+          },
+          "leaves_by_length": {
+            "15": 353,
+            "13": 12
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 249,
+          "nodes": 354,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 82,
+            "15": 271
+          },
+          "leaves_by_length": {
+            "15": 271,
+            "13": 13
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 313,
+          "nodes": 279,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 80,
+            "15": 196,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 194,
+            "13": 16
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 315,
+          "nodes": 469,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 81,
+            "15": 385,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 383,
+            "13": 6
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 316,
+          "nodes": 421,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 80,
+            "15": 335,
+            "17": 5
+          },
+          "leaves_by_length": {
+            "15": 330,
+            "13": 7
+          },
+          "max_reached_length": 17,
+          "terminal_count": 5
+        },
+        {
+          "root": 317,
+          "nodes": 395,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 80,
+            "15": 310,
+            "17": 4
+          },
+          "leaves_by_length": {
+            "15": 306,
+            "13": 5
+          },
+          "max_reached_length": 17,
+          "terminal_count": 4
+        },
+        {
+          "root": 318,
+          "nodes": 346,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 76,
+            "15": 267,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 265,
+            "13": 5
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 319,
+          "nodes": 376,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 82,
+            "15": 291,
+            "17": 2
+          },
+          "leaves_by_length": {
+            "15": 289,
+            "13": 7
+          },
+          "max_reached_length": 17,
+          "terminal_count": 2
+        },
+        {
+          "root": 323,
+          "nodes": 351,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 76,
+            "15": 267,
+            "17": 7
+          },
+          "leaves_by_length": {
+            "15": 260,
+            "13": 7
+          },
+          "max_reached_length": 17,
+          "terminal_count": 7
+        },
+        {
+          "root": 340,
+          "nodes": 427,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 71,
+            "15": 352,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 349,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 341,
+          "nodes": 385,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 68,
+            "15": 315,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 314,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 342,
+          "nodes": 332,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 66,
+            "15": 264,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 263,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 343,
+          "nodes": 313,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 64,
+            "15": 245,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 242,
+            "13": 8
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 344,
+          "nodes": 323,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 71,
+            "15": 248,
+            "17": 3
+          },
+          "leaves_by_length": {
+            "15": 245,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 3
+        },
+        {
+          "root": 345,
+          "nodes": 326,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 66,
+            "15": 259
+          },
+          "leaves_by_length": {
+            "15": 259,
+            "13": 14
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 346,
+          "nodes": 293,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 61,
+            "15": 230,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 229,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 347,
+          "nodes": 271,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 63,
+            "15": 207
+          },
+          "leaves_by_length": {
+            "15": 207,
+            "13": 13
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 348,
+          "nodes": 275,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 59,
+            "15": 214,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 213,
+            "13": 10
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 349,
+          "nodes": 294,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 66,
+            "15": 227
+          },
+          "leaves_by_length": {
+            "15": 227,
+            "13": 12
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 373,
+          "nodes": 273,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 62,
+            "15": 210
+          },
+          "leaves_by_length": {
+            "15": 210,
+            "13": 13
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 466,
+          "nodes": 81,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 38,
+            "15": 42
+          },
+          "leaves_by_length": {
+            "15": 42,
+            "13": 19
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        },
+        {
+          "root": 471,
+          "nodes": 70,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 30,
+            "15": 38,
+            "17": 1
+          },
+          "leaves_by_length": {
+            "15": 37,
+            "13": 11
+          },
+          "max_reached_length": 17,
+          "terminal_count": 1
+        },
+        {
+          "root": 496,
+          "nodes": 57,
+          "nodes_by_length": {
+            "11": 1,
+            "13": 28,
+            "15": 28
+          },
+          "leaves_by_length": {
+            "15": 28,
+            "13": 8
+          },
+          "max_reached_length": 15,
+          "terminal_count": 0
+        }
+      ]
+    }
+  ]
+}

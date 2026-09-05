@@ -1,0 +1,4 @@
+{"iteration": 1, "short_count": 1632, "min_length": 5, "cuts": 147, "seconds": 0.1981339454650879}
+{"iteration": 2, "short_count": 1553, "min_length": 5, "cuts": 292, "seconds": 1.8347749710083008}
+{"iteration": 3, "short_count": 1626, "min_length": 5, "cuts": 438, "seconds": 4.276555776596069}
+{"iteration": 10, "short_count": 1557, "min_length": 5, "cuts": 1464, "seconds": 60.67940092086792}

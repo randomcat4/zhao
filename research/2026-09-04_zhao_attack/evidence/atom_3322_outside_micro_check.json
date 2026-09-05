@@ -1,0 +1,20 @@
+{
+  "status": "ALL_8709_EXPLICIT_WITNESSES_VERIFIED",
+  "coverage_matches_all_saved_four_subsets": true,
+  "checked_combinations": 8709,
+  "witness_length_distribution": {
+    "5": 184,
+    "6": 671,
+    "7": 1777,
+    "8": 2524,
+    "9": 2202,
+    "10": 966,
+    "11": 324,
+    "12": 49,
+    "13": 12
+  },
+  "method": "plain integer coordinates; no distance DP and no search",
+  "source_sha256": "aa5881b1c6dad4dc28513da80e3dac318cec7e56b7a1eaf6395182b99c3ee8f8",
+  "leaf_source_sha256": "448bef714e3f458b035e2ef332f30ce1ce2ccb61736f3b9a0797814f36c44671",
+  "script_sha256": "c5babe16c5bcf092ab582189eb11599d7260aef3d26fd9d8038e01e93c6b40d1"
+}

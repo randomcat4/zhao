@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "checker": "verify_continuation_final_fresh.py",
+  "checker_sha256": "387118245b65f89df304c195eb5e4999d4be67c2873eaff17aa6ce967bb3d834",
+  "python": "C:\\Users\\UIO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "python_version": "3.12.14",
+  "elapsed_seconds": 15.869852800038643,
+  "timed_out": false,
+  "source_sha256": {
+    "continue_atom16_star.md": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+    "continue_atom16_star_addendum.md": "3f6747de90bc560396604ed588c6efa57f01485a4ad3cfb28ad94e7fbaf10e79",
+    "root_continue_star_d2.md": "d0b68aec99ccf1a98e82615b8c82ed13bb8382633ee0436caf29480c7b056ea7",
+    "root_continue_atom17_integrity.md": "05c9dd294ddde4bb30f09b765d0321b3f066ab788d9fa11073389d20ce06d834",
+    "root_continue_support17_exclusion.md": "da94bff619afdb0f9be7fe03431937b834419ae58674a03330b4ab1cdf16df6d",
+    "root_continue_atom16_single_complements.md": "e095f54d5b04724ecc1fd7477d0f1115b6dc7294a5cd0e03055fe3ac4f0b2fdc",
+    "continue_rainbow17.md": "6f4577b965fdc9618db5905b181c303f4e7d6a0d617a09fbe4d464a70e428281"
+  },
+  "d3": [
+    {
+      "core": "VA",
+      "fixed_core_positions": 13,
+      "fixed_core_subset_denominator": 8192,
+      "level_nodes": [
+        1,
+        228,
+        8466,
+        28905,
+        4843,
+        0
+      ],
+      "parent_records": 42443,
+      "canonical_extension_attempts": 7176467,
+      "accepted_edges": 42442,
+      "rejected_edges": 7131368,
+      "structurally_forbidden_edges": 2657,
+      "root_candidates": 625,
+      "max_allowed_multiplicity_pattern": "at most one value twice; all others once",
+      "terminal_statement": "every safe canonical path has length at most four"
+    },
+    {
+      "core": "VB",
+      "fixed_core_positions": 13,
+      "fixed_core_subset_denominator": 8192,
+      "level_nodes": [
+        1,
+        164,
+        3338,
+        6318,
+        958,
+        0
+      ],
+      "parent_records": 10779,
+      "canonical_extension_attempts": 1708408,
+      "accepted_edges": 10778,
+      "rejected_edges": 1696630,
+      "structurally_forbidden_edges": 1000,
+      "root_candidates": 625,
+      "max_allowed_multiplicity_pattern": "at most one value twice; all others once",
+      "terminal_statement": "every safe canonical path has length at most four"
+    }
+  ],
+  "d4": {
+    "omit_x": {
+      "omitted_vector_denominator": 625,
+      "eligible_distinct_nonzero_supports": 604,
+      "ineligible_with_zero": 5,
+      "ineligible_with_collision": 17,
+      "eligible_with_verified_short_zero_witness": 604,
+      "safe_eligible_cores": 0
+    },
+    "omit_y1": {
+      "omitted_vector_denominator": 625,
+      "eligible_distinct_nonzero_supports": 613,
+      "ineligible_with_zero": 2,
+      "ineligible_with_collision": 11,
+      "eligible_with_verified_short_zero_witness": 613,
+      "safe_eligible_cores": 0
+    },
+    "omit_ordinary": {
+      "omitted_vector_denominator": 625,
+      "eligible_distinct_nonzero_supports": 613,
+      "ineligible_with_zero": 2,
+      "ineligible_with_collision": 11,
+      "eligible_with_verified_short_zero_witness": 613,
+      "safe_eligible_cores": 0
+    }
+  },
+  "d2": {
+    "position_subset_denominator": 2048,
+    "zero_sum_free": true,
+    "unreachable_count": 4,
+    "E10_count": 7,
+    "polynomial_failure_count": 0,
+    "scalar_all_distinct": 715,
+    "scalar_one_pair": 1650,
+    "scalar_complete_denominator": 2365
+  },
+  "rainbow_counterexample": {
+    "pair_targets": {
+      "g": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "h": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "k": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "rainbow_choice_denominator": 8,
+    "pairwise_disjoint_rainbows": 0,
+    "nonempty_subset_denominator": 511,
+    "zero_sum_subsets": 0,
+    "size_qualified_replacement_denominator": 88,
+    "replacement_equalities": 0
+  },
+  "evidence_sha256": {
+    "verify_continuation_final_fresh_d3_tree.jsonl.gz": "677a57e29de4a0ea2b9f6c63667bc42374108c32e98e7df2b28c78c42eefef27",
+    "verify_continuation_final_fresh_d4_tables.json": "7f6c21ad5252c7b1571d1e34756cf335293e35d5578889ce81dabad154fe2b81",
+    "verify_continuation_final_fresh_d2.json": "aa4b4de594c8c5cd65eab413a420fa2a965c6272267c9f2e4604a55667c25306",
+    "verify_continuation_final_fresh_rainbow.json": "ce7f7009831bab9689443ac8b7c2c7f647974416bdc1bff67bec11bbc8ec0005"
+  }
+}

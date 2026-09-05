@@ -1,0 +1,16 @@
+{
+  "status": "CORRECT",
+  "scope": "Seven distinct doubled values plus six new distinct singletons in F5^4; full GL3 classification of zero-sum-free six-double H12. Not full A21/B20.",
+  "verified_proof_sha256": "dcdabbdac9bba313b2ee093d7d5efdc929ecc3159041f75860db0242c51ab7c6",
+  "candidate_frozen_manifest_sha256": "5bb79316e3290e0aae3a455aadb53692e074130ffcb1293a7d62aa98344a4614",
+  "frozen_candidate_input_hashes_rechecked_after_report": true,
+  "audit_file_sha256": {
+    "scripts/verify_seven_fresh_core.cs": "f16e0a577ea41d5db08c97ed8a76cff79c8b3ef6e3aeb313dcd0da540dc6938a",
+    "scripts/verify_seven_fresh_core.ps1": "8631a167d400fd3fda2b84253cfb708f92da320481061ea4a53891d508224d73",
+    "scripts/verify_seven_fresh_bindings_h12.py": "bcd2ad27757eebd18f4a25c28e69aeaac02168a22323bbb845edb16021a8cb6e",
+    "evidence/verify_seven_fresh_core.json": "ef49d64454ce0640237442993d52639afe3a10446c472dd2ec1156ebb0d7434d",
+    "evidence/verify_seven_fresh_bindings_h12.json": "ddca3579a592dcd429e32157513bdd422dcf7fbf9aa9df9d22dd28c77d255777",
+    "verifications/verify_seven_fresh.md": "56777ca5734242860633bb96f4373d67acf872eae1d6d8f1499056be31e0697a"
+  },
+  "unrelated_old_lower_bound_hash_mismatch_recorded": true
+}

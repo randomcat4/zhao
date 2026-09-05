@@ -1,0 +1,1516 @@
+{
+  "sha": "7f0014412f85bdbb36b14dae4e2b0ad71747d48a",
+  "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/7f0014412f85bdbb36b14dae4e2b0ad71747d48a",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6215ac390adaba1a3cf337cc82f78970817b135e",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/6215ac390adaba1a3cf337cc82f78970817b135e"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4160ea046e9060f151d190c441e735a9ad8a0479",
+      "size": 1012,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4160ea046e9060f151d190c441e735a9ad8a0479"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e11dd064aa3f1e3f078caea69bee376603f5bb8",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/6e11dd064aa3f1e3f078caea69bee376603f5bb8"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1c9338cf3b020f20651d2c95f7e3d948d1cc4c8",
+      "size": 543,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/e1c9338cf3b020f20651d2c95f7e3d948d1cc4c8"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab300244fbed53c55a1906a954503f3bf0a00691",
+      "size": 78,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ab300244fbed53c55a1906a954503f3bf0a00691"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e26ce623e8ec2c0ba84ca70e597b1000e925c4e",
+      "size": 736,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4e26ce623e8ec2c0ba84ca70e597b1000e925c4e"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a99bae73c10d066539edbecc784af2e810787ed",
+      "size": 2415,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/8a99bae73c10d066539edbecc784af2e810787ed"
+    },
+    {
+      "path": "PROJECT_STATE.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d675aeabc2933c1bd4eaf9eeb4f3cf04df14f8c",
+      "size": 5146,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/2d675aeabc2933c1bd4eaf9eeb4f3cf04df14f8c"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a01741925a374ea462ecb92b8373d8529c58733",
+      "size": 28184,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1a01741925a374ea462ecb92b8373d8529c58733"
+    },
+    {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "548b14c61b9358039e28367218210b50f8efc9f4",
+      "size": 614,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/548b14c61b9358039e28367218210b50f8efc9f4"
+    },
+    {
+      "path": "cases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e3f4ff7bd0dce73165ecd02713edf8be37a260af",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/e3f4ff7bd0dce73165ecd02713edf8be37a260af"
+    },
+    {
+      "path": "cases/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ac6ef100b276593539b942f50e24876c00a43c5",
+      "size": 2107,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/2ac6ef100b276593539b942f50e24876c00a43c5"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "579281eb63255129af04420811f266fb64906e55",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/579281eb63255129af04420811f266fb64906e55"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea924ed5d70d874981246525633f055fa3dd1928",
+      "size": 2244,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ea924ed5d70d874981246525633f055fa3dd1928"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/check_small_cases.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fae1682df0541da74c55b11f1d12f297b6f539f2",
+      "size": 7056,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/fae1682df0541da74c55b11f1d12f297b6f539f2"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3819eb581918917e923cf8dfc9380fa8f7e1803b",
+      "size": 1851,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/3819eb581918917e923cf8dfc9380fa8f7e1803b"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d4d73af802784548124524e544cb77bf8cbb7a5",
+      "size": 9327,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/7d4d73af802784548124524e544cb77bf8cbb7a5"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/small_case_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb6a3f1b2156a6cd31f0c383c7d076bf768fa667",
+      "size": 1742,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/fb6a3f1b2156a6cd31f0c383c7d076bf768fa667"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7acce3b77d2e64e867d456052f6ff5c7eeaccbc5",
+      "size": 1873,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/7acce3b77d2e64e867d456052f6ff5c7eeaccbc5"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d15f70e503f98c01c24d9fdb2a47fd587e1d8483",
+      "size": 1093,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d15f70e503f98c01c24d9fdb2a47fd587e1d8483"
+    },
+    {
+      "path": "cases/catalan-schett-plane-tree-statistic/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f540f4f1346c96a1d9f63a7d206df0a09922c047",
+      "size": 2497,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/f540f4f1346c96a1d9f63a7d206df0a09922c047"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8eee4b3231eadc1a9b71eb21a38d29f463cb854b",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/8eee4b3231eadc1a9b71eb21a38d29f463cb854b"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94c3047cbbc10bc1825209406f4bab7355be9d10",
+      "size": 1682,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/94c3047cbbc10bc1825209406f4bab7355be9d10"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/evidence",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6edc7832a4c22823de282b36d0f2f7825ba52ddc",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/6edc7832a4c22823de282b36d0f2f7825ba52ddc"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/evidence/low_order_cases.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "722fa64c9f72ba9b9da4d24d48a18834aac902f2",
+      "size": 1188,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/722fa64c9f72ba9b9da4d24d48a18834aac902f2"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/paper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "653ea5242174b5f3c564a0bbd1c762438eafa479",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/653ea5242174b5f3c564a0bbd1c762438eafa479"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/paper/main.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3cf34b2bf2d1d396f18e9cef3076c918cd55788",
+      "size": 331657,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/e3cf34b2bf2d1d396f18e9cef3076c918cd55788"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/paper/main.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f934fef10f1d26ffc8963ab8f902666f9b30b115",
+      "size": 26766,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/f934fef10f1d26ffc8963ab8f902666f9b30b115"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/paper/references.bib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de0f6b15c9b604c3bb0f7693c72abb8eeeb2f0b5",
+      "size": 814,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/de0f6b15c9b604c3bb0f7693c72abb8eeeb2f0b5"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea0090709d1dc1673fc4a78f4d92c0ed0c6c25bf",
+      "size": 796,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ea0090709d1dc1673fc4a78f4d92c0ed0c6c25bf"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff010e2ef07d214747b54ee3f3f5618ee0bcd69b",
+      "size": 874,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ff010e2ef07d214747b54ee3f3f5618ee0bcd69b"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1642a23973c1480b8eb95e9eed8599ab8854b8df",
+      "size": 624,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1642a23973c1480b8eb95e9eed8599ab8854b8df"
+    },
+    {
+      "path": "cases/cayley-eigenvalue-codimension-three/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc67defd2755e0b7108e59ca9cefe0e3cf4c9ae",
+      "size": 1358,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4cc67defd2755e0b7108e59ca9cefe0e3cf4c9ae"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a828c385dd1c1d006a7b49c91e69c0885e50548",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/1a828c385dd1c1d006a7b49c91e69c0885e50548"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba939c326235c14154fd5fa43661ce76fcf3f69b",
+      "size": 2252,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ba939c326235c14154fd5fa43661ce76fcf3f69b"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/finite-regression.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27a1544747a7f7dbe17ee513ff87a883d31efaad",
+      "size": 781,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/27a1544747a7f7dbe17ee513ff87a883d31efaad"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/mine_cdk_image.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f153a18f0022fc5aa9a355ea9a5ce90abd18b28a",
+      "size": 6029,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/f153a18f0022fc5aa9a355ea9a5ce90abd18b28a"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/mining_n_le_8.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9bab096ae20eb6e773557ac0116382648f141ed",
+      "size": 13392,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d9bab096ae20eb6e773557ac0116382648f141ed"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00fe573873ccd35dfa8e9e90f9fb0488ae2e2e13",
+      "size": 2797,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/00fe573873ccd35dfa8e9e90f9fb0488ae2e2e13"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed806d8c8391b22e84c139481bbb6ce4e3115397",
+      "size": 4792,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ed806d8c8391b22e84c139481bbb6ce4e3115397"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "152ecd595f123744294ade2f2239ae84fe983d8e",
+      "size": 1398,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/152ecd595f123744294ade2f2239ae84fe983d8e"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c5d8757d726baac968a3c44f000fa70c7e95e8b",
+      "size": 1786,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1c5d8757d726baac968a3c44f000fa70c7e95e8b"
+    },
+    {
+      "path": "cases/cdk-improper-partition-matrix-image/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dbb0a22d767e66513199248a26a99b024668ac7",
+      "size": 2259,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/7dbb0a22d767e66513199248a26a99b024668ac7"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9486016cb4af0215ada2e8dcaca0ad860b74ac3",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/f9486016cb4af0215ada2e8dcaca0ad860b74ac3"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b02c08ba8ec59046f3beb7edd2e53515da5b443",
+      "size": 2525,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1b02c08ba8ec59046f3beb7edd2e53515da5b443"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/check_sidon_stability.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0531e2cb0ea6edebabd7f1a8522607700fba990",
+      "size": 17491,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/c0531e2cb0ea6edebabd7f1a8522607700fba990"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/optimal_modulus.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d13ae3a7540c639769fc30d1c413afba2706fe5c",
+      "size": 5771,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d13ae3a7540c639769fc30d1c413afba2706fe5c"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b8c2dba06beebb2e0f60c65da1d382352428486",
+      "size": 2398,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/0b8c2dba06beebb2e0f60c65da1d382352428486"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "822b202a9b32ae80d477c91efe167720381d69bd",
+      "size": 4382,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/822b202a9b32ae80d477c91efe167720381d69bd"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5310fce2e8c133af97ec6148147942f0e6c4a155",
+      "size": 1466,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/5310fce2e8c133af97ec6148147942f0e6c4a155"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "623ce9d1b9e2e2172ed56a7bea97613fde427e9c",
+      "size": 1700,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/623ce9d1b9e2e2172ed56a7bea97613fde427e9c"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08133fed803bea5808d698b1a0b5fcb95519ee89",
+      "size": 3484,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/08133fed803bea5808d698b1a0b5fcb95519ee89"
+    },
+    {
+      "path": "cases/entropy-bounded-sidon-concentration-stability/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "476f1730f867246f4afe98f01ce80ca79b4b36cc",
+      "size": 1949,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/476f1730f867246f4afe98f01ce80ca79b4b36cc"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62afb58e40e88b54b48f85f712a63afd8f278390",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/62afb58e40e88b54b48f85f712a63afd8f278390"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b017b9b02aaec288e21f4d49a2184367b8170516",
+      "size": 1759,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/b017b9b02aaec288e21f4d49a2184367b8170516"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/check_counterexample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30c8ba8182c8d4f280ce2e15d27d2441e7201747",
+      "size": 8968,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/30c8ba8182c8d4f280ce2e15d27d2441e7201747"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/counterexample_certificate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88893b6954b89b556a3499204f4abd5bbdf43403",
+      "size": 1785,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/88893b6954b89b556a3499204f4abd5bbdf43403"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d8e2eb8fee0643c195b82426e32ecdca4e7c70f",
+      "size": 1711,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/9d8e2eb8fee0643c195b82426e32ecdca4e7c70f"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "887accd0851b97c7fb719052fedc263cefabb753",
+      "size": 1679,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/887accd0851b97c7fb719052fedc263cefabb753"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79d860e354d0f5d40f8412d9679736e5c786683d",
+      "size": 911,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/79d860e354d0f5d40f8412d9679736e5c786683d"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48f5d3e33a89a224e8c367f40a93666de3e5a596",
+      "size": 684,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/48f5d3e33a89a224e8c367f40a93666de3e5a596"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16a4d47f7a2612c6f1afb46fe1518518e72e2dbd",
+      "size": 1604,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/16a4d47f7a2612c6f1afb46fe1518518e72e2dbd"
+    },
+    {
+      "path": "cases/f29-inducibility-recursive-graphon-counterexample/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01a3bbd20db6299dbb21e703949abafb82b44ae9",
+      "size": 953,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/01a3bbd20db6299dbb21e703949abafb82b44ae9"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2df563150fe76127317d9ee9e4e3d6b2e0f869d1",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/2df563150fe76127317d9ee9e4e3d6b2e0f869d1"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35ea8724c8087097db5f6040be55613ab2d6d159",
+      "size": 1793,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/35ea8724c8087097db5f6040be55613ab2d6d159"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/check_counterexample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "224187a25534b3502dfcf7d8458eebd9ace9d4c4",
+      "size": 15651,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/224187a25534b3502dfcf7d8458eebd9ace9d4c4"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/exhaustive_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "938db362a3ddf7c86328e058606484e962d9202e",
+      "size": 7912,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/938db362a3ddf7c86328e058606484e962d9202e"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "707ca772dbe63eff619912fca57e98aaba386ba6",
+      "size": 1784,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/707ca772dbe63eff619912fca57e98aaba386ba6"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd98d0e68177064772be5f598078c4b0f06ad4a6",
+      "size": 2896,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/dd98d0e68177064772be5f598078c4b0f06ad4a6"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbc38578acde6b19dda9ec6f92ce8f2ba1e4542e",
+      "size": 1002,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/bbc38578acde6b19dda9ec6f92ce8f2ba1e4542e"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25010011d5f0760ae2eab631b29e6013ea9c6135",
+      "size": 683,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/25010011d5f0760ae2eab631b29e6013ea9c6135"
+    },
+    {
+      "path": "cases/k33plus-q-index-boundary-counterexample/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67d53b8d9d1b340f4a253b07871fae6b417181c0",
+      "size": 1584,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/67d53b8d9d1b340f4a253b07871fae6b417181c0"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77cbbf4abd1ff689eab1e96944dfc4f61a4af5e6",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/77cbbf4abd1ff689eab1e96944dfc4f61a4af5e6"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a88c2ab7cbbf1d0696ec39194b4bc595b698778d",
+      "size": 2048,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/a88c2ab7cbbf1d0696ec39194b4bc595b698778d"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/check_quotient_criterion.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e087cd663446bb9d2d892000dc2681ef040126b1",
+      "size": 6538,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/e087cd663446bb9d2d892000dc2681ef040126b1"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0af2a1c9351df1812f09b9af97ee544144da5e",
+      "size": 1770,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ce0af2a1c9351df1812f09b9af97ee544144da5e"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abb51176d34441ff9d5d6067f7ef127589a7912e",
+      "size": 4881,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/abb51176d34441ff9d5d6067f7ef127589a7912e"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/quotient_certificate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71b1c1375e5bc6f0727c7fd876d981e079ca6719",
+      "size": 1047,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/71b1c1375e5bc6f0727c7fd876d981e079ca6719"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb25ccd361c553c7bb22be7d27a3841bd62f0223",
+      "size": 939,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/fb25ccd361c553c7bb22be7d27a3841bd62f0223"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62ab81de4522328cb72d706a0fcc1887043beb5e",
+      "size": 941,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/62ab81de4522328cb72d706a0fcc1887043beb5e"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7dfc4229366fe84bb13eeba2754ceef3f371ac2",
+      "size": 1874,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/a7dfc4229366fe84bb13eeba2754ceef3f371ac2"
+    },
+    {
+      "path": "cases/minimal-degree-three-imprimitive-groups/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba92f932bcdb66458c3f65f4b28e985b8d49f86e",
+      "size": 1098,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ba92f932bcdb66458c3f65f4b28e985b8d49f86e"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1167425f57666d2bbd686dfa0d616871b11ccfb5",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/1167425f57666d2bbd686dfa0d616871b11ccfb5"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3797843e2d48df070d294c39ff5a8c0ae752429f",
+      "size": 1555,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/3797843e2d48df070d294c39ff5a8c0ae752429f"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/check_sharpness.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06cabacb6d66f36f8ca72db56379e76a0d9bcb61",
+      "size": 2104,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/06cabacb6d66f36f8ca72db56379e76a0d9bcb61"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74bc875e099bb512841e8994c5c2c0229ccfd1d9",
+      "size": 1467,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/74bc875e099bb512841e8994c5c2c0229ccfd1d9"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bba5a6860b7111fdf05d96c72e69a810f7122dde",
+      "size": 15564,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/bba5a6860b7111fdf05d96c72e69a810f7122dde"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/sharpness_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af151b23db1d30d812f522fa5ecc1ffc1ff48ff0",
+      "size": 707,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/af151b23db1d30d812f522fa5ecc1ffc1ff48ff0"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2539b2a8a8292771e18e56813aaff7c95fb530bf",
+      "size": 1212,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/2539b2a8a8292771e18e56813aaff7c95fb530bf"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3563153cc7b999ab33f630d5b83c980c2561c463",
+      "size": 1029,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/3563153cc7b999ab33f630d5b83c980c2561c463"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f65d0e906f9f079c80ced3b28230bd49b698317",
+      "size": 1168,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4f65d0e906f9f079c80ced3b28230bd49b698317"
+    },
+    {
+      "path": "cases/minimum-degree-two-degree-multiplicity/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af380834d6ff69b32d6cb83f8f67f81ad1d54979",
+      "size": 613,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/af380834d6ff69b32d6cb83f8f67f81ad1d54979"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6fdd86c430970fc2a70213bbf3312087d3bd3de2",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/6fdd86c430970fc2a70213bbf3312087d3bd3de2"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "160246ca47ee35e2b42e06c4c156f9c51a8c728a",
+      "size": 1786,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/160246ca47ee35e2b42e06c4c156f9c51a8c728a"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/check_counterexamples.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58b8493e0ec7cd6070ce5b55a97a2e299f0af644",
+      "size": 7399,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/58b8493e0ec7cd6070ce5b55a97a2e299f0af644"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/counterexample_certificate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96aed494e7f4ded56d7767b9614f03a131038ba0",
+      "size": 7397,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/96aed494e7f4ded56d7767b9614f03a131038ba0"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7762c87774d0d310b09a52cf857c5c57b726ed75",
+      "size": 1523,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/7762c87774d0d310b09a52cf857c5c57b726ed75"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed77fbad8b87da647b14ef95ae1ff381b3a2cfbe",
+      "size": 6541,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ed77fbad8b87da647b14ef95ae1ff381b3a2cfbe"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbf81ef78f117e6884d1c4b921ee6e0f089deac0",
+      "size": 990,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/fbf81ef78f117e6884d1c4b921ee6e0f089deac0"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af2acdfc75554a05d5747d3ff5999bcdcf1cca7c",
+      "size": 1498,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/af2acdfc75554a05d5747d3ff5999bcdcf1cca7c"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35fbde9db1db7dda772a7d852c157aeb66725ee5",
+      "size": 2279,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/35fbde9db1db7dda772a7d852c157aeb66725ee5"
+    },
+    {
+      "path": "cases/orthogonal-tree-seven-vertex-obstructions/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "710583c4c93356b07557bd6118110b448f616488",
+      "size": 1979,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/710583c4c93356b07557bd6118110b448f616488"
+    },
+    {
+      "path": "cases/partition-matrix-bijection",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86d77f8ebdfbe94f1016b451a02ca160b53b5a25",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/86d77f8ebdfbe94f1016b451a02ca160b53b5a25"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1e32f4541eb12de70a9e330f3649fb10dd11f5c",
+      "size": 1824,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/e1e32f4541eb12de70a9e330f3649fb10dd11f5c"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/exhaustive-check.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd11eb26294b6416c490598986eb68cc7a6e0cf3",
+      "size": 709,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/fd11eb26294b6416c490598986eb68cc7a6e0cf3"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bc248c3b6bf3158d1319b1771acaf33dadfaf96",
+      "size": 2474,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1bc248c3b6bf3158d1319b1771acaf33dadfaf96"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3e53b6eaa8255ef9b8dc255040bba18a9ef86ad",
+      "size": 14195,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d3e53b6eaa8255ef9b8dc255040bba18a9ef86ad"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb316070cc8725d212595ae5edf464cff8354bf1",
+      "size": 2087,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/cb316070cc8725d212595ae5edf464cff8354bf1"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5815d6b935d31ff7bae4b1b089fb7ab90ce4228e",
+      "size": 1094,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/5815d6b935d31ff7bae4b1b089fb7ab90ce4228e"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a958c9db6804b7b872e908d16f8e68664621525",
+      "size": 1964,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/2a958c9db6804b7b872e908d16f8e68664621525"
+    },
+    {
+      "path": "cases/partition-matrix-bijection/verify_bijection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75e6312fc25fab5c81569fbf433b8bf87b7fe376",
+      "size": 14038,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/75e6312fc25fab5c81569fbf433b8bf87b7fe376"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "300ff8b3aba32ffd07d74276434580ad34309e3a",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/300ff8b3aba32ffd07d74276434580ad34309e3a"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc1f92a8951e228e1f658357a64b5bb0b759a72e",
+      "size": 2269,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/bc1f92a8951e228e1f658357a64b5bb0b759a72e"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/check_formula.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d77659fe573861ee385b3f65851a5fcd28ae72c3",
+      "size": 5084,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d77659fe573861ee385b3f65851a5fcd28ae72c3"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/formula-check.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c693e3f407e1ee0b415bc83d0da6e323d81120ee",
+      "size": 707,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/c693e3f407e1ee0b415bc83d0da6e323d81120ee"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa3ad5ca1912b728eed70ccc4246ebcb0ec951af",
+      "size": 2133,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/fa3ad5ca1912b728eed70ccc4246ebcb0ec951af"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa892f644b09d8ef5278c446725bb1ca6c421e68",
+      "size": 6509,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/aa892f644b09d8ef5278c446725bb1ca6c421e68"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "181df5b7f8d5c9eaa3aa211ce244e8f4a5101ae8",
+      "size": 1492,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/181df5b7f8d5c9eaa3aa211ce244e8f4a5101ae8"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e8042676679f78599c56d1b92a0c76cc883743d",
+      "size": 1691,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1e8042676679f78599c56d1b92a0c76cc883743d"
+    },
+    {
+      "path": "cases/partition-matrix-q-sum-product/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b63cefb6794a6c1d449e009b095ebf6ab2dec5c0",
+      "size": 2108,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/b63cefb6794a6c1d449e009b095ebf6ab2dec5c0"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76caa3e10c0c697f7b6e4c0c11a45196fe6064ee",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/76caa3e10c0c697f7b6e4c0c11a45196fe6064ee"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e79afedad1ca2ce740bb9d6aae1fe6cbb10abfc",
+      "size": 2000,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/2e79afedad1ca2ce740bb9d6aae1fe6cbb10abfc"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/check_counterexample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "725ced998e609354fa822ed30fff0463c2778a0f",
+      "size": 10650,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/725ced998e609354fa822ed30fff0463c2778a0f"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/counterexample_certificate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b52940ae4c45ffe3dcf016a7f9fd18af954432a2",
+      "size": 822,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/b52940ae4c45ffe3dcf016a7f9fd18af954432a2"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed1414a9c336202ce0a6b5cc9efc14b82a14f8e4",
+      "size": 1893,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ed1414a9c336202ce0a6b5cc9efc14b82a14f8e4"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33d7ba50fe0c4ee93fb3e8bf92a7786f101f1966",
+      "size": 2495,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/33d7ba50fe0c4ee93fb3e8bf92a7786f101f1966"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdc1f720ac16f503994477ef5330762363e74242",
+      "size": 800,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/bdc1f720ac16f503994477ef5330762363e74242"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d136fec09d41743d3ae9c4ce7c83d9155364e449",
+      "size": 716,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d136fec09d41743d3ae9c4ce7c83d9155364e449"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e4e4fd08611e7147ae1e117ea6a115a1b06d473",
+      "size": 1622,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4e4e4fd08611e7147ae1e117ea6a115a1b06d473"
+    },
+    {
+      "path": "cases/path-set-tree-representation-counterexample/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82230911f7a8efc9c1230c880a022c74b4fdb4ef",
+      "size": 1665,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/82230911f7a8efc9c1230c880a022c74b4fdb4ef"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "926f55906889fc2d34211993e8b118d7bed72811",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/926f55906889fc2d34211993e8b118d7bed72811"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75cabce22478caccfb92183070a1e606bbe6cb15",
+      "size": 1621,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/75cabce22478caccfb92183070a1e606bbe6cb15"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/check_three_leaf_extremizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cebbcbb1743c6a7fe486403e87137592b988bdec",
+      "size": 6176,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/cebbcbb1743c6a7fe486403e87137592b988bdec"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fe17bc840fd086538f9fd378bd21c3b96cfb65c",
+      "size": 1194,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/3fe17bc840fd086538f9fd378bd21c3b96cfb65c"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4825961d662b59b0abd94bdbbd14af13fc44f987",
+      "size": 4486,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4825961d662b59b0abd94bdbbd14af13fc44f987"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6548de94154b61875bd4e71f139b6ab5649416b0",
+      "size": 978,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/6548de94154b61875bd4e71f139b6ab5649416b0"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/spider_certificate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1db8b7063e89f69c8a36e736af907f5099786c36",
+      "size": 750,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1db8b7063e89f69c8a36e736af907f5099786c36"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff3dab313e0e0d47198df8ac999fe819bbbb8976",
+      "size": 979,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/ff3dab313e0e0d47198df8ac999fe819bbbb8976"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5125c42bdf2067b4596c58438db0b03f0134afe8",
+      "size": 1706,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/5125c42bdf2067b4596c58438db0b03f0134afe8"
+    },
+    {
+      "path": "cases/steklov-three-leaf-extra-special-extremizer/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a93b6836e70870c2815fe742fc4424f0cfcd20d",
+      "size": 2078,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/5a93b6836e70870c2815fe742fc4424f0cfcd20d"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c40b3a1e83c9613813175aa840ee48f53a1e576c",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/c40b3a1e83c9613813175aa840ee48f53a1e576c"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2cb80843ac68e595a5a1072a7b18e90c4471c1a",
+      "size": 1637,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d2cb80843ac68e595a5a1072a7b18e90c4471c1a"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/check_statement_certificate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7a2116db4720967d7aab5487c713cb019d778be",
+      "size": 3508,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/c7a2116db4720967d7aab5487c713cb019d778be"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ec493d80eacd82c3c711e3f9315bf6e80894a59",
+      "size": 1765,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/7ec493d80eacd82c3c711e3f9315bf6e80894a59"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e008ed5f68dd935af1a69f5b4a0f9264cb403720",
+      "size": 5958,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/e008ed5f68dd935af1a69f5b4a0f9264cb403720"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f712f5f26e802fd0282ea23d160b89a48c94764",
+      "size": 2079,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1f712f5f26e802fd0282ea23d160b89a48c94764"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dabaee911019abdf8b5b264a9a6f4dc395f64abd",
+      "size": 1565,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/dabaee911019abdf8b5b264a9a6f4dc395f64abd"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da91a8380c269d8dc7b0ed67d949e1076f8251f4",
+      "size": 2230,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/da91a8380c269d8dc7b0ed67d949e1076f8251f4"
+    },
+    {
+      "path": "cases/ternary-berge-suspension-rigidity/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7701b9e5719d9f907e9ef07d8b9747b5461c0f5",
+      "size": 2276,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/c7701b9e5719d9f907e9ef07d8b9747b5461c0f5"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8397e74c91d6ccc692d556779f8ecb97a8e4d3c",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/f8397e74c91d6ccc692d556779f8ecb97a8e4d3c"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6df3f0a48e2f4b315074f53d0804232f29f482ff",
+      "size": 1829,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/6df3f0a48e2f4b315074f53d0804232f29f482ff"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/check_counterexample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb3c5c3003e9a4f8f60b4fb90a92992a989a78c5",
+      "size": 6494,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/cb3c5c3003e9a4f8f60b4fb90a92992a989a78c5"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4995b565e92f65f9648be3af85db11f478489004",
+      "size": 1485,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4995b565e92f65f9648be3af85db11f478489004"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0442600fe7e9db713114698420492041da3885fb",
+      "size": 1641,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/0442600fe7e9db713114698420492041da3885fb"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "730645b86705cf56c21ba8ca09e3b3a0a277cf91",
+      "size": 932,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/730645b86705cf56c21ba8ca09e3b3a0a277cf91"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "309ee5a892f9101c0b29166dd7e5bb28a156071e",
+      "size": 750,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/309ee5a892f9101c0b29166dd7e5bb28a156071e"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf46fa4f307b9ba4a6199e8ef724b119ae134a6d",
+      "size": 1670,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/cf46fa4f307b9ba4a6199e8ef724b119ae134a6d"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/verification_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a05c3aa58f387e27009df4a3b3a24482b52841b",
+      "size": 825,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/9a05c3aa58f387e27009df4a3b3a24482b52841b"
+    },
+    {
+      "path": "cases/toroidal-grid-representation-counterexample/word_certificate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15bc368b8274dc66cff2a07f870a2701fc818ab7",
+      "size": 2538,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/15bc368b8274dc66cff2a07f870a2701fc818ab7"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "afd19c87482fbee734223442b2ccddfd4bacddda",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/afd19c87482fbee734223442b2ccddfd4bacddda"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6e772c86d0bab54a3193c5515b8c6ed253ede1b",
+      "size": 2327,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/c6e772c86d0bab54a3193c5515b8c6ed253ede1b"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/evidence",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4336f099785d1479ddf7e055dda5db7f8a5b7740",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/4336f099785d1479ddf7e055dda5db7f8a5b7740"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/evidence/affine_flex_summary_d4_d9.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "278d2e2901d477c2b80117e68ca0c996600b0d34",
+      "size": 1733,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/278d2e2901d477c2b80117e68ca0c996600b0d34"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/evidence/hyperedges.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "276924935c148be7c5f0134690c4b33b4217f75b",
+      "size": 1329,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/276924935c148be7c5f0134690c4b33b4217f75b"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/evidence/modular_rank_summary_d4_d9.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeb880c01d187a28ea9c5f96ad4619230bf9b488",
+      "size": 1547,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/eeb880c01d187a28ea9c5f96ad4619230bf9b488"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/paper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c07a42d8c4a5fdab2fee9dbe1be271fdb3a352a",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/8c07a42d8c4a5fdab2fee9dbe1be271fdb3a352a"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/paper/main.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "068fa634d50db494c3d4236beaf1642b6d7f3596",
+      "size": 291035,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/068fa634d50db494c3d4236beaf1642b6d7f3596"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/paper/main.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d82d8577bd0665084794ccc7b6c7782d9125565",
+      "size": 18333,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/0d82d8577bd0665084794ccc7b6c7782d9125565"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/paper/references.bib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b3f2403eccf9eba95371b72b2053511319a5321",
+      "size": 493,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/2b3f2403eccf9eba95371b72b2053511319a5321"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e18151a6ce3df4fcd9c9173718d38a34e69d23",
+      "size": 763,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/34e18151a6ce3df4fcd9c9173718d38a34e69d23"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d68d669d96166e7b5a6ffcbbe206021750b413f",
+      "size": 726,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/5d68d669d96166e7b5a6ffcbbe206021750b413f"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05d0127316c039ede3566c37e9aca4895d81c2b7",
+      "size": 591,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/05d0127316c039ede3566c37e9aca4895d81c2b7"
+    },
+    {
+      "path": "cases/volume-rigidity-dimension-seven/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7299c254c3da752c21e5dbfbe4d20e2a8c616f99",
+      "size": 1901,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/7299c254c3da752c21e5dbfbe4d20e2a8c616f99"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6a3ea8ea38061efc3ffd7885dcef89f3855587f",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/e6a3ea8ea38061efc3ffd7885dcef89f3855587f"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4adedf8b75f781b2d7c0f3d967f8ff33899eb004",
+      "size": 2017,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/4adedf8b75f781b2d7c0f3d967f8ff33899eb004"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/check_counterexample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6365c9f6895941d6cb4898e9e8e33ed1f7e4d57d",
+      "size": 9681,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/6365c9f6895941d6cb4898e9e8e33ed1f7e4d57d"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/exhaustive_summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9094cd14a20e4a0b45ed21d3907ee415cf1e86bf",
+      "size": 14935,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/9094cd14a20e4a0b45ed21d3907ee415cf1e86bf"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/problem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4332fe284cea4cd67281a1e4c750fe54086cd32",
+      "size": 2368,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/c4332fe284cea4cd67281a1e4c750fe54086cd32"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/proof.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5275e23a8b04b5ecb9fdf989b7df7868c8cbde84",
+      "size": 7382,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/5275e23a8b04b5ecb9fdf989b7df7868c8cbde84"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fbd51b66ae9571d668ca2fa403bfc92dd243cdb",
+      "size": 1217,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/3fbd51b66ae9571d668ca2fa403bfc92dd243cdb"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0e448bbe980a266a914b87be3c0b4395320d834",
+      "size": 792,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/f0e448bbe980a266a914b87be3c0b4395320d834"
+    },
+    {
+      "path": "cases/zhao-restricted-zero-sum-counterexample/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8128d7ae481955bc35d4c8e8648f04c082170d10",
+      "size": 2246,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/8128d7ae481955bc35d4c8e8648f04c082170d10"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ffe72c5a9cd7d959731d3e4c634aa63b62d8f950",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/ffe72c5a9cd7d959731d3e4c634aa63b62d8f950"
+    },
+    {
+      "path": "docs/provenance.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "157ff89bb3dae9689a500109737c7ee365507f15",
+      "size": 1140,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/157ff89bb3dae9689a500109737c7ee365507f15"
+    },
+    {
+      "path": "docs/sources.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58a5ca6423ce4a2f90d791c55ba4ffa9d7596926",
+      "size": 6237,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/58a5ca6423ce4a2f90d791c55ba4ffa9d7596926"
+    },
+    {
+      "path": "docs/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "337d4de9bcd006d9a93af8aafecb67e13c9fb286",
+      "size": 4854,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/337d4de9bcd006d9a93af8aafecb67e13c9fb286"
+    },
+    {
+      "path": "docs/workflow.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f7f559d527568d7d0e4fe7ca5330fd15c07cf62",
+      "size": 2149,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/1f7f559d527568d7d0e4fe7ca5330fd15c07cf62"
+    },
+    {
+      "path": "manifests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1475236d94f0d97f46ae3b5b9a4c7a6bbd09c71",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/b1475236d94f0d97f46ae3b5b9a4c7a6bbd09c71"
+    },
+    {
+      "path": "manifests/artifacts.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bafafff5379800be134ee01a0de8648b38f4b405",
+      "size": 26017,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/bafafff5379800be134ee01a0de8648b38f4b405"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0f4c67067f9593aec4e26abafcc8c63bd878976",
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/trees/b0f4c67067f9593aec4e26abafcc8c63bd878976"
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d237a80fa398566366e5982c4edb407295d77def",
+      "size": 1451,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/d237a80fa398566366e5982c4edb407295d77def"
+    },
+    {
+      "path": "scripts/validate_repo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191160a6cc06b1b2cfc8c949a4cac61d0a4c8609",
+      "size": 11765,
+      "url": "https://api.github.com/repos/randomcat4/euler-combinatorics-conjecture-cases/git/blobs/191160a6cc06b1b2cfc8c949a4cac61d0a4c8609"
+    }
+  ],
+  "truncated": false
+}

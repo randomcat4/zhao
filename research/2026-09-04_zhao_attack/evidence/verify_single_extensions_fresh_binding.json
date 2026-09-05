@@ -1,0 +1,285 @@
+{
+  "status": "COMPLETE_LOCAL_DEPENDENCY_BINDING",
+  "frozen_local_claim": "An A21 or B20 bad sequence cannot have exactly one tripled value, six doubled values, and all other values distinct singletons.",
+  "audited_proof_snapshot": "evidence/verify_single_extensions_audited_snapshot.md",
+  "complete_core_count": 107656,
+  "small_cores_independently_excluded": 107647,
+  "exceptional_cores_excluded_by_bound_fresh_dense12_audit": [
+    {
+      "source_index": 1327,
+      "blocks": [
+        345,
+        455,
+        505
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        125,
+        345,
+        455,
+        505
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 9098,
+      "blocks": [
+        215,
+        225,
+        565
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        125,
+        215,
+        225,
+        565
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 18352,
+      "blocks": [
+        160,
+        185,
+        505
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        125,
+        160,
+        185,
+        505
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 38841,
+      "blocks": [
+        45,
+        180,
+        305
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        45,
+        125,
+        180,
+        305
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 39185,
+      "blocks": [
+        45,
+        220,
+        345
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        45,
+        125,
+        220,
+        345
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 39967,
+      "blocks": [
+        45,
+        415,
+        485
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        45,
+        125,
+        415,
+        485
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 57546,
+      "blocks": [
+        30,
+        190,
+        315
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        30,
+        125,
+        190,
+        315
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 57752,
+      "blocks": [
+        30,
+        210,
+        335
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        30,
+        125,
+        210,
+        335
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    },
+    {
+      "source_index": 58628,
+      "blocks": [
+        30,
+        420,
+        480
+      ],
+      "independently_computed_outside_candidate_count": 127,
+      "support_encoded_in_G": [
+        5,
+        25,
+        30,
+        125,
+        420,
+        480
+      ],
+      "multiplicities_in_H": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dense12_input_and_audit_exactly_matched": true
+    }
+  ],
+  "dense12_original_audited_input": "evidence/dense12_audited_snapshot.md",
+  "dense12_current_text_change": {
+    "changed_lines": [
+      3
+    ],
+    "old_status": "状态：候选完整证明，提交新上下文验缝。此命题是严格的局部类结论，不是完整端点 A/B。",
+    "new_status": "状态：新上下文审计 CORRECT，见 verify_dense12_fresh.md。此命题是严格的局部类结论，不是完整端点 A/B。",
+    "mathematical_body_unchanged": true
+  },
+  "old_corollary_conditions": [
+    "h <= 3",
+    "a <= 3",
+    "a+b <= 7",
+    "a >= 2 implies a+b <= 6",
+    "a=3 implies b <= 1"
+  ],
+  "old_corollary_dependency": "proofs/certified_reduction.md; accepted existing certified results, not re-proved by this audit",
+  "updated_a1_condition": "b <= 5",
+  "A_minimum_support_by_a_0_1_2_3": [
+    14,
+    14,
+    13,
+    14
+  ],
+  "B_minimum_support_by_a_0_1_2_3": [
+    13,
+    13,
+    12,
+    13
+  ],
+  "input_sha256": {
+    "proofs/one_triple_six_doubles.md": "de499581b70dad27fc915420f0627b71ba006e2fc83678773d7668f4efc910c3",
+    "evidence/verify_single_extensions_audited_snapshot.md": "de499581b70dad27fc915420f0627b71ba006e2fc83678773d7668f4efc910c3",
+    "evidence/verify_single_extensions_fresh.json": "dfacbe40d05f41e78db84b85f2659e7da734ba77415105d7acbda39156b352f3",
+    "proofs/verify_dense12_fresh.md": "5941e21cb3e5c57e9eabde99e16516cd22500a800cf8fa6f8bd34629c5de4a75",
+    "evidence/verify_dense12_fresh.json": "3148687f783c3e6b98bbea8f97acceb0534d3a3fddb3053af3223cc61499dbe2",
+    "proofs/hyperplane_dense12.md": "3bd7e246c77a212ebe353b26b99c866fe8c66c2595b89ba68047e1d9dd5d1f22",
+    "evidence/dense12_audited_snapshot.md": "64e56bea49d48e4e4f0054c188dc700da5b48865c358d346deec9274ae50b7fb",
+    "evidence/atom_127_classification.json": "98bf474d59336b70a1b797672ae3b507d7df2dcc1c1d2bd3c59b285440be5ef1",
+    "proofs/certified_reduction.md": "83c2666de5277dc60ed1e41ab59bd517b58b54efcf34e04a5777a8f12d66fdb1"
+  },
+  "binder_sha256": "cf3090e2ed2abf96cf138e615c83a6361e4f9599900566932a6007fbdef90eb9"
+}

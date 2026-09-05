@@ -1,0 +1,16 @@
+{
+  "status": "CORRECT",
+  "scope": "conditional on the frozen star system; excludes d=2 and star-M=1 only",
+  "frozen_inputs_sha256": {
+    "proofs/root_continue_star_d2.md": "d0b68aec99ccf1a98e82615b8c82ed13bb8382633ee0436caf29480c7b056ea7",
+    "scripts/root_continue_star_d2.py": "caee1318af07e657db47ba1fa91c87d35a78d2803468c5e47e2f232d05bf01f7",
+    "evidence/root_continue_star_d2.json": "2cd26a16f767815b540be55f678833e1bcafac4e0b87e5c23a79a393d7955fe6",
+    "formal/StarD2ScalarCertificate.lean": "552b9515aca60855de078c76fb74b78c9c51e6b2fc542d1310ea0a0e0ae0374c"
+  },
+  "new_evidence_sha256": {
+    "evidence/verify_root_continue_star_d2_fresh.py": "122907a81f1ca4016e28565ad671376bbe64544a5ed23288b823c362c901d7f8",
+    "evidence/verify_root_continue_star_d2_fresh.json": "6252bd0e98a10c69fec196e13d30d63dd40a9dae7e1839d03c213c59efed739f",
+    "evidence/verify_root_continue_star_d2_fresh_lean.log": "81424aa3a347a5c013d77f1045b5ea7b2222751ca25d7fc14672d5d82883b26a",
+    "proofs/verify_root_continue_star_d2.md": "58bb9a32957d9c7ebebf56787d333232c1092fa1cae951868fa965b8829b2968"
+  }
+}

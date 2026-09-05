@@ -1,0 +1,21 @@
+{
+  "run_dir": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack",
+  "mode": "research",
+  "ok": true,
+  "frozen_versions": [
+    "frozen_theorem_v1.md",
+    "frozen_theorem_v2.md"
+  ],
+  "proof_count": 28,
+  "verification_count": 9,
+  "verification_statuses": {
+    "correct": 8,
+    "critical_gaps": 0,
+    "other": 1
+  },
+  "errors": [],
+  "warnings": [
+    "unrecognized verifier status: lean.md"
+  ],
+  "note": "Structure only; mathematical correctness, semantic fidelity, literature status, and novelty are not checked."
+}

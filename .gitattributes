@@ -1,0 +1,15 @@
+# Keep repository text files stable across Windows and Unix checkouts.
+* text=auto eol=lf
+
+# Preserve exact bytes for user-provided and candidate-source originals.
+source-material/user-provided/** -text
+research/2026-09-04_zhao_exact/sources/** -text
+research/2026-09-04_zhao_response/sources/** -text
+research/2026-09-04_zhao_audit/*.pdf -text
+research/2026-09-04_zhao_audit/*.png -text
+research/2026-09-04_zhao_audit/luo.txt -text
+research/2026-09-04_zhao_audit/schmid_zhuang.txt -text
+research/2026-09-04_zhao_audit/sidorenko.txt -text
+research/2026-09-04_zhao_audit/zhao-original.txt -text
+research/2026-09-04_zhao_audit/note.txt -text
+research/2026-09-04_zhao_response/*.png -text

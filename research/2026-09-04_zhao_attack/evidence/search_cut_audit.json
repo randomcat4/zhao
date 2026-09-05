@@ -1,0 +1,16 @@
+[
+  {
+    "cuts_file": "search_sat_affine20_17.cuts.jsonl",
+    "count": 68994,
+    "lengths": {
+      "5": 5954,
+      "10": 63040
+    },
+    "all_nonempty_zero_sums": true,
+    "all_within_cap_and_forbidden_length": true,
+    "all_distinct": true,
+    "sha256": "30f6855b01f586bbea49684ec0b5566c39514d6f761ec1328bf071ea9b7465b1",
+    "solver_status": "INCOMPLETE",
+    "solver_reason": "canceled"
+  }
+]

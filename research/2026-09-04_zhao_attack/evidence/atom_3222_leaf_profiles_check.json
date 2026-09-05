@@ -1,0 +1,28 @@
+{
+  "status": "ALL_LEAF_PROFILES_REBUILT_AND_MATCHED",
+  "mode": "3222",
+  "cutoff": 13,
+  "root_count": 106,
+  "leaf_count": 428,
+  "leaf_denominator_matches_original_tree": true,
+  "safe_single_addition_count_distribution": {
+    "0": 428
+  },
+  "maximum_distance_distribution": {
+    "8": 141,
+    "9": 189,
+    "10": 98
+  },
+  "coverage_distribution": {
+    "625": 428
+  },
+  "safe_additions_already_in_support_count_distribution": {
+    "0": 428
+  },
+  "seconds": 0.046999999962281436,
+  "leaf_source": "math\\2026-09-04_zhao_attack\\evidence\\atom_3222_leaf_profiles.jsonl",
+  "leaf_source_sha256": "57947c21542c4e4bd0d970d4d342b21ac90093ad4e13b17fe8cb0ddc2a952420",
+  "tree_source": "math\\2026-09-04_zhao_attack\\evidence\\atom_3222_m13_blocks.jsonl",
+  "tree_source_sha256": "174c5e1e8cb2e3197fec55639bf8dea480f32aca06b7beb62e9b0c9829554e9d",
+  "script_sha256": "3b321279fb24dc33bc9f79f8f3ea7f0f287f0383529f61e38d27bae89cbad5e5"
+}

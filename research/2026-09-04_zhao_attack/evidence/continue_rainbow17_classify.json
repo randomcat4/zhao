@@ -1,0 +1,7295 @@
+{
+  "status": "LOCAL_SIX_EDGE_LEMMA_DISPROVED",
+  "scope": "Proper 3-colour graphs, two disjoint edges per colour, no rainbow 3-matching; F5 linear consequences",
+  "fixed_red_green_matchings": 35,
+  "blue_augmentations_considered": 4741,
+  "raw_no_rainbow_augmentations": 1188,
+  "color_preserving_isomorphism_types": 92,
+  "certificate_kind_histogram": {
+    "forced_vertex_equality": 27,
+    "U_zero_subset": 12,
+    "direct_short_zero": 18
+  },
+  "records": [
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        0,
+        3,
+        1,
+        2
+      ],
+      "vertex_count": 4,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          1
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        0,
+        3,
+        1,
+        4
+      ],
+      "vertex_count": 5,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        0,
+        3,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        0,
+        4,
+        1,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        0,
+        4,
+        2,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        0,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        0,
+        4,
+        5,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        3,
+        1,
+        2
+      ],
+      "vertex_count": 5,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          2
+        ],
+        "relation_coefficients": [
+          3,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        3,
+        1,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "relation_coefficients": [
+          3,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        3,
+        2,
+        4
+      ],
+      "vertex_count": 5,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "relation_coefficients": [
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        3,
+        2,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          4,
+          5
+        ],
+        "colors": [
+          1
+        ],
+        "length": 4,
+        "relation_coefficients": [
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        3,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        4,
+        1,
+        2
+      ],
+      "vertex_count": 5,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          1
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        4,
+        1,
+        3
+      ],
+      "vertex_count": 5,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "relation_coefficients": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        4,
+        1,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          3,
+          5
+        ],
+        "colors": [
+          0
+        ],
+        "length": 4,
+        "relation_coefficients": [
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        4,
+        2,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "relation_coefficients": [
+          4,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "vertex_count": 5,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          2,
+          4,
+          5
+        ],
+        "colors": [
+          2
+        ],
+        "length": 4,
+        "relation_coefficients": [
+          1,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        2,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          1,
+          3,
+          5
+        ],
+        "colors": [
+          2
+        ],
+        "length": 4,
+        "relation_coefficients": [
+          4,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        3,
+        2,
+        4
+      ],
+      "vertex_count": 5,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          4,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        3,
+        2,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "colors": [
+          0,
+          1,
+          2
+        ],
+        "length": 7,
+        "relation_coefficients": [
+          3,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        3,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "colors": [
+          0,
+          1
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          3,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        2,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "colors": [
+          0,
+          1,
+          2
+        ],
+        "length": 7,
+        "relation_coefficients": [
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        3,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        2,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "colors": [
+          0,
+          1
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          0,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        2,
+        5,
+        3,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        2,
+        5,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        2,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        3,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        3,
+        1,
+        2
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          2
+        ],
+        "relation_coefficients": [
+          3,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        3,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        3,
+        2,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          1,
+          2,
+          5
+        ],
+        "colors": [
+          1
+        ],
+        "length": 4,
+        "relation_coefficients": [
+          1,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        3,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        4,
+        1,
+        3
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "colors": [
+          0,
+          2
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          3,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        4,
+        1,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "colors": [
+          1,
+          2
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          4,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        4,
+        2,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          5
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "relation_coefficients": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        4,
+        5,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        1,
+        3,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "colors": [
+          0,
+          1
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          3,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        1,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          4
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        1,
+        4,
+        5,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        4,
+        6,
+        5,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        2,
+        1,
+        3
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        2,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          3,
+          5
+        ],
+        "colors": [
+          0
+        ],
+        "length": 4,
+        "relation_coefficients": [
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        2,
+        3,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "colors": [
+          0,
+          2
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          1,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        2,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "relation_coefficients": [
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        2,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        2,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "colors": [
+          1,
+          2
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          4,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        5,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          1
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        5,
+        2,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        2,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          2
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        2,
+        4,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        2,
+        6,
+        3,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        2,
+        6,
+        4,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "colors": [
+          0,
+          1
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        2,
+        1,
+        3
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        2,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "relation_coefficients": [
+          4,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        2,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          5
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        3,
+        1,
+        2
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          2
+        ],
+        "relation_coefficients": [
+          3,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        3,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        3,
+        2,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "colors": [
+          0,
+          1,
+          2
+        ],
+        "length": 7,
+        "relation_coefficients": [
+          1,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        3,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        3,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "relation_coefficients": [
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        5,
+        1,
+        3
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "U_zero_subset",
+        "vertices": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "relation_coefficients": [
+          3,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        5,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        5,
+        2,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          2
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        1,
+        3
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        1,
+        4
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        2,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            7
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        3,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        4,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        1,
+        3,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          1,
+          4
+        ],
+        "relation_coefficients": [
+          3,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        1,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          2
+        ],
+        "relation_coefficients": [
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        2,
+        1,
+        3
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        2,
+        3,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        2,
+        4,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        5,
+        1,
+        2
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          6
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        1,
+        2,
+        3,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        1,
+        2,
+        4,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        2,
+        5,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "direct_short_zero",
+        "vertices": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "colors": [
+          0,
+          2
+        ],
+        "length": 8,
+        "relation_coefficients": [
+          1,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        2,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0,
+        2,
+        1,
+        3
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          0,
+          3
+        ],
+        "relation_coefficients": [
+          3,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0,
+        2,
+        4,
+        6
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        4,
+        6,
+        5,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      ],
+      "certificate": {
+        "kind": "forced_vertex_equality",
+        "vertices": [
+          4,
+          7
+        ],
+        "relation_coefficients": [
+          0,
+          3,
+          3
+        ]
+      }
+    }
+  ],
+  "uncovered": [
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        3,
+        4,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        4,
+        3,
+        5
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        1,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        2,
+        5,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        2,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1,
+        4,
+        3,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        3,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        3,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        0,
+        4,
+        5,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        1,
+        4,
+        5,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4,
+        5,
+        4,
+        6,
+        5,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        2,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        5,
+        2,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        0,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        2,
+        4,
+        3,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        1,
+        5,
+        2,
+        6,
+        3,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        3,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        3,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        5,
+        1,
+        4
+      ],
+      "vertex_count": 6,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        1,
+        3
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        1,
+        4
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        2,
+        7
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            7
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        3,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        2,
+        5,
+        0,
+        6,
+        4,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        2,
+        3,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        2,
+        4,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        5,
+        1,
+        2
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        0,
+        5,
+        2,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        1,
+        2,
+        3,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        1,
+        2,
+        4,
+        5
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        4,
+        5,
+        6,
+        2,
+        5,
+        4,
+        6
+      ],
+      "vertex_count": 7,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    },
+    {
+      "canonical_slot_partition": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0,
+        2,
+        4,
+        6
+      ],
+      "vertex_count": 8,
+      "edges_by_color": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "certificate": null
+    }
+  ],
+  "explicit_counterexample": {
+    "edges_by_color": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    ],
+    "U_vectors": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        4,
+        0
+      ],
+      [
+        4,
+        0,
+        2,
+        0
+      ]
+    ],
+    "target_vectors": [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ]
+    ],
+    "target_pair_lists": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    ],
+    "no_rainbow_3_matching": true,
+    "all_511_nonempty_subsets_of_U_and_targets_checked": true,
+    "nonempty_zero_subsets": [],
+    "atom_replacement_identities_with_delete_minus_add_at_least_3": [],
+    "interpretation": "Counterexample to the pure six-edge local lemma; no claim of extension to a 17-atom"
+  },
+  "script_sha256_before_output": "a9a19c9b58174a69843c3e211b108a0d69d146b52e3095af505a59bbf6ea5e2a"
+}

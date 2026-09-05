@@ -1,0 +1,285 @@
+{
+  "status": "ALL_NINE_FINITE_PROFILE_AND_EQUIVALENCE_CERTIFICATES_VERIFIED",
+  "core_count": 9,
+  "coefficient_tuples_checked": 6561,
+  "target_representations_checked": 1125,
+  "reference_support_h": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      2,
+      1
+    ],
+    [
+      3,
+      2,
+      2
+    ]
+  ],
+  "checks": [
+    {
+      "blocks": [
+        345,
+        455,
+        505
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "determinant": 2,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        215,
+        225,
+        565
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "determinant": 1,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        160,
+        185,
+        505
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "determinant": 1,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        45,
+        180,
+        305
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "determinant": 1,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        45,
+        220,
+        345
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "determinant": 1,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        45,
+        415,
+        485
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "determinant": 2,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        30,
+        190,
+        315
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "determinant": 1,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        30,
+        210,
+        335
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "determinant": 1,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    },
+    {
+      "blocks": [
+        30,
+        420,
+        480
+      ],
+      "matrix_to_reference": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "determinant": 2,
+      "all_729_coefficients_checked": true,
+      "all_125_representations_validated": true
+    }
+  ],
+  "source_sha256": "98bf474d59336b70a1b797672ae3b507d7df2dcc1c1d2bd3c59b285440be5ef1",
+  "script_sha256": "31f346563a9f8f6b2806174a7bb642024bc8f63d34983a6f536efbc27524923b"
+}

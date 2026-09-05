@@ -1,0 +1,28 @@
+# Local dependencies and caches
+local_deps/
+**/local_deps/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build products
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~

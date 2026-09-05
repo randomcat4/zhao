@@ -1,0 +1,6 @@
+Command: & .\math\2026-09-04_zhao_exact\proofs\structural_support6.ps1
+Date: 2026-09-04
+Exit code: 0
+Output:
+matrices=191890 patterns20=120 patterns21=56 checks20=23026800 checks21=10745840 bad20=0 bad21=0
+Scope: p=5 only, rank-four support size six, with full enumerations of normalized matrices, multiplicities, and all nonzero kernel vectors. No random sampling. Not a full verification of frozen_theorem_v1.md.

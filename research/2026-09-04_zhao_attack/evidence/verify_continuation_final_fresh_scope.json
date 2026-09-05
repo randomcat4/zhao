@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "python": "C:\\Users\\UIO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "python_version": "3.12.14",
+  "elapsed_seconds": 0.0005083999712951481,
+  "timed_out": false,
+  "frozen_summary_sha256": {
+    "answer_continue.md": "1c4d5978cddbffa828521a0745f21e18a6f6b7fdeaebb92d1e43139c92d0aff7",
+    "continuation_scope_draft.md": "22b7e19c9508be995cbeb1f462b4520529fa7a343f2a1e3794a5dc1fcdded154"
+  },
+  "d3_erratum_sha256": "fc67a6c9e4c0f4362e27e623504dced5a5a31b002bf07ab9ea0358aceb496a84",
+  "d3_fixed_evidence_sha256": "dbba4a67cc8ba3eb83a7ea7a635e1cb26ce77dd7ab00e2bb7f369ec969c3d53f",
+  "checks": {
+    "endpoints_still_incomplete": true,
+    "A_exact_endpoint": true,
+    "B_exact_endpoint": true,
+    "numeric_interval_19_22": true,
+    "K_three_values": true,
+    "K_case_split": true,
+    "multiplicity_row_a0": true,
+    "multiplicity_row_a1": true,
+    "multiplicity_row_a2": true,
+    "multiplicity_row_a3": true,
+    "B_support_13_16": true,
+    "B_excess_4_7": true,
+    "corrected_d3_VA": true,
+    "corrected_d3_VB": true,
+    "old_d3_table_withdrawn": true,
+    "only_d4_M0_atom16_branch": true,
+    "rainbow_scope": true,
+    "scan_not_endpoint_exhaustion": true,
+    "scope_no_full_claim": true,
+    "scope_support_bound": true,
+    "table_is_necessary_only": true,
+    "scope_rainbow_boundary": true,
+    "no_full_Lean_claim": true
+  },
+  "manual_scope_verdict": {
+    "multiplicity_table_is_necessary_only": true,
+    "A_truth_status_changed": false,
+    "B_truth_status_changed": false,
+    "numeric_interval_changed": false,
+    "K_value_selected": false,
+    "remaining_global_gap": "d=4,M=0 / 17-atom global branch and other complete endpoint configurations"
+  }
+}

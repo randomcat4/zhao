@@ -1,0 +1,20 @@
+COMMAND: ["C:/Users/UIO/.elan/bin/lean.exe", "+leanprover/lean4:v4.30.0", "--version"]
+EXIT_CODE: 0
+STDOUT:
+Lean (version 4.30.0, x86_64-w64-windows-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+STDERR:
+
+
+COMMAND: ["C:/Users/UIO/.elan/bin/lake.exe", "+leanprover/lean4:v4.30.0", "--version"]
+EXIT_CODE: 0
+STDOUT:
+Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)
+STDERR:
+
+
+COMMAND: ["C:/Users/UIO/.elan/bin/lean.exe", "+leanprover/lean4:v4.30.0", "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\evidence\\verify_combined_LowerBound18_snapshot.lean"]
+EXIT_CODE: 0
+STDOUT:
+'noShortZero18' does not depend on any axioms
+STDERR:
+

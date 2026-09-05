@@ -1,0 +1,1433 @@
+                  ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS :
+                                  A SURVEY
+
+                                  WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+         Abstract. We give an overview of zero-sum theory in finite abelian groups, a subfield of additive group
+         theory and combinatorial number theory. In doing so we concentrate on the algebraic part of the theory
+         and on the development since the appearance of the survey article by Y. Caro in 1996.
+
+
+
+
+                                                 1. Introduction
+
+   Let G be an additive finite abelian group. In combinatorial number theory a finite sequence S =
+(g1 , . . . , gl ) = g1 · . . . · gl of elements of G, where the repetition of elements is allowed and their order is
+disregarded, is simply called a sequence over G, and S is called a zero-sum sequence if g1 + . . . + gl = 0.
+A typical direct zero-sum problem studies conditions which ensure that given sequences have non-empty
+zero-sum subsequences with prescribed properties. The associated inverse zero-sum problem studies the
+structure of extremal sequences which have no such zero-sum subsequences.
+   These investigations were initiated by a result of P. Erdős, A. Ginzburg and A. Ziv, who proved that
+2n − 1 is the smallest integer l ∈ N such that every sequence S over a cyclic group of order n has a
+zero-sum subsequence of length n (see [47]). Some years later, P.C. Baayen, P. Erdős and H. Davenport
+(see [137], [45] and [142]) posed the problem to determine the smallest integer l ∈ N such that every
+sequence S over G of length |S| ≥ l has a zero-sum subsequence. In subsequent literature that integer l
+has been called the Davenport constant of G. It is denoted by D(G), and its precise value - in terms of
+the group invariants of G - is still unknown in general.
+   These problems were the starting points for much research, as it turned out that questions of this type
+occur naturally in various branches of combinatorics, number theory and geometry. Conversely, zero-sum
+problems have greatly influenced the development of various subfields of these areas (among others, zero-
+sum Ramsey theory was initiated by the works of A. Bialostocki and P. Dierker). So there are intrinsic
+connections with graph theory, Ramsey theory and geometry (see [118], [4], [12, 13] for some classical
+papers and [11], [10], [104], [14], [107], [40], [122] for some recent papers). The following observation
+goes back to H. Davenport : If R is the ring of integers of some algebraic number field with ideal class
+group (isomorphic to) G, then D(G) is the maximal number of prime ideals (counted with or without
+multiplicity) which occur in the prime ideal decomposition of aR for irreducible elements a ∈ R. Indeed,
+in the theory of non-unique factorizations it has turned out that the monoid of all zero-sum sequences
+over G closely reflects the arithmetic of a Krull monoid which has class group G and every class contains
+a prime (see [96, Corollary 3.4.12]). On the other hand, it was factorization theory which promoted the
+investigation of inverse zero-sum problems, which appear naturally in that area. Apart from all that,
+zero-sum problems occur in various types of number theoretical topics (as Carmicheal numbers [1], Artin’s
+conjecture on additive forms [19] or permutation matrices [134]).
+   Zero-sum problems are tackled with a huge variety of methods. First of all we mention methods from
+additive group theory including all types of addition theorems (see [135, 136], [141], [96], [111], [106, 108],
+
+   2000 Mathematics Subject Classification. 11B50, 11P70, 11B75.
+   Key words and phrases. zero-sum sequences, finite abelian groups.
+                                                           1
+2                                    WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+[132], [123], [9]). Furthermore, group algebras ([74]), results from the covering area ([163, 131], [80]), from
+linear algebra ([32, 31]) and polynomial methods ([2, 3]) play crucial roles. Moreover, in the meantime
+zero-sum theory has already developed its own methods and a wealth of results which promote its further
+development.
+   The first survey article on zero-sum theory, written by Y. Caro, appeared ten years ago in 1996 (see
+[23] and [24]). The aim of the present article is to sketch the development in the last decade and to
+give an overview over the present state of the area under the following two restrictions. First, we do
+not outline the relationships to other areas, as graph theory, Ramsey theory or the theory of non-unique
+factorizations, but we restrict to what is sometimes called the algebraic part of zero-sum theory. Second,
+although since the 1960s zero-sum problems were studied also in the setting of non-abelian groups (see
+[36], [145, 149, 146, 147], [169], [63], [39], [171]) but we restrict to the case of abelian groups. Since Y.
+Caro’s article has an extended bibliography on the literature until 1994, we also refer to his bibliography
+and concentrate ourselves on papers having appeared since that time. In Section 2 we fix our notations
+and terminology, and we give the definitions of the key invariants. Then in the subsequent sections we
+present the state of knowledge on these invariants and on the associated inverse problems.
+
+          Throughout this article, let G be an additive finite abelian group and let G• = G \ {0}
+
+
+                                                  2. Preliminaries
+
+   Let N denote the set of positive integers, P ⊂ N the set of all prime numbers and let N0 = N ∪ {0}.
+For integers a, b ∈ Z we set [a, b] = {x ∈ Z | a ≤ x ≤ b}, and for c ∈ N let N≥c = N \ [1, c − 1]. For a real
+number x, we denote by bxc the largest integer that is less than or equal to x, and by dxe the smallest
+integer that is greater than or equal to x.
+   Throughout, all abelian groups will be written additively. For n ∈ N, let Cn denote a cyclic group
+with n elements, and let nG = {ng | g ∈ G}. By the Fundamental Theorem of Finite Abelian Groups we
+have
+                               G∼= Cn1 ⊕ . . . ⊕ Cnr ∼
+                                                     = Cq1 ⊕ . . . ⊕ Cqs ,
+where r = r(G) ∈ N0 is the rank of G, s = r∗ (G) ∈ N0 is the total rank of G, n1 , . . . , nr ∈ N are integers
+with 1 < n1 | . . . | nr and q1 , . . . qs are prime powers. Moreover, n1 , . . . , nr , q1 , . . . , qs are uniquely
+determined by G, and we set
+                                          r                                s
+                                          X                                X qi − 1
+                               d∗ (G) =         (ni − 1)    and k∗ (G) =              .
+                                          i=1                              i=1
+                                                                                 qi
+Clearly, nr = exp(G) is the exponent of G, and if |G| = 1, then r(G) = d∗ (G) = k∗ (G) = 0 and
+exp(G) = 1.
+  Let s ∈ N. An s-tuple (e1 , . . . , es ) of elements of G is said to be independent if ei 6= 0 for all i ∈ [1, s]
+and, for every s-tuple (m1 , . . . , ms ) ∈ Zs ,
+                            s
+                            X
+                                   mi ei = 0      implies      m1 e1 = . . . = ms es = 0 .
+                             i=1
+
+An s-tuple (e1 , . . . , es ) of elements of G is called a basis if it is independent and G = he1 i ⊕ . . . ⊕ hes i.
+   We write sequences multiplicatively and consider them as elements of the free abelian monoid over G,
+a point of view which was put forward by the requirements of the theory of non-unique factorizations.
+Thus we have at our disposal all notions from elementary divisibility theory which provides a suitable
+framework when dealing with subsequences of given sequences, and we may apply algebraic concepts in
+a natural way.
+                           ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                        3
+
+
+   Let F(G) be the free abelian monoid, multiplicatively written, with basis G. The elements of F(G)
+are called sequences over G. We write sequences S ∈ F(G) in the form
+                              Y
+                         S=      g vg (S) , with vg (S) ∈ N0 for all g ∈ G .
+                                   g∈G
+
+We call vg (S) the multiplicity of g in S, and we say that S contains g, if vg (S) > 0. S is called
+squarefree (in F(G)) if vg (S) ≤ 1 for all g ∈ G. The unit element 1 ∈ F(G) is called the empty sequence .
+A sequence S1 is called a subsequence of S if S1 | S in F(G) (equivalently, vg (S1 ) ≤ vg (S) for all
+g ∈ G), and it is called a proper subsequence of S if it is a subsequence with 1 6= S1 6= S. If a sequence
+S ∈ F(G) is written in the form S = g1 · . . . · gl , we tacitly assume that l ∈ N0 and g1 , . . . , gl ∈ G.
+   For a sequence                                         Y
+                                 S = g1 · . . . · gl =        g vg (S) ∈ F(G) ,
+                                                                     g∈G
+we call                                        X
+                                  |S| = l =           vg (S) ∈ N0          the length of S ,
+                                               g∈G
+
+            h(S) = max{vg (S) | g ∈ G} ∈ [0, |S|]                   the maximum of the multiplicities of S ,
+                                      l
+                                      X      1
+                             k(S) =                ∈ Q≥0              the cross number of S ,
+                                      i=1
+                                          ord(gi )
+                           supp(S) = {g ∈ G | vg (S) > 0} ⊂ G                  the support of S ,
+                                        l
+                                        X             X
+                               σ(S) =          gi =         vg (S)g ∈ G        the sum of S ,
+                                         i=1          g∈G
+                  nX                                        o
+       Σk (S) =           gi I ⊂ [1, l] with |I| = k            the set of k-term subsums of S , for all k ∈ N ,
+                    i∈I
+                                                [                                   [
+                                Σ≤k (S) =                Σj (S) ,       Σ≥k (S) =         Σj (S) ,
+                                               j∈[1,k]                              j≥k
+
+and
+                                 Σ(S) = Σ≥1 (S) the set of (all) subsums of S .
+The sequence S is called
+    • zero-sumfree if 0 ∈/ Σ(S),
+    • a zero-sum sequence if σ(S) = 0,
+    • a minimal zero-sum sequence if it is a zero-sum sequence and every proper subsequence is zero-
+      sumfree,
+    • a short zero-sum sequence if it is a zero-sum sequence of length |S| ∈ [1, exp(G)].
+   We denote by B(G) the set of all zero-sum sequences and by A(G) the set of all minimal zero-sum
+sequences. Then B(G) ⊂ F(G) is a submonoid (also called the block monoid over G); it is a Krull
+monoid and A(G) is the set of atoms of B(G) (see [96, Proposition 2.5.6]). For any map of abelian groups
+ϕ : G → G0 , there exists a unique homomorphism ϕ : F(G) → F(G0 ) with ϕ | G = ϕ. Usually we simply
+write ϕ instead of ϕ. Explicitly, ϕ : F(G) → F(G0 ) is given by ϕ(g1 ·. . .·gl ) = ϕ(g1 )·. . .·ϕ(g  l ) for all l ∈ N00
+and g1 , . . . , gl ∈ G. . If S ∈ F(G), then |ϕ(S)| = |S| and supp          ϕ(S)     =  ϕ   supp(S) . If ϕ : G → G
+is even a homomorphism, then σ ϕ(S) = ϕ σ(S) , Σ ϕ(S) = ϕ Σ(S) and ϕ B(G) ⊂ B(G0 ). In
+                                                                                       
+
+particular, we use the inversion (g 7→ −g) and the translation (g 7→ g0 + g), and for S = g1 · . . . · gl ∈ F(G)
+we set
+                     −S = (−g1 ) · . . . · (−gl ) and g0 + S = (g0 + g1 ) · . . . · (g0 + gl ) ∈ F(G) .
+4                                  WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+If g ∈ G is a non-zero element and
+                  S = (n1 g) · . . . · (nl g),   where l ∈ N0   and n1 , . . . , nl ∈ [1, ord(g)] ,
+then
+                                                   n1 + . . . + n l
+                                                 kSkg =
+                                                      ord(g)
+is called the g-norm of S. If S is a zero-sum sequence for which {0} = 6 hsupp(S)i ⊂ G is a finite cyclic
+group, then
+                          ind(S) = min{kSkg | g ∈ G with hsupp(S)i = hgi} ∈ N0
+is called the index of S. We set ind(1) = 0, and if supp(S) = {0}, then we set ind(S) = 1.
+   Next we give the definition of the zero-sum invariants which we are going to discuss in the subsequent
+sections. We concentrate on invariants dealing with general sequences, as introduced in Definition 2.1.
+However, by an often used technique, problems on general sequences are reduced to problems on squarefree
+sequences, and thus we briefly deal also with invariants on squarefree sequences (or in other words, with
+sets), as introduced in Definition 2.2.
+Definition 2.1. Let exp(G) = n and k, m ∈ N with k - exp(G). We denote by
+    • D(G) the smallest integer l ∈ N such that every sequence S ∈ F(G) of length |S| ≥ l has a
+      non-empty zero-sum subsequence. The invariant D(G) is called the Davenport constant of G.
+    • d(G) the maximal length of a zero-sumfree sequence over G.
+    • η(G) the smallest integer l ∈ N such that every sequence S ∈ F(G) of length |S| ≥ l has a short
+      zero-sum subsequence.
+    • smn (G) the smallest integer l ∈ N such that every sequence S ∈ F(G) of length |S| ≥ l has a
+      zero-sum subsequence T of length |T | = mn. In particular, we set s(G) = sn (G).
+    • snN (G) the smallest integer l ∈ N such that every sequence S ∈ F(G) of length |S| ≥ l has a
+      non-empty zero-sum subsequence T of length |T | ≡ 0 mod n.
+    • Ek (G) the smallest integer l ∈ N such that every sequence S ∈ F(G) of length |S| ≥ l has a
+      zero-sum subsequence T with k - |T |.
+    • ν(G) the smallest integer l ∈ N0 with the following property :
+           For every zero-sumfree sequence S ∈ F(G) of length |S| ≥ l there exist a subgroup H ⊂ G
+           and an element a ∈ G \ H such that G• \ Σ(S) ⊂ a + H.
+    A simple argument (see [96, Section 5.1] for details) shows that
+      d(G) = max |S| S ∈ F(G) , Σ(S) = G•
+                                                                            
+                                                    and 1 + d(G) = D(G) = max |S| S ∈ A(G) .
+
+Definition 2.2. We denote by
+    • Ol(G) the smallest integer l ∈ N such that every squarefree sequence S ∈ F(G) of length |S| ≥ l
+      has a non-empty zero-sum subsequence. The invariant Ol(G) is called the Olson constant of G.
+    • ol(G) the maximal length of a squarefree zero-sumfree sequence S ∈ F(G).
+    • cr(G) the smallest integer l ∈ N such that every squarefree sequence S ∈ F(G• ) of length |S| ≥ l
+      satisfies Σ(S) = G. The invariant cr(G) is called the critical number of G.
+    • g(G) the smallest integer l ∈ N such that every squarefree sequence S ∈ F(G) of length |S| ≥ l
+      has a zero-sum subsequence T of length |T | = exp(G).
+  We use the convention that min(∅) = sup(∅) = 0. For a subset G0 ⊂ G and some integer l ∈ N, R.B.
+Eggleton and P. Erdős (see [41]) introduced the f-invariant
+                             
+              f(G0 , l) = min |Σ(S)| S ∈ F(G0 ), S squarefree and zero-sumfree, |S| = l} .
+    The basic relationships between these invariants are summarized in Lemma 10.1.
+                        ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                  5
+
+
+                                    3. On the Davenport Constant
+
+   Let G = Cn1 ⊕ . . . ⊕ Cnr with 1 < n1 | . . . | nr , r = r(G) and let (e1 , . . . , er ) be a basis of G with
+ord(ei ) = ni for all i ∈ [1, r]. Then the sequence
+                                                  r
+                                                  Y
+                                           S =          eni i −1 ∈ F(G)
+                                                  i=1
+
+is zero-sumfree whence we have the crucial inequality
+                                                 d(G) ≥ d∗ (G) .
+In the 1960s, D. Kruyswijk and J.E. Olson proved independently the following result (see [5, 44, 142, 143]
+and [96, Theorems 5.5.9 and 5.8.3]).
+
+Theorem 3.1. If G is a p-group or r(G) ≤ 2, then d(G) = d∗ (G).
+
+   We present two types of results implying that d(G) = d∗ (G). The first one is due to P. van Emde
+Boas et. al. (see [44, Theorems 3.9, 4.2], where more results of this flavor may be found) and the second
+is due to S.T. Chapman et. al. (see [25], and also the various conjectures in that paper).
+
+Theorem 3.2. Let G = C2n1 ⊕ C2n2 ⊕ C2n3 and H = Cn1 ⊕ Cn2 ⊕ Cn3 with 1 ≤ n1 | n2 | n3 . If
+ν(H) = d∗ (H) − 1, then d(G) = d∗ (G).
+
+Theorem 3.3. Let G = H ⊕ Ckm where k, m ∈ N and H ⊂ G is a subgroup with exp(H)|m. If
+d(H ⊕ Cm ) = d(H) + m − 1 and η(H ⊕ Cm ) ≤ d(H) + 2m, then d(G) = d(H) + km − 1. In particular
+(use Theorem 3.1 and [96, Proposition 5.7.7]), if m is a prime power and d(H) < m, then d(G) = d∗ (G).
+
+   These and similar results give rise to long lists of explicit groups satisfying d(G) = d∗ (G) (see [6],
+[44], [46], [35], [25]). The first example of a group G with d(G) > d∗ (G) is due to P.C. Baayen. In [44,
+Theorem 8.1] it is shown that
+                          d(G) > d∗ (G)    for    G = C24k ⊕ C4k+2        with k ∈ N ,
+and more examples are given in [46]. Let H ⊂ G be a subgroup. Then d(H) + d(G/H) ≤ d(G), and if G
+is as above, I ⊂ [1, r] and
+                            M
+                       H=     Cni , then d(H) > d∗ (H) implies d(G) > d∗ (G)
+                            i∈I
+
+(see [96, Proposition 5.1.11]). This shows that the interesting groups with d(G) > d∗ (G) are those with
+small rank. A. Geroldinger and R. Schneider showed that there are infinitely many G with r(G) = 4 such
+that d(G) > d∗ (G). The following result may be found in [98] and [77, Theorem 3.3].
+
+Theorem 3.4. We have d(G) > d∗ (G) in each of the following cases :
+  1. G = Cm ⊕ Cn2 ⊕ C2n where m, n ∈ N≥3 are odd and m | n.
+                  5−i
+    2. G = C2i ⊕ C2n  where n ∈ N≥3 is odd and i ∈ [2, 4].
+
+  Let G = C2r ⊕ Cn where r ∈ N and n ∈ N≥3 is odd. Then d(G) = d∗ (G) if and only if r ≤ 4 (see [98,
+Corollary 2]). For some small r ≥ 5 and n ≥ 3 the precise value of d(G) was recently determined in [49].
+The growth of d(G) − d∗ (G) is studied in [139].
+  We make the following conjecture.
+
+Conjecture 3.5. If G = Cnr , where n, r ∈ N≥3 , or r(G) = 3, then d(G) = d∗ (G).
+6                                 WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+   For groups of rank three Conjecture 3.5 goes back to P. van Emde Boas (see [46]) and is supported by
+[69]. For groups of the form G = Cnr it is supported by [80, Theorem 6.6].
+   The next result provides upper bounds on D(G). The first one is due to P. van Emde Boas and D.
+Kruyswijk ([46, Theorem 7.1]) and is sharp for cyclic groups (for other approaches and related bounds
+see [8], [140]). The second bound is sharp for groups of rank 2 and with H = pG for some prime divisor
+p of exp(G) (see [96, Theorem 5.5.5 and Proposition 5.7.11]).
+Theorem 3.6. Let exp(G) = n ≥ 2 and H ⊂ G be a subgroup.
+     1. d(G) ≤ (n − 1) + n log |G|
+                                n .
+                                  
+     2. d(G) ≤ d(H) exp(G/H) + max d(G/H), η(G/H) − exp(G/H) − 1 .
+
+    We end this section with a conjecture supported by [96, Theorem 6.2.8].
+
+Conjecture 3.7. D(G) ≤ d∗ (G) + r(G).
+
+
+                      4. On the structure of long zero-sumfree sequences
+
+   Let S ∈ F(G) be a zero-sumfree sequence of length |S| = d(G). According to general philosophy in
+inverse additive number theory (see [141], [53, 54]), S should have some structure. Obviously, if G is
+cyclic of order n ≥ 2, then S = g n−1 for some g ∈ supp(S) with ord(g) = n, and if S is an elementary
+2-group of rank r, then S = e1 · . . . · er for some basis (e1 , . . . , er ) of G. Apart from these trivial cases
+very little is known up to now. The most modest questions one could ask are the following :
+     1. What is the order of elements in supp(S)?
+     2. What is the multiplicity of elements in supp(S)? What is a reasonable lower bound for h(S)?
+     3. How large is supp(S)?
+   Crucial in all investigations of zero-sumfree sequences is the following inequality of Moser-Scherk (see
+[96, Theorem 5.3.1]) : Let S ∈ F(G) be a zero-sumfree sequence.
+                             If S = S1 S2 ,    then |Σ(S)| ≥ |Σ(S1 )| + |Σ(S2 )| .
+By M. Freeze and W.W. Smith ([52, Theorem 2.5], [96, Proposition 5.3.5]) this implies that
+                                 |Σ(S)| ≥ 2|S| − h(S) ≥ |S| + |supp(S)| − 1 .
+
+    We start with the following conjecture.
+
+Conjecture 4.1. Every zero-sumfree sequence S ∈ F(G) of length |S| = d(G) has some element
+g ∈ supp(S) with ord(g) = exp(G).
+
+   The conjecture is true for cyclic groups, p-groups (see [96, Corollary 5.1.13]), groups of the form
+G = Cn ⊕ Cn (see below) and for G = C2 ⊕ C2n (see [78]). As concerns the second question, the
+philosophy is that in groups where the exponent is large in comparison with the rank, h(S) should be
+large.
+   For cyclic groups, there are the following results going back to J.D. Bovey, P. Erdős, I. Niven, W. Gao,
+A. Geroldinger and Y. ould Hamidoune (see [17], [76], [97] and [96, Theorem 5.4.5]).
+
+Theorem 4.2. Let G be cyclic of order n ≥ 3, and let S ∈ F(G) be a zero-sumfree sequence of length
+                                                n+1
+                                         |S| ≥        .
+                                                  2
+                       ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                7
+
+
+    1. For all g ∈ supp(S) we have ord(g) ≥ 3.
+    2. There exists some g ∈ supp(S) with vg (S) ≥ 2|S| − n + 1.
+    3. There exists some g ∈ supp(S) with ord(g) = n such that
+                                   n+5
+                        vg (S) ≥       if n is odd ,        and         vg (S) ≥ 3 if n is even .
+                                    6
+  In cyclic groups long zero-sumfree sequences and long minimal zero-sum sequences can be completely
+characterized (see [71]).
+
+Theorem 4.3. Let G by cyclic of order n ≥ 2 and let S ∈ F(G) a zero-sumfree sequence of length
+|S| = n − k with k ∈ [1, bn/3c] + 1]. Then there exists some g ∈ G with ord(g) = n and x1 , . . . , xk−1 ∈
+[1, n − 1] such that
+                                          k−1
+                                          Y                k−1
+                                                           X
+                             S = g n−2k+1     (xi g) and       xi ≤ 2k − 2 .
+                                            i=1                   i=1
+In particular, every minimal zero-sum sequence S ∈ A(G) of length |S| ≥ n − bn/3c has ind(S) = 1.
+
+   The index of zero-sum sequences over cyclic groups is investigated in [26, 71, 29]. In [126] (page 344
+with d = n) it is conjectured that every sequence S ∈ F(Cn ) of length |S| = n has a non-empty zero-sum
+subsequence T with ind(T ) = 1. Among others, the g-norm and the index of zero-sum sequences play a
+role in arithmetical investigations (see [96, Section 6.8]).
+   Next we discuss groups of the form G = Cn ⊕ Cn with n ≥ 2 (see [77], [166], [79], [96, Section 5.8] and
+[130]).
+
+Theorem 4.4. Let G = Cn ⊕ Cn with n ≥ 2. Then the following statements are equivalent :
+  (a) If S ∈ F(G), |S| = 3n − 3 and S has no zero-sum subsequence T of length |T | ≥ n, then there
+      exists some a ∈ G such that 0n−1 an−2 | S.
+  (b) If S ∈ F(G) is zero-sumfree and |S| = d(G), then an−2 | S for some a ∈ G.
+   (c) If S ∈ A(G) and |S| = D(G), then an−1 | S for some a ∈ G.
+  (d) If S ∈ A(G) and |S| = D(G), then there exists a basis (e1 , e2 ) of G and integers x1 , . . . , xn ∈
+      [0, n − 1] with x1 + . . . + xn ≡ 1 mod n such that
+                                                    n
+                                                    Y
+                                         S = en−1
+                                              1           (xν e1 + e2 ) .
+                                                    ν=1
+
+Moreover, if S ∈ A(G) and |S| = D(G), then ord(g) = n for every g ∈ supp(S), and if n is prime, then
+|supp(S)| ∈ [3, n].
+
+Conjecture 4.5. For every n ≥ 2 the four equivalent statements of Theorem 4.4 are satisfied.
+
+   Conjecture 4.5 has been verified for n ∈ [2, 7], and if it holds for some n ≥ 6, then it holds for 2n (see
+[79, Theorem 8.1]). We continue with a result for non-cyclic groups having large exponent (see [79]).
+
+Theorem 4.6.
+    1. Let G = Cn1 ⊕ Cn2 with 1 < n1 | n2 and n2 > n1 (n1 + 1). Let ϕ : G → G = Cn1 ⊕ Cn1 be the
+       canonical epimorphism and S ∈ A(G) of length |S| = D(G). If g k |ϕ(S) for some k > n1 and some
+       g ∈ G, then g k |S for some g ∈ ϕ−1 (g).
+8                                WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+     2. Let G = H ⊕ Cn where exp(G) = n = lm, H ⊂ G a subgroup with exp(H) | m, m ≥ 2 and
+        l ≥ 4|H| > 4(m − 2). Let ϕ : G → G = H ⊕ Cm denote the canonical epimorphism and S ∈ F(G) a
+        zero-sumfree sequence of length |S| = n. Then S has a subsequence T of length |T | ≥ (l−2|H|+1)m
+        such that the following holds : If g k |ϕ(T ) for some k > m and some g ∈ G, then g k |T for some
+        g ∈ ϕ−1 (g).
+
+   For general finite abelian groups there is the following result (see [76], [96, Theorem 5.3.6]) which plays
+a key role in the proof of Theorem 10.4.2).
+
+Theorem 4.7. Let G0 ⊂ G be a subset, k ∈ N and k ≥ 2 be such that f(G0 , k) > 0, and let S ∈ F(G0 )
+be a zero-sumfree sequence of length
+                                            |G| − k    
+                                     |S| ≥            +1 k.
+                                            f(G0 , k)
+Then there exists some g ∈ G0 such that
+                                                 |S|    |G| − k − 1
+                                     vg (S) ≥        −                 .
+                                                k − 1 (k − 1)f(G0 , k)
+   If the rank of the group is large in comparison with the exponent, there is in general no element with
+high multiplicity (see Theorem 10.4.1), but in case of elementary p-groups there is the following structural
+result (see [77, Theorem 10.3], [80, Corollary 6.3], [96, Corollary 5.6.9]).
+
+Theorem 4.8. Let G be a finite elementary p-group and S ∈ F(G) be a zero-sumfree sequence of length
+|S| = d(G). Then (g, h) is independent for any two distinct elements g, h ∈ supp(S).
+
+    We continue with the following
+
+Conjecture 4.9. Let G = Cn1 ⊕ · · · ⊕ Cnr with 1 < n1 | · · · |nr , k ∈ [1, n1 − 1] and S ∈ F(G) be a
+sequence of length |S| = k + d(G). If S has no zero-sum subsequence S 0 of length |S 0 | > k, then S = 0k T
+where T ∈ F(G) is zero-sumfree.
+
+    The following example shows that in Conjecture 4.9 the restriction k ∈ [1, n1 − 1] is essential :
+    Let T ∈ F(G) be a zero-sumfree sequence of length |T | = d(G) such that vg (S) = ord(g) − 1 for
+some g ∈ G. Then for every l ∈ N the sequence S = g lord(g) T has no zero-sum subsequence S 0 of length
+|S 0 | > lord(g).
+    Next we discuss the invariant ν(G) which was introduced by P. van Emde Boas in connection with his
+investigations of the Davenport constant for groups of rank three (see [44, page 15] and [69]). An easy
+argument (see [96, Proposition 5.1.16]) shows that
+                                         d(G) − 1 ≤ ν(G) ≤ d(G) ,
+and we make the following conjecture.
+
+Conjecture 4.10. ν(G) = d(G) − 1.
+   The following result goes back to P. van Emde Boas, W. Gao and A. Geroldinger ([44, Theorem 2.8],
+[79, Theorem 5.3], [96, Theorems 5.5.9 and 5.8.10], for more see also [69, Theorem 5.2]).
+
+Theorem 4.11. Conjecture 4.10 holds true in each of the following cases :
+  1. G is cyclic.
+  2. G is a p-group.
+  3. G = Cn ⊕ Cn satisfies Conjecture 4.5.
+                        ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                  9
+
+
+   We end this section with a result (see [81]) showing that minimal zero-sum sequences are not additively
+closed (apart from some well-defined exceptions).
+
+Theorem 4.12. Let S ∈ F(G• ) be a sequence of length |S| ≥ 4, and let S = BC with B, C ∈ F(G)
+such that |B| ≥ |C|. If σ(T ) ∈ supp(S) for all subsequences T of B with |T | = 2 and for all subsequences
+T of C with |T | = 2, then S has a proper zero-sum subsequence, apart from the following exceptions :
+    1. |C| = 1, and we are in one of the following cases :
+        (a) B = g k and C = 2g for some k ≥ 3 and g ∈ G with ord(g) ≥ k + 2.
+        (b) B = g k (2g) and C = 3g for some k ≥ 2 and g ∈ G with ord(g) ≥ k + 5.
+        (c) B = g1 g2 (g1 +g2 ) and C = g1 +2g2 for some g1 , g2 ∈ G with ord(g1 ) = 2 and ord(g2 ) ≥ 5.
+    2. {B, C} = {g(9g)(10g) , (11g)(3g)(14g) } for some g ∈ G with ord(g) = 16.
+
+   If S = g1 · . . . · gl ∈ F(G) such that ord(gk ) > k k for all k ∈ [1, l], then G. Harcos and I. Ruzsa showed
+that S allows a product decomposition S = S1 S2 where S1 and S2 are both zero-sumfree (see [119]).
+
+
+                        5. On generalizations of the Davenport constant
+
+   We discuss two generalizations of the Davenport constant in some detail (for yet another generalization,
+the barycentric Davenport constant, we refer to [34]). The first one was introduced by F. Halter-Koch in
+connection with the analytic theory of non-unique factorizations (see [109]).
+
+Definition 5.1. Let k ∈ N. We denote by
+    • Dk (G) the smallest integer l ∈ N such that every sequence S ∈ F(G) of length |S| ≥ l is divisible
+      by a product of k non-empty zero-sum sequences.
+    • dk (G) the largest integer l ∈ N with the following property :
+           There is a sequence S ∈ F(G) of length |S| = l which is not divisible by a product of k
+           non-empty zero-sum sequences.
+
+   Obviously, we have Dk (G) = 1 + dk (G), d1 (G) = d(G) and D1 (G) = D(G). We present one result on
+dk (G) which, among others, may be found in [96, Section 6.1].
+
+Theorem 5.2. Let exp(G) = n and k ∈ N.
+  1. Let G = H ⊕ Cn where H ⊂ G is a subgroup. Then
+                         d(H) + kn − 1 ≤ dk (G) ≤ (k − 1)n + max{d(G), η(G) − n − 1} .
+       In particular, if d(G) = d(H) + n − 1 and η(G) ≤ d(G) + n + 1, then dk (G) = d(G) + (k − 1)n.
+    2. If r(G) ≤ 2, then dk (G) = d(G) + (k − 1)n.
+    3. If G a p-group and D(G) ≤ 2n − 1, then dk (G) = d(G) + (k − 1)n.
+
+   The following generalization of the Davenport constant was introduced by M. Skalba in connection
+with his investigations on binary quadratic forms (see [159], [160], [161]).
+
+Definition 5.3. For every g ∈ G, let Dg (G) denote the largest integer l ∈ N with the following property :
+      There is a sequence S ∈ F(G) of length |S| = l and sum σ(S) = g such that every proper
+      subsequence of S is zero-sumfree.
+
+  By definition, D0 (G) = D(G), and if g 6= 0, then Dg (G) ≤ d(G). The following result is due to M.
+Skalba (see [160, Theorem 2] and [161, Theorem 1])
+10                             WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+Theorem 5.4. Let G = Cn1 ⊕ Cn2 with 1 ≤ n1 | n2 and (e1 , e2 ) a basis of G. Let g = a1 e1 + a2 e2 ∈ G•
+with a1 ∈ [0, n1 − 1], a2 ∈ [0, n2 − 1] and d = gcd gcd(a1 , n1 ), gcd(a2 , n2 ) . Then
+                                      (
+                                        n1 + n2 − d − 1                 if d 6= n1 ,
+                           Dg (G) =
+                                        n1 + n2 − gcd(a2 , n2 ) − 1     if d = n1 .
+
+
+Lemma 5.5. Let exp(G) = n ≥ 2. Then the following statements are equivalent :
+  (a) There exists some g ∈ G with ord(g) = n such that Dg (G) = d(G).
+  (b) For all g ∈ G with ord(g) = n we have Dg (G) = d(G).
+  (c) There exists a minimal zero-sum sequence S ∈ F(G) of length |S| = D(G) such that
+      max{ord(g) | g ∈ supp(S)} = n.
+Proof. (a) ⇒ (b) Let g, g ∗ ∈ G with ord(g) = ord(g ∗ ) = n and suppose that Dg∗ (G) = d(G). Then
+there exists a zero-sumfree sequence S ∈ F(G) of length |S| = d(G) and σ(S) = g ∗ . If ϕ : G → G is a
+group automorphism with ϕ(g ∗ ) = g, then ϕ(S) is a zero-sumfree sequence of length |ϕ(S)| = d(G) and
+σ(ϕ(S)) = ϕ(σ(S)) = g whence Dg (G) = d(G).
+   (b) ⇒ (c) Let g ∈ G and S ∈ F(G) a zero-sumfree sequence with σ(S) = g and |S| = Dg (G) = d(G).
+Then the sequence S ∗ = (−g)S has the required properties.
+   (c) ⇒ (a) Assume to the contrary that for all g ∈ G with ord(g) = n we have Dg (G) < d(G).
+This means that for all zero-sumfree sequences S ∈ F(G) with |S| = d(G) we have ord(σ(S)) < n.
+But this implies that for all minimal zero-sum sequences S ∈ F(G) of length |S| = D(G) we have
+max{ord(g) | g ∈ supp(S)} < n, a contradiction.                                                     
+
+  Note that Conjecture 4.1 implies Condition (c) of Lemma 5.5. Using this condition we immediately
+obtain the following corollary.
+
+Corollary 5.6. If d∗ (G) = d(G) and g ∈ G with ord(g) = exp(G), then Dg (G) = d(G).
+
+
+
+                     6. On the invariants η(G), s(G) and their analogues
+
+  We start with a key result first obtained by W. Gao (see [60]). Its proof is based on the Addition
+Theorem of Kemperman-Scherk (for the version below we refer to [96, Theorem 5.7.3]).
+
+Theorem 6.1. Let S ∈ F(G) be a sequence of length |S| ≥ |G|. Then S has a non-empty zero-sum
+subsequence T of length |T | ≤ min h(S), max{ord(g) | g ∈ supp(S)} .
+
+   Now we discuss the invariants η(G), s(G) and their relationship. Both invariants have received a lot
+of attention in the literature. The various contributions and the present state of knowledge are well-
+described in [40], where also the connection with finite geometry is discussed (see also [82]). Therefore
+we only mention some of the most recent results, and then we discuss the relationship of η(G) and s(G)
+in greater detail. A simple observation shows that
+                                  D(G) ≤ η(G) ≤ s(G) − exp(G) + 1 .
+Using Theorem 6.1 we obtain the following upper bounds on η(G) and s(G) (see [96, Theorem 5.7.4])
+which are sharp for cyclic groups.
+
+Theorem 6.2. η(G) ≤ |G| and s(G) ≤ |G| + exp(G) − 1.
+                         ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                     11
+
+
+   Both invariants, η(G) and s(G) are completely determined for groups of rank at most two (see [96,
+Theorem 5.8.3]). Theorem 6.3 is based on the result by C. Reiher which states that s(Cp ⊕ Cp ) = 4p − 3
+for all p ∈ P (see [154], and also [155]), and it contains the Theorem of Erdős-Ginzburg-Ziv (set n1 = 1).
+Theorem 6.4 may be found in [158].
+
+Theorem 6.3. Let G = Cn1 ⊕ Cn2 with 1 ≤ n1 | n2 . Then
+                                η(G) = 2n1 + n2 − 2        and   s(G) = 2n1 + 2n2 − 3 .
+
+Theorem 6.4. Let G be a p-group for some odd prime p with exp(G) = n and D(G) ≤ 2n − 1. Then
+                                2D(G) − 1 ≤ η(G) + n − 1 ≤ s(G) ≤ D(G) + 2n − 2 .
+In particular, if D(G) = 2n − 1, then s(G) = η(G) + n − 1 = 4n − 3.
+
+   We continue with the following conjecture
+
+Conjecture 6.5. η(G) = s(G) − exp(G) + 1.
+
+Theorem 6.6. Conjecture 6.5 holds true in each of the following cases :
+  1. exp(G) ∈ {2, 3, 4}.
+  2. r(G) ≤ 2.
+  3. G is a p-group for some odd prime p and D(G) = 2 exp(G) − 1.
+  4. G = C53 .
+Proof. 1. is proved in [73], 2. follows from Theorem 6.3, and 3. follows from Theorem 6.4. In order to
+give an idea of the arguments we are going to prove 4. We need the following two results :
+   F1 If n ∈ N≥3 is odd, then η(Cn3 ) ≥ 8n − 7 (this is due to C. Elsholtz [43], see also [40, Lemma 3.4]).
+   F2 If exp(G) = n and S ∈ F(G) such that
+                                 |S| ≥ η(G) + n − 1       and h(S) ≥ n − bn/2c − 1 ,
+then S has a zero-sum subsequence of length n (see [73, Proposition 2.7]).
+   Let G = C53 . It suffices to show that s(G) ≤ η(G) + 4. Let S ∈ F(G) be a sequence of length η(G) + 4.
+We have to verify that S has a zero-sum subsequence of length 5. By F1 we have, |S| ≥ 37. If we can
+prove that h(S) ≥ 2, then the assertion follows from F2.
+   Assume to the contrary that S is squarefree. Let G = H ⊕ hgi where H ⊂ G is a subgroup with
+|H| = 25 and g ∈ G with ord(g) = 5. Then
+                        l
+                        Y                                                                    l
+                                                                                             Y
+                  S=          (gi + hi ),    where    gi ∈ hgi, hi ∈ H,   and we set   T =         gi .
+                        i=1                                                                  i=1
+
+If h(T ) ≥ 9, say g1 = . . . = g9 , then h1 , . . . , h9 are pairwise distinct. Since g(C52 ) = 9 (see [124] and
+Conjecture 10.2), the sequence h1 · . . . · h9 has a zero-sum subsequence of length 5, and therefore S has
+a zero-sum subsequence of length 5.
+   Suppose that h(T ) ≤ 8. Then T = 0l0 g l1 (2g)l2 (3g)l3 (4g)l4 with l0 , l1 , l2 , l3 , l4 ∈ [5, 8], and we write S
+in the form
+                                      Y4 Y li
+                                S=            (ig + hi,j ) with all hi,j ∈ H .
+                                            i=0 j=1
+Since S is squarefree, for every i ∈ [0, 4] the elements hi,1 , . . . , hi,li are pairwise distinct, and we set
+Ai = {hi,1 , . . . , hi,li }. Note that 0 + g + 2g + 3g + 4g = 0 ∈ G. So if
+                                            0 ∈ A = A0 + A1 + A2 + A3 + A4 ,
+12                                  WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+then S has a zero-sum subsequence of length 5. Let K be the maximal subgroup of H such that A+K = A.
+By Kneser’s Addition Theorem (see [96, Theorem 5.2.6.2]) we obtain that
+                                                    4
+                                                    X
+                                            |A| ≥         |Ai + K| − 4|K| .
+                                                    i=0
+If |K| = 1, then |A| ≥ |A0 | + |A1 | + |A2 | + |A3 | + |A4 | − 4 = |S| − 4 ≥ 33, a contradiction.
+    Assume to the contrary that |K| = 5. Since |A0 | + |A1 | + |A2 | + |A3 | + |A4 | = |S| ≥ 37 and |Ai | = li ∈
+[5, 8], it follows that |Ai | ≥ 6 for at least four indices i ∈ [0, 4]. Therefore we obtain that
+                             4
+                             X
+                     |A| ≥         |Ai + K| − 4|K| ≥ 4 · 2|K| + |K| − 4|K| = 5|K| = 25 ,
+                             i=0
+a contradiction. Thus it follows that K = H whence A = H and we are done.
+                                                                                                              
+
+   For recent progress on Conjecture 6.5 we refer to [82]. Next we consider the invariant snN (G). Theorem
+6.3 allows to determine snN (G) for groups G of rank r(G) ≤ 2.
+
+Theorem 6.7. Let exp(G) = n ≥ 2.
+  1. d(G) + n ≤ snN (G) ≤ min{s(G), D(G ⊕ Cn )}.
+  2. We have snN (G) = d(G) + n in each of the following cases :
+      (a) G is a p-group.
+      (b) G = Cn1 ⊕ Cn2 with 1 ≤ n1 | n2 .
+Proof. 1. is simple (see [79, Lemma 3.5]) and 2.(a) is a consequence of 1. To verify 2.(b), let G =
+Cn1 ⊕ Cn2 with 1 ≤ n1 | n2 . Then 1. implies that d(G) + n2 ≤ snN (G) whence it remains to prove that
+snN (G) ≤ d(G) + n2 = n1 + 2n2 − 2. If n1 = 1, this follows from 1. Let S ∈ F(G) be a sequence of length
+|S| = n1 + 2n2 − 2. We have to show that S has a zero-sum subsequence of length n2 or 2n2 .
+    Let H = G ⊕ Cn2 = G ⊕ hei with ord(e) = n2 , so that every h ∈ G ⊕ Cn2 has a unique representation
+h = g + je, where g ∈ G and j ∈ [0, n2 − 1]. We define ψ : G → H by ψ(g) = g + e for every g ∈ G. Thus
+it suffices to show that ψ(S) has a non-empty zero-sum subsequence. We distinguish two cases.
+CASE 1: n1 = n2 .
+    We set n = n1 and proceed by induction on n. If n is prime, the assertion follows from 2.(a). Suppose
+that n is composite, p a prime divisor of n and ϕ : H → H the multiplication by p. Then pG ∼    = Cn/p ⊕Cn/p
+              ∼   3
+and Ker(ϕ) = Cp . Since s(pG) = 4(n/p) − 3 and |S| = 3n − 2 ≥ (3p − 4)(n/p) + 4n/p − 3, S admits a
+product decomposition S = S1 · . . . · S3p−3 S 0 such that, for all i ∈ [1, 3p − 3], ϕ(Si ) has sum zero and
+length |Si | = n/p (for details see [96, Lemma 5.7.10]). Then |S 0 | = 3n/p − 2 = snN (Cn/p ⊕ Cn/p ), and
+thus S 0 has a subsequence S3p−2 such that ϕ(S3p−2 ) has sum zero and length |S3p−2 | ∈ {n/p, 2n/p}. This
+implies that
+                                        3p−2
+                                         Y                         
+                                             σ ψ(Si ) ∈ F Ker(ϕ) .
+                                            i=1
+Since D(Ker(ϕ)) = 3p − 2, there exists a non-empty subset I ⊂ [1, 3p − 2] such that
+                                X                          Y
+                                    σ ψ(Si ) = 0 whence         ψ(Si )
+                                      i∈I                              i∈I
+
+is a non-empty zero-sum subsequence of ψ(S).
+CASE 2: n2 > n1 .
+   Let m = n1−1 n2 and let ϕ : H = Cn1 ⊕ Cn22 → Cn1 ⊕ mCn22 be a map which is the identity on the first
+component and the multiplication by m on the second and on the third component whence Ker(ϕ) ∼    = Cm ⊕
+Cm and ϕ(G) ∼ = Cn1 ⊕ Cn1 . Since s(Cn1 ⊕ Cn1 ) = 4n1 − 3 and |S| = n1 + 2n2 − 2 ≥ (2m − 3)n1 + (4n1 − 3),
+                       ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                              13
+
+
+S admits a product decomposition S = S1 · . . . · S2m−2 S 0 , where for all i ∈ [1, 2m − 2], ϕ(Si ) has sum
+zero and length |Si | = n1 . Then |S 0 | = 3n1 − 2, and since by CASE 1, snN (Cn1 ⊕ Cn1 ) = 3n1 − 2, the
+sequence S 0 has a subsequence S2m−1 such that ϕ(S2m−1 ) has sum zero and length |S2m−1 | ∈ {n1 , 2n1 }.
+This implies that
+                                        2m−1
+                                         Y                       
+                                             σ ψ(Si ) ∈ F Ker(ϕ) .
+                                          i=1
+Since D(Ker(ϕ)) = 2m − 1, there exists a non-empty subset I ⊂ [1, 2m − 1] such that
+                               X                           Y
+                                   σ ψ(Si ) = 0 whence         ψ(Si )
+                                    i∈I                                i∈I
+
+is a non-empty zero-sum subsequence of ψ(S).                                                              
+
+   Next we deal with zero-sum subsequences of length |G|. The following result is due to W. Gao and Y.
+Caro (see [21], [22], [62] and also [96, Proposition 5.7.9]). In Section 9 we discuss generalizations due to
+Y. ould Hamidoune. The structure of sequences S of length |S| = |G| + d(G) − 1 which have no zero-sum
+subsequence of length |G| is studied in [94].
+
+Theorem 6.8. s|G| (G) = |G| + d(G).
+
+  Note that Theorem 6.8 yields immediately a generalization of a Theorem of Hall (see [134, Section 3]).
+
+                                                                                            •
+Conjecture 6.9. Let G be cyclic of order n ≥ 2, q the P           P divisor of n and S ∈ F(G ) be a
+                                                       smallest prime
+sequence of length |S| = n. If h = h(S) ≥ n/q − 1, then ≤h (S) = (S).
+
+   Conjecture 6.9 has been verified for cyclic groups of prime power order in [93]. The following example
+shows that the conclusion of Conjecture 6.9 does not hold whenever nq/(2n − q) ≤ h ≤ n/q − 2.
+   Let all notations be as in Conjecture 6.9, N = {0, a1 , · · · , an/q−1 } a subgroup of G with |N | = n/q,
+g ∈ G with ord(g) = n and
+                      W = ah1 · . . . · ahn/q−1 g h (g + a1 )h · . . . · (g + an/q−1 )h ∈ F(G) .
+Since h ≥ nq/(2n − q), we have |W | = ( nq − 1)h + nq h ≥ n. Now let S be a subsequence of W of length
+|S| = n such that g h (g + ai ) is a subsequence of S for some i ∈ [1, (n/q) − 1]. Then h(S) = h,
+                    ((h + 1)g + N ) ∩ Σ(S) 6= ∅        but    ((h + 1)g + N ) ∩ Σ≤h (S) = ∅
+whence Σ≤h (S) 6= Σ(S).
+   Next we discuss the invariants skn (G) where exp(G) = n and k ∈ N. If S ∈ F(G) is a zero-sumfree
+sequence of length |S| = d(G) elements, then the sequence
+                                                   T = 0kn−1 S
+has no zero-sum subsequence of length kn whence skn (G) ≥ |T | + 1 = kn + d(G). The following result
+may be found in [73].
+
+Theorem 6.10. Let exp(G) = n ≥ 2 and k ∈ N.
+  1. If k < D(G)/n, then skn (G) > kn + d(G).
+  2. If k ≥ |G|/n, then skn (G) = kn + d(G).
+  3. If G a finite abelian p-group and pl ≥ D(G), then spl k (G) = pl k + d(G).
+
+  Theorem 6.10 motivates the following definition.
+14                               WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+Definition 6.11. We denote by l(G) the smallest integer l ∈ N such that
+                             sk exp(G) (G) = k exp(G) + d(G)    for every k ≥ l .
+
+     Theorem 6.10 shows that
+                                 D(G)          |G|
+                                      ≤ l(G) ≤          whence    l(Cn ) = 1 .
+                                  n             n
+
+Theorem 6.12. Let G = Cn1 ⊕ Cn2 with 1 < n1 | n2 . Then l(G) = 2.
+Proof. Since s(G) = 2n1 + 2n2 − 3 > n2 + d(G), it follows that l(G) ≥ 2. Let k ≥ 2 and S ∈ F(G)
+a sequence of length |S| = kn2 + d(G) = (k − 2)n2 + 3n2 + n1 − 2. We prove that S has a zero-sum
+subsequence of length kn which implies that l(G) ≤ 2. Since s(G) = 2n1 + 2n2 − 3, S admits a product
+decomposition S = S1 · . . . · Sk−1 S 0 where for all i ∈ [1, k − 1], Si has sum zero and length |Si | = n2
+(for details see [96, Lemma 5.7.10]). Since |S 0 | = |S| − (k + 1)n2 = 2n2 + n1 − 1, Theorem 6.7.2.(b)
+implies that S 0 has a zero-sum subsequence Sk of length |Sk | ∈ {n2 , 2n2 } whence either S1 · . . . · Sk−1 Sk
+or S1 · . . . · Sk−2 Sk is a zero-sum subsequence of length kn2 .                                             
+
+  The invariant Ek (G) was introduced in [72] (in connection with investigations on s(G), see also [90]).
+Clearly, we have D(G) ≤ Ek (G) ≤ s(G), and if D(G) < k, then D(G) = Ek (G) (see [156, Lemma 2.1]).
+Theorem 6.13.
+  1. [72, Section 3] If G = Cn1 ⊕ Cn2 with 1 ≤ n1 | n2 and n2 odd, then E2 (G) = 2n1 + 2n2 − 3.
+  2. If G = Cn ⊕ Cn with n ≥ 2 and 3 - n, then E3 (G) = 3n − 2.
+  3. [156] If G is a p-group and k ∈ N≥2 with gcd(p, k) = 1, then
+                                                         
+                                                k    ∗
+                                    Ek (G) =        d (G) + 1.
+                                               k−1
+Proof. 2. By [156, Lemma 2.4], we have 3n−2 ≤ E3 (G). Since snN (G) = 3n−2, every sequence S ∈ F(G)
+of length |S| ≥ 3n − 2 has a zero-sum subsequence T of length |T | ∈ {n, 2n} whence E3 (G) ≤ 3n − 2. 
+
+
+
+                         7. Inverse problems associated with η(G) and s(G)
+
+     In this section we investigate the structure of sequences S ∈ F(G) of length
+
+                 η(G) − 1   without a zero-sum subsequence T of length |T | ∈ [1, exp(G)] ,
+                 s(G) − 1   without a zero-sum subsequence T of length |T | = exp(G) .
+     We formulate two properties and two conjectures.
+
+Conjecture 7.1. Let S ∈ F(G) be a sequence of length |S| = s(G)−1. If S has no zero-sum subsequence
+of length exp(G), then h(S) = exp(G) − 1.
+
+     Note that Conjecture 7.1 and Fact F2 (formulated in the proof of Theorem 6.6) imply Conjecture 6.5.
+
+Property C. Every sequence S ∈ F(G) of length |S| = η(G) − 1 which has no short zero-sum
+subsequence has the form S = T n−1 for some sequence T ∈ F(G).
+Property D. Every sequence S ∈ F(G) of length |S| = s(G) − 1 which has no zero-sum subsequence
+of length n has the form S = T n−1 for some sequence T ∈ F(G).
+                         ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                 15
+
+
+   Suppose that G has Property D. We show that G satisfies Property C as well. Let S ∈ F(G) be a
+sequence of length η(G) − 1 which has no short zero-sum subsequence. We consider the sequence
+                                                        T = 0n−1 S .
+If T has a zero-sum subsequence T 0 of length |T 0 | = n, then T 0 = 0k S 0 with k 0 ∈ [0, n − 1] whence S 0 is a
+short zero-sum subsequence of S, a contradiction. Thus T has no zero-sum subsequence of length n. Since
+Property D holds, Conjecture 7.1 and Conjecture 6.5 hold in G whence |T | = η(G)−1+(n−1) = s(G)−1.
+Therefore Property D implies that S has the required form.
+
+Conjecture 7.2. Every group G = Cnr , where r ∈ N and n ∈ N≥2 , has Property D.
+
+  An easy observation shows that
+                                                              
+                                               s(G) ≤ g(G) − 1 (n − 1) + 1 .
+Moreover, if G = Cnr and equality holds, then Cnr has Property D (see [40, Lemma 2.3]). Thus [118,
+Hilfssatz 3] implies that C3r has Property D for every r ∈ N. However, only little is known for groups
+G = Cnr in case r ≥ 3 (see [91] and [82]).
+   We continue with some results on Σ|G| (S) for general groups which arose from generalizations of the
+Erdős-Ginzburg-Ziv Theorem (see also [85], [57], [167] [113] and note that Theorem 7.3 implies Theorem
+6.8). Then we discuss cyclic groups and groups of the form G = Cn ⊕ Cn .
+
+Theorem 7.3. [60, 61] Let S ∈ F(G) be a sequence of length |S| ≥ |G| and let g ∈ G with vg (S) = h(S).
+  1.
+                             Σ|G| (S) = Σ            (−g + g −h(S) S) .
+                                                        ≥ |G|−h(S)
+
+    2. Suppose that for every a ∈ G and every subsequence T of S of length |T | = |S| − |G| + 1 we have
+       0 ∈ Σ(a + T ). Then
+                                           \
+                               Σ|G| (S) =     Σ(y + S) = Σ(−g + S) .
+                                                     y∈G
+
+   Next we present a result by D.J. Grynkiewicz ([105, Theorem 1]) which confirms a conjecture of Y.
+ould Hamidoune (see [115, Theorem 3.6] and [59] for special cases).
+
+Theorem 7.4. Let S ∈ F(G) be a sequence of length |S| ≥ |G| + 1, k ∈ N with |supp(S)| ≥ k and
+h(S) ≤ |G| − k + 2. Then one of the following two statements holds :
+  (a) |Σ|G| (S)| ≥ min{|G|, |S| − |G| + k − 1}.
+  (b) There exists a non-trivial subgroup H ⊂ G, some g ∈ G and a subsequence T of S such that the
+      following conditions
+                 P         hold :                   P
+         • H ⊂ |G| (S), Σ|G| (S) is H-periodic and | |G| (S)| ≥ (|T | + 1)|H|.
+         • supp(T −1 S) ⊂ g + H and |T | ≤ min |S−|G|+k−2
+                                                
+                                                   |H|    , (G : H) − 2 .
+
+   Now we consider cyclic groups. Several authors ([170], [13], [20], [50], [23]) showed independently that
+a sequence S ∈ F(Cn ) of length |S| = 2n − 2, which has no zero-sum subsequence of length n, has the
+form S = an−1 bn−1 where a, b ∈ Cn and ord(a − b) = n. Based on Theorem 7.3 the following stronger
+result was obtained in [65, Theorem 1] (see also [88]).
+
+Theorem 7.5. Let G be cyclic of order n ≥ 2, k ∈ [2, bn/4c + 2] and S ∈ F(G) be a sequence of length
+|S| = 2n − k. If S has no zero-sum subsequence of length n, then
+                 S = au bv c1 · . . . · cl ,    where    ord(a − b) = n, u ≥ v ≥ n − 2k + 3   and
+u + v ≥ 2n − 2k + 1 (equivalently, l ≤ k − 1). In particular, we have
+16                                 WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+      • If k = 2, then S = an−1 bn−1 .
+      • If k = 3 and n ≥ 4, then S = an−1 bn−2 or S = an−1 bn−3 (2b − a)
+   Closely related to the inverse problem is the investigation of the Brakemeier function (see [18, 15],
+[58, 56, 57], [120, 121]).
+
+Conjecture 7.6. Let G be cyclic of order n ≥ 2, q the smallest prime divisor of n and S ∈ F(G) be a
+sequence of length |S| ≥ n + n/q − 1. If 0 6∈ Σn (S) then h(S) ≥ |S| − n + 1.
+
+  Conjecture 7.6 has been verified for cyclic groups of prime power order (see [92], [93]). The following
+example shows that the conclusion of Conjecture 7.6 does not hold whenever q ≤ |S| − n ≤ n/q − 2.
+
+   Let all notations be as in Conjecture 7.6, N = {0, a1 , a2 , · · · , an/q−1 } be the subgroup of G with
+|N | = n/q, k ∈ [q, n/q − 2], g ∈ G with ord(g) = n and
+                        W = ak1 · . . . · akn/q−1 g k (g + a1 )k · . . . · (g + an/q−1 )k ∈ F(G)
+a sequence of length |W | = k(2n/q − 1). Since k ∈ [q, n/q − 2], one can choose a subsequence S of W
+such that |S| = n + k such that g k is a subsequence of S and σ(S) ∈ (k + P1)g + N . Therefore h(S) = k
+and ((k + 1)g + N ) ∩ Σk (S) = ∅ which implies that σ(S) 6∈ Σk (S) and 0 6∈ n (S).
+
+  Now suppose that G = Cn ⊕ Cn . It was P. van Emde Boas who studied Property C for such groups in
+connection with his investigations on the Davenport constant for groups of rank three (see [44] and [69,
+Lemma 4.7]). Property D was introduced in [70], where it is shown that both Property C and Property
+D are multiplicative in the following sense.
+
+Theorem 7.7. Let n1 , n2 ∈ N≥2 . If the groups Cn1 ⊕ Cn1 and Cn2 ⊕ Cn2 both have Property C (or
+Property D respectively), then the group Cn1 n2 ⊕ Cn1 n2 has Property C (or Property D respectively).
+     The next result follows from Theorem 6.7.2.(b), from Theorem 7.7 and from [79, Theorem 6.2].
+Theorem 7.8. Let n ≥ 2 and suppose that n = m1 · . . . · ms where s ∈ N and m1 , . . . , ms ∈ N≥2 . If for
+all i ∈ [1, s] the groups Cmi ⊕ Cmi satisfy the equivalent conditions of Theorem 4.4, then Cn ⊕ Cn has
+Property C.
+
+   In [124] it is shown that Cp ⊕ Cp has Property D for p ∈ {2, 3, 5} and in [164] the same is shown for
+p = 7. We end with a result which could be a first step on the way showing that Cn ⊕ Cn has Property
+C.
+
+Theorem 7.9. Let G = Cn ⊕ Cn with n ≥ 3 and S = f1n−1 f2n−1 g1 · . . . · gn−1 ∈ F(G) be a sequence
+of length |S| = 3n − 3 which has no short zero-sum subsequence. Then there exists a basis (e1 , e2 ) of G
+such that
+                                                        n−1
+                                                        Y
+                                 S = (e1 + e2 )n−1 en−1
+                                                    2       (ai e1 + be2 )
+                                                                i=1
+where ai ∈ [0, n − 1] for all i ∈ [1, n − 1] and b ∈ [0, n − 1] \ {1}.
+Proof. By [96, Lemma 5.8.6] it follows that (f1 , f2 ) is a basis of G whence gi = yi f1 + xi f2 with xi , yi ∈
+[0, n − 1] for all i ∈ [1, n − 1]. We assert that
+                                          x1 + y1 = . . . = xn−1 + yn−1 .
+Assume to the contrary that this does not hold. Then Theorem 4.2.2 implies that the sequence
+                                  n−1
+                                  Y                       
+                                        (xi + yi − 1)e1       is not zero-sumfree .
+                                  i=1
+                      ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                              17
+
+
+Hence after some renumeration we may suppose that
+                         t
+                         X
+                               (xi + yi − 1) ≡ 0   mod n       for some      t ∈ [1, n − 1] .
+                         i=1
+
+Then the sequence
+                                                         t
+                                                         Y
+                                       W = f2n−x f1n−y         (yi f1 + xi f2 ),
+                                                         i=1
+where x, y ∈ [1, n] such that x ≡ x1 + . . . + xt mod n and y ≡ y1 + . . . + yt mod n, is a zero-sum
+subsequence of S of length |W | = (n − x) + (n − y) + t ≡ 0 mod n. Since S has no short zero-sum
+subsequence, it follows that |W | = 2n. But then |W | > d(Cn ⊕ Cn ) whence W (and thus S) has a short
+zero-sum subsequence, a contradiction.
+   Now we obtain that (e1 , e2 ) = (f2 − f1 , f1 ) is a basis of G and
+                      gi = yi f1 + xi f2 = xi e1 + (xi + yi )e2       for all i ∈ [1, n − 1] .
+Thus it remains to show that x1 + y1 6≡ 1 mod n. Assume to the contrary that (x1 + y1 )e2 = e2 .
+Since s(Cn ) = 2n − 1, the sequence en−11   0n−1 (x1 e1 ) has a zero-sum subsequence of length n whence
+          n−1 n−1
+(e1 + e2 )   e2 (x1 e1 + e2 ) has a zero-sum subsequence of length n, a contradiction.               
+
+
+
+                          8. On the number of zero-sum subsequences
+
+   The enumeration of zero-sum subsequences of a given (long) sequence over G, which have some pre-
+scribed properties, is a classical topic in combinatorial number theory going back to P. Erdős, J.E. Olson
+and others. Many zero-sum results (such as the proof of d∗ (G) = d(G) for p-groups or the proof that
+s(Cp ⊕ Cp ) = 4p − 3) are based on enumeration results.
+
+Definition 8.1. Let S = g1 · . . . · gl ∈ F(G) be a sequence of length |S| = l ∈ N0 and let g ∈ G.
+   1. For every k ∈ N0 let
+                                         n         X                      o
+                           Nkg (S) = I ⊂ [1, l]        gi = g and |I| = k
+                                                       i∈I
+
+      denote the number of subsequences T of S having sum σ(T ) = g and length |T | = k (counted with
+      the multiplicity of their appearance in S). In particular, N00 (S) = 1 and N0g (S) = 0 if g ∈ G• .
+   2. We define
+                             X                      X                           X
+                                                                         −
+                   Ng (S) =      Nkg (S) , N+
+                                            g (S) =    N2k
+                                                         g (S) and Ng (S) =        N2k+1
+                                                                                      g   (S) .
+                               k≥0                       k≥0                                    k≥0
+
+      Thus Ng (S) denotes the number of subsequences T of S having sum σ(T ) = g, N+      g (S) denotes
+      the number of all such subsequences of even length, and N− g (S) denotes the number of all such
+      subsequences of odd length (each counted with the multiplicity of its appearance in S).
+
+   We start with two results on p-groups. The first one (see [75]) sharpens results of J.E. Olson and
+I.Koutis (see [142, Theorem 1] and [127, Theorems 7, 8, 9 and 10]). It is proved via group algebras.
+
+Theorem 8.2. Let G be a p-group, g ∈ G, k ∈ N0 and S ∈ F(G) be a sequence of length |S| >
+k exp(G) + d∗ (G).
+                  −
+    1. N+
+        g (S) ≡ Ng (S) mod p
+                             k+1
+                                 .
+   2. If p = 2, then Ng (S) ≡ 0 mod 2k+1 .
+18                                 WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+     The next result (proved in [73]) is based on Theorem 8.2.
+
+Theorem 8.3. Let G be a p-group and S ∈ F(G) be a sequence of length |S| ∈ [|G| + d(G), 2|G| − 1].
+Then                                 (
+                                       0 mod p      if g ∈ G• ,
+                           N|G|
+                             g (S) ≡
+                                       1 mod p      if g = 0.
+
+   An easy argument shows that in an elementary 2-group we have N0 (S) = Ng (S) for every S ∈ F(G)
+and every g ∈ Σ(S) (see [75, Proposition 3.3]). For more enumeration results in G = Cp see [64], and in
+G = Cp ⊕ Cp see [96, Theorems 5.8.1 and 5.8.2]).
+   We continue with some results of the following type: A sequence S ∈ F(G), for which |S| is long and
+|Σ(S)| is small, has a very special form. The first result is due to J.E. Olson ([148, Theorems 1 and 2]).
+
+Theorem 8.4. Let S ∈ F(G• ) be a sequence of length |S| = |G|. If N0 (S) < |G|, then G is cyclic and
+S = g |G| for some g ∈ G• .
+
+   For cyclic groups there are the following two sharper results : For Theorem 8.5 see [67, Theorem 1]
+(note that there is a misprint in the formulation of Theorem 1), and for Theorem 8.6 see [67, Theorems
+2, 3 and 4].
+
+Theorem 8.5. Let G be cyclic of order n ≥ 2, k ∈ [1, bn/4c + 1] and S ∈ F(G). If N0 (S) < 2|S|−n+k+1 ,
+then there exists some g ∈ G with ord(g) = n such that
+                               S = g u (−g)v (x1 g) · . . . · (xk−1 g)(y1 g) · . . . · (yl g)
+
+    Pu ≥ v ≥ 0, uP+ v = n − 2k + 1, yi ∈ [0, n − 1] for all i ∈ [1, l], xi ∈ [1, n − 1] for all i ∈ [1, k − 1]
+where
+and xi ≤n/2 xi + xi >n/2 (n − xi ) ≤ 2k − 2.
+
+Theorem 8.6. Let G be cyclic of order n ≥ 22 and S ∈ F(G• ) be a sequence of length |S| = n − 1. If
+N0 (S) ≤ n, then there exists some g ∈ G with ord(g) = n such that S has one of the following forms :
+     (−g)g n−2 , (2g)(−g)g n−3 , (3g)(−g)g n−3 , (2g)2 (−g)g n−4 , g n−1 , (2g)g n−2 , (3g)g n−2 , (2g)2 g n−3 .
+
+   The next result deals with the number of zero-sum subsequences of length exp(G) in cyclic groups (see
+[68]).
+
+Theorem 8.7. Let G be cyclic of order n ≥ 2 and S ∈ F(G) be a sequence of length |S| = 2n − 1.
+  1. For every g ∈ G• we have Nng (S) = 0 or Nng (S) ≥ n.
+      2. Nn0 (S) ≥ n + 1 or S = an bn−1 for some a, b ∈ G with ord(a − b) = n.
+
+   The following examples show that the inequalities in Theorem 8.7 cannot be improved. Let g ∈ G
+with ord(g) = n. If
+                             S = 0n−1 g n−1 (−g) , then Nn−g (S) = n ,
+and if
+                              S = 0n+1 g n−2 , then Nn0 (S) = n + 1 .
+  A problem related to Theorem 8.7 on Nn0 (S) is the following conjecture formulated by A. Bialostocki
+and M. Lotspeich ([125], [55]) :
+
+Conjecture 8.8. Let G be cyclic of order n ≥ 2 and S ∈ F(G). Then
+                                                           
+                                         b|S|/2c      d|S|/2e
+                            Nn0 (S) ≥             +             .
+                                            n            n
+                       ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                              19
+
+
+   Z. Füredi and D. Kleitman, M. Kisin, W. Gao and D.J. Grynkiewicz gave partial positive answers to
+the above conjecture.
+
+Theorem 8.9. Conjecture 8.8 holds true in each of the following cases :
+  1. [55] n = pa q b where p, q are distinct primes, a ∈ N and b ∈ {0, 1}.
+  2. [125] |S| ≥ n6n .
+  3. [68] |S| < 5n/2.
+  4. [102] |S| ≤ 19n/3.
+
+  The next result (see [84]) settles a conjecture of B. Bollobás and I. Leader (see [16]).
+Theorem 8.10. Let S ∈ F(G) be a sequence. If 0 6∈ Σ|G| (S), then there is a zero-sumfree sequence
+T ∈ F(G) of length |T | = |S| − |G| + 1 such that |Σ|G| (S)| ≥ |Σ(T )|.
+
+  We conclude with an explicit formula for the number of all zero-sum sequences of given length, which
+was recently derived by V. Ponomarenko (see [153]).
+
+Theorem 8.11. Let G be cyclic of order n ≥ 10 and k > 2n/3. Then
+                            
+                              S ∈ A(G) |S| = k     = ϕ(n)pk (n) ,
+where ϕ is Euler’s Phi Function and pk (n) denotes the number of partitions of n into k parts.
+
+
+                          9. Weighted sequences and the cross number
+
+
+   We start with a recent result due to D.J. Grynkiewicz (see [103, Theorem 1.1]) which may be considered
+as a weighted version of the Theorem of Erdős-Ginzburg-Ziv (the case where G is cyclic, k = |G| and
+w1 = . . . = wk = 1 gives the classical result). It completely affirms a conjecture of Y. Caro formulated in
+1996 (see [23, Conjecture 2.4]. Special cases were settled by N. Alon, A. Bialostocki and Y. Caro ( [23]),
+by W. Gao and X. Jin ([83]) and by Y. ould Hamidoune ([112, Theorem 2.1]).
+
+Theorem 9.1. Let S ∈ F(G) be a sequence of length |S| = |G| + k − 1, for some k ≥ 2, and
+(w1 , . . . , wk ) ∈ Zk a k-tuple of integers such that w1 + . . . + wk ≡ 0 mod exp(G). Then S has a
+subsequence T = g1 · . . . · gk such that w1 g1 + . . . + wk gk = 0.
+
+   We continue with a result by Y. ould Hamidoune ([112, Theorem 3.2] which implies Theorem 6.8 (for
+results of a similar flavor see [110], [34], [116]).
+
+Theorem 9.2. Let S ∈ F(G) be a sequence of length |S| = D(G) + k with k ≥ |G| − 1 and let g ∈ G
+with vg (S) = h(S). Then S has a subsequence T of length |T | = k such that σ(T ) = kg.
+
+   Next we discuss the cross number of a finite abelian group. It was introduced by U. Krause (see [128],
+[129]), and its relevance stems from the theory of non-unique factorizations (see [157] and [96, Chapter
+6]).
+
+Definition 9.3. The invariant                
+                                   K(G) = max k(S) S ∈ A(G)
+is called the cross number of G and
+                                      
+                            k(G) = max k(S) S ∈ F(G) is zero-sumfree
+is called the little cross number of G.
+20                              WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+  If exp(G) = n and q is the smallest prime divisor of n, then a straightforward argument (see [96,
+Proposition 5.1.8]) shows that
+                              1           1               1
+                                + k∗ (G) ≤ + k(G) ≤ K(G) ≤ + k(G) .
+                              n           n               q
+
+Conjecture 9.4. n1 + k∗ (G) = K(G).
+
+   Conjecture 9.4 has been verified for p-groups and various other classes of groups (see [96, Theorem
+5.5.9 and Section 5.7]).
+
+Theorem 9.5.
+  1. 1 + nk(G) is the smallest integer l ∈ N such that every sequence S ∈ F(G) with nk(S) ≥ l has a
+     non-empty zero-sum subsequence.
+  2. Every sequence S ∈ F(G) of length |S| ≥ |G| has a non-empty zero-sum subsequence T with
+     k(T ) ≤ 1.
+   Whereas Theorem 9.5.1 is straightforward, Theorem 9.5.2 settles a conjecture of D. Kleitman and P.
+Lemke (see [126], [95], and [42] for a recent graph theoretical approach). For more information on the
+cross number we refer to [99], [28], [100], [101], [7].
+
+
+           10. On the Olson constant, the critical number and some analogues
+
+
+    summarize some basic relationships of the invariants introduced in Definition 2.2. Note that
+  We
+max |U | U ∈ A(G) squarefree } is called the strong Davenport constant of G (see [51, 26, 27, 150]).
+
+Lemma 10.1.
+   1. 1 + ol(G) = Ol(G) ≤ g(G) ≤ |G| + 1.
+   2. g(G) = |G| + 1 if and only if G is either cyclic of even order or an elementary 2-group.
+   3. 1 + max |S| S ∈ F(G) squarefree , Σ(S) = G• } ≤ Ol(G) ≤ min{D(G), cr(G)}.
+               
+                                         
+   4. max |supp(U )| U ∈ A(G) = max |U | U ∈ A(G) squarefree } ≤ Ol(G).
+                                                                         p
+   5. If f(G, l) ≥ 1 + c−2 l2 for some l ∈ N and c ∈ R>0 , then ol(G) < c |G| − 1 .
+Proof. We show the upper bound on g(G) and 2. A proof of 4. may be found in [26, Theorem 7]), and
+the remaining assertions follow either by the very definitions or by [96, Lemma 5.1.17]. Since there are no
+squarefree sequences S ∈ F(G) of length |S| ≥ |G| + 1, every such sequence has a zero-sum subsequence
+of length |T | = exp(G) whence g(G) ≤ |G| + 1. If G is cyclic of even order or an elementary 2-group,
+then the squarefree sequence S ∈ F(G) consisting of all group elements has no zero-sum subsequence
+T of length |T | = exp(G) whence g(G) > |G|. Suppose that G = H ⊕ hgi with some (possibly trivial)
+subgroup H ⊂ G and some g ∈ G with ord(g) = exp(G) = n ≥ 3. We have to show that the squarefree
+sequence S ∈ F(G) consisting of all group elements has a zero-sum subsequence T of length |T | = n.
+If n is odd, then T = g(2g)                                  property. If n is even and h ∈ H \ {0}, then
+                             · . . . · (ng) has the required
+T = g(2g) · . . . · (n − 2)g h + (n − 1)g −h + (n/2)g has the required property.                          
+
+  We start with the g-invariant which was first studied by H. Harborth and A. Kemnitz (see [118, 124]).
+Let G = Cn ⊕ Cn with n ≥ 3 and let (e1 , e2 ) be a basis of G. If n is odd, then
+                                        n−2
+                                        Y              n−1
+                                                       Y
+                                   S=         (ie2 )         (e1 + ie2 ) ∈ F(G)
+                                        i=0            i=1
+                        ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                   21
+
+
+is a squarefree sequence of length |S| = 2n − 2 which has no zero-sum subsequence of length n whence
+g(G) ≥ 2n − 1. If n is even, then
+                                           n−1
+                                           Y              n−1
+                                                          Y
+                                      S=         (ie2 )         (e1 + ie2 ) ∈ F(G)
+                                           i=0            i=0
+
+is a squarefree sequence of length |S| = 2n which has no zero-sum subsequence of length n whence
+g(G) ≥ 2n + 1.
+
+Conjecture 10.2. Let G = Cn ⊕ Cn with n ≥ 3. Then
+                                    (
+                                     2n − 1    if n                       is odd,
+                             g(G) =
+                                     2n + 1    if n                       is even.
+
+  Conjecture 10.2 holds true for some small integers and for all primes p ≥ 67 (see [92]).
+  We continue with the Olson constant. For some basic bounds for the f-invariant (and hence for the
+Olson constant) we refer to [96, Section 5.3]. Proving a conjecture of P. Erdős and H. Heilbronn, E.
+Szemerédi
+ p         [165] showed that there is some c ∈ R>0 (not depending on the group) such that Ol(G) ≤
+c |G|. J.E. Olson [144] proved the result for c = 3. The following result is due to Y. ould Hamidoune
+and G. Zémor [117, Theorems 3.3 and 4.5].
+
+Theorem 10.3.
+                                       p
+  1. If G is prime cyclic, then Ol(G) ≤ 2|G| + 5 log(|G|).
+             p
+  2. Ol(G) ≤ 2|G| + ε(|G|) for some real-valued function ε with ε(x) = O(x1/3 log x).
+
+    The result for prime cyclic groups is essentially the best possible. However, the situation is completely
+different for non-cyclic groups. We have ol(G) ≤ d(G), and obviously equality holds for elementary 2-
+groups, and by [162] also for elementary 3-groups. In the following theorem we summarize two results. The
+first one (see [77, Theorem 7.3]) shows in particular that in p-groups of large rank we have ol(G) = d(G)
+(which is in contrast to the situation in Cp ⊕ Cp , see Theorem 4.4). The second result was recently
+achieved in [89].
+
+Theorem 10.4.
+  1. Let G = H ⊕Cns+1 where exp(G) = n ≥ 2, s ∈ N0 , H ⊂ G a (possibly  trivial) subgroup and exp(H)
+     a proper divisor of n. If r(H) + s/2 ≥ n, then 1 + d∗ (G) ≤ max |U | U ∈ A(G) squarefree }.
+  2. Ol(Cp ⊕ Cp ) = Ol(Cp ) + p − 1 for all primes p > 4 · 67 × 1034 .
+
+   Let G = H ⊕Cn = H ⊕hei where H ⊂ G is a subgroup with |H| ≥ n−1 and e ∈ G with ord(e) = n. If
+T ∈ F(H) is a squarefree zero-sumfree sequence of length |T | = ol(G) and h1 , . . . , hn−1 ∈ H are pairwise
+distinct, then
+                                             n−1
+                                             Y
+                                     S = T       (e + hi ) ∈ F(G)
+                                                     i=1
+is a squarefree zero-sumfree sequence of length |S| = |T | + n − 1 whence ol(G) ≥ ol(H) + n − 1. Let
+n be a prime power. Assume to the contrary that Ol(Cnr ) = Ol(Cnr−1 ) + n − 1 for all r ≥ 2. Then
+Theorem 10.4.1 implies that Ol(Cn ) = D(Cn ), a contradiction. Thus there exists some r ≥ 2 such that
+Ol(Cnr ) > Ol(Cnr−1 ) + n − 1.
+   Finally we discuss the critical number cr(G) of G. It was first studied by P. Erdős and H. Heilbronn
+(see [48, Theorem I]) for cyclic groups of prime order, and in the sequel this problem found a lot of
+attention (see [137], [38], [37], [138], [152], [30], [33], [133], [86], [114]). Following [87] (where the inverse
+problem associated to the critical number is studied) we summarize what is known on cr(G).
+22                                  WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+Theorem 10.5. Let q denote the smallest prime divisor of exp(G).
+                                             √
+  1. Suppose that |G| = q. Then cr(G) ≤ b 4q − 7c, and equality holds if the upper bound is odd (see
+     [33, Example 4.2]).
+  2. Suppose that |G|/q is prime.
+      (a) cr(C2 ⊕ C2 ) = 3, and if q is odd, then cr(Cq ⊕ Cq ) = 2q − 2.
+      (b) |G|/q + q − 2 ≤ cr(G) ≤ |G|/q + q − 1.
+  3. Suppose that |G|/q is composite. We have cr(C8 ) = cr(C2 ⊕ C4 ) = 5, and otherwise
+                                                          |G|
+                                                cr(G) =       + q − 2.
+                                                           q
+   C. Peng (see [151], [152], [66]) investigated the following variant of the critical number. He studied the
+smallest integer l ∈ N0 with the following property : Every sequence S ∈ F(G• ) of length |S| ≥ l and
+with |supp(S) ∩ H| ≤ |H| − 1 for all proper subgroups H ⊂ G, satisfies Σ(S) = G.
+   Van H. Vu (see [168]) showed the existence of a constant C with the following property : If G is a
+              p cyclic group and S ∈ F(G) a squarefree sequence with supp(S) ⊂ {g ∈ G | ord(g) = |G|}
+sufficiently large
+and |S| ≥ C |G|, then Σ(S) = G• .
+
+  Acknowledgements: The first author is supported by NSFC, Project No. 10271080. The second
+author is supported by the Austrian Science Fund FWF, Project No. P18779-N13.
+
+   Note added in proof: When this article went to press in June 2006, we were informed on the
+following progress:
+     • S. Savchev and F. Chen announced an improvement of Theorem 4.2
+     • D.J. Grynkiewiecz, O. Ordaz, M.T. Varela and F. Villarroel announced progress on Conjectures
+       6.9 and 7.6.
+
+                                                    References
+  [1] W.R. Alford, A. Granville, and C. Pomerance, There are infinitely many Carmicheal numbers, Ann. Math. 140
+      (1994), 703 – 722.
+  [2] N. Alon, Tools from higher algebra, Handbook of Combinatorics, vol. 2, North Holland, 1995, pp. 1749 – 1783.
+  [3]         , Combinatorial Nullstellensatz, Comb. Probab. and Comput. 8 (1999), 7 – 29.
+  [4] N. Alon, S. Friedland, and G. Kalai, Regular subgraphs of almost regular graphs, J. Comb. Theory, Ser. B 37 (1984),
+      79 – 91.
+  [5] P.C. Baayen, Een combinatorisch problem voor eindige abelse groepen, MC Syllabus 5, Colloquium Discrete Wiskunde,
+      Math. Centre, Amsterdam, 1968.
+  [6]         , C2 ⊕ C2 ⊕ C2 ⊕ C2n !, Reports ZW-1969-006, Math. Centre, Amsterdam, 1969.
+  [7] P. Baginski, S.T. Chapman, K. McDonald, and L. Pudwell, On cross numbers of minimal zero sequences in certain
+      cyclic groups, Ars Comb. 70 (2004), 47 – 60.
+  [8] R.C. Baker and W. Schmidt, Diophantine problems in variables restricted to the values of 0 and 1, J. Number Theory
+      12 (1980), 460 – 486.
+  [9] E. Balandraud, Un nouveau point de vue isopérimétrique appliqué au théorème de Kneser, manuscript.
+ [10] P. Balister, Y. Caro, C. Rousseau, and R. Yuster, Zero-sum square matrices, Eur. J. Comb. 23 (2002), 489 – 497.
+ [11] A. Bialostocki, G. Bialostocki, Y. Caro, and R. Yuster, Zero-sum ascending waves, J. Comb. Math. Comb. Comput.
+      32 (2000), 103 – 114.
+ [12] A. Bialostocki and P. Dierker, Zero sum Ramsey theorems, Congr. Numerantium 70 (1990), 119 – 130.
+ [13]         , On the Erdős-Ginzburg-Ziv theorem and the Ramsey numbers for stars and matchings, Discrete Math. 110
+      (1992), 1 – 8.
+ [14] A. Bialostocki, P. Dierker, D. Grynkiewicz, and M. Lotspeich, On some developments of the Erdős-Ginzburg-Ziv
+      Theorem II, Acta Arith. 110 (2003), 173 – 184.
+ [15] A. Bialostocki and M. Lotspeich, Some developments of the Erdős-Ginzburg-Ziv Theorem, Sets, Graphs and Numbers,
+      vol. 60, Coll. Math. Soc. J. Bolyai, 1992, pp. 97 – 117.
+ [16] B. Bollobás and I. Leader, The number of k-sums modulo k, J. Number Theory 78 (1999), 27 – 35.
+ [17] J.D. Bovey, P. Erdős, and I. Niven, Conditions for zero sum modulo n, Can. Math. Bull. 18 (1975), 27 – 29.
+                         ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                          23
+
+
+[18] W. Brakemeier, Eine Anzahlformel von Zahlen modulo n, Monatsh. Math. 85 (1978), 277 – 282.
+[19] J. Brüdern and H. Godinho, On Artin’s conjecture. II. Pairs of additive forms, Proc. Lond. Math. Soc. 84 (2002),
+     513 – 538.
+[20] Y. Caro, Zero-sum Ramsey numbers-stars, Discrete Math. 104 (1992), 1 – 6.
+[21]         , Zero-sum subsequences in abelian non-cyclic groups, Isr. J. Math. 92 (1995), 221 – 233.
+[22]         , Remarks on a zero-sum theorem, J. Comb. Theory, Ser. A 76 (1996), 315 – 322.
+[23]         , Zero-sum problems - a survey, Discrete Math. 152 (1996), 93 – 113.
+[24]         , Problems in zero-sum combinatorics, J. London Math. Soc. 55 (1997), 427 – 434.
+[25] S.T. Chapman, M. Freeze, W. Gao, and W.W. Smith, On Davenport’s constant of finite abelian groups, Far East J.
+     Math. Sci. 2 (2002), 47 – 54.
+[26] S.T. Chapman, M. Freeze, and W.W. Smith, Minimal zero sequences and the strong Davenport constant, Discrete
+     Math. 203 (1999), 271 – 277.
+[27]         , Equivalence classes of minimal zero-sequences modulo a prime, Ideal Theoretic Methods in Commutative
+     Algebra, Lect. Notes Pure Appl. Math., vol. 220, Marcel Dekker, 2001, pp. 133 – 145.
+[28] S.T. Chapman and A. Geroldinger, On cross numbers of minimal zero sequences, Australas. J. Comb. 14 (1996), 85
+     – 92.
+[29] S.T. Chapman and W.W. Smith, A characterization of minimal zero-sequences of index one in finite cyclic groups,
+     Integers 5(1) (2005), Paper A27, 5p.
+[30] G. Chiaselotti, Sums of distinct elements in finite abelian groups, Boll. Unione Mat. Ital. 7 (1993), 243 – 251.
+[31] J.A. Dias da Silva, Linear algebra and additive theory, Unusual Applications of Number Theory, DIMACS Ser. Discrete
+     Math. Theoret. Comput. Sci., vol. 64, Am. Math. Soc., 2004, pp. 61 – 69.
+[32] J.A. Dias da Silva and H. Godinho, Generalized derivatives and additive theory, Linear Algebra Appl. 342 (2002), 1
+     – 15.
+[33] J.A. Dias da Silva and Y. ould Hamidoune, Cyclic spaces for Grassmann derivatives and additive theory, Bull. Lond.
+     Math. Soc. 26 (1994), 140 – 146.
+[34] C. Delorme, I. Marquez, O. Ordaz, and A. Ortuño, Existence conditions for barycentric sequences, Discrete Math.
+     281 (2004), 163 – 172.
+[35] C. Delorme, O. Ordaz, and D. Quiroz, Some remarks on Davenport constant, Discrete Math. 237 (2001), 119 – 128.
+[36] G.T. Diderrich, On Kneser’s addition theorem in groups, Proc. Am. Math. Soc. 38 (1973), 443 – 451.
+[37]         , An addition theorem for abelian groups of order pq, J. Number Theory 7 (1975), 33 – 48.
+[38] G.T. Diderrich and H.B. Mann, Combinatorial problems in finite abelian groups, A Survey of Combinatorial Theory,
+     North-Holland, 1973, pp. 95 – 100.
+[39] V. Dimitrov, On the strong Davenport constant of nonabelian finite p-groups, Math. Balk. 18 (2004), 131 – 140.
+[40] Y. Edel, C. Elsholtz, A. Geroldinger, S. Kubertin, and L. Rackham, Zero-sum problems in finite abelian groups and
+     affine caps, manuscript.
+[41] R.B. Eggleton and P. Erdős, Two combinatorial problems in group theory, Acta Arith. 21 (1972), 111 – 116.
+[42] S. Elledge and G.H. Hurlbert, An application of graph pebbling to zero-sum sequences in abelian groups, Integers 5(1)
+     (2005), Paper A17, 10p.
+[43] C. Elsholtz, Lower bounds for multidimensional zero sums, Combinatorica 24 (2004), 351 – 358.
+[44] P. van Emde Boas, A combinatorial problem on finite abelian groups II, Reports ZW-1969-007, Math. Centre, Ams-
+     terdam, 1969.
+[45] P. van Emde Boas and D. Kruyswijk, A combinatorial problem on finite abelian groups, Reports ZW-1967-009, Math.
+     Centre, Amsterdam, 1967.
+[46]         , A combinatorial problem on finite abelian groups III, Reports ZW-1969-008, Math. Centre, Amsterdam,
+     1969.
+[47] P. Erdős, A. Ginzburg, and A. Ziv, Theorem in the additive number theory, Bull. Research Council Israel 10 (1961),
+     41 – 43.
+[48] P. Erdős and H. Heilbronn, On the addition of residue classes modulo p, Acta Arith. 9 (1964), 149 – 159.
+[49] B.W. Finklea, T. Moore, V. Ponomarenko, and Z.J. Turner, On block monoid atomic structure, manuscript.
+[50] C. Flores and O. Ordaz, On the Erdős-Ginzburg-Ziv theorem, Discrete Math. 152 (1996), 321 – 324.
+[51] M. Freeze, Lengths of factorizations in Dedekind domains, Ph.D. thesis, University of North Carolina at Chapel Hill,
+     1999.
+[52] M. Freeze and W.W. Smith, Sumsets of zerofree sequences, Arab. J. Sci. Eng. Sect. C Theme Issues 26 (2001), 97 –
+     105.
+[53] G.A. Freiman, Foundations of a Structural Theory of Set Addition, Translations of Mathematical Monographs, vol. 37,
+     American Mathematical Society, 1973.
+[54]         , Structure theory of set addition, Structure Theory of Set Addition, vol. 258, Astérisque, 1999, pp. 1 – 21.
+[55] Z. Füredi and D.J. Kleitman, The minimal number of zero sums, Combinatorics, Paul Erdős is Eighty, vol. 1, J.
+     Bolyai Math. Soc., 1993, pp. 159 – 172.
+24                                   WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+ [56] L. Gallardo and G. Grekos, On Brakemeier’s variant of the Erdős-Ginzburg-Ziv problem, Tatra Mt. Math. Publ. 20
+      (2000), 91 – 98.
+ [57] L. Gallardo, G. Grekos, L. Habsieger, F. Hennecart, B. Landreau, and A. Plagne, Restricted addition in Z/nZ and
+      an application to the Erdős-Ginzburg-Ziv problem, J. Lond. Math. Soc. 65 (2002), 513 – 523.
+ [58] L. Gallardo, G. Grekos, and J. Pihko, On a variant of the Erdős-Ginzburg-Ziv problem, Acta Arith. 89 (1999), 331 –
+      336.
+ [59] W. Gao, Subsequence sums in finite cyclic groups, manuscript.
+ [60]         , Some problems in additive group theory and number theory, Ph.D. thesis, Sichuan University, Sichuan, P.R.
+      China, 1994.
+ [61]         , Addition theorems for finite abelian groups, J. Number Theory 53 (1995), 241 – 246.
+ [62]         , A combinatorial problem on finite abelian groups, J. Number Theory 58 (1995), 100 – 103.
+ [63]         , An improvement of Erdős-Ginzburg-Ziv theorem, Acta Math. Sin. 39 (1996), 514 – 523.
+ [64]         , Two addition theorems on groups of prime order, J. Number Theory 56 (1996), 211 – 213.
+ [65]         , An addition theorem for finite cyclic groups, Discrete Math. 163 (1997), 257 – 265.
+ [66]         , Addition theorems and group rings, J. Comb. Theory, Ser. A 77 (1997), 98 – 109.
+ [67]         , On the number of zero sum subsequences, Discrete Math. 163 (1997), 267 – 273.
+ [68]         , On the number of subsequences with given sum, Discrete Math. 195 (1999), 127 – 138.
+ [69]         , On Davenport’s constant of finite abelian groups with rank three, Discrete Math. 222 (2000), 111 – 124.
+ [70]         , Two zero sum problems and multiple properties, J. Number Theory 81 (2000), 254 – 265.
+ [71]         , Zero sums in finite cyclic groups, Integers 0 (2000), Paper A14, 9p.
+ [72]         , On zero sum subsequences of restricted size III, Ars Comb. 61 (2001), 65 – 72.
+ [73]         , On zero sum subsequences of restricted size II, Discrete Math. 271 (2003), 51 – 59.
+ [74] W. Gao and A. Geroldinger, Group algebras of finite abelian groups and their applications to combinatorial problems,
+      manuscript.
+ [75]         , On the number of subsequences with given sum of sequences over finite abelian p-groups, Rocky Mt. J. Math.,
+      to appear.
+ [76]         , On the structure of zerofree sequences, Combinatorica 18 (1998), 519 – 527.
+ [77]         , On long minimal zero sequences in finite abelian groups, Period. Math. Hung. 38 (1999), 179 – 211.
+ [78]         , On the order of elements in long minimal zero-sum sequences, Period. Math. Hung. 44 (2002), 63 – 73.
+ [79]         , On zero-sum sequences in Z/nZ ⊕ Z/nZ, Integers 3 (2003), Paper A08, 45p.
+ [80]         , Zero-sum problems and coverings by proper cosets, Eur. J. Comb. 24 (2003), 531 – 549.
+ [81]         , On a property of minimal zero-sum sequences and restricted sumsets, Bull. Lond. Math. Soc. 37 (2005), 321
+      – 334.
+ [82] W. Gao, Q.H. Hou, W.A. Schmid, and R. Thangadurai, On short zero-sum subsequences II, manuscript.
+ [83] W. Gao and X. Jin, Weighted sums in finite cyclic groups, Discrete Math. 283 (2004), 243 – 247.
+ [84] W. Gao and I. Leader, Sums and k-sums in abelian groups of order k, J. Number Theory, to appear.
+ [85] W. Gao and Y. ould Hamidoune, Zero sums in abelian groups, Combin. Probab. Comput. 7 (1998), 261 – 263.
+ [86]         , On additive bases, Acta Arith. 88 (1999), 233 – 237.
+ [87] W. Gao, Y. ould Hamidoune, A. Llado, and O. Serra, Covering a finite abelian group by subset sums, Combinatorica
+      23 (2003), 599 – 611.
+ [88] W. Gao, A. Panigrahi, and R. Thangadurai, On the structure of p-zero-sum free sequences and its application to a
+      variant of Erdős-Ginzburg-Ziv theorem, Proc. Indian Acad. Sci., Math. Sci. 115 (2005), 67 – 77.
+ [89] W. Gao, I. Ruzsa, and R. Thangadurai, Olson’s constant for the group Zp ⊕ Zp , J. Comb. Theory, Ser. A 107 (2004),
+      49 – 67.
+ [90] W. Gao and R. Thangadurai, On zero-sum sequences of prescribed length, Aequationes Math., to appear.
+ [91]         , On the structure of sequences with forbidden zero-sum subsequences, Colloq. Math. 98 (2003), 213 – 222.
+ [92]         , A variant of Kemnitz conjecture, J. Comb. Theory, Ser. A 107 (2004), 69 – 86.
+ [93] W. Gao, R. Thangadurai, and J. Zhuang, Addition theorems on the cyclic groups Zpn , manuscript.
+ [94] W. Gao and J. Zhuang, Sequences not containing long zero-sum subsequences, Eur. J. Comb. 27 (2006), 777 – 787.
+ [95] A. Geroldinger, On a conjecture of Kleitman and Lemke, J. Number Theory 44 (1993), 60 – 65.
+ [96] A. Geroldinger and F. Halter-Koch, Non-Unique Factorizations. Algebraic, Combinatorial and Analytic Theory, Pure
+      and Applied Mathematics, vol. 278, Chapman & Hall/CRC, 2006.
+ [97] A. Geroldinger and Y. ould Hamidoune, Zero-sumfree sequences in cyclic groups and some arithmetical application,
+      J. Théor. Nombres Bordx. 14 (2002), 221 – 239.
+ [98] A. Geroldinger and R. Schneider, On Davenport’s constant, J. Comb. Theory, Ser. A 61 (1992), 147 – 152.
+ [99]         , The cross number of finite abelian groups II, Eur. J. Comb. 15 (1994), 399 – 405.
+[100]         , The cross number of finite abelian groups III, Discrete Math. 150 (1996), 123 – 130.
+[101]         , On minimal zero sequences with large cross number, Ars Comb. 46 (1997), 297 – 303.
+[102] D.J. Grynkiewicz, On the number of m-term zero-sum subsequences, Acta Arith., to appear.
+                          ZERO-SUM PROBLEMS IN FINITE ABELIAN GROUPS : A SURVEY                                        25
+
+
+[103]        , A weighted version of the Erdős-Ginzburg-Ziv Theorem, Combinatorica, to appear.
+[104]        , On four colored sets with non-decreasing diameter and the Erdős-Ginzburg-Ziv Theorem, J. Comb. Theory,
+      Ser. A 100 (2002), 44 – 60.
+[105]        , On a conjecture of Hamidoune for subsequence sums, Integers 5(2) (2005), Paper A07, 11p.
+[106]        , On a partition analog of the Cauchy-Davenport Theorem, Acta Math. Hung. 107 (2005), 161 – 174.
+[107]        , On an extension of the Erdős-Ginzburg-Ziv Theorem to hypergraphs, Eur. J. Comb. 26 (2005), 1154 – 1176.
+[108]        , Quasi-periodic decompositions and the Kemperman structure theorem, Eur. J. Comb. 26 (2005), 559 – 575.
+[109] F. Halter-Koch, A generalization of Davenport’s constant and its arithmetical applications, Colloq. Math. 63 (1992),
+      203 – 210.
+[110] Y. ould Hamidoune, On weighted sequence sums, Comb. Probab. Comput. 4 (1995), 363 – 367.
+[111]        , An isoperimetric method in additive theory, J. Algebra 179 (1996), 622 – 630.
+[112]        , On weighted sums in abelian groups, Discrete Math. 162 (1996), 127 – 132.
+[113]        , Subsequence sums, Comb. Probab. Comput. 12 (2003), 413 – 425.
+[114] Y. ould Hamidoune, A.S. Lladó, and O. Serra, On sets with a small subset sum, Comb. Probab. Comput. 8 (1999),
+      461 – 466.
+[115] Y. ould Hamidoune, O. Ordaz, and A. Ortuño, On a combinatorial theorem of Erdős, Ginzburg and Ziv, Comb.
+      Probab. Comput. 7 (1998), 403 – 412.
+[116] Y. ould Hamidoune and D. Quiroz, On subsequence weighted products, Comb. Probab. Comput. 14 (2005), 485 – 489.
+[117] Y. ould Hamidoune and G. Zémor, On zero-free subset sums, Acta Arith. 78 (1996), 143 – 152.
+[118] H. Harborth, Ein Extremalproblem für Gitterpunkte, J. Reine Angew. Math. 262 (1973), 356 – 360.
+[119] G. Harcos and I.Z. Ruzsa, A problem on zero subsums in abelian groups, Period. Math. Hung. 35 (1997), 31 – 34.
+[120] F. Hennecart, La fonction de Brakemeier dans le problème d’Erdős-Ginzburg-Ziv, Acta Arith. 117 (2005), 35 – 50.
+[121]        , Restricted addition and some developments of the Erdős-Ginzburg-Ziv theorem, Bull. Lond. Math. Soc. 37
+      (2005), 481 – 490.
+[122] G.H. Hurlbert, Recent progress in graph pebbling, Graph Theory Notes of New York, to appear.
+[123] F. Kainrath, On local half-factorial orders, Arithmetical Properties of Commutative Rings and Monoids, Lect. Notes
+      Pure Appl. Math., vol. 241, Chapman & Hall/CRC, 2005, pp. 316 – 324.
+[124] A. Kemnitz, On a lattice point problem, Ars Comb. 16-B (1983), 151 – 160.
+[125] M. Kisin, The number of zero sums modulo m in a sequence of length n, Mathematika 41 (1994), 149 – 163.
+[126] D. Kleitman and P. Lemke, An addition theorem on the integers modulo n, J. Number Theory 31 (1989), 335 – 345.
+[127] I. Koutis, Dimensionality restrictions on sums over Zdp , manuscript.
+[128] U. Krause, A characterization of algebraic number fields with cyclic class group of prime power order, Math. Z. 186
+      (1984), 143 – 148.
+[129] U. Krause and C. Zahlten, Arithmetic in Krull monoids and the cross number of divisor class groups, Mitt. Math.
+      Ges. Hamb. 12 (1991), 681 – 696.
+[130] G. Lettl and W.A. Schmid, Minimal zero-sum sequences in Cn ⊕ Cn , Eur. J. Comb., to appear.
+[131] G. Lettl and Zhi-Wei Sun, On covers of abelian groups by cosets, manuscript.
+[132] V.F. Lev, Restricted set addition in abelian groups : results and conjectures, J. Théor. Nombres Bordx. 17 (2005),
+      181 – 193.
+[133] E. Lipkin, Subset sums of sets of residues, Structure Theory of Set Addition, vol. 258, Astérisque, 1999, pp. 187 –
+      192.
+[134] A.D. Lungo, Reconstructing permutation matrices from diagonal sums, Theor. Comput. Sci. 281 (2002), 235 – 249.
+[135] H.B. Mann, Additive group theory - a progress report, Bull. Am. Math. Soc. 79 (1973), 1069 – 1075.
+[136]        , Addition Theorems : The Addition Theorems of Group Theory and Number Theory, R.E. Krieger, 1976.
+[137] H.B. Mann and J.E. Olson, Sums of sets in the elementary abelian group of type (p, p), J. Comb. Theory, Ser. A 2
+      (1967), 275 – 284.
+[138] H.B. Mann and Ying Fou Wou, An addition theorem for the elementary abelian group of type (p, p), Monatsh. Math.
+      102 (1986), 273 – 308.
+[139] M. Mazur, A note on the growth of Davenport’s constant, Manuscr. Math. 74 (1992), 229 – 235.
+[140] R. Meshulam, An uncertainty inequality and zero subsums, Discr. Math. 84 (1990), 197 – 200.
+[141] M.B. Nathanson, Additive Number Theory : Inverse Problems and the Geometry of Sumsets, Springer, 1996.
+[142] J.E. Olson, A combinatorial problem on finite abelian groups I, J. Number Theory 1 (1969), 8 – 10.
+[143]        , A combinatorial problem on finite abelian groups II, J. Number Theory 1 (1969), 195 – 199.
+[144]        , Sums of sets of group elements, Acta Arith. 28 (1975), 147 – 156.
+[145]        , On a combinatorial problem of Erdős, Ginzburg and Ziv, J. Number Theory 8 (1976), 52 – 57.
+[146]        , On the sum of two sets in a group, J. Number Theory 18 (1984), 110 – 120.
+[147]        , On the symmetric difference of two sets in a group, Eur. J. Comb. 7 (1986), 43 – 54.
+[148]        , A problem of Erdős on abelian groups, Combinatorica 7 (1987), 285 – 289.
+26                                  WEIDONG GAO AND ALFRED GEROLDINGER
+
+
+[149] J.E. Olson and E.T. White, Sums from a sequence of group elements, Number Theory and Algebra (H. Zassenhaus,
+      ed.), Academic Press, 1977, pp. 215 – 222.
+[150] O. Ordaz and D. Quiroz, On zero-free sets, Divulg. Mat. 14 (2006), 1 – 10.
+[151] C. Peng, Addition theorems in elementary abelian groups I, J. Number Theory 27 (1987), 46 – 57.
+[152]        , Addition theorems in elementary abelian groups II, J. Number Theory 27 (1987), 58 – 62.
+[153] V. Ponomarenko, Minimal zero sequences of finite cyclic groups, Integers 4 (2004), Paper A24, 6p.
+[154] C. Reiher, On Kemnitz’ conjecture concerning lattice points in the plane, Ramanujan J., to appear.
+[155] S. Savchev and F. Chen, Kemnitz’ conjecture revisited, Discrete Math. 297 (2005), 196 – 201.
+[156] W.A. Schmid, On zero-sum subsequences in finite abelian groups, Integers 1 (2001), Paper A01, 8p.
+[157]        , Half-factorial sets in finite abelian groups : a survey, Grazer Math. Ber. 348 (2005), 41 – 64.
+[158] W.A. Schmid and J.J. Zhuang, On short zero-sum subsequences over p-groups, Ars Comb., to appear.
+[159] M. Skalba, The relative Davenport’s constant of the group Zn × Zn , Grazer Math. Ber. 318 (1992), 167 – 168.
+[160]        , On numbers with a unique representation by a binary quadratic form, Acta Arith. 64 (1993), 59 – 68.
+[161]        , On the relative Davenport constant, Eur. J. Comb. 19 (1998), 221 – 225.
+[162] J. Subocz, Some values of Olson’s constant, Divulg. Mat. 8 (2000), 121 – 128.
+[163] Zhi-Wei Sun, Unification of zero-sum problems, subset sums and covers of Z, Electron. Res. Announc. Am. Math.
+      Soc. 9 (2003), 51 – 60.
+[164] B. Sury and R. Thangadurai, Gao’s conjecture on zero-sum sequences, Proc. Indian Acad. Sci., Math. Sci. 112 (2002),
+      399 – 414.
+[165] E. Szemerédi, On a conjecture of Erdős and Heilbronn, Acta Arith. 17 (1970), 227 – 229.
+[166] R. Thangadurai, Interplay between four conjectures on certain zero-sum problems, Expo. Math. 20 (2002), 215 – 228.
+[167]        , Non-canonical extensions of Erdős-Ginzburg-Ziv Theorem, Integers 2 (2002), Paper A08, 14p.
+[168] V.H. Vu, Olson’s Theorem for cyclic groups, manuscript.
+[169] T. Yuster, Bounds for counter-examples to addition theorems in solvable groups, Arch. Math. 51 (1988), 223 – 231.
+[170] T. Yuster and B. Peterson, A generalization of an addition theorem for solvable groups, Can. J. Math. 36 (1984), 529
+      – 536.
+[171] J. Zhuang and W. Gao, Erdős-Ginzburg-Ziv theorem for dihedral groups of large prime index, Eur. J. Comb. 26
+      (2005), 1053 – 1059.
+
+     Center for Combinatorics, Nankai University, Tianjin 300071, P. R. China
+
+   Institut für Mathematik und Wissenschaftliches Rechnen, Karl-Franzens Universität, Heinrichstrasse 36,
+8010 Graz, Austria
+

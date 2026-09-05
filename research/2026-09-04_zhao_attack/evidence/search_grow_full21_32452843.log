@@ -1,0 +1,15 @@
+CONFIG N=21 M=13 cap=3 seed=32452843 iterations=500000 mode=full
+BEST length=5 iter=0 choices=624 extensions=1 ms=0 seq=1,5,25,125,267 spectrum=
+BEST length=6 iter=1 choices=1248 extensions=2 ms=2 seq=1,5,25,125,267,368 spectrum=
+BEST length=7 iter=2 choices=1872 extensions=3 ms=2 seq=1,5,25,125,267,368,534 spectrum=
+BEST length=8 iter=3 choices=2496 extensions=4 ms=3 seq=1,5,25,125,267,368,534,105 spectrum=
+BEST length=9 iter=4 choices=3120 extensions=5 ms=3 seq=1,5,25,125,267,368,534,105,389 spectrum=
+BEST length=10 iter=5 choices=3744 extensions=6 ms=3 seq=1,5,25,125,267,368,534,105,389,509 spectrum=
+BEST length=11 iter=6 choices=4368 extensions=7 ms=4 seq=1,5,25,125,267,368,534,105,389,509,25 spectrum=
+BEST length=12 iter=7 choices=4992 extensions=8 ms=4 seq=1,5,25,125,267,368,534,105,389,509,25,296 spectrum=
+BEST length=13 iter=8 choices=5616 extensions=9 ms=4 seq=1,5,25,125,267,368,534,105,389,509,25,296,222 spectrum=
+BEST length=14 iter=9 choices=6240 extensions=10 ms=4 seq=1,5,25,125,267,368,534,105,389,509,25,296,222,153 spectrum=
+BEST length=15 iter=10 choices=6864 extensions=11 ms=4 seq=1,5,25,125,267,368,534,105,389,509,25,296,222,153,368 spectrum=14:1
+BEST length=16 iter=11 choices=7488 extensions=12 ms=4 seq=1,5,25,125,267,368,534,105,389,509,25,296,222,153,368,267 spectrum=14:1,15:1
+BEST length=17 iter=45 choices=28704 extensions=38 ms=6 seq=1,5,25,125,509,348,389,439,179,222,537,171,342,25,171,25,171 spectrum=14:3,16:1
+FINAL length=17 choices=312000000 extensions=377681 iterations=500000 ms=18284 seq=1,5,25,125,509,348,389,439,179,222,537,171,342,25,171,25,171 spectrum=14:3,16:1

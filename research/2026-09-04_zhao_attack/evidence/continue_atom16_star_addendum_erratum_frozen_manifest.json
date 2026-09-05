@@ -1,0 +1,115 @@
+{
+  "status": "OLD_D3_TABLE_WITHDRAWN_D3_M1_EXCLUSION_REVALIDATED",
+  "scope": "Only section 3 d=3,M=1 enumeration in continue_atom16_star_addendum.md",
+  "frozen_date": "2026-09-04",
+  "frozen_context_files": [
+    {
+      "path": "proofs/continue_atom16_star.md",
+      "sha256": "1f82edbe53587a1049f74025e20381c8ecc1f76ffdf00e2fd256dca027cdb594",
+      "bytes": 9128
+    },
+    {
+      "path": "proofs/continue_atom16_star_addendum.md",
+      "sha256": "3f6747de90bc560396604ed588c6efa57f01485a4ad3cfb28ad94e7fbaf10e79",
+      "bytes": 5577
+    },
+    {
+      "path": "evidence/continue_atom16_star_addendum_frozen_manifest.json",
+      "sha256": "f10b521ac4a9cbb08901a9ba5aeadb657c8d742c985ecae3a96012f04f7d453c",
+      "bytes": 1993
+    }
+  ],
+  "withdrawn_d3_evidence_files": [
+    {
+      "path": "scripts/continue_atom16_star_addendum_d3.cs",
+      "sha256": "b7a8e15cbcfa28434522e74e3552582d3fc63c4ce845a4ffa8c9d82fe93c383e",
+      "bytes": 4826
+    },
+    {
+      "path": "scripts/continue_atom16_star_addendum_d3.ps1",
+      "sha256": "25b466f12556caf6291e2c9446f987b1beb7effeed41f41de4a8160bc0552a54",
+      "bytes": 295
+    },
+    {
+      "path": "evidence/continue_atom16_star_addendum_d3.json",
+      "sha256": "44107ff946e70143e887f07cedbfecef663d6b790173b37156b33f1b3695079d",
+      "bytes": 1378
+    }
+  ],
+  "replacement_files": [
+    {
+      "path": "proofs/continue_atom16_star_addendum_erratum.md",
+      "sha256": "fc67a6c9e4c0f4362e27e623504dced5a5a31b002bf07ab9ea0358aceb496a84",
+      "bytes": 5411
+    },
+    {
+      "path": "scripts/continue_atom16_star_addendum_d3_fixed.cs",
+      "sha256": "4455a58ccdeb51dda9af52667fd2f0769841e7b07a25746bd644135bf9187f0d",
+      "bytes": 5499
+    },
+    {
+      "path": "scripts/continue_atom16_star_addendum_d3_fixed.ps1",
+      "sha256": "da2def4df549e9f96fcf97916a0f22e7c66e75d5503e3253e1cdea13a23b63d8",
+      "bytes": 306
+    },
+    {
+      "path": "evidence/continue_atom16_star_addendum_d3_fixed.json",
+      "sha256": "dbba4a67cc8ba3eb83a7ea7a635e1cb26ce77dd7ab00e2bb7f369ec969c3d53f",
+      "bytes": 2613
+    }
+  ],
+  "defect": "Both old JSON rows aliased one static nodes array; second RunCore overwrote the first snapshot before serialization.",
+  "replacement_counts": {
+    "true_support_filter": {
+      "VA": [
+        1,
+        228,
+        8466,
+        28905,
+        4843,
+        0,
+        0,
+        0
+      ],
+      "VB": [
+        1,
+        164,
+        3338,
+        6318,
+        958,
+        0,
+        0,
+        0
+      ]
+    },
+    "support_relaxed_all_625_values": {
+      "VA": [
+        1,
+        233,
+        9220,
+        39942,
+        15691,
+        0,
+        0,
+        0
+      ],
+      "VB": [
+        1,
+        169,
+        3838,
+        10342,
+        3507,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "logical_effect": {
+    "old_two_d3_rows": "WITHDRAWN",
+    "d3_M1_exclusion": "REVALIDATED",
+    "d4_result": "UNCHANGED",
+    "general_16_atom_exclusion": "INCOMPLETE"
+  },
+  "replay": "powershell -File scripts/continue_atom16_star_addendum_d3_fixed.ps1 -Seconds 30"
+}

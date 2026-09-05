@@ -1,0 +1,17 @@
+CONFIG N=20 M=14 seed=104729 restarts=30 steps=3000 mode=affine domain=125
+BEST bad=309 support=8 run=0 step=0 moves=0 evaluations=0 ms=1 seq=1,5,25,125,1,5,25,125,1,5,25,125,1,5,25,125,502,158,54,138 spectrum=5:36,10:273,15:298
+BEST bad=187 support=8 run=0 step=1 moves=1 evaluations=121 ms=3 seq=1,5,25,125,1,5,25,125,1,5,25,125,1,5,25,125,502,154,54,138 spectrum=5:42,10:145,15:384
+BEST bad=120 support=8 run=0 step=2 moves=2 evaluations=242 ms=3 seq=1,5,25,125,1,5,25,125,1,5,25,125,1,5,25,125,502,154,54,258 spectrum=5:38,10:82,15:300
+BEST bad=104 support=9 run=0 step=3 moves=3 evaluations=364 ms=3 seq=1,5,25,125,1,506,25,125,1,5,25,125,1,5,25,125,502,154,54,258 spectrum=5:38,10:66,15:169
+BEST bad=100 support=10 run=0 step=4 moves=4 evaluations=487 ms=4 seq=1,5,25,125,1,506,25,202,1,5,25,125,1,5,25,125,502,154,54,258 spectrum=5:64,10:36,15:64,20:1
+BEST bad=81 support=10 run=0 step=75 moves=75 evaluations=9269 ms=7 seq=1,5,25,125,1,459,154,178,1,5,125,25,1,58,526,25,154,154,25,483 spectrum=5:38,10:43,15:221
+BEST bad=77 support=10 run=0 step=81 moves=81 evaluations=10008 ms=7 seq=1,5,25,125,1,459,154,178,1,5,125,25,1,58,502,25,154,154,25,483 spectrum=5:14,10:63,15:290
+BEST bad=72 support=10 run=0 step=82 moves=82 evaluations=10131 ms=7 seq=1,5,25,125,1,459,154,178,1,5,125,25,1,583,502,25,154,154,25,483 spectrum=5:15,10:57,15:43
+BEST bad=55 support=10 run=0 step=87 moves=87 evaluations=10749 ms=8 seq=1,5,25,125,1,459,154,178,1,5,125,25,1,583,502,25,178,154,25,483 spectrum=5:19,10:36,15:19,20:1
+BEST bad=53 support=9 run=0 step=1740 moves=1729 evaluations=213881 ms=63 seq=1,5,25,125,1,1,34,22,134,134,134,34,247,25,34,166,34,25,25,1 spectrum=5:5,10:48,15:289
+BEST bad=33 support=8 run=0 step=1777 moves=1766 evaluations=218416 ms=64 seq=1,5,25,125,1,1,34,22,134,134,134,34,247,25,34,134,34,25,25,1 spectrum=5:4,10:29,15:786
+PROGRESS runs=10 best=33 moves=29830 evaluations=3691186 ms=970
+PROGRESS runs=20 best=33 moves=59662 evaluations=7384395 ms=1913
+BEST bad=27 support=8 run=25 step=779 moves=75349 evaluations=9326816 ms=2405 seq=1,5,25,125,5,5,170,170,526,526,25,170,25,170,5,526,46,530,526,25 spectrum=5:16,10:11,15:671
+PROGRESS runs=30 best=27 moves=89490 evaluations=11075670 ms=2847
+FINAL bad=27 moves=89490 evaluations=11075670 restarts=30 steps=3000 ms=2847 seq=1,5,25,125,5,5,170,170,526,526,25,170,25,170,5,526,46,530,526,25 spectrum=5:16,10:11,15:671

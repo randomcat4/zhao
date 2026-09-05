@@ -1,0 +1,17 @@
+{
+  "status": "CORRECT",
+  "scope": "B with an H11 three-triple core only; not A and not all B",
+  "frozen_inputs_sha256": {
+    "h11_continue_B_proof.md": "e4be4106f26daee5bf27a121dc36e37c1b7ad52c3654fa450113c016702f0d1c",
+    "h11_continue_certify.py": "148a0e2422317bab7ef382eddba8a9b4c6cc7fe2757935ca025928afe94d2cc9",
+    "h11_continue_certificate.json": "df5f463fe6312ba47492ce3932d50de1cc1374e0a38b29fe38aa65d3460b14e4",
+    "h11_continue_scalar_egz_v2.json": "6f7b9c8a7018b016fa6cb9f73524bd9c8c3120dee70415fd7cb6265f8e6dfbdc",
+    "formal/H11ScalarCertificate.lean": "15f4a1912584e0f0fa4a2438fa2995eca4fcded0d4915e47926f0ffd6a528fac"
+  },
+  "new_evidence_sha256": {
+    "evidence/verify_h11_final_fresh_recompute.py": "a612c10b4fab06d6e8673bcd2bad655333fe59c5a9b6a71a3b8dd6a1a9574646",
+    "evidence/verify_h11_final_fresh_recompute.json": "65bc98d2cafe219d8892a1eaa70107f978666f2fe77a4f0175bd40b575caddfb",
+    "evidence/verify_h11_final_fresh_lean.log": "626843bfdf7dfcd56b43fafe922c4ec8bb0a3746c839f88950bd7e325475fc37",
+    "evidence/verify_h11_final_fresh_report.md": "db0bd5ed6c2f51561c40007456fa2fac8acb77a2ee6b54a938847386c601a268"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "MATCH",
+  "roots_compared": 34,
+  "total_nodes": 656175,
+  "compared_fields": [
+    "nodes",
+    "nodes_by_length",
+    "leaves_by_length",
+    "max_reached_length",
+    "completed_exhaustively"
+  ],
+  "implementations": [
+    "Python exact min-distance search",
+    "C# exact min-distance search"
+  ],
+  "limitation": "Independent implementation comparison; not a fresh-context proof audit."
+}

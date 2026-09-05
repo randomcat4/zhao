@@ -1,0 +1,118 @@
+{
+  "core_summary": {
+    "E10": [
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        2,
+        4,
+        4
+      ],
+      [
+        4,
+        2,
+        0
+      ]
+    ],
+    "E10_fiber0": [
+      [
+        0,
+        1,
+        4
+      ]
+    ],
+    "E10_fiber3": [
+      [
+        1,
+        1,
+        4
+      ]
+    ],
+    "E11_equals_M_union_sigma": true,
+    "coefficient_patterns": 288,
+    "ell": [
+      3,
+      1,
+      1
+    ],
+    "maximum_M_translate_intersection": 2,
+    "missing": [
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        2,
+        4,
+        4
+      ],
+      [
+        4,
+        2,
+        0
+      ]
+    ],
+    "represented_position_subsets": 2048,
+    "sigma": [
+      1,
+      1,
+      4
+    ]
+  },
+  "frozen_sha256": {
+    "evidence/root_continue_star_d2.json": "2cd26a16f767815b540be55f678833e1bcafac4e0b87e5c23a79a393d7955fe6",
+    "proofs/root_continue_star_d2.md": "d0b68aec99ccf1a98e82615b8c82ed13bb8382633ee0436caf29480c7b056ea7",
+    "scripts/root_continue_star_d2.py": "caee1318af07e657db47ba1fa91c87d35a78d2803468c5e47e2f232d05bf01f7"
+  },
+  "method": "binomially weighted core coefficient tuples plus independently generated bounded scalar compositions",
+  "restricted_pair_sum_summary": {
+    "minimum_restricted_pair_sum_size": 5,
+    "translated_distinct_triples_checked": 310124,
+    "triples_attaining_minimum": 124
+  },
+  "scalar_summary": {
+    "count_vectors": 715,
+    "distinct_interfaces": 715,
+    "independent_residue_availability": {
+      "(0, 2)": 2185,
+      "(0,)": 120,
+      "(2,)": 60
+    },
+    "one_double_interfaces": 1650,
+    "supplied_residue_counts": {
+      "0": 985,
+      "2": 1380
+    },
+    "total_interfaces": 2365
+  },
+  "status": "INDEPENDENT_FINITE_CHECKS_PASSED"
+}

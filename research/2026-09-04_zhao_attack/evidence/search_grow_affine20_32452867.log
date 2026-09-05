@@ -1,0 +1,15 @@
+CONFIG N=20 M=14 cap=3 seed=32452867 iterations=500000 mode=affine
+BEST length=5 iter=0 choices=125 extensions=1 ms=1 seq=1,5,25,125,595 spectrum=
+BEST length=6 iter=1 choices=250 extensions=2 ms=2 seq=1,5,25,125,595,210 spectrum=
+BEST length=7 iter=2 choices=375 extensions=3 ms=2 seq=1,5,25,125,595,210,182 spectrum=
+BEST length=8 iter=3 choices=500 extensions=4 ms=3 seq=1,5,25,125,595,210,182,5 spectrum=
+BEST length=9 iter=4 choices=625 extensions=5 ms=3 seq=1,5,25,125,595,210,182,5,125 spectrum=
+BEST length=10 iter=5 choices=750 extensions=6 ms=3 seq=1,5,25,125,595,210,182,5,125,386 spectrum=
+BEST length=11 iter=6 choices=875 extensions=7 ms=12 seq=1,5,25,125,595,210,182,5,125,386,386 spectrum=
+BEST length=12 iter=7 choices=1000 extensions=8 ms=12 seq=1,5,25,125,595,210,182,5,125,386,386,583 spectrum=
+BEST length=13 iter=8 choices=1125 extensions=9 ms=12 seq=1,5,25,125,595,210,182,5,125,386,386,583,210 spectrum=
+BEST length=14 iter=9 choices=1250 extensions=10 ms=12 seq=1,5,25,125,595,210,182,5,125,386,386,583,210,386 spectrum=
+BEST length=15 iter=16 choices=2125 extensions=16 ms=12 seq=1,5,25,125,595,182,386,386,386,1,306,359,306,371,306 spectrum=15:1
+BEST length=16 iter=42 choices=5375 extensions=36 ms=13 seq=1,5,25,125,182,491,125,579,579,243,5,579,243,491,125,1 spectrum=15:3
+BEST length=17 iter=19042 choices=2380375 extensions=14385 ms=287 seq=1,5,25,125,190,190,25,125,25,5,1,1,5,190,125,543,543 spectrum=15:6
+FINAL length=17 choices=62500000 extensions=377261 iterations=500000 ms=6793 seq=1,5,25,125,190,190,25,125,25,5,1,1,5,190,125,543,543 spectrum=15:6

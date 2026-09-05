@@ -1,0 +1,2984 @@
+
+ 
+ 
+ On zero-sum subsequences in a finite abelian group of length not exceeding a given number 
+ 
+ 
+ 
+   
+ 
+ 
+  // Restore the saved color scheme preference, or
+  // enact the browser preference if "automatic", 
+  // without expecting DOM load to have completed.
+  //
+  // Also restore any saved readingmode and ToC display preferences.
+  function initializeReadingPreferences() {
+    let saved_theme = localStorage.getItem("ar5iv_theme") || "automatic";
+    if (saved_theme === "automatic") {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        saved_theme = "dark";
+      }
+    }
+    if (saved_theme == "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+
+    const tocDisplay = localStorage.getItem('arxiv_html_paper_toc_display');
+    if (tocDisplay) {
+      document.documentElement.setAttribute("data-toc-display", tocDisplay);
+    }
+    const readingMode = localStorage.getItem('arxiv_html_paper_reading_mode');
+    if (readingMode) {
+      document.documentElement.setAttribute("data-reading-mode", readingMode);
+    }
+    // Pre-apply spinout-banner dismissal here, before the banner paints, so it
+    // never flashes in only to be hidden later by the deferred arxiv-header.js.
+    // Key matches arxiv-header.js: "arxiv-banner-dismissed:" + data-banner-name.
+    if (localStorage.getItem('arxiv-banner-dismissed:spinout-nonprofit')) {
+      document.documentElement.setAttribute("data-banner-dismissed", "");
+    }
+  }
+  // Run as soon as JS starts, to minimize repainting
+  initializeReadingPreferences();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /* Banner pre-dismissal (set above before paint -> no flash-then-hide) and
+     reading-mode chrome hiding. */
+  html[data-banner-dismissed] .ds-announcement { display: none; }
+  html[data-reading-mode="enabled"] .ds-announcement,
+  html[data-reading-mode="enabled"] .ds-site-footer { display: none; }
+  /* Keep the announcement text dark on the Open-Blue band in both colour themes
+     (otherwise it inherits the paper's warm-wash text in dark mode and washes out). */
+  .ds-announcement-text { color: var(--arxiv-ink, #1c1a17); }
+ 
+ 
+ 
+ 
+ 
+   
+     
+       Report GitHub Issue 
+       × 
+     
+
+     
+       Title: 
+       
+
+       Content selection saved. Describe the issue below: 
+
+       Description: 
+       
+     
+
+     
+       Submit without GitHub 
+       Submit in GitHub 
+     
+   
+ 
+     
+     arXiv is now an independent nonprofit! 
+     Learn more 
+     × 
+   
+
+ 
+   
+     
+       Back to arXiv 
+     
+   
+   
+   
+     Why HTML? 
+     
+       
+         
+       
+       Report Issue 
+     
+     
+       
+         
+         
+       
+       Back to Abstract 
+     
+     
+     
+       
+         
+       
+       Download PDF 
+     
+     
+       
+         
+         
+       
+     
+     
+     
+       
+         
+       
+     
+     
+     
+       
+         
+           
+           
+         
+       
+       
+         
+           
+           
+         
+       
+       
+         
+           
+           
+         
+       
+     
+   
+ 
+ 
+ 
+ Abstract. 
+ 1  Introduction 
+ 2  Preliminaries 
+ 3  The proofs of Theorem  
+ 4  Zero-sum subsequences of zero-sum sequences 
+ 5  The proofs of Theorems   and  
+ 6  Concluding Remarks and Open Problems 
+ References 
+ 
+ 
+ 
+ 
+   
+    License: CC BY 4.0
+   
+   
+arXiv:2506.21383v1 [math.CO] 26 Jun 2025 
+ 
+ 
+ On zero-sum subsequences in a finite abelian group of length not exceeding a given number Thanks:  K. Zhao was supported partially by National Science Foundation
+of China Grant #12301425. 
+ 
+ 
+ Kevin Zhao
+ 
+ Address:  School of Mathematics and Statistics, Nanning Normal University, Nanning 530100, China
+ 
+ Address:  Center for Applied Mathematics of Guangxi, Nanning Normal University, Nanning 530100, China
+ 
+ Email address:  zhkw-hebei@163.com 
+ 
+
+ Abstract. 
+    
+ Let  G G  be an additive finite abelian group and let  k ∈ [ exp ⁡ ( G ) , 𝖣 ⁡ ( G ) − 1 ] k\in[\exp(G),\mathsf{D}(G)-1]  be a positive integer.
+Denote by  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  the smallest positive integer  l ∈ ℕ ∪ { + ∞ } l\in\mathbb{N}\cup\{+\infty\} 
+such that each sequence of length  l l  over  G G  has a non-empty zero-sum
+subsequence of length at most  k k .
+Let  k G ∈ [ exp ⁡ ( G ) , 𝖣 ⁡ ( G ) − 1 ] k_{G}\in[\exp(G),\mathsf{D}(G)-1]  be the smallest positive integer such that  𝗌 ≤ 𝖣 ⁡ ( G ) − d ​ ( G ) ≤ 𝖣 ⁡ ( G ) + d \mathsf{s}_{\leq\mathsf{D}(G)-d}(G)\leq\mathsf{D}(G)+d  for  𝖣 ⁡ ( G ) − d ≥ k G \mathsf{D}(G)-d\geq k_{G} .
+We conjecture that  k G = 𝖣 ⁡ ( G ) + 1 2 k_{G}=\frac{\mathsf{D}(G)+1}{2}  for finite abelian groups  G G  with  r ⁡ ( G ) ≥ 2 r(G)\geq 2  and  𝖣 ​ ( G ) = 𝖣 ∗ ​ ( G ) \mathsf{D}(G)=\mathsf{D}^{*}(G) . 
+    
+ In this paper, we mainly study this conjecture for finite abelian  p p -groups and get some results to support this conjecture. We also prove that  k G ≤ 𝖣 ⁡ ( G ) − 2 k_{G}\leq\mathsf{D}(G)-2  for all finite abelian groups  G G  with  r ⁡ ( G ) ≥ 2 r(G)\geq 2  except  C 2 3 C_{2}^{3}  and  C 2 4 C_{2}^{4} . In addition, we also get some lower bounds for the invariant  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G) . 
+  
+ 
+ 
+ Key words and phrases:  Zero-sum subsequence, Davenport constant, Abelian groups.
+ 
+ 
+ 1.  Introduction 
+
+ 
+ Let  ℕ \mathbb{N}  denote the set of positive integers, and
+ ℕ 0 = ℕ ∪ { 0 } \mathbb{N}_{0}=\mathbb{N}\cup\{0\} . Throughout this paper all abelian
+groups will be written additively, and for  n , r ∈ ℕ n,r\in\mathbb{N} , we let
+ C n C_{n}  denote the cyclic group of  n n  elements.
+Let  G G  be an additive finite abelian group and  G ∗ = G ∖ { 0 } G^{*}=G\setminus\{0\} .
+It is well known that  | G | = 1 |G|=1  or  G = C n 1 ⊕ C n 2 ⊕ ⋯ ⊕ C n r G=C_{n_{1}}\oplus C_{n_{2}}\oplus\cdots\oplus C_{n_{r}} , where  1 < n 1 | n 2 ​ | ⋯ | ​ n r 1<n_{1}|n_{2}|\cdots|n_{r} .
+Then  r ⁡ ( G ) = r r(G)=r  is the rank of  G G  and
+ exp ⁡ ( G ) = n r \exp(G)=n_{r}  is the exponent of  G G . Let 
+ 
+
+ 
+ 
+ S := g 1 ⋯ g l S:=g_{1}\cdots g_{l} 
+ 
+ 
+ be a sequence with elements in  G G .
+We call  S S  a zero-sum sequence if  g 1 + ⋯ + g l = 0 g_{1}+\cdots+g_{l}=0  holds in  G G .
+Let  𝖣 ⁡ ( G ) \mathsf{D}(G)  denote the  Davenport constant  of  G G , which is defined
+as the smallest positive integer  t t  such that every sequence  S S  over
+ G G  of length  | S | ≥ t |S|\geq t  has a nonempty zero-sum subsequence. Set 
+ 
+
+ 
+ 
+ 𝖣 ∗ ​ ( G ) := 1 + ∑ i = 1 r ( n i − 1 ) . \mathsf{D}^{*}(G):=1+\sum_{i=1}^{r}(n_{i}-1). 
+ 
+ 
+ Obviously, we have  𝖣 ⁡ ( G ) ≥ 𝖣 ∗ ​ ( G ) \mathsf{D}(G)\geq\mathsf{D}^{*}(G) .
+In most of the cases, a direct zero-sum problem asks for the
+the smallest integer  ℓ ∈ ℕ \ell\in\mathbb{N}  such that every sequence  S S  over  G G 
+with length  | S | ≥ ℓ |S|\geq\ell  has a zero-sum subsequence with prescribed length. 
+ 
+ 
+ Let  L ⊂ ℕ L\subset\mathbb{N}  be a nonempty subset and let  𝗌 L ​ ( G ) \mathsf{s}_{L}(G)  be the
+smallest  ℓ ∈ ℕ ∪ { ∞ } \ell\in\mathbb{N}\cup\{\infty\}  such that every sequence  S S  over  G G 
+has a zero-sum subsequence  T T  with length  | T | ∈ L |T|\in L . Thus for the classical
+zero-sum invariants, we clearly have  𝖣 ​ ( G ) = 𝗌 ℕ ​ ( G ) \mathsf{D}(G)=\mathsf{s}_{\mathbb{N}}(G) ,
+ η ​ ( G ) = 𝗌 [ 1 , exp ⁡ ( G ) ] ​ ( G ) \eta(G)=\mathsf{s}_{[1,\exp(G)]}(G) ,  𝗌 ​ ( G ) = 𝗌 { exp ⁡ ( G ) } ​ ( G ) \mathsf{s}(G)=\mathsf{s}_{\{\exp(G)\}}(G) , and  𝗌 k ​ exp ⁡ ( G ) ​ ( G ) = 𝗌 { k ​ exp ⁡ ( G ) } ​ ( G ) \mathsf{s}_{k\exp(G)}(G)=\mathsf{s}_{\{k\exp(G)\}}(G) ,
+where  𝗌 ⁡ ( G ) \mathsf{s}(G)  is called  Erdös-Ginzburg-Ziv constant  of  G G  and  𝗌 k ​ exp ⁡ ( G ) ​ ( G ) \mathsf{s}_{k\exp(G)}(G)  is called  Generalized Erdös-Ginzburg-Ziv constant  of  G G .
+The readers may want to consult one of the surveys or monographs
+( [ 16 ,  17 ,  18 ,  19 ,  20 ] ). Moreover,  𝗌 L ​ ( G ) \mathsf{s}_{L}(G)  is also
+investigated for various other sets (see, e.g.  [ 3 ,  10 ,  12 ,  14 ,  25 ] ). 
+ 
+ 
+ In this paper, we investigate the invarient  𝗌 L ​ ( G ) \mathsf{s}_{L}(G)  for  L = [ 1 , k ] L=[1,k] . 
+ 
+ 
+ Definition 1.1 . 
+ 
+ Denote by  𝗌 ≤ k ​ ( G ) = 𝗌 [ 1 , k ] ​ ( G ) \mathsf{s}_{\leq k}(G)=\mathsf{s}_{[1,k]}(G)  the smallest positive integer  l ∈ ℕ ∪ { + ∞ } l\in\mathbb{N}\cup\{+\infty\} 
+such that each sequence of length  l l  has a non-empty zero-sum
+subsequence of length at most  k k   ( k ∈ ℕ ) (k\in\mathbb{N}) . 
+ 
+ 
+ 
+ The constant  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  was introduced by Delorme,
+Ordaz and Quiroz  [ 5 ] .
+It is trivial to see that  𝗌 ≤ k ​ ( G ) = 𝖣 ​ ( G ) \mathsf{s}_{\leq k}(G)=\mathsf{D}(G)  if  k ≥ 𝖣 ⁡ ( G ) k\geq\mathsf{D}(G) ,
+ 𝗌 ≤ k ​ ( G ) = η ​ ( G ) \mathsf{s}_{\leq k}(G)=\eta(G)  if  k = exp ⁡ ( G ) k=\exp(G)  and
+ 𝗌 ≤ k ​ ( G ) = ∞ \mathsf{s}_{\leq k}(G)=\infty  if  1 ≤ k < exp ⁡ ( G ) 1\leq k<\exp(G) . 
+ 
+ 
+ This invariant has very important research value.
+Cohen and Zemor  [ 4 ]  pointed out
+a connection between  𝗌 ≤ k ​ ( C 2 r ) \mathsf{s}_{\leq k}(C_{2}^{r})  and coding theory.
+Bhowmik and Schlagepuchta  [ 1 ]  used  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  to study the Davenport constant  𝖣 ⁡ ( G ) \mathsf{D}(G) .
+For more, one can see  [ 2 ,  5 ] .
+Freeze and Schmid  [ 8 ]  used  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  to study another invariant  𝖣 k ​ ( G ) \mathsf{D}_{k}(G) , which is defined as the smallest integer  ℓ ∈ ℕ \ell\in\mathbb{N}  such that every
+sequence  S S  over  G G  of length  | S | ≥ ℓ |S|\geq\ell  has  k k  disjoint nonempty
+zero-sum subsequences.
+Recently, Gao et al.  [ 13 ]  studied the connection between  𝗌 ≤ k ​ exp ⁡ ( G ) ​ ( G ) \mathsf{s}_{\leq k\exp(G)}(G)  and  𝗌 k ​ exp ⁡ ( G ) ​ ( G ) \mathsf{s}_{k\exp(G)}(G) , i.e., the following conjecture. 
+ 
+ 
+ Conjecture 1.2 . 
+ 
+ Let  G G  be a finite abelian group. Then 
+ 
+
+ 
+ 
+ 𝗌 k ​ exp ⁡ ( G ) ​ ( G ) = 𝗌 ≤ k ​ exp ⁡ ( G ) ​ ( G ) + k ​ exp ⁡ ( G ) − 1 \mathsf{s}_{k\exp(G)}(G)=\mathsf{s}_{\leq k\exp(G)}(G)+k\exp(G)-1 
+ 
+ 
+ for every  k ∈ ℕ k\in\mathbb{N} . 
+ 
+ 
+ 
+ Up to now, the direct and inverse zero-sum problems of  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  have been widely studied.
+Freeze and Schmid  [ 8 ]  obtained the exact number of  𝗌 ≤ 3 ​ ( C 2 r ) \mathsf{s}_{\leq 3}(C_{2}^{r}) , namely,  1 + 2 r − 1 1+2^{r-1} .
+Lindström  [ 28 ]  studied the invariant  𝗌 ≤ 4 ​ ( C 2 r ) \mathsf{s}_{\leq 4}(C_{2}^{r})  when  r r  goes to  + ∞ +\infty .
+Wang et al.  [ 33 ]  determined  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  for  G = C m ⊕ C n G=C_{m}\oplus C_{n}  with  m | n m|n .
+Roy and Thangadurai  [ 29 ]  considered the direct zero-sum problem of  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  for a finite abelian  p p -group  G G  with a large exponent by a different method from  [ 33 ] .
+Recently, Zhang  [ 34 ]  continued to study this problem for abelian groups of rank three. 
+ 
+ 
+ For the inverse zero-sum problem of  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G) , the known conclusions are less.
+Davydov and Tombakis  [ 6 ]  studied the inverse zero-sum problem of  𝗌 ≤ 3 ​ ( C 2 r ) \mathsf{s}_{\leq 3}(C_{2}^{r})  by the method of coding theory.
+Recently, the inverse zero-sum problem of  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  with  r ⁡ ( G ) = 2 r(G)=2  has been also solved.
+For this, one can see  [ 7 ,  21 ,  22 ,  23 ] . 
+ 
+ 
+ Here, we only exhibit the result for the inverse zero-sum problem of  𝗌 ≤ k ​ ( C n ⊕ C n ) \mathsf{s}_{\leq k}(C_{n}\oplus C_{n}) . 
+ 
+ 
+ Lemma 1.3 . 
+ 
+ Let  n ≥ 2 n\geq 2 , let  G = C n ⊕ C n G=C_{n}\oplus C_{n} , let  k ∈ [ 0 , n − 1 ] k\in[0,n-1] , and let  S S 
+be a sequence of terms from  G G  with length  | S | = 𝖣 ⁡ ( G ) + k − 1 = 2 ​ n − 2 + k |S|=\mathsf{D}(G)+k-1=2n-2+k  having no nonempty
+zero-sum subsequence of length at most  𝖣 ⁡ ( G ) − k = 2 ​ n − 1 − k \mathsf{D}(G)-k=2n-1-k . Then there exists a basis  ( e 1 , e 2 ) (e_{1},e_{2}) 
+for  G G  such that the following hold. 
+ 
+ (1):  
+ 
+ 
+ If  k = 0 k=0 , then  S ​ g Sg  satisfies the description given in Item 2, where  g = − σ ⁡ ( S ) g=-\sigma(S) . 
+ 
+ (2):  
+ 
+ 
+ If  k = 1 k=1 , then 
+ 
+
+ 
+ 
+ S = e 1 n − 1 ⋅ ∏ i ∈ [ 1 , n ] ( x i ​ e 1 + e 2 ) , S=e_{1}^{n-1}\boldsymbol{\cdot}\prod_{i\in[1,n]}(x_{i}e_{1}+e_{2}), 
+ 
+ 
+ for some  x 1 , … , x n ∈ [ 0 , n − 1 ] x_{1},\ldots,x_{n}\in[0,n-1]  with  x 1 + … + x n ≡ 1 mod n . x_{1}+\ldots+x_{n}\equiv 1\mod n. 
+ 
+ (3):  
+ 
+ 
+ If  k ∈ [ 2 , n − 2 ] k\in[2,n-2] , then 
+ 
+
+ 
+ 
+ S = e 1 n − 1 ⋅ e 2 n − 1 ⋅ ( e 1 + e 2 ) k . S=e_{1}^{n-1}\boldsymbol{\cdot}e_{2}^{n-1}\boldsymbol{\cdot}(e_{1}+e_{2})^{k}. 
+ 
+ 
+ 
+ (4):  
+ 
+ 
+ If  k = n − 1 k=n-1 , then 
+ 
+
+ 
+ 
+ S = e 1 n − 1 ⋅ e 2 n − 1 ⋅ ( x ​ e 1 + e 2 ) k S=e_{1}^{n-1}\boldsymbol{\cdot}e_{2}^{n-1}\boldsymbol{\cdot}(xe_{1}+e_{2})^{k} 
+ 
+ 
+ for some  x ∈ [ 1 , n − 1 ] x\in[1,n-1]  with  gcd ⁡ ( x , n ) = 1 \gcd(x,n)=1 . 
+ 
+ 
+ 
+ 
+ 
+ We also collect some results for the direct zero-sum problem of  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G) . 
+ 
+ 
+ Lemma 1.4   ( [ 33 ] , Lemma 8) . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2 .
+Then  𝗌 ≤ 𝖣 ⁡ ( G ) − 1 ​ ( G ) = 𝖣 ⁡ ( G ) + 1 \mathsf{s}_{\leq\mathsf{D}(G)-1}(G)=\mathsf{D}(G)+1 . 
+ 
+ 
+ 
+ Lemma 1.5   ( [ 33 ] ) . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) = 2 r(G)=2 .
+Then  𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) = 𝖣 ⁡ ( G ) + k \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)=\mathsf{D}(G)+k  for  exp ⁡ ( G ) ≤ 𝖣 ⁡ ( G ) − k ≤ 𝖣 ⁡ ( G ) \exp(G)\leq\mathsf{D}(G)-k\leq\mathsf{D}(G) . 
+ 
+ 
+ 
+ Lemma 1.6   ( [ 1 ] ) . 
+ 
+ 𝗌 ≤ 3 ​ p − 1 2 ​ ( C p d ) ≤ ( 6 ​ p − 4 ) ​ p d − 3 + 1 \mathsf{s}_{\leq\frac{3p-1}{2}}(C_{p}^{d})\leq(6p-4)p^{d-3}+1  for  d ≥ 3 d\geq 3 ;  𝗌 ≤ 2 ​ p ​ ( C p d ) ≤ ( 6 ​ p − 4 ) ​ p d − 4 + 1 \mathsf{s}_{\leq 2p}(C_{p}^{d})\leq(6p-4)p^{d-4}+1  for  d ≥ 4 d\geq 4 ;  𝗌 ≤ ( d − 1 ) ​ p ​ ( C p d ) ≤ ( d − 1 ) ​ p \mathsf{s}_{\leq(d-1)p}(C_{p}^{d})\leq(d-1)p . 
+ 
+ 
+ 
+ Lemma 1.7 . 
+ 
+ 
+ (i):  
+ 
+ 
+ 𝗌 ≤ 3 ​ ( C 3 3 ) = 17 \mathsf{s}_{\leq 3}(C_{3}^{3})=17 ,  𝗌 ≤ 4 ​ ( C 3 3 ) = 10 \mathsf{s}_{\leq 4}(C_{3}^{3})=10 ,  𝗌 ≤ 5 ​ ( C 3 3 ) = 9 \mathsf{s}_{\leq 5}(C_{3}^{3})=9 ,  𝗌 ≤ 6 ​ ( C 3 3 ) = 8 \mathsf{s}_{\leq 6}(C_{3}^{3})=8 ,  𝗌 ≤ 7 ​ ( C 3 3 ) = 𝖣 ⁡ ( C 3 3 ) = 7 . \mathsf{s}_{\leq 7}(C_{3}^{3})=\mathsf{D}(C_{3}^{3})=7.  ( [ 2 ] ) 
+ 
+ (ii):  
+ 
+ 
+ 𝗌 ≤ 5 ​ ( C 5 3 ) = 33 \mathsf{s}_{\leq 5}(C_{5}^{3})=33 ,  𝗌 ≤ 6 ​ ( C 5 3 ) = 24 \mathsf{s}_{\leq 6}(C_{5}^{3})=24 ,  𝗌 ≤ 7 ​ ( C 5 3 ) = 19 \mathsf{s}_{\leq 7}(C_{5}^{3})=19 ,  𝗌 ≤ 8 ​ ( C 5 3 ) = 18 \mathsf{s}_{\leq 8}(C_{5}^{3})=18 ,  𝗌 ≤ 9 ​ ( C 5 3 ) = 17 \mathsf{s}_{\leq 9}(C_{5}^{3})=17 ,  𝗌 ≤ 10 ​ ( C 5 3 ) = 15 \mathsf{s}_{\leq 10}(C_{5}^{3})=15 ,  𝗌 ≤ 11 ​ ( C 5 3 ) = 14 \mathsf{s}_{\leq 11}(C_{5}^{3})=14 ,  𝗌 ≤ 12 ​ ( C 5 3 ) = 14 \mathsf{s}_{\leq 12}(C_{5}^{3})=14 ,  𝗌 ≤ 13 ​ ( C 5 3 ) = 𝖣 ⁡ ( C 5 3 ) = 13 . \mathsf{s}_{\leq 13}(C_{5}^{3})=\mathsf{D}(C_{5}^{3})=13.  ( [ 32 ] ) 
+ 
+ (iii):  
+ 
+ 
+ 𝗌 ≤ 2 ​ ( C 2 r ) = 2 r \mathsf{s}_{\leq 2}(C_{2}^{r})=2^{r} ;  𝗌 ≤ 3 ​ ( C 2 r ) = 2 r − 1 + 1 \mathsf{s}_{\leq 3}(C_{2}^{r})=2^{r-1}+1 ;  𝗌 ≤ 4 ​ ( C 2 d ) ≤ 2 ( d + 1 ) / 2 + 1 \mathsf{s}_{\leq 4}(C_{2}^{d})\leq 2^{(d+1)/2}+1 ;  𝗌 ≤ r − k ​ ( C 2 r ) = r + 2 ​ for all ​ r − k ∈ [ ⌈ 2 ​ r + 2 3 ⌉ , r ] ; \mathsf{s}_{\leq r-k}(C_{2}^{r})=r+2\ \text{for all}\ r-k\in\Big[\Big\lceil\frac{2r+2}{3}\Big\rceil,r\Big];   𝗌 ≤ 2 ​ m ​ ( C 2 r ) ≤ ( m + 1 ) + ( m ! ​ 2 r ) 1 / m \mathsf{s}_{\leq 2m}(C_{2}^{r})\leq(m+1)+(m!2^{r})^{1/m} . ( [ 8 ,  28 ,  33 ] ) 
+ 
+ (iv):  
+ 
+ 
+ 𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) = 𝖣 ⁡ ( G ) + k \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)=\mathsf{D}(G)+k  for  r ⁡ ( G ) = 2 r(G)=2  and  𝖣 ⁡ ( G ) − k ∈ [ exp ⁡ ( G ) , 𝖣 ⁡ ( G ) ] \mathsf{D}(G)-k\in[\exp(G),\mathsf{D}(G)] . ( [ 33 ] ) 
+ 
+ (v):  
+ 
+ 
+ 𝗌 ≤ 𝖣 ⁡ ( G ) − 2 ​ ( G ) = 𝖣 ⁡ ( G ) + 1 \mathsf{s}_{\leq\mathsf{D}(G)-2}(G)=\mathsf{D}(G)+1  for  G = C p r G=C_{p}^{r}  with  3 ≤ r < p 3\leq r<p ;  𝗌 ≤ 𝖣 ⁡ ( G ) − p n ​ ( G ) = 𝖣 ⁡ ( G ) + p n \mathsf{s}_{\leq\mathsf{D}(G)-p^{n}}(G)=\mathsf{D}(G)+p^{n}  for  G = C p n 3 G=C_{p^{n}}^{3}  with  p p  odd prime. ( [ 34 ] ) 
+ 
+ 
+ 
+ 
+ 
+ Lemma 1.8   ( [ 29 ] , Theorem 1.1) . 
+ 
+ Let  H H  be a finite abelian  p p -group with exponent  exp ⁡ ( H ) = p m \exp(H)=p^{m}  for some
+integer  m ≥ 1 m\geq 1  and for a prime number  p > 2 ​ r ​ ( H ) p>2r(H) . Suppose
+that  𝖣 ⁡ ( H ) − 1 = k 0 ​ p m + t \mathsf{D}(H)-1=k_{0}p^{m}+t  for some integers  k 0 ≥ 1 k_{0}\geq 1 
+and  0 ≤ t ≤ p m − 1 0\leq t\leq p^{m}-1 . Let  G = C p n ⊕ H G=C_{p^{n}}\oplus H  be a finite abelian  p p -group for some integer  n n 
+satisfying  p n ≥ 2 ​ ( 𝖣 ⁡ ( H ) − 1 ) p^{n}\geq 2(\mathsf{D}(H)-1) . Let  k k  be any integer satisfying  𝖣 ⁡ ( H ) − 1 − k = a ​ p m + t ′ \mathsf{D}(H)-1-k=ap^{m}+t^{\prime}  for some integer
+ a a  satisfying  0 ≤ a ≤ k 0 − 1 0\leq a\leq k_{0}-1  and for some integer  t ′ t^{\prime}  satisfying  0 ≤ t ′ ≤ t 0\leq t^{\prime}\leq t . Then, we have 
+ 
+
+ 
+ 
+ 𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) ≤ 𝖣 ⁡ ( G ) + k . \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)\leq\mathsf{D}(G)+k. 
+ 
+ 
+ 
+ 
+ 
+ From the above results, we can find that there may exist some  k G ∈ [ exp ⁡ ( G ) , 𝖣 ⁡ ( G ) − 1 ] k_{G}\in[\exp(G),\mathsf{D}(G)-1]  such that  𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) ≤ 𝖣 ⁡ ( G ) + k \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)\leq\mathsf{D}(G)+k  for every finite abelian groups  G G , where  𝖣 ⁡ ( G ) − k ≥ k G \mathsf{D}(G)-k\geq k_{G} .
+For this, we obtain the following: 
+ 
+ 
+ We firstly consider the lower bounds of  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G) . The structures of sequences are similar with Lemma  1.3 . 
+ 
+ 
+ Theorem 1.9 . 
+ 
+ Let  G = C n r G=C_{n}^{r}  with  n , r ∈ ℕ ≥ 2 n,r\in\mathbb{N}_{\geq 2}  and  k ∈ [ 0 , n − 1 ] k\in[0,n-1]  be an integer.
+Then  𝗌 ≤ 2 ​ n − 1 − k ​ ( G ) ≥ 2 r − 1 ​ ( n − 1 ) + 1 + k \mathsf{s}_{\leq 2n-1-k}(G)\geq 2^{r-1}(n-1)+1+k . 
+ 
+ 
+ 
+ Remark:  By Lemma  1.7  Part (iii) and (iv), one can easily see that the lower bound is sharp for  n = 2 n=2  or  r = 2 r=2 . 
+ 
+ 
+ Theorem 1.10 . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2 . If
+ exp ⁡ ( G ) ≤ 𝖣 ∗ ​ ( G ) − k ≤ 2 ​ exp ⁡ ( G ) − 1 \exp(G)\leq\mathsf{D}^{*}(G)-k\leq 2\exp(G)-1 , then  𝗌 ≤ 𝖣 ∗ ​ ( G ) − k ​ ( G ) ≥ 𝖣 ∗ ​ ( G ) + k \mathsf{s}_{\leq\mathsf{D}^{*}(G)-k}(G)\geq\mathsf{D}^{*}(G)+k . 
+ 
+ 
+ In particular, if  G G  is a finite abelian  p p -group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2  and  𝖣 ⁡ ( G ) ≤ 2 ​ exp ⁡ ( G ) − 1 \mathsf{D}(G)\leq 2\exp(G)-1 , then  𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) ≥ 𝖣 ⁡ ( G ) + k \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)\geq\mathsf{D}(G)+k  for  exp ⁡ ( G ) ≤ 𝖣 ⁡ ( G ) − k ≤ 𝖣 ⁡ ( G ) \exp(G)\leq\mathsf{D}(G)-k\leq\mathsf{D}(G) . 
+ 
+ 
+ 
+ Remark:  By the above result one can easily see that  𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) = 𝖣 ⁡ ( G ) + k \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)=\mathsf{D}(G)+k  in Lemma  1.8 . 
+ 
+ 
+ For the finite abelian group  G G , we consider the case  k = 2 k=2 . 
+ 
+ 
+ Theorem 1.11 . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2 . If  G ≇ C 2 3 G\not\cong C_{2}^{3}  or  C 2 4 C_{2}^{4}  and  𝖣 ⁡ ( G ) − 2 ≥ exp ⁡ ( G ) \mathsf{D}(G)-2\geq\exp(G) ,
+then  𝗌 ≤ 𝖣 ⁡ ( G ) − 2 ​ ( G ) ≤ 𝖣 ⁡ ( G ) + 2 \mathsf{s}_{\leq\mathsf{D}(G)-2}(G)\leq\mathsf{D}(G)+2 . 
+ 
+ 
+ In particular, if  𝖣 ​ ( G ) = 𝖣 ∗ ​ ( G ) \mathsf{D}(G)=\mathsf{D}^{*}(G)  and  exp ⁡ ( G ) ≥ 𝖣 ⁡ ( G ) − 1 2 \exp(G)\geq\frac{\mathsf{D}(G)-1}{2} ,
+then  𝗌 ≤ 𝖣 ⁡ ( G ) − 2 ​ ( G ) = 𝖣 ⁡ ( G ) + 2 \mathsf{s}_{\leq\mathsf{D}(G)-2}(G)=\mathsf{D}(G)+2 . 
+ 
+ 
+ 
+ Remark:  For  G = C 2 3 G=C_{2}^{3} , we have that  𝖣 ⁡ ( G ) = 4 \mathsf{D}(G)=4  and  𝗌 ≤ 2 ​ ( G ) = 8 \mathsf{s}_{\leq 2}(G)=8 .
+For  G = C 2 4 G=C_{2}^{4} , we have that  𝖣 ⁡ ( G ) = 5 \mathsf{D}(G)=5  and  𝗌 ≤ 3 ​ ( G ) = 2 3 + 1 = 9 \mathsf{s}_{\leq 3}(G)=2^{3}+1=9 . It follows since  𝗌 ≤ 3 ​ ( C 2 r ) = 2 r − 1 + 1 \mathsf{s}_{\leq 3}(C_{2}^{r})=2^{r-1}+1 . 
+ 
+ 
+ If  G G  is a finite abelian  p p -group, we can get the better results. 
+ 
+ 
+ Theorem 1.12 . 
+ 
+ Let  G G  be a finite abelian  p p -group and  k = c 1 ​ p t + 1 + d ∈ [ exp ⁡ ( G ) + 1 , 𝖣 ⁡ ( G ) ] k=c_{1}p^{t+1}+d\in[\exp(G)+1,\mathsf{D}(G)]  with  d ∈ [ 0 , p − 1 ] d\in[0,p-1] ,  t ≥ 0 t\geq 0  and  c 1 ∈ [ 1 , p − 1 ] c_{1}\in[1,p-1] .
+Let  S S  be a sequence over  G G  of length  2 ​ 𝖣 ​ ( G ) − k + 1 2\mathsf{D}(G)-k+1 .
+Suppose that  2 ​ k − 𝖣 ⁡ ( G ) ≥ p + d − v 2k-\mathsf{D}(G)\geq p+d-v  and  2 ​ 𝖣 ​ ( G ) − 2 ​ k + 1 < p − 1 2 ​ p t + 1 2\mathsf{D}(G)-2k+1<\frac{p-1}{2}p^{t+1} .
+If  ( 𝖣 ⁡ ( G ) k − 1 ) ≢ 0 mod p \binom{\mathsf{D}(G)}{k-1}\not\equiv 0\mod p , then  S S  has a nonempty zero-sum subsequence  T T  with  | T | ≤ k − 1 |T|\leq k-1 . 
+ 
+ 
+ 
+ Theorem 1.13 . 
+ 
+ Let  G G  be a finite abelian  p p -group. Then  𝗌 ≤ k − 1 ​ ( G ) ≤ 2 ​ 𝖣 ​ ( G ) − k + 1 \mathsf{s}_{\leq k-1}(G)\leq 2\mathsf{D}(G)-k+1  provided that one of the following holds 
+ 
+ (i):  
+ 
+ 
+ G = C 2 r G=C_{2}^{r}  and  k − 1 = r + 2 2 k-1=\frac{r+2}{2}  with  r = 2 t + 1 − 2 r=2^{t+1}-2 ,  t ≥ 1 t\geq 1 ; 
+ 
+ (ii):  
+ 
+ 
+ G = C p 4 G=C_{p}^{4}  and  k − 1 = 2 ​ p k-1=2p  with  p ≥ 5 p\geq 5 ; 
+ 
+ (iii):  
+ 
+ 
+ G = C p d G=C_{p}^{d}  and  k − 1 = ( d − 1 ) ​ p ∈ [ p , 𝖣 ⁡ ( C p d ) ] k-1=(d-1)p\in[p,\mathsf{D}(C_{p}^{d})] . 
+ 
+ 
+ 
+ 
+ 
+ Remark:  It is easy to see that Theorem  1.13  improves the results in Lemmas  1.6 ,  1.7 . 
+ 
+ 
+ The paper is organized as follows. In Section  2 2 , we recall some basic notions, provide
+several known results and also give the proofs of Theorems  1.9 ,  1.10 . In Section  3 3 ,
+we present the proof for Theorem  1.11 . In Sections  4 4 , we consider a problem on zero-sum subsequences of zero-sum sequences over finite abelian  p p -groups, which is useful for the proofs of Theorems  1.12  and  1.13 . In Sections  5 5 , we present the proofs for Theorems  1.12  and  1.13 . 
+ 
+ 
+ 
+ 2.  Preliminaries 
+
+ 
+ Throughout the paper, for real numbers  a ≤ b a\leq b , we set
+ [ a , b ] = { x ∈ ℤ : a ≤ x ≤ b } [a,b]=\{x\in\mathbb{Z}:a\leq x\leq b\} . 
+ 
+ 
+ We consider the sequences as elements of the
+free abelian monoid  ℱ ⁡ ( G ) \mathscr{F}(G)  over  G G  and our notations and
+terminologies coincide with  [ 16 ,  18 ,  20 ] .
+Let 
+ 
+
+ 
+ 
+ S = g 1 ⋅ … ⋅ g ℓ = ∏ g ∈ G g 𝗏 g ​ ( α ) S=g_{1}\boldsymbol{\cdot}\ldots\boldsymbol{\cdot}g_{\ell}=\prod_{g\in G}g^{\mathsf{v}_{g}(\alpha)} 
+ 
+ 
+ be a sequence over  G G , where  𝗏 g ​ ( S ) ∈ ℕ 0 \mathsf{v}_{g}(S)\in\mathbb{N}_{0}  is the   multiplicity  
+of  g g  in  S S  and  | S | = ℓ = ∑ g ∈ G 𝗏 g ​ ( S ) ∈ ℕ 0 |S|=\ell=\sum_{g\in G}\mathsf{v}_{g}(S)\in\mathbb{N}_{0}  is the  length  of  S S .
+The  sum  of elements in  S S  is denoted by  σ ⁡ ( S ) = ∑ i = 1 ℓ g i = ∑ g ∈ G v g ​ ( S ) ⋅ g ∈ G \sigma(S)=\sum^{\ell}_{i=1}g_{i}=\sum_{g\in G}v_{g}(S)\cdot g\in G , and the maximal repetition of a
+term in  S S  is denoted by  𝗁 ⁡ ( S ) \mathsf{h}(S) .
+A sequence  S S  is called a  zero-sum sequence  if  ∑ i = 1 ℓ g i = 0 ∈ G \sum^{\ell}_{i=1}g_{i}=0\in G .
+We say  T T  is a  subsequence  of  S S  if  𝗏 g ​ ( S ) ≥ 𝗏 g ​ ( T ) \mathsf{v}_{g}(S)\geq\mathsf{v}_{g}(T) 
+for all  g ∈ G g\in G  and denote it by  T | S T\mid S . In particular, if  T T  is a subsequence
+of  S S  and  T ≠ S T\neq S , then we call  T T  the  proper subsequence  of  S S .
+If  T T  is  empty , then we say  T = 1 T=1 . We say that  S S  is  zero-free 
+if it contains no nonempty zero-sum subsequence. If  S S  is a zero-sum sequence
+and each proper subsequence is zero-free, then  S S  is called a  minimal zero-sum sequence .
+By  𝗌𝗎𝗉𝗉 ⁡ ( S ) \mathsf{supp}(S)  we denote the subset of  G G  consisting of all elements
+which  𝗏 g ​ ( S ) > 0 \mathsf{v}_{g}(S)>0 . We write  ⟨ S ⟩ \langle S\rangle  as a subgroup of  G G  generated by  𝗌𝗎𝗉𝗉 ⁡ ( S ) \mathsf{supp}(S) . If  T T  is a subsequence of  S S , we denote by  S ​ T − 1 ST^{-1} 
+the sequence obtained from  S S  by deleting  T T . If  T n = ∏ g | T g n T^{n}=\prod_{g|T}g^{n}  is a subsequence of  S S  for some  n ∈ ℕ n\in\mathbb{N} , we denote by  S ​ T − n ST^{-n} 
+the sequence obtained from  S S  by deleting  T n T^{n} . We also write 
+ 
+
+ 
+ 
+ ∑ ( S ) = { σ ( T ) : T | S , T ≠ 1 } . \sum(S)=\{\sigma(T):T|S,T\neq 1\}. 
+ 
+ 
+ 
+ 
+ We collect some results on the groups  G G  with  𝖣 ​ ( G ) = 𝖣 ∗ ​ ( G ) \mathsf{D}(G)=\mathsf{D}^{*}(G) . 
+ 
+ 
+ Lemma 2.1   ( [ 15 ] ) . 
+ 
+ Let  G G  be a finite abelain group.
+Then  𝖣 ​ ( G ) = 𝖣 ∗ ​ ( G ) \mathsf{D}(G)=\mathsf{D}^{*}(G)  holds for the following 
+ 
+ (a)  
+ 
+ r ⁡ ( G ) ≤ 2 r(G)\leq 2 ; 
+ 
+ (b)  
+ 
+ G G  is a finite abelian  p p -group; 
+ 
+ (c)  
+ 
+ G = G ′ ⊕ C k G=G^{\prime}\oplus C_{k} , where  G ′ G^{\prime}  is a finite abelian  p p -group with  𝖣 ⁡ ( G ′ ) ≤ 2 ​ exp ⁡ ( G ′ ) − 1 \mathsf{D}(G^{\prime})\leq 2\exp(G^{\prime})-1  and  k k  is a positive integer not divisible by  p p ; 
+ 
+ (d)  
+ 
+ G = C 2 ⊕ C 2 ​ m ⊕ C 2 ​ n G=C_{2}\oplus C_{2m}\oplus C_{2n}  with  m | n m|n ; 
+ 
+ (e)  
+ 
+ G = C 3 ⊕ C 6 ​ m ⊕ C 6 ​ n G=C_{3}\oplus C_{6m}\oplus C_{6n}  with  m | n m|n ; 
+ 
+ (f)  
+ 
+ G = C 2 ​ p a ⊕ C 2 ​ p b ⊕ C 2 ​ p c G=C_{2p^{a}}\oplus C_{2p^{b}}\oplus C_{2p^{c}}  with  a ≤ b ≤ c a\leq b\leq c  being nonnegative integers, and  p p  being a prime; 
+ 
+ (g)  
+ 
+ G = C 2 3 ⊕ C 2 ​ n G=C^{3}_{2}\oplus C_{2n} . 
+ 
+ 
+ 
+ 
+ 
+ The proof of Theorem  1.9 : 
+By induction on  r r , we can show that there exists a sequence  S = T 0 n − 1 ​ g 0 k S=T_{0}^{n-1}g_{0}^{k}  over  C n r C_{n}^{r}  of length  2 r − 1 ​ ( n − 1 ) + k 2^{r-1}(n-1)+k  such that each zero-sum subsequence of  S S  has length  ≥ 2 ​ n − k \geq 2n-k .
+If  r = 2 r=2 , then Lemma  1.3  implies our result.
+Assume that we have proved the result
+for  < r <r  and that  S 1 ′ = g ′ 1 n − 1 ​ … ​ g ′ m n − 1 ​ g ′ 0 k S^{\prime}_{1}={g^{\prime}}_{1}^{n-1}\ldots{g^{\prime}}_{m}^{n-1}{g^{\prime}}_{0}^{k}  is the sequence over  C n r − 1 C_{n}^{r-1}  of length  2 r − 2 ​ ( n − 1 ) + k 2^{r-2}(n-1)+k  satisfying that each zero-sum subsequence of  S 1 ′ S^{\prime}_{1}  has length  ≥ 2 ​ n − k \geq 2n-k . Set  C n r = C n r − 1 ⊕ ⟨ e r ⟩ C_{n}^{r}=C_{n}^{r-1}\oplus\langle e_{r}\rangle . Let  S 1 = g 1 n − 1 ​ … ​ g m n − 1 ​ g 0 k S_{1}=g_{1}^{n-1}\ldots g_{m}^{n-1}g_{0}^{k}  is a sequence over  C n r C_{n}^{r}  by attaching  0 0  to each element of  S 1 ′ S^{\prime}_{1}  as the  r r -th entry. Obviously, each zero-sum subsequence of  S 1 S_{1}  has length  ≥ 2 ​ n − k \geq 2n-k .
+Let 
+ 
+
+ 
+ 
+ S = S 1 ​ ( S 1 ​ g 0 − k + e r ) = g 0 k ​ ∏ i = 1 m g i n − 1 ​ ( g i + e r ) n − 1 . S=S_{1}(S_{1}g_{0}^{-k}+e_{r})=g_{0}^{k}\prod_{i=1}^{m}g_{i}^{n-1}(g_{i}+e_{r})^{n-1}. 
+ 
+ 
+ It is easy to see that each nonempty zero-sum subsequence  T T  in  S S  must have the following form 
+ 
+
+ 
+ 
+ T = g 0 k 0 ​ ∏ i ∈ I 1 g i v i ​ ∏ i ∈ I 2 ( g i + e r ) u i , T=g_{0}^{k_{0}}\prod_{i\in I_{1}}g_{i}^{v_{i}}\prod_{i\in I_{2}}(g_{i}+e_{r})^{u_{i}}, 
+ 
+ 
+ where  k 0 ∈ [ 0 , k ] k_{0}\in[0,k] ,  I 1 , I 2 I_{1},I_{2}  are subsets of  [ 1 , m ] [1,m]  and  u i , v i ∈ [ 1 , n − 1 ] u_{i},v_{i}\in[1,n-1] .
+It suffices to prove that  | T | ≥ 2 ​ n − k . |T|\geq 2n-k. 
+ 
+ 
+ Obviously,  ∑ i ∈ I 2 u i ≡ 0 mod n \sum_{i\in I_{2}}u_{i}\equiv 0\mod n .
+In addition,  T ′ := g 0 k 0 ​ ∏ i ∈ I 1 g i v i ​ ∏ i ∈ I 2 ( g i ) u i T^{\prime}:=g_{0}^{k_{0}}\prod_{i\in I_{1}}g_{i}^{v_{i}}\prod_{i\in I_{2}}(g_{i})^{u_{i}}  is zero-sum and has the form 
+ 
+
+ 
+ 
+ T ′ 1 n ​ T 2 ′ ​ g 0 k 0 {T^{\prime}}_{1}^{n}T^{\prime}_{2}g_{0}^{k_{0}} 
+ 
+ 
+ with  𝗏 g ​ ( T 2 ′ ​ g 0 k 0 ) < n \mathsf{v}_{g}(T^{\prime}_{2}g_{0}^{k_{0}})<n  for any  g | T 2 ′ g|T^{\prime}_{2} .
+It is easy to see that  σ ⁡ ( T ′ 1 n ) = 0 \sigma({T^{\prime}}_{1}^{n})=0  and  T 2 ′ ​ g 0 k 0 | S 1 T^{\prime}_{2}g_{0}^{k_{0}}|S_{1} .
+Hence,  T 2 ′ ​ g 0 k 0 T^{\prime}_{2}g_{0}^{k_{0}}  is a zero-sum subsequence of  S 1 S_{1}  of length  | T 2 ′ ​ g 0 k 0 | ≤ | T ′ | = | T | |T^{\prime}_{2}g_{0}^{k_{0}}|\leq|T^{\prime}|=|T| .
+Combining the structure of  S 1 S_{1}  yields that either  | T | ≥ | T 2 ′ ​ g 0 k 0 | ≥ 2 ​ n − k |T|\geq|T^{\prime}_{2}g_{0}^{k_{0}}|\geq 2n-k  or  T 2 ′ ​ g 0 k 0 T^{\prime}_{2}g_{0}^{k_{0}}  is empty.
+If the former holds, then we are done.
+If the latter holds, then  k 0 = 0 k_{0}=0  and 
+ 
+
+ 
+ 
+ T ′ = ∏ i ∈ I 1 g i v i ​ ∏ i ∈ I 2 ( g i ) u i = T ′ 1 n . T^{\prime}=\prod_{i\in I_{1}}g_{i}^{v_{i}}\prod_{i\in I_{2}}(g_{i})^{u_{i}}={T^{\prime}}_{1}^{n}. 
+ 
+ 
+ By  u i , v i ∈ [ 1 , n − 1 ] u_{i},v_{i}\in[1,n-1]  we must have that  I 1 = I 2 = I I_{1}=I_{2}=I  and  u i + v i = n u_{i}+v_{i}=n  for any  i ∈ I i\in I .
+Hence, 
+ 
+
+ 
+ 
+ T = ∏ i ∈ I g i n − u i ​ ∏ i ∈ I ( g i + e r ) u i T=\prod_{i\in I}g_{i}^{n-u_{i}}\prod_{i\in I}(g_{i}+e_{r})^{u_{i}} 
+ 
+ 
+ with  I ⊂ [ 1 , m ] I\subset[1,m] ,  u i ∈ [ 1 , n − 1 ] u_{i}\in[1,n-1] ,  ∑ i ∈ I u i ≡ 0 mod n \sum_{i\in I}u_{i}\equiv 0\mod n  and  | T | = | I | ​ n |T|=|I|n . If  | I | ≥ 2 |I|\geq 2 , then we are done. If  | I | = 1 |I|=1 , then
+ T = g 1 n − u 1 ​ ( g 1 + e r ) u 1 T=g_{1}^{n-u_{1}}(g_{1}+e_{r})^{u_{1}}  with  u 1 ∈ [ 1 , n − 1 ] u_{1}\in[1,n-1]  and  u 1 ≡ 0 mod n u_{1}\equiv 0\mod n . Obviously, this is impossible.
+We complete the proof.
+∎ 
+ 
+ 
+ The proof of Theorem  1.10 : 
+Set  G = H ⊕ C n r = C n 1 ⊕ ⋯ ⊕ C n r − 1 ⊕ C n r = ⟨ e 1 ⟩ ⊕ ⋯ ⊕ ⟨ e r − 1 ⟩ ⊕ ⟨ e r ⟩ G=H\oplus C_{n_{r}}=C_{n_{1}}\oplus\cdots\oplus C_{n_{r-1}}\oplus C_{n_{r}}=\langle e_{1}\rangle\oplus\cdots\oplus\langle e_{r-1}\rangle\oplus\langle e_{r}\rangle , where  1 < n 1 ​ | ⋯ | ​ n r − 1 | n r 1<n_{1}|\cdots|n_{r-1}|n_{r}  and  ord ⁡ ( e i ) = n i {\rm ord~}(e_{i})=n_{i} .
+Let 
+ 
+
+ 
+ 
+ S = e r x ​ ∏ i = 1 r − 1 e i n i − 1 ​ ( e r − e i ) n i − 1 S=e_{r}^{x}\prod_{i=1}^{r-1}e_{i}^{n_{i}-1}(e_{r}-e_{i})^{n_{i}-1} 
+ 
+ 
+ be a sequence over  G G  of length  𝖣 ∗ ​ ( G ) + k − 1 \mathsf{D}^{*}(G)+k-1 .
+Since  exp ⁡ ( G ) ≤ 𝖣 ∗ ​ ( G ) − k ≤ 2 ​ exp ⁡ ( G ) − 1 \exp(G)\leq\mathsf{D}^{*}(G)-k\leq 2\exp(G)-1 , we have that  𝖣 ∗ ​ ( H ) ≤ exp ⁡ ( G ) + k ≤ 𝖣 ∗ ​ ( G ) = 𝖣 ∗ ​ ( H ) + exp ⁡ ( G ) − 1 \mathsf{D}^{*}(H)\leq\exp(G)+k\leq\mathsf{D}^{*}(G)=\mathsf{D}^{*}(H)+\exp(G)-1  and  x = | S | − ∑ i = 1 r − 1 2 ​ ( n i − 1 ) = exp ⁡ ( G ) + k − 𝖣 ∗ ​ ( H ) ∈ [ 0 , exp ⁡ ( G ) − 1 ] x=|S|-\sum_{i=1}^{r-1}2(n_{i}-1)=\exp(G)+k-\mathsf{D}^{*}(H)\in[0,\exp(G)-1] .
+Obviously, each nonempty zero-sum subsequence  T T  of  S S  has the following form 
+ 
+
+ 
+ 
+ T = e r x 1 ​ ∏ i ∈ I e i v i ​ ( e r − e i ) v i , T=e_{r}^{x_{1}}\prod_{i\in I}e_{i}^{v_{i}}(e_{r}-e_{i})^{v_{i}}, 
+ 
+ 
+ where  x 1 ∈ [ 0 , x ] x_{1}\in[0,x] ,  v i ∈ [ 1 , n i − 1 ] v_{i}\in[1,n_{i}-1]  and  I ⊂ [ 1 , r − 1 ] I\subset[1,r-1] .
+Since  σ ⁡ ( T ) = ( x 1 + ∑ i ∈ I v i ) ​ e r = 0 \sigma(T)=(x_{1}+\sum_{i\in I}v_{i})e_{r}=0 , we have that  n r | ( x 1 + ∑ i ∈ I v i ) n_{r}|(x_{1}+\sum_{i\in I}v_{i}) , which implies that  | T | = x 1 + ∑ i ∈ I 2 ​ v i = 2 ​ ( x 1 + ∑ i ∈ I v i ) − x 1 ≥ 2 ​ n r − x = 2 ​ n r − ( n r + k − 𝖣 ∗ ​ ( H ) ) = 𝖣 ∗ ​ ( G ) − k + 1 |T|=x_{1}+\sum_{i\in I}2v_{i}=2(x_{1}+\sum_{i\in I}v_{i})-x_{1}\geq 2n_{r}-x=2n_{r}-(n_{r}+k-\mathsf{D}^{*}(H))=\mathsf{D}^{*}(G)-k+1 .
+Hence,  𝗌 ≤ 𝖣 ∗ ​ ( G ) − k ​ ( G ) ≥ | S | + 1 = 𝖣 ∗ ​ ( G ) + k \mathsf{s}_{\leq\mathsf{D}^{*}(G)-k}(G)\geq|S|+1=\mathsf{D}^{*}(G)+k  and we complete the proof.
+∎ 
+ 
+ 
+ 
+ 3.  The proofs of Theorem  1.11 
+
+ 
+ In this section, we prove Theorem  1.11 . In the proof, we use a technique from  [ 24 ] . 
+ 
+ 
+ Lemma 3.1   ( [ 18 ] ) . 
+ 
+ Let  G G  be a finite abelian group and  S S  be a minimal zero-sum sequence over  G G  of length  𝖣 ⁡ ( G ) \mathsf{D}(G) . Then  ∑ ( S ) = G \sum(S)=G . 
+ 
+ 
+ 
+ Lemma 3.2   ( [ 18 ] ) . 
+ 
+ Let  G G  be a cyclic group of order  n n  and  S S  be a sequence over  G G  of length  n n . If  S S  is minimal zero-sum,
+then  S = g n S=g^{n} , where  g g  is a generator of  G G . 
+ 
+ 
+ 
+ By the above we can easily see that the following result holds. 
+ 
+ 
+ Corollary 3.3 . 
+ 
+ Let  G G  be a cyclic group of order  n n  and  S S  be a sequence over  G G  of length  ≥ n \geq n . If every zero-sum subsequence of  S S  has the length  ≥ n \geq n ,
+then  S = g | S | S=g^{|S|} , where  g g  is a generator of  G G . 
+ 
+ 
+ 
+ Let  G G  be a finite abelian group and let  A A  be a finite non-empty subset of  G G . The stabilizer of  A A  is defined by  S ​ t ​ a ​ b ​ ( A ) = { g ∈ G : g + A = A } Stab(A)=\{g\in G:g+A=A\} . 
+ 
+ 
+ Lemma 3.4   ( [ 18 ] ) . 
+ 
+ Let  G G  be a finite abelian group and let  A A  and  B B  be finite non-empty subsets of  G G . If  B ⊂ S ​ t ​ a ​ b ​ ( A ) B\subset Stab(A) , then  ⟨ B ⟩ \langle B\rangle  is a subgroup of  S ​ t ​ a ​ b ​ ( A ) Stab(A) . 
+ 
+ 
+ Furthermore, the following statements are equivalent: 
+ 
+ (a)  
+ 
+ B ⊂ S ​ t ​ a ​ b ​ ( A ) B\subset Stab(A) . 
+ 
+ (b)  
+ 
+ A = A + B . A=A+B. 
+ 
+ (c)  
+ 
+ A = ( g 1 + ⟨ B ⟩ ) ∪ … ∪ ( g r + ⟨ B ⟩ ) A=(g_{1}+\langle B\rangle)\cup\ldots\cup(g_{r}+\langle B\rangle)  for some  r ∈ ℕ r\in\mathbb{N}  and  g 1 , … , g r ∈ A . g_{1},\ldots,g_{r}\in A. 
+ 
+ 
+ 
+ 
+ 
+ Lemma 3.5 . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2  and  G G  does not have the form  C 2 ⊕ C 2 ​ m C_{2}\oplus C_{2m} . Let  S S  be a sequence over  G G  of length  𝖣 ⁡ ( G ) + 1 \mathsf{D}(G)+1 . If every zero-sum subsequence of  S S  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 ,
+then the rank of  ⟨ S ⟩ \langle S\rangle  is at least  2 2 . 
+ 
+ 
+ 
+ Proof. 
+ 
+ Suppose that the rank of  ⟨ S ⟩ \langle S\rangle  is  1 1 . Thus set  ⟨ S ⟩ ≅ C n \langle S\rangle\cong C_{n} . Since  r ⁡ ( G ) ≥ 2 r(G)\geq 2 , we have that  ⟨ S ⟩ \langle S\rangle  is a proper subgroup of  G G , which implies that  𝖣 ⁡ ( G ) ≥ n + 1 \mathsf{D}(G)\geq n+1 . It follows that every zero-sum subsequence of  S S  has the length  ≥ 𝖣 ⁡ ( G ) − 1 ≥ n \geq\mathsf{D}(G)-1\geq n .
+By Corollary  3.3  we have that  S = g 𝖣 ⁡ ( G ) + 1 S=g^{\mathsf{D}(G)+1} , where  g g  is a generator of  ⟨ S ⟩ \langle S\rangle . Obviously,  S S  has a zero-sum subsequence of length  n n . Hence,  n ≥ 𝖣 ⁡ ( G ) − 1 ≥ n n\geq\mathsf{D}(G)-1\geq n , i.e.,  𝖣 ⁡ ( G ) = n + 1 \mathsf{D}(G)=n+1 . By a simple analysis, we must have that  G ≅ C 2 ⊕ C n G\cong C_{2}\oplus C_{n}  with  2 | n 2|n , where  C n = ⟨ S ⟩ = ⟨ g ⟩ C_{n}=\langle S\rangle=\langle g\rangle . This is a contradiction to our assumed condition.
+∎ 
+ 
+ 
+ 
+ Lemma 3.6 . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2  and  G G  does not have the form  C 2 ⊕ C 2 ​ m C_{2}\oplus C_{2m} .
+Let  S = T ​ g 2 S=Tg^{2}  be a sequence over  G G  of length  𝖣 ⁡ ( G ) + 1 \mathsf{D}(G)+1 , where  T T  is a zero-sum subsequence of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 .
+Then  S S  has a zero-sum subsequence with length at most  𝖣 ⁡ ( G ) − 2 \mathsf{D}(G)-2 . 
+ 
+ 
+ 
+ Proof. 
+ 
+ Suppose that every zero-sum subsequence of  S S  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 . For any  g 1 | S g_{1}|S  with  g 1 ∉ { g , 2 ​ g } g_{1}\not\in\{g,2g\} , we have that  σ ⁡ ( S ​ g 1 − 1 ) = σ ⁡ ( T ) + 2 ​ g − g 1 = 2 ​ g − g 1 ≠ 0 \sigma(Sg_{1}^{-1})=\sigma(T)+2g-g_{1}=2g-g_{1}\neq 0 .
+Since  | S ​ g 1 − 1 | = | S | − 1 = 𝖣 ⁡ ( G ) |Sg_{1}^{-1}|=|S|-1=\mathsf{D}(G)  and every zero-sum subsequence of  S ​ g 1 − 1 Sg_{1}^{-1}  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 , we must have that every zero-sum subsequence of  S ​ g 1 − 1 Sg_{1}^{-1}  has the length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 . It follows that  S ​ g 1 − 1 Sg_{1}^{-1}  has an element  σ ⁡ ( S ​ g 1 − 1 ) = 2 ​ g − g 1 . \sigma(Sg_{1}^{-1})=2g-g_{1}. 
+Hence, 
+ 
+
+ 
+ 
+ g 1 ​ ( 2 ​ g − g 1 ) | S . g_{1}(2g-g_{1})|S. 
+ 
+ 
+ 
+ 
+ We claim that every zero-sum subsequence of  S ′ := S ​ ( g 1 ​ ( 2 ​ g − g 1 ) ) − 1 ​ g 2 S^{\prime}:=S(g_{1}(2g-g_{1}))^{-1}g^{2}  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1  for any  g 1 | S g_{1}|S  with  g 1 ∉ { g , 2 ​ g } g_{1}\not\in\{g,2g\} .
+By  g 1 ∉ { g , 2 ​ g } g_{1}\not\in\{g,2g\}  we have that  g 1 g_{1}  and  2 ​ g − g 1 2g-g_{1}  are not equal to  g g . Hence,  S ′ = S ​ ( g 1 ​ ( 2 ​ g − g 1 ) ) − 1 ​ g 2 = T ​ ( g 1 ​ ( 2 ​ g − g 1 ) ) − 1 ​ g 4 S^{\prime}=S(g_{1}(2g-g_{1}))^{-1}g^{2}=T(g_{1}(2g-g_{1}))^{-1}g^{4} . It follows that every zero-sum subsequence  T ′ T^{\prime}  of  S ′ S^{\prime}  has the form  T ′ = T 1 ′ ​ g x T^{\prime}=T^{\prime}_{1}g^{x}  with  T 1 ′ | T ​ ( g 1 ​ ( 2 ​ g − g 1 ) ) − 1 T^{\prime}_{1}|T(g_{1}(2g-g_{1}))^{-1}  and  x ≤ 4 x\leq 4 . If  x ≤ 2 x\leq 2 , then  T ′ | S T^{\prime}|S , which implies that  | T ′ | ≥ 𝖣 ⁡ ( G ) − 1 |T^{\prime}|\geq\mathsf{D}(G)-1 . If  x = 3 x=3  or  4 4 , then  T ′ = T 1 ′ ​ g x = ( T 1 ′ ​ g 2 ) ​ g x − 2 T^{\prime}=T^{\prime}_{1}g^{x}=(T^{\prime}_{1}g^{2})g^{x-2}  with  1 ≤ x − 2 ≤ 2 1\leq x-2\leq 2  and  σ ⁡ ( T 1 ′ ​ g 2 ) = σ ⁡ ( T 1 ′ ​ g 1 ​ ( 2 ​ g − g 1 ) ) \sigma(T^{\prime}_{1}g^{2})=\sigma(T^{\prime}_{1}g_{1}(2g-g_{1})) . Obviously,  T 1 ′ ​ g 1 ​ ( 2 ​ g − g 1 ) ​ g x − 2 | T ​ g 2 T^{\prime}_{1}g_{1}(2g-g_{1})g^{x-2}|Tg^{2}  and  σ ⁡ ( T 1 ′ ​ g 1 ​ ( 2 ​ g − g 1 ) ​ g x − 2 ) = σ ⁡ ( T ′ ) = 0 \sigma(T^{\prime}_{1}g_{1}(2g-g_{1})g^{x-2})=\sigma(T^{\prime})=0 . Hence,  | T 1 ′ ​ g 1 ​ ( 2 ​ g − g 1 ) ​ g x − 2 | = | ( T 1 ′ ​ g 2 ) ​ g x − 2 | = | T ′ | ≥ 𝖣 ⁡ ( G ) − 1 |T^{\prime}_{1}g_{1}(2g-g_{1})g^{x-2}|=|(T^{\prime}_{1}g^{2})g^{x-2}|=|T^{\prime}|\geq\mathsf{D}(G)-1 . 
+ 
+ 
+ For any  g 1 | S g_{1}|S  with  g 1 ∉ { g , 2 ​ g } g_{1}\not\in\{g,2g\} , we may repeat the replacement procedure  S ​ ( g 1 ​ ( 2 ​ g − g 1 ) ) − 1 ​ g 2 S(g_{1}(2g-g_{1}))^{-1}g^{2} .
+Finally, we can obtain a sequence  S 1 = g a ​ ( 2 ​ g ) b S_{1}=g^{a}(2g)^{b}  with  | S 1 | = | S | = 𝖣 ⁡ ( G ) + 1 |S_{1}|=|S|=\mathsf{D}(G)+1  satisfying that every zero-sum subsequence of  S 1 S_{1}  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 . Obviously,  r ⁡ ( ⟨ S 1 ⟩ ) = 1 r(\langle S_{1}\rangle)=1 , a contradiction to Lemma  3.5 . We complete the proof.
+∎ 
+ 
+ 
+ 
+ Lemma 3.7 . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 3 r(G)\geq 3 . Let  S = T ​ g 1 ​ g 2 ​ g 3 S=Tg_{1}g_{2}g_{3}  be a sequence over  G G  of length  𝖣 ⁡ ( G ) + 2 \mathsf{D}(G)+2 , where  g 1 , g 2 , g 3 g_{1},g_{2},g_{3}  are pairwise distinct and  T T  is a zero-sum subsequence of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 .
+If every zero-sum subsequence of  S S  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 ,
+then  S S  must have the following form 
+ 
+ 
+ 
+ (3.1) 
+ 
+ S \displaystyle S 
+ = ∏ i = 1 ℓ a i ​ ( g 1 + g 2 − a i ) ​ ( g 1 + g 2 ) σ ​ g 1 ​ g 2 ​ g 3 \displaystyle=\prod_{i=1}^{\ell}a_{i}(g_{1}+g_{2}-a_{i})(g_{1}+g_{2})^{\sigma}g_{1}g_{2}g_{3} 
+ 
+ 
+ 
+ 
+ = ∏ i = 1 ℓ b i ​ ( g 1 + g 3 − b i ) ​ ( g 1 + g 3 ) σ ​ g 1 ​ g 2 ​ g 3 \displaystyle=\prod_{i=1}^{\ell}b_{i}(g_{1}+g_{3}-b_{i})(g_{1}+g_{3})^{\sigma}g_{1}g_{2}g_{3} 
+ 
+ 
+ 
+ 
+ = ∏ i = 1 ℓ c i ​ ( g 2 + g 3 − c i ) ​ ( g 2 + g 3 ) σ ​ g 1 ​ g 2 ​ g 3 \displaystyle=\prod_{i=1}^{\ell}c_{i}(g_{2}+g_{3}-c_{i})(g_{2}+g_{3})^{\sigma}g_{1}g_{2}g_{3} 
+ 
+ 
+ satisfying that all elements of  S S  are pairwise distinct,
+where  σ = 0 \sigma=0  or  1 1 ,  ℓ = 𝖣 ⁡ ( G ) − 1 − σ 2 \ell=\frac{\mathsf{D}(G)-1-\sigma}{2}  and  g j + g k ∉ { g i , 2 ​ g i } g_{j}+g_{k}\not\in\{g_{i},2g_{i}\}  for  { i , j , k } = { 1 , 2 , 3 } \{i,j,k\}=\{1,2,3\} . 
+ 
+ 
+ 
+ Proof. 
+ 
+ Since  r ⁡ ( G ) ≥ 3 r(G)\geq 3 , we have that  G G  does not have the form  C 2 ⊕ C 2 ​ m C_{2}\oplus C_{2m} . By the assumed condition, it is also easy to see that  T T  is minimal zero-sum. 
+ 
+ 
+ Claim  1 : 1:  Let  i , j ∈ { 1 , 2 , 3 } i,j\in\{1,2,3\}  and  i ≠ j i\neq j . For any  g | T g|T  with  g ∉ { g i , g j , g i + g j } g\not\in\{g_{i},g_{j},g_{i}+g_{j}\}  we have that  g ⁡ ( g i + g j − g ) | T g(g_{i}+g_{j}-g)|T  and  g ≠ g i + g j − g g\neq g_{i}+g_{j}-g . 
+ 
+ 
+ Obviously, every zero-sum subsequence of  T ​ g − 1 ​ g i ​ g j Tg^{-1}g_{i}g_{j}  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 ,  | T ​ g − 1 ​ g i ​ g j | = 𝖣 ⁡ ( G ) |Tg^{-1}g_{i}g_{j}|=\mathsf{D}(G)  and  σ ⁡ ( T ​ g − 1 ​ g i ​ g j ) = g i + g j − g ≠ 0 \sigma(Tg^{-1}g_{i}g_{j})=g_{i}+g_{j}-g\neq 0 . Thus every zero-sum subsequence of  T ​ g − 1 ​ g i ​ g j Tg^{-1}g_{i}g_{j}  must have the length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 , which implies that  σ ⁡ ( T ​ g − 1 ​ g i ​ g j ) = g i + g j − g | T ​ g − 1 ​ g i ​ g j \sigma(Tg^{-1}g_{i}g_{j})=g_{i}+g_{j}-g|Tg^{-1}g_{i}g_{j} .
+Since  g ∉ { g i , g j , g i + g j } g\not\in\{g_{i},g_{j},g_{i}+g_{j}\} , we have that  g i + g j − g ∉ { g i , g j } g_{i}+g_{j}-g\not\in\{g_{i},g_{j}\} . Hence,  g i + g j − g | T ​ g − 1 g_{i}+g_{j}-g|Tg^{-1} , i.e.,  g ⁡ ( g i + g j − g ) | T g(g_{i}+g_{j}-g)|T . 
+ 
+ 
+ If  g = g i + g j − g g=g_{i}+g_{j}-g , then  S = T ​ g 1 ​ g 2 ​ g 3 = T 1 ​ g ​ ( g i + g j − g ) ​ g 1 ​ g 2 ​ g 3 = ( T 1 ​ g i ​ g j ​ g 2 ) ​ g k S=Tg_{1}g_{2}g_{3}=T_{1}g(g_{i}+g_{j}-g)g_{1}g_{2}g_{3}=(T_{1}g_{i}g_{j}g^{2})g_{k} , where  { i , j , k } = { 1 , 2 , 3 } \{i,j,k\}=\{1,2,3\} . Obviously,  T 1 ​ g i ​ g j T_{1}g_{i}g_{j}  is a zero-sum subsequence of  S S  of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1  and every zero-sum subsequence of  T 1 ​ g i ​ g j ​ g 2 T_{1}g_{i}g_{j}g^{2}  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 . By Lemma  3.6  we can get a contradiction.
+The claim is true. 
+ 
+ 
+ Claim  2 : 2:   g j + g k ∉ { g i , 2 ​ g i } g_{j}+g_{k}\not\in\{g_{i},2g_{i}\}  for  { i , j , k } = { 1 , 2 , 3 } \{i,j,k\}=\{1,2,3\} . 
+ 
+ 
+ W.o.l.g., let  i = 1 i=1 ,  j = 2 j=2  and  k = 3 k=3 .
+If  2 ​ g 1 = g 2 + g 3 2g_{1}=g_{2}+g_{3} , then consider the sequence  T ​ g 1 2 Tg_{1}^{2} . Note that  T T  is minimal zero-sum. Obviously, any zero-sum subsequence  T ′ T^{\prime}  of  T ​ g 1 2 Tg_{1}^{2}  has one of the following forms: (1)  T T ; (2)  T 1 ​ g 1 T_{1}g_{1} , where  T 1 | T T_{1}|T  with  σ ⁡ ( T 1 ) = − g 1 \sigma(T_{1})=-g_{1} ; (3)  T 2 ​ g 1 2 T_{2}g_{1}^{2} , where  T 2 | T T_{2}|T  with  σ ⁡ ( T 2 ) = − 2 ​ g 1 \sigma(T_{2})=-2g_{1} . If (1) holds, then  | T ′ | = | T | = 𝖣 ⁡ ( G ) − 1 |T^{\prime}|=|T|=\mathsf{D}(G)-1 . If (2) holds, then obviously  T 1 ​ g 1 | S T_{1}g_{1}|S , which implies that  | T ′ | = | T 1 ​ g 1 | ≥ 𝖣 ⁡ ( G ) − 1 |T^{\prime}|=|T_{1}g_{1}|\geq\mathsf{D}(G)-1 . If (3) holds, then  2 ​ g 1 = g 2 + g 3 2g_{1}=g_{2}+g_{3}  implies that  σ ⁡ ( T 2 ​ g 1 2 ) = σ ⁡ ( T 2 ​ g 2 ​ g 3 ) = 0 \sigma(T_{2}g_{1}^{2})=\sigma(T_{2}g_{2}g_{3})=0 . It follows that  T 2 ​ g 2 ​ g 3 T_{2}g_{2}g_{3}  is a zero-sum subsequence of  S S . Thus  | T ′ | = | T 2 ​ g 1 2 | = | T 2 ​ g 2 ​ g 3 | ≥ 𝖣 ⁡ ( G ) − 1 |T^{\prime}|=|T_{2}g_{1}^{2}|=|T_{2}g_{2}g_{3}|\geq\mathsf{D}(G)-1 .
+Hence, every zero-sum subsequence of  T ​ g 1 2 Tg_{1}^{2}  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 . This is impossible by Lemma  3.6 . 
+ 
+ 
+ If  g 1 = g 2 + g 3 g_{1}=g_{2}+g_{3} , then there must exist  g | T g|T  with  g ∉ { g 1 , g 2 , g 3 } g\not\in\{g_{1},g_{2},g_{3}\} . Otherwise,  S = g 1 a ​ g 2 b ​ g 3 c S=g_{1}^{a}g_{2}^{b}g_{3}^{c}  with  a , b , c a,b,c  being positive integers and  T = g 1 a − 1 ​ g 2 b − 1 ​ g 3 c − 1 T=g_{1}^{a-1}g_{2}^{b-1}g_{3}^{c-1} . If  a − 1 > 0 a-1>0 , then since  g 1 = g 2 + g 3 g_{1}=g_{2}+g_{3} , we have that  T ​ g 1 − 1 ​ g 2 ​ g 3 Tg_{1}^{-1}g_{2}g_{3}  is a zero-sum subsequence of  S S  of length  | T | + 1 = 𝖣 ⁡ ( G ) |T|+1=\mathsf{D}(G) . By the assumed condition, it is easy to see that  T ​ g 1 − 1 ​ g 2 ​ g 3 Tg_{1}^{-1}g_{2}g_{3}  is minimal zero-sum. It follows from Lemma  3.1  that  ∑ ( T ​ g 1 − 1 ​ g 2 ​ g 3 ) = G \sum(Tg_{1}^{-1}g_{2}g_{3})=G . Thus  r ⁡ ( ⟨ S ⟩ ) = r ⁡ ( G ) ≥ 3 r(\langle S\rangle)=r(G)\geq 3 . This is a contradiction to that  r ⁡ ( ⟨ S ⟩ ) = r ⁡ ( ⟨ g 1 , g 2 , g 3 ⟩ ) = r ⁡ ( ⟨ g 2 + g 3 , g 2 , g 3 ⟩ ) ≤ 2 r(\langle S\rangle)=r(\langle g_{1},g_{2},g_{3}\rangle)=r(\langle g_{2}+g_{3},g_{2},g_{3}\rangle)\leq 2 .
+If  b − 1 > 0 b-1>0  and  c − 1 > 0 c-1>0 , then  T ​ ( g 2 ​ g 3 ) − 1 ​ g 1 T(g_{2}g_{3})^{-1}g_{1}  is a zero-sum subsequence of  S S  of length  | T | − 1 = 𝖣 ⁡ ( G ) − 2 |T|-1=\mathsf{D}(G)-2 . This is a contradiction to the assumed condition.
+If either  a − 1 = 0 a-1=0 ,  b − 1 = 0 b-1=0  or  a − 1 = 0 a-1=0 ,  c − 1 = 0 c-1=0 , then  T = g 2 b − 1 T=g_{2}^{b-1}  or  g 3 c − 1 g_{3}^{c-1}  is a minimal zero-sum subsequence of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 . Thus  𝖣 ⁡ ( G ) − 1 = ord ⁡ ( g 2 ) \mathsf{D}(G)-1={\rm ord~}(g_{2})  or  ord ⁡ ( g 3 ) {\rm ord~}(g_{3}) . It follows that  G G  must have the form  C 2 ⊕ C 2 ​ m C_{2}\oplus C_{2m}  with  C 2 ​ m = ⟨ g 2 ⟩ C_{2m}=\langle g_{2}\rangle  or  ⟨ g 3 ⟩ \langle g_{3}\rangle . This is contradiction to  r ⁡ ( G ) ≥ 3 r(G)\geq 3 .
+Combining  g ∉ { g 2 + g 3 , g 2 , g 3 } g\not\in\{g_{2}+g_{3},g_{2},g_{3}\}  with Claim  1 1  yields that  g ⁡ ( g 2 + g 3 − g ) | T . g(g_{2}+g_{3}-g)|T.  Thus  S = T ​ g 1 ​ g 2 ​ g 3 = g ⁡ ( g 2 + g 3 − g ) ​ T ′ ​ g 2 ​ g 3 ​ ( g 2 + g 3 ) S=Tg_{1}g_{2}g_{3}=g(g_{2}+g_{3}-g)T^{\prime}g_{2}g_{3}(g_{2}+g_{3}) . Obviously,  T ′ ​ ( g 2 + g 3 ) T^{\prime}(g_{2}+g_{3})  is a zero-sum subsequence of  S S  of length  | T | − 1 = 𝖣 ⁡ ( G ) − 2 |T|-1=\mathsf{D}(G)-2 . This is a contradiction to the assumed condition.
+The claim is true. 
+ 
+ 
+ Claim  3 : 3:   g 1 , g 2 , g 3 ∤ T g_{1},g_{2},g_{3}\nmid T . 
+ 
+ 
+ If  g 3 | T g_{3}|T , then Claim  2 2  implies that  g 1 + g 2 ≠ g 3 g_{1}+g_{2}\neq g_{3} . Since  g 1 , g 2 , g 3 g_{1},g_{2},g_{3}  are pairwise distinct, we have that  g 3 ∉ { g 1 , g 2 , g 1 + g 2 } g_{3}\not\in\{g_{1},g_{2},g_{1}+g_{2}\} . It follows from Claim  1 1  that  g 3 ​ ( g 1 + g 2 − g 3 ) | T g_{3}(g_{1}+g_{2}-g_{3})|T .
+Thus we can set  S = T ​ g 1 ​ g 2 ​ g 3 = T 1 ​ g 3 ​ ( g 1 + g 2 − g 3 ) ​ g 1 ​ g 2 ​ g 3 = ( T 1 ​ g 1 ​ g 2 ​ g 3 2 ) ​ ( g 1 + g 2 − g 3 ) S=Tg_{1}g_{2}g_{3}=T_{1}g_{3}(g_{1}+g_{2}-g_{3})g_{1}g_{2}g_{3}=(T_{1}g_{1}g_{2}g_{3}^{2})(g_{1}+g_{2}-g_{3}) . Obviously,  T 1 ​ g 1 ​ g 2 T_{1}g_{1}g_{2}  is a zero-sum subsequence of  S S  of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1  and every zero-sum subsequence of  T 1 ​ g 1 ​ g 2 ​ g 3 2 T_{1}g_{1}g_{2}g_{3}^{2}  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 . By Lemma  3.6  we can get a contradiction. Similarly,  g 1 , g 2 ∤ T g_{1},g_{2}\nmid T . 
+ 
+ 
+ Claim  4 : 4:  For any  g | T g|T  we have that  𝗏 g ​ ( T ) = 1 \mathsf{v}_{g}(T)=1 . 
+ 
+ 
+ If there exists some  g | T g|T  with  𝗏 g ​ ( T ) ≥ 2 \mathsf{v}_{g}(T)\geq 2 , then Claim  3 3  implies that  g ∉ { g 1 , g 2 , g 3 } g\not\in\{g_{1},g_{2},g_{3}\} .
+If  g ≠ g 1 + g 2 g\neq g_{1}+g_{2} , then it follows from Claim  1 1  that  g ⁡ ( g 1 + g 2 − g ) | T g(g_{1}+g_{2}-g)|T  and  g ≠ g 1 + g 2 − g g\neq g_{1}+g_{2}-g . Thus we can set  S = T ​ g 1 ​ g 2 ​ g 3 = g ⁡ ( g 1 + g 2 − g ) ​ T ′ ​ g 1 ​ g 2 ​ g 3 = ( T ′ ​ g 1 ​ g 2 ) ​ g ​ ( g 1 + g 2 − g ) ​ g 3 S=Tg_{1}g_{2}g_{3}=g(g_{1}+g_{2}-g)T^{\prime}g_{1}g_{2}g_{3}=(T^{\prime}g_{1}g_{2})g(g_{1}+g_{2}-g)g_{3}  with  g | T ′ g|T^{\prime} . Obviously,  T ′ ​ g 1 ​ g 2 T^{\prime}g_{1}g_{2}  is a zero-sum subsequence of  S S  of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 . In addition,  g , g 1 + g 2 − g , g 3 g,g_{1}+g_{2}-g,g_{3}  must be pairwise distinct. Otherwise,  S S  has a subsequence with the form  ( T ′ ​ g 1 ​ g 2 ) ​ g x 2 (T^{\prime}g_{1}g_{2})g_{x}^{2} . This together with  r ⁡ ( G ) ≥ 3 r(G)\geq 3  and Lemma  3.6  yields that  ( T ′ ​ g 1 ​ g 2 ) ​ g x 2 (T^{\prime}g_{1}g_{2})g_{x}^{2}  has a zero-sum subsequence with length at most  𝖣 ⁡ ( G ) − 2 \mathsf{D}(G)-2 , a contradiction to the lemma’s assumed condition. By Claim  3 3  we have that  g , g 1 + g 2 − g , g 3 ∤ T ′ ​ g 1 ​ g 2 g,g_{1}+g_{2}-g,g_{3}\nmid T^{\prime}g_{1}g_{2} . Hence,  g ∤ T ′ g\nmid T^{\prime} , a contradiction. Hence,  𝗏 g ​ ( T ) = 1 \mathsf{v}_{g}(T)=1  for any  g | T g|T  with  g ≠ g 1 + g 2 g\neq g_{1}+g_{2} .
+Similarly,  𝗏 g ​ ( T ) = 1 \mathsf{v}_{g}(T)=1  for any  g | T g|T  with  g ∉ { g 1 + g 3 , g 2 + g 3 } g\not\in\{g_{1}+g_{3},g_{2}+g_{3}\} .
+Since  g 1 , g 2 , g 3 g_{1},g_{2},g_{3}  are pairwise distinct, we have that  g 1 + g 2 ∉ { g 1 + g 3 , g 2 + g 3 } g_{1}+g_{2}\not\in\{g_{1}+g_{3},g_{2}+g_{3}\} . Hence,  𝗏 g 1 + g 2 ​ ( T ) = 1 \mathsf{v}_{g_{1}+g_{2}}(T)=1  if  g 1 + g 2 | T g_{1}+g_{2}|T .
+The claim is true. 
+ 
+ 
+ By the above claims, we can easily see that  S S  must have the following form 
+ 
+ 
+ 
+ (3.2) 
+ 
+ S \displaystyle S 
+ = ∏ i = 1 ℓ 1 a i ​ ( g 1 + g 2 − a i ) ​ ( g 1 + g 2 ) σ 1 ​ g 1 ​ g 2 ​ g 3 \displaystyle=\prod_{i=1}^{\ell_{1}}a_{i}(g_{1}+g_{2}-a_{i})(g_{1}+g_{2})^{\sigma_{1}}g_{1}g_{2}g_{3} 
+ 
+ 
+ 
+ 
+ = ∏ i = 1 ℓ 2 b i ​ ( g 1 + g 3 − b i ) ​ ( g 1 + g 3 ) σ 2 ​ g 1 ​ g 2 ​ g 3 \displaystyle=\prod_{i=1}^{\ell_{2}}b_{i}(g_{1}+g_{3}-b_{i})(g_{1}+g_{3})^{\sigma_{2}}g_{1}g_{2}g_{3} 
+ 
+ 
+ 
+ 
+ = ∏ i = 1 ℓ 3 c i ​ ( g 2 + g 3 − c i ) ​ ( g 2 + g 3 ) σ 3 ​ g 1 ​ g 2 ​ g 3 \displaystyle=\prod_{i=1}^{\ell_{3}}c_{i}(g_{2}+g_{3}-c_{i})(g_{2}+g_{3})^{\sigma_{3}}g_{1}g_{2}g_{3} 
+ 
+ 
+ satisfying that all elements of  S S  are pairwise distinct,
+where each  σ i = 0 \sigma_{i}=0  or  1 1 .
+Since  | S | = 2 ​ ℓ 1 + σ 1 + 3 = 2 ​ ℓ 2 + σ 2 + 3 = 2 ​ ℓ 3 + σ 3 + 3 = 𝖣 ⁡ ( G ) + 2 |S|=2\ell_{1}+\sigma_{1}+3=2\ell_{2}+\sigma_{2}+3=2\ell_{3}+\sigma_{3}+3=\mathsf{D}(G)+2  and  σ i = 0 \sigma_{i}=0  or  1 1 , one can easily see that  σ := σ 1 = σ 2 = σ 3 = 0 \sigma:=\sigma_{1}=\sigma_{2}=\sigma_{3}=0  or  1 1  and  ℓ := ℓ 1 = ℓ 2 = ℓ 3 = 𝖣 ⁡ ( G ) − 1 − σ 2 \ell:=\ell_{1}=\ell_{2}=\ell_{3}=\frac{\mathsf{D}(G)-1-\sigma}{2} .
+We complete the proof.
+∎ 
+ 
+ 
+ 
+ The proof of Theorem  1.11 : 
+If  r ⁡ ( G ) = 2 r(G)=2 , then by Lemma  1.7  Part (iv) we are done. Hence, we can suppose  r ⁡ ( G ) ≥ 3 r(G)\geq 3 .
+Note that  𝖣 ⁡ ( G ) − 2 ≥ exp ⁡ ( G ) ≥ 2 \mathsf{D}(G)-2\geq\exp(G)\geq 2 . It is easy to see that  𝖣 ⁡ ( G ) − 2 = 2 \mathsf{D}(G)-2=2  and  r ⁡ ( G ) ≥ 2 r(G)\geq 2  iff  G ≅ C 2 3 G\cong C_{2}^{3} . Hence,  𝖣 ⁡ ( G ) − 2 ≥ 3 \mathsf{D}(G)-2\geq 3 , i.e.,  𝖣 ⁡ ( G ) ≥ 5 \mathsf{D}(G)\geq 5 . If  𝖣 ⁡ ( G ) = 5 \mathsf{D}(G)=5 , then by a simple analysis, we have that either  r ⁡ ( G ) ≤ 2 r(G)\leq 2  or  G ≅ C 2 4 G\cong C_{2}^{4} , a contradiction to  r ⁡ ( G ) ≥ 3 r(G)\geq 3  and  G ≇ C 2 4 G\not\cong C_{2}^{4} . Hence, 
+ 
+
+ 
+ 
+ 𝖣 ⁡ ( G ) ≥ 6 . \mathsf{D}(G)\geq 6. 
+ 
+ 
+ 
+ 
+ Let  S S  be a sequence over  G G  of length  𝖣 ⁡ ( G ) + 2 \mathsf{D}(G)+2 .
+Suppose that every zero-sum subsequence of  S S  has the length  ≥ 𝖣 ⁡ ( G ) − 1 \geq\mathsf{D}(G)-1 .
+Since  𝗌 ≤ 𝖣 ⁡ ( G ) − 1 ​ ( G ) = 𝖣 ⁡ ( G ) + 1 < | S | \mathsf{s}_{\leq\mathsf{D}(G)-1}(G)=\mathsf{D}(G)+1<|S| , there must exist a zero-sum subsequence in  S S  of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 . Thus we can set 
+ 
+
+ 
+ 
+ S = T ​ g 1 ​ g 2 ​ g 3 , S=Tg_{1}g_{2}g_{3}, 
+ 
+ 
+ where  T T  is a minimal zero-sum subsequence of  S S  of length  𝖣 ⁡ ( G ) − 1 \mathsf{D}(G)-1 . By Lemma  3.6  we must have that  g 1 , g 2 , g 3 g_{1},g_{2},g_{3}  are pairwise distinct.
+It follows from Lemma  3.7  that  S S  must have the form ( 3.1 ) with  σ = 0 \sigma=0  or  1 1  and  | S | = 2 ​ ℓ + σ + 3 = 𝖣 ⁡ ( G ) + 2 ≥ 8 |S|=2\ell+\sigma+3=\mathsf{D}(G)+2\geq 8 , which implies that  ℓ ≥ 2 \ell\geq 2 . 
+ 
+ 
+ If  σ = 1 \sigma=1 , then since  g 1 , g 2 , g 3 g_{1},g_{2},g_{3}  are pairwise distinct, we have that  g 1 + g 2 , g 1 + g 3 , g 2 + g 3 g_{1}+g_{2},g_{1}+g_{3},g_{2}+g_{3}  are also pairwise distinct. By ( 3.1 ) we can suppose that  g 1 + g 3 = a i , g 2 + g 3 = b j , g 1 + g 2 = c k g_{1}+g_{3}=a_{i},g_{2}+g_{3}=b_{j},g_{1}+g_{2}=c_{k}  for some  i , j , k ∈ [ 1 , ℓ ] i,j,k\in[1,\ell] , which implies that  T T  contains  g 1 + g 2 − a i = g 2 − g 3 , g 1 + g 3 − b j = g 1 − g 2 , g 2 + g 3 − c k = g 3 − g 1 g_{1}+g_{2}-a_{i}=g_{2}-g_{3},g_{1}+g_{3}-b_{j}=g_{1}-g_{2},g_{2}+g_{3}-c_{k}=g_{3}-g_{1} . By Claim  2 2  of Lemma  3.7  we have that  g j + g k ≠ 2 ​ g i g_{j}+g_{k}\neq 2g_{i}  for  { i , j , k } = { 1 , 2 , 3 } \{i,j,k\}=\{1,2,3\} .
+Thus we must have that  g 1 − g 2 , g 2 − g 3 , g 3 − g 1 g_{1}-g_{2},g_{2}-g_{3},g_{3}-g_{1}  are pairwise distinct. Hence,  ( g 1 − g 2 ) ​ ( g 2 − g 3 ) ​ ( g 3 − g 1 ) (g_{1}-g_{2})(g_{2}-g_{3})(g_{3}-g_{1})  is a zero-sum subsequence of  S S  of length  3 ≤ 𝖣 ⁡ ( G ) − 2 3\leq\mathsf{D}(G)-2 . This is a contradiction to the hypothesis. 
+ 
+ 
+ If  σ = 0 \sigma=0 , then by ( 3.1 )  T T  can be viewed as a subset of  G G . In addition, we have that  g j + g k − g ∈ T g_{j}+g_{k}-g\in T  and  g ≠ g j + g k − g g\neq g_{j}+g_{k}-g  for any  g ∈ T g\in T  and  j , k ∈ { 1 , 2 , 3 } j,k\in\{1,2,3\}  with  j ≠ k j\neq k . Thus 
+ 
+
+ 
+ 
+ { g 1 + g 2 , g 1 + g 3 , g 2 + g 3 } − T = T . \{g_{1}+g_{2},g_{1}+g_{3},g_{2}+g_{3}\}-T=T. 
+ 
+ 
+ It follows that  T = g i 1 + g j 1 − T = g i 1 + g j 1 − ( g i 2 + g j 2 − T ) = ( g i 1 + g j 1 ) − ( g i 2 + g j 2 ) + T T=g_{i_{1}}+g_{j_{1}}-T=g_{i_{1}}+g_{j_{1}}-(g_{i_{2}}+g_{j_{2}}-T)=(g_{i_{1}}+g_{j_{1}})-(g_{i_{2}}+g_{j_{2}})+T  for any  { i 1 , j 1 } , { i 2 , j 2 } ∈ { { 1 , 2 } , { 1 , 3 } , { 2 , 3 } } \{i_{1},j_{1}\},\{i_{2},j_{2}\}\in\{\{1,2\},\{1,3\},\{2,3\}\} . Obviously, 
+ 
+
+ 
+ 
+ 
+ { ( g i 1 + g j 1 ) − ( g i 2 + g j 2 ) : { i 1 , j 1 } , { i 2 , j 2 } ∈ { { 1 , 2 } , { 1 , 3 } , { 2 , 3 } } } \displaystyle\{(g_{i_{1}}+g_{j_{1}})-(g_{i_{2}}+g_{j_{2}}):\{i_{1},j_{1}\},\{i_{2},j_{2}\}\in\{\{1,2\},\{1,3\},\{2,3\}\}\} 
+ 
+ 
+ 
+ 
+ = { g i − g j : i , j ∈ { 1 , 2 , 3 } } . \displaystyle=\{g_{i}-g_{j}:i,j\in\{1,2,3\}\}. 
+ 
+ 
+ Hence, 
+ 
+
+ 
+ 
+ T = g i − g j + T ​ for any ​ i , j ∈ { 1 , 2 , 3 } . T=g_{i}-g_{j}+T\ \text{for any}\ i,j\in\{1,2,3\}. 
+ 
+ 
+ Set  H = ⟨ g 1 − g 2 , g 1 − g 3 ⟩ H=\langle g_{1}-g_{2},g_{1}-g_{3}\rangle .
+It follows from Lemma  3.4  that 
+ 
+
+ 
+ 
+ T = T + H = ⋃ i = 1 t ′ ( w i + g 1 + H ) . T=T+H=\bigcup_{i=1}^{t^{\prime}}(w_{i}+g_{1}+H). 
+ 
+ 
+ Note that  g 1 + H = g 2 + H = g 3 + H g_{1}+H=g_{2}+H=g_{3}+H .
+For any  h ∈ H h\in H  and  i ∈ [ 1 , t ′ ] i\in[1,t^{\prime}] , we have that 
+ 
+
+ 
+ 
+ 
+ g j + g k − ( w i + g 1 + h ) = − w i + g j + ( g k − g 1 − h ) \displaystyle g_{j}+g_{k}-(w_{i}+g_{1}+h)=-w_{i}+g_{j}+(g_{k}-g_{1}-h) 
+ 
+ 
+ 
+ 
+ ∈ − w i + g j + ( g k − g 1 + H ) = − w i + g j + H = − w i + g 1 + H , \displaystyle\in-w_{i}+g_{j}+(g_{k}-g_{1}+H)=-w_{i}+g_{j}+H=-w_{i}+g_{1}+H, 
+ 
+ 
+ where  j , k ∈ { 1 , 2 , 3 } j,k\in\{1,2,3\}  with  j ≠ k j\neq k .
+Since  g j + g k − g ∈ T g_{j}+g_{k}-g\in T  for any  g ∈ T g\in T  and  j , k ∈ { 1 , 2 , 3 } j,k\in\{1,2,3\}  with  j ≠ k j\neq k , we can set 
+ 
+
+ 
+ 
+ T = ⋃ x = 1 t { v x + g 1 + H , − v x + g 1 + H } ​ ⋃ y = 1 s ( u y + g 1 + H ) , \displaystyle T=\bigcup_{x=1}^{t}\{v_{x}+g_{1}+H,-v_{x}+g_{1}+H\}\bigcup_{y=1}^{s}(u_{y}+g_{1}+H), 
+ 
+ 
+ where each  2 ​ v x ∉ H 2v_{x}\not\in H  and  2 ​ u y ∈ H 2u_{y}\in H .
+It is easy to see that 
+ 
+
+ 
+ 
+ | T | = 2 ​ t ​ | H | + s ​ | H | = 𝖣 ⁡ ( G ) − 1 , |T|=2t|H|+s|H|=\mathsf{D}(G)-1, 
+ 
+ 
+ and for any  h ∈ H h\in H  and  i , j ∈ { 1 , 2 , 3 } i,j\in\{1,2,3\}  with  i ≠ j i\neq j 
+ 
+
+ 
+ 
+ 
+ g i + g j − ( v x + g 1 + h ) ∈ − v x + g 1 + H , \displaystyle g_{i}+g_{j}-(v_{x}+g_{1}+h)\in-v_{x}+g_{1}+H, 
+ 
+ 
+ 
+ 
+ g i + g j − ( u y + g 1 + h ) ∈ u y + g 1 + H . \displaystyle g_{i}+g_{j}-(u_{y}+g_{1}+h)\in u_{y}+g_{1}+H. 
+ 
+ 
+ In addition, if  s > 0 s>0 , then since  g ≠ g j + g k − g g\neq g_{j}+g_{k}-g  for any  g ∈ T g\in T , we must have that  | H | |H|  is even.
+Denote by  H 1 H_{1}  the set of elements of order  ≤ 2 \leq 2  in  H H . Thus we can write 
+ 
+
+ 
+ 
+ H = H 1 ⊎ A ⊎ ( − A ) . H=H_{1}\uplus A\uplus(-A). 
+ 
+ 
+ Since  r ⁡ ( H ) = r ⁡ ( ⟨ g 1 − g 2 , g 1 − g 3 ⟩ ) ≤ 2 r(H)=r(\langle g_{1}-g_{2},g_{1}-g_{3}\rangle)\leq 2 , we must have that  H 1 ≅ C 2 H_{1}\cong C_{2}  or  C 2 2 C_{2}^{2}  if  | H 1 | > 1 |H_{1}|>1 .
+Since each  2 ​ u y ∈ H 2u_{y}\in H , there must exist some  e y ∈ G e_{y}\in G  of order  ≤ 2 \leq 2  such that  u y + H = e y + H u_{y}+H=e_{y}+H .
+Thus 
+ 
+ 
+ 
+ (3.3) 
+ 
+ T = \displaystyle T= 
+ ⋃ x = 1 t { v x + g 1 + H , − v x + g 1 + H } ​ ⋃ y = 1 s ( u y + g 1 + H ) \displaystyle\bigcup_{x=1}^{t}\{v_{x}+g_{1}+H,-v_{x}+g_{1}+H\}\bigcup_{y=1}^{s}(u_{y}+g_{1}+H) 
+ 
+ 
+ 
+ = \displaystyle= 
+ ⋃ x = 1 t { v x + g 1 + H , − v x + g 1 + H } ​ ⋃ y = 1 s ( u y + g 1 + ( H 1 ⊎ A ⊎ ( − A ) ) ) \displaystyle\bigcup_{x=1}^{t}\{v_{x}+g_{1}+H,-v_{x}+g_{1}+H\}\bigcup_{y=1}^{s}(u_{y}+g_{1}+(H_{1}\uplus A\uplus(-A))) 
+ 
+ 
+ 
+ = \displaystyle= 
+ ⋃ x = 1 t ⋃ h ∈ H { v x + g 1 + h , − v x + g 1 − h } \displaystyle\bigcup_{x=1}^{t}\bigcup_{h\in H}\{v_{x}+g_{1}+h,-v_{x}+g_{1}-h\} 
+ 
+ 
+ 
+ 
+ ⋃ y = 1 s ⋃ h ∈ A { e y + g 1 + h , e y + g 1 − h } ​ ⋃ y = 1 s ⋃ h ∈ H 1 ( e y + g 1 + h ) . \displaystyle\bigcup_{y=1}^{s}\bigcup_{h\in A}\{e_{y}+g_{1}+h,e_{y}+g_{1}-h\}\bigcup_{y=1}^{s}\bigcup_{h\in H_{1}}(e_{y}+g_{1}+h). 
+ 
+ 
+ Obviously,  ∑ h ∈ H 1 ( e y + g 1 + h ) = 2 ​ g 1 + e \sum_{h\in H_{1}}(e_{y}+g_{1}+h)=2g_{1}+e  if  H 1 = ⟨ e ⟩ ≅ C 2 H_{1}=\langle e\rangle\cong C_{2} ;  ∑ h ∈ H 1 ( e y + g 1 + h ) = 4 ​ g 1 \sum_{h\in H_{1}}(e_{y}+g_{1}+h)=4g_{1}  if  H 1 ≅ C 2 2 H_{1}\cong C_{2}^{2} .
+Note that  T T  is minimal zero-sum. Thus, it follows from ( 3.3 ) that 
+ 
+ 
+ 
+ (3.4) 
+ 
+ T ′ : \displaystyle T^{\prime}: 
+ = ∏ x = 1 t ( 2 ​ g 1 ) | H | ​ ∏ y = 1 s ( 2 ​ g 1 ) | A | ​ ∏ y = 1 s ∑ h ∈ H 1 ( e y + g 1 + h ) \displaystyle=\prod_{x=1}^{t}(2g_{1})^{|H|}\prod_{y=1}^{s}(2g_{1})^{|A|}\prod_{y=1}^{s}\sum_{h\in H_{1}}(e_{y}+g_{1}+h) 
+ 
+ 
+ 
+ 
+ = { ( 2 ​ g 1 ) t ​ | H | ,  if  s = 0 , ( 2 ​ g 1 ) t ​ | H | + s ​ | A | ​ ( 2 ​ g 1 + e ) s ,  if  s > 0  and  H 1 = ⟨ e ⟩ ≅ C 2 , ( 2 ​ g 1 ) t ​ | H | + s ​ | A | ​ ( 4 ​ g 1 ) s ,  if  s > 0  and  H 1 ≅ C 2 2 , \displaystyle=\left\{\begin{aligned} &(2g_{1})^{t|H|},\ &&\text{ if $s=0$}\,,\\
+&(2g_{1})^{t|H|+s|A|}(2g_{1}+e)^{s},\ &&\text{ if $s>0$ and $H_{1}=\langle e\rangle\cong C_{2}$}\,,\\
+&(2g_{1})^{t|H|+s|A|}(4g_{1})^{s},&&\text{ if $s>0$ and $H_{1}\cong C_{2}^{2}$}\,,\end{aligned}\right. 
+ 
+ 
+ is also minimal zero-sum. 
+ 
+ 
+ In the following, we will distinguish two cases to complete our proof. 
+ 
+ 
+ Case  1 : 1:   t ​ | H | + s ​ | A | > 0 t|H|+s|A|>0 . 
+ 
+ 
+ If  H 1 = ⟨ e ⟩ ≅ C 2 H_{1}=\langle e\rangle\cong C_{2}  and  2 ∤ s 2\nmid s , then  | A | = | H | − | H 1 | 2 = | H | − 2 2 |A|=\frac{|H|-|H_{1}|}{2}=\frac{|H|-2}{2}  and  σ ⁡ ( T ′ ) = ( t ​ | H | + s ​ | A | + s ) ​ ( 2 ​ g 1 ) + e = ( t + s 2 ) ​ | H | ​ ( 2 ​ g 1 ) + e = 0 \sigma(T^{\prime})=(t|H|+s|A|+s)(2g_{1})+e=(t+\frac{s}{2})|H|(2g_{1})+e=0 , i.e.,  e = ( t + s 2 ) ​ | H | ​ ( 2 ​ g 1 ) = ( 2 ​ t + s ) ​ | H | ​ g 1 ∈ ⟨ 2 ​ g 1 ⟩ e=(t+\frac{s}{2})|H|(2g_{1})=(2t+s)|H|g_{1}\in\langle 2g_{1}\rangle .
+This together with  2 ​ t ​ | H | + s ​ | H | = 𝖣 ⁡ ( G ) − 1 2t|H|+s|H|=\mathsf{D}(G)-1  yields that  2 ​ | ord ⁡ ( 2 ​ g 1 ) | ​ 2 ​ ( t + s 2 ) | H | = 𝖣 ⁡ ( G ) − 1 2\Bigm|{\rm ord~}(2g_{1})\Bigm|2(t+\frac{s}{2})|H|=\mathsf{D}(G)-1 , which implies that  ord ⁡ ( g 1 ) = 2 ​ ord ​ ( 2 ​ g 1 ) {\rm ord~}(g_{1})=2{\rm ord~}(2g_{1}) .
+If  ord ⁡ ( 2 ​ g 1 ) ≥ 𝖣 ⁡ ( G ) − 1 2 {\rm ord~}(2g_{1})\geq\frac{\mathsf{D}(G)-1}{2} , then combining  r ⁡ ( G ) ≥ 3 r(G)\geq 3  yields that  exp ⁡ ( G ) ≥ ord ⁡ ( g 1 ) = 2 ​ ord ​ ( 2 ​ g 1 ) ≥ 𝖣 ⁡ ( G ) − 1 ≥ exp ⁡ ( G ) + 1 . \exp(G)\geq{\rm ord~}(g_{1})=2{\rm ord~}(2g_{1})\geq\mathsf{D}(G)-1\geq\exp(G)+1.  This is a contradiction.
+Thus we can suppose that  ord ⁡ ( 2 ​ g 1 ) ≤ 𝖣 ⁡ ( G ) − 3 2 {\rm ord~}(2g_{1})\leq\frac{\mathsf{D}(G)-3}{2}  (since  2 | 𝖣 ⁡ ( G ) − 1 2\mid\mathsf{D}(G)-1 ).
+By ( 3.4 ) we have that 
+ 
+
+ 
+ 
+ T ′′ := ( 2 ​ g 1 ) t ​ | H | + s ​ | A | ​ ( 2 ​ g 1 + e ) s − 1 = ( 2 ​ g 1 ) 𝖣 ⁡ ( G ) − 1 2 − s ​ ( 2 ​ g 1 + e ) s − 1 T^{\prime\prime}:=(2g_{1})^{t|H|+s|A|}(2g_{1}+e)^{s-1}=(2g_{1})^{\frac{\mathsf{D}(G)-1}{2}-s}(2g_{1}+e)^{s-1} 
+ 
+ 
+ is zero-free with  2 | s − 1 2|s-1 . Since  t ​ | H | + s ​ | A | > 0 t|H|+s|A|>0 , we have that 
+ 
+
+ 
+ 
+ ∑ ( T ′′ ) ⊃ { i ⁡ ( 2 ​ g 1 ) : i ∈ [ 1 , 𝖣 ⁡ ( G ) − 3 2 ] } . \sum(T^{\prime\prime})\supset\{i(2g_{1}):i\in[1,\frac{\mathsf{D}(G)-3}{2}]\}. 
+ 
+ 
+ It follows that  ord ⁡ ( 2 ​ g 1 ) > 𝖣 ⁡ ( G ) − 3 2 {\rm ord~}(2g_{1})>\frac{\mathsf{D}(G)-3}{2} . This is a contradiction to  ord ⁡ ( 2 ​ g 1 ) ≤ 𝖣 ⁡ ( G ) − 3 2 {\rm ord~}(2g_{1})\leq\frac{\mathsf{D}(G)-3}{2} . 
+ 
+ 
+ If  s = 0 s=0  or  H 1 = ⟨ e ⟩ ≅ C 2 H_{1}=\langle e\rangle\cong C_{2}  with  2 | s 2|s  or  H 1 ≅ C 2 2 H_{1}\cong C_{2}^{2} , then it follows from ( 3.4 ) that 
+ 
+ 
+ 
+ (3.5) 
+ 
+ T ′′ := { ( 2 ​ g 1 ) t ​ | H | + s ​ | A | ,  if  s = 0 , ( 2 ​ g 1 ) t ​ | H | + s ​ | A | ​ ( 4 ​ g 1 ) s 2 ,  if  s > 0  and  H 1 = ⟨ e ⟩ ≅ C 2  with  2 | s , ( 2 ​ g 1 ) t ​ | H | + s ​ | A | ​ ( 4 ​ g 1 ) s ,  if  s > 0  and  H 1 ≅ C 2 2 , \displaystyle T^{\prime\prime}:=\left\{\begin{aligned} &(2g_{1})^{t|H|+s|A|},\ &&\text{ if $s=0$}\,,\\
+&(2g_{1})^{t|H|+s|A|}(4g_{1})^{\frac{s}{2}},\ &&\text{ if $s>0$ and $H_{1}=\langle e\rangle\cong C_{2}$ with $2|s$}\,,\\
+&(2g_{1})^{t|H|+s|A|}(4g_{1})^{s},&&\text{ if $s>0$ and $H_{1}\cong C_{2}^{2}$}\,,\end{aligned}\right. 
+ 
+ 
+ is minimal zero-sum.
+Since  t ​ | H | + s ​ | A | > 0 t|H|+s|A|>0  and  2 ​ t ​ | H | + s ​ | H | = 𝖣 ⁡ ( G ) − 1 2t|H|+s|H|=\mathsf{D}(G)-1 , by a simple caculation we have that 
+ 
+
+ 
+ 
+ ∑ ( T ′′ ) = { i ⁡ ( 2 ​ g 1 ) : i ∈ [ 1 , 𝖣 ⁡ ( G ) − 1 2 ] } . \sum(T^{\prime\prime})=\{i(2g_{1}):i\in[1,\frac{\mathsf{D}(G)-1}{2}]\}. 
+ 
+ 
+ Combining the minimality of  T ′′ T^{\prime\prime}  yields that 
+ 
+
+ 
+ 
+ ord ⁡ ( 2 ​ g 1 ) = 𝖣 ⁡ ( G ) − 1 2 . {\rm ord~}(2g_{1})=\frac{\mathsf{D}(G)-1}{2}. 
+ 
+ 
+ It follows that 
+ 
+
+ 
+ 
+ ord ⁡ ( g 1 ) = 𝖣 ⁡ ( G ) − 1 ​ or ​ 𝖣 ⁡ ( G ) − 1 2 . {\rm ord~}(g_{1})=\mathsf{D}(G)-1\ \text{or}\ \frac{\mathsf{D}(G)-1}{2}. 
+ 
+ 
+ If  ord ⁡ ( g 1 ) = 𝖣 ⁡ ( G ) − 1 {\rm ord~}(g_{1})=\mathsf{D}(G)-1 , then we must have that  G G  has the form  C 2 ⊕ C 2 ​ m C_{2}\oplus C_{2m} , a contradiction to  r ⁡ ( G ) ≥ 3 r(G)\geq 3 .
+If  ord ⁡ ( g 1 ) = 𝖣 ⁡ ( G ) − 1 2 {\rm ord~}(g_{1})=\frac{\mathsf{D}(G)-1}{2} , then  ord ⁡ ( g 1 ) = ord ⁡ ( 2 ​ g 1 ) {\rm ord~}(g_{1})={\rm ord~}(2g_{1}) , which implies that  𝖣 ⁡ ( G ) − 1 2 \frac{\mathsf{D}(G)-1}{2}  must be odd.
+It follows that  σ ⁡ ( ( 2 ​ g 1 ) 𝖣 ⁡ ( G ) − 3 4 ​ g 1 ) = 0 \sigma((2g_{1})^{\frac{\mathsf{D}(G)-3}{4}}g_{1})=0 .
+Since  ∑ ( T ) ⊃ ∑ ( T ′′ ) = { i ⁡ ( 2 ​ g 1 ) : i ∈ [ 1 , 𝖣 ⁡ ( G ) − 1 2 ] } \sum(T)\supset\sum(T^{\prime\prime})=\{i(2g_{1}):i\in[1,\frac{\mathsf{D}(G)-1}{2}]\} , by the structure ( 3.3 ) of  T T , there must exist a subsequence  T 1 | T T_{1}|T  of length  𝖣 ⁡ ( G ) − 3 2 \frac{\mathsf{D}(G)-3}{2}  such that  σ ⁡ ( T 1 ) = σ ⁡ ( ( 2 ​ g 1 ) 𝖣 ⁡ ( G ) − 3 4 ) = 𝖣 ⁡ ( G ) − 3 2 ​ g 1 \sigma(T_{1})=\sigma((2g_{1})^{\frac{\mathsf{D}(G)-3}{4}})=\frac{\mathsf{D}(G)-3}{2}g_{1} . It follows from  S = T ​ g 1 ​ g 2 ​ g 3 S=Tg_{1}g_{2}g_{3}  that  T 1 ​ g 1 T_{1}g_{1}  is a zero-sum subsequence of  S S  with  | T 1 ​ g 1 | = 𝖣 ⁡ ( G ) − 3 2 + 1 < 𝖣 ⁡ ( G ) − 1 |T_{1}g_{1}|=\frac{\mathsf{D}(G)-3}{2}+1<\mathsf{D}(G)-1 . This is a contradiction to the
+hypothesis of  S S . 
+ 
+ 
+ Case  2 : 2:   t ​ | H | + s ​ | A | = 0 t|H|+s|A|=0 . 
+ 
+ 
+ If  s = 0 s=0 , then by imitating the proof of Case 1 we can get a contradiction.
+Hence, we must have that  s > 0 s>0  and  t = | A | = 0 t=|A|=0 , which implies that  H = H 1 H=H_{1}  and  | T | = 2 ​ t ​ | H | + s ​ | H | = s | H 1 | = 𝖣 ⁡ ( G ) − 1 |T|=2t|H|+s|H|=s|H_{1}|=\mathsf{D}(G)-1 .
+If  H 1 = ⟨ e ⟩ ≅ C 2 H_{1}=\langle e\rangle\cong C_{2} , then  H = ⟨ g 1 − g 2 , g 1 − g 3 ⟩ = ⟨ e ⟩ H=\langle g_{1}-g_{2},g_{1}-g_{3}\rangle=\langle e\rangle . Since  g 1 , g 2 , g 3 g_{1},g_{2},g_{3}  are pairwise distinct, it follows that  g 1 − g 2 , g 1 − g 3 g_{1}-g_{2},g_{1}-g_{3}  are distinct and both nonzero. This is impossible.
+Hence,  H = H 1 ≅ C 2 2 H=H_{1}\cong C_{2}^{2}  and  s = 𝖣 ⁡ ( G ) − 1 4 s=\frac{\mathsf{D}(G)-1}{4} . It follows from  3.4  that 
+ 
+
+ 
+ 
+ T ′ = ( 4 ​ g 1 ) 𝖣 ⁡ ( G ) − 1 4 T^{\prime}=(4g_{1})^{\frac{\mathsf{D}(G)-1}{4}} 
+ 
+ 
+ is minimal zero-sum, i.e.,  ord ⁡ ( 4 ​ g 1 ) = 𝖣 ⁡ ( G ) − 1 4 = s {\rm ord~}(4g_{1})=\frac{\mathsf{D}(G)-1}{4}=s .
+It is easy to see that 
+ 
+
+ 
+ 
+ ord ⁡ ( 4 ​ g 1 ) = 𝖣 ⁡ ( G ) − 1 4 = s ​ must be odd , {\rm ord~}(4g_{1})=\frac{\mathsf{D}(G)-1}{4}=s\ \text{must be odd}, 
+ 
+ 
+ otherwise,  ord ⁡ ( g 1 ) = 2 ​ ord ​ ( 2 ​ g 1 ) = 4 ​ ord ​ ( 4 ​ g 1 ) = 𝖣 ⁡ ( G ) − 1 {\rm ord~}(g_{1})=2{\rm ord~}(2g_{1})=4{\rm ord~}(4g_{1})=\mathsf{D}(G)-1 , a contradiction to  r ⁡ ( G ) ≥ 3 r(G)\geq 3 .
+Since  H = ⟨ g 1 − g 2 , g 1 − g 3 ⟩ ≅ C 2 2 H=\langle g_{1}-g_{2},g_{1}-g_{3}\rangle\cong C_{2}^{2} , and  g 1 − g 2 , g 1 − g 3 g_{1}-g_{2},g_{1}-g_{3}  are distinct and both nonzero, we have that  g 1 − g 2 = e 1 g_{1}-g_{2}=e_{1}  and  g 1 − g 3 = e 2 g_{1}-g_{3}=e_{2}  are of order  2 2  and constitute a basis of  H H .
+It follows from ( 3.3 ) that 
+ 
+
+ 
+ 
+ S = g 1 ​ g 2 ​ g 3 ​ T = g 1 ​ ( g 1 + e 1 ) ​ ( g 1 + e 2 ) ​ ∏ y = 1 s ( e y + g 1 ) ​ ( e y + g 1 + e 1 ) ​ ( e y + g 1 + e 2 ) ​ ( e y + g 1 + e 1 + e 2 ) S=g_{1}g_{2}g_{3}T=g_{1}(g_{1}+e_{1})(g_{1}+e_{2})\prod_{y=1}^{s}(e_{y}+g_{1})(e_{y}+g_{1}+e_{1})(e_{y}+g_{1}+e_{2})(e_{y}+g_{1}+e_{1}+e_{2}) 
+ 
+ 
+ with  s = 𝖣 ⁡ ( G ) − 1 4 ≥ 2 s=\frac{\mathsf{D}(G)-1}{4}\geq 2  odd (since  𝖣 ⁡ ( G ) ≥ 6 \mathsf{D}(G)\geq 6 ).
+Obviously,  ord ⁡ ( g 1 ) = ord ⁡ ( 4 ​ g 1 ) = 𝖣 ⁡ ( G ) − 1 4 {\rm ord~}(g_{1})={\rm ord~}(4g_{1})=\frac{\mathsf{D}(G)-1}{4}  or  ord ⁡ ( g 1 ) = 2 ​ ord ​ ( 4 ​ g 1 ) = 𝖣 ⁡ ( G ) − 1 2 {\rm ord~}(g_{1})=2{\rm ord~}(4g_{1})=\frac{\mathsf{D}(G)-1}{2}  or  ord ⁡ ( g 1 ) = 4 ​ ord ​ ( 4 ​ g 1 ) = 𝖣 ⁡ ( G ) − 1 {\rm ord~}(g_{1})=4{\rm ord~}(4g_{1})=\mathsf{D}(G)-1 .
+Since  r ⁡ ( G ) ≥ 3 r(G)\geq 3 , we have that  ord ⁡ ( g 1 ) ≠ 𝖣 ⁡ ( G ) − 1 {\rm ord~}(g_{1})\neq\mathsf{D}(G)-1 .
+Hence, 
+ 
+
+ 
+ 
+ ord ⁡ ( g 1 ) = 𝖣 ⁡ ( G ) − 1 4 ​ or ​ 𝖣 ⁡ ( G ) − 1 2 . {\rm ord~}(g_{1})=\frac{\mathsf{D}(G)-1}{4}\ \text{or}\ \frac{\mathsf{D}(G)-1}{2}. 
+ 
+ 
+ 
+ 
+ If  ord ⁡ ( g 1 ) = 𝖣 ⁡ ( G ) − 1 2 {\rm ord~}(g_{1})=\frac{\mathsf{D}(G)-1}{2} , then since  s ≥ 2 s\geq 2  is odd, we have that  0 ≤ s − 3 2 < s − 1 0\leq\frac{s-3}{2}<s-1  and 
+ 
+
+ 
+ 
+ 
+ ( g 1 + e 1 ) ​ ( g 1 + e 2 ) ​ ( e s + g 1 ) ​ ( e s + g 1 + e 1 ) ​ ( e s − 1 + g 1 ) ​ ( e s − 1 + g 1 + e 2 ) \displaystyle(g_{1}+e_{1})(g_{1}+e_{2})(e_{s}+g_{1})(e_{s}+g_{1}+e_{1})(e_{s-1}+g_{1})(e_{s-1}+g_{1}+e_{2}) 
+ 
+ 
+ 
+ 
+ ∏ y = 1 s − 3 2 ( e y + g 1 ) ​ ( e y + g 1 + e 1 ) ​ ( e y + g 1 + e 2 ) ​ ( e y + g 1 + e 1 + e 2 ) \displaystyle\prod_{y=1}^{\frac{s-3}{2}}(e_{y}+g_{1})(e_{y}+g_{1}+e_{1})(e_{y}+g_{1}+e_{2})(e_{y}+g_{1}+e_{1}+e_{2}) 
+ 
+ 
+ is a zero-sum subsequence of  S S  of length  2 ​ s = 𝖣 ⁡ ( G ) − 1 2 < 𝖣 ⁡ ( G ) − 1 2s=\frac{\mathsf{D}(G)-1}{2}<\mathsf{D}(G)-1 . This is a contradiction to the
+hypothesis of  S S . 
+ 
+ 
+ If  ord ⁡ ( g 1 ) = 𝖣 ⁡ ( G ) − 1 4 {\rm ord~}(g_{1})=\frac{\mathsf{D}(G)-1}{4}  and  s = 𝖣 ⁡ ( G ) − 1 4 ≡ 1 mod 4 s=\frac{\mathsf{D}(G)-1}{4}\equiv 1\mod 4 , then  s ≥ 5 s\geq 5  and 
+ 
+
+ 
+ 
+ 
+ g 1 ​ ( g 1 + e 1 ) ​ ( g 1 + e 2 ) ​ ( e s + g 1 + e 1 ) ​ ( e s + g 1 + e 2 ) \displaystyle g_{1}(g_{1}+e_{1})(g_{1}+e_{2})(e_{s}+g_{1}+e_{1})(e_{s}+g_{1}+e_{2}) 
+ 
+ 
+ 
+ 
+ ∏ y = 1 s − 5 4 ( e y + g 1 ) ​ ( e y + g 1 + e 1 ) ​ ( e y + g 1 + e 2 ) ​ ( e y + g 1 + e 1 + e 2 ) \displaystyle\prod_{y=1}^{\frac{s-5}{4}}(e_{y}+g_{1})(e_{y}+g_{1}+e_{1})(e_{y}+g_{1}+e_{2})(e_{y}+g_{1}+e_{1}+e_{2}) 
+ 
+ 
+ is a zero-sum subsequence of  S S  of length  s = 𝖣 ⁡ ( G ) − 1 4 < 𝖣 ⁡ ( G ) − 1 s=\frac{\mathsf{D}(G)-1}{4}<\mathsf{D}(G)-1 . This is a contradiction to the
+hypothesis of  S S . 
+ 
+ 
+ If  ord ⁡ ( g 1 ) = 𝖣 ⁡ ( G ) − 1 4 {\rm ord~}(g_{1})=\frac{\mathsf{D}(G)-1}{4}  and  s = 𝖣 ⁡ ( G ) − 1 4 ≡ 3 mod 4 s=\frac{\mathsf{D}(G)-1}{4}\equiv 3\mod 4 , then  s ≥ 3 s\geq 3  and 
+ 
+
+ 
+ 
+ ( g 1 + e 1 ) ​ ( e s + g 1 ) ​ ( e s + g 1 + e 1 ) ​ ∏ y = 1 s − 3 4 ( e y + g 1 ) ​ ( e y + g 1 + e 1 ) ​ ( e y + g 1 + e 2 ) ​ ( e y + g 1 + e 1 + e 2 ) (g_{1}+e_{1})(e_{s}+g_{1})(e_{s}+g_{1}+e_{1})\prod_{y=1}^{\frac{s-3}{4}}(e_{y}+g_{1})(e_{y}+g_{1}+e_{1})(e_{y}+g_{1}+e_{2})(e_{y}+g_{1}+e_{1}+e_{2}) 
+ 
+ 
+ is a zero-sum subsequence of  S S  of length  s = 𝖣 ⁡ ( G ) − 1 4 < 𝖣 ⁡ ( G ) − 1 s=\frac{\mathsf{D}(G)-1}{4}<\mathsf{D}(G)-1 . This is a contradiction to the
+hypothesis of  S S .
+We complete the proof of the first assertion. 
+ 
+ 
+ The second assertion immediately follows from Theorem  1.10  and  1.11 .
+∎ 
+ 
+ 
+ 
+ 4.  Zero-sum subsequences of zero-sum sequences 
+
+ 
+ In  [ 9 ] , Gao et.al. considered a problem on short zero-sum subsequences of zero-sum sequences over finite abelian groups. For more, one can see  [ 27 ] . In this section, we study a problem on zero-sum subsequences of length  ≤ k \leq k  in zero-sum sequences over finite abelian  p p -groups. This problem is useful for the determination of  𝗌 ≤ k ​ ( G ) \mathsf{s}_{\leq k}(G)  in next section. 
+ 
+ 
+ We will use the following lemmas repeatly. 
+ 
+ 
+ Lemma 4.1   (Lucas’ Theorem,  [ 26 ] ) . 
+ 
+ Let  a a ,  b b  be positive integers with  a = a n ​ p n + … + a 1 ​ p + a 0 a=a_{n}p^{n}+\ldots+a_{1}p+a_{0}  and  b = b n ​ p n + … + b 1 ​ p + b 0 b=b_{n}p^{n}+\ldots+b_{1}p+b_{0}  be the  p p -adic expansions, where  p p  is a prime. Then 
+ 
+
+ 
+ 
+ ( a b ) ≡ ( a n b n ) ( a n − 1 b n − 1 ) ⋯ ( a 0 b 0 ) mod p . \binom{a}{b}\equiv\binom{a_{n}}{b_{n}}\binom{a_{n-1}}{b_{n-1}}\cdots\binom{a_{0}}{b_{0}}\ \mod\ p. 
+ 
+ 
+ 
+ 
+ 
+ For any integer  k ∈ ℤ > 0 k\in\mathbb{Z}_{>0} ,  g ∈ G g\in G , and a sequence  S S  over  G G , we define 
+ 
+
+ 
+ 
+ 𝖭 g k ( S ) = | { I ⊂ [ 1 , | S | ] : ∑ i ∈ I g i = g , | I | = k } | , \mathsf{N}_{g}^{k}(S)=\big|\big\{I\subset[1,|S|]:\sum_{i\in I}g_{i}=g,|I|=k\big\}\big|, 
+ 
+ 
+ which denotes the number of subsequences  T T  of  S S  having sum  σ ⁡ ( T ) = g \sigma(T)=g  and length
+ | T | = k |T|=k  (counted with the multiplicity of their appearance in  S S ).
+Denote by  𝖭 g + ​ ( S ) \mathsf{N}_{g}^{+}(S)  ( 𝖭 g − ​ ( S ) \mathsf{N}_{g}^{-}(S) ) the number of subsequences  T T  of  S S  of even (odd) length having sum  σ ⁡ ( T ) = g \sigma(T)=g  (each counted with
+the multiplicity of its appearance in  S S ).
+If  g = 0 g=0 , we also write  𝖭 0 k ​ ( S ) \mathsf{N}_{0}^{k}(S)  as  𝖭 k ​ ( S ) \mathsf{N}^{k}(S) . 
+ 
+ 
+ Lemma 4.2   ( [ 18 ] , Proposition 5.5.8) . 
+ 
+ Let  p p  be a prime, let  G G  be an abelian  p p -group, and let  S = g 1 ⋅ … ⋅ g ℓ ∈ ℱ ⁡ ( G ) S=g_{1}\boldsymbol{\cdot}\ldots\boldsymbol{\cdot}g_{\ell}\in\mathscr{F}(G) .
+If  ℓ ≥ 𝖣 ⁡ ( G ) \ell\geq\mathsf{D}(G) , then  𝖭 g + ​ ( S ) ≡ 𝖭 g − ​ ( S ) mod p \mathsf{N}_{g}^{+}(S)\equiv\mathsf{N}_{g}^{-}(S)\mod p 
+for all  g ∈ G g\in G . In particular,  𝖭 0 + ​ ( S ) ≡ 𝖭 0 − ​ ( S ) mod p \mathsf{N}_{0}^{+}(S)\equiv\mathsf{N}_{0}^{-}(S)\mod p . 
+ 
+ 
+ 
+ Lemma 4.3 . 
+ 
+ Let  x x  be an integer and  c , k , u 1 , u 2 , λ c,k,u_{1},u_{2},\lambda  be positive integers. Let 
+ 
+
+ 
+ 
+ A = ( 1 + x 1 1 ⋯ 1 ( c + u 1 1 ) ( c + u 2 1 ) ( c + k 1 ) ⋯ ( c 1 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 λ ) ( c + u 2 λ ) ( c + k λ ) ⋯ ( c λ ) ) ( λ + 1 ) × ( k + 3 ) . A=\left(\begin{array}[]{cccccc}1+x&1&1&\cdots&1\\
+{{c+u_{1}\choose 1}}&{{c+u_{2}\choose 1}}&{{c+k\choose 1}}&\cdots&{{c\choose 1}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}\choose\lambda}}&{{c+u_{2}\choose\lambda}}&{{c+k\choose\lambda}}&\cdots&{{c\choose\lambda}}\\
+\end{array}\right)_{(\lambda+1)\times(k+3)}. 
+ 
+ 
+ Then by some row transformations,  A A  can be brought to the following form 
+ 
+
+ 
+ 
+ A ′ = ( ( u 1 0 ) + ( − 1 ) 0 ​ x × ( c 0 ) ( u 2 0 ) ( k 0 ) ⋯ ( 0 0 ) ( u 1 1 ) + ( − 1 ) 1 ​ x × ( c 1 ) ( u 2 1 ) ( k 1 ) ⋯ ( 0 1 ) ( u 1 2 ) + ( − 1 ) 2 ​ x × ( c + 1 2 ) ( u 2 2 ) ( k 2 ) ⋯ ( 0 2 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( u 1 λ ) + ( − 1 ) λ ​ x × ( λ + c − 1 λ ) ( u 2 λ ) ( k λ ) ⋯ ( 0 λ ) ) . A^{\prime}=\left(\begin{array}[]{ccccccc}{{u_{1}\choose 0}}+(-1)^{0}x\times{{c\choose 0}}&{{u_{2}\choose 0}}&{{k\choose 0}}&\cdots&{{0\choose 0}}\\
+{{u_{1}\choose 1}}+(-1)^{1}x\times{{c\choose 1}}&{{u_{2}\choose 1}}&{{k\choose 1}}&\cdots&{{0\choose 1}}\\
+{{u_{1}\choose 2}}+(-1)^{2}x\times{{c+1\choose 2}}&{{u_{2}\choose 2}}&{{k\choose 2}}&\cdots&{{0\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{u_{1}\choose\lambda}}+(-1)^{\lambda}x\times{{\lambda+c-1\choose\lambda}}&{{u_{2}\choose\lambda}}&{{k\choose\lambda}}&\cdots&{{0\choose\lambda}}\\
+\end{array}\right). 
+ 
+ 
+ 
+ 
+ 
+ Proof. 
+ 
+ We take some row transformations of  A A  as follows (with the rows operations performed top to bottom each time by using  ( n i ) − ( n − 1 i − 1 ) = ( n − 1 i ) {n\choose i}-{n-1\choose i-1}={n-1\choose i} ).
+It is easy to see that 
+ 
+
+ 
+ 
+ A = A 0 , 0 = ( ( c + u 1 − 1 0 ) + x ( c + u 2 − 1 0 ) ( c + k − 1 0 ) ⋯ ( c − 1 0 ) ( c + u 1 1 ) ( c + u 2 1 ) ( c + k 1 ) ⋯ ( c 1 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 λ ) ( c + u 2 λ ) ( c + k λ ) ⋯ ( c λ ) ) . A=A_{0,0}=\left(\begin{array}[]{cccccc}{{c+u_{1}-1\choose 0}}+x&{{c+u_{2}-1\choose 0}}&{{c+k-1\choose 0}}&\cdots&{{c-1\choose 0}}\\
+{{c+u_{1}\choose 1}}&{{c+u_{2}\choose 1}}&{{c+k\choose 1}}&\cdots&{{c\choose 1}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}\choose\lambda}}&{{c+u_{2}\choose\lambda}}&{{c+k\choose\lambda}}&\cdots&{{c\choose\lambda}}\\
+\end{array}\right). 
+ 
+ 
+ Multiplying the first row of  A 0 , 0 A_{0,0}  by  − 1 -1  and then adding it to the second row of  A 0 , 0 A_{0,0}  yields  A 0 , 1 A_{0,1} : 
+ 
+
+ 
+ 
+ A 0 , 1 = ( ( c + u 1 − 1 0 ) + x ( c + u 2 − 1 0 ) ( c + k − 1 0 ) ⋯ ( c − 1 0 ) ( c + u 1 − 1 1 ) − x ( c + u 2 − 1 1 ) ( c + k − 1 1 ) ⋯ ( c − 1 1 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 λ ) ( c + u 2 λ ) ( c + k λ ) ⋯ ( c λ ) ) . A_{0,1}=\left(\begin{array}[]{cccccc}{{c+u_{1}-1\choose 0}}+x&{{c+u_{2}-1\choose 0}}&{{c+k-1\choose 0}}&\cdots&{{c-1\choose 0}}\\
+{{c+u_{1}-1\choose 1}}-x&{{c+u_{2}-1\choose 1}}&{{c+k-1\choose 1}}&\cdots&{{c-1\choose 1}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}\choose\lambda}}&{{c+u_{2}\choose\lambda}}&{{c+k\choose\lambda}}&\cdots&{{c\choose\lambda}}\\
+\end{array}\right). 
+ 
+ 
+ Repeat this process  λ \lambda  times, i.e., for  1 ≤ i ≤ λ 1\leq i\leq\lambda  multiply the  ( i + 1 ) (i+1) -th row of  A 0 , i A_{0,i}  by  − 1 -1  and then add it to the  ( i + 2 ) (i+2) -th row of  A 0 , i A_{0,i} . It follows that 
+ 
+
+ 
+ 
+ A 0 , λ = ( ( c + u 1 − 1 0 ) + ( − 1 ) 0 ​ x ( c + u 2 − 1 0 ) ( c + k − 1 0 ) ⋯ ( c − 1 0 ) ( c + u 1 − 1 1 ) + ( − 1 ) 1 ​ x ( c + u 2 − 1 1 ) ( c + k − 1 1 ) ⋯ ( c − 1 1 ) ( c + u 1 − 1 2 ) + ( − 1 ) 2 ​ x ( c + u 2 − 1 2 ) ( c + k − 1 2 ) ⋯ ( c − 1 2 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 − 1 λ ) + ( − 1 ) λ ​ x ( c + u 2 − 1 λ ) ( c + k − 1 λ ) ⋯ ( c − 1 λ ) ) A_{0,\lambda}=\left(\begin{array}[]{cccccc}{{c+u_{1}-1\choose 0}}+(-1)^{0}x&{{c+u_{2}-1\choose 0}}&{{c+k-1\choose 0}}&\cdots&{{c-1\choose 0}}\\
+{{c+u_{1}-1\choose 1}}+(-1)^{1}x&{{c+u_{2}-1\choose 1}}&{{c+k-1\choose 1}}&\cdots&{{c-1\choose 1}}\\
+{{c+u_{1}-1\choose 2}}+(-1)^{2}x&{{c+u_{2}-1\choose 2}}&{{c+k-1\choose 2}}&\cdots&{{c-1\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}-1\choose\lambda}}+(-1)^{\lambda}x&{{c+u_{2}-1\choose\lambda}}&{{c+k-1\choose\lambda}}&\cdots&{{c-1\choose\lambda}}\\
+\end{array}\right) 
+ 
+ 
+ 
+
+ 
+ 
+ = ( ( c + u 1 − 2 0 ) + ( − 1 ) 0 ​ x × ( 1 0 ) ( c + u 2 − 2 0 ) ( c + k − 2 0 ) ⋯ ( c − 2 0 ) ( c + u 1 − 1 1 ) + ( − 1 ) 1 ​ x × ( 1 1 ) ( c + u 2 − 1 1 ) ( c + k − 1 1 ) ⋯ ( c − 1 1 ) ( c + u 1 − 1 2 ) + ( − 1 ) 2 ​ x × ( 2 2 ) ( c + u 2 − 1 2 ) ( c + k − 1 2 ) ⋯ ( c − 1 2 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 − 1 λ ) + ( − 1 ) λ ​ x × ( λ λ ) ( c + u 2 − 1 λ ) ( c + k − 1 λ ) ⋯ ( c − 1 λ ) ) . =\left(\begin{array}[]{cccccc}{{c+u_{1}-2\choose 0}}+(-1)^{0}x\times{{1\choose 0}}&{{c+u_{2}-2\choose 0}}&{{c+k-2\choose 0}}&\cdots&{{c-2\choose 0}}\\
+{{c+u_{1}-1\choose 1}}+(-1)^{1}x\times{{1\choose 1}}&{{c+u_{2}-1\choose 1}}&{{c+k-1\choose 1}}&\cdots&{{c-1\choose 1}}\\
+{{c+u_{1}-1\choose 2}}+(-1)^{2}x\times{{2\choose 2}}&{{c+u_{2}-1\choose 2}}&{{c+k-1\choose 2}}&\cdots&{{c-1\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}-1\choose\lambda}}+(-1)^{\lambda}x\times{{\lambda\choose\lambda}}&{{c+u_{2}-1\choose\lambda}}&{{c+k-1\choose\lambda}}&\cdots&{{c-1\choose\lambda}}\\
+\end{array}\right). 
+ 
+ 
+ Multiplying the first row of  A 0 , λ A_{0,\lambda}  by  − 1 -1  and then adding it to the second row of  A 0 , λ A_{0,\lambda}  yields  A 1 , 1 A_{1,1} : 
+ 
+
+ 
+ 
+ A 1 , 1 = ( ( c + u 1 − 2 0 ) + ( − 1 ) 0 ​ x × ( 1 0 ) ( c + u 2 − 2 0 ) ( c + k − 2 0 ) ⋯ ( c − 2 0 ) ( c + u 1 − 2 1 ) + ( − 1 ) 1 ​ x × ( 2 1 ) ( c + u 2 − 2 1 ) ( c + k − 2 1 ) ⋯ ( c − 2 1 ) ( c + u 1 − 1 2 ) + ( − 1 ) 2 ​ x × ( 2 2 ) ( c + u 2 − 1 2 ) ( c + k − 1 2 ) ⋯ ( c − 1 2 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 − 1 λ ) + ( − 1 ) λ ​ x × ( λ λ ) ( c + u 2 − 1 λ ) ( c + k − 1 λ ) ⋯ ( c − 1 λ ) ) . A_{1,1}=\left(\begin{array}[]{ccccccc}{{c+u_{1}-2\choose 0}}+(-1)^{0}x\times{{1\choose 0}}&{{c+u_{2}-2\choose 0}}&{{c+k-2\choose 0}}&\cdots&{{c-2\choose 0}}\\
+{{c+u_{1}-2\choose 1}}+(-1)^{1}x\times{{2\choose 1}}&{{c+u_{2}-2\choose 1}}&{{c+k-2\choose 1}}&\cdots&{{c-2\choose 1}}\\
+{{c+u_{1}-1\choose 2}}+(-1)^{2}x\times{{2\choose 2}}&{{c+u_{2}-1\choose 2}}&{{c+k-1\choose 2}}&\cdots&{{c-1\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}-1\choose\lambda}}+(-1)^{\lambda}x\times{{\lambda\choose\lambda}}&{{c+u_{2}-1\choose\lambda}}&{{c+k-1\choose\lambda}}&\cdots&{{c-1\choose\lambda}}\\
+\end{array}\right). 
+ 
+ 
+ Repeat this process  λ \lambda  times, i.e., for  1 ≤ i ≤ λ 1\leq i\leq\lambda  multiply the  ( i + 1 ) (i+1) -th row of  A 1 , i A_{1,i}  by  − 1 -1  and then add it to the  ( i + 2 ) (i+2) -th row of  A 1 , i A_{1,i} . It follows that 
+ 
+
+ 
+ 
+ A 1 , λ = ( ( c + u 1 − 2 0 ) + ( − 1 ) 0 ​ x × ( 2 0 ) ( c + u 2 − 2 0 ) ( c + k − 2 0 ) ⋯ ( c − 2 0 ) ( c + u 1 − 2 1 ) + ( − 1 ) 1 ​ x × ( 2 1 ) ( c + u 2 − 2 1 ) ( c + k − 2 1 ) ⋯ ( c − 2 1 ) ( c + u 1 − 2 2 ) + ( − 1 ) 2 ​ x × ( 3 2 ) ( c + u 2 − 2 2 ) ( c + k − 2 2 ) ⋯ ( c − 2 2 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 − 2 λ ) + ( − 1 ) λ ​ x × ( λ + 1 λ ) ( c + u 2 − 2 λ ) ( c + k − 2 λ ) ⋯ ( c − 2 λ ) ) A_{1,\lambda}=\left(\begin{array}[]{ccccccc}{{c+u_{1}-2\choose 0}}+(-1)^{0}x\times{{2\choose 0}}&{{c+u_{2}-2\choose 0}}&{{c+k-2\choose 0}}&\cdots&{{c-2\choose 0}}\\
+{{c+u_{1}-2\choose 1}}+(-1)^{1}x\times{{2\choose 1}}&{{c+u_{2}-2\choose 1}}&{{c+k-2\choose 1}}&\cdots&{{c-2\choose 1}}\\
+{{c+u_{1}-2\choose 2}}+(-1)^{2}x\times{{3\choose 2}}&{{c+u_{2}-2\choose 2}}&{{c+k-2\choose 2}}&\cdots&{{c-2\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}-2\choose\lambda}}+(-1)^{\lambda}x\times{{\lambda+1\choose\lambda}}&{{c+u_{2}-2\choose\lambda}}&{{c+k-2\choose\lambda}}&\cdots&{{c-2\choose\lambda}}\\
+\end{array}\right) 
+ 
+ 
+ Again repeating the above technique on row transformations  l − 1 ​ ( 1 ≤ l ≤ c ) l-1\ (1\leq l\leq c)  times one obtains 
+ 
+
+ 
+ 
+ A l − 1 , λ = ( ( c + u 1 − l 0 ) + ( − 1 ) 0 ​ x × ( l 0 ) ( c + u 2 − l 0 ) ( c + k − l 0 ) ⋯ ( c − l 0 ) ( c + u 1 − l 1 ) + ( − 1 ) 1 ​ x × ( l 1 ) ( c + u 2 − l 1 ) ( c + k − l 1 ) ⋯ ( c − l 1 ) ( c + u 1 − l 2 ) + ( − 1 ) 2 ​ x × ( l + 1 2 ) ( c + u 2 − l 2 ) ( c + k − l 2 ) ⋯ ( c − l 2 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( c + u 1 − l λ ) + ( − 1 ) λ ​ x × ( λ + l − 1 λ ) ( c + u 2 − l λ ) ( c + k − l λ ) ⋯ ( c − l λ ) ) . A_{l-1,\lambda}=\left(\begin{array}[]{cccccc}{{c+u_{1}-l\choose 0}}+(-1)^{0}x\times{{l\choose 0}}&{{c+u_{2}-l\choose 0}}&{{c+k-l\choose 0}}&\cdots&{{c-l\choose 0}}\\
+{{c+u_{1}-l\choose 1}}+(-1)^{1}x\times{{l\choose 1}}&{{c+u_{2}-l\choose 1}}&{{c+k-l\choose 1}}&\cdots&{{c-l\choose 1}}\\
+{{c+u_{1}-l\choose 2}}+(-1)^{2}x\times{{l+1\choose 2}}&{{c+u_{2}-l\choose 2}}&{{c+k-l\choose 2}}&\cdots&{{c-l\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{c+u_{1}-l\choose\lambda}}+(-1)^{\lambda}x\times{{\lambda+l-1\choose\lambda}}&{{c+u_{2}-l\choose\lambda}}&{{c+k-l\choose\lambda}}&\cdots&{{c-l\choose\lambda}}\\
+\end{array}\right). 
+ 
+ 
+ In particular, 
+ 
+
+ 
+ 
+ A ′ := A c − 1 , λ = ( ( u 1 0 ) + ( − 1 ) 0 ​ x × ( c 0 ) ( u 2 0 ) ( k 0 ) ⋯ ( 0 0 ) ( u 1 1 ) + ( − 1 ) 1 ​ x × ( c 1 ) ( u 2 1 ) ( k 1 ) ⋯ ( 0 1 ) ( u 1 2 ) + ( − 1 ) 2 ​ x × ( c + 1 2 ) ( u 2 2 ) ( k 2 ) ⋯ ( 0 2 ) ⋮ ⋮ ⋮ ⋮ ⋮ ( u 1 λ ) + ( − 1 ) λ ​ x × ( λ + c − 1 λ ) ( u 2 λ ) ( k λ ) ⋯ ( 0 λ ) ) . A^{\prime}:=A_{c-1,\lambda}=\left(\begin{array}[]{ccccc}{{u_{1}\choose 0}}+(-1)^{0}x\times{{c\choose 0}}&{{u_{2}\choose 0}}&{{k\choose 0}}&\cdots&{{0\choose 0}}\\
+{{u_{1}\choose 1}}+(-1)^{1}x\times{{c\choose 1}}&{{u_{2}\choose 1}}&{{k\choose 1}}&\cdots&{{0\choose 1}}\\
+{{u_{1}\choose 2}}+(-1)^{2}x\times{{c+1\choose 2}}&{{u_{2}\choose 2}}&{{k\choose 2}}&\cdots&{{0\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{u_{1}\choose\lambda}}+(-1)^{\lambda}x\times{{\lambda+c-1\choose\lambda}}&{{u_{2}\choose\lambda}}&{{k\choose\lambda}}&\cdots&{{0\choose\lambda}}\\
+\end{array}\right). 
+ 
+ 
+ We complete the proof.
+∎ 
+ 
+ 
+ 
+ In the following, we will give some conditions for a zero-sum sequence  T T  over a  p p -group  G G  of length  | T | ≥ 2 ​ k |T|\geq 2k  such that  T T  has a zero-sum subsequence of length  ≤ k − 1 \leq k-1  . 
+ 
+ 
+ Lemma 4.4 . 
+ 
+ Let  p p  be a prime and  k k  be a positive integer.
+Let  G G  be a finite abelian  p p -group and  T T  be a zero-sum sequence over  G G  of length  | T | ≥ 2 ​ k |T|\geq 2k .
+Suppose that  2 ​ k ≥ 𝖣 ⁡ ( G ) + 2 2k\geq\mathsf{D}(G)+2 .
+If there exists some  i ∈ [ 1 , 2 ​ k − 𝖣 ⁡ ( G ) ] i\in[1,2k-\mathsf{D}(G)]  such that 
+ 
+
+ 
+ 
+ a i := ( | T | − k k − i ) + ( − 1 ) i × ( | T | − k + i − 1 k − 1 ) ≢ 0 mod p , \displaystyle a_{i}:={{|T|-k\choose k-i}}+(-1)^{i}\times{{|T|-k+i-1\choose k-1}}\not\equiv 0\mod p, 
+ 
+ 
+ then  T T  has a zero-sum subsequence of length  ≤ k − 1 \leq k-1 . 
+ 
+ 
+ 
+ Note that  a 1 = 0 a_{1}=0 . 
+ 
+ 
+ Proof. 
+ 
+ Suppose that each zero-sum subsequence of  T T  has the length  ≥ k \geq k .
+Since  σ ⁡ ( T ) = 0 \sigma(T)=0 , we must have that each zero-sum subsequence of  T T  has the length  ≤ | T | − k \leq|T|-k .
+Hence, 
+ 
+
+ 
+ 
+ 𝖭 i ​ ( T ) = 0 ​ for ​ i ∈ [ 1 , k − 1 ] ∪ [ | T | − k + 1 , | T | − 1 ] . \mathsf{N}^{i}(T)=0\ \text{for}\ i\in[1,k-1]\cup[|T|-k+1,|T|-1]. 
+ 
+ 
+ It follows from Lemma  4.2  that the following equations hold 
+ 
+ 
+ 
+ (4.1) 
+ 
+ 
+ 1 + ( − 1 ) k ​ 𝖭 k ​ ( T ) + … + ( − 1 ) | T | − k ​ 𝖭 | T | − k ​ ( T ) + ( − 1 ) | T | ​ 𝖭 | T | ​ ( T ) = \displaystyle 1+(-1)^{k}\mathsf{N}^{k}(T)+\ldots+(-1)^{|T|-k}\mathsf{N}^{|T|-k}(T)+(-1)^{|T|}\mathsf{N}^{|T|}(T)= 
+ 
+ 
+ 
+ 
+ ( 1 + ( − 1 ) | T | ) + ( − 1 ) k ​ 𝖭 k ​ ( T ) + … + ( − 1 ) | T | − k ​ 𝖭 | T | − k ​ ( T ) ≡ 0 mod p , \displaystyle(1+(-1)^{|T|})+(-1)^{k}\mathsf{N}^{k}(T)+\ldots+(-1)^{|T|-k}\mathsf{N}^{|T|-k}(T)\equiv 0\mod p, 
+ 
+ 
+ and for any  T 1 | T T_{1}|T  with  | T 1 | ∈ [ 𝖣 ⁡ ( G ) , | T | − 1 ] |T_{1}|\in[\mathsf{D}(G),|T|-1] 
+ 
+
+ 
+ 
+ 1 + ( − 1 ) k ​ 𝖭 k ​ ( T 1 ) + … + ( − 1 ) | T | − k ​ 𝖭 | T | − k ​ ( T 1 ) ≡ 0 mod p . 1+(-1)^{k}\mathsf{N}^{k}(T_{1})+\ldots+(-1)^{|T|-k}\mathsf{N}^{|T|-k}(T_{1})\equiv 0\mod p. 
+ 
+ 
+ It follows that for  1 ≤ t ≤ | T | − 𝖣 ⁡ ( G ) 1\leq t\leq|T|-\mathsf{D}(G) 
+ 
+
+ 
+ 
+ ∑ T 1 | T , | T 1 | = | T | − t ( 1 + ( − 1 ) k ​ 𝖭 k ​ ( T 1 ) + … + ( − 1 ) | T | − k ​ 𝖭 | T | − k ​ ( T 1 ) ) ≡ 0 mod p . \sum\limits_{T_{1}\mid T,\ |T_{1}|=|T|-t}\big(1+(-1)^{k}\mathsf{N}^{k}(T_{1})+\ldots+(-1)^{|T|-k}\mathsf{N}^{|T|-k}(T_{1})\big)\equiv 0\mod p. 
+ 
+ 
+ Analysing the number of times each subsequence is counted, one obtains 
+ 
+ 
+ 
+ (4.2) 
+ 
+ ( | T | | T 1 | ) \displaystyle\binom{|T|}{|T_{1}|} 
+ + ( − 1 ) k ​ ( | T | − k | T 1 | − k ) ​ 𝖭 k ​ ( T ) \displaystyle+(-1)^{k}\binom{|T|-k}{|T_{1}|-k}\mathsf{N}^{k}(T) 
+ 
+ 
+ 
+ 
+ + … + ( − 1 ) | T | − k ​ ( | T | − ( | T | − k ) | T 1 | − ( | T | − k ) ) ​ 𝖭 | T | − k ​ ( T ) \displaystyle+\ldots+(-1)^{|T|-k}\binom{|T|-(|T|-k)}{|T_{1}|-(|T|-k)}\mathsf{N}^{|T|-k}(T) 
+ 
+ 
+ 
+ = ( | T | t ) \displaystyle=\binom{|T|}{t} 
+ + ( − 1 ) k ​ ( | T | − k t ) ​ 𝖭 k ​ ( T ) \displaystyle+(-1)^{k}\binom{|T|-k}{t}\mathsf{N}^{k}(T) 
+ 
+ 
+ 
+ 
+ + … + ( − 1 ) | T | − k ​ ( k t ) ​ 𝖭 | T | − k ​ ( T ) ≡ 0 mod p . \displaystyle+\ldots+(-1)^{|T|-k}\binom{k}{t}\mathsf{N}^{|T|-k}(T)\equiv 0\mod p. 
+ 
+ 
+ Set  X = ( 1 , ( − 1 ) k ​ 𝖭 k ​ ( T ) , … , ( − 1 ) | T | − k ​ 𝖭 | T | − k ​ ( T ) ) T X=(1,(-1)^{k}\mathsf{N}^{k}(T),\ldots,(-1)^{|T|-k}\mathsf{N}^{|T|-k}(T))^{T}  and 
+ 
+
+ 
+ 
+ A := ( ( | T | 0 ) + ( − 1 ) | T | ( | T | − k 0 ) ⋯ ( k 0 ) ( | T | 1 ) ( | T | − k 1 ) ⋯ ( k 1 ) ( | T | 2 ) ( | T | − k 2 ) ⋯ ( k 2 ) ⋮ ⋮ ⋮ ⋮ ( | T | | T | − 𝖣 ⁡ ( G ) ) ( | T | − k | T | − 𝖣 ⁡ ( G ) ) ⋯ ( k | T | − 𝖣 ⁡ ( G ) ) ) . A:=\left(\begin{array}[]{cccc}{{|T|\choose 0}}+(-1)^{|T|}&{{|T|-k\choose 0}}&\cdots&{{k\choose 0}}\\
+{{|T|\choose 1}}&{{|T|-k\choose 1}}&\cdots&{{k\choose 1}}\\
+{{|T|\choose 2}}&{{|T|-k\choose 2}}&\cdots&{{k\choose 2}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{|T|\choose|T|-\mathsf{D}(G)}}&{{|T|-k\choose|T|-\mathsf{D}(G)}}&\cdots&{{k\choose|T|-\mathsf{D}(G)}}\\
+\end{array}\right). 
+ 
+ 
+ On the one hand, it can be deduced from ( 4.1 ) and ( 4.2 ) that 
+ 
+
+ 
+ 
+ A ​ X ≡ 0 mod p . AX\equiv 0\mod p. 
+ 
+ 
+ Combining  2 ​ k > 𝖣 ⁡ ( G ) 2k>\mathsf{D}(G)  with Lemma  4.3  yields that by some row transformations,  A A  can be brought to the following form 
+ 
+
+ 
+ 
+ A ′ = ( A 11 A 12 A 21 A 22 ) A^{\prime}=\left(\begin{array}[]{cccc}A_{11}&A_{12}\\
+A_{21}&A_{22}\end{array}\right) 
+ 
+ 
+ 
+
+ 
+ 
+ = ( ( | T | − k 0 ) + ( − 1 ) 0 ​ ( − 1 ) | T | × ( k 0 ) ( | T | − 2 ​ k 0 ) ⋯ ( 0 0 ) ( | T | − k 1 ) + ( − 1 ) 1 ​ ( − 1 ) | T | × ( k 1 ) ( | T | − 2 ​ k 1 ) ⋯ ( 0 1 ) ( | T | − k 2 ) + ( − 1 ) 2 ​ ( − 1 ) | T | × ( k + 1 2 ) ( | T | − 2 ​ k 2 ) ⋯ ( 0 2 ) ⋮ ⋮ ⋮ ⋮ ( | T | − k | T | − 2 ​ k ) + ( − 1 ) | T | − 2 ​ k ​ ( − 1 ) | T | × ( | T | − k − 1 | T | − 2 ​ k ) ( | T | − 2 ​ k | T | − 2 ​ k ) ⋯ ( 0 | T | − 2 ​ k ) ( | T | − k | T | − 2 ​ k + 1 ) + ( − 1 ) | T | − 2 ​ k + 1 ​ ( − 1 ) | T | × ( | T | − k | T | − 2 ​ k + 1 ) ( | T | − 2 ​ k | T | − 2 ​ k + 1 ) ⋯ ( 0 | T | − 2 ​ k + 1 ) ( | T | − k | T | − 2 ​ k + 2 ) + ( − 1 ) | T | − 2 ​ k + 2 ​ ( − 1 ) | T | × ( | T | − k + 1 | T | − 2 ​ k + 2 ) ( | T | − 2 ​ k | T | − 2 ​ k + 2 ) ⋯ ( 0 | T | − 2 ​ k + 2 ) ⋮ ⋮ ⋮ ⋮ ( | T | − k | T | − 𝖣 ⁡ ( G ) ) + ( − 1 ) | T | − 𝖣 ⁡ ( G ) ​ ( − 1 ) | T | × ( | T | − 𝖣 ⁡ ( G ) + k − 1 | T | − 𝖣 ⁡ ( G ) ) ( | T | − 2 ​ k | T | − 𝖣 ⁡ ( G ) ) ⋯ ( 0 | T | − 𝖣 ⁡ ( G ) ) ) , =\left(\begin{array}[]{c:cccccc}{{|T|-k\choose 0}}+(-1)^{0}(-1)^{|T|}\times{{k\choose 0}}\hfil\lx@intercol\vrule\lx@add@cssclass&{{|T|-2k\choose 0}}&\cdots&{{0\choose 0}}\\
+{{|T|-k\choose 1}}+(-1)^{1}(-1)^{|T|}\times{{k\choose 1}}\hfil\lx@intercol\vrule\lx@add@cssclass&{{|T|-2k\choose 1}}&\cdots&{{0\choose 1}}\\
+{{|T|-k\choose 2}}+(-1)^{2}(-1)^{|T|}\times{{k+1\choose 2}}\hfil\lx@intercol\vrule\lx@add@cssclass&{{|T|-2k\choose 2}}&\cdots&{{0\choose 2}}\\
+{\vdots}\hfil\lx@intercol\vrule\lx@add@cssclass&{\vdots}&{\vdots}&{\vdots}\\
+{{|T|-k\choose|T|-2k}}+(-1)^{|T|-2k}(-1)^{|T|}\times{{|T|-k-1\choose|T|-2k}}\hfil\lx@intercol\vrule\lx@add@cssclass&{{|T|-2k\choose|T|-2k}}&\cdots&{{0\choose|T|-2k}}\\
+\hline\cr{{|T|-k\choose|T|-2k+1}}+(-1)^{|T|-2k+1}(-1)^{|T|}\times{{|T|-k\choose|T|-2k+1}}\hfil\lx@intercol\vrule\lx@add@cssclass&{{|T|-2k\choose|T|-2k+1}}&\cdots&{{0\choose|T|-2k+1}}\\
+{{|T|-k\choose|T|-2k+2}}+(-1)^{|T|-2k+2}(-1)^{|T|}\times{{|T|-k+1\choose|T|-2k+2}}\hfil\lx@intercol\vrule\lx@add@cssclass&{{|T|-2k\choose|T|-2k+2}}&\cdots&{{0\choose|T|-2k+2}}\\
+{\vdots}\hfil\lx@intercol\vrule\lx@add@cssclass&{\vdots}&{\vdots}&{\vdots}\\
+{{|T|-k\choose|T|-\mathsf{D}(G)}}+(-1)^{|T|-\mathsf{D}(G)}(-1)^{|T|}\times{{|T|-\mathsf{D}(G)+k-1\choose|T|-\mathsf{D}(G)}}\hfil\lx@intercol\vrule\lx@add@cssclass&{{|T|-2k\choose|T|-\mathsf{D}(G)}}&\cdots&{{0\choose|T|-\mathsf{D}(G)}}\\
+\end{array}\right), 
+ 
+ 
+ where 
+ 
+
+ 
+ 
+ A 21 = ( ( | T | − k | T | − 2 ​ k + 1 ) + ( − 1 ) | T | − 2 ​ k + 1 ​ ( − 1 ) | T | × ( | T | − k | T | − 2 ​ k + 1 ) ( | T | − k | T | − 2 ​ k + 2 ) + ( − 1 ) | T | − 2 ​ k + 2 ​ ( − 1 ) | T | × ( | T | − k + 1 | T | − 2 ​ k + 2 ) ⋮ ( | T | − k | T | − 𝖣 ⁡ ( G ) ) + ( − 1 ) | T | − 𝖣 ⁡ ( G ) ​ ( − 1 ) | T | × ( | T | − 𝖣 ⁡ ( G ) + k − 1 | T | − 𝖣 ⁡ ( G ) ) ) . A_{21}=\left(\begin{array}[]{ccccc}{{|T|-k\choose|T|-2k+1}}+(-1)^{|T|-2k+1}(-1)^{|T|}\times{{|T|-k\choose|T|-2k+1}}\\
+{{|T|-k\choose|T|-2k+2}}+(-1)^{|T|-2k+2}(-1)^{|T|}\times{{|T|-k+1\choose|T|-2k+2}}\\
+{\vdots}\\
+{{|T|-k\choose|T|-\mathsf{D}(G)}}+(-1)^{|T|-\mathsf{D}(G)}(-1)^{|T|}\times{{|T|-\mathsf{D}(G)+k-1\choose|T|-\mathsf{D}(G)}}\\
+\end{array}\right). 
+ 
+ 
+ Obviously, 
+ 
+
+ 
+ 
+ A ′ ​ X ≡ 0 mod p . A^{\prime}X\equiv 0\mod p. 
+ 
+ 
+ For  i ∈ [ 1 , 2 ​ k − 𝖣 ⁡ ( G ) ] i\in[1,2k-\mathsf{D}(G)] , in  A 21 A_{21}  we have that 
+ 
+
+ 
+ 
+ 
+ ( | T | − k | T | − 2 ​ k + i ) + ( − 1 ) | T | − 2 ​ k + i ​ ( − 1 ) | T | × ( | T | − k + i − 1 | T | − 2 ​ k + i ) \displaystyle{{|T|-k\choose|T|-2k+i}}+(-1)^{|T|-2k+i}(-1)^{|T|}\times{{|T|-k+i-1\choose|T|-2k+i}} 
+ 
+ 
+ 
+ 
+ = ( | T | − k k − i ) + ( − 1 ) i × ( | T | − k + i − 1 k − 1 ) = a i . \displaystyle={{|T|-k\choose k-i}}+(-1)^{i}\times{{|T|-k+i-1\choose k-1}}=a_{i}. 
+ 
+ 
+ Since  a i ≢ 0 mod p a_{i}\not\equiv 0\mod p  for some  i ∈ [ 1 , 2 ​ k − 𝖣 ⁡ ( G ) ] i\in[1,2k-\mathsf{D}(G)] ,
+we have that the following equation holds 
+ 
+
+ 
+ 
+ a i + ( − 1 ) k ​ ( | T | − 2 ​ k | T | − 2 ​ k + i ) ​ 𝖭 k ​ ( T ) + … + ( − 1 ) | T | − k ​ ( 0 | T | − 2 ​ k + i ) ​ 𝖭 | T | − k ​ ( T ) ≡ 0 mod p . a_{i}+(-1)^{k}\binom{|T|-2k}{|T|-2k+i}\mathsf{N}^{k}(T)+\ldots+(-1)^{|T|-k}\binom{0}{|T|-2k+i}\mathsf{N}^{|T|-k}(T)\equiv 0\mod p. 
+ 
+ 
+ Note that  ( j | T | − 2 ​ k + i ) = 0 \binom{j}{|T|-2k+i}=0  if  j < | T | − 2 ​ k + i j<|T|-2k+i . Thus we must have  a i ≡ 0 mod p . a_{i}\equiv 0\mod p.  This is contradiction.
+We complete the proof.
+∎ 
+ 
+ 
+ 
+ Fix  i 0 ∈ [ 1 , 2 ​ k − 𝖣 ⁡ ( G ) ] i_{0}\in[1,2k-\mathsf{D}(G)]  be the smallest positive integer such that  a i 0 ≢ 0 mod p a_{i_{0}}\not\equiv 0\mod p .
+Since  a 1 = 0 a_{1}=0 , we have that  i 0 ≥ 2 i_{0}\geq 2 .
+In the following, we will simplify the condition that  a i ≢ 0 mod p a_{i}\not\equiv 0\mod p  for some  i ∈ [ 1 , 2 ​ k − 𝖣 ⁡ ( G ) ] i\in[1,2k-\mathsf{D}(G)]  in Lemma  4.4  by considering  i 0 i_{0} . 
+ 
+ 
+ We will use the following lemma repeatly. 
+ 
+ 
+ Lemma 4.5 . 
+ 
+ Let  n , j n,j  be positive integers. Then 
+ 
+
+ 
+ 
+ ( − 1 ) j ​ ( n + j − 1 j ) = ( − n j ) . (-1)^{j}{{n+j-1\choose j}}={{-n\choose j}}. 
+ 
+ 
+ 
+ 
+ 
+ In Lemma  4.4 , set  | T | − k = u ​ p + v |T|-k=up+v  and  k = c ​ p + d k=cp+d  with  v , d ∈ [ 0 , p − 1 ] v,d\in[0,p-1] . We can get the followings. 
+ 
+ 
+ Lemma 4.6 . 
+ 
+ Suppose that  d ≥ v + 1 d\geq v+1 . 
+ 
+ (1):  
+ 
+ 
+ If  ( u c ) ≢ 0 mod p {{u\choose c}}\not\equiv 0\mod p , then 
+ 
+ (i):  
+ 
+ 
+ i 0 = d − v i_{0}=d-v  if  2 | d − v 2|d-v ; 
+ 
+ (ii):  
+ 
+ 
+ i 0 = d − v + 1 i_{0}=d-v+1  if  2 ∤ d − v 2\nmid d-v  and  v + d ≠ p v+d\neq p ; 
+ 
+ (iii):  
+ 
+ 
+ i 0 = l 0 ​ p i_{0}=l_{0}p , where  l 0 l_{0}  is the smallest positive integer such that  ( u c − l 0 ) + ( − 1 ) 1 + l 0 × ( u + l 0 c ) ≢ 0 mod p {{u\choose c-l_{0}}}+(-1)^{1+l_{0}}\times{{u+l_{0}\choose c}}\not\equiv 0\mod p , if  2 ∤ d − v 2\nmid d-v  and  v + d = p v+d=p . 
+ 
+ 
+ 
+ (2):  
+ 
+ 
+ If  ( u c ) ≡ 0 mod p {{u\choose c}}\equiv 0\mod p , then  i 0 ≥ p + d − v i_{0}\geq p+d-v . 
+ 
+ 
+ 
+ 
+ 
+ Note that if  i < 0 i<0 , then we specify that  a i = 0 a_{i}=0 . 
+ 
+ 
+ Proof. 
+ 
+ By Lemma  4.4 , we have that for  i ∈ [ 2 , 2 ​ k − 𝖣 ⁡ ( G ) ] i\in[2,2k-\mathsf{D}(G)] 
+ 
+ 
+ 
+ (4.3) 
+ 
+ a i \displaystyle a_{i} 
+ = ( | T | − k k − i ) + ( − 1 ) i × ( | T | − k + i − 1 k − 1 ) \displaystyle={{|T|-k\choose k-i}}+(-1)^{i}\times{{|T|-k+i-1\choose k-1}} 
+ 
+ 
+ 
+ 
+ = ( u ​ p + v c ​ p + d − i ) + ( − 1 ) i × ( u ​ p + v + i − 1 c ​ p + d − 1 ) . \displaystyle={{up+v\choose cp+d-i}}+(-1)^{i}\times{{up+v+i-1\choose cp+d-1}}. 
+ 
+ 
+ 
+ 
+ For  i ∈ [ 2 , d − v − 1 ] i\in[2,d-v-1] , we have that  p − 1 ≥ d ≥ d − i ≥ d − ( d − v − 1 ) = v + 1 > v p-1\geq d\geq d-i\geq d-(d-v-1)=v+1>v  and  1 ≤ v + 1 ≤ v + i − 1 ≤ v + ( d − v − 1 ) − 1 = d − 2 < d − 1 1\leq v+1\leq v+i-1\leq v+(d-v-1)-1=d-2<d-1 . Together this with Lemma  4.1  yields that 
+ 
+ 
+ 
+ (4.4) 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v c ​ p + d − i ) + ( − 1 ) i × ( u ​ p + v + i − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+d-i}}+(-1)^{i}\times{{up+v+i-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c ) ​ ( v d − i ) + ( − 1 ) i × ( u c ) ​ ( v + i − 1 d − 1 ) ≡ 0 mod p . \displaystyle\equiv{{u\choose c}}{{v\choose d-i}}+(-1)^{i}\times{{u\choose c}}{{v+i-1\choose d-1}}\equiv 0\mod p. 
+ 
+ 
+ Note that if  d ≤ v + 2 d\leq v+2 , then  [ 2 , d − v − 1 ] [2,d-v-1]  is empty and  a i = 0 a_{i}=0  for  i ∈ [ 2 , d − v − 1 ] i\in[2,d-v-1] . 
+ 
+ 
+ Set 
+ 
+
+ 
+ 
+ i = d − v + j ​ with ​ j ≥ 0 . i=d-v+j\ \text{with}\ j\geq 0. 
+ 
+ 
+ For  i ∈ [ d − v , min ⁡ { d , p − v } ] i\in[d-v,\min\{d,p-v\}] , we have that  j ∈ [ 0 , min ⁡ { v , p − d } ] j\in[0,\min\{v,p-d\}] ,  0 ≤ d − 1 ≤ d − 1 + j ≤ d − 1 + ( p − d ) = p − 1 0\leq d-1\leq d-1+j\leq d-1+(p-d)=p-1  and  0 ≤ v − j ≤ v ≤ p − 1 0\leq v-j\leq v\leq p-1 .
+Together this with Lemma  4.1  yields that 
+ 
+ 
+ 
+ (4.5) 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v c ​ p + d − i ) + ( − 1 ) i × ( u ​ p + v + i − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+d-i}}+(-1)^{i}\times{{up+v+i-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ = ( u ​ p + v c ​ p + v − j ) + ( − 1 ) d − v + j × ( u ​ p + d + j − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+v-j}}+(-1)^{d-v+j}\times{{up+d+j-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c ) ​ ( v v − j ) + ( − 1 ) d − v + j × ( u c ) ​ ( d + j − 1 d − 1 ) \displaystyle\equiv{{u\choose c}}{{v\choose v-j}}+(-1)^{d-v+j}\times{{u\choose c}}{{d+j-1\choose d-1}} 
+ 
+ 
+ 
+ 
+ = ( u c ) ⁡ ( ( v j ) + ( − 1 ) d − v + j × ( d − 1 + j j ) ) \displaystyle={{u\choose c}}\bigg({{v\choose j}}+(-1)^{d-v+j}\times{{d-1+j\choose j}}\bigg) 
+ 
+ 
+ 
+ 
+ = ( u c ) ⁡ ( ( v j ) + ( − 1 ) d − v × ( − d j ) ) mod p ⁡ ( since Lemma ​ 4.5 ) . \displaystyle={{u\choose c}}\bigg({{v\choose j}}+(-1)^{d-v}\times{{-d\choose j}}\bigg)\mod p\ (\text{since Lemma}\ \ref{bin}). 
+ 
+ 
+ 
+ 
+ (1) If  2 | d − v 2|d-v , then since  d ≥ v + 1 d\geq v+1 , we have that  d ≥ v + 2 d\geq v+2 . This together with  d , v ∈ [ 0 , p − 1 ] d,v\in[0,p-1]  yields that  p − 1 ≥ d ≥ v + 2 ≥ 2 p-1\geq d\geq v+2\geq 2 , which implies that  p ≥ 3 p\geq 3 .
+By ( 4.5 ) we have that 
+ 
+
+ 
+ 
+ a i ≡ ( u c ) ⁡ ( ( v j ) + ( p − d j ) ) mod p . a_{i}\equiv{{u\choose c}}\bigg({{v\choose j}}+{{p-d\choose j}}\bigg)\mod p. 
+ 
+ 
+ Take  j = 0 j=0  and we have 
+ 
+
+ 
+ 
+ a i = a d − v ≡ 2 ​ ( u c ) ≢ 0 mod p . a_{i}=a_{d-v}\equiv 2{{u\choose c}}\not\equiv 0\mod p. 
+ 
+ 
+ It follows since  ( u c ) ≢ 0 mod p {{u\choose c}}\not\equiv 0\mod p  and  p ≥ 3 p\geq 3 .
+Hence, if  ( u c ) ≢ 0 mod p {{u\choose c}}\not\equiv 0\mod p  and  2 | d − v 2|d-v , then  i 0 = d − v i_{0}=d-v , i.e, (i) holds. 
+ 
+ 
+ If  2 ∤ d − v 2\nmid d-v , then by ( 4.5 ) we have that 
+ 
+
+ 
+ 
+ a i ≡ ( u c ) ⁡ ( ( v j ) − ( p − d j ) ) mod p . a_{i}\equiv{{u\choose c}}\bigg({{v\choose j}}-{{p-d\choose j}}\bigg)\mod p. 
+ 
+ 
+ Obviously, if  j = 0 j=0 , then  a i = a d − v = 0 . a_{i}=a_{d-v}=0. 
+ 
+ 
+ If  d + v ≠ p d+v\neq p , then since  d ≥ v + 1 d\geq v+1  and  d , v ∈ [ 0 , p − 1 ] d,v\in[0,p-1] , we must have that  d + v ≢ 0 mod p d+v\not\equiv 0\mod p .
+If  v = 0 v=0 , then  2 ∤ d − v = d 2\nmid d-v=d . Take  i = d − v + 1 = d + 1 i=d-v+1=d+1  and combining ( 4.3 ) with Lemma  4.1  yields that 
+ 
+
+ 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p c ​ p + 1 ) + ( u ​ p + d c ​ p + d − 1 ) ≡ ( u c ) ​ ( 0 1 ) + ( u c ) ​ ( d d − 1 ) \displaystyle={{up\choose cp+1}}+{{up+d\choose cp+d-1}}\equiv{{u\choose c}}{{0\choose 1}}+{{u\choose c}}{{d\choose d-1}} 
+ 
+ 
+ 
+ 
+ = d ​ ( u c ) ≢ 0 mod p . \displaystyle=d{{u\choose c}}\not\equiv 0\mod p. 
+ 
+ 
+ It follows since  ( u c ) ≢ 0 mod p {{u\choose c}}\not\equiv 0\mod p  and  d ∈ [ 0 , p − 1 ] d\in[0,p-1] .
+If  v ≥ 1 v\geq 1 , then  min ⁡ { v , p − d } ≥ 1 \min\{v,p-d\}\geq 1 . Take  j = 1 j=1  and we have that 
+ 
+
+ 
+ 
+ a i ≡ ( u c ) ⁡ ( ( v 1 ) − ( p − d 1 ) ) ≡ ( u c ) ⁡ ( v + d ) ≢ 0 mod p . \displaystyle a_{i}\equiv{{u\choose c}}\bigg({{v\choose 1}}-{{p-d\choose 1}}\bigg)\equiv{{u\choose c}}(v+d)\not\equiv 0\mod p. 
+ 
+ 
+ It follows since  ( u c ) ≢ 0 mod p {{u\choose c}}\not\equiv 0\mod p  and  d + v ≢ 0 mod p d+v\not\equiv 0\mod p .
+Hence, if  ( u c ) ≢ 0 mod p {{u\choose c}}\not\equiv 0\mod p ,  2 ∤ d − v 2\nmid d-v  and  d + v ≠ p d+v\neq p , then  i 0 = d − v + 1 i_{0}=d-v+1 , i.e., (ii) holds. 
+ 
+ 
+ If  d + v = p d+v=p , then since  d ≥ v + 1 d\geq v+1  and  d , v ∈ [ 0 , p − 1 ] d,v\in[0,p-1] , we must have that
+ p ≥ 3 p\geq 3 , otherwise,  p = 2 = d + v ≥ 2 ​ v + 1 ≥ 1 p=2=d+v\geq 2v+1\geq 1 , which implies that  v = 0 v=0  and  d = 2 d=2 , a contradiction to  d ∈ [ 0 , p − 1 ] d\in[0,p-1] .
+Set 
+ 
+
+ 
+ 
+ j = l ​ p + j p ​ with ​ l ≥ 0 ​ and ​ j p ∈ [ 0 , p − 1 ] . j=lp+j_{p}\ \text{with}\ l\geq 0\ \text{and}\ j_{p}\in[0,p-1]. 
+ 
+ 
+ Since  2 ∤ d − v 2\nmid d-v  and  p ≥ 3 p\geq 3 , it follows from ( 4.5 ) that 
+ 
+ 
+ 
+ (4.6) 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v c ​ p + v − j ) + ( − 1 ) d − v + j × ( u ​ p + d + j − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+v-j}}+(-1)^{d-v+j}\times{{up+d+j-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ = ( u ​ p + v ( c − l ) ​ p + v − j p ) + ( − 1 ) 1 + l + j p × ( ( u + l ) ​ p + d + j p − 1 c ​ p + d − 1 ) . \displaystyle={{up+v\choose(c-l)p+v-j_{p}}}+(-1)^{1+l+j_{p}}\times{{(u+l)p+d+j_{p}-1\choose cp+d-1}}. 
+ 
+ 
+ If  v − j p < 0 v-j_{p}<0 , then since  d + v = p d+v=p , we have that  2 ​ p > d + j p − 1 > d + v − 1 = p − 1 2p>d+j_{p}-1>d+v-1=p-1 .
+Combining ( 4.6 ) with Lemma  4.1  yields that 
+ 
+
+ 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v ( c − l − 1 ) ​ p + p + v − j p ) + ( − 1 ) 1 + l + j p × ( ( u + l + 1 ) ​ p + d + j p − 1 − p c ​ p + d − 1 ) \displaystyle={{up+v\choose(c-l-1)p+p+v-j_{p}}}+(-1)^{1+l+j_{p}}\times{{(u+l+1)p+d+j_{p}-1-p\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c − l − 1 ) ​ ( v p + v − j p ) + ( − 1 ) 1 + l + j p × ( u + l + 1 c ) ​ ( d + j p − 1 − p d − 1 ) mod p . \displaystyle\equiv{{u\choose c-l-1}}{{v\choose p+v-j_{p}}}+(-1)^{1+l+j_{p}}\times{{u+l+1\choose c}}{{d+j_{p}-1-p\choose d-1}}\mod p. 
+ 
+ 
+ Obviously,  v < p + v − j p v<p+v-j_{p}  and  d + j p − 1 − p < d − 1 d+j_{p}-1-p<d-1 .
+It folllows that  a i ≡ 0 mod p . a_{i}\equiv 0\mod p. 
+If  v − j p ≥ 0 v-j_{p}\geq 0 , then since  d + v = p d+v=p , we have that  d − 1 ≤ d + j p − 1 ≤ d + v − 1 = p − 1 d-1\leq d+j_{p}-1\leq d+v-1=p-1 .
+Combining ( 4.6 ) with Lemma  4.1  yields that 
+ 
+
+ 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v ( c − l ) ​ p + v − j p ) + ( − 1 ) 1 + l + j p × ( ( u + l ) ​ p + d + j p − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose(c-l)p+v-j_{p}}}+(-1)^{1+l+j_{p}}\times{{(u+l)p+d+j_{p}-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c − l ) ​ ( v v − j p ) + ( − 1 ) 1 + l + j p × ( u + l c ) ​ ( d + j p − 1 d − 1 ) \displaystyle\equiv{{u\choose c-l}}{{v\choose v-j_{p}}}+(-1)^{1+l+j_{p}}\times{{u+l\choose c}}{{d+j_{p}-1\choose d-1}} 
+ 
+ 
+ 
+ 
+ = ( u c − l ) ​ ( v j p ) + ( − 1 ) 1 + l + j p × ( u + l c ) ​ ( d + j p − 1 j p ) \displaystyle={{u\choose c-l}}{{v\choose j_{p}}}+(-1)^{1+l+j_{p}}\times{{u+l\choose c}}{{d+j_{p}-1\choose j_{p}}} 
+ 
+ 
+ 
+ 
+ = ( u c − l ) ​ ( v j p ) + ( − 1 ) 1 + l × ( u + l c ) ​ ( − d j p ) ​ ( since Lemma ​ 4.5 ) \displaystyle={{u\choose c-l}}{{v\choose j_{p}}}+(-1)^{1+l}\times{{u+l\choose c}}{{-d\choose j_{p}}}\ (\text{since Lemma}\ \ref{bin}) 
+ 
+ 
+ 
+ 
+ ≡ ( u c − l ) ​ ( v j p ) + ( − 1 ) 1 + l × ( u + l c ) ​ ( p − d j p ) \displaystyle\equiv{{u\choose c-l}}{{v\choose j_{p}}}+(-1)^{1+l}\times{{u+l\choose c}}{{p-d\choose j_{p}}} 
+ 
+ 
+ 
+ 
+ = ( u c − l ) ​ ( v j p ) + ( − 1 ) 1 + l × ( u + l c ) ​ ( v j p ) \displaystyle={{u\choose c-l}}{{v\choose j_{p}}}+(-1)^{1+l}\times{{u+l\choose c}}{{v\choose j_{p}}} 
+ 
+ 
+ 
+ 
+ = ( v j p ) ⁡ ( ( u c − l ) + ( − 1 ) 1 + l × ( u + l c ) ) mod p . \displaystyle={{v\choose j_{p}}}\bigg({{u\choose c-l}}+(-1)^{1+l}\times{{u+l\choose c}}\bigg)\mod p. 
+ 
+ 
+ Since  p − 1 ≥ v ≥ j p ≥ 0 p-1\geq v\geq j_{p}\geq 0 , we have that  ( v j p ) ≢ 0 mod p {{v\choose j_{p}}}\not\equiv 0\mod p . It follows that  a i ≢ 0 mod p a_{i}\not\equiv 0\mod p  iff  ( u c − l ) + ( − 1 ) 1 + l × ( u + l c ) ≢ 0 mod p {{u\choose c-l}}+(-1)^{1+l}\times{{u+l\choose c}}\not\equiv 0\mod p .
+Obviously,  l ≠ 0 l\neq 0 , otherwise,  ( u c − l ) + ( − 1 ) 1 + l × ( u + l c ) = 0 {{u\choose c-l}}+(-1)^{1+l}\times{{u+l\choose c}}=0 .
+Hence, take  j p = 0 j_{p}=0  and  i 0 = l 0 ​ p i_{0}=l_{0}p , where  l 0 l_{0}  is the smallest positive integer such that  ( u c − l ) + ( − 1 ) 1 + l 0 × ( u + l 0 c ) ≢ 0 mod p {{u\choose c-l}}+(-1)^{1+l_{0}}\times{{u+l_{0}\choose c}}\not\equiv 0\mod p , i.e., (iii) holds. 
+ 
+ 
+ (2) Since  ( u c ) ≡ 0 mod p {{u\choose c}}\equiv 0\mod p , by ( 4.4 ) and ( 4.5 ), we have that  a i ≡ 0 mod p a_{i}\equiv 0\mod p  for  i ∈ [ 2 , min ⁡ { d , p − v } ] i\in[2,\min\{d,p-v\}] .
+If  i = d − v + j ∈ [ min ⁡ { d + 1 , p − v + 1 } , p + d − v − 1 ] i=d-v+j\in[\min\{d+1,p-v+1\},p+d-v-1] , i.e.,  j ∈ [ min ⁡ { v + 1 , p − d + 1 } , p − 1 ] j\in[\min\{v+1,p-d+1\},p-1] , then either  v + 1 ≤ j v+1\leq j  or  p − d + 1 ≤ j p-d+1\leq j , i.e., either  v − j < 0 v-j<0  or  d + j − 1 ≥ p d+j-1\geq p . 
+ 
+ 
+ If  v − j < 0 v-j<0  and  d + j − 1 < p d+j-1<p , i.e.,  j ∈ [ v + 1 , p − d ] j\in[v+1,p-d] , then  0 ≤ v < p + v − j ≤ p − 1 0\leq v<p+v-j\leq p-1  and  0 ≤ d − 1 ≤ d + j − 1 ≤ p − 1 0\leq d-1\leq d+j-1\leq p-1 . This together with ( 4.5 ) yields that 
+ 
+
+ 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v c ​ p + v − j ) + ( − 1 ) d − v + j × ( u ​ p + d + j − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+v-j}}+(-1)^{d-v+j}\times{{up+d+j-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ = ( u ​ p + v ( c − 1 ) ​ p + p + v − j ) + ( − 1 ) d − v + j × ( u ​ p + d + j − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose(c-1)p+p+v-j}}+(-1)^{d-v+j}\times{{up+d+j-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c − 1 ) ​ ( v p + v − j ) + ( − 1 ) d − v + j × ( u c ) ​ ( d + j − 1 d − 1 ) \displaystyle\equiv{{u\choose c-1}}{{v\choose p+v-j}}+(-1)^{d-v+j}\times{{u\choose c}}{{d+j-1\choose d-1}} 
+ 
+ 
+ 
+ 
+ = ( − 1 ) d − v + j × ( u c ) ​ ( d + j − 1 d − 1 ) ≡ 0 mod p ⁡ ( since ​ ( u c ) ≡ 0 mod p ) . \displaystyle=(-1)^{d-v+j}\times{{u\choose c}}{{d+j-1\choose d-1}}\equiv 0\mod p\ (\text{since}\ {{u\choose c}}\equiv 0\mod p). 
+ 
+ 
+ 
+ 
+ If  v − j < 0 v-j<0  and  d + j − 1 ≥ p d+j-1\geq p , i.e.,  j ∈ [ max ⁡ { v + 1 , p − d + 1 } , p − 1 ] j\in[\max\{v+1,p-d+1\},p-1] , then  0 ≤ v < p + v − j ≤ p − 1 0\leq v<p+v-j\leq p-1  and  0 ≤ d + j − 1 − p < d − 1 ≤ p − 1 0\leq d+j-1-p<d-1\leq p-1 . This together with ( 4.5 ) yields that 
+ 
+
+ 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v c ​ p + v − j ) + ( − 1 ) d − v + j × ( u ​ p + d + j − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+v-j}}+(-1)^{d-v+j}\times{{up+d+j-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ = ( u ​ p + v ( c − 1 ) ​ p + p + v − j ) + ( − 1 ) d − v + j × ( ( u + 1 ) ​ p + d + j − 1 − p c ​ p + d − 1 ) \displaystyle={{up+v\choose(c-1)p+p+v-j}}+(-1)^{d-v+j}\times{{(u+1)p+d+j-1-p\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c − 1 ) ​ ( v p + v − j ) + ( − 1 ) d − v + j × ( u + 1 c ) ​ ( d + j − 1 − p d − 1 ) = 0 mod p . \displaystyle\equiv{{u\choose c-1}}{{v\choose p+v-j}}+(-1)^{d-v+j}\times{{u+1\choose c}}{{d+j-1-p\choose d-1}}=0\mod p. 
+ 
+ 
+ 
+ 
+ If  v − j ≥ 0 v-j\geq 0  and  d + j − 1 ≥ p d+j-1\geq p , i.e.,  j ∈ [ p − d + 1 , v ] j\in[p-d+1,v] , then  0 ≤ v − j ≤ v ≤ p − 1 0\leq v-j\leq v\leq p-1  and  0 ≤ d + j − 1 − p < d − 1 ≤ p − 1 0\leq d+j-1-p<d-1\leq p-1 . This together with ( 4.5 ) yields that 
+ 
+
+ 
+ 
+ a i \displaystyle a_{i} 
+ = ( u ​ p + v c ​ p + v − j ) + ( − 1 ) d − v + j × ( u ​ p + d + j − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+v-j}}+(-1)^{d-v+j}\times{{up+d+j-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ = ( u ​ p + v c ​ p + v − j ) + ( − 1 ) d − v + j × ( ( u + 1 ) ​ p + d + j − 1 − p c ​ p + d − 1 ) \displaystyle={{up+v\choose cp+v-j}}+(-1)^{d-v+j}\times{{(u+1)p+d+j-1-p\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c ) ​ ( v v − j ) + ( − 1 ) d − v + j × ( u + 1 c ) ​ ( d + j − 1 − p d − 1 ) \displaystyle\equiv{{u\choose c}}{{v\choose v-j}}+(-1)^{d-v+j}\times{{u+1\choose c}}{{d+j-1-p\choose d-1}} 
+ 
+ 
+ 
+ 
+ = ( u c ) ​ ( v v − j ) ≡ 0 mod p ⁡ ( since ​ ( u c ) ≡ 0 mod p ) . \displaystyle={{u\choose c}}{{v\choose v-j}}\equiv 0\mod p\ (\text{since}\ {{u\choose c}}\equiv 0\mod p). 
+ 
+ 
+ Hence,  i 0 ≥ p + d − v i_{0}\geq p+d-v  and we complete the proof.
+∎ 
+ 
+ 
+ 
+ If  d ≤ v d\leq v , then the determination of  i 0 i_{0}  is complex. In the following, we will focus on the cases  i = p + d − v i=p+d-v  or  k ≡ 1 mod p k\equiv 1\mod p . 
+ 
+ 
+ In Lemma  4.7  and Corollary  4.8 , set  | T | − k = u ​ p + v = ( u 1 ​ p t + u 2 ) ​ p + v |T|-k=up+v=(u_{1}p^{t}+u_{2})p+v  and  k = c ​ p + d = c 1 ​ p t + 1 + d k=cp+d=c_{1}p^{t+1}+d  with  v , d ∈ [ 0 , p − 1 ] v,d\in[0,p-1] ,  t ≥ 0 t\geq 0 ,  c 1 , u 1 ∈ [ 1 , p − 1 ] c_{1},u_{1}\in[1,p-1]  and  u 2 ∈ [ 0 , p t − 1 ] u_{2}\in[0,p^{t}-1] .
+It follows that 
+ 
+
+ 
+ 
+ u = u 1 ​ p t + u 2 ​ and ​ c = c 1 ​ p t . u=u_{1}p^{t}+u_{2}\ \text{and}\ c=c_{1}p^{t}. 
+ 
+ 
+ Note that if  t = 0 t=0 , then  u = u 1 u=u_{1} ,  u 2 = 0 u_{2}=0  and  c = c 1 c=c_{1} .
+Since  | T | ≥ 2 ​ k |T|\geq 2k , we have that  | T | − k = u 1 ​ p t + 1 + u 2 ​ p + v ≥ k = c 1 ​ p t + 1 + d |T|-k=u_{1}p^{t+1}+u_{2}p+v\geq k=c_{1}p^{t+1}+d , which implies that 
+ 
+
+ 
+ (4.7) 
+ 
+ p − 1 ≥ u 1 ≥ c 1 ≥ 1 . \displaystyle p-1\geq u_{1}\geq c_{1}\geq 1. 
+ 
+ 
+ 
+ 
+ Lemma 4.7 . 
+ 
+ Suppose that  2 ​ k − 𝖣 ⁡ ( G ) ≥ p + d − v 2k-\mathsf{D}(G)\geq p+d-v .
+If 
+ 
+
+ 
+ 
+ ( u 1 c 1 − 1 ) + ( − 1 ) p + d − v × ( u 1 + 1 c 1 ) ≢ 0 mod p , {{u_{1}\choose c_{1}-1}}+(-1)^{p+d-v}\times{{u_{1}+1\choose c_{1}}}\not\equiv 0\mod p, 
+ 
+ 
+ then  i 0 ≤ p + d − v i_{0}\leq p+d-v . 
+ 
+ 
+ 
+ Proof. 
+ 
+ By the definition of  i 0 i_{0} , it suffices to prove that 
+ 
+
+ 
+ 
+ a p + d − v ≢ 0 mod p . a_{p+d-v}\not\equiv 0\mod p. 
+ 
+ 
+ Since  2 ​ k − 𝖣 ⁡ ( G ) ≥ p + d − v 2k-\mathsf{D}(G)\geq p+d-v , by the definition ( 4.3 ) of  a i a_{i} , we have that 
+ 
+
+ 
+ 
+ a p + d − v \displaystyle a_{p+d-v} 
+ = ( u ​ p + v ( c − 1 ) ​ p + v ) + ( − 1 ) p + d − v × ( ( u + 1 ) ​ p + d − 1 c ​ p + d − 1 ) \displaystyle={{up+v\choose(c-1)p+v}}+(-1)^{p+d-v}\times{{(u+1)p+d-1\choose cp+d-1}} 
+ 
+ 
+ 
+ 
+ ≡ ( u c − 1 ) ​ ( v v ) + ( − 1 ) p + d − v × ( u + 1 c ) ​ ( d − 1 d − 1 ) \displaystyle\equiv{{u\choose c-1}}{{v\choose v}}+(-1)^{p+d-v}\times{{u+1\choose c}}{{d-1\choose d-1}} 
+ 
+ 
+ 
+ 
+ = ( u 1 ​ p t + u 2 c 1 ​ p t − 1 ) + ( − 1 ) p + d − v × ( u 1 ​ p t + u 2 + 1 c 1 ​ p t ) mod p . \displaystyle={{u_{1}p^{t}+u_{2}\choose c_{1}p^{t}-1}}+(-1)^{p+d-v}\times{{u_{1}p^{t}+u_{2}+1\choose c_{1}p^{t}}}\mod p. 
+ 
+ 
+ If  t = 0 t=0 , our result obviously holds. 
+ 
+ 
+ Now suppose that  t ≥ 1 t\geq 1 .
+If  u 2 ∈ [ 0 , p t − 2 ] u_{2}\in[0,p^{t}-2] , then it follows from the above that 
+ 
+
+ 
+ 
+ a p + d − v \displaystyle a_{p+d-v} 
+ ≡ ( u 1 ​ p t + u 2 c 1 ​ p t − 1 ) + ( − 1 ) p + d − v × ( u 1 ​ p t + u 2 + 1 c 1 ​ p t ) \displaystyle\equiv{{u_{1}p^{t}+u_{2}\choose c_{1}p^{t}-1}}+(-1)^{p+d-v}\times{{u_{1}p^{t}+u_{2}+1\choose c_{1}p^{t}}} 
+ 
+ 
+ 
+ 
+ ≡ ( u 1 c 1 − 1 ) ​ ( u 2 p t − 1 ) + ( − 1 ) p + d − v × ( u 1 c 1 ) ​ ( u 2 + 1 0 ) \displaystyle\equiv{{u_{1}\choose c_{1}-1}}{{u_{2}\choose p^{t}-1}}+(-1)^{p+d-v}\times{{u_{1}\choose c_{1}}}{{u_{2}+1\choose 0}} 
+ 
+ 
+ 
+ 
+ = ( − 1 ) p + d − v × ( u 1 c 1 ) mod p . \displaystyle=(-1)^{p+d-v}\times{{u_{1}\choose c_{1}}}\mod p. 
+ 
+ 
+ Since  p − 1 ≥ u 1 ≥ c 1 ≥ 1 p-1\geq u_{1}\geq c_{1}\geq 1 , we have that  a p + d − v ≡ ( − 1 ) p + d − v × ( u 1 c 1 ) ≢ 0 mod p . a_{p+d-v}\equiv(-1)^{p+d-v}\times{{u_{1}\choose c_{1}}}\not\equiv 0\mod p. 
+If  u 2 = p t − 1 u_{2}=p^{t}-1 , then it follows from the above that 
+ 
+
+ 
+ 
+ a p + d − v \displaystyle a_{p+d-v} 
+ ≡ ( u 1 ​ p t + u 2 c 1 ​ p t − 1 ) + ( − 1 ) p + d − v × ( u 1 ​ p t + u 2 + 1 c 1 ​ p t ) \displaystyle\equiv{{u_{1}p^{t}+u_{2}\choose c_{1}p^{t}-1}}+(-1)^{p+d-v}\times{{u_{1}p^{t}+u_{2}+1\choose c_{1}p^{t}}} 
+ 
+ 
+ 
+ 
+ = ( ( u 1 + 1 ) ​ p t − 1 c 1 ​ p t − 1 ) + ( − 1 ) p + d − v × ( ( u 1 + 1 ) ​ p t c 1 ​ p t ) \displaystyle={{(u_{1}+1)p^{t}-1\choose c_{1}p^{t}-1}}+(-1)^{p+d-v}\times{{(u_{1}+1)p^{t}\choose c_{1}p^{t}}} 
+ 
+ 
+ 
+ 
+ ≡ ( u 1 c 1 − 1 ) ​ ( p t − 1 p t − 1 ) + ( − 1 ) p + d − v × ( u 1 + 1 c 1 ) ​ ( 0 0 ) \displaystyle\equiv{{u_{1}\choose c_{1}-1}}{{p^{t}-1\choose p^{t}-1}}+(-1)^{p+d-v}\times{{u_{1}+1\choose c_{1}}}{{0\choose 0}} 
+ 
+ 
+ 
+ 
+ = ( u 1 c 1 − 1 ) + ( − 1 ) p + d − v × ( u 1 + 1 c 1 ) ≢ 0 mod p . \displaystyle={{u_{1}\choose c_{1}-1}}+(-1)^{p+d-v}\times{{u_{1}+1\choose c_{1}}}\not\equiv 0\mod p. 
+ 
+ 
+ The last inequality follows from the lemma’s assumed condition.
+We complete the proof.
+∎ 
+ 
+ 
+ 
+ Corollary 4.8 . 
+ 
+ Suppose that  2 ​ k − 𝖣 ⁡ ( G ) ≥ p + d − v 2k-\mathsf{D}(G)\geq p+d-v .
+If  u 1 + c 1 + 1 < p , u_{1}+c_{1}+1<p, 
+then  i 0 ≤ p + d − v i_{0}\leq p+d-v . 
+ 
+ 
+ 
+ Proof. 
+ 
+ By Lemma  4.7 , it suffices to prove that  ( u 1 c 1 − 1 ) + ( − 1 ) p + d − v × ( u 1 + 1 c 1 ) ≢ 0 mod p . {{u_{1}\choose c_{1}-1}}+(-1)^{p+d-v}\times{{u_{1}+1\choose c_{1}}}\not\equiv 0\mod p. 
+If  2 ∤ p + d − v 2\nmid p+d-v , then 
+ 
+
+ 
+ 
+ ( u 1 c 1 − 1 ) + ( − 1 ) p + d − v × ( u 1 + 1 c 1 ) = ( u 1 c 1 − 1 ) − ( u 1 + 1 c 1 ) = − ( u 1 c 1 ) ≢ 0 mod p , {{u_{1}\choose c_{1}-1}}+(-1)^{p+d-v}\times{{u_{1}+1\choose c_{1}}}={{u_{1}\choose c_{1}-1}}-{{u_{1}+1\choose c_{1}}}=-{{u_{1}\choose c_{1}}}\not\equiv 0\mod p, 
+ 
+ 
+ where  ( u 1 c 1 ) ≢ 0 mod p {{u_{1}\choose c_{1}}}\not\equiv 0\mod p  follows since  p − 1 ≥ u 1 ≥ c 1 ≥ 1 p-1\geq u_{1}\geq c_{1}\geq 1 .
+If  2 | p + d − v 2\mid p+d-v , then
+Obviously, 
+ 
+
+ 
+ 
+ 
+ ( u 1 c 1 − 1 ) + ( − 1 ) p + d − v × ( u 1 + 1 c 1 ) \displaystyle{{u_{1}\choose c_{1}-1}}+(-1)^{p+d-v}\times{{u_{1}+1\choose c_{1}}} 
+ 
+ 
+ 
+ 
+ = ( u 1 c 1 − 1 ) + ( u 1 c 1 − 1 ) × u 1 + 1 c 1 \displaystyle={{u_{1}\choose c_{1}-1}}+{{u_{1}\choose c_{1}-1}}\times\frac{u_{1}+1}{c_{1}} 
+ 
+ 
+ 
+ 
+ = ( u 1 c 1 − 1 ) ⁡ ( 1 + u 1 + 1 c 1 ) \displaystyle={{u_{1}\choose c_{1}-1}}\bigg(1+\frac{u_{1}+1}{c_{1}}\bigg) 
+ 
+ 
+ 
+ 
+ = ( u 1 c 1 − 1 ) ⁡ ( u 1 + c 1 + 1 c 1 ) ≢ 0 mod p , \displaystyle={{u_{1}\choose c_{1}-1}}\bigg(\frac{u_{1}+c_{1}+1}{c_{1}}\bigg)\not\equiv 0\mod p, 
+ 
+ 
+ where  ( u 1 c 1 − 1 ) ≢ 0 mod p {{u_{1}\choose c_{1}-1}}\not\equiv 0\mod p  follows since  p − 1 ≥ u 1 ≥ c 1 ≥ 1 p-1\geq u_{1}\geq c_{1}\geq 1 , and  u 1 + c 1 + 1 c 1 ≢ 0 mod p \frac{u_{1}+c_{1}+1}{c_{1}}\not\equiv 0\mod p  follows since  u 1 + c 1 + 1 < p u_{1}+c_{1}+1<p  and  p − 1 ≥ u 1 ≥ c 1 ≥ 1 p-1\geq u_{1}\geq c_{1}\geq 1 .
+We complete the proof.
+∎ 
+ 
+ 
+ 
+ In the following, we consider the case  k ≡ 1 mod p . k\equiv 1\mod p. 
+ 
+ 
+ Lemma 4.9 . 
+ 
+ Set  | T | − k = u 1 ​ p t + v 1 |T|-k=u_{1}p^{t}+v_{1}  and  k = c 1 ​ p t + 1 k=c_{1}p^{t}+1  with  t ≥ 1 t\geq 1 ,  u 1 , c 1 ∈ [ 1 , p − 1 ] u_{1},c_{1}\in[1,p-1]  and  v 1 ∈ [ 0 , p t − 1 ] v_{1}\in[0,p^{t}-1] .
+Suppose that  2 ​ k − 𝖣 ⁡ ( G ) ≥ 2 2k-\mathsf{D}(G)\geq 2 .
+If 
+ 
+
+ 
+ 
+ ( u 1 c 1 − 1 ) + ( u 1 + 1 c 1 ) ≢ 0 mod p , {{u_{1}\choose c_{1}-1}}+{{u_{1}+1\choose c_{1}}}\not\equiv 0\mod p, 
+ 
+ 
+ then  i 0 = 2 i_{0}=2 . 
+ 
+ 
+ 
+ Proof. 
+ 
+ By the definition of  i 0 i_{0} , it suffices to prove that 
+ 
+
+ 
+ 
+ a 2 ≢ 0 mod p . a_{2}\not\equiv 0\mod p. 
+ 
+ 
+ Since  | T | ≥ 2 ​ k |T|\geq 2k , we have that  | T | − k = u 1 ​ p t + v 1 ≥ k = c 1 ​ p t + 1 |T|-k=u_{1}p^{t}+v_{1}\geq k=c_{1}p^{t}+1 , which implies that  p − 1 ≥ u 1 ≥ c 1 ≥ 1 p-1\geq u_{1}\geq c_{1}\geq 1 .
+Since 
+ 
+
+ 
+ 
+ a 2 \displaystyle a_{2} 
+ = ( | T | − k k − 2 ) + ( − 1 ) 2 × ( | T | − k + 1 k − 1 ) \displaystyle={{|T|-k\choose k-2}}+(-1)^{2}\times{{|T|-k+1\choose k-1}} 
+ 
+ 
+ 
+ 
+ = ( u 1 ​ p t + v 1 c 1 ​ p t − 1 ) + ( u 1 ​ p t + v 1 + 1 c 1 ​ p t ) . \displaystyle={{u_{1}p^{t}+v_{1}\choose c_{1}p^{t}-1}}+{{u_{1}p^{t}+v_{1}+1\choose c_{1}p^{t}}}. 
+ 
+ 
+ If  v 1 ∈ [ 0 , p t − 2 ] v_{1}\in[0,p^{t}-2] , then  v 1 + 1 ∈ [ 1 , p t − 1 ] v_{1}+1\in[1,p^{t}-1] .
+This together with Lemma  4.1  yields that 
+ 
+
+ 
+ 
+ a 2 \displaystyle a_{2} 
+ = ( u 1 ​ p t + v 1 c 1 ​ p t − 1 ) + ( u 1 ​ p t + v 1 + 1 c 1 ​ p t ) \displaystyle={{u_{1}p^{t}+v_{1}\choose c_{1}p^{t}-1}}+{{u_{1}p^{t}+v_{1}+1\choose c_{1}p^{t}}} 
+ 
+ 
+ 
+ 
+ ≡ ( u 1 c 1 − 1 ) ​ ( v 1 p t − 1 ) + ( u 1 c 1 ) ​ ( v 1 + 1 0 ) \displaystyle\equiv{{u_{1}\choose c_{1}-1}}{{v_{1}\choose p^{t}-1}}+{{u_{1}\choose c_{1}}}{{v_{1}+1\choose 0}} 
+ 
+ 
+ 
+ 
+ = ( u 1 c 1 ) ≢ 0 mod p , \displaystyle={{u_{1}\choose c_{1}}}\not\equiv 0\mod p, 
+ 
+ 
+ where  ( u 1 c 1 ) ≢ 0 mod p {{u_{1}\choose c_{1}}}\not\equiv 0\mod p  follows from  p − 1 ≥ u 1 ≥ c 1 ≥ 1 p-1\geq u_{1}\geq c_{1}\geq 1 .
+If  v 1 = p t − 1 v_{1}=p^{t}-1 , then by Lemma  4.1  we have that 
+ 
+
+ 
+ 
+ a 2 \displaystyle a_{2} 
+ ≡ ( u 1 ​ p t + v 1 c 1 ​ p t − 1 ) + ( u 1 ​ p t + v 1 + 1 c 1 ​ p t ) \displaystyle\equiv{{u_{1}p^{t}+v_{1}\choose c_{1}p^{t}-1}}+{{u_{1}p^{t}+v_{1}+1\choose c_{1}p^{t}}} 
+ 
+ 
+ 
+ 
+ = ( ( u 1 + 1 ) ​ p t − 1 c 1 ​ p t − 1 ) + ( ( u 1 + 1 ) ​ p t c 1 ​ p t ) \displaystyle={{(u_{1}+1)p^{t}-1\choose c_{1}p^{t}-1}}+{{(u_{1}+1)p^{t}\choose c_{1}p^{t}}} 
+ 
+ 
+ 
+ 
+ ≡ ( u 1 c 1 − 1 ) ​ ( p t − 1 p t − 1 ) + ( u 1 + 1 c 1 ) ​ ( 0 0 ) \displaystyle\equiv{{u_{1}\choose c_{1}-1}}{{p^{t}-1\choose p^{t}-1}}+{{u_{1}+1\choose c_{1}}}{{0\choose 0}} 
+ 
+ 
+ 
+ 
+ = ( u 1 c 1 − 1 ) + ( u 1 + 1 c 1 ) ≢ 0 mod p . \displaystyle={{u_{1}\choose c_{1}-1}}+{{u_{1}+1\choose c_{1}}}\not\equiv 0\mod p. 
+ 
+ 
+ The last inequality follows from the lemma’s assumed condition.
+We complete the proof.
+∎ 
+ 
+ 
+ 
+ 
+ 5.  The proofs of Theorems  1.12  and  1.13 
+
+ 
+ In this section, we give some conditions such that  𝗌 ≤ k − 1 ​ ( G ) ≤ 2 ​ 𝖣 ​ ( G ) − k + 1 \mathsf{s}_{\leq k-1}(G)\leq 2\mathsf{D}(G)-k+1  holds, and prove Theorems  1.12  and  1.13 . 
+ 
+ 
+ Lemma 5.1 . 
+ 
+ Let  G G  be a finite abelian  p p -group and  k ∈ [ exp ⁡ ( G ) + 1 , 𝖣 ⁡ ( G ) ] k\in[\exp(G)+1,\mathsf{D}(G)]  be a positive integer.
+Let  S S  be a sequence over  G G  of length  2 ​ 𝖣 ​ ( G ) − k + 1 2\mathsf{D}(G)-k+1 .
+Suppose that  𝖭 i ​ ( S ) = 0 \mathsf{N}^{i}(S)=0  for  i ∈ [ 𝖣 ⁡ ( G ) + 1 , | S | ] i\in[\mathsf{D}(G)+1,|S|] .
+If  ( 𝖣 ⁡ ( G ) k − 1 ) ≢ 0 mod p \binom{\mathsf{D}(G)}{k-1}\not\equiv 0\mod p , then  S S  has a nonempty zero-sum subsequence  T T  with  | T | ≤ k − 1 |T|\leq k-1 . 
+ 
+ 
+ 
+ Proof. 
+ 
+ Suppose that each zero-sum subsequence of  S S  has the length  ≥ k \geq k .
+Since  𝖭 i ​ ( S ) = 0 \mathsf{N}^{i}(S)=0  for  i ∈ [ 𝖣 ⁡ ( G ) + 1 , | S | ] i\in[\mathsf{D}(G)+1,|S|] ,
+by Lemma  4.2  we have that the following equation holds for any  T | S T|S  with  | T | ∈ [ 𝖣 ⁡ ( G ) , | S | ] |T|\in[\mathsf{D}(G),|S|] 
+ 
+
+ 
+ 
+ 1 + ( − 1 ) k ​ 𝖭 k ​ ( T ) + … + ( − 1 ) 𝖣 ⁡ ( G ) ​ 𝖭 𝖣 ⁡ ( G ) ​ ( T ) ≡ 0 mod p . 1+(-1)^{k}\mathsf{N}^{k}(T)+\ldots+(-1)^{\mathsf{D}(G)}\mathsf{N}^{\mathsf{D}(G)}(T)\equiv 0\mod p. 
+ 
+ 
+ It follows that for  0 ≤ t ≤ | S | − 𝖣 ⁡ ( G ) 0\leq t\leq|S|-\mathsf{D}(G) 
+ 
+
+ 
+ 
+ ∑ T | S , | T | = | S | − t ( 1 + ( − 1 ) k ​ 𝖭 k ​ ( T ) + … + ( − 1 ) 𝖣 ⁡ ( G ) ​ 𝖭 𝖣 ⁡ ( G ) ​ ( T ) ) ≡ 0 mod p . \sum\limits_{T\mid S,\ |T|=|S|-t}\big(1+(-1)^{k}\mathsf{N}^{k}(T)+\ldots+(-1)^{\mathsf{D}(G)}\mathsf{N}^{\mathsf{D}(G)}(T)\big)\equiv 0\mod p. 
+ 
+ 
+ Analysing the number of times each subsequence is counted, one obtains 
+ 
+ 
+ 
+ (5.1) 
+ 
+ ( | S | | T | ) \displaystyle\binom{|S|}{|T|} 
+ + ( − 1 ) k ​ ( | S | − k | T | − k ) ​ 𝖭 k ​ ( S ) \displaystyle+(-1)^{k}\binom{|S|-k}{|T|-k}\mathsf{N}^{k}(S) 
+ 
+ 
+ 
+ 
+ + … + ( − 1 ) 𝖣 ⁡ ( G ) ​ ( | S | − 𝖣 ⁡ ( G ) | T | − 𝖣 ⁡ ( G ) ) ​ 𝖭 𝖣 ⁡ ( G ) ​ ( S ) \displaystyle+\ldots+(-1)^{\mathsf{D}(G)}\binom{|S|-\mathsf{D}(G)}{|T|-\mathsf{D}(G)}\mathsf{N}^{\mathsf{D}(G)}(S) 
+ 
+ 
+ 
+ = ( | S | t ) \displaystyle=\binom{|S|}{t} 
+ + ( − 1 ) k ​ ( | S | − k t ) ​ 𝖭 k ​ ( S ) \displaystyle+(-1)^{k}\binom{|S|-k}{t}\mathsf{N}^{k}(S) 
+ 
+ 
+ 
+ 
+ + … + ( − 1 ) 𝖣 ⁡ ( G ) ​ ( | S | − 𝖣 ⁡ ( G ) t ) ​ 𝖭 𝖣 ⁡ ( G ) ​ ( S ) ≡ 0 mod p . \displaystyle+\ldots+(-1)^{\mathsf{D}(G)}\binom{|S|-\mathsf{D}(G)}{t}\mathsf{N}^{\mathsf{D}(G)}(S)\equiv 0\mod p. 
+ 
+ 
+ Set  X = ( 1 , ( − 1 ) k ​ 𝖭 k ​ ( S ) , … , ( − 1 ) 𝖣 ⁡ ( G ) ​ 𝖭 𝖣 ⁡ ( G ) ​ ( S ) ) T X=(1,(-1)^{k}\mathsf{N}^{k}(S),\ldots,(-1)^{\mathsf{D}(G)}\mathsf{N}^{\mathsf{D}(G)}(S))^{T}  and 
+ 
+
+ 
+ 
+ A := ( ( | S | 0 ) ( | S | − k 0 ) ⋯ ( | S | − 𝖣 ⁡ ( G ) 0 ) ( | S | 1 ) ( | S | − k 1 ) ⋯ ( | S | − 𝖣 ⁡ ( G ) 1 ) ⋮ ⋮ ⋮ ⋮ ( | S | | S | − 𝖣 ⁡ ( G ) ) ( | S | − k | S | − 𝖣 ⁡ ( G ) ) ⋯ ( | S | − 𝖣 ⁡ ( G ) | S | − 𝖣 ⁡ ( G ) ) ) ( | S | − 𝖣 ⁡ ( G ) + 1 ) × ( 𝖣 ⁡ ( G ) − k + 2 ) . A:=\left(\begin{array}[]{cccc}{{|S|\choose 0}}&{{|S|-k\choose 0}}&\cdots&{{|S|-\mathsf{D}(G)\choose 0}}\\
+{{|S|\choose 1}}&{{|S|-k\choose 1}}&\cdots&{{|S|-\mathsf{D}(G)\choose 1}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{|S|\choose|S|-\mathsf{D}(G)}}&{{|S|-k\choose|S|-\mathsf{D}(G)}}&\cdots&{{|S|-\mathsf{D}(G)\choose|S|-\mathsf{D}(G)}}\\
+\end{array}\right)_{(|S|-\mathsf{D}(G)+1)\times(\mathsf{D}(G)-k+2)}. 
+ 
+ 
+ On the one hand, it can be deduced from ( 5.1 ) that 
+ 
+
+ 
+ 
+ A ​ X ≡ 0 mod p . AX\equiv 0\mod p. 
+ 
+ 
+ It follows from Lemma  4.3  that by some row transformations,  A A  can be brought to the following form 
+ 
+
+ 
+ 
+ A ′ = ( ( 𝖣 ⁡ ( G ) 0 ) ( 𝖣 ⁡ ( G ) − k 0 ) ⋯ ( 0 0 ) ( 𝖣 ⁡ ( G ) 1 ) ( 𝖣 ⁡ ( G ) − k 1 ) ⋯ ( 0 1 ) ⋮ ⋮ ⋮ ⋮ ( 𝖣 ⁡ ( G ) | S | − 𝖣 ⁡ ( G ) ) ( 𝖣 ⁡ ( G ) − k | S | − 𝖣 ⁡ ( G ) ) ⋯ ( 0 | S | − 𝖣 ⁡ ( G ) ) ) ( | S | − 𝖣 ⁡ ( G ) + 1 ) × ( 𝖣 ⁡ ( G ) − k + 2 ) A^{\prime}=\left(\begin{array}[]{cccc}{{\mathsf{D}(G)\choose 0}}&{{\mathsf{D}(G)-k\choose 0}}&\cdots&{{0\choose 0}}\\
+{{\mathsf{D}(G)\choose 1}}&{{\mathsf{D}(G)-k\choose 1}}&\cdots&{{0\choose 1}}\\
+{\vdots}&{\vdots}&{\vdots}&{\vdots}\\
+{{\mathsf{D}(G)\choose|S|-\mathsf{D}(G)}}&{{\mathsf{D}(G)-k\choose|S|-\mathsf{D}(G)}}&\cdots&{{0\choose|S|-\mathsf{D}(G)}}\\
+\end{array}\right)_{(|S|-\mathsf{D}(G)+1)\times(\mathsf{D}(G)-k+2)} 
+ 
+ 
+ and 
+ 
+
+ 
+ 
+ A ​ X ≡ A ′ ​ X ≡ 0 mod p . AX\equiv A^{\prime}X\equiv 0\mod p. 
+ 
+ 
+ Since  | S | = 2 ​ 𝖣 ​ ( G ) − k + 1 |S|=2\mathsf{D}(G)-k+1 , we have that  | S | − 𝖣 ⁡ ( G ) + 1 = 𝖣 ⁡ ( G ) − k + 2 |S|-\mathsf{D}(G)+1=\mathsf{D}(G)-k+2 . It follows that  A ′ A^{\prime}  is a square matrix and  | S | − 𝖣 ⁡ ( G ) > 𝖣 ⁡ ( G ) − k |S|-\mathsf{D}(G)>\mathsf{D}(G)-k .
+Note that  ( a b ) = 0 \binom{a}{b}=0  if  0 ≤ a < b 0\leq a<b . We have that 
+ 
+
+ 
+ 
+ ( 𝖣 ⁡ ( G ) − k | S | − 𝖣 ⁡ ( G ) ) = ⋯ = ( 0 | S | − 𝖣 ⁡ ( G ) ) = 0 . {{\mathsf{D}(G)-k\choose|S|-\mathsf{D}(G)}}=\cdots={{0\choose|S|-\mathsf{D}(G)}}=0. 
+ 
+ 
+ Thus 
+ 
+
+ 
+ 
+ ( ( 𝖣 ⁡ ( G ) | S | − 𝖣 ⁡ ( G ) ) ( 𝖣 ⁡ ( G ) − k | S | − 𝖣 ⁡ ( G ) ) ⋯ ( 0 | S | − 𝖣 ⁡ ( G ) ) ) ​ X = ( 𝖣 ⁡ ( G ) | S | − 𝖣 ⁡ ( G ) ) = ( 𝖣 ⁡ ( G ) k − 1 ) ≡ 0 ​ mod ​ p . \left(\begin{array}[]{cccc}{{\mathsf{D}(G)\choose|S|-\mathsf{D}(G)}}&{{\mathsf{D}(G)-k\choose|S|-\mathsf{D}(G)}}&\cdots&{{0\choose|S|-\mathsf{D}(G)}}\\
+\end{array}\right)X={{\mathsf{D}(G)\choose|S|-\mathsf{D}(G)}}=\binom{\mathsf{D}(G)}{k-1}\equiv 0\ \text{mod}\ p. 
+ 
+ 
+ This is a contradiction to  ( 𝖣 ⁡ ( G ) k − 1 ) ≢ 0 mod p \binom{\mathsf{D}(G)}{k-1}\not\equiv 0\mod p .
+We complete the proof.
+∎ 
+ 
+ 
+ 
+ By Corollary  4.8 , we prove Theorem  1.12 . 
+ 
+ 
+ The proof of Theorem  1.12 : 
+If  𝖭 i ​ ( S ) = 0 \mathsf{N}^{i}(S)=0  for  i ∈ [ 𝖣 ⁡ ( G ) + 1 , | S | ] i\in[\mathsf{D}(G)+1,|S|] , then by Lemma  5.1  we are done. 
+ 
+ 
+ Now suppose that  S S  has a zero-sum subsequence  T T  with length  | T | ∈ [ 𝖣 ⁡ ( G ) + 1 , | S | ] |T|\in[\mathsf{D}(G)+1,|S|] .
+If  | T | < 2 ​ k |T|<2k , then since  T T  is a zero-sum subsequence of  S S  with length  | T | ≥ 𝖣 ⁡ ( G ) + 1 |T|\geq\mathsf{D}(G)+1 , by the definition of  𝖣 ⁡ ( G ) \mathsf{D}(G)  we have that  T T  has proper zero-sum subsequences  T 1 , T ​ T 1 − 1 T_{1},TT_{1}^{-1} . Obviously,  min ⁡ { | T 1 | , | T ​ T 1 − 1 | } ≤ k − 1 \min\{|T_{1}|,|TT_{1}^{-1}|\}\leq k-1 . We are done. 
+ 
+ 
+ Suppose that  | T | ≥ 2 ​ k |T|\geq 2k . As in Lemma  4.7  we set  | T | − k = u ​ p + v = ( u 1 ​ p t + u 2 ) ​ p + v |T|-k=up+v=(u_{1}p^{t}+u_{2})p+v  and  k = c ​ p + d = c 1 ​ p t + 1 + d k=cp+d=c_{1}p^{t+1}+d  with  v , d ∈ [ 0 , p − 1 ] v,d\in[0,p-1] ,  t ≥ 0 t\geq 0 ,  c 1 , u 1 ∈ [ 1 , p − 1 ] c_{1},u_{1}\in[1,p-1]  and  u 2 ∈ [ 0 , p t − 1 ] u_{2}\in[0,p^{t}-1] . Repeat the reasoning of ( 4.7 ) and we have that 
+ 
+
+ 
+ 
+ u = u 1 ​ p t + u 2 , c = c 1 ​ p t ​ and ​ p − 1 ≥ u 1 ≥ c 1 ≥ 1 . u=u_{1}p^{t}+u_{2},\ c=c_{1}p^{t}\ \text{and}\ p-1\geq u_{1}\geq c_{1}\geq 1. 
+ 
+ 
+ Since  2 ​ k − 𝖣 ⁡ ( G ) ≥ p + d − v 2k-\mathsf{D}(G)\geq p+d-v , by Lemma  4.4  and Corollary  4.8 , it suffices to prove that 
+ 
+
+ 
+ 
+ u 1 + c 1 + 1 < p . u_{1}+c_{1}+1<p. 
+ 
+ 
+ Since  | S | = 2 ​ 𝖣 ​ ( G ) − k + 1 |S|=2\mathsf{D}(G)-k+1  and  2 ​ 𝖣 ​ ( G ) − 2 ​ k + 1 < p − 1 2 ​ p t + 1 2\mathsf{D}(G)-2k+1<\frac{p-1}{2}p^{t+1} , we have that 
+ 
+
+ 
+ 
+ | T | − k = ( u 1 ​ p t + u 2 ) ​ p + v = u 1 ​ p t + 1 + u 2 ​ p + v ≤ | S | − k = 2 ​ 𝖣 ​ ( G ) − 2 ​ k + 1 < p − 1 2 ​ p t + 1 . \displaystyle|T|-k=(u_{1}p^{t}+u_{2})p+v=u_{1}p^{t+1}+u_{2}p+v\leq|S|-k=2\mathsf{D}(G)-2k+1<\frac{p-1}{2}p^{t+1}. 
+ 
+ 
+ It follows that  u 1 < p − 1 2 u_{1}<\frac{p-1}{2} . This together with  p − 1 ≥ u 1 ≥ c 1 ≥ 1 p-1\geq u_{1}\geq c_{1}\geq 1  yields that 
+ 
+
+ 
+ 
+ u 1 + c 1 + 1 ≤ 2 ​ u 1 + 1 < p . u_{1}+c_{1}+1\leq 2u_{1}+1<p. 
+ 
+ 
+ We complete the proof.
+∎ 
+ 
+ 
+ By Lemma  4.9 , we prove Theorem  1.13 . 
+ 
+ 
+ The proof of Theorem  1.13 : 
+Let  S S  be a sequence over  G G  of length  | S | = 2 ​ 𝖣 ​ ( G ) − k + 1 |S|=2\mathsf{D}(G)-k+1 . In the following, we will prove that  S S  has a nonempty zero-sum subsequence of length  ≤ k − 1 \leq k-1 . If there exists some  i ∈ [ 𝖣 ⁡ ( G ) + 1 , 2 ​ k − 1 ] i\in[\mathsf{D}(G)+1,2k-1]  such that  𝖭 i ​ ( S ) ≠ 0 \mathsf{N}^{i}(S)\neq 0 , then  S S  has a zero-sum subsequence  T T  with length  | T | ∈ [ 𝖣 ⁡ ( G ) + 1 , 2 ​ k − 1 ] |T|\in[\mathsf{D}(G)+1,2k-1] . By the definition of  𝖣 ⁡ ( G ) \mathsf{D}(G) ,  T T  has proper zero-sum subsequences  T 1 , T ​ T 1 − 1 T_{1},TT_{1}^{-1} . Obviously,  min ⁡ { | T 1 | , | T ​ T 1 − 1 | } ≤ k − 1 \min\{|T_{1}|,|TT_{1}^{-1}|\}\leq k-1 . We are done.
+Hence, we can suppose that 
+ 
+
+ 
+ (5.2) 
+ 
+ 𝖭 i ​ ( S ) = 0 ​ for ​ i ∈ [ 𝖣 ⁡ ( G ) + 1 , 2 ​ k − 1 ] . \displaystyle\mathsf{N}^{i}(S)=0\ \text{for}\ i\in[\mathsf{D}(G)+1,2k-1]. 
+ 
+ 
+ 
+ 
+ (i) Since  𝖣 ⁡ ( C 2 r ) = r + 1 = 2 t + 1 − 1 \mathsf{D}(C_{2}^{r})=r+1=2^{t+1}-1  and  k − 1 = r + 2 2 = 2 t k-1=\frac{r+2}{2}=2^{t} , by Lemma  4.1 , we have that 
+ 
+
+ 
+ 
+ ( 𝖣 ⁡ ( C 2 r ) k − 1 ) = ( 2 t + 1 − 1 2 t ) ≡ ( 1 1 ) ​ ( 2 t − 1 0 ) = 1 ≢ 0 mod 2 . \binom{\mathsf{D}(C_{2}^{r})}{k-1}=\binom{2^{t+1}-1}{2^{t}}\equiv\binom{1}{1}\binom{2^{t}-1}{0}=1\not\equiv 0\mod 2. 
+ 
+ 
+ If  𝖭 i ​ ( S ) = 0 \mathsf{N}^{i}(S)=0  for  i ∈ [ 𝖣 ⁡ ( C 2 r ) + 1 , | S | ] = [ 2 t + 1 , 2 t + 1 + 2 t − 2 ] i\in[\mathsf{D}(C_{2}^{r})+1,|S|]=[2^{t+1},2^{t+1}+2^{t}-2] , then by Lemma  5.1  we are done. 
+ 
+ 
+ If there exists some  i ∈ [ 𝖣 ⁡ ( C 2 r ) + 1 , | S | ] = [ 2 t + 1 , 2 t + 1 + 2 t − 2 ] i\in[\mathsf{D}(C_{2}^{r})+1,|S|]=[2^{t+1},2^{t+1}+2^{t}-2]  such that  𝖭 i ​ ( S ) ≠ 0 \mathsf{N}^{i}(S)\neq 0 , then
+since  2 ​ k = 2 t + 1 + 2 > 𝖣 ⁡ ( C 2 r ) + 1 2k=2^{t+1}+2>\mathsf{D}(C_{2}^{r})+1 , combining ( 5.2 ) yields that  S S  has a zero-sum subsequence  T T  with length  | T | ∈ [ 2 t + 1 + 2 , 2 t + 1 + 2 t − 2 ] |T|\in[2^{t+1}+2,2^{t+1}+2^{t}-2] . Thus  | T | ≥ 2 t + 1 + 2 = 2 ​ k |T|\geq 2^{t+1}+2=2k  and  | T | − k ∈ [ 2 t + 1 , 2 t + 1 − 3 ] |T|-k\in[2^{t}+1,2^{t+1}-3] .
+Set  | T | − k = u 1 ​ 2 t + v 1 = 2 t + v 1 |T|-k=u_{1}2^{t}+v_{1}=2^{t}+v_{1}  and  k = c 1 ​ 2 t + 1 = 2 t + 1 k=c_{1}2^{t}+1=2^{t}+1  with  u 1 = c 1 = 1 u_{1}=c_{1}=1  and  v 1 ∈ [ 1 , 2 t − 3 ] v_{1}\in[1,2^{t}-3] .
+Since  2 ​ k − 𝖣 ⁡ ( C 2 r ) = 3 ≥ 2 2k-\mathsf{D}(C_{2}^{r})=3\geq 2  and 
+ 
+
+ 
+ 
+ ( u 1 c 1 − 1 ) + ( u 1 + 1 c 1 ) = ( 1 1 − 1 ) + ( 1 + 1 1 ) = 1 ≢ 0 mod 2 , {{u_{1}\choose c_{1}-1}}+{{u_{1}+1\choose c_{1}}}={{1\choose 1-1}}+{{1+1\choose 1}}=1\not\equiv 0\mod 2, 
+ 
+ 
+ by Lemma  4.9  we have that  a 2 ≢ 0 mod 2 . a_{2}\not\equiv 0\mod 2. 
+It follows from Lemma  4.4  that  S S  has a zero-sum subsequence of length  ≤ k − 1 \leq k-1 .
+We complete the proof of (i). 
+ 
+ 
+ (ii) Since  𝖣 ⁡ ( C p 4 ) = 4 ​ p − 3 \mathsf{D}(C_{p}^{4})=4p-3  and  k − 1 = 2 ​ p k-1=2p , by Lemma  4.1 , we have that 
+ 
+
+ 
+ 
+ ( 𝖣 ⁡ ( C p 4 ) k − 1 ) = ( 4 ​ p − 3 2 ​ p ) ≡ ( 3 2 ) ​ ( p − 3 0 ) = 3 ≢ 0 mod p . \binom{\mathsf{D}(C_{p}^{4})}{k-1}=\binom{4p-3}{2p}\equiv\binom{3}{2}\binom{p-3}{0}=3\not\equiv 0\mod p. 
+ 
+ 
+ It follows since  p ≥ 5 p\geq 5 .
+If  𝖭 i ​ ( S ) = 0 \mathsf{N}^{i}(S)=0  for  i ∈ [ 𝖣 ⁡ ( C p 4 ) + 1 , | S | ] = [ 4 ​ p − 3 , 6 ​ p − 6 ] i\in[\mathsf{D}(C_{p}^{4})+1,|S|]=[4p-3,6p-6] , then by Lemma  5.1  we are done.
+If there exists some  i ∈ [ 𝖣 ⁡ ( C p 4 ) + 1 , | S | ] = [ 4 ​ p − 3 , 6 ​ p − 6 ] i\in[\mathsf{D}(C_{p}^{4})+1,|S|]=[4p-3,6p-6]  such that  𝖭 i ​ ( S ) ≠ 0 \mathsf{N}^{i}(S)\neq 0 , then
+since  2 ​ k = 4 ​ p + 2 > 𝖣 ⁡ ( C p 4 ) + 1 2k=4p+2>\mathsf{D}(C_{p}^{4})+1 , combining ( 5.2 ) yields that  S S  has a zero-sum subsequence  T T  with length  | T | ∈ [ 4 ​ p + 2 , 6 ​ p − 6 ] |T|\in[4p+2,6p-6] . Thus  | T | ≥ 4 ​ p + 2 = 2 ​ k |T|\geq 4p+2=2k  and  | T | − k ∈ [ 2 ​ p + 1 , 4 ​ p − 7 ] |T|-k\in[2p+1,4p-7] . 
+ 
+ 
+ If  3 ​ p − 1 ∉ [ 2 ​ p + 1 , 4 ​ p − 7 ] 3p-1\not\in[2p+1,4p-7] , i.e.,  p = 5 p=5 , then  | T | − k ∈ [ 2 ​ p + 1 , 3 ​ p − 2 ] |T|-k\in[2p+1,3p-2] .
+Set  | T | − k = 2 ​ p + v 1 |T|-k=2p+v_{1}  with  v 1 ∈ [ 1 , p − 2 ] v_{1}\in[1,p-2] .
+Thus by Lemma  4.1  we have that 
+ 
+
+ 
+ 
+ a 2 \displaystyle a_{2} 
+ = ( | T | − k k − 2 ) + ( | T | − k + 1 k − 1 ) = ( 2 ​ p + v 1 2 ​ p − 1 ) + ( 2 ​ p + v 1 + 1 2 ​ p ) \displaystyle={{|T|-k\choose k-2}}+{{|T|-k+1\choose k-1}}={{2p+v_{1}\choose 2p-1}}+{{2p+v_{1}+1\choose 2p}} 
+ 
+ 
+ 
+ 
+ ≡ ( 2 1 ) ​ ( v 1 p − 1 ) + ( 2 2 ) ​ ( v 1 + 1 0 ) = 1 ≢ 0 mod p . \displaystyle\equiv\binom{2}{1}\binom{v_{1}}{p-1}+\binom{2}{2}\binom{v_{1}+1}{0}=1\not\equiv 0\mod p. 
+ 
+ 
+ 
+ 
+ If  3 ​ p − 1 ∈ [ 2 ​ p + 1 , 4 ​ p − 7 ] 3p-1\in[2p+1,4p-7] , i.e.,  p ≥ 6 p\geq 6 , then set  | T | − k = u 1 ​ p + v 1 |T|-k=u_{1}p+v_{1}  with  u 1 = 2 u_{1}=2  or  3 3  and  v 1 ∈ [ 0 , p − 1 ] v_{1}\in[0,p-1] . If  | T | − k ≠ 3 ​ p − 1 |T|-k\neq 3p-1 , then  v 1 ∈ [ 0 . p − 2 ] v_{1}\in[0.p-2] .
+This together with Lemma  4.1  yields that 
+ 
+
+ 
+ 
+ a 2 \displaystyle a_{2} 
+ = ( | T | − k k − 2 ) + ( | T | − k + 1 k − 1 ) = ( u 1 ​ p + v 1 2 ​ p − 1 ) + ( u 1 ​ p + v 1 + 1 2 ​ p ) \displaystyle={{|T|-k\choose k-2}}+{{|T|-k+1\choose k-1}}={{u_{1}p+v_{1}\choose 2p-1}}+{{u_{1}p+v_{1}+1\choose 2p}} 
+ 
+ 
+ 
+ 
+ ≡ ( u 1 1 ) ​ ( v 1 p − 1 ) + ( u 1 2 ) ​ ( v 1 + 1 0 ) = ( u 1 2 ) ≢ 0 mod p . \displaystyle\equiv\binom{u_{1}}{1}\binom{v_{1}}{p-1}+\binom{u_{1}}{2}\binom{v_{1}+1}{0}=\binom{u_{1}}{2}\not\equiv 0\mod p. 
+ 
+ 
+ If  | T | − k = 3 ​ p − 1 |T|-k=3p-1 , then 
+ 
+
+ 
+ 
+ a 2 \displaystyle a_{2} 
+ = ( | T | − k k − 2 ) + ( | T | − k + 1 k − 1 ) = ( 3 ​ p − 1 2 ​ p − 1 ) + ( 3 ​ p 2 ​ p ) \displaystyle={{|T|-k\choose k-2}}+{{|T|-k+1\choose k-1}}={{3p-1\choose 2p-1}}+{{3p\choose 2p}} 
+ 
+ 
+ 
+ 
+ ≡ ( 2 1 ) ​ ( p − 1 p − 1 ) + ( 3 2 ) ​ ( 0 0 ) = 5 ≢ 0 mod p . \displaystyle\equiv\binom{2}{1}\binom{p-1}{p-1}+\binom{3}{2}\binom{0}{0}=5\not\equiv 0\mod p. 
+ 
+ 
+ It follows since  p ≥ 6 p\geq 6 .
+Since  2 ​ k − 𝖣 ⁡ ( C p 4 ) = 5 ≥ 2 2k-\mathsf{D}(C_{p}^{4})=5\geq 2 , by Lemma  4.4   S S  has a zero-sum subsequence of length  ≤ k − 1 \leq k-1 .
+We complete the proof of (ii). 
+ 
+ 
+ (iii) Since  𝖣 ⁡ ( C p d ) = ( p − 1 ) ​ d + 1 \mathsf{D}(C_{p}^{d})=(p-1)d+1  and  k − 1 = ( d − 1 ) ​ p ∈ [ p , 𝖣 ⁡ ( C p d ) ] k-1=(d-1)p\in[p,\mathsf{D}(C_{p}^{d})] , we have that  ( p − 1 ) ​ d + 1 ≥ ( d − 1 ) ​ p ≥ p (p-1)d+1\geq(d-1)p\geq p , i.e.,  2 ≤ d ≤ p + 1 2\leq d\leq p+1 . It follows that  p − d + 1 ∈ [ 0 , p − 1 ] p-d+1\in[0,p-1] . This together with Lemma  4.1  yields that 
+ 
+
+ 
+ 
+ ( 𝖣 ⁡ ( C p d ) k − 1 ) = ( ( d − 1 ) ​ p + p − d + 1 ( d − 1 ) ​ p ) ≡ ( d − 1 d − 1 ) ​ ( p − d + 1 0 ) = 1 ≢ 0 mod p . \binom{\mathsf{D}(C_{p}^{d})}{k-1}=\binom{(d-1)p+p-d+1}{(d-1)p}\equiv\binom{d-1}{d-1}\binom{p-d+1}{0}=1\not\equiv 0\mod p. 
+ 
+ 
+ If  𝖭 i ​ ( S ) = 0 \mathsf{N}^{i}(S)=0  for  i ∈ [ 𝖣 ⁡ ( C p d ) + 1 , | S | ] = [ ( p − 1 ) ​ d + 2 , ( d + 1 ) ​ p − 2 ​ d + 2 ] i\in[\mathsf{D}(C_{p}^{d})+1,|S|]=[(p-1)d+2,(d+1)p-2d+2] , then by Lemma  5.1 , we are done.
+If there exists some  i ∈ [ 𝖣 ⁡ ( C p d ) + 1 , | S | ] = [ ( p − 1 ) ​ d + 2 , ( d + 1 ) ​ p − 2 ​ d + 2 ] i\in[\mathsf{D}(C_{p}^{d})+1,|S|]=[(p-1)d+2,(d+1)p-2d+2]  such that  𝖭 i ​ ( S ) ≠ 0 \mathsf{N}^{i}(S)\neq 0 , then
+since  2 ​ k − ( 𝖣 ⁡ ( C p d ) + 1 ) = 2 ​ ( d − 1 ) ​ p + 2 − ( p − 1 ) ​ d − 2 = ( d − 2 ) ​ p + d > 0 2k-(\mathsf{D}(C_{p}^{d})+1)=2(d-1)p+2-(p-1)d-2=(d-2)p+d>0  (since  d ≥ 2 d\geq 2 ), combining ( 5.2 ) yields that  S S  has a zero-sum subsequence  T T  with length  | T | ∈ [ 2 ​ ( d − 1 ) ​ p + 2 , ( d + 1 ) ​ p − 2 ​ d + 2 ] |T|\in[2(d-1)p+2,(d+1)p-2d+2] .
+It follows that  2 ​ ( d − 1 ) ​ p + 2 ≤ ( d + 1 ) ​ p − 2 ​ d + 2 2(d-1)p+2\leq(d+1)p-2d+2 .
+It is also easy to see that  2 ​ ( d − 1 ) ​ p + 2 − ( ( d + 1 ) ​ p − 2 ​ d + 2 ) = ( d − 3 ) ​ p + 2 ​ d > 0 2(d-1)p+2-((d+1)p-2d+2)=(d-3)p+2d>0  if  d ≥ 3 d\geq 3 . Hence,  d = 2 d=2 .
+Note that  𝗌 ≤ p ​ ( C p 2 ) = 3 ​ p − 2 = 2 ​ ( 𝖣 ⁡ ( C p 2 ) ) − p \mathsf{s}_{\leq p}(C_{p}^{2})=3p-2=2(\mathsf{D}(C_{p}^{2}))-p .
+We complete the proof.
+∎ 
+ 
+ 
+ 
+ 6.  Concluding Remarks and Open Problems 
+
+ 
+ We close the paper by making the following conjectures together with some remarks on  k G k_{G}  and  𝗌 k ​ exp ⁡ ( G ) ​ ( G ) \mathsf{s}_{k\exp(G)}(G)  for finite abelian groups  G G . 
+ 
+ 
+ By Theorem  1.11 , we have the following conjecture. 
+ 
+ 
+ Conjecture 6.1 . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2  and  𝖣 ​ ( G ) = 𝖣 ∗ ​ ( G ) \mathsf{D}(G)=\mathsf{D}^{*}(G) . Suppose that  G ≇ C 2 4 G\not\cong C_{2}^{4}  and  𝖣 ⁡ ( G ) − 2 ≥ exp ⁡ ( G ) \mathsf{D}(G)-2\geq\exp(G) . If  exp ⁡ ( G ) < 𝖣 ⁡ ( G ) − 1 2 \exp(G)<\frac{\mathsf{D}(G)-1}{2} ,
+then  𝗌 ≤ 𝖣 ⁡ ( G ) − 2 ​ ( G ) = 𝖣 ⁡ ( G ) + 1 \mathsf{s}_{\leq\mathsf{D}(G)-2}(G)=\mathsf{D}(G)+1 . 
+ 
+ 
+ 
+ By Theorems  1.12  and  1.13 , we have the following conjecture. 
+ 
+ 
+ Conjecture 6.2 . 
+ 
+ Let  G G  be a finite abelian group with  r ⁡ ( G ) ≥ 2 r(G)\geq 2  and  𝖣 ​ ( G ) = 𝖣 ∗ ​ ( G ) \mathsf{D}(G)=\mathsf{D}^{*}(G) . Let  k k  be a positive integer with  𝖣 ⁡ ( G ) − k ∈ [ exp ⁡ ( G ) , 𝖣 ⁡ ( G ) ] \mathsf{D}(G)-k\in[\exp(G),\mathsf{D}(G)] . If  𝖣 ⁡ ( G ) − k ≥ 𝖣 ⁡ ( G ) + 1 2 \mathsf{D}(G)-k\geq\frac{\mathsf{D}(G)+1}{2} ,
+then 
+ 
+
+ 
+ 
+ 𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) ≤ 𝖣 ⁡ ( G ) + k . \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)\leq\mathsf{D}(G)+k. 
+ 
+ 
+ If  𝖣 ⁡ ( G ) − k < 𝖣 ⁡ ( G ) + 1 2 \mathsf{D}(G)-k<\frac{\mathsf{D}(G)+1}{2} ,
+then 
+ 
+
+ 
+ 
+ 𝗌 ≤ 𝖣 ⁡ ( G ) − k ​ ( G ) > 𝖣 ⁡ ( G ) + k . \mathsf{s}_{\leq\mathsf{D}(G)-k}(G)>\mathsf{D}(G)+k. 
+ 
+ 
+ 
+ 
+ 
+ It follows from Lemma  1.7  Parts (i) and (ii) that Conjectures  6.1  and  6.2  holds for  G = C 3 3 G=C_{3}^{3}  and  C 5 3 C_{5}^{3} . Schmid and Zhuang  [ 31 ]  proved that the first assertion holds if  𝖣 ⁡ ( G ) − k = exp ⁡ ( G ) \mathsf{D}(G)-k=\exp(G)  and  G G  is a finite abelian  p p -group. 
+ 
+ 
+ Gao et al.  [ 12 ]  conjectured that 
+ 
+ 
+ Conjecture 6.3 . 
+ 
+ Let  G G  be a finite abelian group. If  k ​ exp ⁡ ( G ) ≥ 𝖣 ⁡ ( G ) k\exp(G)\geq\mathsf{D}(G) , then 
+ 
+
+ 
+ 
+ 𝗌 k ​ exp ⁡ ( G ) ​ ( G ) = 𝖣 ⁡ ( G ) + k ​ exp ⁡ ( G ) − 1 . \mathsf{s}_{k\exp(G)}(G)=\mathsf{D}(G)+k\exp(G)-1. 
+ 
+ 
+ 
+ 
+ 
+ Gao and Thangadurai  [ 11 ]  noticed that if  k ​ exp ⁡ ( G ) < 𝖣 ⁡ ( G ) k\exp(G)<\mathsf{D}(G) , then
+ 𝗌 k ​ exp ⁡ ( G ) ​ ( G ) > k ​ exp ⁡ ( G ) + 𝖣 ⁡ ( G ) − 1 \mathsf{s}_{k\exp(G)}(G)>k\exp(G)+\mathsf{D}(G)-1 .
+If Conjecture  6.2  holds, then 
+ 
+
+ 
+ 
+ 𝗌 ≤ k ​ exp ⁡ ( G ) ​ ( G ) ≤ 2 ​ 𝖣 ​ ( G ) − k ​ exp ⁡ ( G ) ​ if ​ k ​ exp ⁡ ( G ) ≥ 𝖣 ⁡ ( G ) + 1 2 \mathsf{s}_{\leq k\exp(G)}(G)\leq 2\mathsf{D}(G)-k\exp(G)\ \text{if}\ k\exp(G)\geq\frac{\mathsf{D}(G)+1}{2} 
+ 
+ 
+ and 
+ 
+
+ 
+ 
+ 𝗌 ≤ k ​ exp ⁡ ( G ) ​ ( G ) > 2 ​ 𝖣 ​ ( G ) − k ​ exp ⁡ ( G ) ​ if ​ k ​ exp ⁡ ( G ) < 𝖣 ⁡ ( G ) + 1 2 . \mathsf{s}_{\leq k\exp(G)}(G)>2\mathsf{D}(G)-k\exp(G)\ \text{if}\ k\exp(G)<\frac{\mathsf{D}(G)+1}{2}. 
+ 
+ 
+ 
+ 
+ By the above and Conjectures  1.2 ,  6.3 , we suggest the following conjecture. 
+ 
+ 
+ Conjecture 6.4 . 
+ 
+ Let  G G  be a finite abelian group. If  k ​ exp ⁡ ( G ) ∈ [ 𝖣 ⁡ ( G ) + 1 2 , 𝖣 ⁡ ( G ) ] k\exp(G)\in[\frac{\mathsf{D}(G)+1}{2},\mathsf{D}(G)] , then 
+ 
+
+ 
+ 
+ 𝗌 k ​ exp ⁡ ( G ) ​ ( G ) ≤ 2 ​ 𝖣 ​ ( G ) − 1 . \mathsf{s}_{k\exp(G)}(G)\leq 2\mathsf{D}(G)-1. 
+ 
+ 
+ If  k ​ exp ⁡ ( G ) < 𝖣 ⁡ ( G ) + 1 2 k\exp(G)<\frac{\mathsf{D}(G)+1}{2} , then 
+ 
+
+ 
+ 
+ 𝗌 k ​ exp ⁡ ( G ) ​ ( G ) > 2 ​ 𝖣 ​ ( G ) − 1 . \mathsf{s}_{k\exp(G)}(G)>2\mathsf{D}(G)-1. 
+ 
+ 
+ 
+ 
+ 
+ Gao and Thangadurai  [ 11 ]  proved that  𝗌 2 ⋅ 3 ​ ( C 3 3 ) = 13 = 2 ​ 𝖣 ​ ( C 3 3 ) − 1 \mathsf{s}_{2\cdot 3}(C_{3}^{3})=13=2\mathsf{D}(C_{3}^{3})-1 , which satisfies Conjecture  6.4 . Note that Conjectures  1.2  and  6.4  are not always true, but we think that these conjectures still make sense.
+Sidorenko  [ 30 ]  proved that  𝗌 2 ​ m ​ ( C 2 2 ​ m + 1 ) = 4 ​ m + 5 \mathsf{s}_{2m}(C_{2}^{2m+1})=4m+5  for odd  m m .
+Wang and Zhao  [ 33 ]  proved that  𝗌 ≤ r − k ​ ( C 2 r ) = r + 2 ​ for all ​ r − k ∈ [ ⌈ 2 ​ r + 2 3 ⌉ , r ] \mathsf{s}_{\leq r-k}(C_{2}^{r})=r+2\ \text{for all}\ r-k\in\Big[\Big\lceil\frac{2r+2}{3}\Big\rceil,r\Big] .
+Thus  𝗌 ≤ 2 ​ m ​ ( C 2 2 ​ m + 1 ) = 2 ​ m + 3 ​ for ​ m ≥ 2 \mathsf{s}_{\leq 2m}(C_{2}^{2m+1})=2m+3\ \text{for}\ m\geq 2 .
+It follows that 
+ 
+
+ 
+ 
+ 𝗌 2 ​ m ​ ( C 2 2 ​ m + 1 ) = 4 ​ m + 5 > 𝗌 ≤ 2 ​ m ​ ( C 2 2 ​ m + 1 ) + 2 ​ m − 1 = 4 ​ m + 2 ​ for ​ m ≥ 3 ​ odd . \mathsf{s}_{2m}(C_{2}^{2m+1})=4m+5>\mathsf{s}_{\leq 2m}(C_{2}^{2m+1})+2m-1=4m+2\ \text{for}\ m\geq 3\ \text{odd}. 
+ 
+ 
+ Hence, Conjecture  1.2  is not always true.
+Since  𝖣 ⁡ ( C 2 2 ​ m + 1 ) = 2 ​ m + 2 \mathsf{D}(C_{2}^{2m+1})=2m+2 , we have that  2 ​ m ∈ [ 𝖣 ⁡ ( C 2 2 ​ m + 1 ) + 1 2 , 𝖣 ⁡ ( C 2 2 ​ m + 1 ) ] = [ m + 2 , 2 ​ m + 2 ] 2m\in[\frac{\mathsf{D}(C_{2}^{2m+1})+1}{2},\mathsf{D}(C_{2}^{2m+1})]=[m+2,2m+2]  for  m ≥ 2 m\geq 2 .
+It follows that 
+ 
+
+ 
+ 
+ 𝗌 2 ​ m ​ ( C 2 2 ​ m + 1 ) = 4 ​ m + 5 > 2 ​ 𝖣 ​ ( C 2 2 ​ m + 1 ) − 1 = 4 ​ m + 3 ​ for ​ m ≥ 3 ​ odd . \mathsf{s}_{2m}(C_{2}^{2m+1})=4m+5>2\mathsf{D}(C_{2}^{2m+1})-1=4m+3\ \text{for}\ m\geq 3\ \text{odd}. 
+ 
+ 
+ Hence, Conjecture  6.4  is not always true. 
+ 
+ 
+ 
+ References 
+
+ 
+      
+ [1] 
+  G. Bhowmik and J. Schlagepuchta,  Davenport’s constant for groups with large exponent , (2017), arXiv:1702.03403, https://doi.org/10.48550/arXiv.1702.03403.
+
+ 
+      
+ [2] 
+  G. Bhowmik and J. Schlage-Puchta,  Davenport ’ s Constant for Groups of the Form  ℤ 3 ⊕ ℤ 3 ⊕ ℤ 3 ​ d \mathbb{Z}_{3}\oplus\mathbb{Z}_{3}\oplus\mathbb{Z}_{3d} , Centre de Recherches Mathématiques
+CRM Proceedings and Lecture Notes, (2007).
+
+ 
+      
+ [3] 
+ 
+R. Chi, S. Ding, W. Gao, A. Geroldinger, and W.A. Schmid,
+ On zero-sum subsequences of restricted size IV ,
+Acta Math. Hungar.  107  (2005), 337 - 344.
+
+ 
+      
+ [4] 
+  G. Cohen and G. Zemor,  Subset sums and coding theory ,
+Asterisque  258  (1999), 327-339.
+
+ 
+      
+ [5] 
+  C. Delorme, O. Ordaz, and D. Quiroz,  Some remarks on
+Davenport constant , Discrete Math.  237  (2001), 119-128.
+
+ 
+      
+ [6] 
+  A. Davydov and L. Tombak,  Quasi-perfect linear binary codes with distance 4 and complete caps in projective geometry , Problemy Peredachi Informatzii,  25.4  (1989), 11-23.
+
+ 
+      
+ [7] 
+  J. Ebert and D. Grynkiewicz,  Structure of a sequence with prescribed zero-sum subsequences: Rank Two  p p -groups , European J. Combin.  118  (2024), 103888.
+
+ 
+      
+ [8] 
+  M. Freeze and W. Schmid,  Remarks on a generalization of the Davenport constant , Discrete
+Math.  310  (2010), 3373–3389.
+
+ 
+      
+ [9] 
+  Y. Fan, W.Gao, et al.,  On Short Zero-Sum Subsequences of Zero-Sum Sequences , The Electronic Journal of Combinatorics  19.3  (2011), DOI: 10.37236/2602.
+
+ 
+      
+ [10] 
+  W. Gao,  On zero sum subsequences of restricted size III ,
+Ars. Combin.  61  (2001), 65-72.
+
+ 
+      
+ [11] 
+  W. Gao and R. Thangadurai,  On zero-sum sequences of
+prescribed length , Aeq. Math.  72  (2006), 201-212.
+
+ 
+      
+ [12] 
+  W. Gao, D. Han, J. Peng, and F. Sun,  On zero-sum subsequences of length
+ k ​ e ​ x ​ p ​ ( G ) kexp(G) , J. Combin. Theory Ser. A  125  (2014), 240 - 253.
+
+ 
+      
+ [13] 
+  W. Gao, S. Hong, and J. Peng,  On zero-sum subsequences of length  k ​ e ​ x ​ p ​ ( G ) kexp(G)  II , J. Combin. Theory Ser. A  187  (2022), 105563.
+
+ 
+      
+ [14] 
+ 
+W. Gao, Y. Li, J. Peng, and G. Wang,  A unifying look at zero-sum invariants ,
+Int. J. Number Theory  14  (2018), 705 - 711.
+
+ 
+      
+ [15] 
+  W. Gao, P. Zhao, and J. Zhuang,  Zero-sum subsequences
+of distinct lengths , Int. J. Number Theory  11  (2015), 2141-2150.
+
+ 
+      
+ [16] 
+  W. Gao and A. Geroldinger,  Zero-sum problems in finite
+abelian groups: a survey , Expo. Math.  24  (2006), 337-369.
+
+ 
+      
+ [17] 
+ 
+A. Geroldinger,  Additive group theory and non-unique factorizations ,
+Combinatorial Number Theory and Additive Group Theory, Advanced Courses
+in Mathematics CRM Barcelona, Birkhäuser, 2009, pp. 1 - 86.
+
+ 
+      
+ [18] 
+  A. Geroldinger and F. Halter-Koch,  Non-unique Factorizations,
+Algebraic, Combinatorial and Analytic Theory , Pure and Applied Mathematics,
+vol. 278, Chapman and Hall/CRC, 2006.
+
+ 
+      
+ [19] 
+  A. Geroldinger, D. Grynkiewicz, and W. Schmid,  Zero-sum problems
+with congruence conditions , Acta Math. Hungar.  131  (2011), 323-345.
+
+ 
+      
+ [20] 
+  D. Grynkiewicz, Structural Additive Theory, Developments in Mathematics,
+Springer, 2013.
+
+ 
+      
+ [21] 
+  D. Grynkiewicz and C. Liu,  A multiplicative property for zero-sums I , Discrete Math.  345.10  (2022), Paper No. 112974.
+
+ 
+      
+ [22] 
+  D. Grynkiewicz and C. Liu,  A multiplicative property for zero-sums II , Electron. J. Combin.  29.3  (2022), 16, Paper No. P3.12.
+
+ 
+      
+ [23] 
+  D. Grynkiewicz, C. Wang, and K. Zhao,  The structure of a sequence with prescribed zero-sum subsequences , Integers  20  (2020), 31, Paper No. A3.
+
+ 
+      
+ [24] 
+  H. Guan, P. Yuan, and X. Zeng,  Normal sequences over finite
+abelian groups , J. Combin. Theory Ser. A  118.4  (2011), 1519-1524.
+
+ 
+      
+ [25] 
+ 
+S. Kubertin,  Zero-sums of length  k ​ q kq  in  ℤ q d \mathbb{Z}^{d}_{q} ,
+Acta Arith.  116  (2005), 145 - 152.
+
+ 
+      
+ [26] 
+  F. Lucas,  Sur les congruences des nombres eul e ´ \acute{e} riens et les coefficients diff e ´ \acute{e} rentiels des
+functions trigonom e ´ \acute{e} triques suivant un module premier (French) , Bull. Soc. Math. France,  6 
+(1878) 49–54.
+
+ 
+      
+ [27] 
+  S. Luo,  Short zero-sum sequences over abelian p-groups of
+large exponent , J. Number Theory  177  (2017), 28-36.
+
+ 
+      
+ [28] 
+  B. Lindström,  Determination of two vectors from the sum , J. Combinatorial Theory  6.4  (1969),
+402-407.
+
+ 
+      
+ [29] 
+  B. Roy and R. Thangadurai,  On zero-sum subsequences in a finite abelian  p p -group of length not exceeding a given number , J. Number Theory  191  (2018), 246–257.
+
+ 
+      
+ [30] 
+  A. Sidorenko,  On generalized Erds-Ginzburg-Ziv constants for  ℤ 2 d \mathbb{Z}_{2}^{d} , J. Comb. Theory Ser. A  174  (2020), 105254.
+
+ 
+      
+ [31] 
+  W. Schmid and J. Zhuang,  On short zero-sum subsequences
+over  p p -groups , Ars Combin.  95  (2010), 343-352.
+
+ 
+      
+ [32] 
+  A. Sheikh,  The Davenport Constant of Finite Abelian Groups , Ph.D Dissertation, University of London, 2010.
+
+ 
+      
+ [33] 
+  C. Wang and K. Zhao,  On zero-sum subsequences of length not exceeding a given number , J. Number Theory  176  (2017), 365-374.
+
+ 
+      
+ [34] 
+  S. Zhang,  On some zero-sum invariants for abelian groups of rank three , (2023), arXiv:2310.05458, https://doi.org/10.48550/arXiv.2310.05458.
+
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+   
+    Experimental support, please
+     view the build logs 
+    for errors. Generated by
+     
+       
+        L
+         A 
+        T
+         E 
+       
+       xml 
+       
+     .
+   
+   
+     Instructions for reporting errors 
+     We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+      support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+      methods listed below: 
+     
+       Click the "Report Issue"  ( 
+             
+           )  button, located in the page header. 
+     
+     Tip:  You can select the relevant text first, to include it in your report. 
+     Our team has already identified  the following issues . We appreciate your time reviewing and reporting rendering errors we
+      may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+      should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+      all. 
+     Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a  list of packages that need conversion , and welcome  developer contributions . 
+   
+ 
+   
+     
+       
+        We gratefully acknowledge support from
+        our  major funders ,
+         member institutions ,  ,
+        and all contributors.
+       
+       
+         About 
+         · 
+         Help 
+         · 
+         Contact 
+         · 
+         Subscribe 
+         · 
+         Copyright 
+         · 
+         Privacy 
+         · 
+         Accessibility 
+         · 
+         Operational Status  (opens in new tab) 
+       
+     
+
+     
+       Major funding support from 
+       
+         
+           
+         
+         
+           
+         
+         
+           
+         
+       
+     
+   
+ 
+   
+     
+       
+     
+   
+ 
+ 

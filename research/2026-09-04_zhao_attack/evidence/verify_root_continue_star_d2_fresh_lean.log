@@ -1,0 +1,6 @@
+Lean (version 4.30.0, x86_64-w64-windows-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+'StarD2ScalarCertificate.all_patterns_covered' depends on axioms: [propext]
+'StarD2ScalarCertificate.all_selections_valid' depends on axioms: [propext]
+'StarD2ScalarCertificate.number_of_patterns' does not depend on any axioms
+StarD2ScalarCertificate.lean: process exit code 0
+Forbidden token scan: no matches for sorry|admit|^axiom|unsafe

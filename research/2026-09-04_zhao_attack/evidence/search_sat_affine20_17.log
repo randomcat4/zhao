@@ -1,0 +1,16 @@
+CONFIG {'n': 20, 'm': 14, 'cap': 3, 'mode': 'affine', 'seed': 17, 'seconds': 120.0, 'max_iterations': 5000} z3=5.1.0 variables=375
+ITERATION i=1 cuts=50 new=50 support=8 indexed_short_zeros=1003 elapsed=0.046
+ITERATION i=2 cuts=129 new=79 support=10 indexed_short_zeros=1855 elapsed=0.093
+ITERATION i=3 cuts=323 new=194 support=15 indexed_short_zeros=796 elapsed=0.171
+ITERATION i=4 cuts=433 new=110 support=13 indexed_short_zeros=1124 elapsed=0.250
+ITERATION i=5 cuts=474 new=41 support=11 indexed_short_zeros=496 elapsed=0.343
+ITERATION i=6 cuts=599 new=125 support=13 indexed_short_zeros=1340 elapsed=0.468
+ITERATION i=7 cuts=678 new=79 support=12 indexed_short_zeros=1050 elapsed=0.562
+ITERATION i=8 cuts=848 new=170 support=13 indexed_short_zeros=2160 elapsed=0.687
+ITERATION i=9 cuts=954 new=106 support=12 indexed_short_zeros=1744 elapsed=0.781
+ITERATION i=10 cuts=1047 new=93 support=12 indexed_short_zeros=1617 elapsed=0.968
+ITERATION i=25 cuts=6449 new=529 support=16 indexed_short_zeros=1789 elapsed=5.796
+ITERATION i=50 cuts=23140 new=639 support=17 indexed_short_zeros=1600 elapsed=22.781
+ITERATION i=75 cuts=38919 new=869 support=18 indexed_short_zeros=1564 elapsed=47.140
+ITERATION i=100 cuts=54598 new=342 support=15 indexed_short_zeros=1487 elapsed=82.234
+FINAL {"status": "INCOMPLETE", "reason": "canceled", "config": {"n": 20, "m": 14, "cap": 3, "mode": "affine", "seed": 17, "seconds": 120.0, "max_iterations": 5000}, "z3": "5.1.0", "iterations": 121, "cuts": 68994, "elapsed_seconds": 120.01500000001397, "candidate_sequence": null}

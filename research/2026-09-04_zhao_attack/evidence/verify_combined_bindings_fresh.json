@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "script_sha256": "50b85fcaa1c3def13a1eb59dee125d4b337eb9d3fab5ae5433fce1f32dc541c4",
+  "snapshots": {
+    "proofs/certified_reduction.md": {
+      "snapshot": "evidence\\verify_combined_certified_reduction_snapshot.md",
+      "sha256": "ec64262b72048645f39e8c53ec2e7d6d153b76325c185ee2b27c9546d53f07a9"
+    },
+    "proofs/lower_bound_18.md": {
+      "snapshot": "evidence\\verify_combined_lower_bound_18_snapshot.md",
+      "sha256": "4480d2e73c7061d495f8b1bc16baa56debc8941df49a58d24a9dc7b10a27c765"
+    },
+    "formal/LowerBound18.lean": {
+      "snapshot": "evidence\\verify_combined_LowerBound18_snapshot.lean",
+      "sha256": "be7bfa2cbb108831db6299580efee1aa3d4a9b0d32101e669811fd461e4e21b9"
+    },
+    "proofs/stronger_algebra.md": {
+      "snapshot": "evidence\\verify_combined_stronger_algebra_snapshot.md",
+      "sha256": "acd6781fcae0a4663bdac251c201f884c583c49bd637f46d91311e88384b71fa"
+    }
+  },
+  "3332_scope": "certificate binding and all-root comparison only; no new 20M replay",
+  "3332_source_sha256": "be0064f833141368bd2359bf932969180117026215b095748ad847f9cae858de",
+  "3332_verified_sha256": "8466afbc7367c91107d1bcb3359fcb45cf97c0eaf7e5553c8864057403d6cb2a",
+  "3332_roots": 113,
+  "3332_nodes": 20707001,
+  "3332_levels": {
+    "12": 113,
+    "13": 17918,
+    "14": 815641,
+    "15": 7222436,
+    "16": 10793019,
+    "17": 1857872,
+    "18": 2
+  },
+  "double_script_source_hashes_match": true,
+  "lean": {
+    "file": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\evidence\\verify_combined_LowerBound18_snapshot.lean",
+    "file_sha256": "be7bfa2cbb108831db6299580efee1aa3d4a9b0d32101e669811fd461e4e21b9",
+    "commands": [
+      {
+        "command": [
+          "C:/Users/UIO/.elan/bin/lean.exe",
+          "+leanprover/lean4:v4.30.0",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "Lean (version 4.30.0, x86_64-w64-windows-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:/Users/UIO/.elan/bin/lake.exe",
+          "+leanprover/lean4:v4.30.0",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:/Users/UIO/.elan/bin/lean.exe",
+          "+leanprover/lean4:v4.30.0",
+          "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\evidence\\verify_combined_LowerBound18_snapshot.lean"
+        ],
+        "exit_code": 0,
+        "stdout": "'noShortZero18' does not depend on any axioms\n",
+        "stderr": ""
+      }
+    ],
+    "forbidden_tokens": [],
+    "axioms": [],
+    "coverage": "finite noShortZero18 only; not endpoints A/B"
+  }
+}

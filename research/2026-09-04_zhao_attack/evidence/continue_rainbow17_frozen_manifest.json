@@ -1,0 +1,49 @@
+{
+  "scope": "local six-edge three-colour two-matching graph only",
+  "verdict": "LOCAL_SIX_EDGE_LEMMA_DISPROVED",
+  "frozen_date": "2026-09-04",
+  "files": [
+    {
+      "path": "proofs/continue_rainbow17.md",
+      "sha256": "6f4577b965fdc9618db5905b181c303f4e7d6a0d617a09fbe4d464a70e428281",
+      "bytes": 6605
+    },
+    {
+      "path": "scripts/continue_rainbow17_classify.py",
+      "sha256": "a9a19c9b58174a69843c3e211b108a0d69d146b52e3095af505a59bbf6ea5e2a",
+      "bytes": 9312
+    },
+    {
+      "path": "evidence/continue_rainbow17_classify.json",
+      "sha256": "2b9786d4f02ec27ea2f1b7d97c654d550f7138009611d002f3d721423910bc33",
+      "bytes": 106062
+    },
+    {
+      "path": "scripts/continue_rainbow17_slot_partition_check.py",
+      "sha256": "b6a3495b44f43b8b16568d754238e72255a9e331dadbeb35bb77379634ff9c37",
+      "bytes": 4869
+    },
+    {
+      "path": "evidence/continue_rainbow17_slot_partition_check.json",
+      "sha256": "bd5ea4bed90ce0a32ce2b71e3e50cc25ea85818dc46ec96d0e1d87c56d455a47",
+      "bytes": 723
+    }
+  ],
+  "replay": [
+    "python -B scripts/continue_rainbow17_classify.py",
+    "python -B scripts/continue_rainbow17_slot_partition_check.py"
+  ],
+  "expected": {
+    "ordered_slot_partitions_without_rainbow": 37808,
+    "color_preserving_isomorphism_types": 92,
+    "isomorphism_type_vertex_count_histogram": {
+      "4": 1,
+      "5": 7,
+      "6": 46,
+      "7": 31,
+      "8": 7
+    },
+    "explicit_counterexample_nonempty_zero_subsets": 0,
+    "claim_of_extension_to_17_atom": false
+  }
+}

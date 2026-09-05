@@ -1,0 +1,40 @@
+{
+  "status": "CORRECT_FINAL_TEXT_BOUND",
+  "source": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\proofs\\certified_reduction.md",
+  "source_sha256": "83c2666de5277dc60ed1e41ab59bd517b58b54efcf34e04a5777a8f12d66fdb1",
+  "source_line_count": 61,
+  "snapshot": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\evidence\\verify_combined_certified_reduction_final_snapshot.md",
+  "snapshot_sha256": "83c2666de5277dc60ed1e41ab59bd517b58b54efcf34e04a5777a8f12d66fdb1",
+  "previous_snapshot_sha256": "ec64262b72048645f39e8c53ec2e7d6d153b76325c185ee2b27c9546d53f07a9",
+  "diff": "C:\\game\\gameproject\\showa100\\math\\2026-09-04_zhao_attack\\evidence\\verify_combined_certified_reduction_final_diff.txt",
+  "diff_sha256": "2b0605ae7b11554e20e7a50b0989f066b033a2c07ba3e67ff48d02407baf3aa9",
+  "review": "Final full text independently read; steps 3 and 4 match the already audited interfaces; forward reference to step 5 is noncircular under the global height input and step 2.",
+  "scope": "Text identity and final statement only. No trees, Lean builds, or new local extensions rerun or incorporated.",
+  "table": [
+    {
+      "a": 0,
+      "b_upper": 7,
+      "A_support_lower": 14,
+      "B_support_lower": 13
+    },
+    {
+      "a": 1,
+      "b_upper": 6,
+      "A_support_lower": 13,
+      "B_support_lower": 12
+    },
+    {
+      "a": 2,
+      "b_upper": 4,
+      "A_support_lower": 13,
+      "B_support_lower": 12
+    },
+    {
+      "a": 3,
+      "b_upper": 1,
+      "A_support_lower": 14,
+      "B_support_lower": 13
+    }
+  ],
+  "endpoint_status": "A INCOMPLETE; B INCOMPLETE; K in {10,14,15}"
+}
