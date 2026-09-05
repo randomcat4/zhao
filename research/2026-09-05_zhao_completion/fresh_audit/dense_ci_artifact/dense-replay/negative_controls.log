@@ -1,0 +1,23 @@
+{
+  "negative_controls_total": 4,
+  "rejected": 4,
+  "tests": [
+    {
+      "mutation": "rhs",
+      "rejected": true
+    },
+    {
+      "mutation": "unknown_zero_layer",
+      "rejected": true
+    },
+    {
+      "mutation": "one_root_omitted",
+      "rejected": true
+    },
+    {
+      "mutation": "one_root_duplicated",
+      "rejected": true
+    }
+  ],
+  "exit": "NORMAL"
+}

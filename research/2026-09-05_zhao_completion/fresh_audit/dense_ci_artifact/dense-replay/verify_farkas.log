@@ -1,0 +1,38 @@
+{
+  "unquotiented_denominator": 9590,
+  "processed": 9590,
+  "scalar_orbits": 2406,
+  "minimum_score": 0,
+  "rhs": -2844400,
+  "zero_score_profiles": [
+    [
+      6,
+      0,
+      0,
+      0,
+      15
+    ],
+    [
+      6,
+      0,
+      0,
+      15,
+      0
+    ],
+    [
+      6,
+      0,
+      15,
+      0,
+      0
+    ],
+    [
+      6,
+      15,
+      0,
+      0,
+      0
+    ]
+  ],
+  "exit": "NORMAL"
+}

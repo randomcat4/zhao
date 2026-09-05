@@ -1,0 +1,30 @@
+{
+  "rank3_nodes": 450754,
+  "counts_by_size": {
+    "3": 1,
+    "4": 90,
+    "5": 3000,
+    "6": 41247,
+    "7": 195462,
+    "8": 193464,
+    "9": 17490
+  },
+  "maximum": 9,
+  "orbit_counts": {
+    "7": 1084,
+    "8": 659,
+    "9": 43
+  },
+  "normalized_counts": {
+    "7": 195462,
+    "8": 193464,
+    "9": 17490
+  },
+  "normalized_denominator": 406416,
+  "normalized_processed": 406416,
+  "roots_processed": 1786,
+  "uncovered": 0,
+  "translation_unit_tests": 15625,
+  "exit": "NORMAL",
+  "seconds": 13.363117912
+}

@@ -29,7 +29,7 @@ K = -978253109306
 Y16 = 0
 ```
 
-候选稠密纤维路线的 PR 包漏交 `rank3_roots.txt` 与逐根日志，不能直接视为可重放证据。补救工作流 `.github/workflows/audit-dense-fibre.yml` 会先从 `generate_roots.cpp` 重建根表，再运行完整搜索。该路线是第二证明；端点 A 的最终认证使用上面的投影证明与独立证书重建。
+候选稠密纤维路线的原 PR 包漏交 `rank3_roots.txt` 与逐根日志，不能直接视为可重放证据。补救工作流 `.github/workflows/audit-dense-fibre.yml` 已从 `generate_roots.cpp` 重建根表并完成全量搜索；16 个命令全部返回 0，精确扩展分母为 `17972093794219884182340301482`。下载的日志、退出码、重建根表和执行报告位于 `fresh_audit/dense_ci_artifact/`，摘要见 `fresh_audit/dense_fibre_ci_replay.md`。该路线构成第二个已通过的平方自由证明；端点 A 另有上面的投影证明与独立证书重建。
 
 ## 建议阅读顺序
 

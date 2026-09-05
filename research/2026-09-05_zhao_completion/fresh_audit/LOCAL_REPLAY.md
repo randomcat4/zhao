@@ -73,4 +73,4 @@ audit_interfaces.py: 3125 residue tuples; 7547 deletion sets; 9364 equations
 audit_legacy_models.py: PASS
 ```
 
-`negative_controls.py` 因 PR 包漏交 `rank3_roots.txt` 而失败。完整补救重放移至 GitHub Actions 33987370459；其状态单独记录，不把快速检查外推为整条有限搜索通过。
+`negative_controls.py` 在原 PR 检出中因漏交 `rank3_roots.txt` 而失败。完整补救重放移至 GitHub Actions 33987370459，并已成功完成：16 个命令全部返回 0，完整分母、两套逐根日志和工件绑定见 `dense_fibre_ci_replay.md`。原本机失败仍记录在此，用来区分“原包不可直接运行”和“补救后的完整路线通过”。

@@ -1,0 +1,200 @@
+{
+  "residue_tuple_denominator": 3125,
+  "residue_tuples_processed": 3125,
+  "deletion_matrices": {
+    "17": {
+      "residue_tuples": 625,
+      "solutions": 125,
+      "integer_coefficient_rows": [
+        [
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ]
+    },
+    "18": {
+      "residue_tuples": 625,
+      "solutions": 25,
+      "integer_coefficient_rows": [
+        [
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          18,
+          4,
+          -3,
+          2,
+          -1
+        ]
+      ]
+    },
+    "19": {
+      "residue_tuples": 625,
+      "solutions": 5,
+      "integer_coefficient_rows": [
+        [
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          19,
+          5,
+          -4,
+          3,
+          -2
+        ],
+        [
+          171,
+          10,
+          -6,
+          3,
+          -1
+        ]
+      ]
+    },
+    "20": {
+      "residue_tuples": 625,
+      "solutions": 1,
+      "integer_coefficient_rows": [
+        [
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          20,
+          6,
+          -5,
+          4,
+          -3
+        ],
+        [
+          190,
+          15,
+          -10,
+          6,
+          -3
+        ],
+        [
+          1140,
+          20,
+          -10,
+          4,
+          -1
+        ]
+      ]
+    },
+    "21": {
+      "residue_tuples": 625,
+      "solutions": 1,
+      "integer_coefficient_rows": [
+        [
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          21,
+          7,
+          -6,
+          5,
+          -4
+        ],
+        [
+          210,
+          21,
+          -15,
+          10,
+          -6
+        ],
+        [
+          1330,
+          35,
+          -20,
+          10,
+          -4
+        ],
+        [
+          5985,
+          35,
+          -15,
+          5,
+          -1
+        ]
+      ]
+    }
+  },
+  "position_deletion_sets": 7547,
+  "position_deletion_equations": 9364,
+  "B_squarefree_design": {
+    "pairs_through_point": 171,
+    "pairs_per_block": 6,
+    "remainder": 3
+  },
+  "six_block_pair_types_processed": 210,
+  "forced_C4_degrees": [
+    0,
+    0,
+    0,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15
+  ],
+  "degree_sum": 270,
+  "quotient_fifteen_pair_cases": [
+    {
+      "pairs": 0,
+      "h": 2,
+      "ordinary_degree": 2,
+      "pair_endpoint_degree": 3,
+      "degree_sum": 30
+    },
+    {
+      "pairs": 1,
+      "h": 1,
+      "ordinary_degree": 1,
+      "pair_endpoint_degree": 2,
+      "degree_sum": 17
+    }
+  ],
+  "m_denominator": 23253,
+  "m_min": 20,
+  "m_max": 116280,
+  "raw_extension_by_h": {
+    "7": 17684643272010972859537476016,
+    "8": 286990041657481993998305684,
+    "9": 460480551429328804519782
+  },
+  "raw_extension_total": 17972093794219884182340301482,
+  "raw_extension_bits": 94,
+  "exit": "NORMAL"
+}
