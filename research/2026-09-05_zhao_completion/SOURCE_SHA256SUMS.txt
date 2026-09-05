@@ -1,6 +1,8 @@
 # SHA-256 manifest
 
-Updated after the 2026-09-05 round-two double-only proof intake. No local build artifacts are included.
+Updated after the 2026-09-05 round-two proof intake. No local build artifacts are included.
+
+Dynamic overview pages are intentionally omitted from this aggregate manifest because they may be edited while the PR is open. The `independent_three_anchor/` and `pro_round2/03_double_only/` packages each carry their own local SHA-256 manifest; the double-only package files are also listed below.
 
 Original user-provided downloads:
 
@@ -17,7 +19,6 @@ Repository intake files:
 ad46148b0834247aefc8a97904821f8744ed51106922d45f6e0281b2b782df66  pro_round1/03_one_triple.md
 83649215a72aca9b631f7d535459dcc9c319ab322269afee140ea8fea9ea07bd  pro_round1/04_two_triples.md
 7d4829fc7771c25f9b7497e4e436f6932def200975c961c5bed10d5bf0842f11  pro_round2_prompts.md
-6da5128b6178349c62b20c27488f3540648ce72101cd56e09a6a580a63d9d1bb  README.md
 508fb0ab1f4ad9aa46cdf379c4e3c7c74cababd4c87d323d5c7729fe158e412c  rescue/B_proof_A_progress.md
 d6e71d3bc4c537a10551ad556b88cc2a119a00c3792aa0e7f5f5867ce36d5663  rescue/bundle/zhao_result/logs/a2b2_rank4_dynamic.log
 616ac8f6ce07bcc3d7ae9e7c0f925182c85eaca09f686ecf59fd1c9541c66a4a  rescue/bundle/zhao_result/logs/a2b3.log
