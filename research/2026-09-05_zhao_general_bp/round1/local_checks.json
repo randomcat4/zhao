@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "endpoint_status": "NOT_PROVED_NO_COUNTEREXAMPLE",
+  "prime_range": [
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43
+  ],
+  "root_interpolation_cases": 1577056,
+  "root_multiset_equalities": 3984,
+  "near_period_orbit_checks": 528,
+  "collinear_capacity_checks": 252,
+  "integer_collision_vectors": 120,
+  "rank_minor_checks": 11520,
+  "candidate_verifier_self_test": {
+    "status": "PASS",
+    "cases": 56,
+    "scope": "implementation self-test, not a proof of B_p"
+  },
+  "scope": "finite checks only; universal lemmas have separate symbolic proofs"
+}
