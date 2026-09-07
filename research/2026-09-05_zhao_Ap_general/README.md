@@ -1,6 +1,6 @@
 # General-prime endpoint A_p: low-multiplicity research thread
 
-Collected: 2026-09-05
+Collected: 2026-09-05; round 5 appended 2026-09-06.
 
 ## Target
 
@@ -10,7 +10,7 @@ For every prime `p >= 5`, prove or refute
 A_p:\qquad s_{\le 3p-2}(C_p^4)\le 5p-4.
 \]
 
-This directory archives four successive research rounds from one thread. It does **not** claim that the full endpoint is solved. The certified `p=5` endpoint under `research/2026-09-05_zhao_completion/` remains frozen.
+This directory archives five successive research rounds from one thread. It does **not** claim that the full endpoint is solved. The certified `p=5` endpoint under `research/2026-09-05_zhao_completion/` remains frozen.
 
 ## Strongest unconditional result in this thread
 
@@ -45,16 +45,20 @@ The proof first excludes multiplicity `p-2`, then excludes multiplicity `p-3` fo
   \]
   full coverage and no common point;
 - exclusion of the three-point double-hitting core for all `p >= 7`;
-- additional large-prime transversal/fibre restrictions in round 4.
+- round 4 large-prime transversal/fibre restrictions;
+- round 5 exclusion of every `K_{2,2}` transversal configuration for all `p>=7`, induced `2K_2` for `p>=17`, and `P_4` for `p>=29`;
+- consequently, for `p>=29` any nonempty transversal graph is a star with at most three leaves; for `p>=149` only `K_{1,2}` or `K_{1,3}` can remain, and the `K_{1,3}` case has four distinct singleton endpoint values;
+- round 5 also gives an actual `x_0=0`, `theta=-1` sequence family satisfying the point/pair/vector identities, but only at height `p-1`; it is explicitly **not** an `A_p` counterexample.
 
 ## Current frontier
 
-The complete `h=p-4` branch remains open. The two main unresolved mechanisms are:
+The complete `h=p-4` branch remains open. The main unresolved mechanisms are now:
 
-1. control the unique deletion parameter `theta`, especially `theta=-1`, where the scalar deletion system no longer forces a `3p` atom;
-2. if a `3p` atom exists, finish the fixed-sum 4-uniform block-family classification using mod-degree, actual-value fibres and transversal constraints.
+1. the genuine-height `x_0=0` / `theta=-1` branch, where the scalar deletion system and the currently available point/pair integer lifts do not yet contradict `h=p-4`;
+2. if a `3p` atom exists, the remaining star-shaped fixed-sum 4-uniform transversal structures, especially `K_{1,2}` and the all-distinct `K_{1,3}` branch;
+3. smaller primes where a two-point transversal is not forced by the large-prime covering argument.
 
-For `p >= 149`, round 4 proves that a conditional `3p`-atom family must have a two-point transversal with tightly restricted endpoint multiplicities, and at least one associated 3-uniform link family has a common point. This is a strict narrowing, not yet a contradiction.
+For `p >= 149`, a conditional `3p`-atom family has a transversal graph whose unique nontrivial component is `K_{1,2}` or `K_{1,3}`. This is a strict narrowing, not yet a contradiction.
 
 ## Files and reproduction
 
@@ -67,9 +71,10 @@ python3 round1/verify.py
 python3 round2/verify_round2.py
 python3 round3/verify_round3.py
 python3 round4/verify_round4.py
+python3 round5/verify.py
 ```
 
-Immediately before this archive was prepared, all four verifier entry points were replayed successfully from their complete local packages. The scripts check finite arithmetic/interfaces only; they are not exhaustive searches over all sequences in `F_p^4`, and universal results rest on the hand proofs in the notes.
+The first four verifier entry points were replayed successfully when the original archive was prepared. Round 5 was run independently before being appended and records its output in `round5/verification_report.json`. These scripts check finite arithmetic/interfaces and explicit constructions; they are not exhaustive searches over all sequences in `F_p^4`, and universal results rest on the hand proofs in the notes.
 
 ## Upstream dependencies
 
