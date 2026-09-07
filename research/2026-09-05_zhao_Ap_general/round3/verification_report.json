@@ -1,0 +1,23 @@
+{
+  "status": "FINITE_INTERFACES_PASS_ONLY",
+  "replayed_before_archive": true,
+  "proves_Ap": false,
+  "proves_height_p_minus_5": false,
+  "original_verifier_sha256": "bf52b24e8f5dc0004dce277e9571a50233f99adc8a7a6f2bf1781fa0d3138f0d",
+  "original_full_report_sha256": "ce3fc76802a3165c95886202394c79c4af56a47f826c2122a4a443e13e0e0510",
+  "key_counts": {
+    "parameter_cases": 407,
+    "coefficient_checks": 41859,
+    "quad_counterfamily_type_checks": 495,
+    "normal_form_r_range": [3, 16]
+  },
+  "checked_interfaces": [
+    "p-r deletion normal forms and finite-difference kernel",
+    "one-missing-value core length/capacity interfaces",
+    "p-4 four-block deletion sign and +1/2 residue",
+    "fixed-sum mod-degree core bound",
+    "strict intersecting four-block counterfamily to naive union bounds",
+    "squarefree relaxed-system witnesses for p=5,7,11,13,17,19"
+  ],
+  "scope": "Finite exact interfaces only. The general statements and the fact that h=p-4 remains open are in research_note.md."
+}
