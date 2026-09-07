@@ -1,0 +1,20 @@
+{
+  "status": "A_POSITIVE_RESULTS_VERIFIED_B_REDUCTIONS_REQUIRE_CLEAN_COMPLETION",
+  "A": {
+    "excess_deletion_unimodular_transform": true,
+    "matrix_entry": "(-1)^(s+1)*binom(-4-s,q)",
+    "determinant": "(-1)^(r-3)",
+    "x0_zero_U_exists": true,
+    "U_length": "4p-4",
+    "U_partitions_into_p_minus_1_bases": true,
+    "length_layering_for_deleted_four_subsums": true,
+    "uniform_length_layering_for_all_group_elements": false
+  },
+  "B": {
+    "maximum_support_near_squarefree": "needs_clean_completion_or_cross_link_lemma",
+    "rank3_unique_double": "comparison_core_valid_needs_clean_neighbor_and_spanning",
+    "rank3_squarefree_coloop_or_2_cocircuit": "matroid_reduction_valid_needs_value_changing_completion",
+    "common_missing_bridge": "prove at least one p-3 link has a maximum-support value-changing completion"
+  },
+  "source_boundary": "named latest B manuscripts were not present on the readable branches at audit time"
+}
