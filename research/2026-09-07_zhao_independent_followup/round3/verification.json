@@ -1,0 +1,10 @@
+{
+  "status": "PASS_EXPLICIT_CERTIFICATES_AND_LOCAL_MODELS",
+  "A7_pair_gram_infeasible": true,
+  "B_local_mobius_checked_primes": [7,11,13],
+  "B_sidon_count_first_checked_prime_contradiction": 29,
+  "B_p7_pair_completion_degree": [7],
+  "B_p7_complete_fibre_mod": 6,
+  "B_p7_short_zero_length": 6,
+  "scope": "Exact verification of the displayed finite certificates; all-prime claims require the symbolic proofs in the audit note."
+}
