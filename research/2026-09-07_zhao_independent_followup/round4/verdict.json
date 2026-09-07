@@ -1,0 +1,22 @@
+{
+  "status": "SHORTCUT_INVALID_VALID_IDENTITIES_RETAINED",
+  "reliable_height_bound": "h(S) <= p-4",
+  "valid_identities": {
+    "sum_omega": "-theta",
+    "point_weight": "W_i = d_3(i)-4*d_4(i) = alpha_i-beta_i",
+    "sum_point_weights": "-4*theta",
+    "weighted_group_sum": "sum_i W_i g_i = 0"
+  },
+  "theta_minus_one": {
+    "sum_point_weights": 4,
+    "all_W_i_equal_one": false,
+    "augmented_vector_relation": "sum_i W_i*(1,g_i) = (4,0)"
+  },
+  "invalid_step": "theta=-1 => W_i=1 for every i",
+  "davenport_complement_step_if_sigma_R_zero": true,
+  "r5_shadow": {
+    "global_combination_seen": "theta_1-theta_0",
+    "point_weight": "alpha_i-beta_i+gamma_i",
+    "closes_two_parameter_branch": false
+  }
+}
