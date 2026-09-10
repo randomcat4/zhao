@@ -1,0 +1,171 @@
+{
+  "certificate_sha256": "ee0458ec40253f755d4e57b77702ff5ad1ee1b752f090fd4165e058a38528318",
+  "complementary_singleton_doubleton": {
+    "boundary_search": {
+      "first_boundary_witness": {
+        "pair_index": 0,
+        "triangle_multiplicities": [
+          231,
+          231,
+          0
+        ]
+      },
+      "kernel_size_2p_minus_3_feasible_pair_count": 0,
+      "kernel_size_2p_minus_4_feasible_pair_count": 2,
+      "kernel_size_2p_minus_5_feasible_pair_count": 234,
+      "sharp_upper_bound": 462
+    },
+    "expected_count": 234,
+    "oriented_cross_domain_count": 234
+  },
+  "current_literal_mask_frontier": {
+    "K_size": 446,
+    "Q_sizes": [
+      464,
+      465,
+      464,
+      464
+    ],
+    "conditional_cross_trigger": "if a non-tail deletion from h8 Q_0 or Q_2 has a missing nonzero subsum, its Property-B completion and the actual h7 atom force the cross-triangle normal form",
+    "decorated_shard_id": "decorated-1356",
+    "dependency_status": "upstream mask enumeration not independently audited here",
+    "displayed_literal_instance_reconstructed": true,
+    "heavy_multiplicity_for_any_max_or_incomplete_h8_completion_inside_K_at_least": 213,
+    "lengths": [
+      8,
+      7,
+      8,
+      8
+    ],
+    "row_eliminated": false,
+    "source_sha256": "3a39fcc32b439c4a6d75a2ad1a50ca3e832ff2d1a98d11c7e9abe11e4f64b6a7",
+    "traces": [
+      1,
+      2,
+      4,
+      6
+    ]
+  },
+  "first_outer_row": {
+    "K_size_interval_after_this_attack": [
+      439,
+      462
+    ],
+    "decorated_shard_id": "decorated-0011",
+    "endpoint_lengths": [
+      7,
+      7,
+      8,
+      7,
+      8,
+      7
+    ],
+    "endpoint_trace_masks": [
+      3,
+      4,
+      1,
+      6,
+      2,
+      5
+    ],
+    "reason_for_upper_bound": "singleton trace 4 and complementary doubleton trace 3",
+    "source_sha256": "90726fac4fab26e23192d27a2203b9dd2bda8ac8d1fea7486f216df10bfec68a"
+  },
+  "length_2p_minus_2_atom_dichotomy": {
+    "remaining_branch": "all nonzero targets occur as nonempty subsums",
+    "row_eliminations_from_this_dichotomy_alone": 0,
+    "statement_checked_in_proof": true,
+    "use": "a missing-nonzero-subsum branch embeds K in one more Property-B domain"
+  },
+  "position_level_counterexamples": {
+    "model_C": {
+      "attains_complementary_pair_upper_bound": true,
+      "common_kernel_size": 462,
+      "endpoint_traces": [
+        [
+          "e"
+        ],
+        [
+          "f",
+          "t"
+        ]
+      ],
+      "exact_literal_intersection": true
+    },
+    "model_D": {
+      "common_kernel_size": 456,
+      "common_support": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "distinct_standard_domains": 2,
+      "endpoint_traces": [
+        [
+          "f",
+          "t"
+        ],
+        [
+          "e",
+          "t"
+        ],
+        [
+          "e",
+          "f"
+        ]
+      ],
+      "exact_literal_intersection": true
+    },
+    "model_N": {
+      "all_three_complements_are_the_same_label_multisequence": true,
+      "common_kernel_size": 463,
+      "endpoint_traces": [
+        [
+          "e"
+        ],
+        [
+          "e",
+          "f"
+        ],
+        [
+          "e",
+          "t"
+        ]
+      ],
+      "exact_literal_intersection": true
+    }
+  },
+  "rigidity": {
+    "common_support_sizes_1_2_and_p_are_impossible_for_distinct_domains": true,
+    "large_common_kernel_alternatives": [
+      "all Property-B support domains coincide",
+      "exactly two cross domains with common support {g,h,g+h}"
+    ]
+  },
+  "schema": "unique-tail-property-b-doubleton-intersection-attack-v1",
+  "scope": {
+    "instantiated_slice": "p=233, type-(3), |P|=2",
+    "main_lemmas": "all primes p >= 5 possessing Property B",
+    "not_claimed": [
+      "no claim that any outer survivor is a complete exact-slice model",
+      "no elimination of decorated-0011",
+      "no unified endpoint-mask gluing for the displayed 234 first-row domains"
+    ]
+  },
+  "status": "PROVED_REDUCTION/INDEPENDENT_REVIEW_CORRECT/GLOBAL_INCOMPLETE",
+  "three_doubleton": {
+    "consequence_for_p233": "common kernel size at most 462",
+    "exceptional_characteristic_in_hand_proof": 3,
+    "kernel_size_2p_minus_3_coordinate_solutions": 0,
+    "tested_alpha_beta_assignment_cases": 30
+  }
+}

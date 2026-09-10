@@ -1,0 +1,72 @@
+{
+  "atomic_prefix_pruned": 86194627,
+  "completed": [
+    [
+      [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      60,
+      [
+        31,
+        31
+      ]
+    ]
+  ],
+  "escape_prefix_pruned": 0,
+  "final_escape_pruned": 33687,
+  "final_nonatoms": 3300,
+  "final_zero_sum_candidates": 36987,
+  "forced_last_rejected": 1560649,
+  "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "hits": [],
+  "orbit_count": 0,
+  "orbit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "ordered_prefix_nodes": 88765802,
+  "profile_count": 1,
+  "profiles": [
+    {
+      "atomic_prefix_pruned": 86194627,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 33687,
+      "final_nonatoms": 3300,
+      "final_zero_sum_candidates": 36987,
+      "forced_last_rejected": 1560649,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 88765802,
+      "profile": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        2,
+        4
+      ],
+      "profile_index": 31,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    }
+  ],
+  "profiles_sha256": "931cf550b433bef1ad9e89456580eabf94a303d191e964debaebb6df2f095733",
+  "schema": "p7-m4-full68-support8-v1",
+  "scope": "all normalized support-eight, no-multiplicity-three length-19 atoms with pointed q^4 and maximum fibre four; quotient necessary layer only",
+  "target_atom_hits": 0,
+  "target_with_T_survivor": 0
+}

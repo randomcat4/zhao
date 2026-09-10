@@ -1,0 +1,107 @@
+{
+  "certificate_sha256": "b48d1106b762b79d538e5cec2a1170abf49645616ecfd89165f2ac4991d9ae99",
+  "dependencies_sha256": {
+    "proofs/extreme_atom_fringe.md": "47e2d62b245774c09a0d59b6f5cb025f0c3338392de20cd54fbd517ef876a70c",
+    "proofs/unique_tail_remaining_six_f2_complements.md": "5653c0286a5b8957eaee55c86ad55e87676b6b21f1a1301b44bf056a926a9bc1",
+    "unique_tail_remaining_six_f2_complements_report.json": "f64a708a0730372038eef23e5236a061da7053fd9b9dda154878cbb0182801d9",
+    "verifications/extreme_exchange_review.md": "835dd2a2d217eeff1d1726198a0520debee927d8e592c42725b4f3438ac0ba82",
+    "verifications/unique_tail_remaining_six_f2_complements_independent_review.md": "5468c96a0fd99dff1484748271c130bafb0955f86c79837de0fa328008692fd3"
+  },
+  "forced_rows": [
+    {
+      "B_length": 697,
+      "C_length": 6,
+      "P_size": 1,
+      "defect": 1,
+      "full_signed_target_coefficients_per_deleted_B": 12649337,
+      "p": 233,
+      "packing_type": "(2)",
+      "proper_nonempty_C_subset_count": 62,
+      "truncated_identity_instances_per_actual_C": 43214
+    },
+    {
+      "B_length": 697,
+      "C_length": 6,
+      "P_size": 2,
+      "defect": 1,
+      "full_signed_target_coefficients_per_deleted_B": 12649337,
+      "p": 233,
+      "packing_type": "(3)",
+      "proper_nonempty_C_subset_count": 62,
+      "truncated_identity_instances_per_actual_C": 43214
+    },
+    {
+      "B_length": 4195,
+      "C_length": 6,
+      "P_size": 1,
+      "defect": 1,
+      "full_signed_target_coefficients_per_deleted_B": 2738124199,
+      "p": 1399,
+      "packing_type": "(3)",
+      "proper_nonempty_C_subset_count": 62,
+      "truncated_identity_instances_per_actual_C": 260090
+    }
+  ],
+  "schema": "unique_tail_remaining_six_f2_extreme_fringe_v1",
+  "scope": {
+    "assumptions": [
+      "the three audited automatic six-item 2a blocks and their literal length-(3p-2) quotient-atom complements",
+      "the audited extreme-atom group-algebra fringe identity"
+    ],
+    "conclusion": "for every complement position z and every nonempty proper subset T of the corresponding actual six-item block C, the exact two-sided truncated signed representation identity holds; the deleted complement product equals the full group-sum element",
+    "not_concluded": [
+      "the signed representation sums are nonnegative counts",
+      "any of the three packing assignments is realizable",
+      "any remaining packing type is empty",
+      "the unique-tail branch is empty",
+      "A_p"
+    ]
+  },
+  "status": "THREE_EXTREME_COMPLEMENTS_GAIN_FULL_SIGNED_FRINGE__GLOBAL_INCOMPLETE",
+  "summary": {
+    "five_item_threshold_pair": [
+      3,
+      6
+    ],
+    "forced_row_count": 3,
+    "proper_nonempty_C_subsets_per_row_and_z": 62,
+    "restored_information": [
+      "every deleted long-complement position",
+      "every nonempty proper subset of the literal six-item block",
+      "all signed target coefficients of the deleted quotient atom",
+      "two complementary constant-length representation fringes"
+    ],
+    "singleton_threshold_pair": [
+      7,
+      2
+    ],
+    "truncated_identity_instances_across_one_actual_C_per_row": 346518
+  },
+  "threshold_pairs": [
+    {
+      "T_size": 1,
+      "complement_truncation_bound": 2,
+      "first_truncation_bound": 7
+    },
+    {
+      "T_size": 2,
+      "complement_truncation_bound": 3,
+      "first_truncation_bound": 6
+    },
+    {
+      "T_size": 3,
+      "complement_truncation_bound": 4,
+      "first_truncation_bound": 5
+    },
+    {
+      "T_size": 4,
+      "complement_truncation_bound": 5,
+      "first_truncation_bound": 4
+    },
+    {
+      "T_size": 5,
+      "complement_truncation_bound": 6,
+      "first_truncation_bound": 3
+    }
+  ]
+}

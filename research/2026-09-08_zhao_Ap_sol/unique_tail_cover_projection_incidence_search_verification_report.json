@@ -1,0 +1,125 @@
+{
+  "alternative_witnesses_verified": 420,
+  "canonical_classes_rebuilt": 744,
+  "certificate_sha256": "055614d4468c43e61ec0f768575d673a1bca47c5ea763bb16e861807e5e97c85",
+  "dense_selected_family_m_rows_rechecked": 339612,
+  "finite_fields": [
+    233,
+    1399
+  ],
+  "not_verified": [
+    "actual height coordinate",
+    "common R partition or P_i labels",
+    "induced short-block and Hasse closure",
+    "complete labelled SAT",
+    "A_p or K(C_p^4)=2p"
+  ],
+  "per_prime_joint_forbidden_functional_range": {
+    "1399": {
+      "maximum": 362,
+      "minimum": 238,
+      "union_bound_denominator": 1957201
+    },
+    "233": {
+      "maximum": 178,
+      "minimum": 114,
+      "union_bound_denominator": 54289
+    }
+  },
+  "per_prime_rank_nullity_distribution": {
+    "1399": [
+      {
+        "class_count": 6,
+        "endpoint_count": 5,
+        "equation_rank": 7,
+        "nullity": 7
+      },
+      {
+        "class_count": 36,
+        "endpoint_count": 6,
+        "equation_rank": 8,
+        "nullity": 6
+      },
+      {
+        "class_count": 5,
+        "endpoint_count": 7,
+        "equation_rank": 8,
+        "nullity": 6
+      },
+      {
+        "class_count": 73,
+        "endpoint_count": 7,
+        "equation_rank": 9,
+        "nullity": 5
+      },
+      {
+        "class_count": 9,
+        "endpoint_count": 8,
+        "equation_rank": 9,
+        "nullity": 5
+      },
+      {
+        "class_count": 81,
+        "endpoint_count": 8,
+        "equation_rank": 10,
+        "nullity": 4
+      }
+    ],
+    "233": [
+      {
+        "class_count": 6,
+        "endpoint_count": 5,
+        "equation_rank": 7,
+        "nullity": 5
+      },
+      {
+        "class_count": 36,
+        "endpoint_count": 6,
+        "equation_rank": 8,
+        "nullity": 4
+      },
+      {
+        "class_count": 4,
+        "endpoint_count": 7,
+        "equation_rank": 8,
+        "nullity": 4
+      },
+      {
+        "class_count": 74,
+        "endpoint_count": 7,
+        "equation_rank": 9,
+        "nullity": 3
+      },
+      {
+        "class_count": 12,
+        "endpoint_count": 8,
+        "equation_rank": 9,
+        "nullity": 3
+      },
+      {
+        "class_count": 78,
+        "endpoint_count": 8,
+        "equation_rank": 10,
+        "nullity": 2
+      }
+    ]
+  },
+  "schema": "unique_tail_cover_projection_incidence_search_verification_v1",
+  "search_certificate_sha256": "505d8d9c8e607d2db3ea4600a28a91419b0bd07e9cd5cf8dd6b966a1f5e80ddf",
+  "search_report_sha256": "69566eaa2840fa2252529cbe263bfc16185832bceba87fe39d10bf1d14324e1b",
+  "search_script_sha256": "ab092bd541c52c8b8f02e79a52b991771e664d615d7f5002b39fa448d51632e2",
+  "source_fixed_dense_selected_family_m_rows_rechecked": 525336,
+  "source_fixed_obstructed_classes": {
+    "1399": 210,
+    "233": 210
+  },
+  "source_fixed_unit_endpoint_pairs_rechecked": 15780,
+  "source_fixed_unobstructed_classes": {
+    "1399": 162,
+    "233": 162
+  },
+  "source_script_sha256": "f9bda3577fbbdc08da9a9e78b325cab701054855d83b24db70fe50f40a8e884a",
+  "status": "VERIFIED_ALL_420_ALTERNATIVE_INCIDENCE_WITNESSES",
+  "unit_endpoint_pairs_rechecked": 9516,
+  "verified_scope": "real-position incidence plus exact F_p row-space obstruction and union-bound projection-label existence only"
+}

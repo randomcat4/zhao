@@ -1,0 +1,419 @@
+{
+  "boundary": "The script certifies the affine geometry only; invoking Property B uses Reiher's external theorem.",
+  "certificate_sha256": "93e58bc3fe408bf3990c6fb85d4b82449a5eb59f749d342a071ad4e687ae5ce8",
+  "conclusion": "For every prime p>=7 the three possible Property-B support domains have empty common nonzero intersection.",
+  "domain_lines": {
+    "D(e,-e-f)": [
+      "y=-1",
+      "y=x-1",
+      "x=2y",
+      "x=2y+1"
+    ],
+    "D(e,f)": [
+      "y=1",
+      "x=1",
+      "x+y=0",
+      "x+y=1"
+    ],
+    "D(f,-e-f)": [
+      "x=-1",
+      "y=x+1",
+      "y=2x",
+      "y=2x+1"
+    ]
+  },
+  "exceptional_characteristics": [
+    2,
+    3,
+    5
+  ],
+  "finite_field_triple_hits_excluding_origin": {
+    "11": [],
+    "2": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "233": [],
+    "3": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "5": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "7": []
+  },
+  "pairwise_line_intersections": [
+    {
+      "d1_line": "x=-1",
+      "d2_line": "y=-1",
+      "point": [
+        "-1",
+        "-1"
+      ]
+    },
+    {
+      "d1_line": "x=-1",
+      "d2_line": "y=x-1",
+      "point": [
+        "-1",
+        "-2"
+      ]
+    },
+    {
+      "d1_line": "x=-1",
+      "d2_line": "x=2y",
+      "point": [
+        "-1",
+        "-1/2"
+      ]
+    },
+    {
+      "d1_line": "x=-1",
+      "d2_line": "x=2y+1",
+      "point": [
+        "-1",
+        "-1"
+      ]
+    },
+    {
+      "d1_line": "y=x+1",
+      "d2_line": "y=-1",
+      "point": [
+        "-2",
+        "-1"
+      ]
+    },
+    {
+      "d1_line": "y=x+1",
+      "d2_line": "y=x-1",
+      "point": null
+    },
+    {
+      "d1_line": "y=x+1",
+      "d2_line": "x=2y",
+      "point": [
+        "-2",
+        "-1"
+      ]
+    },
+    {
+      "d1_line": "y=x+1",
+      "d2_line": "x=2y+1",
+      "point": [
+        "-3",
+        "-2"
+      ]
+    },
+    {
+      "d1_line": "y=2x",
+      "d2_line": "y=-1",
+      "point": [
+        "-1/2",
+        "-1"
+      ]
+    },
+    {
+      "d1_line": "y=2x",
+      "d2_line": "y=x-1",
+      "point": [
+        "-1",
+        "-2"
+      ]
+    },
+    {
+      "d1_line": "y=2x",
+      "d2_line": "x=2y",
+      "point": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "d1_line": "y=2x",
+      "d2_line": "x=2y+1",
+      "point": [
+        "-1/3",
+        "-2/3"
+      ]
+    },
+    {
+      "d1_line": "y=2x+1",
+      "d2_line": "y=-1",
+      "point": [
+        "-1",
+        "-1"
+      ]
+    },
+    {
+      "d1_line": "y=2x+1",
+      "d2_line": "y=x-1",
+      "point": [
+        "-2",
+        "-3"
+      ]
+    },
+    {
+      "d1_line": "y=2x+1",
+      "d2_line": "x=2y",
+      "point": [
+        "-2/3",
+        "-1/3"
+      ]
+    },
+    {
+      "d1_line": "y=2x+1",
+      "d2_line": "x=2y+1",
+      "point": [
+        "-1",
+        "-1"
+      ]
+    }
+  ],
+  "schema": "unique_tail_property_b_three_domain_general/v1",
+  "scope": {
+    "group": "C_p^2",
+    "prime_range_proved_by_geometry": "p>=7",
+    "property_b_input": "each maximal atom has a (p-1)-fold label",
+    "tail_normal_form": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ]
+  },
+  "unique_rational_candidates": [
+    {
+      "d3_values": [
+        "-2",
+        "-2",
+        "-2",
+        "-3"
+      ],
+      "is_origin": false,
+      "point": [
+        "-1",
+        "-1"
+      ],
+      "possible_exception_primes": [
+        2,
+        3
+      ]
+    },
+    {
+      "d3_values": [
+        "-3",
+        "-2",
+        "-3",
+        "-4"
+      ],
+      "is_origin": false,
+      "point": [
+        "-1",
+        "-2"
+      ],
+      "possible_exception_primes": [
+        2,
+        3
+      ]
+    },
+    {
+      "d3_values": [
+        "-3/2",
+        "-2",
+        "-3/2",
+        "-5/2"
+      ],
+      "is_origin": false,
+      "point": [
+        "-1",
+        "-1/2"
+      ],
+      "possible_exception_primes": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "d3_values": [
+        "-2",
+        "-3",
+        "-3",
+        "-4"
+      ],
+      "is_origin": false,
+      "point": [
+        "-2",
+        "-1"
+      ],
+      "possible_exception_primes": [
+        2,
+        3
+      ]
+    },
+    {
+      "d3_values": [
+        "-3",
+        "-4",
+        "-5",
+        "-6"
+      ],
+      "is_origin": false,
+      "point": [
+        "-3",
+        "-2"
+      ],
+      "possible_exception_primes": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "d3_values": [
+        "-2",
+        "-3/2",
+        "-3/2",
+        "-5/2"
+      ],
+      "is_origin": false,
+      "point": [
+        "-1/2",
+        "-1"
+      ],
+      "possible_exception_primes": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "d3_values": [
+        "-1",
+        "-1",
+        "0",
+        "-1"
+      ],
+      "is_origin": true,
+      "point": [
+        "0",
+        "0"
+      ],
+      "possible_exception_primes": []
+    },
+    {
+      "d3_values": [
+        "-5/3",
+        "-4/3",
+        "-1",
+        "-2"
+      ],
+      "is_origin": false,
+      "point": [
+        "-1/3",
+        "-2/3"
+      ],
+      "possible_exception_primes": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "d3_values": [
+        "-4",
+        "-3",
+        "-5",
+        "-6"
+      ],
+      "is_origin": false,
+      "point": [
+        "-2",
+        "-3"
+      ],
+      "possible_exception_primes": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "d3_values": [
+        "-4/3",
+        "-5/3",
+        "-1",
+        "-2"
+      ],
+      "is_origin": false,
+      "point": [
+        "-2/3",
+        "-1/3"
+      ],
+      "possible_exception_primes": [
+        2,
+        3,
+        5
+      ]
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "scope": "RELAXED_PRIVATE_ATOM_LABELS_NOT_GLOBALLY_GLUED",
+  "status": "EXPLICIT_RELAXED_MODEL/GLOBAL_INCOMPLETE",
+  "p": 233,
+  "incidence": {
+    "universe_size": 474,
+    "endpoint_sizes": [
+      7,
+      7,
+      7
+    ],
+    "long_atom_sizes": [
+      465,
+      465,
+      465
+    ],
+    "common_kernel_size": 453,
+    "one_sided_pair_differences": [
+      6,
+      6,
+      6
+    ]
+  },
+  "global_table": {
+    "ordinary_q_coordinate": 31,
+    "endpoint_sums": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "P_sum": [
+      3,
+      0,
+      0
+    ],
+    "Y_sum": [
+      4,
+      0,
+      0
+    ],
+    "tail_projections": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        232,
+        232
+      ]
+    ],
+    "length_8_q_coordinate_cases": [
+      {
+        "tail_count": 0,
+        "picked_p1": 0,
+        "picked_p2": 0,
+        "ordinary_count": 8,
+        "q_sum": 15
+      },
+      {
+        "tail_count": 0,
+        "picked_p1": 0,
+        "picked_p2": 1,
+        "ordinary_count": 7,
+        "q_sum": 216
+      },
+      {
+        "tail_count": 0,
+        "picked_p1": 1,
+        "picked_p2": 0,
+        "ordinary_count": 7,
+        "q_sum": 221
+      },
+      {
+        "tail_count": 0,
+        "picked_p1": 1,
+        "picked_p2": 1,
+        "ordinary_count": 6,
+        "q_sum": 189
+      },
+      {
+        "tail_count": 1,
+        "picked_p1": 0,
+        "picked_p2": 0,
+        "ordinary_count": 7,
+        "q_sum": 31
+      },
+      {
+        "tail_count": 1,
+        "picked_p1": 0,
+        "picked_p2": 1,
+        "ordinary_count": 6,
+        "q_sum": 232
+      },
+      {
+        "tail_count": 1,
+        "picked_p1": 1,
+        "picked_p2": 0,
+        "ordinary_count": 6,
+        "q_sum": 4
+      },
+      {
+        "tail_count": 1,
+        "picked_p1": 1,
+        "picked_p2": 1,
+        "ordinary_count": 5,
+        "q_sum": 205
+      },
+      {
+        "tail_count": 2,
+        "picked_p1": 0,
+        "picked_p2": 0,
+        "ordinary_count": 6,
+        "q_sum": 47
+      },
+      {
+        "tail_count": 2,
+        "picked_p1": 0,
+        "picked_p2": 1,
+        "ordinary_count": 5,
+        "q_sum": 15
+      },
+      {
+        "tail_count": 2,
+        "picked_p1": 1,
+        "picked_p2": 0,
+        "ordinary_count": 5,
+        "q_sum": 20
+      },
+      {
+        "tail_count": 2,
+        "picked_p1": 1,
+        "picked_p2": 1,
+        "ordinary_count": 4,
+        "q_sum": 221
+      },
+      {
+        "tail_count": 3,
+        "picked_p1": 0,
+        "picked_p2": 0,
+        "ordinary_count": 5,
+        "q_sum": 63
+      },
+      {
+        "tail_count": 3,
+        "picked_p1": 0,
+        "picked_p2": 1,
+        "ordinary_count": 4,
+        "q_sum": 31
+      },
+      {
+        "tail_count": 3,
+        "picked_p1": 1,
+        "picked_p2": 0,
+        "ordinary_count": 4,
+        "q_sum": 36
+      },
+      {
+        "tail_count": 3,
+        "picked_p1": 1,
+        "picked_p2": 1,
+        "ordinary_count": 3,
+        "q_sum": 4
+      }
+    ],
+    "length_8_quotient_zero_count": 0
+  },
+  "private_atoms": {
+    "1": {
+      "tail_pair": [
+        "u2",
+        "u3"
+      ],
+      "basis": [
+        [
+          0,
+          1
+        ],
+        [
+          232,
+          232
+        ]
+      ],
+      "multiplicities": [
+        232,
+        232,
+        1
+      ],
+      "zero_count_solutions": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          232,
+          232,
+          1
+        ]
+      ]
+    },
+    "2": {
+      "tail_pair": [
+        "u1",
+        "u3"
+      ],
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          232,
+          232
+        ]
+      ],
+      "multiplicities": [
+        232,
+        232,
+        1
+      ],
+      "zero_count_solutions": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          232,
+          232,
+          1
+        ]
+      ]
+    },
+    "3": {
+      "tail_pair": [
+        "u1",
+        "u2"
+      ],
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "multiplicities": [
+        232,
+        232,
+        1
+      ],
+      "zero_count_solutions": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          232,
+          232,
+          1
+        ]
+      ]
+    }
+  },
+  "private_label_disagreements_on_K": {
+    "1-2": 222,
+    "1-3": 453,
+    "2-3": 232
+  },
+  "p_minus_1_repeated_term_barrier": {
+    "domain_family_counts": [
+      234,
+      234,
+      234
+    ],
+    "possible_support_union_sizes": [
+      926,
+      926,
+      926
+    ],
+    "triple_intersection_size": 0,
+    "consequence": "Any globally glued genuine triple with nonempty K has at least one atom of maximum term multiplicity at most p-2."
+  },
+  "missing_gluing_axiom": "For every i and every position v in Q_i, the private atom label eta_i(v) must equal rho(bar_gamma(v)) for one common global label table.",
+  "not_checked": [
+    "global Q_i atomhood",
+    "mixed P-Q targets",
+    "the full automatic short spectrum and middle gap",
+    "Hasse congruences",
+    "actual C_p^4 lifts, multiplicity cap, and Z atomhood"
+  ],
+  "not_claimed": [
+    "exact-slice SAT",
+    "exact-slice UNSAT",
+    "global A_p"
+  ],
+  "certificate_sha256": "040f16821be784eab803ae4d50aec3c0c7fe1535981f21417a94e0d1c3e4e4d9"
+}

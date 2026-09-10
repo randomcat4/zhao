@@ -1,0 +1,32 @@
+{
+  "certificate_sha256": "9dfe70ad3c9693d5048b3deb4ec28d12c990e98bf62aff6612494ed65d11ccd5",
+  "expanded_endpoint_row_count": 14,
+  "forced_local_gate": {
+    "admissible_K_local_partitions": 27057,
+    "atom_count": 1073,
+    "local_projected_zero_subsets": 1073,
+    "whole_Q_exceptions": 1073
+  },
+  "forced_q_type_count": 3,
+  "forced_q_types": [
+    [3],
+    [1, 2],
+    [1, 1, 1]
+  ],
+  "marked_spectrum_audit": {
+    "case_count": 12,
+    "disjoint_marked_record_count": 4212,
+    "venn_marked_record_count": 21504
+  },
+  "packing_type_count": 7,
+  "proved_new_reduction": "In the three forced-Q types, projected-zero endpoint intersection is equivalent to K empty and L equal to the endpoint union; repeated traces are impossible and only two distinct doubleton traces survive axially.",
+  "scope": {
+    "each_new_F3_complement": "exact three-state position spectrum for block support and every disjoint internal complement subset",
+    "external_block_intersections": "exact four-state Venn position spectrum",
+    "full_large_prime_enumeration": false,
+    "new_F3_endpoint_intersections": "nonempty and nonzero quotient sum for every selected endpoint",
+    "top_const_outside_Z": false
+  },
+  "status": "PROVED_EXACT_MARKED_INTERFACE/FORCED_TYPES_REPEATED_TRACE_AXIS_BRANCH_CLOSED/NO_PACKING_TYPE_CLOSED/FOURTH_BLOCK_NOT_FORCED/GLOBAL_INCOMPLETE",
+  "type_sha256": "ab485b1affe4916404af0fe0d659f709a6f85eb98a7beccf14bc6091f672301a"
+}

@@ -1,0 +1,67 @@
+{
+  "status": "PROVED_NECESSARY_PRUNING_GLOBAL_INCOMPLETE",
+  "scope": "No support-nine atom enumeration and no full 68-scalar UNSAT claim.",
+  "profile_stream_sha256": "b908d1d052668eb5929ff7dee261b0dd3494581ca0390f2d7f4372429c2ce513",
+  "pointed_profile_table": {
+    "m3": [
+      {"support": 9, "profiles": 771, "signatures": 10, "non_q_singletons_at_least": 0},
+      {"support": 10, "profiles": 854, "signatures": 8, "non_q_singletons_at_least": 2},
+      {"support": 11, "profiles": 705, "signatures": 7, "non_q_singletons_at_least": 4},
+      {"support": 12, "profiles": 475, "signatures": 5, "non_q_singletons_at_least": 6},
+      {"support": 13, "profiles": 242, "signatures": 4, "non_q_singletons_at_least": 8},
+      {"support": 14, "profiles": 79, "signatures": 3, "non_q_singletons_at_least": 10},
+      {"support": 15, "profiles": 14, "signatures": 2, "non_q_singletons_at_least": 12},
+      {"support": 16, "profiles": 1, "signatures": 1, "non_q_singletons_at_least": 14},
+      {"support": 17, "profiles": 1, "signatures": 1, "non_q_singletons_at_least": 16}
+    ],
+    "m4": [
+      {"support": 9, "profiles": 476, "signatures": 8, "non_q_singletons_at_least": 1},
+      {"support": 10, "profiles": 442, "signatures": 7, "non_q_singletons_at_least": 3},
+      {"support": 11, "profiles": 327, "signatures": 5, "non_q_singletons_at_least": 5},
+      {"support": 12, "profiles": 185, "signatures": 4, "non_q_singletons_at_least": 7},
+      {"support": 13, "profiles": 67, "signatures": 3, "non_q_singletons_at_least": 9},
+      {"support": 14, "profiles": 13, "signatures": 2, "non_q_singletons_at_least": 11},
+      {"support": 15, "profiles": 1, "signatures": 1, "non_q_singletons_at_least": 13},
+      {"support": 16, "profiles": 1, "signatures": 1, "non_q_singletons_at_least": 15}
+    ]
+  },
+  "support9_denominator": {
+    "m3": {"profiles": 771, "signatures": 10},
+    "m4": {"profiles": 476, "signatures": 8}
+  },
+  "fixed_frame_arc_certificate": {
+    "frame_candidates": 20,
+    "visited_by_size": {"4": 1, "5": 20, "6": 70, "7": 20, "8": 5},
+    "maximum": 8,
+    "maximum_fixed_frame_arcs": 5,
+    "maximum_arcs_sha256": "344333c7161106038dcb70e4ec4701d47196b5a956a300c0273197213f262333"
+  },
+  "projectively_simple_plane_classification": {
+    "basis_cases": 16,
+    "maximum_in_every_basis_case": 11,
+    "maximum_weight": 11,
+    "maximum_gl2_orbits": 77,
+    "nodes": 172947,
+    "atomic_pruned": 1745094,
+    "bound_pruned": 94358,
+    "basis_witness_sha256": "7f8a0434f07b0405a92e2698754e10b6dd32f7a71352268d067f60ac6580ca81",
+    "orbit_sha256": "e82f6d8f4a52cde840c9e7061b0ffcb9b4d209c03643c6d6c7abb24e03962404"
+  },
+  "support9_signature_compatibility_probe": {
+    "rows": 18,
+    "all_zero_sum": true,
+    "all_projectively_simple": true,
+    "all_q_quotient_directions": 8,
+    "all_max_plane_load_at_most": 9,
+    "all_nonatoms": true,
+    "all_empty_singleton_escape": true,
+    "sha256": "6639594239b593708d4deff0a5976b138168ae73f241b9c92399a1a137fb3677"
+  },
+  "frozen_atom_regressions": {
+    "support9_empty": {"support": 9, "max_plane_load": 10, "escape_size": 0},
+    "support7_singleton": {"support": 7, "max_plane_load": 10, "escape_size": 1},
+    "deleted_escape_audit": {"target": [6, 5, 6], "R": 0, "C": 469, "rho": 0},
+    "gap_ladder_target_checks": 2736
+  },
+  "full_report_sha256": "3d9431053ad7379303b238773077d7503be034e66c320c143f66a19d527d327f"
+}

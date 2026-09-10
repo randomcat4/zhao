@@ -1,0 +1,429 @@
+{
+  "Q3": {
+    "all_four_compatible_rows_have_distinct_proper_zero_sum_position_witnesses": true,
+    "conclusion": "mixed three-atom branch UNSAT at the unified C_p^2 atom layer",
+    "contains_tail_labels": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "length": 464
+  },
+  "certificate_sha256": "3a597b5c6dae91207f162c90c8d99d20a9c6ba206ed24838936e00adae0aaac8",
+  "common_kernel": {
+    "heavy_multiplicity": 232,
+    "heavy_positions_in_kernel_lower_bound": 202,
+    "kernel_lower_bound": 435,
+    "maximal_atom_length": 465,
+    "outside_kernel_upper_bound": 30
+  },
+  "conclusion": "The p=233 two-maximal-plus-Q3 mixed branch is excluded; the explicitly feasible survivor applies only after deleting Q3 and other full-slice constraints.",
+  "method": "fresh no-import reconstruction with full Property-B metadata",
+  "prime": 233,
+  "property_b_metadata": {
+    "compatible_rows": [
+      {
+        "Q3_witness_is_proper": true,
+        "Q3_witness_labels": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            -1
+          ]
+        ],
+        "Q3_witness_length": 3,
+        "Q3_witness_positions": [
+          "tail_e",
+          "tail_f",
+          "kernel_t_0"
+        ],
+        "Q3_witness_sum": [
+          0,
+          0
+        ],
+        "heavy_sum": [
+          -2,
+          -2
+        ],
+        "index": 0,
+        "left": {
+          "case": "heavy_is_second_tail",
+          "direction": [
+            -1,
+            -1
+          ],
+          "heavy": [
+            -1,
+            -1
+          ],
+          "line_point": [
+            0,
+            1
+          ],
+          "scalar_mod_233": null
+        },
+        "left_heavy_in_right_as": "heavy",
+        "right": {
+          "case": "heavy_is_second_tail",
+          "direction": [
+            -1,
+            -1
+          ],
+          "heavy": [
+            -1,
+            -1
+          ],
+          "line_point": [
+            1,
+            0
+          ],
+          "scalar_mod_233": null
+        },
+        "right_heavy_in_left_as": "heavy"
+      },
+      {
+        "Q3_witness_is_proper": true,
+        "Q3_witness_labels": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            -1
+          ]
+        ],
+        "Q3_witness_length": 3,
+        "Q3_witness_positions": [
+          "tail_e",
+          "tail_f",
+          "kernel_t_0"
+        ],
+        "Q3_witness_sum": [
+          0,
+          0
+        ],
+        "heavy_sum": [
+          -3,
+          -2
+        ],
+        "index": 1,
+        "left": {
+          "case": "heavy_is_second_tail",
+          "direction": [
+            -1,
+            -1
+          ],
+          "heavy": [
+            -1,
+            -1
+          ],
+          "line_point": [
+            0,
+            1
+          ],
+          "scalar_mod_233": null
+        },
+        "left_heavy_in_right_as": "affine_line",
+        "right": {
+          "case": "both_tails_on_affine_line",
+          "direction": [
+            -2,
+            -1
+          ],
+          "heavy": [
+            -2,
+            -1
+          ],
+          "line_point": [
+            1,
+            0
+          ],
+          "scalar_mod_233": 1
+        },
+        "right_heavy_in_left_as": "affine_line"
+      },
+      {
+        "Q3_witness_is_proper": true,
+        "Q3_witness_labels": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            -1
+          ]
+        ],
+        "Q3_witness_length": 3,
+        "Q3_witness_positions": [
+          "tail_e",
+          "tail_f",
+          "kernel_t_0"
+        ],
+        "Q3_witness_sum": [
+          0,
+          0
+        ],
+        "heavy_sum": [
+          -2,
+          -3
+        ],
+        "index": 2,
+        "left": {
+          "case": "both_tails_on_affine_line",
+          "direction": [
+            -1,
+            -2
+          ],
+          "heavy": [
+            -1,
+            -2
+          ],
+          "line_point": [
+            0,
+            1
+          ],
+          "scalar_mod_233": 1
+        },
+        "left_heavy_in_right_as": "affine_line",
+        "right": {
+          "case": "heavy_is_second_tail",
+          "direction": [
+            -1,
+            -1
+          ],
+          "heavy": [
+            -1,
+            -1
+          ],
+          "line_point": [
+            1,
+            0
+          ],
+          "scalar_mod_233": null
+        },
+        "right_heavy_in_left_as": "affine_line"
+      },
+      {
+        "Q3_witness_is_proper": true,
+        "Q3_witness_labels": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -78,
+            77
+          ],
+          [
+            77,
+            -78
+          ]
+        ],
+        "Q3_witness_length": 4,
+        "Q3_witness_positions": [
+          "tail_e",
+          "tail_f",
+          "kernel_g1_0",
+          "kernel_g2_0"
+        ],
+        "Q3_witness_sum": [
+          0,
+          0
+        ],
+        "heavy_sum": [
+          -1,
+          -1
+        ],
+        "index": 3,
+        "left": {
+          "case": "both_tails_on_affine_line",
+          "direction": [
+            -1,
+            -2
+          ],
+          "heavy": [
+            -78,
+            77
+          ],
+          "line_point": [
+            0,
+            1
+          ],
+          "scalar_mod_233": 78
+        },
+        "left_heavy_in_right_as": "affine_line",
+        "right": {
+          "case": "both_tails_on_affine_line",
+          "direction": [
+            -2,
+            -1
+          ],
+          "heavy": [
+            77,
+            -78
+          ],
+          "line_point": [
+            1,
+            0
+          ],
+          "scalar_mod_233": 78
+        },
+        "right_heavy_in_left_as": "affine_line"
+      }
+    ],
+    "left_record_count": 234,
+    "left_tail_pair": [
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    "mutual_cross_membership_pairs": 4,
+    "raw_ordered_pairs": 54756,
+    "right_record_count": 234,
+    "right_tail_pair": [
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        -1
+      ]
+    ]
+  },
+  "schema": "unique_tail_property_b_two_max_mixed_exclusion/independent-audit-v1",
+  "two_max_only_relaxed_survivor": {
+    "Q1": [
+      {
+        "label": [
+          -1,
+          -1
+        ],
+        "multiplicity": 232
+      },
+      {
+        "label": [
+          -2,
+          -1
+        ],
+        "multiplicity": 231
+      },
+      {
+        "label": [
+          0,
+          1
+        ],
+        "multiplicity": 1
+      },
+      {
+        "label": [
+          -5,
+          -4
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "Q1_zero_submultisets": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        232,
+        231,
+        1,
+        1
+      ]
+    ],
+    "Q2": [
+      {
+        "label": [
+          -2,
+          -1
+        ],
+        "multiplicity": 232
+      },
+      {
+        "label": [
+          -1,
+          -1
+        ],
+        "multiplicity": 231
+      },
+      {
+        "label": [
+          1,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "label": [
+          -5,
+          -3
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "Q2_zero_submultisets": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        232,
+        231,
+        1,
+        1
+      ]
+    ],
+    "can_select_common_435_position_kernel": true,
+    "g": [
+      -1,
+      -1
+    ],
+    "h": [
+      -2,
+      -1
+    ],
+    "left_only_positions": 3,
+    "literal_multiset_overlap": 462,
+    "right_only_positions": 3,
+    "scope": "two maximal atoms only; Q3 and the complete exact-slice constraints are absent"
+  }
+}

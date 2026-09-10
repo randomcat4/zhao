@@ -1,0 +1,188 @@
+{
+  "certificate_sha256": "615b56257a20220b8850e14cb8e84de919f8a5841331268c74ee392ab4fe2c26",
+  "compatible_base_rows": [
+    {
+      "base_sum": [
+        -2,
+        -2
+      ],
+      "forced_Q3_zero_sum": "e+f+t=0",
+      "left_base": [
+        -1,
+        -1
+      ],
+      "right_base": [
+        -1,
+        -1
+      ],
+      "witness_length": 3
+    },
+    {
+      "base_sum": [
+        -3,
+        -2
+      ],
+      "forced_Q3_zero_sum": "e+f+t=0",
+      "left_base": [
+        -1,
+        -1
+      ],
+      "right_base": [
+        -2,
+        -1
+      ],
+      "witness_length": 3
+    },
+    {
+      "base_sum": [
+        -2,
+        -3
+      ],
+      "forced_Q3_zero_sum": "e+f+t=0",
+      "left_base": [
+        -1,
+        -2
+      ],
+      "right_base": [
+        -1,
+        -1
+      ],
+      "witness_length": 3
+    },
+    {
+      "base_sum": [
+        -1,
+        -1
+      ],
+      "forced_Q3_zero_sum": "e+f+g1+g2=0",
+      "left_base": [
+        -78,
+        77
+      ],
+      "right_base": [
+        77,
+        -78
+      ],
+      "witness_length": 4
+    }
+  ],
+  "external_dependency": "Reiher: every prime has Property B",
+  "global_status": "INCOMPLETE",
+  "mixed_branch": {
+    "Q1_length": 465,
+    "Q2_length": 465,
+    "Q3_length": 464,
+    "common_kernel_lower_bound": 435,
+    "conclusion": "UNSAT at the unified C_p^2 atom layer",
+    "minimum_copies_of_each_heavy_base_inside_K": 202
+  },
+  "orientation_counts": {
+    "left_tail_pair": 234,
+    "mutually_supported_base_pairs": 4,
+    "raw_pairs": 54756,
+    "right_tail_pair": 234
+  },
+  "prime": 233,
+  "schema": "unique_tail_property_b_two_max_mixed_exclusion/v1",
+  "two_max_atom_boundary_model": {
+    "Q1": [
+      {
+        "label": [
+          -1,
+          -1
+        ],
+        "multiplicity": 232
+      },
+      {
+        "label": [
+          -2,
+          -1
+        ],
+        "multiplicity": 231
+      },
+      {
+        "label": [
+          0,
+          1
+        ],
+        "multiplicity": 1
+      },
+      {
+        "label": [
+          -5,
+          -4
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "Q1_zero_submultisets": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        232,
+        231,
+        1,
+        1
+      ]
+    ],
+    "Q2": [
+      {
+        "label": [
+          -2,
+          -1
+        ],
+        "multiplicity": 232
+      },
+      {
+        "label": [
+          -1,
+          -1
+        ],
+        "multiplicity": 231
+      },
+      {
+        "label": [
+          1,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "label": [
+          -5,
+          -3
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "Q2_zero_submultisets": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        232,
+        231,
+        1,
+        1
+      ]
+    ],
+    "directional_replacements": 3,
+    "g": [
+      -1,
+      -1
+    ],
+    "h": [
+      -2,
+      -1
+    ],
+    "literal_overlap": 462,
+    "relaxed_boundary": "No third near-maximal atom and no full short-spectrum closure."
+  }
+}

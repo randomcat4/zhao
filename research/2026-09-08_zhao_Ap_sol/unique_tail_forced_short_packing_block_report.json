@@ -1,0 +1,344 @@
+{
+  "cases": [
+    {
+      "B_X_core_size": 228,
+      "B_quotient_sum_coefficient_mod_p": 0,
+      "D_X_core_size": 1,
+      "D_lengths_after_wrong_positive_core_length_8_gate": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "D_quotient_sum_coefficient_mod_p": 0,
+      "K_maximum_deficit_from_2p_minus_2": 45,
+      "K_uniform_lower_bound_from_L_at_most_52": 419,
+      "K_zero_sum_free_upper_bound": 464,
+      "X_multiplicity": 229,
+      "Z_length": 703,
+      "b": 4,
+      "coarse_B_minimum_from_K_nonempty_and_L_at_least_6": 232,
+      "complementary_D_lengths_after_forbidden_window": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "p": 233,
+      "packing_rows": [
+        {
+          "all_surviving_atoms_forced_singletons": false,
+          "atom_count": 1,
+          "axis_coefficients": [
+            3
+          ],
+          "closed_by_size_bound": false,
+          "packing_type": "(3)",
+          "surviving_size_vector_count": 3,
+          "surviving_size_vectors": [
+            {
+              "B_length": 698,
+              "D_allowed_actual_sum_coefficients": [
+                1,
+                2
+              ],
+              "D_length": 5,
+              "K_lower_bound_from_L_at_most_52": 421,
+              "K_upper_bound_from_zero_sum_free": 464,
+              "L_minimum_from_K_upper_bound": 9,
+              "atom_sizes": [
+                1
+              ],
+              "packing_size": 1
+            },
+            {
+              "B_length": 697,
+              "D_allowed_actual_sum_coefficients": [
+                1,
+                2
+              ],
+              "D_length": 6,
+              "K_lower_bound_from_L_at_most_52": 420,
+              "K_upper_bound_from_zero_sum_free": 464,
+              "L_minimum_from_K_upper_bound": 8,
+              "atom_sizes": [
+                2
+              ],
+              "packing_size": 2
+            },
+            {
+              "B_length": 696,
+              "D_allowed_actual_sum_coefficients": [
+                2
+              ],
+              "D_length": 7,
+              "K_lower_bound_from_L_at_most_52": 419,
+              "K_upper_bound_from_zero_sum_free": 464,
+              "L_minimum_from_K_upper_bound": 7,
+              "atom_sizes": [
+                3
+              ],
+              "packing_size": 3
+            }
+          ]
+        },
+        {
+          "all_surviving_atoms_forced_singletons": false,
+          "atom_count": 2,
+          "axis_coefficients": [
+            1,
+            2
+          ],
+          "closed_by_size_bound": false,
+          "packing_type": "(1,2)",
+          "surviving_size_vector_count": 3,
+          "surviving_size_vectors": [
+            {
+              "B_length": 697,
+              "D_allowed_actual_sum_coefficients": [
+                1,
+                2
+              ],
+              "D_length": 6,
+              "K_lower_bound_from_L_at_most_52": 420,
+              "K_upper_bound_from_zero_sum_free": 464,
+              "L_minimum_from_K_upper_bound": 8,
+              "atom_sizes": [
+                1,
+                1
+              ],
+              "packing_size": 2
+            },
+            {
+              "B_length": 696,
+              "D_allowed_actual_sum_coefficients": [
+                2
+              ],
+              "D_length": 7,
+              "K_lower_bound_from_L_at_most_52": 419,
+              "K_upper_bound_from_zero_sum_free": 464,
+              "L_minimum_from_K_upper_bound": 7,
+              "atom_sizes": [
+                1,
+                2
+              ],
+              "packing_size": 3
+            },
+            {
+              "B_length": 696,
+              "D_allowed_actual_sum_coefficients": [
+                2
+              ],
+              "D_length": 7,
+              "K_lower_bound_from_L_at_most_52": 419,
+              "K_upper_bound_from_zero_sum_free": 464,
+              "L_minimum_from_K_upper_bound": 7,
+              "atom_sizes": [
+                2,
+                1
+              ],
+              "packing_size": 3
+            }
+          ]
+        },
+        {
+          "all_surviving_atoms_forced_singletons": true,
+          "atom_count": 3,
+          "axis_coefficients": [
+            1,
+            1,
+            1
+          ],
+          "closed_by_size_bound": false,
+          "packing_type": "(1,1,1)",
+          "surviving_size_vector_count": 1,
+          "surviving_size_vectors": [
+            {
+              "B_length": 696,
+              "D_allowed_actual_sum_coefficients": [
+                2
+              ],
+              "D_length": 7,
+              "K_lower_bound_from_L_at_most_52": 419,
+              "K_upper_bound_from_zero_sum_free": 464,
+              "L_minimum_from_K_upper_bound": 7,
+              "atom_sizes": [
+                1,
+                1,
+                1
+              ],
+              "packing_size": 3
+            }
+          ]
+        }
+      ],
+      "packing_total_size_upper_bound": 3
+    },
+    {
+      "B_X_core_size": 1393,
+      "B_quotient_sum_coefficient_mod_p": 0,
+      "D_X_core_size": 2,
+      "D_lengths_after_wrong_positive_core_length_8_gate": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "D_quotient_sum_coefficient_mod_p": 0,
+      "K_maximum_deficit_from_2p_minus_2": 44,
+      "K_uniform_lower_bound_from_L_at_most_52": 2752,
+      "K_zero_sum_free_upper_bound": 2796,
+      "X_multiplicity": 1395,
+      "Z_length": 4201,
+      "b": 5,
+      "coarse_B_minimum_from_K_nonempty_and_L_at_least_6": 1397,
+      "complementary_D_lengths_after_forbidden_window": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "p": 1399,
+      "packing_rows": [
+        {
+          "all_surviving_atoms_forced_singletons": false,
+          "atom_count": 1,
+          "axis_coefficients": [
+            3
+          ],
+          "closed_by_size_bound": false,
+          "packing_type": "(3)",
+          "surviving_size_vector_count": 2,
+          "surviving_size_vectors": [
+            {
+              "B_length": 4195,
+              "D_allowed_actual_sum_coefficients": [
+                1,
+                2
+              ],
+              "D_length": 6,
+              "K_lower_bound_from_L_at_most_52": 2753,
+              "K_upper_bound_from_zero_sum_free": 2796,
+              "L_minimum_from_K_upper_bound": 9,
+              "atom_sizes": [
+                1
+              ],
+              "packing_size": 1
+            },
+            {
+              "B_length": 4194,
+              "D_allowed_actual_sum_coefficients": [
+                2
+              ],
+              "D_length": 7,
+              "K_lower_bound_from_L_at_most_52": 2752,
+              "K_upper_bound_from_zero_sum_free": 2796,
+              "L_minimum_from_K_upper_bound": 8,
+              "atom_sizes": [
+                2
+              ],
+              "packing_size": 2
+            }
+          ]
+        },
+        {
+          "all_surviving_atoms_forced_singletons": true,
+          "atom_count": 2,
+          "axis_coefficients": [
+            1,
+            2
+          ],
+          "closed_by_size_bound": false,
+          "packing_type": "(1,2)",
+          "surviving_size_vector_count": 1,
+          "surviving_size_vectors": [
+            {
+              "B_length": 4194,
+              "D_allowed_actual_sum_coefficients": [
+                2
+              ],
+              "D_length": 7,
+              "K_lower_bound_from_L_at_most_52": 2752,
+              "K_upper_bound_from_zero_sum_free": 2796,
+              "L_minimum_from_K_upper_bound": 8,
+              "atom_sizes": [
+                1,
+                1
+              ],
+              "packing_size": 2
+            }
+          ]
+        },
+        {
+          "all_surviving_atoms_forced_singletons": false,
+          "atom_count": 3,
+          "axis_coefficients": [
+            1,
+            1,
+            1
+          ],
+          "closed_by_size_bound": true,
+          "packing_type": "(1,1,1)",
+          "surviving_size_vector_count": 0,
+          "surviving_size_vectors": []
+        }
+      ],
+      "packing_total_size_upper_bound": 2
+    }
+  ],
+  "certificate_sha256": "bc44e4961893a6c731cd18a4e35f8542ee21f0b8517f18b35a6760bfb3e1d39f",
+  "dependencies_sha256": {
+    "assumptions.md": "0e10138860269a18f0f7c0a02ab40204109efbb9a09688fc99da46983e390aed",
+    "proofs/middle_quotient_gap.md": "d886a84857cd430455558266a2ab175f21f2de853eed08c6affcad0c14b3efcc",
+    "proofs/unique_tail_common_R_next.md": "1c805f0c1b2402e50317712cf5f8341e82ba6c882b3ee02ffab7e901f5614942",
+    "proofs/unique_tail_forced_kernel_nonempty.md": "edda3f792101e205332f860d7baeaebf0810e3642527c41ad84515264e3e7e64",
+    "proofs/unique_tail_labelled_position_next.md": "60384c64dee88487220f3fd7101a5d3abff1cb576fe3a8b43ec398fdd284ddce"
+  },
+  "schema": "unique_tail_forced_short_packing_block_v1",
+  "scope": {
+    "assumptions": [
+      "p,b are (233,4) or (1399,5)",
+      "X=x^(p-4), Z=X disjoint_union Y, and |Z|=3p+4",
+      "U is a three-position unique tail with quotient sum -bq",
+      "R=P_1 disjoint_union ... disjoint_union P_t disjoint_union K and Y=L disjoint_union R",
+      "K is nonempty and projection-zero-sum-free, L contains an endpoint, and |L|<=52",
+      "sum(K disjoint_union L)=q and sum(P_1 disjoint_union ... disjoint_union P_t)=3q",
+      "the quotient-zero forbidden window is [9,2p+2]",
+      "a positive-core length-eight F3 block must be the unique pair (b,U)"
+    ],
+    "conclusion": "sum_i |P_i|<=7-b; p=1399 packing (1,1,1) is closed; p=233 packing (1,1,1) forces three singleton atoms",
+    "not_concluded": [
+      "the p=233 packing (1,1,1) type is empty",
+      "either (3) or (1,2) is empty for either prime",
+      "all three forced packing types are empty",
+      "the four non-forced packing types are empty",
+      "the unique-tail branch is empty",
+      "A_p"
+    ]
+  },
+  "status": "P1399_THREE_SINGLETON_PACKING_CLOSED__OTHER_FORCED_PACKINGS_REDUCED__GLOBAL_INCOMPLETE",
+  "summary": {
+    "p1399_closed_packing_types": [
+      "(1,1,1)"
+    ],
+    "p233_forced_three_singleton_packing_types": [
+      "(1,1,1)"
+    ],
+    "total_packing_type_rows": 6,
+    "total_surviving_size_vectors": 10
+  }
+}

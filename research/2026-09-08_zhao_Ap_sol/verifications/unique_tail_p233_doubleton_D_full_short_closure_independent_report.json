@@ -1,0 +1,294 @@
+{
+  "audit_method": "fresh no-import reconstruction from the predecessor JSON literal table; the author script was neither imported nor executed",
+  "bindings": {
+    "author_report_certificate": "36cbb4cf0f9fd5497ee0bfd3f219e9cf3a0dad8d206a7b0f9354d86191b1e03a",
+    "base_report_certificate": "69a434edeb843342b7cd1bde819b64c2cfa7277fea64bd79f4ebe394be411298",
+    "file_sha256": {
+      "proofs/unique_tail_p233_doubleton_D_full_short_closure.md": "b7b109201d180b68525f6198485db3e20da7fdabc9f855f7bdf820342ecf7691",
+      "unique_tail_p233_doubleton_D_full_short_closure.py": "dda624a6cda9b69e433b395d118176bac44145045bdddddac807cd4aff4a37e2",
+      "unique_tail_p233_doubleton_D_full_short_closure_report.json": "2166824b08e96478970be28d58cdb9d04bb3db3465f73895a6d63eb6365145fb",
+      "unique_tail_p233_doubleton_D_q_lift_attack_report.json": "ba15376e50590abe95620ffe3568f0ec2b1eb5a964ae934b82d47e38f7a3b58c"
+    }
+  },
+  "certificate_sha256": "d9efb3c10e04f71f49cbe024c6f694d76de5272bce98f2817be8d2b93418bff6",
+  "compression_and_short_spectrum": {
+    "actual_type_count": 17,
+    "all_252_profile_rows_match_author": true,
+    "allowed_profiles": 75,
+    "bounded_count_vectors_visited": 162225,
+    "compression_equivalence": "a literal subset determines one bounded count vector; every bounded vector is realized by choosing that many positions from each exact-label class",
+    "count_vectors_by_Y_size": [
+      1,
+      17,
+      140,
+      746,
+      2900,
+      8798,
+      21781,
+      45489,
+      82353
+    ],
+    "exact_type_rows_match_author": true,
+    "forbidden_profiles": 177,
+    "profile_semantic_digest": "dcc396d35441644d320d8b2506c70db3dfcb9c96aa2e4a0a24882e494695d629",
+    "quotient_zero_short_profiles": 252,
+    "type_capacities": [
+      2,
+      229,
+      228,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "conclusion": "The displayed Model-D q/height/P lift is rigorously rejected by a length-three bad block and by six P--Q mixed witnesses; the 53 disjoint-profile conflicts are also exact. No result here, or in the audited author artifact, quantifies over all relabellings of the fixed rho skeleton.",
+  "disjoint_allowed_short_profiles": {
+    "all_53_conflict_records_match_author": true,
+    "allowed_profile_pairs_with_repetition": 2850,
+    "capacity_criterion_is_bidirectional": "two profile representatives are disjoint iff each exact-label demand sum is at most its class capacity and the two X demands sum to at most 229",
+    "conflict_reason_distribution": {
+      "F2_BLOCKS_MUST_PAIRWISE_INTERSECT": 12,
+      "F3_MUST_INTERSECT_EVERY_SHORT_BLOCK": 41
+    },
+    "disjoint_feasible_pairs": 62,
+    "first_pair": {
+      "disjoint": true,
+      "left": [
+        "d_k_h_001",
+        "d_p13_h_002",
+        "d_p23_g",
+        "d_p23_z1",
+        "d_y"
+      ],
+      "left_sum": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "right": [
+        "X_001",
+        "X_002",
+        "X_003",
+        "X_004",
+        "d_p12_f",
+        "u_e",
+        "u_t"
+      ],
+      "right_sum": [
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "forbidden_disjoint_pairs": 53
+  },
+  "fixed_literal_model": {
+    "K_positions": 456,
+    "L_positions": 16,
+    "P_positions": 2,
+    "Q_sizes": {
+      "H_doubleton_ef": 465,
+      "H_doubleton_et": 465,
+      "H_doubleton_ft": 465
+    },
+    "Y_positions": 474,
+    "simple_maximal_rho_atom_checks": {
+      "H_doubleton_ef": {
+        "base": [
+          1,
+          0
+        ],
+        "heavy": [
+          2,
+          1
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum": 1,
+        "line_count": 233
+      },
+      "H_doubleton_et": {
+        "base": [
+          0,
+          1
+        ],
+        "heavy": [
+          1,
+          0
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum": 1,
+        "line_count": 233
+      },
+      "H_doubleton_ft": {
+        "base": [
+          0,
+          1
+        ],
+        "heavy": [
+          1,
+          0
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum": 1,
+        "line_count": 233
+      }
+    }
+  },
+  "mixed_P_Q_targets": {
+    "T_size": 237,
+    "T_subset_of_common_K": true,
+    "T_sum_q_rho1_rho2_height": [
+      0,
+      226,
+      222,
+      230
+    ],
+    "all_six_are_violations": true,
+    "endpoint_target_fibres": {
+      "H_doubleton_ef": {
+        "nonzero_q_literal_positions": 3,
+        "target_7_11_q_values": [
+          0,
+          1,
+          5,
+          6,
+          228,
+          229
+        ],
+        "target_minus_7_minus_11_q_values": [
+          0,
+          1,
+          5,
+          6,
+          228,
+          229
+        ],
+        "zero_q_reachable_rho_states": 54054
+      },
+      "H_doubleton_et": {
+        "nonzero_q_literal_positions": 3,
+        "target_7_11_q_values": [
+          0,
+          1,
+          5,
+          6,
+          228,
+          229
+        ],
+        "target_minus_7_minus_11_q_values": [
+          0,
+          1,
+          5,
+          6,
+          228,
+          229
+        ],
+        "zero_q_reachable_rho_states": 54287
+      },
+      "H_doubleton_ft": {
+        "nonzero_q_literal_positions": 4,
+        "target_7_11_q_values": [
+          0,
+          1,
+          5,
+          6,
+          10,
+          224,
+          228,
+          229
+        ],
+        "target_minus_7_minus_11_q_values": [
+          0,
+          1,
+          5,
+          6,
+          10,
+          224,
+          228,
+          229
+        ],
+        "zero_q_reachable_rho_states": 54283
+      }
+    },
+    "literal_3_by_2_witnesses": [
+      {
+        "Q_subset": "T",
+        "endpoint": "H_doubleton_ef",
+        "packing": "p_1",
+        "union_q": 0
+      },
+      {
+        "Q_subset": "Q_minus_T",
+        "endpoint": "H_doubleton_ef",
+        "packing": "p_2",
+        "union_q": 4
+      },
+      {
+        "Q_subset": "T",
+        "endpoint": "H_doubleton_et",
+        "packing": "p_1",
+        "union_q": 0
+      },
+      {
+        "Q_subset": "Q_minus_T",
+        "endpoint": "H_doubleton_et",
+        "packing": "p_2",
+        "union_q": 4
+      },
+      {
+        "Q_subset": "T",
+        "endpoint": "H_doubleton_ft",
+        "packing": "p_1",
+        "union_q": 0
+      },
+      {
+        "Q_subset": "Q_minus_T",
+        "endpoint": "H_doubleton_ft",
+        "packing": "p_2",
+        "union_q": 4
+      }
+    ],
+    "method": "direct Cartesian enumeration of bounded multiplicities for q=0 rho types, then direct subset enumeration of nonzero-q literal defects; no binary-split author routine"
+  },
+  "schema": "unique_tail_p233_doubleton_D_full_short_closure_independent_review_v1",
+  "scope_audit": {
+    "author_scope_wording_is_correct": true,
+    "displayed_literal_relabel_rejected": true,
+    "fixed_rho_skeleton_all_relabels_rejected": false,
+    "typesetting_check": "the equation (13) separator is correctly typeset in the bound proof"
+  },
+  "shortest_exact_bad_block": {
+    "actual_height_class": 0,
+    "allowed_height_classes": [
+      1
+    ],
+    "also_proper_actual_zero_sum_subsequence_of_Z": true,
+    "full_sum_q_rho1_rho2_height": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "is_shortest_forbidden_profile_length": true,
+    "length": 3,
+    "positions": [
+      "d_k_g_002",
+      "u_f",
+      "u_t"
+    ]
+  },
+  "verdict": "CORRECT"
+}

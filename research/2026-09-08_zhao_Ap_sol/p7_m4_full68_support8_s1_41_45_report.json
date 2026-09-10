@@ -1,0 +1,200 @@
+{
+  "atomic_prefix_pruned": 41985929,
+  "completed": [
+    [
+      [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      60,
+      [
+        41,
+        45
+      ]
+    ]
+  ],
+  "escape_prefix_pruned": 0,
+  "final_escape_pruned": 47329,
+  "final_nonatoms": 3443,
+  "final_zero_sum_candidates": 50772,
+  "forced_last_rejected": 1923921,
+  "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "hits": [],
+  "orbit_count": 0,
+  "orbit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "ordered_prefix_nodes": 44754370,
+  "profile_count": 5,
+  "profiles": [
+    {
+      "atomic_prefix_pruned": 5548,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 5808,
+      "profile": [
+        4,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1
+      ],
+      "profile_index": 41,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 5548,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 5808,
+      "profile": [
+        4,
+        2,
+        1,
+        4,
+        2,
+        1,
+        1
+      ],
+      "profile_index": 42,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 35619965,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 47329,
+      "final_nonatoms": 3443,
+      "final_zero_sum_candidates": 50772,
+      "forced_last_rejected": 1923921,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 37982919,
+      "profile": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1,
+        4
+      ],
+      "profile_index": 43,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 6084224,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 6472485,
+      "profile": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        4,
+        1
+      ],
+      "profile_index": 44,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 270644,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 287350,
+      "profile": [
+        4,
+        2,
+        2,
+        1,
+        4,
+        1,
+        1
+      ],
+      "profile_index": 45,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    }
+  ],
+  "profiles_sha256": "39b9c91defa2789eda1fd133e5428e61ab750b22ef5247379ce45702f2a1735a",
+  "schema": "p7-m4-full68-support8-v1",
+  "scope": "all normalized support-eight, no-multiplicity-three length-19 atoms with pointed q^4 and maximum fibre four; quotient necessary layer only",
+  "target_atom_hits": 0,
+  "target_with_T_survivor": 0
+}

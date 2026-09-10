@@ -1,0 +1,111 @@
+{
+  "aggregate": {
+    "complete_empty_escape_pruned": 2,
+    "complete_zero_sum_candidates": 2,
+    "depth1_atomic_pruned": 52,
+    "depth1_entered": 324,
+    "depth1_survived": 272,
+    "depth2_atomic_pruned": 21853,
+    "depth2_entered": 44876,
+    "depth2_survived": 23023,
+    "depth3_atomic_pruned": 2303455,
+    "depth3_entered": 2615422,
+    "depth3_survived": 303819,
+    "depth3_tail_pruned": 8148,
+    "depth4_atomic_pruned": 27344257,
+    "depth4_entered": 27604871,
+    "depth4_survived": 219759,
+    "depth4_tail_pruned": 40855,
+    "depth5_atomic_pruned": 17415161,
+    "depth5_entered": 17415441,
+    "depth5_survived": 68,
+    "depth5_tail_pruned": 212,
+    "forced_order_pruned": 66
+  },
+  "jobs": [
+    [
+      3,
+      1,
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  ],
+  "prefix_tail_depth": 3,
+  "profile_count": 1,
+  "profile_report_sha256": "8f646487a4d7f9d85a004358d948e7b87601de2930352473dfaff204332d7ae7",
+  "profiles": [
+    {
+      "anchor_multiplicity": 3,
+      "complete_sha256": "db61c29adf98f58c2e5d680a0562c1f385306d70577e50ef772ec6d0ee249a63",
+      "counts": {
+        "complete_empty_escape_pruned": 2,
+        "complete_zero_sum_candidates": 2,
+        "depth1_atomic_pruned": 52,
+        "depth1_entered": 324,
+        "depth1_survived": 272,
+        "depth2_atomic_pruned": 21853,
+        "depth2_entered": 44876,
+        "depth2_survived": 23023,
+        "depth3_atomic_pruned": 2303455,
+        "depth3_entered": 2615422,
+        "depth3_survived": 303819,
+        "depth3_tail_pruned": 8148,
+        "depth4_atomic_pruned": 27344257,
+        "depth4_entered": 27604871,
+        "depth4_survived": 219759,
+        "depth4_tail_pruned": 40855,
+        "depth5_atomic_pruned": 17415161,
+        "depth5_entered": 17415441,
+        "depth5_survived": 68,
+        "depth5_tail_pruned": 212,
+        "forced_order_pruned": 66
+      },
+      "forced_variable_index": 5,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 1,
+      "signature": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "schema": "p7-m34-support9-frontier-v1",
+  "scope": "unpointed maximum-four plus maximum-three support-nine quotient frontier",
+  "tail_viable_orbit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "tail_viable_orbits": [],
+  "tail_viable_unpointed_orbits": 0
+}

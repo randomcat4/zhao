@@ -1,0 +1,168 @@
+{
+  "anchor_support_count": 234,
+  "anchors_with_four_support_clique": 234,
+  "candidate_count_minmax_by_doubleton_Q_tail": [
+    [
+      3,
+      465
+    ],
+    [
+      3,
+      465
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "certificate_sha256": "0c96e49ca44171113fa518fee909853a89f028b085038403ac7b63ee9b46f861",
+  "first_support_level_witness": {
+    "all_heavy_bases_in_every_support": true,
+    "anchor_index": 0,
+    "common_points": [
+      [
+        0,
+        1
+      ]
+    ],
+    "supports": [
+      {
+        "base": [
+          0,
+          1
+        ],
+        "phi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "base": [
+          0,
+          1
+        ],
+        "phi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "base": [
+          0,
+          1
+        ],
+        "phi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "base": [
+          0,
+          1
+        ],
+        "phi": [
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "first_two_common_label_witness": {
+    "anchor_index": 0,
+    "common_points": [
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "distinct_heavy_bases": 2,
+    "supports": [
+      {
+        "base": [
+          0,
+          1
+        ],
+        "phi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "base": [
+          0,
+          1
+        ],
+        "phi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "base": [
+          0,
+          1
+        ],
+        "phi": [
+          -1,
+          0
+        ]
+      },
+      {
+        "base": [
+          -1,
+          1
+        ],
+        "phi": [
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "omitted": [
+    "maximal-atom coefficient multiplicities",
+    "literal common-kernel capacity beyond mutual heavy-base membership",
+    "q-coordinate lift and automatically induced short blocks",
+    "P-mixed targets, Hasse rows, and actual Z atomicity"
+  ],
+  "p": 233,
+  "schema": "unique_tail_p233_property_b_four_max_frontier/v1",
+  "status": "RELAXED_PROPERTY_B_SUPPORT_COMPATIBLE/GLOBAL_INCOMPLETE",
+  "trace_family": {
+    "doubleton_Q_tails": [
+      "t",
+      "f",
+      "e"
+    ],
+    "doubleton_endpoint_traces": [
+      [
+        "e",
+        "f"
+      ],
+      [
+        "e",
+        "t"
+      ],
+      [
+        "f",
+        "t"
+      ]
+    ],
+    "singleton_Q_tail": [
+      "f",
+      "t"
+    ],
+    "singleton_endpoint_trace": [
+      "e"
+    ]
+  }
+}

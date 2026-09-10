@@ -1,0 +1,889 @@
+{
+  "certificate_sha256": "2ae9da6ab822ad6c9c236d295e2f6a25299ba81dd3f6e2b3915b97ff34e9c2ff",
+  "rows": [
+    {
+      "L_size_rows": [
+        {
+          "L_size": 6,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 3,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 231
+        },
+        {
+          "L_size": 7,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 4,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 232
+        },
+        {
+          "L_size": 8,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 5,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 233
+        },
+        {
+          "L_size": 9,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 6,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 234
+        },
+        {
+          "L_size": 10,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 7,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 235
+        },
+        {
+          "L_size": 11,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 8,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 236
+        },
+        {
+          "L_size": 12,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 9,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 237
+        },
+        {
+          "L_size": 13,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 10,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 238
+        },
+        {
+          "L_size": 14,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 11,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 239
+        },
+        {
+          "L_size": 15,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 12,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 240
+        },
+        {
+          "L_size": 16,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 13,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 241
+        },
+        {
+          "L_size": 17,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 14,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 242
+        },
+        {
+          "L_size": 18,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 15,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 243
+        },
+        {
+          "L_size": 19,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 16,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 244
+        },
+        {
+          "L_size": 20,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 17,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 245
+        },
+        {
+          "L_size": 21,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 18,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 246
+        },
+        {
+          "L_size": 22,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 19,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 247
+        },
+        {
+          "L_size": 23,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 20,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 248
+        },
+        {
+          "L_size": 24,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 21,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 249
+        },
+        {
+          "L_size": 25,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 22,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 250
+        },
+        {
+          "L_size": 26,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 23,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 251
+        },
+        {
+          "L_size": 27,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 24,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 252
+        },
+        {
+          "L_size": 28,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 25,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 253
+        },
+        {
+          "L_size": 29,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 26,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 254
+        },
+        {
+          "L_size": 30,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 27,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 255
+        },
+        {
+          "L_size": 31,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 28,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 256
+        },
+        {
+          "L_size": 32,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 29,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 257
+        },
+        {
+          "L_size": 33,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 30,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 258
+        },
+        {
+          "L_size": 34,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 31,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 259
+        },
+        {
+          "L_size": 35,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 32,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 260
+        },
+        {
+          "L_size": 36,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 33,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 261
+        },
+        {
+          "L_size": 37,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 34,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 262
+        },
+        {
+          "L_size": 38,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 35,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 263
+        },
+        {
+          "L_size": 39,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 36,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 264
+        },
+        {
+          "L_size": 40,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 37,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 265
+        },
+        {
+          "L_size": 41,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 38,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 266
+        },
+        {
+          "L_size": 42,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 39,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 267
+        },
+        {
+          "L_size": 43,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 40,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 268
+        },
+        {
+          "L_size": 44,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 41,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 269
+        },
+        {
+          "L_size": 45,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 42,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 270
+        },
+        {
+          "L_size": 46,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 43,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 271
+        },
+        {
+          "L_size": 47,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 44,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 272
+        },
+        {
+          "L_size": 48,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 45,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 273
+        },
+        {
+          "L_size": 49,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 46,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 274
+        },
+        {
+          "L_size": 50,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 47,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 275
+        },
+        {
+          "L_size": 51,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 48,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 276
+        },
+        {
+          "L_size": 52,
+          "X_core_size": 228,
+          "axis_coefficient": 5,
+          "forbidden": true,
+          "outside_tail_size": 49,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 277
+        }
+      ],
+      "X_core_size": 228,
+      "X_multiplicity": 229,
+      "b": 4,
+      "maximum_forbidden_length": 277,
+      "minimum_forbidden_length": 231,
+      "p": 233
+    },
+    {
+      "L_size_rows": [
+        {
+          "L_size": 6,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 3,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1396
+        },
+        {
+          "L_size": 7,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 4,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1397
+        },
+        {
+          "L_size": 8,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 5,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1398
+        },
+        {
+          "L_size": 9,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 6,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1399
+        },
+        {
+          "L_size": 10,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 7,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1400
+        },
+        {
+          "L_size": 11,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 8,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1401
+        },
+        {
+          "L_size": 12,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 9,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1402
+        },
+        {
+          "L_size": 13,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 10,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1403
+        },
+        {
+          "L_size": 14,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 11,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1404
+        },
+        {
+          "L_size": 15,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 12,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1405
+        },
+        {
+          "L_size": 16,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 13,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1406
+        },
+        {
+          "L_size": 17,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 14,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1407
+        },
+        {
+          "L_size": 18,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 15,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1408
+        },
+        {
+          "L_size": 19,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 16,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1409
+        },
+        {
+          "L_size": 20,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 17,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1410
+        },
+        {
+          "L_size": 21,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 18,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1411
+        },
+        {
+          "L_size": 22,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 19,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1412
+        },
+        {
+          "L_size": 23,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 20,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1413
+        },
+        {
+          "L_size": 24,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 21,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1414
+        },
+        {
+          "L_size": 25,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 22,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1415
+        },
+        {
+          "L_size": 26,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 23,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1416
+        },
+        {
+          "L_size": 27,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 24,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1417
+        },
+        {
+          "L_size": 28,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 25,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1418
+        },
+        {
+          "L_size": 29,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 26,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1419
+        },
+        {
+          "L_size": 30,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 27,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1420
+        },
+        {
+          "L_size": 31,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 28,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1421
+        },
+        {
+          "L_size": 32,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 29,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1422
+        },
+        {
+          "L_size": 33,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 30,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1423
+        },
+        {
+          "L_size": 34,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 31,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1424
+        },
+        {
+          "L_size": 35,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 32,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1425
+        },
+        {
+          "L_size": 36,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 33,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1426
+        },
+        {
+          "L_size": 37,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 34,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1427
+        },
+        {
+          "L_size": 38,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 35,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1428
+        },
+        {
+          "L_size": 39,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 36,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1429
+        },
+        {
+          "L_size": 40,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 37,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1430
+        },
+        {
+          "L_size": 41,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 38,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1431
+        },
+        {
+          "L_size": 42,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 39,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1432
+        },
+        {
+          "L_size": 43,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 40,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1433
+        },
+        {
+          "L_size": 44,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 41,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1434
+        },
+        {
+          "L_size": 45,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 42,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1435
+        },
+        {
+          "L_size": 46,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 43,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1436
+        },
+        {
+          "L_size": 47,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 44,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1437
+        },
+        {
+          "L_size": 48,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 45,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1438
+        },
+        {
+          "L_size": 49,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 46,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1439
+        },
+        {
+          "L_size": 50,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 47,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1440
+        },
+        {
+          "L_size": 51,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 48,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1441
+        },
+        {
+          "L_size": 52,
+          "X_core_size": 1393,
+          "axis_coefficient": 6,
+          "forbidden": true,
+          "outside_tail_size": 49,
+          "quotient_sum_coefficient_mod_p": 0,
+          "total_length": 1442
+        }
+      ],
+      "X_core_size": 1393,
+      "X_multiplicity": 1395,
+      "b": 5,
+      "maximum_forbidden_length": 1442,
+      "minimum_forbidden_length": 1396,
+      "p": 1399
+    }
+  ],
+  "schema": "unique_tail_forced_kernel_nonempty_v1",
+  "scope": {
+    "assumptions": [
+      "p,b are (233,4) or (1399,5)",
+      "the unique tail U has three actual positions and quotient sum -bq",
+      "at least one endpoint E has size 6..8 and quotient sum zero",
+      "L contains U and all endpoints and has size at most 52",
+      "in a forced common-remainder atom type K is empty, so Q_E=L\\E has quotient sum q"
+    ],
+    "conclusion": "K empty forces the forbidden quotient-zero actual block X_(p-b-1) disjoint_union (L\\U)",
+    "not_concluded": [
+      "the three forced packing types are empty",
+      "the K nonempty subbranch is empty",
+      "any of the other four packing types is empty",
+      "A_p"
+    ]
+  },
+  "status": "FORCED_TYPES_REQUIRE_NONEMPTY_COMMON_KERNEL__GLOBAL_INCOMPLETE"
+}

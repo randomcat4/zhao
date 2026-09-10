@@ -1,0 +1,249 @@
+{
+  "certificate_sha256": "05f913f2b8d1508cf09aacb42f56c4805550731c3fed3a0ef0b43f4d3e11a2db",
+  "clear_semantics": {
+    "candidate_status_if_every_oracle_is_exact_CLEAR": "VERIFIED_INTERFACE_SURVIVOR",
+    "certified_rank_two_precondition": "unique_tail_p233_singleton_tail_fringe was independently rederived and reviewed CORRECT; the all-length-seven slice therefore has tail projection rank two",
+    "current_unsat_claim": false,
+    "meaning": "survives this fixed local p=233 slice only; it is not an A_p counterexample and not a global SAT claim",
+    "unsat_semantics": "UNSAT is permitted only after all incidence choices admitted by a separately frozen exhaustive incidence generator are eliminated with checkable certificates"
+  },
+  "dependencies_sha256": {
+    "proofs/unique_tail_all_packing_short_blocks.md": "7abe228fa70dabd8858a40507b11505bd9cee388aa89fd79cd7a22fb8ec68238",
+    "proofs/unique_tail_common_R_next.md": "1c805f0c1b2402e50317712cf5f8341e82ba6c882b3ee02ffab7e901f5614942",
+    "proofs/unique_tail_four_edge_joint_csp.md": "87954d09a00aa74d3d43ce7d784deeff325965e61fca80e900d610371260201f",
+    "proofs/unique_tail_labelled_position_next.md": "60384c64dee88487220f3fd7101a5d3abff1cb576fe3a8b43ec398fdd284ddce",
+    "proofs/unique_tail_p233_singleton_tail_fringe.md": "1e86893a6fca86b2bd9e35fbdc70a8d2c9c6e40be1f68577354cdc5005775a76",
+    "proofs/unique_tail_remaining_long_complement_internal_sums.md": "311730df217f79659cf0d934b8c0df2e02489196208b9e699dc31d8b929d10d1",
+    "proofs/unique_tail_remaining_six_f2_complements.md": "5653c0286a5b8957eaee55c86ad55e87676b6b21f1a1301b44bf056a926a9bc1",
+    "proofs/unique_tail_tail_anchoring.md": "a47995488262e820515dcda0ca7773a2c08dec54170da2a2da49f6e4e65f0421",
+    "verifications/unique_tail_p233_singleton_tail_fringe_independent_review.md": "8487137667255b49f74ce8a0fe79c2d12222e45d54776eb5c8458bce00aed5d1",
+    "verify_unique_tail_labelled_position_next.py": "39c5a2db41097b3644962e22e932d5d9b501156ac46b1daded982de5da7d2076"
+  },
+  "exact_separation_oracles": [
+    {
+      "id": "K_rho_zero_free",
+      "kind": "existential_counterexample",
+      "quantifier": "every nonempty literal subset S of K has rho(sum S) != 0",
+      "violation_witness": [
+        "subset"
+      ]
+    },
+    {
+      "id": "Q_H_rho_atom",
+      "kind": "existential_counterexample",
+      "quantifier": "for every selected endpoint H, no nonempty proper literal subset of Q_H=K union (L\\H) is rho-zero",
+      "violation_witness": [
+        "endpoint_index",
+        "subset"
+      ]
+    },
+    {
+      "id": "mixed_P_Q_target",
+      "independent_P_complement_orbits": 1,
+      "kind": "existential_counterexample",
+      "quantifier": "for each H and every nonempty proper A subset P, every T subset Q_H with rho(T)=-rho(A) has quotient sum(A union T) in {q,2q,3q}",
+      "violation_witness": [
+        "endpoint_index",
+        "P_subset",
+        "Q_subset"
+      ]
+    },
+    {
+      "id": "short_spectrum",
+      "kind": "existential_counterexample",
+      "quantifier": "all c in 0..p-4 and all literal S subset Y with 1<=c+|S|<=8 and cq+sum(S)=0 obey the complete F1/F2/F3 length window",
+      "violation_witness": [
+        "block"
+      ]
+    },
+    {
+      "id": "middle_gap",
+      "kind": "existential_counterexample",
+      "quantifier": "there is no literal quotient-zero X_c union S of total length 9..2p+2",
+      "violation_witness": [
+        "block"
+      ]
+    },
+    {
+      "id": "unique_positive_f3_tail",
+      "kind": "existential_counterexample",
+      "quantifier": "every automatically induced positive-core F3 block is exactly X_4 union U, and every F3 tail meets U",
+      "violation_witness": [
+        "violation_type",
+        "block"
+      ]
+    },
+    {
+      "id": "short_intersection_network",
+      "kind": "existential_counterexample",
+      "quantifier": "both sides of a pair witness are induced allowed short blocks; all induced F3 blocks meet every induced short block, induced F2 blocks meet one another, disjoint short unions of length 9..2p+2 are forbidden, and distinct F3 intersections are nonzero in the quotient",
+      "violation_witness": [
+        "violation_type",
+        "left",
+        "right",
+        "optional core_intersection"
+      ]
+    },
+    {
+      "id": "all_F3_complement_internal_sums",
+      "kind": "existential_counterexample",
+      "quantifier": "for every automatically induced F3 block, every nonempty proper literal subset of its X/Y complement has nonzero C_p^3 quotient sum",
+      "violation_witness": [
+        "F3_block",
+        "internal_subset"
+      ]
+    },
+    {
+      "id": "six_F2_extreme_complement_internal_sums",
+      "kind": "existential_counterexample",
+      "quantifier": "every nonempty proper literal subset of Z\\(X_1 union U union P) has nonzero C_p^3 quotient sum",
+      "violation_witness": [
+        "internal_subset"
+      ]
+    },
+    {
+      "clear_certificate_requirement": "complete short-star support/count certificate; an asserted residual is not self-authenticating",
+      "id": "Hasse_all_positions",
+      "kind": "aggregate_exact",
+      "quantifier": "the complete reconstructed short-star family satisfies all zero-, one-, two-, and three-position Hasse congruences, including fixed X positions",
+      "row_counts": {
+        "pair_congruences": 225152,
+        "pair_keys": 112576,
+        "point_congruences": 1425,
+        "point_keys": 475,
+        "total_congruences": 17976380,
+        "triple_congruences": 17749800,
+        "triple_keys": 17749800,
+        "zero_order_congruences": 3
+      }
+    },
+    {
+      "id": "Z_actual_atom",
+      "kind": "existential_counterexample",
+      "quantifier": "no nonempty proper literal position subsequence of X^(p-4) union Y has actual C_p^4 sum zero",
+      "violation_witness": [
+        "internal_subset"
+      ]
+    }
+  ],
+  "instance": {
+    "loaded": false,
+    "reason": "no concrete all-distinct-trace endpoint incidence and no 474-position label assignment were supplied"
+  },
+  "instance_schema": {
+    "T_relation": "T is a fixed zero-core F3 block on the shared Y positions; it may or may not equal a selected four-edge endpoint. L is defined only from U and the selected four-edge endpoints, so no unstated T-incidence assumption is made",
+    "certified_dependency": {
+      "independent_review_sha256": "8487137667255b49f74ce8a0fe79c2d12222e45d54776eb5c8458bce00aed5d1",
+      "name": "unique_tail_p233_singleton_tail_fringe",
+      "review_status": "CORRECT",
+      "used_consequence": "three all-length-seven singleton-trace endpoints exclude tail projection rank one"
+    },
+    "derived_sets": {
+      "K": "R\\P",
+      "L": "U union all selected endpoints",
+      "Q_H": "K union (L\\H) = Y\\(H union P)",
+      "R": "Y\\L",
+      "automatic_six_F2": "X_1 union U union P"
+    },
+    "excluded_template": "the historical distinct-doubleton cover witness has K empty and is not an admissible template for this K-nonempty type-(3) slice",
+    "fixed_scalars": {
+      "P_size": 2,
+      "X_multiplicity": 229,
+      "Y_size": 474,
+      "a": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "endpoint_length_stage": "length_7_only",
+      "kappa": 1,
+      "p": 233,
+      "packing_type": "(3)",
+      "q": [
+        1,
+        0,
+        0
+      ],
+      "tail_projection_rank": 2,
+      "unique_type": [
+        7,
+        4
+      ]
+    },
+    "incidence_boundary": "no concrete upstream endpoint incidence is bundled with this file",
+    "literal_identity_rule": "every named block is a set of indices into the one shared 474-row Y array; no endpoint-local labels are accepted",
+    "required_fields": [
+      "schema",
+      "p",
+      "unique_type",
+      "packing_type",
+      "P_size",
+      "kappa",
+      "endpoint_length_stage",
+      "x_height",
+      "Y",
+      "T",
+      "U",
+      "endpoints",
+      "four_edges",
+      "common_nonaxial_position",
+      "L",
+      "R",
+      "P",
+      "K"
+    ],
+    "schema": "unique_tail_p233_type3_p2_exact_slice_instance_v1"
+  },
+  "schema": "unique_tail_p233_type3_p2_exact_slice_report_v1",
+  "slice": {
+    "P_size": 2,
+    "X_multiplicity": 229,
+    "Y_size": 474,
+    "a": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "endpoint_length_stage": "length_7_only",
+    "kappa": 1,
+    "p": 233,
+    "packing_type": "(3)",
+    "q": [
+      1,
+      0,
+      0
+    ],
+    "tail_projection_rank": 2,
+    "unique_type": [
+      7,
+      4
+    ]
+  },
+  "small_exact_audit": {
+    "Hasse_row_arithmetic": {
+      "pair_congruences": 225152,
+      "pair_keys": 112576,
+      "point_congruences": 1425,
+      "point_keys": 475,
+      "total_congruences": 17976380,
+      "triple_congruences": 17749800,
+      "triple_keys": 17749800,
+      "zero_order_congruences": 3
+    },
+    "P_mixed_target_complement_orbit_count": 1,
+    "compressed_axial_atom_vs_literal_subsets": 48,
+    "short_intersection_classifier_regression_rows": 5
+  },
+  "static_equalities_restored": [
+    "all 474 literal C_p^4 labels are shared by T,U,L,R,P,K and every endpoint",
+    "sum(Y)=4x, sum(U)=3a-4x, sum(H)=3a, sum(P)=3x-a",
+    "P is a two-position rho-atom, L and R are literal complements, and K=R\\P",
+    "each length-seven endpoint gives |Q_H|=2p-1 and quotient sum q",
+    "X_1 union U union P is the automatic length-six F2 block",
+    "four distinct trace-disjoint edges share one literal nonaxial position and all endpoint traces are distinct",
+    "the injective four-edge trace graph contains all three singleton traces and the all-length-seven slice has rank rho(U)=2"
+  ],
+  "status": "INSTANCE_SCHEMA/CEGAR_ORACLES_UNINSTANTIATED/GLOBAL_INCOMPLETE"
+}

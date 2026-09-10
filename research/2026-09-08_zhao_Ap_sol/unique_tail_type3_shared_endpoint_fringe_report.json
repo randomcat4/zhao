@@ -1,0 +1,775 @@
+{
+  "certificate_sha256": "d6ccad1a67221224d75c96766d992c9b456b7ad05c409cbe8482afbe5579560a",
+  "dependencies_sha256": {
+    "proofs/unique_tail_forced_common_atoms_attack.md": "8b65afeb55a419abe980225d5c19024b80106157f0657055f13d84ccf40aac6c",
+    "proofs/unique_tail_type3_near_davenport_group_algebra.md": "705da14a4f7d8de60e2ad71f91b349bce277386090ba7611941d2a176b764b47",
+    "unique_tail_type3_near_davenport_group_algebra_report.json": "c7bc5ea0aef9b5d1ed771b8621fa43d6c9d2522a13808b742f628cc3337bbcca",
+    "verifications/unique_tail_seven_type_fresh_independent_review.md": "cb4d9794b3f7277609e331a7cd674dc6d347e81c0eff1e6885e75924d78fd240",
+    "verifications/unique_tail_type3_near_davenport_group_algebra_independent_review.md": "9d3d9b45234b91b9190b579155c28071133d020dfe71dddb71261cd339f0afb4"
+  },
+  "pair_rows": [
+    {
+      "P_size": 1,
+      "deltas": [
+        0,
+        0
+      ],
+      "endpoint_lengths": [
+        8,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D_k(Psi_A-Psi_B)=0 because both deleted endpoint products equal J",
+      "upper_deleted_state": "J",
+      "upper_full_state": "zero_in_I^(2p-1)"
+    },
+    {
+      "P_size": 2,
+      "deltas": [
+        0,
+        0
+      ],
+      "endpoint_lengths": [
+        7,
+        7
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D_k(Psi_A-Psi_B)=0 because both deleted endpoint products equal J",
+      "upper_deleted_state": "J",
+      "upper_full_state": "zero_in_I^(2p-1)"
+    },
+    {
+      "P_size": 2,
+      "deltas": [
+        0,
+        1
+      ],
+      "endpoint_lengths": [
+        7,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "shared_factor_consequence": "D Psi_B=0, D Psi_A=2J, and D_k Psi_B=J",
+      "upper_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "2J_in_I^(2p-2)"
+    },
+    {
+      "P_size": 2,
+      "deltas": [
+        1,
+        1
+      ],
+      "endpoint_lengths": [
+        8,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "lower_full_state": "2J_in_I^(2p-2)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D(Psi_A-Psi_B)=0 because both full endpoint products equal 2J",
+      "upper_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "2J_in_I^(2p-2)"
+    },
+    {
+      "P_size": 3,
+      "deltas": [
+        0,
+        0
+      ],
+      "endpoint_lengths": [
+        6,
+        6
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D_k(Psi_A-Psi_B)=0 because both deleted endpoint products equal J",
+      "upper_deleted_state": "J",
+      "upper_full_state": "zero_in_I^(2p-1)"
+    },
+    {
+      "P_size": 3,
+      "deltas": [
+        0,
+        1
+      ],
+      "endpoint_lengths": [
+        6,
+        7
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "shared_factor_consequence": "D Psi_B=0, D Psi_A=2J, and D_k Psi_B=J",
+      "upper_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "2J_in_I^(2p-2)"
+    },
+    {
+      "P_size": 3,
+      "deltas": [
+        0,
+        2
+      ],
+      "endpoint_lengths": [
+        6,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "shared_factor_consequence": "D Psi_B=0 and D_k Psi_B=J; the A side remains in the delta-2 fringe",
+      "upper_deleted_state": "nonzero_in_6_dimensional_I^(2p-4)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "element_of_I^(2p-3)_with_identity_coefficient_0"
+    },
+    {
+      "P_size": 3,
+      "deltas": [
+        1,
+        1
+      ],
+      "endpoint_lengths": [
+        7,
+        7
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "lower_full_state": "2J_in_I^(2p-2)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D(Psi_A-Psi_B)=0 because both full endpoint products equal 2J",
+      "upper_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "2J_in_I^(2p-2)"
+    },
+    {
+      "P_size": 3,
+      "deltas": [
+        1,
+        2
+      ],
+      "endpoint_lengths": [
+        7,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "lower_full_state": "2J_in_I^(2p-2)",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "shared_factor_consequence": "D Psi_B=2J; the A side remains in the delta-2 fringe",
+      "upper_deleted_state": "nonzero_in_6_dimensional_I^(2p-4)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "element_of_I^(2p-3)_with_identity_coefficient_0"
+    },
+    {
+      "P_size": 3,
+      "deltas": [
+        2,
+        2
+      ],
+      "endpoint_lengths": [
+        8,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "nonzero_in_6_dimensional_I^(2p-4)_fringe_with_identity_coefficient_1",
+      "lower_full_state": "element_of_I^(2p-3)_with_identity_coefficient_0",
+      "p": 233,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "only the two shared-factor six-dimensional deleted fringes are forced",
+      "upper_deleted_state": "nonzero_in_6_dimensional_I^(2p-4)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "element_of_I^(2p-3)_with_identity_coefficient_0"
+    },
+    {
+      "P_size": 1,
+      "deltas": [
+        0,
+        0
+      ],
+      "endpoint_lengths": [
+        8,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 1399,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D_k(Psi_A-Psi_B)=0 because both deleted endpoint products equal J",
+      "upper_deleted_state": "J",
+      "upper_full_state": "zero_in_I^(2p-1)"
+    },
+    {
+      "P_size": 2,
+      "deltas": [
+        0,
+        0
+      ],
+      "endpoint_lengths": [
+        7,
+        7
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 1399,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D_k(Psi_A-Psi_B)=0 because both deleted endpoint products equal J",
+      "upper_deleted_state": "J",
+      "upper_full_state": "zero_in_I^(2p-1)"
+    },
+    {
+      "P_size": 2,
+      "deltas": [
+        0,
+        1
+      ],
+      "endpoint_lengths": [
+        7,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "J",
+      "lower_full_state": "zero_in_I^(2p-1)",
+      "p": 1399,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "shared_factor_consequence": "D Psi_B=0, D Psi_A=2J, and D_k Psi_B=J",
+      "upper_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "2J_in_I^(2p-2)"
+    },
+    {
+      "P_size": 2,
+      "deltas": [
+        1,
+        1
+      ],
+      "endpoint_lengths": [
+        8,
+        8
+      ],
+      "factorization": {
+        "D": "Psi_K Psi_(L minus (H union J))",
+        "D_k": "Psi_(K minus k) Psi_(L minus (H union J))",
+        "Q_H_deleted_k": "D_k Psi_B",
+        "Q_H_full": "D Psi_B",
+        "Q_J_deleted_k": "D_k Psi_A",
+        "Q_J_full": "D Psi_A"
+      },
+      "lower_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "lower_full_state": "2J_in_I^(2p-2)",
+      "p": 1399,
+      "proper_nonempty_petal_size_pairs": [
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shared_factor_consequence": "D(Psi_A-Psi_B)=0 because both full endpoint products equal 2J",
+      "upper_deleted_state": "nonzero_in_3_dimensional_I^(2p-3)_fringe_with_identity_coefficient_1",
+      "upper_full_state": "2J_in_I^(2p-2)"
+    }
+  ],
+  "schema": "unique_tail_type3_shared_endpoint_fringe_v1",
+  "scope": {
+    "assumptions": [
+      "all assumptions of the audited type-(3) near-Davenport group-algebra theorem",
+      "H and J are distinct actual zero-core endpoints in the same instance",
+      "all endpoints share an actual position y, so 1<=|H intersection J|",
+      "actual atomicity of Z makes both exclusive petals nonempty"
+    ],
+    "conclusion": "the full and common-k-deleted products of every endpoint pair factor through the same actual-position bases D and D_k; all six possible delta pairs have the stated exact top-fringe, annihilation, or separator relations",
+    "not_concluded": [
+      "a common group-algebra factor can be cancelled",
+      "every length class occurs in one instance",
+      "any pair row is realizable",
+      "type (3) is empty",
+      "A_p"
+    ]
+  },
+  "status": "TYPE_3_ALL_ENDPOINT_PAIRS_SHARE_EXACT_FRINGE_FACTORS__GLOBAL_INCOMPLETE",
+  "summary": {
+    "all_delta_pairs": [
+      "0-0",
+      "0-1",
+      "0-2",
+      "1-1",
+      "1-2",
+      "2-2"
+    ],
+    "conditional_length_pair_row_count": 14,
+    "delta_0_1_full_separator": "D Psi_B=0 while D Psi_A=2J",
+    "delta_pair_counts": {
+      "0-0": 5,
+      "0-1": 3,
+      "0-2": 1,
+      "1-1": 3,
+      "1-2": 1,
+      "2-2": 1
+    },
+    "literal_petal_size_row_count": 86,
+    "same_delta_0_deleted_annihilator": "D_k(Psi_A-Psi_B)=0",
+    "same_delta_1_full_annihilator": "D(Psi_A-Psi_B)=0"
+  }
+}

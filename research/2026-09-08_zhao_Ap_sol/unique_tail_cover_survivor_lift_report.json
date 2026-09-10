@@ -1,0 +1,74 @@
+{
+  "status": "TEN_POSITION_SKELETON_NOT_LIFTABLE/FIXED_LABEL_SHORT_CORE/UNIFIED_LABEL_RELABEL_CORE/NO_PACKING_TYPE_CLOSED/GLOBAL_INCOMPLETE",
+  "scope": "The exact ten-position incidence skeleton of the explicit local survivor. The relabelling obstruction quantifies over every assignment of labels and every external completion preserving this skeleton, not over other endpoint incidence skeletons.",
+  "primes": [
+    {
+      "p": 233,
+      "unique_type": [7, 4],
+      "fixed_U_observed_sum": [0, 2, 2, 0],
+      "fixed_U_required_sum": [229, 0, 0, 3],
+      "relabel_forced_block_core_count": 227,
+      "relabel_forced_block_length": 230,
+      "relabel_forced_block_count": 3
+    },
+    {
+      "p": 1399,
+      "unique_type": [8, 5],
+      "fixed_U_observed_sum": [0, 2, 2, 0],
+      "fixed_U_required_sum": [1394, 0, 0, 3],
+      "relabel_forced_block_core_count": 1392,
+      "relabel_forced_block_length": 1395,
+      "relabel_forced_block_count": 3
+    }
+  ],
+  "fixed_label_short_closure": {
+    "candidate_count": 14,
+    "accepted_count": 13,
+    "accepted_family_counts": {"F1": 1, "F2": 6, "F3": 6},
+    "rejected_count": 1,
+    "unique_rejected_row": {
+      "tail": ["u2", "u3", "w1", "w2", "z"],
+      "core_count": 2,
+      "length": 7,
+      "actual_sum_multiple_of_a": 1,
+      "allowed_family_multiples": [2, 3]
+    },
+    "independent_combination_crosscheck": "PASS",
+    "deleting_any_bad_tail_position_removes_all_local_short_failures": true,
+    "retaining_only_one_X_position_removes_all_local_short_failures": true
+  },
+  "derived_F3_local_internal_subsets": {
+    "zero_core_F3_count": 6,
+    "names": ["s1", "s2", "s3", "d1", "d2", "d3_auto"],
+    "all_nonempty_local_internal_subsets_checked": 38,
+    "axial_internal_subset_count": 6,
+    "axial_gate_violation_count": 0,
+    "full_R_subset_scope": "UNAVAILABLE_BECAUSE_THE_OLD_SURVIVOR_DID_NOT_ASSIGN_PER_POSITION_UNIFIED_LABELS_TO_R"
+  },
+  "locally_decidable_intersections": {
+    "short_block_pairs_subject_to_tail_intersection_gate": 72,
+    "tail_intersection_violation_count": 0,
+    "F3_pair_count": 15,
+    "F3_pair_zero_quotient_intersection_count": 0,
+    "F3_pair_axis_only_intersection_count": 3
+  },
+  "hasse_boundary": {
+    "local_fixed_point_scalar_rows": 33,
+    "local_fixed_pair_scalar_rows": 112,
+    "local_fixed_triple_scalar_rows": 176,
+    "status": "NOT_REACHED_AFTER_FORCED_BLOCK_CONTRADICTION",
+    "reason": "Rows involving the fixed L positions also receive contributions from R-containing blocks; the two local obstructions cannot be removed by those contributions."
+  },
+  "unified_label_relabelling_core": {
+    "identity": "quotient_sum(Q_si)+quotient_sum(Q_sj)-quotient_sum(U)=(b+2)q",
+    "forced_tails": [
+      ["u3", "v1", "v2"],
+      ["u2", "v1", "v3"],
+      ["u1", "v2", "v3"]
+    ],
+    "conclusion": "Adding p-b-2 X positions gives quotient-zero length p-b+1 in the forbidden interval 9..p+1 for either prime.",
+    "quantifier": "Every relabelling and every external completion preserving U, the three displayed singleton complements, their unified quotient labels, and the X fibre is rejected."
+  },
+  "certificate_sha256": "4d5da443323c68e487a8f98b898d6aa3bd649a1fa9b2edbf369bb5e822b0295c",
+  "global_boundary": "This kills one deliberately relaxed local witness and its exact incidence skeleton. It does not prove any common-R packing type empty and does not close the large-prime unique-tail branch."
+}

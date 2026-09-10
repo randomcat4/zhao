@@ -1,0 +1,98 @@
+{
+  "algebra": {
+    "I_2p_minus_2_dimension": 1,
+    "I_2p_minus_3_dimension": 3,
+    "consequence": "ell_C(w_j)=ell_C(w_k)=1, hence c_j=c_k in rank one",
+    "deleted_tail_products": "Psi_C Psi_{u_j}=Psi_C Psi_{u_k}=J",
+    "length_7_C_length": 463,
+    "length_7_Q_length": 465
+  },
+  "all_length_seven_slice_corollary": "the frozen 777 singleton-endpoint slice has quotient-rank two; after GL(2,p) normalization its ordered tail projection is ((1,0),(0,1),(-1,-1))",
+  "certificate_sha256": "e9fda3dc8eb8f7d1b0183117d440f127c39c558bdb1718211fa2bbbc7bda291e",
+  "conclusion": "in quotient-rank one, at most one of the three singleton-trace endpoints has length seven; up to permutation only 888 and 788 remain",
+  "dependencies": {
+    "proofs/unique_tail_all_packing_short_blocks.md": "7abe228fa70dabd8858a40507b11505bd9cee388aa89fd79cd7a22fb8ec68238",
+    "proofs/unique_tail_four_edge_joint_csp.md": "87954d09a00aa74d3d43ce7d784deeff325965e61fca80e900d610371260201f",
+    "proofs/unique_tail_remaining_long_complement_internal_sums.md": "311730df217f79659cf0d934b8c0df2e02489196208b9e699dc31d8b929d10d1",
+    "proofs/unique_tail_tail_anchoring.md": "a47995488262e820515dcda0ca7773a2c08dec54170da2a2da49f6e4e65f0421",
+    "proofs/unique_tail_type3_near_davenport_group_algebra.md": "705da14a4f7d8de60e2ad71f91b349bce277386090ba7611941d2a176b764b47",
+    "proofs/unique_tail_type3_shared_endpoint_fringe.md": "a0168e71cc4ea7a5fe17f4343de61827eb50d1c9459a33b65d6a90e85beeffa4",
+    "unique_tail_position_conflict_frontier.py": "6d994a130ee11a228c6714206ee9ce4f332c6f8bd8f41ed69655228784497506"
+  },
+  "length_patterns": [
+    {
+      "delta_pattern": [0, 0, 0],
+      "endpoint_lengths": [7, 7, 7],
+      "rank_one_coefficient_triples": 0,
+      "rank_one_projective_orbits": 0,
+      "survives_rank_one_fringe": false
+    },
+    {
+      "delta_pattern": [0, 0, 1],
+      "endpoint_lengths": [7, 7, 8],
+      "rank_one_coefficient_triples": 0,
+      "rank_one_projective_orbits": 0,
+      "survives_rank_one_fringe": false
+    },
+    {
+      "delta_pattern": [0, 1, 0],
+      "endpoint_lengths": [7, 8, 7],
+      "rank_one_coefficient_triples": 0,
+      "rank_one_projective_orbits": 0,
+      "survives_rank_one_fringe": false
+    },
+    {
+      "delta_pattern": [0, 1, 1],
+      "endpoint_lengths": [7, 8, 8],
+      "rank_one_coefficient_triples": 232,
+      "rank_one_projective_orbits": 1,
+      "survives_rank_one_fringe": true
+    },
+    {
+      "delta_pattern": [1, 0, 0],
+      "endpoint_lengths": [8, 7, 7],
+      "rank_one_coefficient_triples": 0,
+      "rank_one_projective_orbits": 0,
+      "survives_rank_one_fringe": false
+    },
+    {
+      "delta_pattern": [1, 0, 1],
+      "endpoint_lengths": [8, 7, 8],
+      "rank_one_coefficient_triples": 232,
+      "rank_one_projective_orbits": 1,
+      "survives_rank_one_fringe": true
+    },
+    {
+      "delta_pattern": [1, 1, 0],
+      "endpoint_lengths": [8, 8, 7],
+      "rank_one_coefficient_triples": 232,
+      "rank_one_projective_orbits": 1,
+      "survives_rank_one_fringe": true
+    },
+    {
+      "delta_pattern": [1, 1, 1],
+      "endpoint_lengths": [8, 8, 8],
+      "rank_one_coefficient_triples": 53592,
+      "rank_one_projective_orbits": 231,
+      "survives_rank_one_fringe": true
+    }
+  ],
+  "linearity_checks": 10976,
+  "not_claimed": [
+    "rank-two tails are excluded",
+    "either surviving rank-one length pattern is realizable",
+    "the p=233 labelled slice is UNSAT",
+    "the global A_p statement is proved"
+  ],
+  "schema": "unique_tail_p233_singleton_tail_fringe_v1",
+  "scope": {
+    "P_size": 2,
+    "b": 4,
+    "branch": "four-edge all-distinct traces; three singleton-trace endpoints",
+    "p": 233,
+    "packing_axis_defect": 1,
+    "packing_type": "(3)",
+    "tail_projection_rank": 1
+  },
+  "status": "PROVED_REDUCTION__RANK_ONE_ONLY__GLOBAL_INCOMPLETE"
+}

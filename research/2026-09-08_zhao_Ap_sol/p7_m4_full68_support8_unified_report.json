@@ -1,0 +1,159 @@
+{
+  "atomic_prefix_pruned": 336630802,
+  "conditional_exact_three_splice": {
+    "application": "for a pointed-q^4 atom having an exact-three fibre r, use r as the dependency's distinguished value; the original q^4 is an allowed other fibre",
+    "conditional_consequence": "together with the no-three certificate and the support-at-most-seven splice, pointed-q^4 support at most eight is closed; next support boundary is at least nine",
+    "dependency": "proofs/p7_m3_full_support8_frontier.md",
+    "dependency_report_stream_sha256": "25cdd6726db7605d5981e6c024d8ea6b7885ee2d4c87953700f852550559c0f5",
+    "dependency_status": "PROVED_HERE; independent audit CORRECT",
+    "invariance": "E1(B) and existence of a six-position zero-sum tail do not depend on which fibre is named distinguished and are GL(3,7)-invariant",
+    "nonclaim": "not a full 68-scalar UNSAT certificate",
+    "scope": "support eight with a distinguished exact-three fibre and all other multiplicities at most four"
+  },
+  "direct_hit_sha256": "696dc6aaf5ed680b9b8011ea5bfa7801ba22c1325502d9397c008e091532c23d",
+  "direct_hits": [
+    {
+      "atom_ids": [
+        1,
+        1,
+        1,
+        1,
+        7,
+        7,
+        7,
+        7,
+        49,
+        49,
+        49,
+        49,
+        209,
+        239,
+        295,
+        295,
+        301,
+        301,
+        302
+      ],
+      "escape_ids": [
+        97
+      ],
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "zero_sum_six_tail_multisets": 0
+    },
+    {
+      "atom_ids": [
+        1,
+        1,
+        1,
+        1,
+        7,
+        7,
+        7,
+        7,
+        43,
+        43,
+        49,
+        49,
+        49,
+        49,
+        83,
+        91,
+        91,
+        92,
+        323
+      ],
+      "escape_ids": [
+        307
+      ],
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "zero_sum_six_tail_multisets": 0
+    },
+    {
+      "atom_ids": [
+        1,
+        1,
+        1,
+        1,
+        7,
+        7,
+        7,
+        7,
+        13,
+        13,
+        49,
+        49,
+        49,
+        49,
+        55,
+        55,
+        62,
+        95,
+        305
+      ],
+      "escape_ids": [
+        337
+      ],
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "zero_sum_six_tail_multisets": 0
+    }
+  ],
+  "escape_prefix_pruned": 0,
+  "final_escape_pruned": 210468,
+  "final_nonatoms": 13630,
+  "final_zero_sum_candidates": 224101,
+  "forced_last_rejected": 7152580,
+  "hit_sha256": "20a112d9a299524d888855c9e8ff1da4dac33e3379fd7e4aaea55bf9a36f1f13",
+  "orbit_count": 2,
+  "orbit_preimages": [
+    2,
+    1
+  ],
+  "orbit_sha256": "38e581cb067ca585fe27173e6b75bf8b4f4dbe102716f4195dc5e1f030d70993",
+  "ordered_prefix_nodes": 349910371,
+  "profile_count": 66,
+  "profiles_sha256": "89cd3ce9003efe4cdf5265fac0afb9a7d539a912884b9a6b7f537ab34b502177",
+  "schema": "p7-m4-full68-support8-unified-v1",
+  "scope": "complete union of the two no-multiplicity-three support-eight signatures; exact quotient necessary layer, not a height or full-68-scalar classification",
+  "shard_sha256": [
+    "e4d34a518a239d0abd1ff20c05f30023493cef0f43ecc13e32eebdb29f232da1",
+    "dd059cdcc58f353345ede4f39b1850dba4787a70989133ca65b28bd352563a98",
+    "2ac486855082809b166ddcf70d890a346dcdf9193d7bc179df99b586c631c18c",
+    "fe2f787a89cf26421266c2f887950b39db6d7677b3dc7b0ad980867678c3d5ad",
+    "2a7776fcffd696b06f6214045053421781ab302f00f2751a320cd44b8a43d991",
+    "0c734eb98cf13c35ca4917e02af625cc884d53302f4a5d72e8674118623b1fe0",
+    "363754dbadf183bcf6d8a8b60daf941e77de75e263af4eb773aca970ed5c6128",
+    "8422f6af865fc4dca509ffcec3cdaf64905d685da335dca05f2f24ed23c28eda",
+    "b6964b9d4a26c8e38eab12c6a0f69678b630bb9c14fbf954fb599073e9038d4c",
+    "49ed14264c24540806613d283d251b0867a8f25b9dd510992192359ad7c3ea33",
+    "c9588dc8892bcfd5c55cb3ada4d99183a6cee84ffb93fc0cf7ac6016c32c16bb"
+  ],
+  "target_atom_hits": 3,
+  "target_with_T_survivor": 0
+}

@@ -1,0 +1,440 @@
+{
+  "actual_multiplicity": {
+    "classes_at_upper_bound": [
+      {
+        "actual_label": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "multiplicity": 229
+      },
+      {
+        "actual_label": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 229
+      }
+    ],
+    "distinct_actual_labels": 18,
+    "maximum": 229,
+    "multiplicity_value_distribution": {
+      "1": 13,
+      "2": 2,
+      "228": 1,
+      "229": 2
+    },
+    "positions_counted": 703,
+    "required_upper_bound": 229
+  },
+  "author_bindings_sha256": {
+    "proofs/unique_tail_p233_doubleton_D_q_lift_attack.md": "a6413cbccf122e2f040f428e3569018f35f6942eafbbc9f80c776430e5f9114d",
+    "unique_tail_p233_doubleton_D_q_lift_attack.py": "19e6d555a5424780fc3ab176e2e0d1318e1907d2142c587d422d412b5be0885c",
+    "unique_tail_p233_doubleton_D_q_lift_attack_report.json": "ba15376e50590abe95620ffe3568f0ec2b1eb5a964ae934b82d47e38f7a3b58c"
+  },
+  "author_report_comparison": {
+    "actual_cap_summary_match": true,
+    "endpoint_zero_subset_rows_match": true,
+    "first_moment_table_match": true,
+    "full_position_table_match": true,
+    "packing_table_match": true,
+    "rho_atom_summary_match": true
+  },
+  "author_semantic_certificate": "69a434edeb843342b7cd1bde819b64c2cfa7277fea64bd79f4ebe394be411298",
+  "certificate_sha256": "0b7e37da3d0ac1da15049d672ba803143b80e471ae13ec2d939d7c01fbc2916f",
+  "endpoint_internal_summary": {
+    "allowed_short_blocks": {
+      "ALLOWED_SHORT_F1": 1,
+      "ALLOWED_SHORT_F3": 3
+    },
+    "literal_subsets_scanned": 384,
+    "middle_gap_violations": 0,
+    "no_available_X_completion": 1,
+    "nonempty_rho_zero_subset_occurrences": 5,
+    "proper_nonempty_rho_zero_subset_occurrences": 2,
+    "rho_zero_subset_occurrences": 8,
+    "short_window_violations": 0
+  },
+  "endpoint_internal_zero_subset_rows": [
+    {
+      "actual_sum_class": 0,
+      "decision": "EMPTY",
+      "endpoint": "H_doubleton_ft",
+      "height_sum": 0,
+      "is_full_endpoint": false,
+      "q_sum": 0,
+      "subset": [],
+      "subset_size": 0,
+      "total_length": 0,
+      "x_available": true,
+      "x_needed": 0
+    },
+    {
+      "actual_sum_class": 1,
+      "decision": "ALLOWED_SHORT_F1",
+      "endpoint": "H_doubleton_ft",
+      "height_sum": 1,
+      "is_full_endpoint": false,
+      "q_sum": 232,
+      "subset": [
+        "d_p23_h",
+        "d_p23_z1",
+        "d_p23_z2",
+        "d_y"
+      ],
+      "subset_size": 4,
+      "total_length": 5,
+      "x_available": true,
+      "x_needed": 1
+    },
+    {
+      "actual_sum_class": null,
+      "decision": "NO_AVAILABLE_X_COMPLETION",
+      "endpoint": "H_doubleton_ft",
+      "height_sum": 2,
+      "is_full_endpoint": false,
+      "q_sum": 1,
+      "subset": [
+        "d_p23_g",
+        "u_f",
+        "u_t"
+      ],
+      "subset_size": 3,
+      "total_length": null,
+      "x_available": false,
+      "x_needed": 232
+    },
+    {
+      "actual_sum_class": 3,
+      "decision": "ALLOWED_SHORT_F3",
+      "endpoint": "H_doubleton_ft",
+      "height_sum": 3,
+      "is_full_endpoint": true,
+      "q_sum": 0,
+      "subset": [
+        "d_p23_g",
+        "d_p23_h",
+        "d_p23_z1",
+        "d_p23_z2",
+        "d_y",
+        "u_f",
+        "u_t"
+      ],
+      "subset_size": 7,
+      "total_length": 7,
+      "x_available": true,
+      "x_needed": 0
+    },
+    {
+      "actual_sum_class": 0,
+      "decision": "EMPTY",
+      "endpoint": "H_doubleton_et",
+      "height_sum": 0,
+      "is_full_endpoint": false,
+      "q_sum": 0,
+      "subset": [],
+      "subset_size": 0,
+      "total_length": 0,
+      "x_available": true,
+      "x_needed": 0
+    },
+    {
+      "actual_sum_class": 3,
+      "decision": "ALLOWED_SHORT_F3",
+      "endpoint": "H_doubleton_et",
+      "height_sum": 3,
+      "is_full_endpoint": true,
+      "q_sum": 0,
+      "subset": [
+        "d_p13_h_001",
+        "d_p13_h_002",
+        "d_p13_h_003",
+        "d_p13_h_004",
+        "d_y",
+        "u_e",
+        "u_t"
+      ],
+      "subset_size": 7,
+      "total_length": 7,
+      "x_available": true,
+      "x_needed": 0
+    },
+    {
+      "actual_sum_class": 0,
+      "decision": "EMPTY",
+      "endpoint": "H_doubleton_ef",
+      "height_sum": 0,
+      "is_full_endpoint": false,
+      "q_sum": 0,
+      "subset": [],
+      "subset_size": 0,
+      "total_length": 0,
+      "x_available": true,
+      "x_needed": 0
+    },
+    {
+      "actual_sum_class": 3,
+      "decision": "ALLOWED_SHORT_F3",
+      "endpoint": "H_doubleton_ef",
+      "height_sum": 3,
+      "is_full_endpoint": true,
+      "q_sum": 0,
+      "subset": [
+        "d_p12_f",
+        "d_p12_g1",
+        "d_p12_g2",
+        "d_p12_r",
+        "d_y",
+        "u_e",
+        "u_f"
+      ],
+      "subset_size": 7,
+      "total_length": 7,
+      "x_available": true,
+      "x_needed": 0
+    }
+  ],
+  "first_moments": {
+    "H:H_doubleton_ef": {
+      "height_sum": 3,
+      "q_coordinate_sum": 0,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 7
+    },
+    "H:H_doubleton_et": {
+      "height_sum": 3,
+      "q_coordinate_sum": 0,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 7
+    },
+    "H:H_doubleton_ft": {
+      "height_sum": 3,
+      "q_coordinate_sum": 0,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 7
+    },
+    "P": {
+      "height_sum": 232,
+      "q_coordinate_sum": 3,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 2
+    },
+    "Q:H_doubleton_ef": {
+      "height_sum": 231,
+      "q_coordinate_sum": 1,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 465
+    },
+    "Q:H_doubleton_et": {
+      "height_sum": 231,
+      "q_coordinate_sum": 1,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 465
+    },
+    "Q:H_doubleton_ft": {
+      "height_sum": 231,
+      "q_coordinate_sum": 1,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 465
+    },
+    "U": {
+      "height_sum": 3,
+      "q_coordinate_sum": 229,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 3
+    },
+    "W": {
+      "height_sum": 1,
+      "q_coordinate_sum": 1,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 472
+    },
+    "Y": {
+      "height_sum": 0,
+      "q_coordinate_sum": 4,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 474
+    },
+    "Z": {
+      "height_sum": 0,
+      "q_coordinate_sum": 0,
+      "rho_sum": [
+        0,
+        0
+      ],
+      "size": 703
+    }
+  },
+  "incidence": {
+    "K_size": 456,
+    "L_size": 16,
+    "Q_sizes": {
+      "H_doubleton_ef": 465,
+      "H_doubleton_et": 465,
+      "H_doubleton_ft": 465
+    },
+    "Q_triple_intersection_size": 456,
+    "W_size": 472,
+    "endpoint_sizes": {
+      "H_doubleton_ef": 7,
+      "H_doubleton_et": 7,
+      "H_doubleton_ft": 7
+    }
+  },
+  "method": "fresh literal reconstruction; no author-module import or execution",
+  "omitted_scope_confirmed": [
+    "rho-zero subsets of Y not contained in one displayed H",
+    "the globally induced short spectrum and disjoint-short-block constraints",
+    "proper-subset mixed P-Q_H target fibres",
+    "Hasse rows and four-edge/all-endpoint completion",
+    "actual Z atomicity"
+  ],
+  "outside_scope_probes": {
+    "P_plus_X": {
+      "available_X_positions": 229,
+      "decision": "no_X_completion",
+      "rho_zero": true,
+      "x_needed": 230
+    },
+    "U_plus_X": {
+      "actual_sum_class": 3,
+      "contained_in_one_displayed_H": false,
+      "decision": "allowed_F3_but_not_part_of_endpoint-internal_enumeration",
+      "total_length": 7,
+      "x_needed": 4
+    }
+  },
+  "p": 233,
+  "rho_maximal_atoms": {
+    "H_doubleton_ef": {
+      "atomicity_conclusion": "only empty and full zero-sum subsequences",
+      "base": [
+        1,
+        0
+      ],
+      "coefficient_histogram": {
+        "0": 230,
+        "1": 2,
+        "232": 1
+      },
+      "coefficient_sum_mod_p": 1,
+      "corresponding_forced_heavy_counts": [
+        0,
+        232
+      ],
+      "heavy": [
+        2,
+        1
+      ],
+      "heavy_count": 232,
+      "length": 465,
+      "line_count": 233,
+      "zero_subsequence_line_term_options": [
+        0,
+        233
+      ]
+    },
+    "H_doubleton_et": {
+      "atomicity_conclusion": "only empty and full zero-sum subsequences",
+      "base": [
+        0,
+        1
+      ],
+      "coefficient_histogram": {
+        "0": 2,
+        "2": 228,
+        "3": 2,
+        "5": 1
+      },
+      "coefficient_sum_mod_p": 1,
+      "corresponding_forced_heavy_counts": [
+        0,
+        232
+      ],
+      "heavy": [
+        1,
+        0
+      ],
+      "heavy_count": 232,
+      "length": 465,
+      "line_count": 233,
+      "zero_subsequence_line_term_options": [
+        0,
+        233
+      ]
+    },
+    "H_doubleton_ft": {
+      "atomicity_conclusion": "only empty and full zero-sum subsequences",
+      "base": [
+        0,
+        1
+      ],
+      "coefficient_histogram": {
+        "0": 1,
+        "2": 231,
+        "5": 1
+      },
+      "coefficient_sum_mod_p": 1,
+      "corresponding_forced_heavy_counts": [
+        0,
+        232
+      ],
+      "heavy": [
+        1,
+        0
+      ],
+      "heavy_count": 232,
+      "length": 465,
+      "line_count": 233,
+      "zero_subsequence_line_term_options": [
+        0,
+        233
+      ]
+    }
+  },
+  "schema": "unique_tail_p233_doubleton_D_q_lift_attack/independent-audit-v1",
+  "status": "CORRECT_WITHIN_EXPLICIT_RELAXED_SCOPE",
+  "strict_scope_confirmed": [
+    "fixed Model-D W/K/L/H/Q literal incidence and rho labels",
+    "three length-465 rho(Q_H) maximal atoms",
+    "one shared q-coordinate and height per displayed W or P position",
+    "first moments of U, W, P, Y, Z, every H, and every Q_H",
+    "actual multiplicity at most 229 on X disjoint_union Y",
+    "all rho-zero subsets contained in one displayed H, with X completion, short windows, and lengths 9 through 468 rejected"
+  ],
+  "verdict": "The explicit fixed Model-D endpoint-internal q/height lift is a valid relaxed SAT witness. It is not a full 474-position labelled candidate and supplies no SAT result for the p=233 slice."
+}

@@ -1,0 +1,528 @@
+{
+  "aggregate": {
+    "depth1_atomic_pruned": 385,
+    "depth1_entered": 1980,
+    "depth1_survived": 1595,
+    "depth2_atomic_pruned": 148234,
+    "depth2_entered": 262868,
+    "depth2_survived": 114634,
+    "depth3_atomic_pruned": 12224598,
+    "depth3_entered": 13228550,
+    "depth3_plane_pruned": 2522,
+    "depth3_survived": 900276,
+    "depth3_tail_pruned": 101154,
+    "depth4_atomic_pruned": 81134934,
+    "depth4_entered": 81890334,
+    "depth4_plane_pruned": 274332,
+    "depth4_survived": 350478,
+    "depth4_tail_pruned": 130590,
+    "depth5_atomic_pruned": 21622308,
+    "depth5_entered": 23281014,
+    "depth5_plane_pruned": 1658706
+  },
+  "jobs": [
+    [
+      4,
+      1,
+      [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    [
+      4,
+      2,
+      [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    [
+      4,
+      3,
+      [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    [
+      4,
+      4,
+      [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ]
+    ],
+    [
+      4,
+      5,
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ]
+    ],
+    [
+      4,
+      6,
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ]
+    ],
+    [
+      4,
+      7,
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    ]
+  ],
+  "prefix_tail_depth": 3,
+  "profile_count": 7,
+  "profile_report_sha256": "b6d269bb7569c5759b6549738333ce8c05fa14cf3463ade6b59357cf598b3691",
+  "profiles": [
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 13,
+        "depth1_entered": 36,
+        "depth1_survived": 23,
+        "depth2_atomic_pruned": 382,
+        "depth2_entered": 404,
+        "depth2_survived": 22,
+        "depth3_entered": 194,
+        "depth3_plane_pruned": 194
+      },
+      "forced_variable_index": 5,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 1,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 0,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 2,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 1,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 3,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 2,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 4,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 3,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "profile_index": 5,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 4,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "profile_index": 6,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 5,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "profile_index": 7,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "schema": "p7-m34-support9-frontier-v1",
+  "scope": "unpointed maximum-four plus maximum-three support-nine quotient frontier",
+  "tail_viable_orbit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "tail_viable_orbits": [],
+  "tail_viable_unpointed_orbits": 0
+}

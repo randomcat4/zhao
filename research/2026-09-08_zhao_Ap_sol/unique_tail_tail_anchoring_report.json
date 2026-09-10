@@ -1,0 +1,1141 @@
+{
+  "certificate_sha256": "d66287f2f8327519da85b7b5c87913c938e26f9b90fd9e72bfcda22c0e0ced13",
+  "common_kernel_bounds": [
+    {
+      "K_length_lower_bound_from_L_at_most_52": 422,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 0,
+      "atom_sizes": [],
+      "b": 4,
+      "p": 233,
+      "packing_type": "empty"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 421,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(2)"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 420,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 2,
+      "atom_sizes": [
+        2
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(2)"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 421,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(3)"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 420,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 2,
+      "atom_sizes": [
+        2
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(3)"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 419,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 3,
+      "atom_sizes": [
+        3
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(3)"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 2754,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 0,
+      "atom_sizes": [],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "empty"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 2753,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "(2)"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 2753,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "(3)"
+    },
+    {
+      "K_length_lower_bound_from_L_at_most_52": 2752,
+      "K_nonempty": true,
+      "L_plus_P_size_lower_bound_from_Davenport": 10,
+      "P_size": 2,
+      "atom_sizes": [
+        2
+      ],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "(3)"
+    }
+  ],
+  "dependencies_sha256": {
+    "proofs/unique_tail_all_packing_short_blocks.md": "7abe228fa70dabd8858a40507b11505bd9cee388aa89fd79cd7a22fb8ec68238",
+    "proofs/unique_tail_common_R_next.md": "1c805f0c1b2402e50317712cf5f8341e82ba6c882b3ee02ffab7e901f5614942",
+    "proofs/unique_tail_four_edge_joint_csp.md": "87954d09a00aa74d3d43ce7d784deeff325965e61fca80e900d610371260201f",
+    "proofs/unique_tail_labelled_position_next.md": "60384c64dee88487220f3fd7101a5d3abff1cb576fe3a8b43ec398fdd284ddce",
+    "proofs/unique_tail_position_conflict_frontier.md": "a30707af2f6ef04da720a8eb3c1e97b1c7c297eecc67cf6879ff1191ff9afa8b",
+    "proofs/unique_tail_remaining_long_complement_internal_sums.md": "311730df217f79659cf0d934b8c0df2e02489196208b9e699dc31d8b929d10d1",
+    "unique_tail_all_packing_short_blocks_report.json": "4dadb5a6fca18da42ccd95821cc176cd9fae1ce2653ddb2e14406e5e66694ceb",
+    "unique_tail_remaining_long_complement_internal_sums_report.json": "b6b3de4097627d26a492f4d1034a1f753bc0d58b83edd92bd100815dd8fc3cae",
+    "verifications/unique_tail_all_packing_short_blocks_independent_review.md": "d22d9380a0dc98c21a691384901a9f826f88b72bab85042beafc053eed8124e3",
+    "verifications/unique_tail_common_R_next_independent_review.md": "35f355d2fe1b3dc7a98e3011e44f0e3cdea17cfdd104c026042081b00c4539d3",
+    "verifications/unique_tail_four_edge_joint_csp_independent_review.md": "3ddd10c87c6f0de70a67e0cd630f3e2b3075200a8356c491eb4ad0f4b5359f3c",
+    "verifications/unique_tail_labelled_position_next_independent_review.md": "7cc525664dbbf7eeb23d04b3e061f0c4feac07100c7b6c294ee018ad658f20dd",
+    "verifications/unique_tail_position_conflict_frontier_independent_review.md": "93381c12a56f32469d6dcb0d21c65b22509837484323e2ad1763a81218d771b5",
+    "verifications/unique_tail_remaining_long_complement_internal_sums_independent_review.md": "44f191264d4505dbeb4803978d86b3101c8207951e41f7d1edd34d4ba40b204a"
+  },
+  "empty": {
+    "V_H_maximum_disjoint_rho_atom_count": 1,
+    "atomic_factorization_rows": [
+      {
+        "atomic_factor_coefficients": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "coefficient_one_factor_count": 4,
+        "forced_U_free_factor_coefficients": [],
+        "missing_tail_size": 2,
+        "survives_tail_anchoring": false,
+        "trace_size": 1
+      },
+      {
+        "atomic_factor_coefficients": [
+          1,
+          1,
+          2
+        ],
+        "coefficient_one_factor_count": 2,
+        "forced_U_free_factor_coefficients": [
+          2
+        ],
+        "missing_tail_size": 2,
+        "survives_tail_anchoring": true,
+        "trace_size": 1
+      },
+      {
+        "atomic_factor_coefficients": [
+          1,
+          3
+        ],
+        "coefficient_one_factor_count": 1,
+        "forced_U_free_factor_coefficients": [],
+        "missing_tail_size": 2,
+        "survives_tail_anchoring": true,
+        "trace_size": 1
+      },
+      {
+        "atomic_factor_coefficients": [
+          2,
+          2
+        ],
+        "coefficient_one_factor_count": 0,
+        "forced_U_free_factor_coefficients": [],
+        "missing_tail_size": 2,
+        "survives_tail_anchoring": true,
+        "trace_size": 1
+      },
+      {
+        "atomic_factor_coefficients": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "coefficient_one_factor_count": 4,
+        "forced_U_free_factor_coefficients": [],
+        "missing_tail_size": 1,
+        "survives_tail_anchoring": false,
+        "trace_size": 2
+      },
+      {
+        "atomic_factor_coefficients": [
+          1,
+          1,
+          2
+        ],
+        "coefficient_one_factor_count": 2,
+        "forced_U_free_factor_coefficients": [],
+        "missing_tail_size": 1,
+        "survives_tail_anchoring": false,
+        "trace_size": 2
+      },
+      {
+        "atomic_factor_coefficients": [
+          1,
+          3
+        ],
+        "coefficient_one_factor_count": 1,
+        "forced_U_free_factor_coefficients": [
+          3
+        ],
+        "missing_tail_size": 1,
+        "survives_tail_anchoring": true,
+        "trace_size": 2
+      },
+      {
+        "atomic_factor_coefficients": [
+          2,
+          2
+        ],
+        "coefficient_one_factor_count": 0,
+        "forced_U_free_factor_coefficients": [
+          2
+        ],
+        "missing_tail_size": 1,
+        "survives_tail_anchoring": true,
+        "trace_size": 2
+      }
+    ],
+    "axial_endpoint_intersection_trace_rows": [
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{1}",
+        "right_trace": "{1}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "same_singleton"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{1}",
+        "right_trace": "{2}",
+        "tail_intersection_nonempty": false,
+        "tail_union_is_proper": true,
+        "trace_relation": "distinct_singletons"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{1}",
+        "right_trace": "{3}",
+        "tail_intersection_nonempty": false,
+        "tail_union_is_proper": true,
+        "trace_relation": "distinct_singletons"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{1}",
+        "right_trace": "{1,2}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "nested_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{1}",
+        "right_trace": "{1,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "nested_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{1}",
+        "right_trace": "{2,3}",
+        "tail_intersection_nonempty": false,
+        "tail_union_is_proper": false,
+        "trace_relation": "complementary_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{2}",
+        "right_trace": "{2}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "same_singleton"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{2}",
+        "right_trace": "{3}",
+        "tail_intersection_nonempty": false,
+        "tail_union_is_proper": true,
+        "trace_relation": "distinct_singletons"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{2}",
+        "right_trace": "{1,2}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "nested_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{2}",
+        "right_trace": "{1,3}",
+        "tail_intersection_nonempty": false,
+        "tail_union_is_proper": false,
+        "trace_relation": "complementary_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{2}",
+        "right_trace": "{2,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "nested_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{3}",
+        "right_trace": "{3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "same_singleton"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{3}",
+        "right_trace": "{1,2}",
+        "tail_intersection_nonempty": false,
+        "tail_union_is_proper": false,
+        "trace_relation": "complementary_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{3}",
+        "right_trace": "{1,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "nested_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{3}",
+        "right_trace": "{2,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "nested_singleton_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{1,2}",
+        "right_trace": "{1,2}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "same_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{1,2}",
+        "right_trace": "{1,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": false,
+        "trace_relation": "distinct_doubletons"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{1,2}",
+        "right_trace": "{2,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": false,
+        "trace_relation": "distinct_doubletons"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{1,3}",
+        "right_trace": "{1,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "same_doubleton"
+      },
+      {
+        "allowed_axial_intersection_t": [],
+        "left_trace": "{1,3}",
+        "right_trace": "{2,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": false,
+        "trace_relation": "distinct_doubletons"
+      },
+      {
+        "allowed_axial_intersection_t": [
+          2,
+          3
+        ],
+        "left_trace": "{2,3}",
+        "right_trace": "{2,3}",
+        "tail_intersection_nonempty": true,
+        "tail_union_is_proper": true,
+        "trace_relation": "same_doubleton"
+      }
+    ],
+    "axial_intersection_requires_comparable_traces": true,
+    "axial_intersection_t_one_excluded": true,
+    "conditional_coefficient_two_singleton": {
+      "actual_label": "2x-a",
+      "p": 1399,
+      "quotient_label": "2q",
+      "short_block": "X_3 disjoint_union U disjoint_union {y}",
+      "short_block_family": "F2",
+      "short_block_length": 7
+    },
+    "endpoint_U_free_atom_rows": [
+      {
+        "H_size": 6,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": 0,
+        "b": 4,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 2,
+        "forced_U_free_atom_length_upper_bound": 3,
+        "missing_tail_size": 2,
+        "p": 233,
+        "possible_forced_atom_axis_coefficients": [
+          2,
+          3
+        ],
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_size": 6,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": 1,
+        "b": 4,
+        "exact_F2_atom_actual_sum": "3x-a",
+        "exact_coefficient_three_F2_block": true,
+        "forced_U_free_atom_length_lower_bound": 3,
+        "forced_U_free_atom_length_upper_bound": 3,
+        "missing_tail_size": 1,
+        "p": 233,
+        "possible_forced_atom_axis_coefficients": [
+          3
+        ],
+        "survives": true,
+        "trace_size": 2
+      },
+      {
+        "H_size": 7,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": -1,
+        "b": 4,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 1,
+        "forced_U_free_atom_length_upper_bound": 3,
+        "missing_tail_size": 2,
+        "p": 233,
+        "possible_forced_atom_axis_coefficients": [
+          2,
+          3
+        ],
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_size": 7,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": 0,
+        "b": 4,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 2,
+        "forced_U_free_atom_length_upper_bound": 3,
+        "missing_tail_size": 1,
+        "p": 233,
+        "possible_forced_atom_axis_coefficients": [
+          2,
+          3
+        ],
+        "survives": true,
+        "trace_size": 2
+      },
+      {
+        "H_size": 8,
+        "U_free_atom_forced": false,
+        "V_H_length_offset_from_2p": -2,
+        "b": 4,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 0,
+        "forced_U_free_atom_length_upper_bound": 3,
+        "missing_tail_size": 2,
+        "p": 233,
+        "possible_forced_atom_axis_coefficients": [],
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_size": 8,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": -1,
+        "b": 4,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 1,
+        "forced_U_free_atom_length_upper_bound": 3,
+        "missing_tail_size": 1,
+        "p": 233,
+        "possible_forced_atom_axis_coefficients": [
+          2,
+          3
+        ],
+        "survives": true,
+        "trace_size": 2
+      },
+      {
+        "H_size": 6,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": 0,
+        "b": 5,
+        "exact_F2_atom_actual_sum": "3x-a",
+        "exact_coefficient_three_F2_block": true,
+        "forced_U_free_atom_length_lower_bound": 2,
+        "forced_U_free_atom_length_upper_bound": 2,
+        "missing_tail_size": 2,
+        "p": 1399,
+        "possible_forced_atom_axis_coefficients": [
+          3
+        ],
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_size": 6,
+        "U_free_atom_forced": false,
+        "V_H_length_offset_from_2p": 1,
+        "b": 5,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 3,
+        "forced_U_free_atom_length_upper_bound": 2,
+        "missing_tail_size": 1,
+        "p": 1399,
+        "possible_forced_atom_axis_coefficients": [],
+        "survives": false,
+        "trace_size": 2
+      },
+      {
+        "H_size": 7,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": -1,
+        "b": 5,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 1,
+        "forced_U_free_atom_length_upper_bound": 2,
+        "missing_tail_size": 2,
+        "p": 1399,
+        "possible_forced_atom_axis_coefficients": [
+          2,
+          3
+        ],
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_size": 7,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": 0,
+        "b": 5,
+        "exact_F2_atom_actual_sum": "3x-a",
+        "exact_coefficient_three_F2_block": true,
+        "forced_U_free_atom_length_lower_bound": 2,
+        "forced_U_free_atom_length_upper_bound": 2,
+        "missing_tail_size": 1,
+        "p": 1399,
+        "possible_forced_atom_axis_coefficients": [
+          3
+        ],
+        "survives": true,
+        "trace_size": 2
+      },
+      {
+        "H_size": 8,
+        "U_free_atom_forced": false,
+        "V_H_length_offset_from_2p": -2,
+        "b": 5,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 0,
+        "forced_U_free_atom_length_upper_bound": 2,
+        "missing_tail_size": 2,
+        "p": 1399,
+        "possible_forced_atom_axis_coefficients": [],
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_size": 8,
+        "U_free_atom_forced": true,
+        "V_H_length_offset_from_2p": -1,
+        "b": 5,
+        "exact_F2_atom_actual_sum": null,
+        "exact_coefficient_three_F2_block": false,
+        "forced_U_free_atom_length_lower_bound": 1,
+        "forced_U_free_atom_length_upper_bound": 2,
+        "missing_tail_size": 1,
+        "p": 1399,
+        "possible_forced_atom_axis_coefficients": [
+          2,
+          3
+        ],
+        "survives": true,
+        "trace_size": 2
+      }
+    ]
+  },
+  "mixed_target_shared_endpoint_rows": [
+    {
+      "P_axis_coefficient": 2,
+      "P_size": 1,
+      "b": 4,
+      "independent_proper_P_subset_orbit_count": 0,
+      "p": 233,
+      "packing_type": "(2)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    },
+    {
+      "P_axis_coefficient": 2,
+      "P_size": 2,
+      "b": 4,
+      "independent_proper_P_subset_orbit_count": 1,
+      "p": 233,
+      "packing_type": "(2)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 1,
+      "b": 4,
+      "independent_proper_P_subset_orbit_count": 0,
+      "p": 233,
+      "packing_type": "(3)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 2,
+      "b": 4,
+      "independent_proper_P_subset_orbit_count": 1,
+      "p": 233,
+      "packing_type": "(3)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 3,
+      "b": 4,
+      "independent_proper_P_subset_orbit_count": 3,
+      "p": 233,
+      "packing_type": "(3)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    },
+    {
+      "P_axis_coefficient": 2,
+      "P_size": 1,
+      "b": 5,
+      "independent_proper_P_subset_orbit_count": 0,
+      "p": 1399,
+      "packing_type": "(2)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 1,
+      "b": 5,
+      "independent_proper_P_subset_orbit_count": 0,
+      "p": 1399,
+      "packing_type": "(3)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 2,
+      "b": 5,
+      "independent_proper_P_subset_orbit_count": 1,
+      "p": 1399,
+      "packing_type": "(3)",
+      "shared_endpoint_gate": "if rho(sum(S))=rho(sum(H intersection J)), then sum(S)-sum(H intersection J) is in {q,2q,3q}"
+    }
+  ],
+  "remaining_packing_rows": [
+    {
+      "P_size": 0,
+      "atom_sizes": [],
+      "b": 4,
+      "p": 233,
+      "packing_type": "empty"
+    },
+    {
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(2)"
+    },
+    {
+      "P_size": 2,
+      "atom_sizes": [
+        2
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(2)"
+    },
+    {
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(3)"
+    },
+    {
+      "P_size": 2,
+      "atom_sizes": [
+        2
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(3)"
+    },
+    {
+      "P_size": 3,
+      "atom_sizes": [
+        3
+      ],
+      "b": 4,
+      "p": 233,
+      "packing_type": "(3)"
+    },
+    {
+      "P_size": 0,
+      "atom_sizes": [],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "empty"
+    },
+    {
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "(2)"
+    },
+    {
+      "P_size": 1,
+      "atom_sizes": [
+        1
+      ],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "(3)"
+    },
+    {
+      "P_size": 2,
+      "atom_sizes": [
+        2
+      ],
+      "b": 5,
+      "p": 1399,
+      "packing_type": "(3)"
+    }
+  ],
+  "schema": "unique_tail_tail_anchoring_v1",
+  "scope": {
+    "assumptions": [
+      "p,b are (233,4) or (1399,5)",
+      "the common literal partition is Y=L disjoint_union P disjoint_union K with |Y|=2p+8, |L|<=52, and rho(K) zero-sum-free",
+      "only packing types empty, (2), and (3), with the frozen surviving P sizes, are considered",
+      "every endpoint H is an actual zero-core F3 block of length 6..8 with a nonempty proper trace in the three-position tail U",
+      "the complete literal long-complement axial criterion, the quotient-zero gap, the short spectrum, the unique positive-core F3 tail, and the p-4 nonzero-fibre bound are used"
+    ],
+    "conclusion": "every U-free rho-zero block of axis coefficient e=1,2,3 has length at most 4-b+e; coefficient-one atom factors must consume distinct positions of U\\H; the finite type-(2), empty-packing, endpoint-intersection, and mixed-target consequences listed below follow",
+    "not_concluded": [
+      "the empty packing is impossible",
+      "packing type (2) is impossible",
+      "packing type (3) is impossible",
+      "a mixed target collision exists",
+      "a complete quotient-label SAT or UNSAT result",
+      "any height or Hasse constraint",
+      "A_p"
+    ]
+  },
+  "status": "TAIL_ANCHORING_PROVED_REDUCTION__PENDING_INDEPENDENT_REVIEW__GLOBAL_INCOMPLETE",
+  "summary": {
+    "empty_eliminated_endpoint_states": [
+      {
+        "H_size": 6,
+        "p": 1399,
+        "trace_size": 2
+      }
+    ],
+    "empty_endpoint_state_row_count": 12,
+    "empty_exact_coefficient_three_F2_states": [
+      {
+        "H_size": 6,
+        "p": 233,
+        "trace_size": 2
+      },
+      {
+        "H_size": 6,
+        "p": 1399,
+        "trace_size": 1
+      },
+      {
+        "H_size": 7,
+        "p": 1399,
+        "trace_size": 2
+      }
+    ],
+    "empty_factorization_state_count": 8,
+    "empty_trace_pair_row_count": 21,
+    "mixed_target_row_count": 8,
+    "remaining_packing_row_count": 10,
+    "tail_anchoring_arithmetic_row_count": 6,
+    "type_2_endpoint_state_row_count": 18,
+    "type_2_surviving_endpoint_state_count": 11
+  },
+  "tail_anchoring_bounds": [
+    {
+      "U_free_atom_length_upper_bound_4_minus_b_plus_e": 1,
+      "X_core_size_b_minus_e": 3,
+      "axis_coefficient_e": 1,
+      "b": 4,
+      "coefficient_one_excluded": true,
+      "exclusion_reason": "the only possible length is one, which adds a q-labelled position to the p-4 q anchors",
+      "p": 233
+    },
+    {
+      "U_free_atom_length_upper_bound_4_minus_b_plus_e": 2,
+      "X_core_size_b_minus_e": 2,
+      "axis_coefficient_e": 2,
+      "b": 4,
+      "coefficient_one_excluded": false,
+      "exclusion_reason": null,
+      "p": 233
+    },
+    {
+      "U_free_atom_length_upper_bound_4_minus_b_plus_e": 3,
+      "X_core_size_b_minus_e": 1,
+      "axis_coefficient_e": 3,
+      "b": 4,
+      "coefficient_one_excluded": false,
+      "exclusion_reason": null,
+      "p": 233
+    },
+    {
+      "U_free_atom_length_upper_bound_4_minus_b_plus_e": 0,
+      "X_core_size_b_minus_e": 4,
+      "axis_coefficient_e": 1,
+      "b": 5,
+      "coefficient_one_excluded": true,
+      "exclusion_reason": "nonempty length is impossible",
+      "p": 1399
+    },
+    {
+      "U_free_atom_length_upper_bound_4_minus_b_plus_e": 1,
+      "X_core_size_b_minus_e": 3,
+      "axis_coefficient_e": 2,
+      "b": 5,
+      "coefficient_one_excluded": false,
+      "exclusion_reason": null,
+      "p": 1399
+    },
+    {
+      "U_free_atom_length_upper_bound_4_minus_b_plus_e": 2,
+      "X_core_size_b_minus_e": 2,
+      "axis_coefficient_e": 3,
+      "b": 5,
+      "coefficient_one_excluded": false,
+      "exclusion_reason": null,
+      "p": 1399
+    }
+  ],
+  "type_2": {
+    "V_H_zero_sum_free_for_every_trace": true,
+    "all_distinct_endpoint_intersections_are_nonaxial": true,
+    "endpoint_state_rows": [
+      {
+        "H_plus_P_size": 7,
+        "H_size": 6,
+        "P_size": 1,
+        "Q_H_status": "eliminated_by_V_H_zero_sum_free_length",
+        "b": 4,
+        "missing_tail_size": 2,
+        "p": 233,
+        "survives": false,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 7,
+        "H_size": 6,
+        "P_size": 1,
+        "Q_H_status": "eliminated_by_forced_Q_H_atom_length",
+        "b": 4,
+        "missing_tail_size": 1,
+        "p": 233,
+        "survives": false,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 8,
+        "H_size": 7,
+        "P_size": 1,
+        "Q_H_status": "split_(1,1)_forced",
+        "b": 4,
+        "missing_tail_size": 2,
+        "p": 233,
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 8,
+        "H_size": 7,
+        "P_size": 1,
+        "Q_H_status": "eliminated_by_forced_Q_H_atom_length",
+        "b": 4,
+        "missing_tail_size": 1,
+        "p": 233,
+        "survives": false,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 9,
+        "H_size": 8,
+        "P_size": 1,
+        "Q_H_status": "atom_(2)_or_split_(1,1)",
+        "b": 4,
+        "missing_tail_size": 2,
+        "p": 233,
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 9,
+        "H_size": 8,
+        "P_size": 1,
+        "Q_H_status": "atom_(2)_forced",
+        "b": 4,
+        "missing_tail_size": 1,
+        "p": 233,
+        "survives": true,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 8,
+        "H_size": 6,
+        "P_size": 2,
+        "Q_H_status": "split_(1,1)_forced",
+        "b": 4,
+        "missing_tail_size": 2,
+        "p": 233,
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 8,
+        "H_size": 6,
+        "P_size": 2,
+        "Q_H_status": "eliminated_by_forced_Q_H_atom_length",
+        "b": 4,
+        "missing_tail_size": 1,
+        "p": 233,
+        "survives": false,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 9,
+        "H_size": 7,
+        "P_size": 2,
+        "Q_H_status": "atom_(2)_or_split_(1,1)",
+        "b": 4,
+        "missing_tail_size": 2,
+        "p": 233,
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 9,
+        "H_size": 7,
+        "P_size": 2,
+        "Q_H_status": "atom_(2)_forced",
+        "b": 4,
+        "missing_tail_size": 1,
+        "p": 233,
+        "survives": true,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 10,
+        "H_size": 8,
+        "P_size": 2,
+        "Q_H_status": "atom_(2)_or_split_(1,1)",
+        "b": 4,
+        "missing_tail_size": 2,
+        "p": 233,
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 10,
+        "H_size": 8,
+        "P_size": 2,
+        "Q_H_status": "atom_(2)_forced",
+        "b": 4,
+        "missing_tail_size": 1,
+        "p": 233,
+        "survives": true,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 7,
+        "H_size": 6,
+        "P_size": 1,
+        "Q_H_status": "eliminated_by_V_H_zero_sum_free_length",
+        "b": 5,
+        "missing_tail_size": 2,
+        "p": 1399,
+        "survives": false,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 7,
+        "H_size": 6,
+        "P_size": 1,
+        "Q_H_status": "eliminated_by_forced_Q_H_atom_length",
+        "b": 5,
+        "missing_tail_size": 1,
+        "p": 1399,
+        "survives": false,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 8,
+        "H_size": 7,
+        "P_size": 1,
+        "Q_H_status": "split_(1,1)_forced",
+        "b": 5,
+        "missing_tail_size": 2,
+        "p": 1399,
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 8,
+        "H_size": 7,
+        "P_size": 1,
+        "Q_H_status": "eliminated_by_forced_Q_H_atom_length",
+        "b": 5,
+        "missing_tail_size": 1,
+        "p": 1399,
+        "survives": false,
+        "trace_size": 2
+      },
+      {
+        "H_plus_P_size": 9,
+        "H_size": 8,
+        "P_size": 1,
+        "Q_H_status": "atom_(2)_or_split_(1,1)",
+        "b": 5,
+        "missing_tail_size": 2,
+        "p": 1399,
+        "survives": true,
+        "trace_size": 1
+      },
+      {
+        "H_plus_P_size": 9,
+        "H_size": 8,
+        "P_size": 1,
+        "Q_H_status": "atom_(2)_forced",
+        "b": 5,
+        "missing_tail_size": 1,
+        "p": 1399,
+        "survives": true,
+        "trace_size": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PROVED_HERE_SUPPORT8_EXTENSION_CLOSED_GLOBAL_INCOMPLETE",
+  "scope": {
+    "prime": 7,
+    "quotient_group": "C_7^3",
+    "atom_length": 19,
+    "distinguished_value": [1, 0, 0],
+    "distinguished_multiplicity": 3,
+    "other_multiplicity_upper_bound": 4,
+    "support_size": 8,
+    "tail_length": 6,
+    "tail_requirement": "all entries in complete singleton escape and total sum zero"
+  },
+  "canonical_profiles": 462,
+  "aggregate_counts": {
+    "depth1_entered": 54648,
+    "depth1_atomic_pruned": 29239,
+    "depth1_survived": 25409,
+    "depth2_entered": 3802701,
+    "depth2_atomic_pruned": 3314714,
+    "depth2_survived": 487987,
+    "depth3_entered": 55938687,
+    "depth3_atomic_pruned": 55372517,
+    "depth3_survived": 566170,
+    "depth4_entered": 55156682,
+    "depth4_atomic_pruned": 55129186,
+    "depth4_survived": 27496,
+    "forced_invalid_pruned": 12835,
+    "forced_order_pruned": 5140,
+    "forced_projective_pruned": 7675,
+    "complete_zero_sum_candidates": 1846,
+    "complete_tail_pruned": 1846
+  },
+  "tail_viable_candidates": 0,
+  "tail_viable_atoms": 0,
+  "tail_viable_GL_q_orbits": 0,
+  "report_stream_sha256": "25cdd6726db7605d5981e6c024d8ea6b7885ee2d4c87953700f852550559c0f5",
+  "empty_orbit_report_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "command": "python p7_m3_full_support8_frontier.py --no-prefix-tail-prune --quiet",
+  "limitations": [
+    "Support at least nine is not classified.",
+    "A necessary quotient-layer survivor would not be a counterexample.",
+    "This fixed-prime finite theorem does not prove the general A_p endpoint."
+  ]
+}

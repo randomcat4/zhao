@@ -1,0 +1,364 @@
+{
+  "canonical_enumeration": {
+    "anonymous_position_count_after_marking_U_y_P": 468,
+    "complete_orbit_stream_sha256": "322bb2baa352380db2d3b277fcb3b366a42df0b2f80e6c7181e60acafeef2ec6",
+    "duplicate_candidate_pairs": [
+      {
+        "large": 3,
+        "small": 2,
+        "swapped_tail": "u_f"
+      }
+    ],
+    "endpoint_anonymous_degrees": [
+      6,
+      5,
+      6,
+      5
+    ],
+    "first_containment_hit_pattern": {
+      "0001": 6,
+      "0100": 6,
+      "1010": 5
+    },
+    "first_duplicate_hit_pattern": {
+      "0001": 6,
+      "0010": 5,
+      "0100": 1,
+      "1100": 5
+    },
+    "first_survivor_literal_instance": {
+      "K_description": "z_023..z_468",
+      "K_size": 446,
+      "L_size": 26,
+      "Q_H_sha256": [
+        "26d6deed2cdc3ed6981f5cb3accd759bcd37aedcfb84d1466bd1d012fafacd9e",
+        "31e8a793975bb12146a299d2e58a2dd7f05df57f6807dd56ec7670a56e7825fd",
+        "d91884185371d4fd310a426b4560111adcaef24d799dfe1dae358101f984cd7b",
+        "62773bb808053e69c07f7466c26005495c610bc9bb62758665f366288d6b71e5"
+      ],
+      "Q_H_sizes": [
+        464,
+        465,
+        464,
+        464
+      ],
+      "R_size": 448,
+      "common_marked_position": "y",
+      "endpoint_masks": [
+        [
+          "u_e",
+          "y",
+          "z_001",
+          "z_002",
+          "z_003",
+          "z_004",
+          "z_005",
+          "z_006"
+        ],
+        [
+          "u_f",
+          "y",
+          "z_007",
+          "z_008",
+          "z_009",
+          "z_010",
+          "z_011"
+        ],
+        [
+          "u_t",
+          "y",
+          "z_012",
+          "z_013",
+          "z_014",
+          "z_015",
+          "z_016",
+          "z_017"
+        ],
+        [
+          "u_f",
+          "u_t",
+          "y",
+          "z_018",
+          "z_019",
+          "z_020",
+          "z_021",
+          "z_022"
+        ]
+      ],
+      "endpoint_pair_data": [
+        {
+          "intersection": [
+            "y"
+          ],
+          "left": 0,
+          "left_only_size": 7,
+          "right": 1,
+          "right_only_size": 6
+        },
+        {
+          "intersection": [
+            "y"
+          ],
+          "left": 0,
+          "left_only_size": 7,
+          "right": 2,
+          "right_only_size": 7
+        },
+        {
+          "intersection": [
+            "y"
+          ],
+          "left": 0,
+          "left_only_size": 7,
+          "right": 3,
+          "right_only_size": 7
+        },
+        {
+          "intersection": [
+            "y"
+          ],
+          "left": 1,
+          "left_only_size": 6,
+          "right": 2,
+          "right_only_size": 7
+        },
+        {
+          "intersection": [
+            "u_f",
+            "y"
+          ],
+          "left": 1,
+          "left_only_size": 5,
+          "right": 3,
+          "right_only_size": 6
+        },
+        {
+          "intersection": [
+            "u_t",
+            "y"
+          ],
+          "left": 2,
+          "left_only_size": 6,
+          "right": 3,
+          "right_only_size": 6
+        }
+      ],
+      "packing_P": [
+        "p_1",
+        "p_2"
+      ],
+      "used_anonymous_position_count": 22
+    },
+    "first_survivor_pattern": {
+      "0001": 6,
+      "0010": 5,
+      "0100": 6,
+      "1000": 5
+    },
+    "literal_marked_mask_counts": {
+      "after_containment": "347595739222853524072622820998447700288359490690471767040",
+      "containment_and_duplicate_overlap": "62194075887019623203421649878215040",
+      "containment_hit_raw": "1898174376576472957912052786986278327761310720",
+      "duplicate_deleted_after_containment": "11389046259396643671585297098714248316689649280",
+      "duplicate_hit_raw": "11389046259458837747472316721917669966567864320",
+      "edge_intersections_exactly_y_raw": "264531517541034648173180846589539879612172925207800842880",
+      "edge_intersections_exactly_y_survivors": "264531517530245732136918386137764233581725374848458072000",
+      "raw": "347595739224751698449199293956359753075345769018233077760",
+      "survivors": "347595739211464477813226177326862403189645242373782117760"
+    },
+    "literal_oracle_crosschecked_orbits": 27172,
+    "marked_choice_factor_for_y_and_unordered_P": 51911265,
+    "membership_pattern_convention": "a four-bit word records membership in labelled endpoints H_0,H_1,H_2,H_3; the rightmost bit is H_0",
+    "no_endpoint_or_tail_colour_quotient": true,
+    "nonempty_membership_pattern_count": 15,
+    "orbit_counts": {
+      "after_containment": 26966,
+      "containment_and_duplicate_overlap": 12,
+      "containment_hit_raw": 206,
+      "duplicate_deleted_after_containment": 555,
+      "duplicate_hit_raw": 567,
+      "edge_intersections_exactly_y_raw": 21,
+      "edge_intersections_exactly_y_survivors": 19,
+      "raw": 27172,
+      "survivors": 26411
+    },
+    "raw_literal_marked_mask_count_all_y_and_P_choices": "347595739224751698449199293956359753075345769018233077760",
+    "raw_literal_marked_mask_count_fixed_y_and_P": "6695959715579107895929704158747812311554067677184",
+    "survivor_used_anonymous_position_orbit_histogram": {
+      "10": 2618,
+      "11": 4427,
+      "12": 5289,
+      "13": 4857,
+      "14": 3628,
+      "15": 2272,
+      "16": 1214,
+      "17": 559,
+      "18": 226,
+      "19": 81,
+      "20": 25,
+      "21": 6,
+      "22": 1,
+      "7": 17,
+      "8": 204,
+      "9": 987
+    },
+    "symmetry_group": "S_471 on non-tail positions; y is a distinguished singleton, P is an unordered two-position marked block, and the other 468 positions are classified by membership pattern",
+    "used_anonymous_position_orbit_histogram": {
+      "10": 2770,
+      "11": 4589,
+      "12": 5413,
+      "13": 4934,
+      "14": 3671,
+      "15": 2293,
+      "16": 1222,
+      "17": 561,
+      "18": 226,
+      "19": 81,
+      "20": 25,
+      "21": 6,
+      "22": 1,
+      "6": 2,
+      "7": 33,
+      "8": 254,
+      "9": 1091
+    }
+  },
+  "canonical_shard": {
+    "decision": "SURVIVES_THIS_OUTER_REDUCTION_ONLY",
+    "decorated_shard_id": "decorated-1356",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "endpoint_lengths": [
+      8,
+      7,
+      8,
+      8
+    ],
+    "endpoint_trace_masks": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "non_singleton_length_7_count": 0,
+    "parent_shard_id": "trace-31",
+    "shape": "paw",
+    "singleton_length_7_count": 1,
+    "singleton_length_pattern": [
+      8,
+      7,
+      8
+    ],
+    "singleton_vertices": [
+      0,
+      1,
+      2
+    ],
+    "total_length_7_count": 1,
+    "vertex_count": 4
+  },
+  "certificate_sha256": "a622d427568cd8bc7082ee898602c6a6759237a97762b98193ce6e1c680dc107",
+  "conclusion": "The first genuine endpoint-mask denominator is now exact for one canonical parent/length shard. Of 27172 unmarked-position orbits, 206 meet a proper-containment obstruction and a further 555 meet the duplicate-remainder oracle, leaving 26411 literal mask orbits.  These survivors are inputs to the shared-label layer, not realizations.",
+  "dependencies_sha256": {
+    "proofs/unique_tail_p233_duplicate_remainder_unique_tail_obstruction.md": "10c0277cbbabff192123183292cd7f1dc2c3a6825759d116361f8c851db1714c",
+    "proofs/unique_tail_p233_type3_p2_exact_slice.md": "30ce9d66a91d0e47c22b5731b66b450e9cc9155c872e60d482154dc6e8c6f274",
+    "unique_tail_p233_duplicate_remainder_unique_tail_obstruction.py": "b113cb6fc380b46bbefc64fed264b3176c4a4a7f45fe6acd0e4053f2ae86cce6",
+    "unique_tail_p233_duplicate_remainder_unique_tail_obstruction_report.json": "ae5089e75a8f8ed7eb4de43f9fd7cac3e031286d1be9dc16618a99bbe7844a37",
+    "unique_tail_p233_length_decorated_trace_reduction_report.json": "3c2f2c0405842b75c47fbf7fcedf09f0ef5275e9fe2a0339e1e9e71d47e4df47",
+    "unique_tail_p233_type3_p2_exact_slice.py": "22631e977e14b12e4e8d1cbd18e7cde0c7c81d7b3989364f0d66e616ce3371f1",
+    "unique_tail_p233_type3_p2_exact_slice_report.json": "440b9fecb57e66b018bab44b37f87e97e68cb03155f71e7ddb8d9c76f975281a"
+  },
+  "dependency_certificates": {
+    "unique_tail_p233_duplicate_remainder_unique_tail_obstruction_report.json": "fa9707c2dd84d484bb7dd23d91f05262d1b687660e92bb70f2aa6b8a5b86c4b9",
+    "unique_tail_p233_length_decorated_trace_reduction_report.json": "37a86e2606fe21329a1cfb663d70528420648b042817600ecf0e62e18a548c02",
+    "unique_tail_p233_type3_p2_exact_slice_report.json": "05f913f2b8d1508cf09aacb42f56c4805550731c3fed3a0ef0b43f4d3e11a2db"
+  },
+  "exact_mask_schema": {
+    "anonymous_positions": "z_001,...,z_468",
+    "complete_for_fixed_row": true,
+    "derived_sets": "L=U union all H_i, R=Y minus L, K=R minus P, Q_H=K union (L minus H)=Y minus (H union P)",
+    "endpoint_equations": "H_i={y} union tail(trace_i) union all anonymous positions whose membership pattern contains i; pattern multiplicities solve the exact residual-size equations",
+    "equivalence_reason": "two marked literal mask instances are in the same unmarked-position orbit iff all nonempty endpoint-membership pattern multiplicities agree",
+    "fixed_tail_positions": [
+      "u_e",
+      "u_f",
+      "u_t"
+    ],
+    "marked_common_position": "y in Y minus U, required in every endpoint",
+    "marked_packing_block": "P={p_1,p_2}, disjoint from U, y, and every endpoint"
+  },
+  "external_dependency_note": "The certified 720-row input inherits the upstream Property-B length reduction.  The endpoint-mask orbit enumeration and its two literal deletion counts use no additional Property-B assertion.",
+  "first_irreducible_denominator": {
+    "exact_y_edge_intersection_orbits": 19,
+    "mask_orbits_after_all_sound_mask_only_deletions": 26411,
+    "next_required_layer": "one shared rho label per literal position, the nonzero rho-sum of every stored edge intersection, P atomicity, K zero-sum-freeness, every Q_H atom/internal target, then unified q/height short closure",
+    "nontrivial_edge_intersection_orbits_requiring_labels": 26392
+  },
+  "oracle_ledger": [
+    {
+      "oracle": "endpoint_size_and_tail_trace",
+      "raw_orbits_deleted": 0,
+      "scope": "exactly generated"
+    },
+    {
+      "oracle": "common_marked_y_and_stored_edge_incidence",
+      "raw_orbits_deleted": 0,
+      "scope": "y lies in every endpoint and hence every stored edge intersection; edge tail traces are disjoint"
+    },
+    {
+      "oracle": "proper_endpoint_containment",
+      "raw_orbits_deleted": 206,
+      "scope": "a proper containment of equal-sum endpoint blocks would leave a nonempty actual zero-sum difference"
+    },
+    {
+      "oracle": "literal_duplicate_remainder",
+      "orbits_deleted_after_containment": 555,
+      "overlap_with_containment": 12,
+      "raw_orbits_hit": 567,
+      "scope": "the certified one-tail/one-outside-position sufficient obstruction"
+    },
+    {
+      "minimum_K_size": 446,
+      "oracle": "literal_K_L_P_and_Q_derivation",
+      "raw_orbits_deleted": 0,
+      "scope": "P is literally outside L, K=R minus P is nonempty, and every Q_H is derived from the same positions"
+    },
+    {
+      "not_a_mask_only_deletion": true,
+      "oracle": "edge_intersection_rho_sum_nonzero",
+      "scope": "19 survivors have every stored edge intersection exactly {y}, so this gate follows once rho(y) is marked nonzero; the other 26392 survivors require shared rho labels"
+    }
+  ],
+  "p": 233,
+  "schema": "unique_tail_p233_endpoint_mask_frontier_v1",
+  "source_720_row_denominator": {
+    "fully_enumerated_rows_here": 1,
+    "not_enumerated_rows_here": 719,
+    "rows": 720
+  },
+  "status": "ONE_CANONICAL_LENGTH_DECORATED_SHARD_EXACTLY_ENUMERATED/26411_MASK_ORBITS_SURVIVE_LITERAL_ORACLES/INDEPENDENT_REVIEW_CORRECT/LABELLED_INTERSECTION_AND_ATOM_ORACLES_PENDING/FINITE_GLOBAL_INCOMPLETE",
+  "strict_boundaries": [
+    "only decorated-1356 is completely enumerated; the other 719 length-decorated rows are untouched",
+    "the S_471 quotient is only by unmarked-position permutations; endpoint identities and tail colours are not quotiented",
+    "the two packing positions are exact literal positions but do not yet carry labels proving that rho(P) is an atom or that its sums are 3q and 3x-a",
+    "a common marked y is present, but a larger edge intersection can have zero rho-sum after labels are assigned",
+    "no unified rho, q-coordinate, height, short-spectrum, Hasse, long-complement, multiplicity, or actual-Z oracle is claimed clear",
+    "this finite mask enumeration proves neither the canonical shard nor the p=233 slice SAT or UNSAT"
+  ]
+}

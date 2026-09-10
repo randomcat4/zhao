@@ -1,0 +1,42 @@
+{
+  "certificate_sha256": "7c2516f23974f6f77fd2da3d92d9ec23b5a5627b8254053bddfda5ab4f9dd198",
+  "length_7_affine_signature": {
+    "both_signed_coefficients_nonzero": 53822,
+    "exactly_one_signed_coefficient_nonzero": 466
+  },
+  "length_8_quadratic_signature": {
+    "allowed_tail_direction_points_forcing_a_short_representation": 690,
+    "axis_exception_possible": 4,
+    "axis_no_solution": 460,
+    "diagonal_no_solution": 232,
+    "forced_points_before_global_tail_exclusion": 692,
+    "generic_unique_candidate": 53592,
+    "globally_excluded_exact_signed_tail_labels": 6,
+    "nonzero_points_on_three_tail_directions": 696
+  },
+  "outer_distribution": {
+    "all_singletons_length_8": 180,
+    "outer_survivors": 720,
+    "with_one_length_7_singleton": 540
+  },
+  "p": 233,
+  "schema": "unique-tail-p233-mixed-core-separator-v1",
+  "scope": {
+    "not_claimed": [
+      "a concrete rho-label realization for any outer row",
+      "elimination of an outer row",
+      "the full p=233 slice or global A_p"
+    ],
+    "verified": [
+      "the 540/180 outer-row split",
+      "the length-seven signed affine coefficient exhaustion",
+      "the length-eight quadratic signature classification over all nonzero targets",
+      "the exact 696/690/53592 target counts"
+    ]
+  },
+  "source_sha256": {
+    "proofs/unique_tail_p233_mixed_core_separator.md": "f2a750c04ac30221be0191e1925bae10c12802691e2a2b5ccbfe00e4117b3510",
+    "unique_tail_p233_length_decorated_trace_reduction_report.json": "3c2f2c0405842b75c47fbf7fcedf09f0ef5275e9fe2a0339e1e9e71d47e4df47"
+  },
+  "status": "FINITE_REGRESSION_FOR_AUDITED_PROOF/GLOBAL_INCOMPLETE"
+}

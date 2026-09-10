@@ -1,0 +1,389 @@
+{
+  "certificate_sha256": "4eebafc1497d110e25ac82fe8825f1579fc4957ddd666a5ebd83cdf3f5a749c3",
+  "local_models": [
+    {
+      "H_total": {
+        "a": 3,
+        "axis": 0,
+        "projection": [
+          0,
+          0
+        ]
+      },
+      "L_total": {
+        "a": 4,
+        "axis": 1,
+        "projection": [
+          0,
+          0
+        ]
+      },
+      "Q_H_total": {
+        "a": 1,
+        "axis": 1,
+        "projection": [
+          0,
+          0
+        ]
+      },
+      "cover_intersection": [
+        "u3",
+        "v3",
+        "y",
+        "z"
+      ],
+      "cover_intersection_size": 4,
+      "cover_pair": [
+        "d1",
+        "d2"
+      ],
+      "endpoint_count": 5,
+      "endpoint_lengths": {
+        "d1": 7,
+        "d2": 7,
+        "s1": 7,
+        "s2": 7,
+        "s3": 7
+      },
+      "induced_block": {
+        "actual_family": "F2",
+        "actual_multiple_of_a": 2,
+        "length": 5
+      },
+      "local_position_count": 10,
+      "p": 233,
+      "selected_edge_intersection_projection_sums": {
+        "s1-d1": [
+          232,
+          231
+        ],
+        "s1-s2": [
+          1,
+          1
+        ],
+        "s2-d2": [
+          231,
+          232
+        ],
+        "s2-s3": [
+          1,
+          0
+        ]
+      },
+      "selected_edges": [
+        [
+          "s1",
+          "s2"
+        ],
+        [
+          "s2",
+          "s3"
+        ],
+        [
+          "s1",
+          "d1"
+        ],
+        [
+          "s2",
+          "d2"
+        ]
+      ],
+      "trace_masks": {
+        "d1": 6,
+        "d2": 5,
+        "s1": 1,
+        "s2": 2,
+        "s3": 4
+      }
+    },
+    {
+      "H_total": {
+        "a": 3,
+        "axis": 0,
+        "projection": [
+          0,
+          0
+        ]
+      },
+      "L_total": {
+        "a": 4,
+        "axis": 1,
+        "projection": [
+          0,
+          0
+        ]
+      },
+      "Q_H_total": {
+        "a": 1,
+        "axis": 1,
+        "projection": [
+          0,
+          0
+        ]
+      },
+      "cover_intersection": [
+        "u3",
+        "v3",
+        "y",
+        "z"
+      ],
+      "cover_intersection_size": 4,
+      "cover_pair": [
+        "d1",
+        "d2"
+      ],
+      "endpoint_count": 5,
+      "endpoint_lengths": {
+        "d1": 7,
+        "d2": 7,
+        "s1": 7,
+        "s2": 7,
+        "s3": 7
+      },
+      "induced_block": {
+        "actual_family": "F2",
+        "actual_multiple_of_a": 2,
+        "length": 5
+      },
+      "local_position_count": 10,
+      "p": 1399,
+      "selected_edge_intersection_projection_sums": {
+        "s1-d1": [
+          1398,
+          1397
+        ],
+        "s1-s2": [
+          1,
+          1
+        ],
+        "s2-d2": [
+          1397,
+          1398
+        ],
+        "s2-s3": [
+          1,
+          0
+        ]
+      },
+      "selected_edges": [
+        [
+          "s1",
+          "s2"
+        ],
+        [
+          "s2",
+          "s3"
+        ],
+        [
+          "s1",
+          "d1"
+        ],
+        [
+          "s2",
+          "d2"
+        ]
+      ],
+      "trace_masks": {
+        "d1": 6,
+        "d2": 5,
+        "s1": 1,
+        "s2": 2,
+        "s3": 4
+      }
+    }
+  ],
+  "packing_models": {
+    "1399": {
+      "1,1,1": {
+        "K_length": 0,
+        "R_length": 2796,
+        "a_coefficient_sum": -4,
+        "atom_lengths": [
+          1398,
+          1397,
+          1
+        ],
+        "axis_coefficient_sum": 3,
+        "maximum_disjoint_atom_count": 3,
+        "maximum_reason": "two independent cyclic lines plus one zero singleton"
+      },
+      "1,2": {
+        "K_length": 0,
+        "R_length": 2796,
+        "a_coefficient_sum": -4,
+        "atom_lengths": [
+          1398,
+          1398
+        ],
+        "axis_coefficient_sum": 3,
+        "maximum_disjoint_atom_count": 2,
+        "maximum_reason": "two independent cyclic lines"
+      },
+      "3": {
+        "K_length": 0,
+        "R_length": 2796,
+        "a_coefficient_sum": -4,
+        "atom_lengths": [
+          2796
+        ],
+        "axis_coefficient_sum": 3,
+        "maximum_disjoint_atom_count": 1,
+        "maximum_reason": "one projected atom"
+      }
+    },
+    "233": {
+      "1,1,1": {
+        "K_length": 0,
+        "R_length": 464,
+        "a_coefficient_sum": -4,
+        "atom_lengths": [
+          232,
+          231,
+          1
+        ],
+        "axis_coefficient_sum": 3,
+        "maximum_disjoint_atom_count": 3,
+        "maximum_reason": "two independent cyclic lines plus one zero singleton"
+      },
+      "1,2": {
+        "K_length": 0,
+        "R_length": 464,
+        "a_coefficient_sum": -4,
+        "atom_lengths": [
+          232,
+          232
+        ],
+        "axis_coefficient_sum": 3,
+        "maximum_disjoint_atom_count": 2,
+        "maximum_reason": "two independent cyclic lines"
+      },
+      "3": {
+        "K_length": 0,
+        "R_length": 464,
+        "a_coefficient_sum": -4,
+        "atom_lengths": [
+          464
+        ],
+        "axis_coefficient_sum": 3,
+        "maximum_disjoint_atom_count": 1,
+        "maximum_reason": "one projected atom"
+      }
+    }
+  },
+  "scope": "forced-Q local interface; not the full labelled A_p CSP",
+  "status": "PROVED_EXCHANGE_GATE/LOCAL_COVER_SURVIVOR/GLOBAL_INCOMPLETE",
+  "trace_colourings": {
+    "candidate_pair_histogram": {
+      "0": 15072,
+      "1": 6720,
+      "2": 4146,
+      "3": 1728,
+      "4": 318,
+      "5": 600
+    },
+    "per_shape": {
+      "C4": {
+        "candidate_pair_occurrences": 0,
+        "forced_complete_nonaxial_trace_gate": 48,
+        "repeated": 48,
+        "valid": 48
+      },
+      "K1_3_plus_K2": {
+        "candidate_pair_occurrences": 336,
+        "forced_complete_nonaxial_trace_gate": 768,
+        "has_doubleton_cover_candidate": 240,
+        "repeated": 1008,
+        "repeated_with_candidate": 240,
+        "valid": 1008
+      },
+      "K1_4": {
+        "candidate_pair_occurrences": 0,
+        "forced_complete_nonaxial_trace_gate": 246,
+        "repeated": 246,
+        "valid": 246
+      },
+      "K3_plus_K2": {
+        "candidate_pair_occurrences": 0,
+        "forced_complete_nonaxial_trace_gate": 72,
+        "repeated": 72,
+        "valid": 72
+      },
+      "P3_plus_two_K2": {
+        "candidate_pair_occurrences": 2736,
+        "forced_complete_nonaxial_trace_gate": 2592,
+        "has_doubleton_cover_candidate": 1728,
+        "repeated": 4320,
+        "repeated_with_candidate": 1728,
+        "valid": 4320
+      },
+      "P4_plus_K2": {
+        "all_distinct": 12,
+        "all_distinct_with_candidate": 12,
+        "candidate_pair_occurrences": 312,
+        "forced_complete_nonaxial_trace_gate": 624,
+        "has_doubleton_cover_candidate": 240,
+        "repeated": 852,
+        "repeated_with_candidate": 228,
+        "valid": 864
+      },
+      "P5": {
+        "all_distinct": 6,
+        "all_distinct_with_candidate": 6,
+        "candidate_pair_occurrences": 18,
+        "forced_complete_nonaxial_trace_gate": 156,
+        "has_doubleton_cover_candidate": 18,
+        "repeated": 168,
+        "repeated_with_candidate": 12,
+        "valid": 174
+      },
+      "T5": {
+        "all_distinct": 12,
+        "all_distinct_with_candidate": 12,
+        "candidate_pair_occurrences": 36,
+        "forced_complete_nonaxial_trace_gate": 168,
+        "has_doubleton_cover_candidate": 30,
+        "repeated": 186,
+        "repeated_with_candidate": 18,
+        "valid": 198
+      },
+      "four_K2": {
+        "candidate_pair_occurrences": 20736,
+        "forced_complete_nonaxial_trace_gate": 9696,
+        "has_doubleton_cover_candidate": 11040,
+        "repeated": 20736,
+        "repeated_with_candidate": 11040,
+        "valid": 20736
+      },
+      "paw": {
+        "all_distinct": 6,
+        "candidate_pair_occurrences": 0,
+        "forced_complete_nonaxial_trace_gate": 18,
+        "repeated": 12,
+        "valid": 18
+      },
+      "two_P3": {
+        "candidate_pair_occurrences": 294,
+        "forced_complete_nonaxial_trace_gate": 684,
+        "has_doubleton_cover_candidate": 216,
+        "repeated": 900,
+        "repeated_with_candidate": 216,
+        "valid": 900
+      }
+    },
+    "totals": {
+      "all_distinct": 36,
+      "all_distinct_with_candidate": 30,
+      "candidate_pair_occurrences": 24468,
+      "forced_complete_nonaxial_trace_gate": 15072,
+      "has_doubleton_cover_candidate": 13512,
+      "repeated": 28548,
+      "repeated_with_candidate": 13482,
+      "valid": 28584
+    }
+  },
+  "trace_exchange_gate": {
+    "axial_intersection_implies": "K empty and L=H union J",
+    "only_surviving_trace_pair": "two distinct doubleton traces",
+    "repeated_trace_axial_branch": "forbidden"
+  }
+}

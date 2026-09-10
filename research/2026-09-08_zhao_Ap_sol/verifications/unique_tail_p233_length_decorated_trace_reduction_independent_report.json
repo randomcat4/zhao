@@ -1,0 +1,183 @@
+{
+  "bound_candidate_certificate": "37a86e2606fe21329a1cfb663d70528420648b042817600ecf0e62e18a548c02",
+  "bound_candidate_hashes": {
+    "proof": "3f7c85cec10a8c497a8e1f1e561b71869edec607c4fa01c00dbafd9fc71292ea",
+    "report": "3c2f2c0405842b75c47fbf7fcedf09f0ef5275e9fe2a0339e1e9e71d47e4df47",
+    "script": "16bfc8ffc121de0e5f11565d85df4811b28d1ac7331a003d64b5ba61db8a7704"
+  },
+  "candidate_report_validation": {
+    "abstract_survivor_rows_matched_with_multiplicity": 720,
+    "all_eight_parent_ids": 36,
+    "candidate_certificate_recomputed": "37a86e2606fe21329a1cfb663d70528420648b042817600ecf0e62e18a548c02",
+    "candidate_survivor_rows_checked": 720,
+    "dependency_hashes_checked": 12,
+    "unique_decorated_ids": 720,
+    "unique_parent_ids": 36
+  },
+  "certificate_sha256": "9d2cf9c020d6377c8f62eb6129056b3c521b437913b2dbed93fcd6aa3c032a6e",
+  "independent_enumeration": {
+    "all_eight_by_shape": {
+      "P4_plus_K2": 12,
+      "P5": 6,
+      "T5": 12,
+      "paw": 6
+    },
+    "decorated_by_shape": {
+      "P4_plus_K2": 768,
+      "P5": 192,
+      "T5": 384,
+      "paw": 96
+    },
+    "decorated_total": 1440,
+    "distinct_by_shape": {
+      "P4_plus_K2": 12,
+      "P5": 6,
+      "T5": 12,
+      "paw": 6
+    },
+    "distinct_trace_total": 36,
+    "eliminated_by_shape": {
+      "P4_plus_K2": 384,
+      "P5": 96,
+      "T5": 192,
+      "paw": 48
+    },
+    "eliminated_total": 720,
+    "graph_vertex_distribution": {
+      "4": 2,
+      "5": 4,
+      "6": 3,
+      "7": 1,
+      "8": 1
+    },
+    "repeated_trace_total": 28548,
+    "surviving_by_shape": {
+      "P4_plus_K2": 384,
+      "P5": 96,
+      "T5": 192,
+      "paw": 48
+    },
+    "surviving_singleton_sevens": {
+      "0": 180,
+      "1": 540
+    },
+    "surviving_total": 720,
+    "surviving_total_sevens": {
+      "0": 36,
+      "1": 186,
+      "2": 288,
+      "3": 174,
+      "4": 36
+    },
+    "trace_table": {
+      "C4": {
+        "distinct": 0,
+        "repeated": 48,
+        "valid": 48
+      },
+      "K1_3_plus_K2": {
+        "distinct": 0,
+        "repeated": 1008,
+        "valid": 1008
+      },
+      "K1_4": {
+        "distinct": 0,
+        "repeated": 246,
+        "valid": 246
+      },
+      "K3_plus_K2": {
+        "distinct": 0,
+        "repeated": 72,
+        "valid": 72
+      },
+      "P3_plus_two_K2": {
+        "distinct": 0,
+        "repeated": 4320,
+        "valid": 4320
+      },
+      "P4_plus_K2": {
+        "distinct": 12,
+        "repeated": 852,
+        "valid": 864
+      },
+      "P5": {
+        "distinct": 6,
+        "repeated": 168,
+        "valid": 174
+      },
+      "T5": {
+        "distinct": 12,
+        "repeated": 186,
+        "valid": 198
+      },
+      "four_K2": {
+        "distinct": 0,
+        "repeated": 20736,
+        "valid": 20736
+      },
+      "paw": {
+        "distinct": 6,
+        "repeated": 12,
+        "valid": 18
+      },
+      "two_P3": {
+        "distinct": 0,
+        "repeated": 900,
+        "valid": 900
+      }
+    },
+    "unlabelled_graph_count": 11,
+    "valid_trace_total": 28584
+  },
+  "independent_property_b_application": {
+    "all_common_position_labels_nonzero": "a zero label would be a proper one-term zero-sum in each atom",
+    "ambient_literal_positions": 472,
+    "directional_difference_upper_bound_for_two_length_7_endpoints": 6,
+    "heavy_copies_forced_into_452_kernel": 219,
+    "literal_intersection_lower_bounds": {
+      "7,7,7": 453,
+      "7,7,8": 452
+    },
+    "p": 233,
+    "property_b_domains_per_tail_pair": 234,
+    "shared_endpoint_position_union_bounds": {
+      "7,7,7": 19,
+      "7,7,8": 20
+    },
+    "tail_coordinates": {
+      "e": [
+        1,
+        0
+      ],
+      "f": [
+        0,
+        1
+      ],
+      "t": [
+        232,
+        232
+      ]
+    },
+    "three_domain_common_points": 0,
+    "two_max_compatible_heavy_pairs": 4,
+    "two_max_zero_sum_closures": {
+      "e+f+g1+g2": 1,
+      "e+f+t": 3
+    }
+  },
+  "literal_intersection_quantifiers": {
+    "ambient_positions": 472,
+    "lengths_7_7_7_intersection_lower_bound": 453,
+    "lengths_7_7_7_union_upper_bound": 19,
+    "lengths_7_7_8_intersection_lower_bound": 452,
+    "lengths_7_7_8_union_upper_bound": 20,
+    "mixed_theorem_required_kernel": 435,
+    "tail_pairs_follow_from_singleton_traces": true,
+    "three_endpoints_share_one_literal_position": true
+  },
+  "method": "fresh no-import graph, trace, and length-decoration reconstruction",
+  "outer_all_eight_scope": "36 all-eight decorations satisfy only the outer graph/trace/length rules; they do not instantiate endpoint masks, shared labels, or atom oracles",
+  "review_finding": "All enumeration, row-completeness, literal-kernel quantifiers, Property-B support-domain applications, dependency hashes, and outer-witness scope check independently.",
+  "schema": "unique_tail_p233_length_decorated_trace_reduction/independent-audit-v1",
+  "status": "CORRECT"
+}

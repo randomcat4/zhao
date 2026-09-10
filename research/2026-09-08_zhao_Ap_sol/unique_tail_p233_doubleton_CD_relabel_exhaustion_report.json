@@ -1,0 +1,643 @@
+{
+  "certificate_sha256": "fe5f0982a4fe3f2c2f064a81c1482c602117b296f9b0cea5eb027dfc12f27e02",
+  "conclusion": "The two canonical sparse-defect relabel families contain no survivor.  Model D dies at the mixed long-complement gate; Model C has exactly 9798 mixed survivors and every one dies already in the rigid global-short height equations. The unrestricted fixed-skeleton relabel problem remains open.",
+  "first_irreducible_frontier": "Prove a support-compression theorem for mixed-compatible q labels on a Property-B maximal rho-atom, or enlarge the exact defect support.  Without that theorem, this finite exhaustion cannot be promoted to fixed-Model-C/D rho-skeleton UNSAT.",
+  "fixed_rho_atom_rechecks": {
+    "model_C": {
+      "C:H_doubleton_ft": {
+        "base": [
+          -1,
+          -1
+        ],
+        "heavy": [
+          -2,
+          -1
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum_mod_p": 1,
+        "line_count": 233
+      },
+      "C:H_singleton_e": {
+        "base": [
+          0,
+          1
+        ],
+        "heavy": [
+          -1,
+          -1
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum_mod_p": 1,
+        "line_count": 233
+      }
+    },
+    "model_D": {
+      "D:H_doubleton_ef": {
+        "base": [
+          1,
+          0
+        ],
+        "heavy": [
+          2,
+          1
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum_mod_p": 1,
+        "line_count": 233
+      },
+      "D:H_doubleton_et": {
+        "base": [
+          0,
+          1
+        ],
+        "heavy": [
+          1,
+          0
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum_mod_p": 1,
+        "line_count": 233
+      },
+      "D:H_doubleton_ft": {
+        "base": [
+          0,
+          1
+        ],
+        "heavy": [
+          1,
+          0
+        ],
+        "heavy_count": 232,
+        "line_coefficient_sum_mod_p": 1,
+        "line_count": 233
+      }
+    }
+  },
+  "gate_order_and_vacuity": {
+    "later_gate_survivor_denominator": 0,
+    "meaning": "The later gates are vacuous only inside the two frozen sparse-support families, because every candidate has already failed a necessary earlier gate.",
+    "model_C": [
+      "first moments and fixed maximal rho-atoms",
+      "all mixed P--Q target fibres, hence the complete type-(3) long-complement internal subset-sum criterion",
+      "all literal global automatic short blocks of rigid lengths 2, 3, and 8",
+      "zero candidates remain before flexible length-4..7 families, disjoint-short incidence, or actual-label multiplicity"
+    ],
+    "model_D": [
+      "first moments and fixed maximal rho-atoms",
+      "all mixed P--Q target fibres",
+      "zero candidates remain before height, global-short, disjoint-short incidence, or actual-label multiplicity"
+    ]
+  },
+  "model_C": {
+    "all_mixed_survivors_rejected_before_flexible_short_families": true,
+    "coarse_conflict_trigger_counts": {
+      "SHORT": 9798
+    },
+    "elimination_semantic_digest_sha256": "44f20a3afbd4d9b8375d6e39e2b543ed503920c85446940138f58c0af7ce8c0e",
+    "first_elimination_samples": [
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": 1,
+            "rank_before_conflict": 245,
+            "trigger_source": "SHORT_PROFILE_SWAP_TYPE_4_C:K:g:ordinary:002"
+          },
+          "count_vectors_visited": 8704,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 11,
+          "rigid_profile_equation_count": 10,
+          "short_profile_count": 35,
+          "swap_equation_count": 234
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          0,
+          0,
+          1,
+          -4,
+          0,
+          5
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -1,
+            "rank_before_conflict": 12,
+            "trigger_source": "SHORT_PROFILE_47_LENGTH_8_REPRESENTATIVE"
+          },
+          "count_vectors_visited": 14335,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 12,
+          "rigid_profile_equation_count": 9,
+          "short_profile_count": 58,
+          "swap_equation_count": 0
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          0,
+          0,
+          1,
+          -4,
+          1,
+          4
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -1,
+            "rank_before_conflict": 245,
+            "trigger_source": "SHORT_PROFILE_SWAP_TYPE_5_C:K:g:ordinary:001"
+          },
+          "count_vectors_visited": 10847,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 11,
+          "rigid_profile_equation_count": 10,
+          "short_profile_count": 31,
+          "swap_equation_count": 233
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          0,
+          1,
+          0,
+          -5,
+          0,
+          6
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -1,
+            "rank_before_conflict": 16,
+            "trigger_source": "SHORT_PROFILE_44_LENGTH_8_REPRESENTATIVE"
+          },
+          "count_vectors_visited": 17651,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 12,
+          "rigid_profile_equation_count": 15,
+          "short_profile_count": 48,
+          "swap_equation_count": 0
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          0,
+          1,
+          0,
+          -5,
+          1,
+          5
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -78,
+            "rank_before_conflict": 14,
+            "trigger_source": "SHORT_PROFILE_40_LENGTH_8_REPRESENTATIVE"
+          },
+          "count_vectors_visited": 11520,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 12,
+          "rigid_profile_equation_count": 13,
+          "short_profile_count": 43,
+          "swap_equation_count": 0
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          1,
+          0,
+          0,
+          -5,
+          0,
+          6
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -1,
+            "rank_before_conflict": 13,
+            "trigger_source": "SHORT_PROFILE_50_LENGTH_8_REPRESENTATIVE"
+          },
+          "count_vectors_visited": 18943,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 13,
+          "rigid_profile_equation_count": 9,
+          "short_profile_count": 68,
+          "swap_equation_count": 0
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          1,
+          0,
+          0,
+          -5,
+          1,
+          5
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -2,
+            "rank_before_conflict": 16,
+            "trigger_source": "SHORT_PROFILE_77_LENGTH_8_REPRESENTATIVE"
+          },
+          "count_vectors_visited": 18943,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 13,
+          "rigid_profile_equation_count": 15,
+          "short_profile_count": 91,
+          "swap_equation_count": 0
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          1,
+          -1,
+          1,
+          -4,
+          0,
+          5
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -1,
+            "rank_before_conflict": 15,
+            "trigger_source": "SHORT_PROFILE_102_LENGTH_8_REPRESENTATIVE"
+          },
+          "count_vectors_visited": 30705,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 14,
+          "rigid_profile_equation_count": 11,
+          "short_profile_count": 139,
+          "swap_equation_count": 0
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          0,
+          1,
+          -1,
+          1,
+          -4,
+          1,
+          4
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": 116,
+            "rank_before_conflict": 245,
+            "trigger_source": "SHORT_PROFILE_SWAP_TYPE_4_C:L:x_h"
+          },
+          "count_vectors_visited": 8207,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 10,
+          "rigid_profile_equation_count": 11,
+          "short_profile_count": 31,
+          "swap_equation_count": 233
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          1,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          4
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -87,
+            "rank_before_conflict": 15,
+            "trigger_source": "SHORT_PROFILE_39_LENGTH_8_REPRESENTATIVE"
+          },
+          "count_vectors_visited": 13380,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 11,
+          "rigid_profile_equation_count": 12,
+          "short_profile_count": 45,
+          "swap_equation_count": 0
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          1,
+          0,
+          0,
+          0,
+          -4,
+          1,
+          3
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": 1,
+            "rank_before_conflict": 17,
+            "trigger_source": "SHORT_PROFILE_SWAP_TYPE_1_C:L:c_e_2"
+          },
+          "count_vectors_visited": 13380,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 11,
+          "rigid_profile_equation_count": 14,
+          "short_profile_count": 41,
+          "swap_equation_count": 2
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          1,
+          0,
+          0,
+          0,
+          -4,
+          -1,
+          5
+        ]
+      },
+      {
+        "outcome": {
+          "conflict": {
+            "nonzero_reduced_rhs": -1,
+            "rank_before_conflict": 245,
+            "trigger_source": "SHORT_PROFILE_SWAP_TYPE_3_C:L:x_h"
+          },
+          "count_vectors_visited": 9109,
+          "decision": "RIGID_HEIGHT_LINEAR_CONTRADICTION",
+          "q_rho_type_count": 10,
+          "rigid_profile_equation_count": 9,
+          "short_profile_count": 24,
+          "swap_equation_count": 233
+        },
+        "packing_q_left_alpha": 1,
+        "packing_target_minus_rho_P_left": [
+          1,
+          1
+        ],
+        "q_variables_k_f_t_xs_e_xh_xd": [
+          1,
+          0,
+          1,
+          -1,
+          -5,
+          0,
+          5
+        ]
+      }
+    ],
+    "mixed_surviving_group_summaries": [
+      {
+        "defect_mask_counts": [
+          11,
+          7
+        ],
+        "first_target": [
+          -2,
+          -2
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 18,
+        "target_count": 1
+      },
+      {
+        "defect_mask_counts": [
+          12,
+          8
+        ],
+        "first_target": [
+          3,
+          3
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 18,
+        "target_count": 228
+      },
+      {
+        "defect_mask_counts": [
+          6,
+          4
+        ],
+        "first_target": [
+          -1,
+          -1
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 45,
+        "target_count": 1
+      },
+      {
+        "defect_mask_counts": [
+          3,
+          9
+        ],
+        "first_target": [
+          -2,
+          -1
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 24,
+        "target_count": 1
+      },
+      {
+        "defect_mask_counts": [
+          4,
+          10
+        ],
+        "first_target": [
+          1,
+          -116
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 24,
+        "target_count": 230
+      },
+      {
+        "defect_mask_counts": [
+          11,
+          7
+        ],
+        "first_target": [
+          2,
+          2
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 18,
+        "target_count": 1
+      },
+      {
+        "defect_mask_counts": [
+          6,
+          4
+        ],
+        "first_target": [
+          1,
+          1
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 45,
+        "target_count": 1
+      },
+      {
+        "defect_mask_counts": [
+          3,
+          9
+        ],
+        "first_target": [
+          2,
+          1
+        ],
+        "independent_membership_rows_after_three_first_moments": 4,
+        "mixed_compatible_q_alpha_count_per_target": 24,
+        "target_count": 1
+      }
+    ],
+    "mixed_survivor_count": 9798,
+    "mixed_survivor_semantic_digest_sha256": "0a52e6c1e3934dbce963ba125f5b7fab9c8a93a0f550d50d5cc01a3f0abf672a",
+    "raw_labelled_assignment_denominator_before_mixed": "37280647563863184",
+    "rigid_height_outcome_counts": {
+      "RIGID_HEIGHT_LINEAR_CONTRADICTION": 9798
+    },
+    "rigid_height_survivor_count": 0,
+    "sparse_support_definition": {
+      "all_other_W_q_coordinates": 0,
+      "first_moment_q_equations": [
+        "k+f+t+x_s=1",
+        "k+e+x_h+x_d=1",
+        "e+f+t=-4"
+      ],
+      "forced_common_compensation": "q(C:L:c_e_1)=q(C:K:g:q_spike)-1",
+      "free_q_positions": [
+        "C:K:g:q_spike",
+        "u_f",
+        "u_t",
+        "C:L:x_s",
+        "u_e",
+        "C:L:x_h",
+        "C:L:x_d"
+      ],
+      "packing_q": "ordered pair (alpha,3-alpha), for every alpha in C_233",
+      "packing_rho": "ordered pair (-target,target), for every nonzero target in C_233^2",
+      "q_first_moment_dimension": 4
+    },
+    "target_mask_group_count_including_zero_target": 54,
+    "zero_base_reachable_sizes": {
+      "C:H_doubleton_ft": 53592,
+      "C:H_singleton_e": 53592
+    }
+  },
+  "model_D": {
+    "all_candidates_rejected_by_complete_mixed_target_fibres": true,
+    "mixed_survivor_count": 0,
+    "mixed_survivors": [],
+    "nonzero_target_parameter_checks": 12649104,
+    "pattern_parameter_checks": 4660,
+    "raw_labelled_assignment_denominator_before_mixed": "2947241232",
+    "sparse_support_definition": {
+      "all_other_W_q_coordinates": 0,
+      "one_parameter_formula": {
+        "d_k_g_001": "-3 at parameter c=0; see script d_q_labels(c)",
+        "d_p12_g1": "4 at parameter c=0; see script d_q_labels(c)",
+        "d_p13_h_001": "4 at parameter c=0; see script d_q_labels(c)",
+        "d_p23_g": "0 at parameter c=0; see script d_q_labels(c)",
+        "d_y": "0 at parameter c=0; see script d_q_labels(c)",
+        "u_e": "-4 at parameter c=0; see script d_q_labels(c)"
+      },
+      "packing_q": "ordered pair (alpha,3-alpha), for every alpha in C_233",
+      "packing_rho": "ordered pair (-target,target), for every nonzero target in C_233^2",
+      "possibly_nonzero_W_q_positions": [
+        "u_e",
+        "d_p23_g",
+        "d_y",
+        "d_p13_h_001",
+        "d_p12_g1",
+        "d_k_g_001"
+      ],
+      "q_first_moment_dimension": 1
+    },
+    "target_mask_group_count_including_zero_target": 21,
+    "zero_base_reachable_sizes": {
+      "D:H_doubleton_ef": 54054,
+      "D:H_doubleton_et": 54287,
+      "D:H_doubleton_ft": 54283
+    }
+  },
+  "open_or_omitted_scope": [
+    "q relabellings whose nonzero support is not contained in the displayed canonical sparse-defect supports",
+    "moving the Model-C common q compensation from the chosen c_e clone to a rho-inequivalent common position",
+    "a proof that every mixed-compatible q labelling is gauge-equivalent to one of the two sparse-support families",
+    "therefore all q/height/P relabellings of either fixed rho skeleton",
+    "all other incidence skeletons, all outer shards, the fixed-p slice, and global A_p"
+  ],
+  "p": 233,
+  "schema": "unique_tail_p233_doubleton_CD_relabel_exhaustion_v1",
+  "status": "TWO_CANONICAL_SPARSE_DEFECT_RELABEL_FAMILIES_EXHAUSTED/FIXED_RHO_SKELETON_FULL_RELABEL_OPEN/GLOBAL_INCOMPLETE",
+  "strictly_checked_scope": [
+    "the literal fixed Model-C and Model-D rho incidences reconstructed in this script",
+    "the simple-form maximal-rho-atom equations for every displayed Q_H",
+    "every field assignment in the two explicitly frozen sparse q-support families",
+    "every nonzero ordered two-position packing rho direction and every packing q split alpha,3-alpha",
+    "exact bounded rho reachability outside the potential q-defect positions",
+    "all mixed P--Q_H target subsets, with the second packing singleton supplied by complement symmetry",
+    "for all 9798 Model-C mixed survivors, all literal realizations of every quotient-zero rigid short profile of length 2, 3, or 8",
+    "arbitrary literal-position heights subject to the named first moments; heights are not assumed constant on q/rho types"
+  ]
+}

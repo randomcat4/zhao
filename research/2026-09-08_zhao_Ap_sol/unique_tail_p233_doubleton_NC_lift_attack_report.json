@@ -1,0 +1,3569 @@
+{
+  "certificate_sha256": "194b0479c40009326d5330b1c234eaa969e4695165046145fac960c98a06b26f",
+  "conclusion": "For fixed Model N, every actual lift satisfying the common endpoint sums and the unique positive-core F3-tail interface is impossible. Fixed Model C has an explicit unified lift passing first moments, both rho atoms, every P-mixed target, the actual multiplicity cap, and the complete endpoint-internal rho-zero/X-completion closure. That same witness fails the global short spectrum at an explicit length-three block; existence of a different globally short-compatible Model-C lift remains open.",
+  "coordinates": [
+    "a-height",
+    "q-axis",
+    "rho-e",
+    "rho-f"
+  ],
+  "frozen_slice": {
+    "kappa": 1,
+    "packing_size": 2,
+    "packing_type": [
+      3
+    ],
+    "unique_tail": {
+      "core_count": 4,
+      "tail_size": 3
+    }
+  },
+  "global_status": "INCOMPLETE",
+  "model_C": {
+    "P_mixed_targets": {
+      "C:H_doubleton_ft": {
+        "P_left": {
+          "compressed_count_vector_count": 6,
+          "reachable_q_axis_sums": [
+            0,
+            1,
+            232
+          ],
+          "target_rho": [
+            -1,
+            -1
+          ]
+        },
+        "P_left_combined_allowed_coefficients": [
+          1,
+          2,
+          3
+        ],
+        "P_right": {
+          "compressed_count_vector_count": 6,
+          "reachable_q_axis_sums": [
+            0,
+            1,
+            2
+          ],
+          "target_rho": [
+            1,
+            1
+          ]
+        },
+        "P_right_combined_allowed_coefficients": [
+          1,
+          2,
+          3
+        ],
+        "full_P_mixed_target_passes": true
+      },
+      "C:H_singleton_e": {
+        "P_left": {
+          "compressed_count_vector_count": 3,
+          "reachable_q_axis_sums": [
+            0,
+            1
+          ],
+          "target_rho": [
+            -1,
+            -1
+          ]
+        },
+        "P_left_combined_allowed_coefficients": [
+          2,
+          3
+        ],
+        "P_right": {
+          "compressed_count_vector_count": 3,
+          "reachable_q_axis_sums": [
+            0,
+            1
+          ],
+          "target_rho": [
+            1,
+            1
+          ]
+        },
+        "P_right_combined_allowed_coefficients": [
+          1,
+          2
+        ],
+        "full_P_mixed_target_passes": true
+      }
+    },
+    "actual_multiplicity": {
+      "maximum": 229,
+      "passes": true,
+      "required_upper_bound": 229,
+      "values_at_maximum": [
+        [
+          0,
+          0,
+          -2,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "endpoint_internal_short_closure": {
+      "all_available_X_completions_pass_short_windows": true,
+      "all_endpoint_internal_rho_zero_subsets_exhausted": true,
+      "decision_counts": {
+        "ALLOWED_SHORT_F1": 4,
+        "ALLOWED_SHORT_F2": 7,
+        "ALLOWED_SHORT_F3": 2,
+        "EMPTY": 2,
+        "NO_AVAILABLE_X_COMPLETION": 3
+      },
+      "induced_allowed_short_block_count": 13,
+      "no_endpoint_internal_competing_positive_core_F3": true,
+      "no_endpoint_internal_middle_gap_block": true,
+      "nonempty_row_count": 16,
+      "rho_zero_subset_rows": [
+        {
+          "decision": "EMPTY",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 0,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [],
+          "subset_size": 0,
+          "total_length": 0,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F1",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 1,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:c_f",
+            "u_t"
+          ],
+          "subset_size": 3,
+          "total_length": 3,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F2",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 2,
+          "is_full_endpoint": false,
+          "q_sum": 230,
+          "subset": [
+            "C:L:c_e_1",
+            "u_f",
+            "u_t"
+          ],
+          "subset_size": 3,
+          "total_length": 6,
+          "x_available": true,
+          "x_needed": 3
+        },
+        {
+          "decision": "ALLOWED_SHORT_F1",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 1,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "u_t"
+          ],
+          "subset_size": 3,
+          "total_length": 3,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F2",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 2,
+          "is_full_endpoint": false,
+          "q_sum": 230,
+          "subset": [
+            "C:L:c_e_2",
+            "u_f",
+            "u_t"
+          ],
+          "subset_size": 3,
+          "total_length": 6,
+          "x_available": true,
+          "x_needed": 3
+        },
+        {
+          "decision": "NO_AVAILABLE_X_COMPLETION",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 1,
+          "is_full_endpoint": false,
+          "q_sum": 3,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:c_f",
+            "C:L:x_s",
+            "C:L:y"
+          ],
+          "subset_size": 4,
+          "total_length": null,
+          "x_available": false,
+          "x_needed": 230
+        },
+        {
+          "decision": "ALLOWED_SHORT_F2",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 2,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:x_s",
+            "C:L:y",
+            "u_f"
+          ],
+          "subset_size": 4,
+          "total_length": 4,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "NO_AVAILABLE_X_COMPLETION",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 1,
+          "is_full_endpoint": false,
+          "q_sum": 3,
+          "subset": [
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "C:L:x_s",
+            "C:L:y"
+          ],
+          "subset_size": 4,
+          "total_length": null,
+          "x_available": false,
+          "x_needed": 230
+        },
+        {
+          "decision": "ALLOWED_SHORT_F2",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 2,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_2",
+            "C:L:x_s",
+            "C:L:y",
+            "u_f"
+          ],
+          "subset_size": 4,
+          "total_length": 4,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F3",
+          "endpoint": "C:H_doubleton_ft",
+          "height_sum": 3,
+          "is_full_endpoint": true,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "C:L:x_s",
+            "C:L:y",
+            "u_f",
+            "u_t"
+          ],
+          "subset_size": 7,
+          "total_length": 7,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "EMPTY",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 0,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [],
+          "subset_size": 0,
+          "total_length": 0,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F1",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 1,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:x_d",
+            "C:L:y"
+          ],
+          "subset_size": 3,
+          "total_length": 3,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F1",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 1,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_2",
+            "C:L:x_d",
+            "C:L:y"
+          ],
+          "subset_size": 3,
+          "total_length": 3,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F2",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 2,
+          "is_full_endpoint": false,
+          "q_sum": 232,
+          "subset": [
+            "C:L:x_d",
+            "C:L:y",
+            "u_e"
+          ],
+          "subset_size": 3,
+          "total_length": 4,
+          "x_available": true,
+          "x_needed": 1
+        },
+        {
+          "decision": "NO_AVAILABLE_X_COMPLETION",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 1,
+          "is_full_endpoint": false,
+          "q_sum": 1,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "C:L:x_h"
+          ],
+          "subset_size": 4,
+          "total_length": null,
+          "x_available": false,
+          "x_needed": 232
+        },
+        {
+          "decision": "ALLOWED_SHORT_F2",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 2,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:c_f",
+            "C:L:x_h",
+            "u_e"
+          ],
+          "subset_size": 4,
+          "total_length": 4,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F2",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 2,
+          "is_full_endpoint": false,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "C:L:x_h",
+            "u_e"
+          ],
+          "subset_size": 4,
+          "total_length": 4,
+          "x_available": true,
+          "x_needed": 0
+        },
+        {
+          "decision": "ALLOWED_SHORT_F3",
+          "endpoint": "C:H_singleton_e",
+          "height_sum": 3,
+          "is_full_endpoint": true,
+          "q_sum": 0,
+          "subset": [
+            "C:L:c_e_1",
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "C:L:x_d",
+            "C:L:x_h",
+            "C:L:y",
+            "u_e"
+          ],
+          "subset_size": 7,
+          "total_length": 7,
+          "x_available": true,
+          "x_needed": 0
+        }
+      ],
+      "row_count_including_empty": 18
+    },
+    "explicit_full_labels": {
+      "C:K:g:height2": [
+        2,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:001": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:002": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:003": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:004": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:005": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:006": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:007": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:008": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:009": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:010": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:011": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:012": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:013": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:014": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:015": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:016": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:017": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:018": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:019": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:020": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:021": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:022": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:023": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:024": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:025": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:026": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:027": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:028": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:029": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:030": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:031": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:032": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:033": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:034": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:035": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:036": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:037": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:038": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:039": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:040": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:041": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:042": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:043": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:044": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:045": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:046": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:047": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:048": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:049": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:050": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:051": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:052": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:053": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:054": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:055": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:056": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:057": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:058": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:059": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:060": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:061": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:062": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:063": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:064": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:065": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:066": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:067": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:068": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:069": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:070": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:071": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:072": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:073": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:074": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:075": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:076": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:077": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:078": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:079": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:080": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:081": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:082": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:083": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:084": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:085": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:086": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:087": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:088": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:089": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:090": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:091": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:092": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:093": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:094": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:095": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:096": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:097": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:098": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:099": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:100": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:101": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:102": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:103": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:104": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:105": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:106": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:107": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:108": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:109": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:110": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:111": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:112": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:113": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:114": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:115": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:116": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:117": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:118": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:119": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:120": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:121": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:122": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:123": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:124": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:125": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:126": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:127": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:128": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:129": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:130": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:131": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:132": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:133": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:134": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:135": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:136": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:137": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:138": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:139": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:140": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:141": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:142": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:143": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:144": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:145": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:146": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:147": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:148": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:149": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:150": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:151": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:152": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:153": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:154": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:155": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:156": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:157": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:158": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:159": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:160": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:161": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:162": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:163": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:164": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:165": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:166": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:167": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:168": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:169": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:170": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:171": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:172": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:173": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:174": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:175": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:176": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:177": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:178": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:179": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:180": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:181": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:182": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:183": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:184": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:185": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:186": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:187": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:188": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:189": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:190": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:191": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:192": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:193": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:194": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:195": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:196": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:197": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:198": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:199": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:200": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:201": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:202": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:203": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:204": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:205": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:206": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:207": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:208": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:209": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:210": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:211": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:212": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:213": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:214": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:215": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:216": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:217": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:218": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:219": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:220": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:221": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:222": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:223": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:224": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:225": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:226": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:227": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:228": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:ordinary:229": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "C:K:g:q_spike": [
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "C:K:h:height1": [
+        1,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:height226": [
+        -7,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:001": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:002": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:003": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:004": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:005": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:006": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:007": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:008": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:009": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:010": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:011": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:012": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:013": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:014": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:015": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:016": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:017": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:018": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:019": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:020": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:021": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:022": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:023": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:024": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:025": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:026": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:027": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:028": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:029": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:030": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:031": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:032": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:033": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:034": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:035": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:036": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:037": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:038": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:039": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:040": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:041": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:042": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:043": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:044": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:045": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:046": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:047": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:048": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:049": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:050": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:051": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:052": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:053": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:054": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:055": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:056": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:057": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:058": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:059": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:060": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:061": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:062": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:063": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:064": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:065": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:066": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:067": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:068": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:069": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:070": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:071": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:072": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:073": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:074": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:075": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:076": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:077": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:078": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:079": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:080": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:081": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:082": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:083": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:084": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:085": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:086": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:087": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:088": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:089": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:090": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:091": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:092": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:093": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:094": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:095": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:096": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:097": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:098": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:099": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:100": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:101": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:102": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:103": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:104": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:105": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:106": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:107": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:108": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:109": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:110": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:111": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:112": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:113": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:114": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:115": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:116": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:117": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:118": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:119": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:120": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:121": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:122": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:123": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:124": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:125": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:126": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:127": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:128": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:129": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:130": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:131": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:132": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:133": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:134": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:135": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:136": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:137": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:138": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:139": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:140": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:141": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:142": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:143": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:144": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:145": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:146": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:147": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:148": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:149": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:150": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:151": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:152": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:153": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:154": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:155": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:156": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:157": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:158": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:159": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:160": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:161": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:162": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:163": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:164": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:165": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:166": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:167": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:168": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:169": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:170": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:171": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:172": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:173": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:174": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:175": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:176": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:177": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:178": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:179": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:180": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:181": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:182": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:183": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:184": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:185": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:186": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:187": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:188": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:189": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:190": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:191": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:192": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:193": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:194": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:195": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:196": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:197": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:198": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:199": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:200": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:201": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:202": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:203": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:204": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:205": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:206": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:207": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:208": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:209": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:210": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:211": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:212": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:213": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:214": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:215": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:216": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:217": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:218": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:219": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:220": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:221": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:222": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:223": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:224": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:225": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:226": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:227": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:228": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:K:h:ordinary:229": [
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "C:L:c_e_1": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "C:L:c_e_2": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "C:L:c_f": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "C:L:x_d": [
+        0,
+        0,
+        -5,
+        -3
+      ],
+      "C:L:x_h": [
+        0,
+        1,
+        -2,
+        -1
+      ],
+      "C:L:x_s": [
+        1,
+        3,
+        -5,
+        -4
+      ],
+      "C:L:y": [
+        0,
+        0,
+        4,
+        3
+      ],
+      "P:left": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "P:right": [
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "u_e": [
+        2,
+        -1,
+        1,
+        0
+      ],
+      "u_f": [
+        0,
+        -3,
+        0,
+        1
+      ],
+      "u_t": [
+        1,
+        0,
+        -1,
+        -1
+      ]
+    },
+    "global_automatic_short_boundary": {
+      "actual_sum": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "length": 3,
+      "literal_actual_labels": {
+        "C:K:g:height2": [
+          2,
+          0,
+          -1,
+          -1
+        ],
+        "C:L:c_e_1": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "C:L:c_f": [
+          -1,
+          0,
+          0,
+          1
+        ]
+      },
+      "meaning": "this explicit Model-C lift is not SAT for the global automatic-short-block interface; existence of a different globally short-compatible lift is not decided",
+      "passes": false,
+      "positions": [
+        "C:K:g:height2",
+        "C:L:c_e_1",
+        "C:L:c_f"
+      ],
+      "quotient_sum": [
+        0,
+        0,
+        0
+      ],
+      "required_actual_height_set": [
+        1
+      ]
+    },
+    "literal_position_binding_sha256": "adafd1d15ffafbd9e96c1577f3b090eda51abde7111d7c63dccb73ae94e58cb1",
+    "not_claimed": [
+      "SAT for all automatically induced short blocks in X union Y",
+      "a full exact-slice candidate",
+      "a realization of any one of the 720 outer survivors",
+      "fixed-p SAT"
+    ],
+    "omitted_interfaces": [
+      "a concrete four-edge outer-shard endpoint incidence beyond the two displayed endpoints",
+      "global automatic-short compatibility (the displayed witness explicitly fails it)",
+      "the global no quotient-zero subset window of lengths 9 through 2p+2",
+      "the complete real intersection network among all automatically induced short blocks",
+      "the long-complement oracle for every automatically induced F3 block",
+      "the separate length-697 complement atom forced by X_1 union U union P",
+      "Hasse congruence rows",
+      "minimal zero-sum of the actual length-3p+4 sequence Z"
+    ],
+    "prescribed_unique_tail_block": {
+      "actual_sum": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "family": "F3",
+      "length": 7,
+      "note": "existence of the prescribed block only; global uniqueness is not claimed",
+      "tail": [
+        "u_e",
+        "u_f",
+        "u_t"
+      ],
+      "x_count": 4
+    },
+    "quantifiers": {
+      "existential": "there exists the displayed actual lift and the displayed two-position P",
+      "not_decided": "whether some different lift of fixed Model C satisfies the global automatic-short-block spectrum",
+      "universal_inside_witness": [
+        "for each of the two displayed Q_H",
+        "for each nonempty proper A subset P (the two singleton choices)",
+        "for every T subset Q_H with rho(T)=-rho(A)",
+        "for every rho-zero subset of either displayed endpoint H"
+      ]
+    },
+    "rho_atoms": {
+      "C:H_doubleton_ft": {
+        "compressed_rho_multiplicities": [
+          {
+            "count": 1,
+            "rho": [
+              1,
+              0
+            ]
+          },
+          {
+            "count": 1,
+            "rho": [
+              -5,
+              -3
+            ]
+          },
+          {
+            "count": 232,
+            "rho": [
+              -2,
+              -1
+            ]
+          },
+          {
+            "count": 231,
+            "rho": [
+              -1,
+              -1
+            ]
+          }
+        ],
+        "minimal_zero_sum": true,
+        "zero_submultisets": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            232,
+            231
+          ]
+        ]
+      },
+      "C:H_singleton_e": {
+        "compressed_rho_multiplicities": [
+          {
+            "count": 1,
+            "rho": [
+              0,
+              1
+            ]
+          },
+          {
+            "count": 1,
+            "rho": [
+              -5,
+              -4
+            ]
+          },
+          {
+            "count": 231,
+            "rho": [
+              -2,
+              -1
+            ]
+          },
+          {
+            "count": 232,
+            "rho": [
+              -1,
+              -1
+            ]
+          }
+        ],
+        "minimal_zero_sum": true,
+        "zero_submultisets": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            231,
+            232
+          ]
+        ]
+      }
+    },
+    "sizes": {
+      "K": 462,
+      "L": 10,
+      "P": 2,
+      "W": 472,
+      "Y": 474
+    },
+    "status": "EXPLICIT_RELAXED_SAT_AT_FIRST_MOMENTS_RHO_ATOMS_ALL_P_MIXED_TARGETS_AND_COMPLETE_ENDPOINT_INTERNAL_SHORT_CLOSURE; NOT_GLOBAL_SHORT_SAT",
+    "sums": {
+      "P": [
+        -1,
+        3,
+        0,
+        0
+      ],
+      "Q_H": {
+        "C:H_doubleton_ft": [
+          -2,
+          1,
+          0,
+          0
+        ],
+        "C:H_singleton_e": [
+          -2,
+          1,
+          0,
+          0
+        ]
+      },
+      "U": [
+        3,
+        -4,
+        0,
+        0
+      ],
+      "W": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "Y": [
+        0,
+        4,
+        0,
+        0
+      ],
+      "endpoints": {
+        "C:H_doubleton_ft": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "C:H_singleton_e": [
+          3,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "model_N": {
+    "block_length": 7,
+    "conclusion": "UNSAT for every actual lift satisfying the unique positive-core F3-tail interface",
+    "core_count": 4,
+    "endpoint_equalities": [
+      {
+        "cancelled_positions_leave": [
+          "x_f",
+          "u_f"
+        ],
+        "comparison": "H_s versus H_ef",
+        "forced_actual_label_equality": "gamma(x_f)=gamma(u_f)"
+      },
+      {
+        "cancelled_positions_leave": [
+          "x_t",
+          "u_t"
+        ],
+        "comparison": "H_s versus H_et",
+        "forced_actual_label_equality": "gamma(x_t)=gamma(u_t)"
+      }
+    ],
+    "forced_second_tail": [
+      "u_e",
+      "x_f",
+      "x_t"
+    ],
+    "forced_sum": "sigma(X_4 union {u_e,x_f,x_t})=3a",
+    "independent_of": [
+      "the q-coordinate choices",
+      "the packing P",
+      "the common kernel labels",
+      "the multiplicity cap"
+    ],
+    "tails_are_distinct_literal_sets": true,
+    "unique_tail": [
+      "u_e",
+      "u_f",
+      "u_t"
+    ]
+  },
+  "p": 233,
+  "schema": "unique_tail_p233_doubleton_NC_lift_attack/v2"
+}

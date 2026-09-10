@@ -1,0 +1,74 @@
+{
+  "scope": "P233_ALL_LENGTH7_RANK2_THREE_SINGLETON_ENDPOINTS",
+  "status": "FINITE_REDUCTION_VERIFIED/EXTERNAL_PROPERTY_B_DEPENDENCY/PENDING_INDEPENDENT_REVIEW/GLOBAL_INCOMPLETE",
+  "p": 233,
+  "tail_normal_form": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      232,
+      232
+    ]
+  ],
+  "atom_length": 465,
+  "property_b_repeated_count": 232,
+  "max_Qi_outside_K": 30,
+  "minimum_repeated_occurrences_in_K": 202,
+  "all_distinct_capacity_test": {
+    "required_positions": 606,
+    "available_upper_bound": 465,
+    "contradiction": true
+  },
+  "allowed_repeated_label_set_sizes": [
+    234,
+    234,
+    234
+  ],
+  "pair_intersections": {
+    "1-2": [
+      [
+        232,
+        232
+      ]
+    ],
+    "1-3": [
+      [
+        0,
+        1
+      ]
+    ],
+    "2-3": [
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "triple_intersection": [],
+  "equal_pair_parallel_coset_determinants": {
+    "g1=g2=w3": 231,
+    "g1=g3=w2": 2,
+    "g2=g3=w1": 231
+  },
+  "external_dependency": {
+    "author": "Christian Reiher",
+    "title": "A Proof of the Theorem According to Which Every Prime Number Possesses Property B",
+    "year": 2010,
+    "result": "Theorem 10.2: Every prime number has property B.",
+    "definition_used": "Every length 2p-1 minimal zero-sum sequence over F_p^2 is simple, hence has a term repeated p-1 times and all remaining terms in one affine coset of its span.",
+    "url": "https://www.math.uni-rostock.de/math/pub/preprints/preprint/2010/pre10_01.pdf"
+  },
+  "conclusion": "The three Q_i cannot simultaneously be globally labelled C_233^2 maximal atoms with a common kernel and the certified rank-two tail normal form.",
+  "not_claimed": [
+    "other endpoint-length patterns are excluded",
+    "the full p=233 problem is excluded",
+    "global A_p"
+  ],
+  "certificate_sha256": "c479944e27b8d76032e8423256a28de784a2190af46550ec666561423eace882"
+}

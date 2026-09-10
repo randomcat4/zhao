@@ -1,0 +1,236 @@
+{
+  "certificate_sha256": "7a26b7e09d3cb5c0c9f5a94249699ef94ef1328d11a2ea443f2c8bf5bc34f4ec",
+  "dependencies_sha256": {
+    "assumptions.md": "0e10138860269a18f0f7c0a02ab40204109efbb9a09688fc99da46983e390aed",
+    "proofs/middle_quotient_gap.md": "d886a84857cd430455558266a2ab175f21f2de853eed08c6affcad0c14b3efcc",
+    "proofs/unique_tail_all_packing_short_blocks.md": "7abe228fa70dabd8858a40507b11505bd9cee388aa89fd79cd7a22fb8ec68238",
+    "proofs/unique_tail_position_conflict_frontier.md": "a30707af2f6ef04da720a8eb3c1e97b1c7c297eecc67cf6879ff1191ff9afa8b",
+    "unique_tail_all_packing_short_blocks_report.json": "4dadb5a6fca18da42ccd95821cc176cd9fae1ce2653ddb2e14406e5e66694ceb",
+    "verifications/unique_tail_all_packing_short_blocks_independent_review.md": "d22d9380a0dc98c21a691384901a9f826f88b72bab85042beafc053eed8124e3",
+    "verifications/unique_tail_position_conflict_frontier_independent_review.md": "93381c12a56f32469d6dcb0d21c65b22509837484323e2ad1763a81218d771b5"
+  },
+  "remaining_nonempty_defect_assignments": [
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 1,
+      "axis_coefficient": 2,
+      "b": 4,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": true,
+      "induced_block_length": 6,
+      "internal_proper_quotient_zero_subset_forbidden": true,
+      "p": 233,
+      "packing_type": "(2)",
+      "positive_X_core_size": 2,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 1,
+      "atom_size": 1,
+      "axis_coefficient": 2,
+      "b": 4,
+      "defect": 2,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 6,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 233,
+      "packing_type": "(2)",
+      "positive_X_core_size": 2,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 2,
+      "axis_coefficient": 2,
+      "b": 4,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 7,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 233,
+      "packing_type": "(2)",
+      "positive_X_core_size": 2,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 1,
+      "axis_coefficient": 3,
+      "b": 4,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 5,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 233,
+      "packing_type": "(3)",
+      "positive_X_core_size": 1,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 1,
+      "atom_size": 1,
+      "axis_coefficient": 3,
+      "b": 4,
+      "defect": 2,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 5,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 233,
+      "packing_type": "(3)",
+      "positive_X_core_size": 1,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 2,
+      "axis_coefficient": 3,
+      "b": 4,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": true,
+      "induced_block_length": 6,
+      "internal_proper_quotient_zero_subset_forbidden": true,
+      "p": 233,
+      "packing_type": "(3)",
+      "positive_X_core_size": 1,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 1,
+      "atom_size": 2,
+      "axis_coefficient": 3,
+      "b": 4,
+      "defect": 2,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 6,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 233,
+      "packing_type": "(3)",
+      "positive_X_core_size": 1,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 3,
+      "axis_coefficient": 3,
+      "b": 4,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 7,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 233,
+      "packing_type": "(3)",
+      "positive_X_core_size": 1,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 1,
+      "axis_coefficient": 2,
+      "b": 5,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 7,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 1399,
+      "packing_type": "(2)",
+      "positive_X_core_size": 3,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 1,
+      "axis_coefficient": 3,
+      "b": 5,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": true,
+      "induced_block_length": 6,
+      "internal_proper_quotient_zero_subset_forbidden": true,
+      "p": 1399,
+      "packing_type": "(3)",
+      "positive_X_core_size": 2,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 1,
+      "atom_size": 1,
+      "axis_coefficient": 3,
+      "b": 5,
+      "defect": 2,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 6,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 1399,
+      "packing_type": "(3)",
+      "positive_X_core_size": 2,
+      "tail_strictly_contains_U": true
+    },
+    {
+      "actual_sum_coefficient": 2,
+      "atom_size": 2,
+      "axis_coefficient": 3,
+      "b": 5,
+      "defect": 1,
+      "forces_length_3p_minus_2_quotient_atom_complement": false,
+      "induced_block_length": 7,
+      "internal_proper_quotient_zero_subset_forbidden": false,
+      "p": 1399,
+      "packing_type": "(3)",
+      "positive_X_core_size": 2,
+      "tail_strictly_contains_U": true
+    }
+  ],
+  "schema": "unique_tail_remaining_six_f2_complements_v1",
+  "scope": {
+    "assumptions": [
+      "p,b are (233,4) or (1399,5)",
+      "only the already-certified remaining packing types empty, (2), and (3) are considered",
+      "for a nonempty packing P is a genuine position block disjoint from the unique tail U",
+      "all quotient-zero proper subblocks obey the frozen middle gap and short positive-sum windows",
+      "the complement of every F3 block is a quotient atom",
+      "every positive-core F3 block has the unique tail U"
+    ],
+    "conclusion": "exactly three of the twelve remaining nonempty defect assignments contain an automatic six-item 2a block; in each, its length-(3p-2) complement is a quotient atom and hence has no nonempty proper quotient-zero internal subset",
+    "not_concluded": [
+      "any of the three assignments is realizable",
+      "the other nine assignments are realizable",
+      "the empty packing is realizable",
+      "the unique-tail branch is empty",
+      "A_p"
+    ]
+  },
+  "status": "THREE_EXTREME_COMPLEMENT_ATOM_ROWS_FORCED__GLOBAL_INCOMPLETE",
+  "summary": {
+    "automatic_six_item_2a_block_count": 3,
+    "forced_complement_lengths": {
+      "1399": 4195,
+      "233": 697
+    },
+    "forced_extreme_complement_atom_rows": [
+      [
+        233,
+        "(2)",
+        1,
+        1
+      ],
+      [
+        233,
+        "(3)",
+        2,
+        1
+      ],
+      [
+        1399,
+        "(3)",
+        1,
+        1
+      ]
+    ],
+    "remaining_nonempty_defect_assignment_count": 12,
+    "restored_information": [
+      "actual position block C=X_(b-d) disjoint_union U disjoint_union P",
+      "the automatically induced short block C",
+      "one unified quotient labelling for C and its literal complement B",
+      "all internal subset sums of B through quotient atomicity"
+    ]
+  }
+}

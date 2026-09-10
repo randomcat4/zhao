@@ -1,0 +1,133 @@
+{
+  "canonical_certificates": {
+    "author_obstruction_report": "fa9707c2dd84d484bb7dd23d91f05262d1b687660e92bb70f2aa6b8a5b86c4b9",
+    "source_length_decoration_report": "37a86e2606fe21329a1cfb663d70528420648b042817600ecf0e62e18a548c02"
+  },
+  "certificate_sha256": "08d97241e5a4fddc328f6c1f11b3d8d48e43cd39ec99aa27014e1ce258d9d8dd",
+  "conclusion": "The proof, executable counts, Model N fixture, and zero-deletion boundary are correct in their stated scope.  The 1,776 slots are scheduling metadata only and cannot be promoted to 678 real motif hits.",
+  "frozen_sha256": {
+    "proofs/unique_tail_p233_duplicate_remainder_unique_tail_obstruction.md": "10c0277cbbabff192123183292cd7f1dc2c3a6825759d116361f8c851db1714c",
+    "unique_tail_p233_duplicate_remainder_unique_tail_obstruction.py": "b113cb6fc380b46bbefc64fed264b3176c4a4a7f45fe6acd0e4053f2ae86cce6",
+    "unique_tail_p233_duplicate_remainder_unique_tail_obstruction_report.json": "ae5089e75a8f8ed7eb4de43f9fd7cac3e031286d1be9dc16618a99bbe7844a37",
+    "unique_tail_p233_length_decorated_trace_reduction_report.json": "3c2f2c0405842b75c47fbf7fcedf09f0ef5275e9fe2a0339e1e9e71d47e4df47"
+  },
+  "general_lemma_audit": {
+    "ambient_scope_note": "the final author theorem now explicitly requires v in Y minus U, hence outside the chosen X_4 core; the second-tail cardinality step is fully typed",
+    "decision": "CORRECT",
+    "finite_cyclic_cancellation_regression_count": 2469,
+    "group_argument": "from sigma(R_u)+gamma(u)=sigma(R_v)+gamma(v) and sigma(R_u)=sigma(R_v), group cancellation gives gamma(u)=gamma(v); replacing u by the distinct Y-position v preserves cardinality and actual sum of the tail",
+    "sufficient_not_necessary": true
+  },
+  "model_N_audit": {
+    "candidate_pair_count": 2,
+    "decision": "PASS",
+    "endpoint_count": 3,
+    "literal_motif_count": 2,
+    "motifs": [
+      {
+        "common_endpoint_length": 7,
+        "common_remainder": [
+          "c",
+          "e_double_prime",
+          "e_prime",
+          "u_e",
+          "x_t",
+          "y"
+        ],
+        "decision": "REJECT_CONCRETE_INCIDENCE",
+        "forced_actual_label_equality": "gamma(x_f)=gamma(u_f)",
+        "forced_second_tail": [
+          "u_e",
+          "u_t",
+          "x_f"
+        ],
+        "large_trace_mask": 3,
+        "large_trace_vertex": 1,
+        "outside_replacement_position": "x_f",
+        "small_trace_mask": 1,
+        "small_trace_vertex": 0,
+        "swapped_tail_position": "u_f"
+      },
+      {
+        "common_endpoint_length": 7,
+        "common_remainder": [
+          "c",
+          "e_double_prime",
+          "e_prime",
+          "u_e",
+          "x_f",
+          "y"
+        ],
+        "decision": "REJECT_CONCRETE_INCIDENCE",
+        "forced_actual_label_equality": "gamma(x_t)=gamma(u_t)",
+        "forced_second_tail": [
+          "u_e",
+          "u_f",
+          "x_t"
+        ],
+        "large_trace_mask": 5,
+        "large_trace_vertex": 2,
+        "outside_replacement_position": "x_t",
+        "small_trace_mask": 1,
+        "small_trace_vertex": 0,
+        "swapped_tail_position": "u_t"
+      }
+    ]
+  },
+  "no_import_attestation": "the author Python file was hashed and read as a frozen artifact but was never imported or executed",
+  "not_certified": [
+    "that any motif-free private-petal mask admits compatible quotient or actual labels",
+    "that the 42 rows without a literal candidate slot avoid semantic equal-remainder-sum motifs",
+    "that the duplicate-remainder obstruction is necessary",
+    "any elimination beyond a future concrete endpoint-mask incidence hit",
+    "the fixed p=233 slice or global A_p"
+  ],
+  "outer_720_row_audit": {
+    "abstract_rows_deleted_by_literal_motif": 0,
+    "by_shape": {
+      "P4_plus_K2": {
+        "candidate_pair_slots": 1152,
+        "candidate_rows": 372,
+        "rows": 384
+      },
+      "P5": {
+        "candidate_pair_slots": 192,
+        "candidate_rows": 90,
+        "rows": 96
+      },
+      "T5": {
+        "candidate_pair_slots": 384,
+        "candidate_rows": 180,
+        "rows": 192
+      },
+      "paw": {
+        "candidate_pair_slots": 48,
+        "candidate_rows": 36,
+        "rows": 48
+      }
+    },
+    "candidate_pair_slots": 1776,
+    "candidate_rows": 678,
+    "decision": "PASS",
+    "maximum_positions_in_one_mask_universe": 37,
+    "minimum_symmetric_difference_side_over_candidate_pairs": 5,
+    "motif_free_private_petal_masks": 720,
+    "pair_count_distribution": {
+      "0": 42,
+      "1": 96,
+      "2": 300,
+      "3": 72,
+      "4": 198,
+      "6": 12
+    },
+    "rows_scanned": 720
+  },
+  "schema": "unique_tail_p233_duplicate_remainder_unique_tail_obstruction_independent_audit_v1",
+  "status": "CORRECT/NO_IMPORT/0_OF_720_DELETED_CONFIRMED",
+  "strict_deletion_verdict": {
+    "candidate_slots_do_not_imply_real_motifs": true,
+    "deleted_rows": 0,
+    "private_petal_masks_are_not_label_realisations": true,
+    "reason": "candidate trace/length slots do not instantiate literal endpoint masks, while each of the 720 stored outer rows has an explicit common-y/private-petal mask refinement satisfying every stored trace, length, and edge-intersection condition and avoiding the literal motif"
+  }
+}

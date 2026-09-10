@@ -1,0 +1,81 @@
+{
+  "certificate_sha256": "b4691c4469b06788f31c7419f277a87479c18b31c20334776a489405e3cbc591",
+  "checked_primes": [
+    {
+      "atom_zero_patterns": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          4,
+          1,
+          1
+        ]
+      ],
+      "complete_deletion_count": 7,
+      "length": 8,
+      "missing_targets_after_deleting_2e": "-e+<f> (exactly p targets)",
+      "p": 5,
+      "single_endpoint_q_mixed_gate": "PASS_FOR_Q_SUPPORT_{0,1}_AND_PACKING_Q_(1,2)",
+      "unique_incomplete_deletion_label": "2e"
+    },
+    {
+      "atom_zero_patterns": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          6,
+          1,
+          1
+        ]
+      ],
+      "complete_deletion_count": 11,
+      "length": 12,
+      "missing_targets_after_deleting_2e": "-e+<f> (exactly p targets)",
+      "p": 7,
+      "single_endpoint_q_mixed_gate": "PASS_FOR_Q_SUPPORT_{0,1}_AND_PACKING_Q_(1,2)",
+      "unique_incomplete_deletion_label": "2e"
+    },
+    {
+      "atom_zero_patterns": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          230,
+          232,
+          1,
+          1
+        ]
+      ],
+      "complete_deletion_count": 463,
+      "length": 464,
+      "missing_targets_after_deleting_2e": "-e+<f> (exactly p targets)",
+      "p": 233,
+      "single_endpoint_q_mixed_gate": "PASS_FOR_Q_SUPPORT_{0,1}_AND_PACKING_Q_(1,2)",
+      "unique_incomplete_deletion_label": "2e"
+    }
+  ],
+  "schema": "unique-tail-completion-rich-near-max-atom-family-v1",
+  "scope": {
+    "not_claimed": [
+      "a unified multi-endpoint position model",
+      "all global automatic short blocks",
+      "the full p=233 slice or global A_p"
+    ],
+    "proved_in_companion": "symbolic construction for every prime p >= 5"
+  },
+  "status": "PROVED_BOUNDARY/INDEPENDENT_REVIEW_CORRECT/GLOBAL_INCOMPLETE"
+}

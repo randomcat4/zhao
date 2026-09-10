@@ -1,0 +1,520 @@
+{
+  "atomic_prefix_pruned": 7186254,
+  "completed": [
+    [
+      [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      60,
+      [
+        1,
+        15
+      ]
+    ]
+  ],
+  "escape_prefix_pruned": 0,
+  "final_escape_pruned": 0,
+  "final_nonatoms": 0,
+  "final_zero_sum_candidates": 0,
+  "forced_last_rejected": 0,
+  "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "hits": [],
+  "orbit_count": 0,
+  "orbit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "ordered_prefix_nodes": 7826785,
+  "profile_count": 15,
+  "profiles": [
+    {
+      "atomic_prefix_pruned": 1143751,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 1232120,
+      "profile": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        4
+      ],
+      "profile_index": 1,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 1143751,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 1232120,
+      "profile": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        4,
+        2
+      ],
+      "profile_index": 2,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 486463,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 520225,
+      "profile": [
+        4,
+        1,
+        1,
+        1,
+        4,
+        2,
+        2
+      ],
+      "profile_index": 3,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 1116791,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 1216616,
+      "profile": [
+        4,
+        1,
+        1,
+        2,
+        1,
+        2,
+        4
+      ],
+      "profile_index": 4,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 1116791,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 1216616,
+      "profile": [
+        4,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2
+      ],
+      "profile_index": 5,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 25934,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 27482,
+      "profile": [
+        4,
+        1,
+        1,
+        2,
+        2,
+        1,
+        4
+      ],
+      "profile_index": 6,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 25934,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 27482,
+      "profile": [
+        4,
+        1,
+        1,
+        2,
+        2,
+        4,
+        1
+      ],
+      "profile_index": 7,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 25934,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 27482,
+      "profile": [
+        4,
+        1,
+        1,
+        2,
+        4,
+        1,
+        2
+      ],
+      "profile_index": 8,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 25934,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 27482,
+      "profile": [
+        4,
+        1,
+        1,
+        2,
+        4,
+        2,
+        1
+      ],
+      "profile_index": 9,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 5896,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 6180,
+      "profile": [
+        4,
+        1,
+        1,
+        4,
+        1,
+        2,
+        2
+      ],
+      "profile_index": 10,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 5896,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 6180,
+      "profile": [
+        4,
+        1,
+        1,
+        4,
+        2,
+        1,
+        2
+      ],
+      "profile_index": 11,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 5896,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 6180,
+      "profile": [
+        4,
+        1,
+        1,
+        4,
+        2,
+        2,
+        1
+      ],
+      "profile_index": 12,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 1016735,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 1127431,
+      "profile": [
+        4,
+        1,
+        2,
+        1,
+        1,
+        2,
+        4
+      ],
+      "profile_index": 13,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 1016735,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 1127431,
+      "profile": [
+        4,
+        1,
+        2,
+        1,
+        1,
+        4,
+        2
+      ],
+      "profile_index": 14,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    },
+    {
+      "atomic_prefix_pruned": 23813,
+      "escape_prefix_pruned": 0,
+      "final_escape_pruned": 0,
+      "final_nonatoms": 0,
+      "final_zero_sum_candidates": 0,
+      "forced_last_rejected": 0,
+      "hit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ordered_prefix_nodes": 25758,
+      "profile": [
+        4,
+        1,
+        2,
+        1,
+        2,
+        1,
+        4
+      ],
+      "profile_index": 15,
+      "signature": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "target_atom_hits": 0,
+      "target_with_T_survivor": 0
+    }
+  ],
+  "profiles_sha256": "417849fd8ac9e8d6750df7110a4a260f4783e5a7a3bfa0dda8e14c3d177f2380",
+  "schema": "p7-m4-full68-support8-v1",
+  "scope": "all normalized support-eight, no-multiplicity-three length-19 atoms with pointed q^4 and maximum fibre four; quotient necessary layer only",
+  "target_atom_hits": 0,
+  "target_with_T_survivor": 0
+}

@@ -1,0 +1,1131 @@
+{
+  "certificate_sha256": "cb5866023f8668adf675abc149b98f0b302fd114533eff4b4d165f1fbbb409c2",
+  "conclusion": "All three N/C/D models satisfy exactly the advertised unified C_233^2 relaxation. Model D already has a proper three-position rho-zero subset inside H, so none is promoted to a complete-slice candidate.",
+  "method": "fresh no-import literal-position reconstruction plus exhaustive compressed atom checks",
+  "model_D_required_short_zero_witness": {
+    "distinct_literal_positions": true,
+    "endpoint": "D:H_doubleton_ft",
+    "labels": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    "positions": [
+      "D:L:P23:g",
+      "tail:f",
+      "tail:t"
+    ],
+    "proper_subset_of_length_seven_endpoint": true,
+    "sum": [
+      0,
+      0
+    ]
+  },
+  "models": [
+    {
+      "K_L_disjoint": true,
+      "K_compressed_multiplicities": [
+        {
+          "count": 231,
+          "label": [
+            0,
+            1
+          ]
+        },
+        {
+          "count": 1,
+          "label": [
+            -1,
+            0
+          ]
+        },
+        {
+          "count": 231,
+          "label": [
+            -1,
+            -1
+          ]
+        }
+      ],
+      "K_exhaustive_compressed_zero_submultisets": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "K_is_exact_literal_intersection_of_all_Q": true,
+      "K_size": 463,
+      "K_zero_sum_free_directly_verified": true,
+      "L_size": 9,
+      "W_size": 472,
+      "atoms": {
+        "N:H_doubleton_ef": {
+          "affine_base": [
+            -1,
+            -1
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 232,
+              "label": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                -1,
+                0
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                -1,
+                -1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              232,
+              1,
+              232
+            ]
+          ],
+          "heavy": [
+            0,
+            1
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        },
+        "N:H_doubleton_et": {
+          "affine_base": [
+            -1,
+            -1
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 232,
+              "label": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                -1,
+                0
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                -1,
+                -1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              232,
+              1,
+              232
+            ]
+          ],
+          "heavy": [
+            0,
+            1
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        },
+        "N:H_singleton_e": {
+          "affine_base": [
+            -1,
+            -1
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 232,
+              "label": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                -1,
+                0
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                -1,
+                -1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              232,
+              1,
+              232
+            ]
+          ],
+          "heavy": [
+            0,
+            1
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        }
+      },
+      "common_non_tail_positions": [
+        "N:L:c",
+        "N:L:e_double_prime",
+        "N:L:e_prime",
+        "N:L:y"
+      ],
+      "description": "one singleton and two nested doubletons",
+      "endpoint_count": 3,
+      "endpoints": {
+        "N:H_doubleton_ef": {
+          "Q_position_set_sha256": "b89dbea9fb7d4ef900b50e6bec07cbac5d22278a385b53720d8bbcec529b1df8",
+          "positions": [
+            "N:L:c",
+            "N:L:e_double_prime",
+            "N:L:e_prime",
+            "N:L:x_t",
+            "N:L:y",
+            "tail:e",
+            "tail:f"
+          ],
+          "proper_rho_zero_subset_count": 8,
+          "proper_rho_zero_subsets": [
+            [
+              "N:L:e_double_prime",
+              "N:L:x_t",
+              "tail:f"
+            ],
+            [
+              "N:L:e_prime",
+              "N:L:x_t",
+              "tail:f"
+            ],
+            [
+              "N:L:x_t",
+              "N:L:y",
+              "tail:f"
+            ],
+            [
+              "N:L:x_t",
+              "tail:e",
+              "tail:f"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:e_prime",
+              "N:L:y"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:e_prime",
+              "tail:e"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:y",
+              "tail:e"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_prime",
+              "N:L:y",
+              "tail:e"
+            ]
+          ],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:e",
+            "tail:f"
+          ]
+        },
+        "N:H_doubleton_et": {
+          "Q_position_set_sha256": "438e6576b2a1c05f68c49a63369b0715ea111e8833ba5f885fab50a42cec17c1",
+          "positions": [
+            "N:L:c",
+            "N:L:e_double_prime",
+            "N:L:e_prime",
+            "N:L:x_f",
+            "N:L:y",
+            "tail:e",
+            "tail:t"
+          ],
+          "proper_rho_zero_subset_count": 8,
+          "proper_rho_zero_subsets": [
+            [
+              "N:L:e_double_prime",
+              "N:L:x_f",
+              "tail:t"
+            ],
+            [
+              "N:L:e_prime",
+              "N:L:x_f",
+              "tail:t"
+            ],
+            [
+              "N:L:x_f",
+              "N:L:y",
+              "tail:t"
+            ],
+            [
+              "N:L:x_f",
+              "tail:e",
+              "tail:t"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:e_prime",
+              "N:L:y"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:e_prime",
+              "tail:e"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:y",
+              "tail:e"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_prime",
+              "N:L:y",
+              "tail:e"
+            ]
+          ],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:e",
+            "tail:t"
+          ]
+        },
+        "N:H_singleton_e": {
+          "Q_position_set_sha256": "ae7d5f8bae13b3a36d3ac95db71f7e149303819add587e67b2c3260d8d013548",
+          "positions": [
+            "N:L:c",
+            "N:L:e_double_prime",
+            "N:L:e_prime",
+            "N:L:x_f",
+            "N:L:x_t",
+            "N:L:y",
+            "tail:e"
+          ],
+          "proper_rho_zero_subset_count": 8,
+          "proper_rho_zero_subsets": [
+            [
+              "N:L:e_double_prime",
+              "N:L:x_f",
+              "N:L:x_t"
+            ],
+            [
+              "N:L:e_prime",
+              "N:L:x_f",
+              "N:L:x_t"
+            ],
+            [
+              "N:L:x_f",
+              "N:L:x_t",
+              "N:L:y"
+            ],
+            [
+              "N:L:x_f",
+              "N:L:x_t",
+              "tail:e"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:e_prime",
+              "N:L:y"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:e_prime",
+              "tail:e"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_double_prime",
+              "N:L:y",
+              "tail:e"
+            ],
+            [
+              "N:L:c",
+              "N:L:e_prime",
+              "N:L:y",
+              "tail:e"
+            ]
+          ],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:e"
+          ]
+        }
+      },
+      "key": "N",
+      "literal_position_binding_sha256": "5c9d60a90527cf375f3790393fefdfc380a642eb6204b6d28ceb0f91daf2e844",
+      "tail_labels": {
+        "tail:e": [
+          1,
+          0
+        ],
+        "tail:f": [
+          0,
+          1
+        ],
+        "tail:t": [
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "K_L_disjoint": true,
+      "K_compressed_multiplicities": [
+        {
+          "count": 231,
+          "label": [
+            -2,
+            -1
+          ]
+        },
+        {
+          "count": 231,
+          "label": [
+            -1,
+            -1
+          ]
+        }
+      ],
+      "K_exhaustive_compressed_zero_submultisets": [
+        [
+          0,
+          0
+        ]
+      ],
+      "K_is_exact_literal_intersection_of_all_Q": true,
+      "K_size": 462,
+      "K_zero_sum_free_directly_verified": true,
+      "L_size": 10,
+      "W_size": 472,
+      "atoms": {
+        "C:H_doubleton_ft": {
+          "affine_base": [
+            -1,
+            -1
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 1,
+              "label": [
+                1,
+                0
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                -5,
+                -3
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                -2,
+                -1
+              ]
+            },
+            {
+              "count": 231,
+              "label": [
+                -1,
+                -1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              232,
+              231
+            ]
+          ],
+          "heavy": [
+            -2,
+            -1
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        },
+        "C:H_singleton_e": {
+          "affine_base": [
+            -2,
+            -1
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 1,
+              "label": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                -5,
+                -4
+              ]
+            },
+            {
+              "count": 231,
+              "label": [
+                -2,
+                -1
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                -1,
+                -1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              231,
+              232
+            ]
+          ],
+          "heavy": [
+            -1,
+            -1
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        }
+      },
+      "common_non_tail_positions": [
+        "C:L:c_e_1",
+        "C:L:c_e_2",
+        "C:L:c_f",
+        "C:L:y"
+      ],
+      "description": "complementary singleton-doubleton pair",
+      "endpoint_count": 2,
+      "endpoints": {
+        "C:H_doubleton_ft": {
+          "Q_position_set_sha256": "9b75088603a01c39430460087bc6f4ab51aeb3ba965fa1739b5e70c60e143407",
+          "positions": [
+            "C:L:c_e_1",
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "C:L:x_s",
+            "C:L:y",
+            "tail:f",
+            "tail:t"
+          ],
+          "proper_rho_zero_subset_count": 8,
+          "proper_rho_zero_subsets": [
+            [
+              "C:L:c_e_1",
+              "C:L:c_f",
+              "tail:t"
+            ],
+            [
+              "C:L:c_e_1",
+              "tail:f",
+              "tail:t"
+            ],
+            [
+              "C:L:c_e_2",
+              "C:L:c_f",
+              "tail:t"
+            ],
+            [
+              "C:L:c_e_2",
+              "tail:f",
+              "tail:t"
+            ],
+            [
+              "C:L:c_e_1",
+              "C:L:c_f",
+              "C:L:x_s",
+              "C:L:y"
+            ],
+            [
+              "C:L:c_e_1",
+              "C:L:x_s",
+              "C:L:y",
+              "tail:f"
+            ],
+            [
+              "C:L:c_e_2",
+              "C:L:c_f",
+              "C:L:x_s",
+              "C:L:y"
+            ],
+            [
+              "C:L:c_e_2",
+              "C:L:x_s",
+              "C:L:y",
+              "tail:f"
+            ]
+          ],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:f",
+            "tail:t"
+          ]
+        },
+        "C:H_singleton_e": {
+          "Q_position_set_sha256": "5d4788485fa0ced8e11b164c7c45ecb7300fc7ceb6beacf9d1855128826283b0",
+          "positions": [
+            "C:L:c_e_1",
+            "C:L:c_e_2",
+            "C:L:c_f",
+            "C:L:x_d",
+            "C:L:x_h",
+            "C:L:y",
+            "tail:e"
+          ],
+          "proper_rho_zero_subset_count": 6,
+          "proper_rho_zero_subsets": [
+            [
+              "C:L:c_e_1",
+              "C:L:x_d",
+              "C:L:y"
+            ],
+            [
+              "C:L:c_e_2",
+              "C:L:x_d",
+              "C:L:y"
+            ],
+            [
+              "C:L:x_d",
+              "C:L:y",
+              "tail:e"
+            ],
+            [
+              "C:L:c_e_1",
+              "C:L:c_e_2",
+              "C:L:c_f",
+              "C:L:x_h"
+            ],
+            [
+              "C:L:c_e_1",
+              "C:L:c_f",
+              "C:L:x_h",
+              "tail:e"
+            ],
+            [
+              "C:L:c_e_2",
+              "C:L:c_f",
+              "C:L:x_h",
+              "tail:e"
+            ]
+          ],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:e"
+          ]
+        }
+      },
+      "key": "C",
+      "literal_position_binding_sha256": "7a8f9eb8e7e7f2770f17c86b80dc8231720292bd4f23dae5e42c3e787c0d3204",
+      "tail_labels": {
+        "tail:e": [
+          1,
+          0
+        ],
+        "tail:f": [
+          0,
+          1
+        ],
+        "tail:t": [
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "K_L_disjoint": true,
+      "K_compressed_multiplicities": [
+        {
+          "count": 229,
+          "label": [
+            1,
+            0
+          ]
+        },
+        {
+          "count": 227,
+          "label": [
+            2,
+            1
+          ]
+        }
+      ],
+      "K_exhaustive_compressed_zero_submultisets": [
+        [
+          0,
+          0
+        ]
+      ],
+      "K_is_exact_literal_intersection_of_all_Q": true,
+      "K_size": 456,
+      "K_zero_sum_free_directly_verified": true,
+      "L_size": 16,
+      "W_size": 472,
+      "atoms": {
+        "D:H_doubleton_ef": {
+          "affine_base": [
+            1,
+            0
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 230,
+              "label": [
+                1,
+                0
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                2,
+                1
+              ]
+            },
+            {
+              "count": 2,
+              "label": [
+                3,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                -1,
+                -1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              230,
+              232,
+              2,
+              1
+            ]
+          ],
+          "heavy": [
+            2,
+            1
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        },
+        "D:H_doubleton_et": {
+          "affine_base": [
+            0,
+            1
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 2,
+              "label": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                1,
+                0
+              ]
+            },
+            {
+              "count": 228,
+              "label": [
+                2,
+                1
+              ]
+            },
+            {
+              "count": 2,
+              "label": [
+                3,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                5,
+                1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              232,
+              228,
+              2,
+              1
+            ]
+          ],
+          "heavy": [
+            1,
+            0
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        },
+        "D:H_doubleton_ft": {
+          "affine_base": [
+            0,
+            1
+          ],
+          "affine_coefficient_sum_mod_233": 1,
+          "affine_count": 233,
+          "compressed_multiplicities": [
+            {
+              "count": 1,
+              "label": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 232,
+              "label": [
+                1,
+                0
+              ]
+            },
+            {
+              "count": 231,
+              "label": [
+                2,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "label": [
+                5,
+                1
+              ]
+            }
+          ],
+          "exhaustive_compressed_zero_submultisets": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              232,
+              231,
+              1
+            ]
+          ],
+          "heavy": [
+            1,
+            0
+          ],
+          "heavy_count": 232,
+          "minimal_zero_sum_directly_verified": true,
+          "size": 465,
+          "sum": [
+            0,
+            0
+          ]
+        }
+      },
+      "common_non_tail_positions": [
+        "D:L:y"
+      ],
+      "description": "three doubletons",
+      "endpoint_count": 3,
+      "endpoints": {
+        "D:H_doubleton_ef": {
+          "Q_position_set_sha256": "4ba84cf87e2dceb3a05bd9e478ef362e0b35e09077118499af176c34f61b73e4",
+          "positions": [
+            "D:L:P12:f",
+            "D:L:P12:g1",
+            "D:L:P12:g2",
+            "D:L:P12:r",
+            "D:L:y",
+            "tail:e",
+            "tail:f"
+          ],
+          "proper_rho_zero_subset_count": 0,
+          "proper_rho_zero_subsets": [],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:e",
+            "tail:f"
+          ]
+        },
+        "D:H_doubleton_et": {
+          "Q_position_set_sha256": "e35c42aaa47f6389391ffea33edf639622e8a38ed5f869d40e95c52e32b5d8ea",
+          "positions": [
+            "D:L:P13:h:001",
+            "D:L:P13:h:002",
+            "D:L:P13:h:003",
+            "D:L:P13:h:004",
+            "D:L:y",
+            "tail:e",
+            "tail:t"
+          ],
+          "proper_rho_zero_subset_count": 0,
+          "proper_rho_zero_subsets": [],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:e",
+            "tail:t"
+          ]
+        },
+        "D:H_doubleton_ft": {
+          "Q_position_set_sha256": "d296c96124771d0bc8d5d8eccc96944bb6c1545548d9d1306330946fa5bfc156",
+          "positions": [
+            "D:L:P23:g",
+            "D:L:P23:h",
+            "D:L:P23:z1",
+            "D:L:P23:z2",
+            "D:L:y",
+            "tail:f",
+            "tail:t"
+          ],
+          "proper_rho_zero_subset_count": 2,
+          "proper_rho_zero_subsets": [
+            [
+              "D:L:P23:g",
+              "tail:f",
+              "tail:t"
+            ],
+            [
+              "D:L:P23:h",
+              "D:L:P23:z1",
+              "D:L:P23:z2",
+              "D:L:y"
+            ]
+          ],
+          "size": 7,
+          "sum": [
+            0,
+            0
+          ],
+          "trace_position_ids": [
+            "tail:f",
+            "tail:t"
+          ]
+        }
+      },
+      "key": "D",
+      "literal_position_binding_sha256": "e073be587a19cf57126d3f4b4554168f3fa66f32d4e831392371ca745a87511d",
+      "tail_labels": {
+        "tail:e": [
+          1,
+          0
+        ],
+        "tail:f": [
+          0,
+          1
+        ],
+        "tail:t": [
+          -1,
+          -1
+        ]
+      }
+    }
+  ],
+  "not_claimed": [
+    "a full exact-slice model",
+    "a realizable outer survivor",
+    "a candidate for the actual Z atom",
+    "fixed-p or global A_p satisfiability"
+  ],
+  "omitted_scope": [
+    "the two-position packing P and all mixed targets",
+    "the q-coordinate lift and unified actual labels",
+    "the complete automatically induced short-zero/core-block spectrum",
+    "internal subset sums of actual long complement atoms",
+    "actual heights, multiplicity cap, Hasse rows, and actual Z atom",
+    "completion to every endpoint and edge of an outer survivor"
+  ],
+  "p": 233,
+  "schema": "unique_tail_p233_property_b_mixed_trace_relaxed_models/independent-audit-v1",
+  "verified_scope": [
+    "one unified literal position universe and one C_233^2 label per position",
+    "W=K disjoint_union L with size 472",
+    "length-seven endpoint traces, common non-tail positions, and rho(H)=0",
+    "Q_H=K disjoint_union (L minus H), size 465, maximal minimal zero-sum",
+    "K is the exact literal intersection of all displayed Q_H and is zero-sum-free"
+  ]
+}

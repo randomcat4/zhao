@@ -1,0 +1,1108 @@
+{
+  "cases": [
+    {
+      "b": 4,
+      "p": 233,
+      "packing_rows": [
+        {
+          "B_X_core_size": 225,
+          "D_X_core_size": 4,
+          "axis_coefficient_total": 0,
+          "axis_coefficients": [],
+          "candidate_vectors_after_complementary_block": [
+            []
+          ],
+          "nonempty_packing_size_upper_bound": 0,
+          "packing_type": "empty",
+          "unique_tail_D_length": 7,
+          "unique_tail_exception": true,
+          "vectors": [
+            {
+              "atom_sizes": [],
+              "forced_q_singleton": false,
+              "induced_blocks": [],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                []
+              ]
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            []
+          ],
+          "vectors_after_q_fibre_gate": [
+            []
+          ]
+        },
+        {
+          "B_X_core_size": 226,
+          "D_X_core_size": 3,
+          "axis_coefficient_total": 1,
+          "axis_coefficients": [
+            1
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 1,
+          "packing_type": "(1)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1
+              ],
+              "forced_q_singleton": true,
+              "induced_blocks": [
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": false,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ]
+              ]
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            [
+              1
+            ]
+          ],
+          "vectors_after_q_fibre_gate": []
+        },
+        {
+          "B_X_core_size": 227,
+          "D_X_core_size": 2,
+          "axis_coefficient_total": 2,
+          "axis_coefficients": [
+            2
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 2,
+          "packing_type": "(2)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    1,
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 6
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 2,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ]
+            },
+            {
+              "atom_sizes": [
+                2
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ]
+              ]
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "vectors_after_q_fibre_gate": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        {
+          "B_X_core_size": 228,
+          "D_X_core_size": 1,
+          "axis_coefficient_total": 3,
+          "axis_coefficients": [
+            3
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 3,
+          "packing_type": "(3)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 1,
+                  "allowed_actual_sum_coefficients": [
+                    1,
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 5
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 2,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ]
+            },
+            {
+              "atom_sizes": [
+                2
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 1,
+                  "allowed_actual_sum_coefficients": [
+                    1,
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 6
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 2,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ]
+            },
+            {
+              "atom_sizes": [
+                3
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 1,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 3,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ]
+              ]
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "vectors_after_q_fibre_gate": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        },
+        {
+          "B_X_core_size": 227,
+          "D_X_core_size": 2,
+          "axis_coefficient_total": 2,
+          "axis_coefficients": [
+            1,
+            1
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1,
+              1
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 2,
+          "packing_type": "(1,1)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1,
+                1
+              ],
+              "forced_q_singleton": true,
+              "induced_blocks": [
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    2
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    1,
+                    2
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": false,
+              "surviving_defect_assignment_count": 0,
+              "surviving_defect_assignments": []
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [],
+          "vectors_after_q_fibre_gate": []
+        },
+        {
+          "B_X_core_size": 228,
+          "D_X_core_size": 1,
+          "axis_coefficient_total": 3,
+          "axis_coefficients": [
+            1,
+            2
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 3,
+          "packing_type": "(1,2)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1,
+                1
+              ],
+              "forced_q_singleton": true,
+              "induced_blocks": [
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    1,
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    2
+                  ],
+                  "length": 6
+                },
+                {
+                  "X_core_size": 1,
+                  "allowed_actual_sum_coefficients": [
+                    1,
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1,
+                    2
+                  ],
+                  "length": 6
+                }
+              ],
+              "survives_q_fibre_gate": false,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                [
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "atom_sizes": [
+                1,
+                2
+              ],
+              "forced_q_singleton": true,
+              "induced_blocks": [
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    2
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 1,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 3,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1,
+                    2
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": false,
+              "surviving_defect_assignment_count": 0,
+              "surviving_defect_assignments": []
+            },
+            {
+              "atom_sizes": [
+                2,
+                1
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 8
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    1,
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    2
+                  ],
+                  "length": 6
+                },
+                {
+                  "X_core_size": 1,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 3,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1,
+                    2
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": false,
+              "surviving_defect_assignment_count": 0,
+              "surviving_defect_assignments": []
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            [
+              1,
+              1
+            ]
+          ],
+          "vectors_after_q_fibre_gate": []
+        },
+        {
+          "B_X_core_size": 228,
+          "D_X_core_size": 1,
+          "axis_coefficient_total": 3,
+          "axis_coefficients": [
+            1,
+            1,
+            1
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 3,
+          "packing_type": "(1,1,1)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1,
+                1,
+                1
+              ],
+              "forced_q_singleton": true,
+              "induced_blocks": [
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    2
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    3
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    1,
+                    2
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    1,
+                    3
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    2,
+                    3
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 1,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 3,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1,
+                    2,
+                    3
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": false,
+              "surviving_defect_assignment_count": 0,
+              "surviving_defect_assignments": []
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [],
+          "vectors_after_q_fibre_gate": []
+        }
+      ]
+    },
+    {
+      "b": 5,
+      "p": 1399,
+      "packing_rows": [
+        {
+          "B_X_core_size": 1390,
+          "D_X_core_size": 5,
+          "axis_coefficient_total": 0,
+          "axis_coefficients": [],
+          "candidate_vectors_after_complementary_block": [
+            []
+          ],
+          "nonempty_packing_size_upper_bound": 0,
+          "packing_type": "empty",
+          "unique_tail_D_length": 8,
+          "unique_tail_exception": true,
+          "vectors": [
+            {
+              "atom_sizes": [],
+              "forced_q_singleton": false,
+              "induced_blocks": [],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                []
+              ]
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            []
+          ],
+          "vectors_after_q_fibre_gate": [
+            []
+          ]
+        },
+        {
+          "B_X_core_size": 1391,
+          "D_X_core_size": 4,
+          "axis_coefficient_total": 1,
+          "axis_coefficients": [
+            1
+          ],
+          "candidate_vectors_after_complementary_block": [],
+          "nonempty_packing_size_upper_bound": 0,
+          "packing_type": "(1)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [],
+          "vectors_after_all_subfamily_blocks": [],
+          "vectors_after_q_fibre_gate": []
+        },
+        {
+          "B_X_core_size": 1392,
+          "D_X_core_size": 3,
+          "axis_coefficient_total": 2,
+          "axis_coefficients": [
+            2
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 1,
+          "packing_type": "(2)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ]
+              ]
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            [
+              1
+            ]
+          ],
+          "vectors_after_q_fibre_gate": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "B_X_core_size": 1393,
+          "D_X_core_size": 2,
+          "axis_coefficient_total": 3,
+          "axis_coefficients": [
+            3
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 2,
+          "packing_type": "(3)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    1,
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 6
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 2,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ]
+            },
+            {
+              "atom_sizes": [
+                2
+              ],
+              "forced_q_singleton": false,
+              "induced_blocks": [
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": true,
+              "surviving_defect_assignment_count": 1,
+              "surviving_defect_assignments": [
+                [
+                  1
+                ]
+              ]
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "vectors_after_q_fibre_gate": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        {
+          "B_X_core_size": 1392,
+          "D_X_core_size": 3,
+          "axis_coefficient_total": 2,
+          "axis_coefficients": [
+            1,
+            1
+          ],
+          "candidate_vectors_after_complementary_block": [],
+          "nonempty_packing_size_upper_bound": 1,
+          "packing_type": "(1,1)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [],
+          "vectors_after_all_subfamily_blocks": [],
+          "vectors_after_q_fibre_gate": []
+        },
+        {
+          "B_X_core_size": 1393,
+          "D_X_core_size": 2,
+          "axis_coefficient_total": 3,
+          "axis_coefficients": [
+            1,
+            2
+          ],
+          "candidate_vectors_after_complementary_block": [
+            [
+              1,
+              1
+            ]
+          ],
+          "nonempty_packing_size_upper_bound": 2,
+          "packing_type": "(1,2)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [
+            {
+              "atom_sizes": [
+                1,
+                1
+              ],
+              "forced_q_singleton": true,
+              "induced_blocks": [
+                {
+                  "X_core_size": 4,
+                  "allowed_actual_sum_coefficients": [],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 1,
+                  "indices_one_based": [
+                    1
+                  ],
+                  "length": 8
+                },
+                {
+                  "X_core_size": 3,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 1,
+                  "axis_coefficient_sum": 2,
+                  "indices_one_based": [
+                    2
+                  ],
+                  "length": 7
+                },
+                {
+                  "X_core_size": 2,
+                  "allowed_actual_sum_coefficients": [
+                    2
+                  ],
+                  "atom_size_sum": 2,
+                  "axis_coefficient_sum": 3,
+                  "indices_one_based": [
+                    1,
+                    2
+                  ],
+                  "length": 7
+                }
+              ],
+              "survives_q_fibre_gate": false,
+              "surviving_defect_assignment_count": 0,
+              "surviving_defect_assignments": []
+            }
+          ],
+          "vectors_after_all_subfamily_blocks": [],
+          "vectors_after_q_fibre_gate": []
+        },
+        {
+          "B_X_core_size": 1393,
+          "D_X_core_size": 2,
+          "axis_coefficient_total": 3,
+          "axis_coefficients": [
+            1,
+            1,
+            1
+          ],
+          "candidate_vectors_after_complementary_block": [],
+          "nonempty_packing_size_upper_bound": 2,
+          "packing_type": "(1,1,1)",
+          "unique_tail_D_length": null,
+          "unique_tail_exception": false,
+          "vectors": [],
+          "vectors_after_all_subfamily_blocks": [],
+          "vectors_after_q_fibre_gate": []
+        }
+      ]
+    }
+  ],
+  "certificate_sha256": "b08b3afd002535bc946da3fad778281cd640d8d1c37fda05fca48631e29f2463",
+  "dependencies_sha256": {
+    "assumptions.md": "0e10138860269a18f0f7c0a02ab40204109efbb9a09688fc99da46983e390aed",
+    "proofs/middle_quotient_gap.md": "d886a84857cd430455558266a2ab175f21f2de853eed08c6affcad0c14b3efcc",
+    "proofs/unique_tail_common_R_next.md": "1c805f0c1b2402e50317712cf5f8341e82ba6c882b3ee02ffab7e901f5614942",
+    "proofs/unique_tail_position_conflict_frontier.md": "a30707af2f6ef04da720a8eb3c1e97b1c7c297eecc67cf6879ff1191ff9afa8b",
+    "verifications/unique_tail_common_R_next_independent_review.md": "35f355d2fe1b3dc7a98e3011e44f0e3cdea17cfdd104c026042081b00c4539d3",
+    "verifications/unique_tail_position_conflict_frontier_independent_review.md": "93381c12a56f32469d6dcb0d21c65b22509837484323e2ad1763a81218d771b5"
+  },
+  "schema": "unique_tail_all_packing_short_blocks_v1",
+  "scope": {
+    "assumptions": [
+      "p,b are (233,4) or (1399,5)",
+      "the seven common-R packing coefficient types",
+      "X=x^(p-4), U has three positions and quotient sum -bq",
+      "Y=L disjoint_union R and R=P_1 disjoint_union ... disjoint_union P_t disjoint_union K",
+      "all quotient-zero blocks of length at most eight obey the frozen short spectrum",
+      "the only positive-core F3 tail is U with core size b",
+      "each endpoint F3 complement has every nonzero quotient fibre of multiplicity at most p-4"
+    ],
+    "conclusion": "for both primes the seven packing types reduce exactly to the necessary survivors empty, (2), and (3)",
+    "not_concluded": [
+      "any of empty, (2), or (3) is realizable",
+      "any remaining packing type is empty",
+      "the unique-tail branch is empty",
+      "A_p"
+    ]
+  },
+  "status": "SEVEN_PACKING_TYPES_REDUCED_TO_EMPTY_2_3__GLOBAL_INCOMPLETE",
+  "summary": {
+    "candidate_vectors_after_complementary_block_including_empty": 17,
+    "closed_types_both_primes": [
+      "(1)",
+      "(1,1)",
+      "(1,2)",
+      "(1,1,1)"
+    ],
+    "final_nonempty_defect_assignments": 12,
+    "packing_rows": 14,
+    "remaining_nonempty_vectors": {
+      "1399": {
+        "(2)": [
+          [
+            1
+          ]
+        ],
+        "(3)": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ]
+      },
+      "233": {
+        "(2)": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "(3)": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      }
+    },
+    "remaining_types_both_primes": [
+      "empty",
+      "(2)",
+      "(3)"
+    ],
+    "vectors_after_all_subfamily_blocks_including_empty": 12,
+    "vectors_after_q_fibre_gate_including_empty": 10
+  }
+}

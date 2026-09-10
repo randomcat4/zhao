@@ -1,0 +1,99 @@
+{
+  "boundary_partitions": {
+    "115,115": {
+      "Q1_or_Q2_u3_tail_witness_after_both_gates": 13225,
+      "Q3_e_tail_witness": 26680,
+      "Q3_f_tail_witness_after_e_gate": 13455,
+      "proof_gap_after_both_gates": 464
+    },
+    "115,116": {
+      "Q1_or_Q2_u3_tail_witness_after_both_gates": 13340,
+      "Q3_e_tail_witness": 26680,
+      "Q3_f_tail_witness_after_e_gate": 13572,
+      "proof_gap_after_both_gates": 232
+    },
+    "116,115": {
+      "Q1_or_Q2_u3_tail_witness_after_both_gates": 13340,
+      "Q3_e_tail_witness": 26912,
+      "Q3_f_tail_witness_after_e_gate": 13340,
+      "proof_gap_after_both_gates": 232
+    },
+    "116,116": {
+      "Q1_or_Q2_u3_tail_witness_after_both_gates": 13456,
+      "Q3_e_tail_witness": 26912,
+      "Q3_f_tail_witness_after_e_gate": 13456,
+      "proof_gap_after_both_gates": 0
+    }
+  },
+  "certificate_sha256": "2164569b229d30100f0635dc93d0d7af4c98f3f95f8e4c5c7998e9fd26fc8622",
+  "conclusion": "three simultaneous length-(2p-1) atoms Q_i cannot share the two-monochromatic common core (alpha*e)^r (beta*f)^s when r,s >= (p-1)/2; in particular the fixed 227-by-226 core is excluded",
+  "fixed_227_226_corollary": {
+    "e_count": 227,
+    "f_count": 226,
+    "final_witness_size_range": [
+      3,
+      12
+    ],
+    "parameter_partition": {
+      "Q1_or_Q2_u3_tail_witness_after_both_gates": 30,
+      "Q3_e_tail_witness": 52664,
+      "Q3_f_tail_witness_after_e_gate": 1130,
+      "proof_gap_after_both_gates": 0
+    }
+  },
+  "gate_consequences": {
+    "Q3_atom_from_e_tail_requires": "m=alpha^(-1) <= p-r-1 <= r",
+    "Q3_atom_from_f_tail_requires": "n=beta^(-1) <= p-s-1 <= s",
+    "then_Q1_and_Q2_have_proper_zero_subsequence": "{u3} plus alpha^(-1) copies of alpha*e plus beta^(-1) copies of beta*f",
+    "witness_length_upper_bound": "1+m+n <= p < 2p-1"
+  },
+  "not_claimed": [
+    "the threshold 115 failure of this proof is a realizable atom model",
+    "an arbitrary common core has two monochromatic fibres of size 116",
+    "all rank-two shared-factor skeletons are excluded",
+    "the p=233 exact slice is UNSAT",
+    "the global A_p statement is settled"
+  ],
+  "parameter_pair_count": 53824,
+  "schema": "unique_tail_p233_rank2_rectangular_kernel_exclusion_v2",
+  "scope": {
+    "Q_i_length": 465,
+    "common_two_monochromatic_core": {
+      "alpha_beta_quantifier": "all nonzero alpha,beta in F_p",
+      "alpha_e_position_count": "r >= 116",
+      "beta_f_position_count": "s >= 116"
+    },
+    "p": 233,
+    "tail_projection_normal_form": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        232,
+        232
+      ]
+    ]
+  },
+  "status": "TWO_MONOCHROMATIC_COMMON_KERNEL_THRESHOLD_EXCLUDED__FIXED_227_226_COROLLARY__GLOBAL_INCOMPLETE",
+  "tail_incidence": {
+    "Q1_contains": [
+      "w2=f",
+      "w3=-e-f"
+    ],
+    "Q2_contains": [
+      "w1=e",
+      "w3=-e-f"
+    ],
+    "Q3_contains": [
+      "w1=e",
+      "w2=f"
+    ]
+  },
+  "threshold": 116,
+  "threshold_scalar_checks": 27144
+}

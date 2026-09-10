@@ -1,0 +1,198 @@
+{
+  "certificate_sha256": "fe15a00d8235419ac0a68144fdb892b0ded20f4e133da0cc6cf9fd1ed009eb9e",
+  "dependencies_sha256": {
+    "proofs/unique_tail_all_packing_short_blocks.md": "7abe228fa70dabd8858a40507b11505bd9cee388aa89fd79cd7a22fb8ec68238",
+    "proofs/unique_tail_common_R_next.md": "1c805f0c1b2402e50317712cf5f8341e82ba6c882b3ee02ffab7e901f5614942",
+    "proofs/unique_tail_labelled_position_next.md": "60384c64dee88487220f3fd7101a5d3abff1cb576fe3a8b43ec398fdd284ddce",
+    "unique_tail_all_packing_short_blocks_report.json": "4dadb5a6fca18da42ccd95821cc176cd9fae1ce2653ddb2e14406e5e66694ceb",
+    "verifications/unique_tail_all_packing_short_blocks_independent_review.md": "d22d9380a0dc98c21a691384901a9f826f88b72bab85042beafc053eed8124e3",
+    "verifications/unique_tail_common_R_next_independent_review.md": "35f355d2fe1b3dc7a98e3011e44f0e3cdea17cfdd104c026042081b00c4539d3",
+    "verifications/unique_tail_labelled_position_next_independent_review.md": "7cc525664dbbf7eeb23d04b3e061f0c4feac07100c7b6c294ee018ad658f20dd"
+  },
+  "remaining_nonempty_size_rows": [
+    {
+      "P_axis_coefficient": 2,
+      "P_size": 1,
+      "Q_H_axis_coefficient": 2,
+      "Q_H_forced_rho_atom": false,
+      "b": 4,
+      "independent_mixed_target_fibre_count": 0,
+      "independent_mixed_target_fibre_representatives": [],
+      "p": 233,
+      "packing_type": "(2)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [
+        1
+      ],
+      "proper_rho_zero_Q_H_subsets_are_atoms": true,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": true
+    },
+    {
+      "P_axis_coefficient": 2,
+      "P_size": 2,
+      "Q_H_axis_coefficient": 2,
+      "Q_H_forced_rho_atom": false,
+      "b": 4,
+      "independent_mixed_target_fibre_count": 1,
+      "independent_mixed_target_fibre_representatives": [
+        [
+          1
+        ]
+      ],
+      "p": 233,
+      "packing_type": "(2)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [
+        1
+      ],
+      "proper_rho_zero_Q_H_subsets_are_atoms": true,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": true
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 1,
+      "Q_H_axis_coefficient": 1,
+      "Q_H_forced_rho_atom": true,
+      "b": 4,
+      "independent_mixed_target_fibre_count": 0,
+      "independent_mixed_target_fibre_representatives": [],
+      "p": 233,
+      "packing_type": "(3)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [],
+      "proper_rho_zero_Q_H_subsets_are_atoms": false,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": false
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 2,
+      "Q_H_axis_coefficient": 1,
+      "Q_H_forced_rho_atom": true,
+      "b": 4,
+      "independent_mixed_target_fibre_count": 1,
+      "independent_mixed_target_fibre_representatives": [
+        [
+          1
+        ]
+      ],
+      "p": 233,
+      "packing_type": "(3)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [],
+      "proper_rho_zero_Q_H_subsets_are_atoms": false,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": false
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 3,
+      "Q_H_axis_coefficient": 1,
+      "Q_H_forced_rho_atom": true,
+      "b": 4,
+      "independent_mixed_target_fibre_count": 3,
+      "independent_mixed_target_fibre_representatives": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "p": 233,
+      "packing_type": "(3)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [],
+      "proper_rho_zero_Q_H_subsets_are_atoms": false,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": false
+    },
+    {
+      "P_axis_coefficient": 2,
+      "P_size": 1,
+      "Q_H_axis_coefficient": 2,
+      "Q_H_forced_rho_atom": false,
+      "b": 5,
+      "independent_mixed_target_fibre_count": 0,
+      "independent_mixed_target_fibre_representatives": [],
+      "p": 1399,
+      "packing_type": "(2)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [
+        1
+      ],
+      "proper_rho_zero_Q_H_subsets_are_atoms": true,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": true
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 1,
+      "Q_H_axis_coefficient": 1,
+      "Q_H_forced_rho_atom": true,
+      "b": 5,
+      "independent_mixed_target_fibre_count": 0,
+      "independent_mixed_target_fibre_representatives": [],
+      "p": 1399,
+      "packing_type": "(3)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [],
+      "proper_rho_zero_Q_H_subsets_are_atoms": false,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": false
+    },
+    {
+      "P_axis_coefficient": 3,
+      "P_size": 2,
+      "Q_H_axis_coefficient": 1,
+      "Q_H_forced_rho_atom": true,
+      "b": 5,
+      "independent_mixed_target_fibre_count": 1,
+      "independent_mixed_target_fibre_representatives": [
+        [
+          1
+        ]
+      ],
+      "p": 1399,
+      "packing_type": "(3)",
+      "proper_rho_zero_Q_H_subset_allowed_axis_coefficients": [],
+      "proper_rho_zero_Q_H_subsets_are_atoms": false,
+      "proper_rho_zero_Q_H_subsets_have_size_at_least_two": false
+    }
+  ],
+  "schema": "unique_tail_remaining_long_complement_internal_sums_v1",
+  "scope": {
+    "assumptions": [
+      "p,b are (233,4) or (1399,5)",
+      "a common maximal packing leaves only one rho-atom P of q-axis coefficient d=2 or d=3, plus the rho-zero-sum-free kernel K",
+      "for every actual zero-core endpoint H, W_H=P disjoint_union Q_H and q^(p-4) W_H is a quotient atom",
+      "the complete axial subset-sum criterion is used for every literal subset of W_H",
+      "every nonzero quotient fibre in an F3 complement has multiplicity at most p-4"
+    ],
+    "conclusion": "for d=3 every Q_H is a rho-atom; for d=2 every nonempty proper rho-zero subset of Q_H has q-axis coefficient one, is itself a rho-atom, has an atomic complement, and neither factor is a singleton; together with the listed mixed target fibres this is equivalent to the full long-complement internal subset-sum criterion",
+    "not_concluded": [
+      "any remaining row is realizable",
+      "the empty packing is realizable",
+      "the mixed target fibres are nonempty",
+      "the unique-tail branch is empty",
+      "A_p"
+    ]
+  },
+  "status": "ALL_REMAINING_NONEMPTY_LONG_COMPLEMENT_INTERNAL_SUMS_COMPRESSED__GLOBAL_INCOMPLETE",
+  "summary": {
+    "independent_mixed_target_fibre_counts_by_P_size": {
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        3
+      ]
+    },
+    "remaining_nonempty_size_row_count": 8,
+    "restored_information": [
+      "literal subsets of the common position atom P",
+      "literal subsets of every endpoint remainder Q_H",
+      "their unified q-axis coefficients",
+      "every mixed target fibre rho(T)=-rho(A)",
+      "the complete internal subset-sum criterion of q^(p-4)(P disjoint_union Q_H)"
+    ],
+    "type_2_Q_H_coefficient_one_atomic_split_rows": 3,
+    "type_3_P_size_one_boundary": "the full long-complement criterion is exactly Q_H rho-atomicity",
+    "type_3_Q_H_atom_rows": 5
+  }
+}

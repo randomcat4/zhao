@@ -1,0 +1,973 @@
+{
+  "aggregate": {
+    "complete_empty_escape_pruned": 2,
+    "complete_zero_sum_candidates": 2,
+    "depth1_atomic_pruned": 437,
+    "depth1_entered": 2304,
+    "depth1_survived": 1867,
+    "depth2_atomic_pruned": 170087,
+    "depth2_entered": 307744,
+    "depth2_survived": 137657,
+    "depth3_atomic_pruned": 14528053,
+    "depth3_entered": 15843972,
+    "depth3_plane_pruned": 2522,
+    "depth3_survived": 1204095,
+    "depth3_tail_pruned": 109302,
+    "depth4_atomic_pruned": 108479191,
+    "depth4_entered": 109495205,
+    "depth4_plane_pruned": 274332,
+    "depth4_survived": 570237,
+    "depth4_tail_pruned": 171445,
+    "depth5_atomic_pruned": 39037469,
+    "depth5_entered": 40696455,
+    "depth5_plane_pruned": 1658706,
+    "depth5_survived": 68,
+    "depth5_tail_pruned": 212,
+    "forced_order_pruned": 66
+  },
+  "anchor_profile_denominator": 834,
+  "closed_anchor_profiles": 8,
+  "closed_collinear_profiles": 50,
+  "closed_signatures": [
+    [
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ]
+  ],
+  "closed_signatures_count": 2,
+  "collinear_profile_denominator": 5741,
+  "incidence_rank_mod_two": 56,
+  "plane_maximum": 11,
+  "plane_records": [
+    {
+      "basis_multiplicities": [
+        1,
+        1
+      ],
+      "cache_misses": 48623,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          47,
+          4
+        ],
+        [
+          46,
+          1
+        ],
+        [
+          37,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        1,
+        2
+      ],
+      "cache_misses": 15495,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          45,
+          4
+        ],
+        [
+          44,
+          2
+        ],
+        [
+          43,
+          2
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        1,
+        3
+      ],
+      "cache_misses": 6494,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          45,
+          4
+        ],
+        [
+          44,
+          2
+        ],
+        [
+          43,
+          1
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        1,
+        4
+      ],
+      "cache_misses": 2805,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          44,
+          4
+        ],
+        [
+          43,
+          2
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        2,
+        1
+      ],
+      "cache_misses": 16053,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          47,
+          4
+        ],
+        [
+          46,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        2,
+        2
+      ],
+      "cache_misses": 4650,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          44,
+          4
+        ],
+        [
+          43,
+          3
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        2,
+        3
+      ],
+      "cache_misses": 1865,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        2,
+        4
+      ],
+      "cache_misses": 801,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          31,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        3,
+        1
+      ],
+      "cache_misses": 6915,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          23,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        3,
+        2
+      ],
+      "cache_misses": 1866,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        3,
+        3
+      ],
+      "cache_misses": 681,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          13,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        3,
+        4
+      ],
+      "cache_misses": 326,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          13,
+          3
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        4,
+        1
+      ],
+      "cache_misses": 2941,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          4
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          47,
+          2
+        ],
+        [
+          13,
+          4
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        4,
+        2
+      ],
+      "cache_misses": 796,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        4,
+        3
+      ],
+      "cache_misses": 317,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          12,
+          3
+        ]
+      ]
+    },
+    {
+      "basis_multiplicities": [
+        4,
+        4
+      ],
+      "cache_misses": 164,
+      "maximum_length": 11,
+      "witness": [
+        [
+          7,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          13,
+          2
+        ]
+      ]
+    }
+  ],
+  "plane_witness_sha256": "699d7242e87d63d8246bd36225b7c65fb9e0bb2148fed3b75d7df00ce222157e",
+  "profile_count": 8,
+  "profile_report_sha256": "f353f51fd79029349c5676357a28ca921685152925e49385cdfd4b8b064ad41e",
+  "profiles": [
+    {
+      "anchor_multiplicity": 3,
+      "complete_sha256": "db61c29adf98f58c2e5d680a0562c1f385306d70577e50ef772ec6d0ee249a63",
+      "counts": {
+        "complete_empty_escape_pruned": 2,
+        "complete_zero_sum_candidates": 2,
+        "depth1_atomic_pruned": 52,
+        "depth1_entered": 324,
+        "depth1_survived": 272,
+        "depth2_atomic_pruned": 21853,
+        "depth2_entered": 44876,
+        "depth2_survived": 23023,
+        "depth3_atomic_pruned": 2303455,
+        "depth3_entered": 2615422,
+        "depth3_survived": 303819,
+        "depth3_tail_pruned": 8148,
+        "depth4_atomic_pruned": 27344257,
+        "depth4_entered": 27604871,
+        "depth4_survived": 219759,
+        "depth4_tail_pruned": 40855,
+        "depth5_atomic_pruned": 17415161,
+        "depth5_entered": 17415441,
+        "depth5_survived": 68,
+        "depth5_tail_pruned": 212,
+        "forced_order_pruned": 66
+      },
+      "forced_variable_index": 5,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 1,
+      "signature": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 13,
+        "depth1_entered": 36,
+        "depth1_survived": 23,
+        "depth2_atomic_pruned": 382,
+        "depth2_entered": 404,
+        "depth2_survived": 22,
+        "depth3_entered": 194,
+        "depth3_plane_pruned": 194
+      },
+      "forced_variable_index": 5,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 1,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 0,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 2,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 1,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 3,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 2,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "profile_index": 4,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 3,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "profile_index": 5,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 4,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "profile_index": 6,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "anchor_multiplicity": 4,
+      "complete_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "depth1_atomic_pruned": 62,
+        "depth1_entered": 324,
+        "depth1_survived": 262,
+        "depth2_atomic_pruned": 24642,
+        "depth2_entered": 43744,
+        "depth2_survived": 19102,
+        "depth3_atomic_pruned": 2037433,
+        "depth3_entered": 2204726,
+        "depth3_plane_pruned": 388,
+        "depth3_survived": 150046,
+        "depth3_tail_pruned": 16859,
+        "depth4_atomic_pruned": 13522489,
+        "depth4_entered": 13648389,
+        "depth4_plane_pruned": 45722,
+        "depth4_survived": 58413,
+        "depth4_tail_pruned": 21765,
+        "depth5_atomic_pruned": 3603718,
+        "depth5_entered": 3880169,
+        "depth5_plane_pruned": 276451
+      },
+      "forced_variable_index": 5,
+      "nonempty_escape_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prefix_tail_depth": 3,
+      "profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "profile_index": 7,
+      "signature": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "tail_viable_atom_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "traversal": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "remaining_anchor_profiles": 826,
+  "remaining_collinear_profiles": 5691,
+  "remaining_signatures_count": 11,
+  "schema": "p7-m34-support9-light-unified-v1",
+  "scope": "complete two-signature light slice; full support nine incomplete",
+  "shard_sha256": [
+    "ca874fd34041a1f1de45d8136d4b1ade3cbd19f1ca31d93f078c906ae71f1fce",
+    "66cf710bb2d5fd7b0ca2cd13e96b7bdd49dfa8d20a8f7185712d8e45a84bd4bf"
+  ],
+  "tail_viable_orbit_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "tail_viable_unpointed_orbits": 0,
+  "unpointed_signature_denominator": 13
+}

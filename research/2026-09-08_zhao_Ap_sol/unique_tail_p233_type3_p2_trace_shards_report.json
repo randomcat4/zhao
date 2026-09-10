@@ -1,0 +1,1172 @@
+{
+  "certificate_sha256": "2e15c4f39374da1f5cc78f12284b852998715f28246fd87becc6ea640120448d",
+  "dependencies_sha256": {
+    "proofs/unique_tail_four_edge_joint_csp.md": "87954d09a00aa74d3d43ce7d784deeff325965e61fca80e900d610371260201f",
+    "proofs/unique_tail_p233_singleton_tail_fringe.md": "1e86893a6fca86b2bd9e35fbdc70a8d2c9c6e40be1f68577354cdc5005775a76",
+    "unique_tail_four_edge_joint_csp.py": "4d52d690f79c8808d37061fc9d51526d0d98e05b1c508de0933cf2e0034d922f",
+    "verifications/unique_tail_four_edge_joint_csp_independent_review.md": "3ddd10c87c6f0de70a67e0cd630f3e2b3075200a8356c491eb4ad0f4b5359f3c",
+    "verifications/unique_tail_p233_singleton_tail_fringe_independent_review.md": "8487137667255b49f74ce8a0fe79c2d12222e45d54776eb5c8458bce00aed5d1"
+  },
+  "fixed_slice": {
+    "P_size": 2,
+    "endpoint_length_stage": "length_7_only",
+    "kappa": 1,
+    "p": 233,
+    "packing_type": [
+      3
+    ],
+    "tail_projection_rank": 2,
+    "unique_type": [
+      7,
+      4
+    ]
+  },
+  "full_eleven_shape_count_table": {
+    "C4": {
+      "all_distinct_trace": 0,
+      "repeated_trace": 48,
+      "valid": 48
+    },
+    "K1_3_plus_K2": {
+      "all_distinct_trace": 0,
+      "repeated_trace": 1008,
+      "valid": 1008
+    },
+    "K1_4": {
+      "all_distinct_trace": 0,
+      "repeated_trace": 246,
+      "valid": 246
+    },
+    "K3_plus_K2": {
+      "all_distinct_trace": 0,
+      "repeated_trace": 72,
+      "valid": 72
+    },
+    "P3_plus_two_K2": {
+      "all_distinct_trace": 0,
+      "repeated_trace": 4320,
+      "valid": 4320
+    },
+    "P4_plus_K2": {
+      "all_distinct_trace": 12,
+      "repeated_trace": 852,
+      "valid": 864
+    },
+    "P5": {
+      "all_distinct_trace": 6,
+      "repeated_trace": 168,
+      "valid": 174
+    },
+    "T5": {
+      "all_distinct_trace": 12,
+      "repeated_trace": 186,
+      "valid": 198
+    },
+    "four_K2": {
+      "all_distinct_trace": 0,
+      "repeated_trace": 20736,
+      "valid": 20736
+    },
+    "paw": {
+      "all_distinct_trace": 6,
+      "repeated_trace": 12,
+      "valid": 18
+    },
+    "two_P3": {
+      "all_distinct_trace": 0,
+      "repeated_trace": 900,
+      "valid": 900
+    }
+  },
+  "schema": "unique_tail_p233_type3_p2_trace_shards_v1",
+  "scope": "exhaustive only for the fixed representatives of the four-edge graph and their injective six-trace assignments; endpoint position masks, shared labels, heights, oracle results, SAT and UNSAT remain uninstantiated",
+  "status": "EXACT_OUTER_TRACE_PARTITION/36_SHARDS/INCIDENCE_AND_LABELS_PENDING/GLOBAL_INCOMPLETE",
+  "trace_shards": [
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        3,
+        4,
+        1,
+        6,
+        2,
+        5
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-01",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        3,
+        4,
+        1,
+        6,
+        5,
+        2
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-02",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        3,
+        4,
+        2,
+        5,
+        1,
+        6
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-03",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        3,
+        4,
+        2,
+        5,
+        6,
+        1
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-04",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        5,
+        2,
+        1,
+        6,
+        3,
+        4
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-05",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        5,
+        2,
+        1,
+        6,
+        4,
+        3
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-06",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        5,
+        2,
+        4,
+        3,
+        1,
+        6
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-07",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        5,
+        2,
+        4,
+        3,
+        6,
+        1
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-08",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        6,
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-09",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        6,
+        1,
+        2,
+        5,
+        4,
+        3
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-10",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        6,
+        1,
+        4,
+        3,
+        2,
+        5
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-11",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "endpoint_trace_masks": [
+        6,
+        1,
+        4,
+        3,
+        5,
+        2
+      ],
+      "shape": "P4_plus_K2",
+      "shard_id": "trace-12",
+      "vertex_count": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "shape": "P5",
+      "shard_id": "trace-13",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        3,
+        4,
+        2,
+        1,
+        6
+      ],
+      "shape": "P5",
+      "shard_id": "trace-14",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        5,
+        2,
+        1,
+        4,
+        3
+      ],
+      "shape": "P5",
+      "shard_id": "trace-15",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        5,
+        2,
+        4,
+        1,
+        6
+      ],
+      "shape": "P5",
+      "shard_id": "trace-16",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        6,
+        1,
+        2,
+        4,
+        3
+      ],
+      "shape": "P5",
+      "shard_id": "trace-17",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        6,
+        1,
+        4,
+        2,
+        5
+      ],
+      "shape": "P5",
+      "shard_id": "trace-18",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        1,
+        2,
+        4,
+        6,
+        5
+      ],
+      "shape": "T5",
+      "shard_id": "trace-19",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        1,
+        2,
+        6,
+        4,
+        5
+      ],
+      "shape": "T5",
+      "shard_id": "trace-20",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        1,
+        4,
+        2,
+        6,
+        3
+      ],
+      "shape": "T5",
+      "shard_id": "trace-21",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        1,
+        4,
+        6,
+        2,
+        3
+      ],
+      "shape": "T5",
+      "shard_id": "trace-22",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        2,
+        1,
+        4,
+        5,
+        6
+      ],
+      "shape": "T5",
+      "shard_id": "trace-23",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        2,
+        1,
+        5,
+        4,
+        6
+      ],
+      "shape": "T5",
+      "shard_id": "trace-24",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        2,
+        4,
+        1,
+        5,
+        3
+      ],
+      "shape": "T5",
+      "shard_id": "trace-25",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        2,
+        4,
+        5,
+        1,
+        3
+      ],
+      "shape": "T5",
+      "shard_id": "trace-26",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        4,
+        1,
+        2,
+        3,
+        6
+      ],
+      "shape": "T5",
+      "shard_id": "trace-27",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        4,
+        1,
+        3,
+        2,
+        6
+      ],
+      "shape": "T5",
+      "shard_id": "trace-28",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        4,
+        2,
+        1,
+        3,
+        5
+      ],
+      "shape": "T5",
+      "shard_id": "trace-29",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "endpoint_trace_masks": [
+        4,
+        2,
+        3,
+        1,
+        5
+      ],
+      "shape": "T5",
+      "shard_id": "trace-30",
+      "vertex_count": 5
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "endpoint_trace_masks": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "shape": "paw",
+      "shard_id": "trace-31",
+      "vertex_count": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "endpoint_trace_masks": [
+        1,
+        4,
+        2,
+        6
+      ],
+      "shape": "paw",
+      "shard_id": "trace-32",
+      "vertex_count": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "endpoint_trace_masks": [
+        2,
+        1,
+        4,
+        5
+      ],
+      "shape": "paw",
+      "shard_id": "trace-33",
+      "vertex_count": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "endpoint_trace_masks": [
+        2,
+        4,
+        1,
+        5
+      ],
+      "shape": "paw",
+      "shard_id": "trace-34",
+      "vertex_count": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "endpoint_trace_masks": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "shape": "paw",
+      "shard_id": "trace-35",
+      "vertex_count": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "endpoint_trace_masks": [
+        4,
+        2,
+        1,
+        3
+      ],
+      "shape": "paw",
+      "shard_id": "trace-36",
+      "vertex_count": 4
+    }
+  ]
+}

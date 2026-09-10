@@ -1,0 +1,190 @@
+{
+  "certificate_sha256": "db93b7b06bc698dd8319c3d6b822f01c95b63f33848d8827a8286240a39534aa",
+  "exact_conclusion": "the three forced singleton-tail top functionals and every pairwise shared literal-factor/petal identity are simultaneously realizable by one labelled C_p^2 position sequence",
+  "explicit_literal_model": {
+    "common_core_length": 453,
+    "common_core_sum": [
+      2,
+      2
+    ],
+    "degree_2p_minus_3_coefficients": [
+      {
+        "u^(p-1)v^(p-2)": 1,
+        "u^(p-2)v^(p-1)": 231
+      },
+      {
+        "u^(p-1)v^(p-2)": 231,
+        "u^(p-2)v^(p-1)": 1
+      },
+      {
+        "u^(p-1)v^(p-2)": 1,
+        "u^(p-2)v^(p-1)": 1
+      }
+    ],
+    "endpoint_exterior_lengths": [
+      6,
+      6,
+      6
+    ],
+    "endpoint_exterior_sums": [
+      [
+        232,
+        0
+      ],
+      [
+        0,
+        232
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "fringe_lengths": [
+      463,
+      463,
+      463
+    ],
+    "fringe_sums": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        232,
+        232
+      ]
+    ],
+    "long_zero_sequence_lengths": [
+      465,
+      465,
+      465
+    ],
+    "long_zero_sequence_sums": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "middle_sequence_length": 469,
+    "middle_sequence_sum": [
+      0,
+      0
+    ],
+    "pairwise_factorizations": [
+      {
+        "endpoints": [
+          1,
+          2
+        ],
+        "left_petal": 2,
+        "petal_length": 5,
+        "right_petal": 1,
+        "shared_literal_factor_length": 458
+      },
+      {
+        "endpoints": [
+          1,
+          3
+        ],
+        "left_petal": 3,
+        "petal_length": 5,
+        "right_petal": 1,
+        "shared_literal_factor_length": 458
+      },
+      {
+        "endpoints": [
+          2,
+          3
+        ],
+        "left_petal": 3,
+        "petal_length": 5,
+        "right_petal": 2,
+        "shared_literal_factor_length": 458
+      }
+    ]
+  },
+  "forced_functional_normal_form": {
+    "column_sum": 0,
+    "evaluation_matrix_rows_lambda_i_columns_w_j": [
+      [
+        231,
+        1,
+        1
+      ],
+      [
+        1,
+        231,
+        1
+      ],
+      [
+        1,
+        1,
+        231
+      ]
+    ],
+    "integer_representatives": [
+      [
+        -2,
+        1,
+        1
+      ],
+      [
+        1,
+        -2,
+        1
+      ],
+      [
+        1,
+        1,
+        -2
+      ]
+    ],
+    "matrix_formula": "all_ones_matrix - 3*identity_matrix",
+    "rank": 2,
+    "row_sum": 0
+  },
+  "not_claimed": [
+    "any of the three length-(2p-1) zero-sum sequences is an atom",
+    "all deletion products for those sequences equal J",
+    "the complete automatic short-block spectrum is satisfied",
+    "a 474-position exact-slice instance is loaded",
+    "the p=233 exact slice is SAT or UNSAT",
+    "the global A_p statement is settled"
+  ],
+  "schema": "unique_tail_p233_rank2_three_functional_compatibility_v1",
+  "scope": {
+    "P_size": 2,
+    "endpoint_pattern": "three singleton traces, all endpoint lengths seven",
+    "kappa": 1,
+    "p": 233,
+    "packing_type": "(3)",
+    "tail_projection_normal_form": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        232,
+        232
+      ]
+    ]
+  },
+  "status": "PROVED_EXACT_COMPATIBILITY_OF_THREE_FUNCTIONAL_SHARED_LITERAL_INTERFACE__RELAXED_BEYOND_THIS_INTERFACE__GLOBAL_INCOMPLETE"
+}

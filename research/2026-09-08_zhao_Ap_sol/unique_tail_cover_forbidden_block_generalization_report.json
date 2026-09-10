@@ -1,0 +1,539 @@
+{
+  "certificate_sha256": "36ed4fe5bbc17e2e7706bc06c02bfc11b85ee321eccd053fad1b77fd2c9e3c10",
+  "conclusion": {
+    "minimal_missing_data": "quotient sums of the nonempty outside overlap cells (Q_E intersect Q_F) minus U and their joint incidences",
+    "not_proved": [
+      "any cover-pair occurrence has a compatible quotient-label assignment",
+      "any of the three forced packing types is empty",
+      "the large-prime unique-tail branch is empty"
+    ],
+    "proved": [
+      "Q_E+Q_F-U is the unique unit pair form with an available large X-core",
+      "its exact indicator criterion is trace-disjointness plus outside-union coverage",
+      "every such indicator is in the frozen quotient-zero forbidden length range",
+      "all 24468 cover-pair occurrences admit an incidence-size skeleton avoiding every large-core dense form"
+    ]
+  },
+  "cover_occurrence_audit": {
+    "first_incidence_witness": {
+      "1399": {
+        "canonical_colouring": [
+          6,
+          5,
+          1,
+          1,
+          2
+        ],
+        "canonical_cover_pair": [
+          0,
+          1
+        ],
+        "endpoint_positions": [
+          [
+            "u2",
+            "u3",
+            "y",
+            "a0",
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+          ],
+          [
+            "u1",
+            "u3",
+            "y",
+            "b0",
+            "b1",
+            "b2",
+            "b3",
+            "b4"
+          ],
+          [
+            "u1",
+            "y",
+            "a1",
+            "a2",
+            "a3",
+            "a4",
+            "b1",
+            "b2"
+          ],
+          [
+            "u1",
+            "y",
+            "a1",
+            "a2",
+            "a3",
+            "a4",
+            "b1",
+            "b3"
+          ],
+          [
+            "u2",
+            "y",
+            "a1",
+            "a2",
+            "a3",
+            "a4",
+            "b1",
+            "b2"
+          ]
+        ],
+        "shape": "P5",
+        "universe_names": [
+          "u1",
+          "u2",
+          "u3",
+          "y",
+          "a0",
+          "a1",
+          "a2",
+          "a3",
+          "a4",
+          "b0",
+          "b1",
+          "b2",
+          "b3",
+          "b4"
+        ]
+      },
+      "233": {
+        "canonical_colouring": [
+          6,
+          5,
+          1,
+          1,
+          2
+        ],
+        "canonical_cover_pair": [
+          0,
+          1
+        ],
+        "endpoint_positions": [
+          [
+            "u2",
+            "u3",
+            "y",
+            "a0",
+            "a1",
+            "a2",
+            "a3"
+          ],
+          [
+            "u1",
+            "u3",
+            "y",
+            "b0",
+            "b1",
+            "b2",
+            "b3"
+          ],
+          [
+            "u1",
+            "y",
+            "a1",
+            "a2",
+            "a3",
+            "b1",
+            "b2"
+          ],
+          [
+            "u1",
+            "y",
+            "a1",
+            "a2",
+            "a3",
+            "b1",
+            "b3"
+          ],
+          [
+            "u2",
+            "y",
+            "a1",
+            "a2",
+            "a3",
+            "b1",
+            "b2"
+          ]
+        ],
+        "shape": "P5",
+        "universe_names": [
+          "u1",
+          "u2",
+          "u3",
+          "y",
+          "a0",
+          "a1",
+          "a2",
+          "a3",
+          "b0",
+          "b1",
+          "b2",
+          "b3"
+        ]
+      }
+    },
+    "per_prime": {
+      "1399": {
+        "canonical_cover_trace_classes_checked": 372,
+        "cover_occurrences_checked": 24468,
+        "dense_forms_checked": 28340748,
+        "dense_indicators": 215430,
+        "determined_unit_rejections": 0,
+        "incidence_survivors": 24468,
+        "large_core_dense_indicators": 0,
+        "pair_gate_checks": 317826,
+        "unit_forms_checked": 16971084,
+        "unit_indicators": 1982670
+      },
+      "233": {
+        "canonical_cover_trace_classes_checked": 372,
+        "cover_occurrences_checked": 24468,
+        "dense_forms_checked": 28340748,
+        "dense_indicators": 215430,
+        "determined_unit_rejections": 0,
+        "incidence_survivors": 24468,
+        "large_core_dense_indicators": 0,
+        "pair_gate_checks": 317826,
+        "unit_forms_checked": 16971084,
+        "unit_indicators": 2035770
+      }
+    },
+    "per_shape": {
+      "C4": {
+        "cover_pair_occurrences": 0,
+        "valid_colourings": 48
+      },
+      "K1_3_plus_K2": {
+        "colourings_with_cover_candidate": 240,
+        "cover_pair_occurrences": 336,
+        "valid_colourings": 1008
+      },
+      "K1_4": {
+        "cover_pair_occurrences": 0,
+        "valid_colourings": 246
+      },
+      "K3_plus_K2": {
+        "cover_pair_occurrences": 0,
+        "valid_colourings": 72
+      },
+      "P3_plus_two_K2": {
+        "colourings_with_cover_candidate": 1728,
+        "cover_pair_occurrences": 2736,
+        "valid_colourings": 4320
+      },
+      "P4_plus_K2": {
+        "colourings_with_cover_candidate": 240,
+        "cover_pair_occurrences": 312,
+        "valid_colourings": 864
+      },
+      "P5": {
+        "colourings_with_cover_candidate": 18,
+        "cover_pair_occurrences": 18,
+        "valid_colourings": 174
+      },
+      "T5": {
+        "colourings_with_cover_candidate": 30,
+        "cover_pair_occurrences": 36,
+        "valid_colourings": 198
+      },
+      "four_K2": {
+        "colourings_with_cover_candidate": 11040,
+        "cover_pair_occurrences": 20736,
+        "valid_colourings": 20736
+      },
+      "paw": {
+        "cover_pair_occurrences": 0,
+        "valid_colourings": 18
+      },
+      "two_P3": {
+        "colourings_with_cover_candidate": 216,
+        "cover_pair_occurrences": 294,
+        "valid_colourings": 900
+      }
+    },
+    "totals": {
+      "colourings_with_cover_candidate": 13512,
+      "cover_pair_occurrences": 24468,
+      "valid_colourings": 28584
+    }
+  },
+  "dense_degree_criterion_small_audit_rows": 11732,
+  "scope": {
+    "forced_packing_types": [
+      [
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "global_claim": "INCOMPLETE",
+    "interface": "endpoint_trace_size_incidence_with_real_positions",
+    "primes": [
+      233,
+      1399
+    ]
+  },
+  "unit_form_exclusion_windows": {
+    "1399": {
+      "Q_E+Q_F-U": {
+        "axis_coefficient": 7,
+        "core_available": true,
+        "length_eight_support_sizes": [],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 1392
+      },
+      "U": {
+        "axis_coefficient": -5,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          3
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 5
+      },
+      "U+Q_E-Q_F": {
+        "axis_coefficient": -5,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          3
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 5
+      },
+      "U-Q_E": {
+        "axis_coefficient": -6,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          2
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 6
+      },
+      "U-Q_E-Q_F": {
+        "axis_coefficient": -7,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          1
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 7
+      }
+    },
+    "233": {
+      "Q_E+Q_F-U": {
+        "axis_coefficient": 6,
+        "core_available": true,
+        "length_eight_support_sizes": [],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 227
+      },
+      "U": {
+        "axis_coefficient": -4,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          4
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 4
+      },
+      "U+Q_E-Q_F": {
+        "axis_coefficient": -4,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          4
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 4
+      },
+      "U-Q_E": {
+        "axis_coefficient": -5,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          3
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 5
+      },
+      "U-Q_E-Q_F": {
+        "axis_coefficient": -6,
+        "core_available": true,
+        "length_eight_support_sizes": [
+          2
+        ],
+        "length_forbidden_support_sizes_within_1_to_14": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "neutralising_X_count": 6
+      }
+    }
+  },
+  "unit_pair_form_audit": {
+    "exhaustive_rows_checked": 59904,
+    "indicator_hit_counts": {
+      "(-1, -1, 1)": 12,
+      "(-1, 0, 1)": 288,
+      "(-1, 1, 0)": 324,
+      "(-1, 1, 1)": 324,
+      "(0, -1, 1)": 288,
+      "(0, 0, 1)": 2304,
+      "(0, 1, 0)": 2304,
+      "(1, -1, 0)": 324,
+      "(1, -1, 1)": 324,
+      "(1, 0, 0)": 2304,
+      "(1, 1, -1)": 324,
+      "(1, 1, 0)": 324
+    },
+    "large_core_u_admissible_forms": {
+      "4": [
+        [
+          1,
+          1,
+          -1
+        ]
+      ],
+      "5": [
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    },
+    "nonzero_unit_form_count": 26
+  }
+}
