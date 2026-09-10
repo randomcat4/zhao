@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "prime": 233,
+  "scope": "exact p=233 m=3 fringe-exchange reduction; global A_p remains open",
+  "curve_points": 234,
+  "generic_curve_points": 228,
+  "exceptional_curve_points": 6,
+  "admissible_directions_per_curve_point": 54282,
+  "off_tail_line_directions_per_curve_point": 53592,
+  "residual_tail_line_directions_per_curve_point": 690,
+  "admissible_delta_direction_pairs": 12701988,
+  "odd_part_rank_histogram": {
+    "2": 234
+  },
+  "pair_minor_zero_counts": [2, 2, 2],
+  "simultaneous_six_signed_zero_survivors": 0,
+  "bad_inter_endpoint_difference_count_histogram": {
+    "2": 132,
+    "3": 4236,
+    "4": 20688,
+    "5": 929628,
+    "6": 11747304
+  },
+  "off_tail_line_histogram": {
+    "2": 132,
+    "3": 4236,
+    "4": 20448,
+    "5": 919068,
+    "6": 11596644
+  },
+  "residual_tail_line_histogram": {
+    "4": 240,
+    "5": 10560,
+    "6": 150660
+  },
+  "pairs_forcing_a_fringe_touching_two_to_one_exchange": 12701988,
+  "conclusion": "every admissible (delta,s) pair forces a fringe-touching two-to-one exchange; the m=3 mask state itself remains open"
+}

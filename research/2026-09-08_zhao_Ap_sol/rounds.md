@@ -658,3 +658,59 @@
   拆成五个真实标签，并求 cancellation line 的 ordinary
   representations 与至少 460 个逐点 complete 删除；宏观只取/不取
   五核时已经没有新的内部零和块。
+
+## 2026-09-11：\(m=3\) 共同三次核强制 fringe 交换
+
+- AUDIT CORRECTION：初稿曾把“三端点六个 signed 系数同时为零”
+  误写成所有行的必要条件；首次修订又把六个尾标签排除误写成排除
+  三条尾方向。两次独审均判 CRITICAL_GAPS，过强结论已撤回并保留
+  审计记录。
+- PROVED ENDPOINT-DIFFERENCE REDUCTION：三个删双尾序列
+  \(N_i=C\dot\cup\{v_i\}\) 的二次系数来自同一个三次核。对固定
+  mixed 目标 \(r=\pm s\)，全部普通表示至多二点，故跨端点差中
+  共同核内单点、双点贡献消去；若
+  \(n_i(r)-n_k(r)\notin\{0,\pm1\}\)，便强制一个包含
+  \(v_i\) 或 \(v_k\) 的真实二点表示。
+- EXACT FULL-DIRECTION CENSUS：对曲线全部 234 点及六尾排除后的
+  全部 54,282 个有向 packing 标签，共 12,701,988 对，每一对都有
+  至少两个坏端点差；零失败。690 个尾方向残余已单列覆盖。独立
+  全局坐标重算 CORRECT。
+- CONSEQUENCE：每个 \(m=3\) 形式候选都强制至少一条触碰 fringe 的
+  真实 \(2\leftrightarrow1\) 交换。交换后得到长度 463 的新投影
+  原子，并分别与另两条原子共享 461 个字面位置；三者共同核仍只有
+  460，且原 461-complete 定理不被误继承。
+- NEXT：把必有 fringe 交换提升为同端点正负双交换或交换星，再接
+  460/461 删除覆盖、fringe 完整等和与自动短块。该 reduction 尚未
+  删除 \(m=3\) 掩码态或任何 outer row。
+
+## 2026-09-11：\(m=3\) 普通纤维恢复与九轨归约
+
+- PROVED FIBRE RECOVERY：对六个目标
+  \(t_{\varepsilon,i}=\varepsilon s-(w_i+\delta)\)，mixed 分离器把
+  \(C\) 中全部表示压成 empty/singleton，故
+  \[
+  A_{\varepsilon,i}
+  \equiv-c_\delta(t_{\varepsilon,i})+\mathbf1_{t=0}\pmod {233}.
+  \]
+  高度表又把每个投影纤维锁成同一完整标签；\(h\le229\) 因而把
+  剩余类唯一恢复为普通位置重数。
+- EXACT FULL-SCOPE CUT：在六个 exceptional \(\delta\) 已排除后的
+  \(228\cdot54,282=12,376,296\) 个形式对上，余数门、unique-fibre
+  容量门、三纤维 determinant 关系和完整 bounded subset-sum 依次将
+  候选压为
+  \[
+  12,376,296\to11,449,560\to974,628\to480\to108.
+  \]
+  全部 690 个尾线方向残余最终为零；独立全局坐标实现复算 CORRECT。
+- ORBIT REDUCTION：最终 108 点恰为九个互不相交的
+  \(S_3\times\{\pm1\}\) 轨，每轨 12 点；38 个 generic 未标点轨
+  严格缩为 9，114 个 completion-pointed 轨至多缩为 27。
+- DOUBLE-EXCHANGE BOUNDARY：108 点中只有 48 点存在同端点正负双
+  交换；新长 463 原子的投影禁值已被原花瓣六禁值包含，且
+  complete-deletion 不自动继承。下一承重层必须使用 pointing、真实
+  高度、460 个 complete 表示的内部结构或全部自动短块。
+- EXTERNAL ROUTE AUDIT：DGM/setpartition 确给重序列的非平凡稳定子
+  容量门，但仓库无限族说明 complete 性不能触发该门；模 \(p^2\)
+  非单位系数给逐位置的全长度窗交错和，并非单独 \(3p\)-atom 计数；
+  blocking 推论只有单向；dense Ax--Katz/Newton/\(p\)-weight 仍只给
+  一层。精确作用域见 `proofs/dgm_modp2_blocking_axkatz_route_audit.md`。

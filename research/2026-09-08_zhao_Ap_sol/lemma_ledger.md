@@ -1724,3 +1724,67 @@
 - 该允许集与已审 \(U\cup V\) 门的 707 对允许集交为空，故六个
   例外点全部排除。严格削减为 228 个曲线点、38 个未标点轨道和
   114 个 completion-pointed 轨道；outer row 尚未关闭。
+
+## LEMMA-P233-THREE-H8-M3-FRINGE-EXCHANGE：端点差强制 fringe 二点交换
+
+- 精确陈述：
+  proofs/unique_tail_p233_three_h8_m3_cubic_quadratic_compatibility.md。
+- 状态：PROVED_REDUCTION；独立全局坐标与量词审计 CORRECT；
+  GLOBAL_INCOMPLETE。
+- 三个删双尾序列严格为
+  \(N_i=C\dot\cup\{v_i\}\)，其 signed 二次式由同一个三次核的
+  有限差分给出。对 mixed 目标 \(r\in\{s,-s\}\)，全部普通表示
+  至多二点，故
+  \[
+  n_i(r)=D_C(r)-S_C(r)+A_i(r)-\varepsilon_i(r),
+  \]
+  其中 \(A_i(r)\) 逐字面计数 fringe--核二点表示。
+- 若某个跨端点差不属于 \(\{0,\pm1\}\)，便有
+  \(A_i(r)+A_k(r)>0\)，从而存在真实 fringe-touching 二点表示；
+  mixed 高度表把它提升为完整等式
+  \(\sigma(\{v_i,c\})=\sigma(z_r^\ast)\)。
+- 六尾排除后每个曲线点有 \(p^2-1-6=54,282\) 个 admissible
+  有向方向，其中 53,592 个不在三条尾方向、690 个是尾方向残余。
+  全部 \(234\cdot54,282=12,701,988\) 对均至少有两个坏端点差；
+  独立实现复算直方图 CORRECT。
+- 每个形式候选因而强制至少一条触碰 \(v_i\) 的真实
+  \(2\leftrightarrow1\) 交换。交换后的长 463 原子分别与另外两条
+  原子共享 461 个字面位置；没有据此宣称三者共同 461 核、
+  complete-deletion 继承或 \(m=3\) 层为空。
+
+## LEMMA-P233-THREE-H8-M3-CORE-FIBRE-RECOVERY：六纤维恢复与九轨归约
+
+- 精确陈述：
+  proofs/unique_tail_p233_three_h8_m3_core_fibre_recovery.md。
+- 状态：PROVED_REDUCTION；独立全局坐标、bounded subset-sum 与轨道
+  审计 CORRECT；GLOBAL_INCOMPLETE。
+- 对六个 mixed 目标，\(C\) 中所有表示至多为 singleton，故共同三次
+  系数恢复精确普通纤维重数
+  \[
+  A_{\varepsilon,i}
+  \equiv-c_\delta(t_{\varepsilon,i})+\mathbf1_{t=0}\pmod {233}.
+  \]
+  mixed 高度使同一投影纤维中的位置具有同一完整标签；实际重数界
+  给 \(0\le A\le229\)，不同纤维总容量至多 461。
+- 任意 bounded 非零关系
+  \(0\le k_t\le A_t,\ \sum k_tt=0\) 都真实选出 \(C\) 内投影零和，
+  与共同核零和自由矛盾。三纤维 determinant 门及完整 MITM 对全部
+  \(228\cdot54,282\) 对给出
+  \[
+  12,376,296\to974,628\to480\to108.
+  \]
+- 108 个最终点恰为九个 \(S_3\times\{\pm1\}\) 轨，全部非尾方向；
+  38 个 generic 未标点轨缩为 9，114 个 completion-pointed 轨至多
+  余 27。没有据此宣称完整四维 lift 存在或 \(m=3\) 已空。
+
+## ROUTE-AUDIT-DGM-MODP2-AXKATZ
+
+- 精确记录：proofs/dgm_modp2_blocking_axkatz_route_audit.md。
+- DGM/setpartition 允许重位置，并在固定长度和集的稳定子非平凡时给
+  严格陪集容量门；但 complete 近最大无限族可有平凡稳定子。
+- 模 \(p^2\) 的 \([X^{-g_i}]\) 系数给
+  \(\sum_{k=3p-1}^{4p-3}(-1)^{k-1}d_{i,k}\equiv-pc(T_i)\pmod {p^2}\)，
+  不能隔离单独 \(3p\) 层。
+- projective blocking 只给 `blocking => c=0`；反向被显式秩四、重数
+  有界模型否定。dense 五对角方程的 Ax--Katz、Newton 与
+  \(p\)-weight 界均仍只有一层，除非先证明额外行稀疏/仿射退化。

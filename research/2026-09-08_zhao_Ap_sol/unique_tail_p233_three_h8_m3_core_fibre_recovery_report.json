@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "prime": 233,
+  "scope": "fixed p=233 generic m=3 curve after the six exceptional deltas",
+  "generic_curve_points": 228,
+  "admissible_directions_per_point": 54282,
+  "total_pairs": 12376296,
+  "height_cap": 229,
+  "core_length": 461,
+  "rejected_by_height_residue": 926736,
+  "rejected_by_repeated_label_inconsistency": 0,
+  "rejected_by_core_capacity": 10474932,
+  "capacity_survivors": 974628,
+  "rejected_by_three_fibre_relation": 974148,
+  "three_fibre_survivors": 480,
+  "rejected_by_exhaustive_bounded_subset_sum": 372,
+  "final_survivors": 108,
+  "final_survivors_off_tail_lines": 108,
+  "final_survivors_per_delta_histogram": {
+    "0": 174,
+    "2": 54
+  },
+  "final_survivor_orbit_count": 9,
+  "final_survivor_orbit_size": 12,
+  "final_survivor_orbit_representatives": [
+    [[10, 193], [69, 197]],
+    [[12, 25], [12, 25]],
+    [[18, 181], [18, 181]],
+    [[29, 78], [1, 2]],
+    [[29, 184], [8, 199]],
+    [[33, 168], [29, 191]],
+    [[44, 154], [39, 33]],
+    [[56, 128], [56, 128]],
+    [[66, 142], [3, 60]]
+  ],
+  "representative_A_vectors": [
+    [3, 49, 73, 22, 11, 89],
+    [0, 0, 0, 229, 151, 68],
+    [0, 0, 0, 51, 5, 159],
+    [198, 0, 2, 7, 8, 0],
+    [38, 20, 77, 0, 0, 0],
+    [114, 3, 1, 7, 3, 1],
+    [0, 0, 0, 126, 65, 26],
+    [0, 0, 0, 26, 60, 129],
+    [9, 0, 0, 7, 4, 143]
+  ],
+  "conclusion": "core-fibre recovery and exact bounded zero-sumfreeness reduce the generic m=3 layer to nine tail-S3-by-sign orbits; global A_p remains open"
+}

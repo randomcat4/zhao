@@ -641,4 +641,53 @@ CSP，其中四重/三重层分别是 21 外点 84 标量与 22 外点 88 标量
 
 总裁决继续保持 **INCOMPLETE**。但最小缺口现在已从抽象的“统一结构”
 收缩为两级显式搜索：先生成 720 行各自的真实端点掩码；再在每个固定
-\(\rho\)-骨架上穷尽统一 \(q\)/高度/\(P\) 重标并调用现有精确预言机。
+  \(\rho\)-骨架上穷尽统一 \(q\)/高度/\(P\) 重标并调用现有精确预言机。
+
+## 2026-09-11 新裁决：\(m=3\) 全方向强制 fringe 交换
+
+- **CORRECT / PROVED_FRINGE_EXCHANGE_REDUCTION：**
+  `proofs/unique_tail_p233_three_h8_m3_cubic_quadratic_compatibility.md`
+  将三个删双尾二次式恢复为同一三次核的有限差分。对
+  \(r=\pm s\)，跨端点系数差消去共同核内全部一、二点贡献；坏差
+  \(\notin\{0,\pm1\}\) 强制一个包含 fringe 位置的真实二点表示，
+  并由高度表提升为完整 \(2\leftrightarrow1\) 交换。
+- **EXACT CENSUS：**曲线 234 点乘六尾排除后的 54,282 个有向标签，
+  共 12,701,988 对，全部至少含两个坏端点差。53,592 个线外方向和
+  690 个尾方向残余分别核验；独立实现零失败。
+- **STRICT SCOPE：**这把 \(m=3\) 全部形式候选推进真实 fringe 交换
+  支，但没有排除掩码态、没有删除 outer row，也没有把交换后原子
+  当作自动继承 461-complete。完整 \(A_p\) 仍为 **INCOMPLETE**。
+- **NEXT：**利用至少两条 fringe 交换的端点分布、同端点正负双交换
+  及交换后长 463 原子的 461-位置两两共享，接入 complete-deletion、
+  fringe 完整等和和全部自动短块；并行审计 DGM/setpartition 与
+  模 \(p^2\) 群环恒等式能否提供一般素数的指定长度桥。
+
+## 2026-09-11 新裁决：共同核六纤维恢复后只余九轨
+
+- **CORRECT / PROVED_CORE_FIBRE_RECOVERY：**
+  `proofs/unique_tail_p233_three_h8_m3_core_fibre_recovery.md` 在六个
+  mixed 目标上先用逐表示长度界，把共同三次式的 signed 系数恢复为
+  \(C\) 中精确普通纤维重数；完整高度把每个纤维锁成一个实际值，
+  从而可合法使用 \(h\le229\) 与总容量 461。
+- **EXACT ZERO-SUMFREE CENSUS：**六个强制纤维的任意 bounded 线性
+  关系都会真实选出 \(C\) 内投影零和。三纤维 determinant 门与完整
+  MITM 在全部 \(228\cdot54,282\) 对上复得
+  \[
+  12,376,296\to11,449,560\to974,628\to480\to108.
+  \]
+  独立实现逐见证复核，尾线残余最终为零，结论 CORRECT。
+- **ORBIT CONSEQUENCE：**最终 108 点恰为九个
+  \(S_3\times\{\pm1\}\) 轨。未标点 generic 轨从 38 缩为 9；114
+  个 completion-pointed 轨至多余 27。
+- **STRICT BOUNDARY：**108 点中只有 48 点有同端点正负双交换；新
+  长 463 原子的投影禁值已被原花瓣六禁值包含，complete 删除覆盖
+  也不自动继承。\(m=3\)、outer rows、固定 \(p=233\) 与全局
+  \(A_p\) 仍为 **INCOMPLETE**。
+- **EXTERNAL METHODS AUDIT：**DGM 给出非平凡稳定子条件门，但
+  complete 无限族可有平凡稳定子；模 \(p^2\) 逐位置式混合全部
+  \(3p-1\) 到 \(4p-3\) 长度层；blocking 只有单向推论；dense
+  Ax--Katz/Newton/\(p\)-weight 仍只给一层。对应路线保留为精确接口，
+  不计作闭合。
+- **NEXT：**只对九轨、至多 27 个 pointed 角色加载 completion 表示
+  的内部位置、统一 \(q\)/高度与全部自动短块；不再对 114 轨作同型
+  计数搜索。
