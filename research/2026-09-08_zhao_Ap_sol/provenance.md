@@ -530,3 +530,30 @@
   `935cd6a6e29e1f0f31544f9af07e08586ad73ca0b6535089f7f44bc74cc75fff`；
   裁决 CORRECT PROVED REDUCTION / O1 NOT CLOSED。独审另以通用 RREF
   逐点复核 nullity-four 三点，确认最终行对覆盖修复不改变四例外。
+
+## 2026-09-11：\(m=4\) 的 O1 删点奇五次闭合
+
+- proof：
+  `proofs/unique_tail_p233_three_h8_m4_O1_single_deletion_quintic_exclusion.md`；
+  SHA-256
+  `cb1683f5ad1692dd84908182aeed9fed8b485f802b32de02bc39edf6fc23b1ea`。
+- certificate script：
+  `unique_tail_p233_three_h8_m4_O1_single_deletion_quintic_search.py`；
+  SHA-256
+  `7fcfa617a390d3157baf020cad8b03a83c156e9f636cdafbaa34b7744567648b`。
+- generated report：
+  `unique_tail_p233_three_h8_m4_O1_single_deletion_quintic_search_report.json`；
+  SHA-256
+  `e8c5c55208b7d1e92c60b49d00a4405e225fa1ee68a7182e900963dcd7e00e2d`。
+- independent review：
+  `verifications/unique_tail_p233_three_h8_m4_O1_single_deletion_quintic_exclusion_independent_review.md`；
+  SHA-256
+  `a401cbc67c08903c448156dc248e140ceb03c7962322948778b492077dad4462`；
+  裁决 CORRECT / PROVED SUBBRANCH。
+- 主实例从生成积除去一个真实位置，建立中心奇五次三参数证书并全扫
+  217,152 个状态标签；`doubleton_audit` 与 `singleton_branch_attack`
+  分别在不调用主脚本的情况下重建十二维奇五次矩阵，四状态均得到
+  \(\{(12,13):54,288\}\) 的系数秩／增广秩直方图。
+- 该结果取代上一节 `O1 NOT CLOSED` 的前沿状态：固定
+  \(p=233,m=4\) 的 \(O_1\) 现已闭合；\(O_2,O_3\)、180 个 outer
+  rows 与一般 \(A_p\) 仍开。

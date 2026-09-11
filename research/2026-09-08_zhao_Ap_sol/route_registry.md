@@ -424,7 +424,7 @@
   掩码态。下一 ACTIVE 前沿是 \(m=4\) 剩余三个掩码轨；总 singleton
   掩码数为 71，180 个 outer rows 仍开。
 
-## \(m=4\) 偶四次 incidence—纤维路线（ACTIVE）
+## \(m=4\) 偶四次—删点奇五次路线（\(O_1\) CLOSED；\(O_2,O_3\) ACTIVE）
 
 - 三个剩余掩码轨的字面 fringe 参数化与共同核完整原子零点已写成
   九维偶四次评价系统；第一门是 exact rank stratification，而不是
@@ -433,12 +433,16 @@
   completion-pointed 角色，恢复四个 signed/fringe 目标纤维；重复
   投影标签先合并，再执行重数 \(\le229\)、总容量 \(\le460\)、
   bounded 零和自由与正负交叉横截。
-- 当前状态为 EXACT FINITE FRONTIER / INCOMPLETE；随机满秩现象不算
-  证明，单个 \(q\) 代表也不能替代整个零空间族。
+- 对 \(O_2,O_3\) 当前状态仍为 EXACT FINITE FRONTIER / INCOMPLETE；
+  随机满秩现象不算证明，单个 \(q\) 代表也不能替代整个零空间族。
 - \(O_1\) 的 exact rank-stratified 全扫已完成：
   \(2,947,241,232\) 个合法 \((z,\tau)\) 只余四对，且共用一个显式
   分解的 \(q\)。这是一项 PROVED_REDUCTION，不是 \(O_1\) closure。
-- 四例外的轻量 mixed 全扫仍余 4,576 个 pointed-direction 态；每个
-  pointed role 有 230 个对角方向令全部恢复纤维为空。\(O_1\) 当前
-  最小缺口是这一个真实核 \(q\) 的 460 位置生成积实现／complete
-  删除见证／新自动短块；\(O_2,O_3\) 仍从评价矩阵首门开始。
+- 上述 4,576 个轻量 mixed 幸存态现已由真实删点生成积门全部越过：
+  对任一实际核位置标签 \(g\)，删点积的系数函数是中心奇五次；其
+  三维差分核与三个 fringe 的全部 45 条普通无表示行，在四例外乘
+  全部非零 \(g\) 的 217,152 个系统上无一相容。因此 \(O_1\) 已闭合，
+  不再是 ACTIVE 缺口。
+- 当前 \(m=4\) 只余 \(O_2,O_3\)，singleton 掩码总数为 70；两轨
+  仍应按“偶四次 rank 分层 → 每个真实位置的奇五次商 → 全字面
+  fringe 子集行”推进，而不是回到任意 packing 方向或聚合计数。
