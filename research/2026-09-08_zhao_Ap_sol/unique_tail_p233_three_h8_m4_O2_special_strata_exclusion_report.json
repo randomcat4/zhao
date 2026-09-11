@@ -1,0 +1,1685 @@
+{
+  "capacity_argument": {
+    "core_length": 460,
+    "maximum_multiplicity_per_nonzero_quotient_label": 232,
+    "minimum_support_size": 2,
+    "reason": "p copies of one nonzero quotient label form a zero sum"
+  },
+  "even_basis": [
+    "x^0y^0",
+    "x^2y^0",
+    "x^1y^1",
+    "x^0y^2",
+    "x^4y^0",
+    "x^3y^1",
+    "x^2y^2",
+    "x^1y^3",
+    "x^0y^4"
+  ],
+  "exceptional_z_count": 11,
+  "exceptional_z_rows": [
+    {
+      "compatible_tau_count": 6,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                1,
+                2
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            1,
+            2
+          ],
+          "z": [
+            0,
+            0
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                1,
+                232
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            1,
+            232
+          ],
+          "z": [
+            0,
+            0
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                2,
+                1
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            2,
+            1
+          ],
+          "z": [
+            0,
+            0
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                231,
+                232
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            231,
+            232
+          ],
+          "z": [
+            0,
+            0
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                232,
+                1
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            232,
+            1
+          ],
+          "z": [
+            0,
+            0
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                232,
+                231
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            232,
+            231
+          ],
+          "z": [
+            0,
+            0
+          ]
+        }
+      ],
+      "z": [
+        0,
+        0
+      ],
+      "z_block_rank": 4
+    },
+    {
+      "compatible_tau_count": 4,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                1,
+                232
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 1,
+          "tau": [
+            1,
+            116
+          ],
+          "z": [
+            0,
+            116
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                1,
+                2
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            1,
+            119
+          ],
+          "z": [
+            0,
+            116
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                232,
+                231
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            232,
+            114
+          ],
+          "z": [
+            0,
+            116
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                232,
+                1
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 1,
+          "tau": [
+            232,
+            117
+          ],
+          "z": [
+            0,
+            116
+          ]
+        }
+      ],
+      "z": [
+        0,
+        116
+      ],
+      "z_block_rank": 4
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        0,
+        117
+      ],
+      "z_block_rank": 5
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        1,
+        117
+      ],
+      "z_block_rank": 5
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        116,
+        0
+      ],
+      "z_block_rank": 5
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        116,
+        116
+      ],
+      "z_block_rank": 5
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        116,
+        232
+      ],
+      "z_block_rank": 5
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        117,
+        0
+      ],
+      "z_block_rank": 4
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        117,
+        1
+      ],
+      "z_block_rank": 5
+    },
+    {
+      "compatible_tau_count": 0,
+      "pairs": [],
+      "z": [
+        117,
+        116
+      ],
+      "z_block_rank": 5
+    },
+    {
+      "compatible_tau_count": 4,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                232,
+                231
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            115,
+            114
+          ],
+          "z": [
+            117,
+            117
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                231,
+                232
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 1,
+          "tau": [
+            115,
+            116
+          ],
+          "z": [
+            117,
+            117
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                2,
+                1
+              ],
+              "odd_quintic_affine_dimension": 1
+            }
+          ],
+          "quartic_affine_dimension": 1,
+          "tau": [
+            118,
+            117
+          ],
+          "z": [
+            117,
+            117
+          ]
+        },
+        {
+          "known_gamma": [
+            {
+              "g": [
+                1,
+                2
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            118,
+            119
+          ],
+          "z": [
+            117,
+            117
+          ]
+        }
+      ],
+      "z": [
+        117,
+        117
+      ],
+      "z_block_rank": 4
+    }
+  ],
+  "generic_frontier": {
+    "closed": false,
+    "method": "For each generic z, take a 3-dimensional kernel basis K_z. The six tail evaluations form a 6x3 polynomial matrix in tau; all 3x3 minors have degree at most 12.  Use finite-field gcd/resultant elimination and then require center evaluation to increase rank.  Apply the q-free deletion Gamma gate before z1.",
+    "required_tail_plus_center_rank": 7,
+    "required_tail_rank": 6,
+    "required_z_block_rank": 6
+  },
+  "inherited_O1_q": [
+    74,
+    201,
+    35,
+    201,
+    109,
+    146,
+    189,
+    146,
+    109
+  ],
+  "inherited_O1_rows": [
+    {
+      "gamma_F2_F3": [
+        {
+          "g": [
+            1,
+            0
+          ],
+          "odd_quintic_affine_dimension": 0
+        },
+        {
+          "g": [
+            232,
+            231
+          ],
+          "odd_quintic_affine_dimension": 0
+        }
+      ],
+      "gamma_after_F1_tail_pair": [],
+      "tau": [
+        59,
+        174
+      ],
+      "z": [
+        58,
+        174
+      ]
+    },
+    {
+      "gamma_F2_F3": [],
+      "gamma_after_F1_tail_pair": [],
+      "tau": [
+        174,
+        59
+      ],
+      "z": [
+        58,
+        174
+      ]
+    },
+    {
+      "gamma_F2_F3": [
+        {
+          "g": [
+            1,
+            0
+          ],
+          "odd_quintic_affine_dimension": 0
+        },
+        {
+          "g": [
+            232,
+            231
+          ],
+          "odd_quintic_affine_dimension": 0
+        }
+      ],
+      "gamma_after_F1_tail_pair": [],
+      "tau": [
+        59,
+        174
+      ],
+      "z": [
+        60,
+        176
+      ]
+    },
+    {
+      "gamma_F2_F3": [],
+      "gamma_after_F1_tail_pair": [],
+      "tau": [
+        174,
+        59
+      ],
+      "z": [
+        60,
+        176
+      ]
+    }
+  ],
+  "inherited_O1_state_count_closed": 932,
+  "inherited_O1_z1_solution_count_per_state": 233,
+  "inherited_O1_z1_solutions": [
+    [
+      0,
+      117
+    ],
+    [
+      1,
+      118
+    ],
+    [
+      2,
+      119
+    ],
+    [
+      3,
+      120
+    ],
+    [
+      4,
+      121
+    ],
+    [
+      5,
+      122
+    ],
+    [
+      6,
+      123
+    ],
+    [
+      7,
+      124
+    ],
+    [
+      8,
+      125
+    ],
+    [
+      9,
+      126
+    ],
+    [
+      10,
+      127
+    ],
+    [
+      11,
+      128
+    ],
+    [
+      12,
+      129
+    ],
+    [
+      13,
+      130
+    ],
+    [
+      14,
+      131
+    ],
+    [
+      15,
+      132
+    ],
+    [
+      16,
+      133
+    ],
+    [
+      17,
+      134
+    ],
+    [
+      18,
+      135
+    ],
+    [
+      19,
+      136
+    ],
+    [
+      20,
+      137
+    ],
+    [
+      21,
+      138
+    ],
+    [
+      22,
+      139
+    ],
+    [
+      23,
+      140
+    ],
+    [
+      24,
+      141
+    ],
+    [
+      25,
+      142
+    ],
+    [
+      26,
+      143
+    ],
+    [
+      27,
+      144
+    ],
+    [
+      28,
+      145
+    ],
+    [
+      29,
+      146
+    ],
+    [
+      30,
+      147
+    ],
+    [
+      31,
+      148
+    ],
+    [
+      32,
+      149
+    ],
+    [
+      33,
+      150
+    ],
+    [
+      34,
+      151
+    ],
+    [
+      35,
+      152
+    ],
+    [
+      36,
+      153
+    ],
+    [
+      37,
+      154
+    ],
+    [
+      38,
+      155
+    ],
+    [
+      39,
+      156
+    ],
+    [
+      40,
+      157
+    ],
+    [
+      41,
+      158
+    ],
+    [
+      42,
+      159
+    ],
+    [
+      43,
+      160
+    ],
+    [
+      44,
+      161
+    ],
+    [
+      45,
+      162
+    ],
+    [
+      46,
+      163
+    ],
+    [
+      47,
+      164
+    ],
+    [
+      48,
+      165
+    ],
+    [
+      49,
+      166
+    ],
+    [
+      50,
+      167
+    ],
+    [
+      51,
+      168
+    ],
+    [
+      52,
+      169
+    ],
+    [
+      53,
+      170
+    ],
+    [
+      54,
+      171
+    ],
+    [
+      55,
+      172
+    ],
+    [
+      56,
+      173
+    ],
+    [
+      57,
+      174
+    ],
+    [
+      58,
+      175
+    ],
+    [
+      59,
+      176
+    ],
+    [
+      60,
+      177
+    ],
+    [
+      61,
+      178
+    ],
+    [
+      62,
+      179
+    ],
+    [
+      63,
+      180
+    ],
+    [
+      64,
+      181
+    ],
+    [
+      65,
+      182
+    ],
+    [
+      66,
+      183
+    ],
+    [
+      67,
+      184
+    ],
+    [
+      68,
+      185
+    ],
+    [
+      69,
+      186
+    ],
+    [
+      70,
+      187
+    ],
+    [
+      71,
+      188
+    ],
+    [
+      72,
+      189
+    ],
+    [
+      73,
+      190
+    ],
+    [
+      74,
+      191
+    ],
+    [
+      75,
+      192
+    ],
+    [
+      76,
+      193
+    ],
+    [
+      77,
+      194
+    ],
+    [
+      78,
+      195
+    ],
+    [
+      79,
+      196
+    ],
+    [
+      80,
+      197
+    ],
+    [
+      81,
+      198
+    ],
+    [
+      82,
+      199
+    ],
+    [
+      83,
+      200
+    ],
+    [
+      84,
+      201
+    ],
+    [
+      85,
+      202
+    ],
+    [
+      86,
+      203
+    ],
+    [
+      87,
+      204
+    ],
+    [
+      88,
+      205
+    ],
+    [
+      89,
+      206
+    ],
+    [
+      90,
+      207
+    ],
+    [
+      91,
+      208
+    ],
+    [
+      92,
+      209
+    ],
+    [
+      93,
+      210
+    ],
+    [
+      94,
+      211
+    ],
+    [
+      95,
+      212
+    ],
+    [
+      96,
+      213
+    ],
+    [
+      97,
+      214
+    ],
+    [
+      98,
+      215
+    ],
+    [
+      99,
+      216
+    ],
+    [
+      100,
+      217
+    ],
+    [
+      101,
+      218
+    ],
+    [
+      102,
+      219
+    ],
+    [
+      103,
+      220
+    ],
+    [
+      104,
+      221
+    ],
+    [
+      105,
+      222
+    ],
+    [
+      106,
+      223
+    ],
+    [
+      107,
+      224
+    ],
+    [
+      108,
+      225
+    ],
+    [
+      109,
+      226
+    ],
+    [
+      110,
+      227
+    ],
+    [
+      111,
+      228
+    ],
+    [
+      112,
+      229
+    ],
+    [
+      113,
+      230
+    ],
+    [
+      114,
+      231
+    ],
+    [
+      115,
+      232
+    ],
+    [
+      116,
+      0
+    ],
+    [
+      117,
+      1
+    ],
+    [
+      118,
+      2
+    ],
+    [
+      119,
+      3
+    ],
+    [
+      120,
+      4
+    ],
+    [
+      121,
+      5
+    ],
+    [
+      122,
+      6
+    ],
+    [
+      123,
+      7
+    ],
+    [
+      124,
+      8
+    ],
+    [
+      125,
+      9
+    ],
+    [
+      126,
+      10
+    ],
+    [
+      127,
+      11
+    ],
+    [
+      128,
+      12
+    ],
+    [
+      129,
+      13
+    ],
+    [
+      130,
+      14
+    ],
+    [
+      131,
+      15
+    ],
+    [
+      132,
+      16
+    ],
+    [
+      133,
+      17
+    ],
+    [
+      134,
+      18
+    ],
+    [
+      135,
+      19
+    ],
+    [
+      136,
+      20
+    ],
+    [
+      137,
+      21
+    ],
+    [
+      138,
+      22
+    ],
+    [
+      139,
+      23
+    ],
+    [
+      140,
+      24
+    ],
+    [
+      141,
+      25
+    ],
+    [
+      142,
+      26
+    ],
+    [
+      143,
+      27
+    ],
+    [
+      144,
+      28
+    ],
+    [
+      145,
+      29
+    ],
+    [
+      146,
+      30
+    ],
+    [
+      147,
+      31
+    ],
+    [
+      148,
+      32
+    ],
+    [
+      149,
+      33
+    ],
+    [
+      150,
+      34
+    ],
+    [
+      151,
+      35
+    ],
+    [
+      152,
+      36
+    ],
+    [
+      153,
+      37
+    ],
+    [
+      154,
+      38
+    ],
+    [
+      155,
+      39
+    ],
+    [
+      156,
+      40
+    ],
+    [
+      157,
+      41
+    ],
+    [
+      158,
+      42
+    ],
+    [
+      159,
+      43
+    ],
+    [
+      160,
+      44
+    ],
+    [
+      161,
+      45
+    ],
+    [
+      162,
+      46
+    ],
+    [
+      163,
+      47
+    ],
+    [
+      164,
+      48
+    ],
+    [
+      165,
+      49
+    ],
+    [
+      166,
+      50
+    ],
+    [
+      167,
+      51
+    ],
+    [
+      168,
+      52
+    ],
+    [
+      169,
+      53
+    ],
+    [
+      170,
+      54
+    ],
+    [
+      171,
+      55
+    ],
+    [
+      172,
+      56
+    ],
+    [
+      173,
+      57
+    ],
+    [
+      174,
+      58
+    ],
+    [
+      175,
+      59
+    ],
+    [
+      176,
+      60
+    ],
+    [
+      177,
+      61
+    ],
+    [
+      178,
+      62
+    ],
+    [
+      179,
+      63
+    ],
+    [
+      180,
+      64
+    ],
+    [
+      181,
+      65
+    ],
+    [
+      182,
+      66
+    ],
+    [
+      183,
+      67
+    ],
+    [
+      184,
+      68
+    ],
+    [
+      185,
+      69
+    ],
+    [
+      186,
+      70
+    ],
+    [
+      187,
+      71
+    ],
+    [
+      188,
+      72
+    ],
+    [
+      189,
+      73
+    ],
+    [
+      190,
+      74
+    ],
+    [
+      191,
+      75
+    ],
+    [
+      192,
+      76
+    ],
+    [
+      193,
+      77
+    ],
+    [
+      194,
+      78
+    ],
+    [
+      195,
+      79
+    ],
+    [
+      196,
+      80
+    ],
+    [
+      197,
+      81
+    ],
+    [
+      198,
+      82
+    ],
+    [
+      199,
+      83
+    ],
+    [
+      200,
+      84
+    ],
+    [
+      201,
+      85
+    ],
+    [
+      202,
+      86
+    ],
+    [
+      203,
+      87
+    ],
+    [
+      204,
+      88
+    ],
+    [
+      205,
+      89
+    ],
+    [
+      206,
+      90
+    ],
+    [
+      207,
+      91
+    ],
+    [
+      208,
+      92
+    ],
+    [
+      209,
+      93
+    ],
+    [
+      210,
+      94
+    ],
+    [
+      211,
+      95
+    ],
+    [
+      212,
+      96
+    ],
+    [
+      213,
+      97
+    ],
+    [
+      214,
+      98
+    ],
+    [
+      215,
+      99
+    ],
+    [
+      216,
+      100
+    ],
+    [
+      217,
+      101
+    ],
+    [
+      218,
+      102
+    ],
+    [
+      219,
+      103
+    ],
+    [
+      220,
+      104
+    ],
+    [
+      221,
+      105
+    ],
+    [
+      222,
+      106
+    ],
+    [
+      223,
+      107
+    ],
+    [
+      224,
+      108
+    ],
+    [
+      225,
+      109
+    ],
+    [
+      226,
+      110
+    ],
+    [
+      227,
+      111
+    ],
+    [
+      228,
+      112
+    ],
+    [
+      229,
+      113
+    ],
+    [
+      230,
+      114
+    ],
+    [
+      231,
+      115
+    ],
+    [
+      232,
+      116
+    ]
+  ],
+  "logical_boundary": {
+    "completion_pointing_used": false,
+    "different_literal_positions_merged": false,
+    "generic_O2_closed": false,
+    "global_A_p_claimed": false,
+    "m4_closed": false,
+    "mixed_fibre_gates_used": false,
+    "ordinary_atom_nonrepresentation_used_before_signed_zero": true
+  },
+  "low_z_atomic_pair_count": 14,
+  "low_z_pairs_with_known_gamma_size_one": 14,
+  "odd_basis": [
+    "x^1y^0",
+    "x^0y^1",
+    "x^3y^0",
+    "x^2y^1",
+    "x^1y^2",
+    "x^0y^3",
+    "x^5y^0",
+    "x^4y^1",
+    "x^3y^2",
+    "x^2y^3",
+    "x^1y^4",
+    "x^0y^5"
+  ],
+  "scope": "p=233, three length-eight singleton endpoints, m=4, O2=(1,1,2,3), exceptional z/tau strata and inherited O1-q slice only",
+  "status": "PROVED_REDUCTION",
+  "tail_compatible_exceptional_pair_count": 6,
+  "tail_compatible_exceptional_rows": [
+    {
+      "compatible_z_count": 1,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                1,
+                232
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            1,
+            117
+          ],
+          "z": [
+            0,
+            115
+          ]
+        }
+      ],
+      "tau": [
+        1,
+        117
+      ]
+    },
+    {
+      "compatible_z_count": 1,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                231,
+                232
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            116,
+            117
+          ],
+          "z": [
+            118,
+            118
+          ]
+        }
+      ],
+      "tau": [
+        116,
+        117
+      ]
+    },
+    {
+      "compatible_z_count": 1,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                232,
+                231
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            116,
+            232
+          ],
+          "z": [
+            118,
+            0
+          ]
+        }
+      ],
+      "tau": [
+        116,
+        232
+      ]
+    },
+    {
+      "compatible_z_count": 1,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                1,
+                2
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            117,
+            1
+          ],
+          "z": [
+            118,
+            0
+          ]
+        }
+      ],
+      "tau": [
+        117,
+        1
+      ]
+    },
+    {
+      "compatible_z_count": 1,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                2,
+                1
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            117,
+            116
+          ],
+          "z": [
+            118,
+            118
+          ]
+        }
+      ],
+      "tau": [
+        117,
+        116
+      ]
+    },
+    {
+      "compatible_z_count": 1,
+      "pairs": [
+        {
+          "known_gamma": [
+            {
+              "g": [
+                232,
+                1
+              ],
+              "odd_quintic_affine_dimension": 0
+            }
+          ],
+          "quartic_affine_dimension": 0,
+          "tau": [
+            232,
+            116
+          ],
+          "z": [
+            0,
+            115
+          ]
+        }
+      ],
+      "tau": [
+        232,
+        116
+      ]
+    }
+  ],
+  "tail_exceptional_pairs_with_known_gamma_size_one": 6,
+  "tail_inconsistent_nonzero_tau": [
+    [
+      0,
+      116
+    ],
+    [
+      0,
+      117
+    ],
+    [
+      116,
+      0
+    ],
+    [
+      116,
+      116
+    ],
+    [
+      117,
+      0
+    ],
+    [
+      117,
+      117
+    ]
+  ],
+  "tail_plus_center_rank_histogram_all_tau_including_zero": {
+    "4": 1,
+    "5": 6,
+    "6": 6,
+    "7": 54276
+  },
+  "tail_rank_histogram_all_tau_including_zero": {
+    "3": 1,
+    "5": 12,
+    "6": 54276
+  },
+  "z_block_rank_histogram": {
+    "4": 4,
+    "5": 7,
+    "6": 54278
+  }
+}

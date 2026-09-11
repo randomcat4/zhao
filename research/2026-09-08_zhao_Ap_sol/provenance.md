@@ -557,3 +557,41 @@
 - 该结果取代上一节 `O1 NOT CLOSED` 的前沿状态：固定
   \(p=233,m=4\) 的 \(O_1\) 现已闭合；\(O_2,O_3\)、180 个 outer
   rows 与一般 \(A_p\) 仍开。
+
+## 2026-09-11：\(m=4\) 的删点标签容量与 \(O_2/O_3\) 前沿
+
+- 通用 proof：
+  `proofs/unique_tail_p233_three_h8_m4_deletion_label_capacity_interface.md`；
+  SHA-256
+  `05dab6a99f936a9cc21cfc222b3c6d1aa13fc2758426d7c8125afb0f8a23a162`。
+- \(O_2\) proof/script/report：
+  `proofs/unique_tail_p233_three_h8_m4_O2_special_strata_exclusion.md`、
+  `unique_tail_p233_three_h8_m4_O2_special_strata_search.py`、
+  `unique_tail_p233_three_h8_m4_O2_special_strata_exclusion_report.json`；
+  SHA-256 依次为
+  `88a2ef3850b6d4435d20e18a2ccfc8d9664986c67c8b2747dcfad3d4046c4367`、
+  `8784ec48ba779504754217afd3db2360c24558a2a820b3ef5a64c3f6a40432c0`、
+  `d3538976b57597e62532e38a9b6d7da1637b2a96775242bb27983996a686ea7c`。
+- \(O_3\) representative proof/script/report：
+  `proofs/unique_tail_p233_three_h8_m4_O3_joint_deletion_frontier.md`、
+  `unique_tail_p233_three_h8_m4_O3_joint_deletion_probe.py`、
+  `unique_tail_p233_three_h8_m4_O3_joint_deletion_probe_report.json`；
+  SHA-256 依次为
+  `cb38c9f9a7944057eff23904226e228a2128912a2585287317084bd44738e063`、
+  `9e1ec133305d21a79d18a0500a52820de8d4705fb07e6b2b124ddab43a88aba0`、
+  `125712d329881c55a033815290b82ffc11dbe61954f0f275cad60899220fb523`。
+- \(O_3\) affine design/script/report：
+  `proofs/unique_tail_p233_three_h8_m4_O3_affine_subspace_full_scan_design.md`、
+  `unique_tail_p233_three_h8_m4_O3_affine_subspace_prototype.py`、
+  `unique_tail_p233_three_h8_m4_O3_affine_subspace_prototype_report.json`；
+  SHA-256 依次为
+  `5e091a26de9d5e443bd5ab43aa8a49cf5bd46d46bda994ba2c924f7a7611a693`、
+  `48d63b8516f4649ba70f0f3f8d333fb8856aefd2b7a0c01bf554d6d46859717c`、
+  `aed1b0255ea59aa2a294d5a6046427c6dee1c3f42fca9c5f958fbfc0e9940d74`。
+- independent review：
+  `verifications/unique_tail_p233_three_h8_m4_O2_O3_deletion_frontiers_review.md`；
+  SHA-256
+  `35a8984f059572b7df52919e88187fb01dd426f9adf3f21243ebdfd706e5cab5`。
+  主实例独立重跑三份脚本均 PASS；两次逻辑审计修正了
+  fixed-\(q\)/q-free 量词与 output-sensitive 复杂度措辞。所有结论
+  严格限于已列特殊层、代表层和算法原型；generic \(O_2,O_3\) 仍开。

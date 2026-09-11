@@ -347,6 +347,16 @@
   长 459 的中心奇五次；其差分核只有 `Y,Y^3,Y^5` 三维。程序把三个
   fringe 的全部 45 条普通无表示行同时加入，穷尽四例外和 217,152
   个非零删点标签并全灭，从而关闭固定 \(p=233,m=4\) 的 \(O_1\)。
+- `unique_tail_p233_three_h8_m4_O2_special_strata_search.py`：精确计算
+  \(O_2\) 共享块与尾块的全部秩层，逐低秩兼容对运行 q-free 奇五次
+  标签门，并独立核验 \(O_1\) 四次式继承的 932 个状态全空。
+- `unique_tail_p233_three_h8_m4_O3_joint_deletion_probe.py`：建立阶 48
+  的合法对称、全 \(\tau\) 尾秩分层和三端点 quartic 键交；对四个
+  冻结代表逐共同 \(q\) 穷尽非零删点标签并以容量至少二门删除。
+- `unique_tail_p233_three_h8_m4_O3_affine_subspace_prototype.py`：不展开
+  quartic 直线／平面纤维，以十二次 minor 的 13 点插值切片恢复
+  \(9/11/13\) 个端点目录，并把 54,288 个纯尾删点标签对偶成
+  q-平面中的 empty/point/line/plane 目录。
 
 ## 给 0D 的紧凑排除表
 

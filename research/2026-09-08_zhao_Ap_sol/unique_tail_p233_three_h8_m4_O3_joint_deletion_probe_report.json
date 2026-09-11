@@ -1,0 +1,1416 @@
+{
+  "field_prime": 233,
+  "global_claims": {
+    "O3_closed": false,
+    "all_tau_exhausted_for_O3_blocks": false,
+    "all_tau_exhausted_for_tail_rank_only": true,
+    "full_A_p_claimed": false
+  },
+  "joint_linear_system": {
+    "deletion_normalization_rows": 1,
+    "literal_nonempty_fringe_subset_rows": 45,
+    "odd_quintic_unknowns": 12,
+    "quartic_normalization_rows": 1,
+    "quartic_zero_rows": 18,
+    "residual_kernel_basis_after_Delta_g_D_equals_q": [
+      "Y",
+      "Y^3",
+      "Y^5"
+    ],
+    "total_rows_before_merging_duplicates": 65
+  },
+  "representatives": [
+    {
+      "common_normalized_q": 2,
+      "endpoint_catalogues": [
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 7
+          },
+          "compatible_oriented_z": 7,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 4,
+          "q_z_incidences": 7,
+          "tail_kernel_dimension": 3
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 4,
+            "2": 2
+          },
+          "compatible_oriented_z": 6,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 235,
+          "q_z_incidences": 470,
+          "tail_kernel_dimension": 3
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 7
+          },
+          "compatible_oriented_z": 7,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 4,
+          "q_z_incidences": 7,
+          "tail_kernel_dimension": 3
+        }
+      ],
+      "q_families": [
+        {
+          "coefficients": [
+            0,
+            0,
+            193,
+            79,
+            0,
+            117,
+            232,
+            156,
+            155
+          ],
+          "joint_deletion": {
+            "allowed_label_count_histogram": {
+              "1": 8
+            },
+            "labels_surviving_common_tail_deletion_rows": [
+              [
+                1,
+                2
+              ],
+              [
+                232,
+                1
+              ]
+            ],
+            "maximum_allowed_labels_per_oriented_state": 1,
+            "normalization_failures": 230,
+            "oriented_states_with_a_joint_deletion_label": 8,
+            "quartic_oriented_states": 8,
+            "sample_state_labels": [
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    232,
+                    0
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    232,
+                    0
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    232,
+                    0
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    0
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    232,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    0
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    232,
+                    0
+                  ]
+                ]
+              }
+            ]
+          },
+          "oriented_z_per_endpoint": [
+            2,
+            2,
+            2
+          ],
+          "quartic_oriented_triples": 8
+        },
+        {
+          "coefficients": [
+            0,
+            39,
+            115,
+            79,
+            194,
+            195,
+            232,
+            156,
+            155
+          ],
+          "joint_deletion": {
+            "allowed_label_count_histogram": {
+              "1": 8
+            },
+            "labels_surviving_common_tail_deletion_rows": [
+              [
+                1,
+                2
+              ],
+              [
+                232,
+                1
+              ]
+            ],
+            "maximum_allowed_labels_per_oriented_state": 1,
+            "normalization_failures": 230,
+            "oriented_states_with_a_joint_deletion_label": 8,
+            "quartic_oriented_states": 8,
+            "sample_state_labels": [
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    232,
+                    232
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    232,
+                    232
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    232
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    232
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    232,
+                    232
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    232
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    231,
+                    232
+                  ],
+                  [
+                    232,
+                    232
+                  ],
+                  [
+                    232,
+                    232
+                  ]
+                ]
+              }
+            ]
+          },
+          "oriented_z_per_endpoint": [
+            2,
+            2,
+            2
+          ],
+          "quartic_oriented_triples": 8
+        }
+      ],
+      "quartic_oriented_triples": 16,
+      "representative_layer_eliminated_by_quartic_or_capacity_gate": true,
+      "tau": [
+        0,
+        1
+      ]
+    },
+    {
+      "common_normalized_q": 0,
+      "endpoint_catalogues": [
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 9
+          },
+          "compatible_oriented_z": 9,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 5,
+          "q_z_incidences": 9,
+          "tail_kernel_dimension": 3
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 11
+          },
+          "compatible_oriented_z": 11,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 6,
+          "q_z_incidences": 11,
+          "tail_kernel_dimension": 3
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 13
+          },
+          "compatible_oriented_z": 13,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 7,
+          "q_z_incidences": 13,
+          "tail_kernel_dimension": 3
+        }
+      ],
+      "q_families": [],
+      "quartic_oriented_triples": 0,
+      "representative_layer_eliminated_by_quartic_or_capacity_gate": true,
+      "tau": [
+        17,
+        31
+      ]
+    },
+    {
+      "common_normalized_q": 2,
+      "endpoint_catalogues": [
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 241
+          },
+          "compatible_oriented_z": 241,
+          "maximum_z_per_q": 233,
+          "normalized_q_keys": 5,
+          "q_z_incidences": 241,
+          "tail_kernel_dimension": 3
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 241
+          },
+          "compatible_oriented_z": 241,
+          "maximum_z_per_q": 233,
+          "normalized_q_keys": 5,
+          "q_z_incidences": 241,
+          "tail_kernel_dimension": 3
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 9
+          },
+          "compatible_oriented_z": 9,
+          "maximum_z_per_q": 4,
+          "normalized_q_keys": 3,
+          "q_z_incidences": 9,
+          "tail_kernel_dimension": 3
+        }
+      ],
+      "q_families": [
+        {
+          "coefficients": [
+            74,
+            201,
+            35,
+            201,
+            109,
+            146,
+            189,
+            146,
+            109
+          ],
+          "joint_deletion": {
+            "allowed_label_count_histogram": {
+              "0": 217156
+            },
+            "labels_surviving_common_tail_deletion_rows": [],
+            "maximum_allowed_labels_per_oriented_state": 0,
+            "normalization_failures": 228,
+            "oriented_states_with_a_joint_deletion_label": 0,
+            "quartic_oriented_states": 217156,
+            "sample_state_labels": []
+          },
+          "oriented_z_per_endpoint": [
+            233,
+            233,
+            4
+          ],
+          "quartic_oriented_triples": 217156
+        },
+        {
+          "coefficients": [
+            131,
+            221,
+            169,
+            221,
+            142,
+            14,
+            148,
+            14,
+            142
+          ],
+          "joint_deletion": {
+            "allowed_label_count_histogram": {
+              "0": 16
+            },
+            "labels_surviving_common_tail_deletion_rows": [],
+            "maximum_allowed_labels_per_oriented_state": 0,
+            "normalization_failures": 231,
+            "oriented_states_with_a_joint_deletion_label": 0,
+            "quartic_oriented_states": 16,
+            "sample_state_labels": []
+          },
+          "oriented_z_per_endpoint": [
+            2,
+            2,
+            4
+          ],
+          "quartic_oriented_triples": 16
+        }
+      ],
+      "quartic_oriented_triples": 217172,
+      "representative_layer_eliminated_by_quartic_or_capacity_gate": true,
+      "tau": [
+        59,
+        174
+      ]
+    },
+    {
+      "common_normalized_q": 3,
+      "endpoint_catalogues": [
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 248,
+            "2": 6
+          },
+          "compatible_oriented_z": 254,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 823,
+          "q_z_incidences": 1646,
+          "tail_kernel_dimension": 4
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 456,
+            "3": 2
+          },
+          "compatible_oriented_z": 458,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 54517,
+          "q_z_incidences": 109034,
+          "tail_kernel_dimension": 4
+        },
+        {
+          "block_kernel_dimension_histogram": {
+            "1": 248,
+            "2": 6
+          },
+          "compatible_oriented_z": 254,
+          "maximum_z_per_q": 2,
+          "normalized_q_keys": 823,
+          "q_z_incidences": 1646,
+          "tail_kernel_dimension": 4
+        }
+      ],
+      "q_families": [
+        {
+          "coefficients": [
+            0,
+            132,
+            88,
+            0,
+            87,
+            117,
+            58,
+            116,
+            0
+          ],
+          "joint_deletion": {
+            "allowed_label_count_histogram": {
+              "1": 8
+            },
+            "labels_surviving_common_tail_deletion_rows": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "maximum_allowed_labels_per_oriented_state": 1,
+            "normalization_failures": 230,
+            "oriented_states_with_a_joint_deletion_label": 8,
+            "quartic_oriented_states": 8,
+            "sample_state_labels": [
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    118
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    118
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    118
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    118
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              }
+            ]
+          },
+          "oriented_z_per_endpoint": [
+            2,
+            2,
+            2
+          ],
+          "quartic_oriented_triples": 8
+        },
+        {
+          "coefficients": [
+            0,
+            220,
+            145,
+            0,
+            145,
+            118,
+            173,
+            117,
+            0
+          ],
+          "joint_deletion": {
+            "allowed_label_count_histogram": {
+              "1": 8
+            },
+            "labels_surviving_common_tail_deletion_rows": [
+              [
+                1,
+                232
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "maximum_allowed_labels_per_oriented_state": 1,
+            "normalization_failures": 230,
+            "oriented_states_with_a_joint_deletion_label": 8,
+            "quartic_oriented_states": 8,
+            "sample_state_labels": [
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    1,
+                    119
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    0,
+                    115
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    1,
+                    119
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    1,
+                    119
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    0,
+                    115
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    1,
+                    232
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    1,
+                    119
+                  ]
+                ]
+              }
+            ]
+          },
+          "oriented_z_per_endpoint": [
+            2,
+            2,
+            2
+          ],
+          "quartic_oriented_triples": 8
+        },
+        {
+          "coefficients": [
+            113,
+            132,
+            88,
+            145,
+            87,
+            117,
+            58,
+            116,
+            175
+          ],
+          "joint_deletion": {
+            "allowed_label_count_histogram": {
+              "1": 8
+            },
+            "labels_surviving_common_tail_deletion_rows": [
+              [
+                2,
+                1
+              ]
+            ],
+            "maximum_allowed_labels_per_oriented_state": 1,
+            "normalization_failures": 231,
+            "oriented_states_with_a_joint_deletion_label": 8,
+            "quartic_oriented_states": 8,
+            "sample_state_labels": [
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    0,
+                    118
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    115
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    0,
+                    118
+                  ]
+                ]
+              },
+              {
+                "labels": [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "z": [
+                  [
+                    232,
+                    115
+                  ],
+                  [
+                    0,
+                    117
+                  ],
+                  [
+                    1,
+                    116
+                  ]
+                ]
+              }
+            ]
+          },
+          "oriented_z_per_endpoint": [
+            2,
+            2,
+            2
+          ],
+          "quartic_oriented_triples": 8
+        }
+      ],
+      "quartic_oriented_triples": 24,
+      "representative_layer_eliminated_by_quartic_or_capacity_gate": true,
+      "tau": [
+        1,
+        117
+      ]
+    }
+  ],
+  "scope": "p=233, m=4, O3=(2,2,2,2), four frozen tau representatives",
+  "status": "PASS_REPRESENTATIVE_PROBE_GLOBAL_INCOMPLETE",
+  "support_capacity_gate": {
+    "common_core_length": 460,
+    "formula": "460 <= 232*|G(state)|",
+    "maximum_projected_multiplicity_in_a_zero_sum_free_sequence": 232,
+    "necessary_minimum_allowed_labels": 2
+  },
+  "symmetry": {
+    "flip_formula": "z_i -> -w_i-z_i",
+    "independent_internal_flips": 3,
+    "semidirect_product_order": 48,
+    "tail_s3_generators": [
+      "(x,y)->(y,x)",
+      "(x,y)->(y-x,-x)"
+    ],
+    "tail_s3_order": 6
+  },
+  "tail_rank_exhaustion": {
+    "nonzero_tau": 54288,
+    "rank5_anchor_in_rowspace_s3_orbits": [
+      [
+        [
+          0,
+          116
+        ],
+        [
+          116,
+          0
+        ],
+        [
+          117,
+          117
+        ]
+      ],
+      [
+        [
+          0,
+          117
+        ],
+        [
+          116,
+          116
+        ],
+        [
+          117,
+          0
+        ]
+      ]
+    ],
+    "rank5_anchor_independent_s3_orbit": [
+      [
+        1,
+        117
+      ],
+      [
+        116,
+        117
+      ],
+      [
+        116,
+        232
+      ],
+      [
+        117,
+        1
+      ],
+      [
+        117,
+        116
+      ],
+      [
+        232,
+        116
+      ]
+    ],
+    "tail_rank_histogram": {
+      "5": 12,
+      "6": 54276
+    }
+  }
+}

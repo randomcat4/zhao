@@ -785,3 +785,21 @@
 - UPDATED FRONTIER：\(O_1\) 现已严格关闭；\(m=4\) 只余
   \(O_2,O_3\)，singleton 掩码总数 \(71\to70\)。180 个 outer rows
   与一般 \(A_p\) 仍为 INCOMPLETE。
+
+## 2026-09-11：\(O_2/O_3\) 的删点标签容量前沿
+
+- UNIFIED CAPACITY：对任一实际共同核位置标签 \(g\)，中心奇五次的
+  全部 fringe 字面行定义允许集。实际支撑包含其中，且单标签容量
+  至多 232；因此 460 点核强制至少两个允许标签。fixed-\(q\) 集
+  \(\Gamma_q\) 与 q-free 存在型并集已严格分开。
+- O2 SPECIAL STRATA：共享块秩直方图
+  \(4:4,5:7,6:54\,278\)。11 个低秩 \(z\)、12 个异常 \(\tau\)
+  及 \(O_1\)-四次式继承的 932 态全灭，只余
+  \(\operatorname{rank}M_z=6\) 与尾 \((6,7)\) generic 层。
+- O3 REPRESENTATIVES：合法对称群阶 48；四代表的共同 quartic
+  定向态 \(16,0,217\,172,24\) 经逐 \(q\) 联合删点后全部违反
+  至少二标签容量。全体 \(\tau\) 尚未运行，因此保持 INCOMPLETE。
+- NEXT：\(O_2\) 对固定三维核使用射影方向一元 gcd／Bézout 证书；
+  \(O_3\) 保存 point/line/plane 仿射 \(q\) 子空间并做三路交，避免
+  展开高维 \((q,z)\) 纤维。两条路线都必须显式报告 output-sensitive
+  异常支，不能把块测试的 \(O(p^4)\) 误写成总复杂度。

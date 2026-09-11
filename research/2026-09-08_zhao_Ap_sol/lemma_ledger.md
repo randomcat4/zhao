@@ -1867,3 +1867,51 @@
   \(4(233^2-1)=217,152\) 个非零标签系统，主三参数证书与独立
   十二参数证书均给零幸存。因而固定 \(p=233,m=4\) 的 \(O_1\)
   轨道为空；\(m=4\) 还余 \(O_2,O_3\)，singleton 掩码总数为 70。
+
+## LEMMA-P233-THREE-H8-M4-DELETION-LABEL-CAPACITY：统一删点标签容量
+
+- 精确陈述：
+  `proofs/unique_tail_p233_three_h8_m4_deletion_label_capacity_interface.md`。
+- 状态：PROVED_REDUCTION；GLOBAL_INCOMPLETE。
+- 对任一真实核位置标签 \(g\ne0\)，删点积给十二维中心奇五次
+  \(R_g\)。三个长补的全部非空字面 fringe 子集强制
+  \(R_g(\tau+g/2)=1\) 及 45 条零值行；其中心差分自动恢复偶四次
+  原子评价。
+- 令 \(\Gamma\) 为该十二参数系统允许的标签集。实际核支撑包含于
+  \(\Gamma\)，而投影零和自由性给每个非零标签重数至多 232；由
+  \(|C|=460\) 得必要条件 \(|\Gamma|\ge2\)。若共同 \(q\) 固定，则
+  使用更强的 \(\Gamma_q\)，同样有 \(|\Gamma_q|\ge2\)。两种量词
+  不得混用。
+
+## FRONTIER-P233-THREE-H8-M4-O2-SPECIAL-STRATA：特殊秩层削减
+
+- 精确记录：
+  `proofs/unique_tail_p233_three_h8_m4_O2_special_strata_exclusion.md`。
+- 状态：PROVED_REDUCTION；\(O_2\) 仍 INCOMPLETE。
+- 共享六点评价块在全部 54,289 个 \(z\) 上的秩分布为
+  \(4:4,5:7,6:54\,278\)。11 个低秩 \(z\) 全部由 q-free
+  \(|\Gamma_{\rm known}|\le1\) 排除；尾块的十二个降秩 \(\tau\)
+  中六个归一化直接不相容，另六个同样由容量门排除。
+- 从 \(O_1\) 唯一四次式继承的 \(z_1=(a,a+117)\) 共 932 个
+  \(O_2\) 状态也全部排除。任何实际幸存者因此必须同时处于共享块
+  秩六及尾块 \((6,7)\) 的 generic 层。
+
+## FRONTIER-P233-THREE-H8-M4-O3-JOINT-DELETION：仿射四次键与删点容量
+
+- 精确记录：
+  `proofs/unique_tail_p233_three_h8_m4_O3_joint_deletion_frontier.md`。
+- 状态：EXACT_REPRESENTATIVE_PROBE；GLOBAL_INCOMPLETE。
+- 合法对称群为 \((C_2)^3\rtimes S_3\)，阶 48；全部非零
+  \(\tau\) 的尾秩分布为 \(6:54\,276,5:12\)，其中六个降秩点已
+  直接不相容。
+- 四个冻结代表的共同归一化四次键数为 \(2,0,2,3\)，定向三块态数
+  为 \(16,0,217\,172,24\)。脚本逐个固定共同 \(q\) 计算
+  \(\Gamma_q\)，最大大小为 \(1,-,0,1\)，故四个代表层及其合法
+  尾对称像均被容量门排除。
+- 当前下一承重是全称证明每个具体
+  \((\tau,z_1,z_2,z_3,q)\) 都有 \(|\Gamma_q|\le1\)；尚未关闭
+  generic \(O_3\)。
+- 配套全扫设计把 generic 尾核保存为二维仿射 \(q\)-平面；四点块
+  只保存 empty/point/line/plane 的规范 RREF 键，并用十二次 minor
+  的一元切片恢复候选。两个精确原型已通过，但正维及大 incidence
+  分支仍是 output-sensitive 边界。

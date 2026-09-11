@@ -1,0 +1,284 @@
+{
+  "dual_deletion_affine_subspace_prototype": {
+    "affine_subspace_type_histogram": {
+      "empty": 54058,
+      "line": 4,
+      "plane": 2,
+      "point": 224
+    },
+    "candidate_nonzero_g": 54288,
+    "normalized_plane_directions": [
+      [
+        0,
+        232,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        232,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "normalized_plane_origin": [
+      0,
+      0,
+      77,
+      79,
+      0,
+      0,
+      232,
+      156,
+      155
+    ],
+    "queries": [
+      {
+        "incident_labels": [
+          [
+            1,
+            2
+          ],
+          [
+            232,
+            1
+          ]
+        ],
+        "plane_coordinates": [
+          194,
+          195
+        ],
+        "quartic_coefficients": [
+          0,
+          39,
+          115,
+          79,
+          194,
+          195,
+          232,
+          156,
+          155
+        ]
+      },
+      {
+        "incident_labels": [
+          [
+            1,
+            2
+          ],
+          [
+            232,
+            1
+          ]
+        ],
+        "plane_coordinates": [
+          0,
+          117
+        ],
+        "quartic_coefficients": [
+          0,
+          0,
+          193,
+          79,
+          0,
+          117,
+          232,
+          156,
+          155
+        ]
+      }
+    ],
+    "scope_note": "pure-tail rows only; this is a necessary fixed-q gate, not the complete fringe scan",
+    "tau": [
+      0,
+      1
+    ]
+  },
+  "field_prime": 233,
+  "global_boundary": {
+    "O3_closed": false,
+    "all_generic_tau_scanned": false,
+    "high_dimensional_q_fibres_expanded": false,
+    "positive_dimensional_minor_loci_require_exception_routing": true,
+    "runtime_is_output_sensitive": true
+  },
+  "scope": "two exact O3 prototypes; not a full tau scan",
+  "slice_minor_gcd_prototype": {
+    "catalogues": [
+      {
+        "all_zero_vertical_slices": [],
+        "compatible_oriented_z": 9,
+        "endpoint": 1,
+        "interpolation_values_per_slice": 13,
+        "minor_degree_bound": 12,
+        "z": [
+          [
+            15,
+            30
+          ],
+          [
+            16,
+            32
+          ],
+          [
+            17,
+            30
+          ],
+          [
+            18,
+            32
+          ],
+          [
+            116,
+            0
+          ],
+          [
+            214,
+            201
+          ],
+          [
+            215,
+            203
+          ],
+          [
+            216,
+            201
+          ],
+          [
+            217,
+            203
+          ]
+        ]
+      },
+      {
+        "all_zero_vertical_slices": [],
+        "compatible_oriented_z": 11,
+        "endpoint": 2,
+        "interpolation_values_per_slice": 13,
+        "minor_degree_bound": 12,
+        "z": [
+          [
+            0,
+            116
+          ],
+          [
+            16,
+            29
+          ],
+          [
+            16,
+            31
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            18,
+            32
+          ],
+          [
+            116,
+            116
+          ],
+          [
+            117,
+            116
+          ],
+          [
+            215,
+            200
+          ],
+          [
+            215,
+            202
+          ],
+          [
+            217,
+            201
+          ],
+          [
+            217,
+            203
+          ]
+        ]
+      },
+      {
+        "all_zero_vertical_slices": [],
+        "compatible_oriented_z": 13,
+        "endpoint": 3,
+        "interpolation_values_per_slice": 13,
+        "minor_degree_bound": 12,
+        "z": [
+          [
+            16,
+            31
+          ],
+          [
+            17,
+            30
+          ],
+          [
+            18,
+            33
+          ],
+          [
+            19,
+            32
+          ],
+          [
+            76,
+            59
+          ],
+          [
+            112,
+            104
+          ],
+          [
+            117,
+            117
+          ],
+          [
+            122,
+            130
+          ],
+          [
+            158,
+            175
+          ],
+          [
+            215,
+            202
+          ],
+          [
+            216,
+            201
+          ],
+          [
+            217,
+            204
+          ],
+          [
+            218,
+            203
+          ]
+        ]
+      }
+    ],
+    "tau": [
+      17,
+      31
+    ]
+  },
+  "status": "PROVED_ALGORITHM_PROTOTYPE_GLOBAL_INCOMPLETE"
+}
