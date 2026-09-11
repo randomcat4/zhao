@@ -714,3 +714,49 @@
   非单位系数给逐位置的全长度窗交错和，并非单独 \(3p\)-atom 计数；
   blocking 推论只有单向；dense Ax--Katz/Newton/\(p\)-weight 仍只给
   一层。精确作用域见 `proofs/dgm_modp2_blocking_axkatz_route_audit.md`。
+
+## 2026-09-11：\(m=3\) 九轨横截闭合
+
+- ORDINARY OPPOSITE-FIBRE TRANSVERSAL：对 completion 定理选出的端点
+  \(i\)，若共同三次系数 \(c_\delta(r)\ne0\)，signed 非零先给
+  \(C\) 中和为 \(r\) 的真实表示 \(F_r\)；mixed 分离器给
+  \(|F_r|\le2\)。相反目标纤维的每个普通位置都与 \(v_i\) 组成一条
+  fringe 双点表示，交叉相交遂强制整个相反纤维落入 \(F_r\)。因此
+  \[
+  A_{-r,i}\le2,\qquad A_{-r,i}=2\Longrightarrow 2t_{-r,i}=r.
+  \]
+- EXACT POINTED CLOSURE：九个未标点轨的 27 个 pointed 角色中，25 个
+  由相反纤维容量 \(>2\) 排除；第四轨第三指点虽恰有容量 2，却违反
+  上述共振等式。只余第六轨第三指点，其正负表示被唯一强制为四个
+  两两不同的共同核位置，而四个投影标签总和为零，既违反正负表示
+  的交叉相交，也直接给出 \(C\) 内四位置零和。
+- COMPLETE SUBBRANCH RESULT：
+  \[
+  324\ \text{pointed pairs}\to12\to0,
+  \]
+  等价地，先前的 108 个形式对、九个未标点轨全部为空。连同六个
+  exceptional \(\delta\) 的既有排除，固定 \(p=233\) 的三条
+  singleton 长八块、\(m=3\) 掩码态现已完整排除。
+- BOUNDARY / NEXT：这只删除一个 singleton 掩码轨，粗掩码数
+  \(72\to71\)；180 个 all-singleton-eight outer rows 与完整
+  \(A_p\) 仍未闭合。下一层转向 \(m=4\) 的三个剩余掩码轨，并继续
+  加载真实位置、统一 \(\rho/q\)/高度、自动短块及长补内部子集和。
+- M4 EXECUTABLE FRONTIER：余下三轨的全部字面 fringe 已分别压成
+  一、二、三个方向参数；共同核系数平移后是九维偶四次 \(q\)，满足
+  六个统一尾零点、每端点四个 incidence 零点及 \(q(\tau)=1\)。首门
+  是九列评价矩阵的 exact rank 分层，随后才枚举 admissible \(s\) 并
+  执行 mixed 纤维恢复、去重容量、bounded 零和与相反纤维横截。
+  当前尚未排除这三个轨，状态为 EXACT FINITE FRONTIER / INCOMPLETE。
+- O1 EXACT REDUCTION：对 \(O_1=(0,1,1,4)\)，先由八个 fringe 零点
+  反向确定偶四次核，再检查六个尾邻点。全部
+  \(54,289\cdot54,288=2,947,241,232\) 个合法 \((z,\tau)\) 对只余
+  四对；四者共用唯一归一化四次式
+  \[
+  q=146(x-y-116)(x-y-117)
+    \bigl(xy-20(x+y)^2-168\bigr).
+  \]
+  独立全扫复得秩分布 \(53,816/237/233/3\) 与同四例外。
+- O1 BOUNDARY：现有 mixed 门在四例外、三个 pointed roles、全部
+  651,384 个方向态中仍留 4,576 个投影放宽态；更强地，每格共同
+  保留 230 个对角方向，四个恢复纤维全空。因此 \(O_1\) 已从巨大全
+  参数空间压到一个 \(q\)、两个 \(z\)、两个 \(\tau\)，但尚未闭合。

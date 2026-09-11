@@ -1788,3 +1788,60 @@
 - projective blocking 只给 `blocking => c=0`；反向被显式秩四、重数
   有界模型否定。dense 五对角方程的 Ax--Katz、Newton 与
   \(p\)-weight 界均仍只有一层，除非先证明额外行稀疏/仿射退化。
+
+## LEMMA-P233-THREE-H8-M3-OPPOSITE-FIBRE-CLOSURE：九轨横截闭合
+
+- 精确陈述：
+  `proofs/unique_tail_p233_three_h8_m3_nine_orbit_short_closure.md`。
+- 状态：PROVED_SUBBRANCH；有限证书 SELF-CHECKED；独立审计
+  CORRECT；GLOBAL_INCOMPLETE。
+- 对 completion-pointed 端点 \(i\) 与 \(r\in\{s,-s\}\)，若
+  \(c_\delta(r)\ne0\)，则 signed 非零、mixed 长度门和正负短块的
+  交叉相交共同给出
+  \[
+  A_{-r,i}\le2,\qquad A_{-r,i}=2\Longrightarrow 2t_{-r,i}=r.
+  \]
+  这是把有限域系数、普通位置重数与字面短块交叉结构接在一起的
+  `ordinary opposite-fibre transversal` 引理。
+- 九轨的 27 个 pointed 角色中，25 个违反容量门，一个违反容量二的
+  共振条件。唯一余项强制两个互不相交的二位置表示，其四个标签和为
+  零，矛盾。故 324 个 pointed 形式对由 \(324\to12\to0\)，先前
+  108 个未指点形式对全部排除。
+- 连同 exceptional 六点的 endpoint-kernel 排除，这闭合固定
+  \(p=233\)、三 singleton 长八块、fringe size \(m=3\) 的完整掩码
+  分支；不删除其他 \(m=4,\ldots,14\) 掩码，不关闭 180 个 outer
+  rows，也不证明一般 \(A_p\)。
+
+## FRONTIER-P233-THREE-H8-M4-EVEN-QUARTIC：余三轨有限接口
+
+- 精确记录：
+  `proofs/unique_tail_p233_three_h8_m4_three_orbit_quartic_frontier.md`。
+- 状态：EXACT_FINITE_FRONTIER；INCOMPLETE；尚未排除三个轨中的任何
+  一个。
+- 写 \(\tau=\delta/2\) 与
+  \(D_i=\{\tau-z_i,\tau+w_i+z_i\}\)。三个剩余掩码轨分别给
+  \(z_2=z_3=z,z_1=-w_3-z\)、\(z_2=z_3=z,z_1\) 自由，以及
+  三个 \(z_i\) 全自由；字面位置不因投影标签相等而合并。
+- 平移共同核系数得到九维偶四次 \(q\)，原子性穷尽为六个统一尾
+  零点与每端点四个 \(Z_i\) 零点，同时 \(q(\tau)=1\)。下一核验器
+  先解九列评价矩阵的 rank 分层，再执行 mixed 纤维恢复、普通重数
+  上界、去重容量、bounded 零和自由与相反 fringe 纤维横截。
+
+## LEMMA-P233-THREE-H8-M4-O1-FOUR-EXCEPTION：偶四次四例外归约
+
+- 精确陈述：
+  `proofs/unique_tail_p233_three_h8_m4_O1_quartic_four_exception_reduction.md`。
+- 状态：PROVED_REDUCTION；GLOBAL_INCOMPLETE；不排除 \(O_1\)。
+- 八点 fringe 评价矩阵在全部 54,289 个 \(z\) 上的秩
+  \(5,6,7,8\) 分布为 \(3,233,237,53,816\)。对每个核空间再穷尽
+  54,288 个非零 \(\tau\) 的六尾零点与 \(q(\tau)\ne0\)，完整分母
+  \(2,947,241,232\) 恰余四对。
+- 四对为
+  \(z=(58,174),(60,176)\) 与
+  \(\tau=(59,174),(174,59)\) 的笛卡尔积；归一化 \(q\) 唯一，系数
+  为 \((74,201,35,201,109,146,189,146,109)\)，并有显式三因子
+  分解。
+- 现有 mixed 必要门在四状态乘三个 pointed roles 乘 54,282 个方向
+  中余 4,576 个；每个 pointed role 至少有 230 个共同对角方向使
+  所有恢复纤维为空。下一矛盾必须使用完整生成积实现、逐删点
+  completion 见证或新自动短块，不能重复同一纤维容量门。

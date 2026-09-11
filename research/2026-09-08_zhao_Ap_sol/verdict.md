@@ -691,3 +691,40 @@ CSP，其中四重/三重层分别是 21 外点 84 标量与 22 外点 88 标量
 - **NEXT：**只对九轨、至多 27 个 pointed 角色加载 completion 表示
   的内部位置、统一 \(q\)/高度与全部自动短块；不再对 114 轨作同型
   计数搜索。
+
+## 2026-09-11 新裁决：\(p=233\) 的 \(m=3\) 掩码态已闭合
+
+- **CORRECT / PROVED SUBBRANCH：**
+  `proofs/unique_tail_p233_three_h8_m3_nine_orbit_short_closure.md` 建立
+  ordinary opposite-fibre transversal：共同三次系数非零给真实核
+  表示，mixed 分离器把表示压到至多两个位置，而相反 fringe 双点
+  族迫使它包含整个相反普通纤维。
+- **EXACT ELIMINATION：**九轨、27 个 pointed 角色中，25 个违反
+  纤维容量二，一个违反容量恰二时的共振式；唯一余项强制四个两两
+  不同且总和为零的核标签。于是
+  \[
+  324\to12\to0,
+  \]
+  先前 108 个形式对全部排除。连同六个 exceptional 点的既有排除，
+  固定 \(p=233\) 的三 singleton 长八块、\(m=3\) 掩码分支为空。
+- **GLOBAL BOUNDARY：**这是一个真正闭合的局部分支，但不是一条
+  outer row。singleton 掩码数 \(72\to71\)；其余
+  \(m=4,\ldots,14\)、180 个 outer rows 和一般 \(A_p\) 均仍为
+  **INCOMPLETE**。
+- **NEXT：**攻击 \(m=4\) 的三个剩余掩码轨，优先寻找上述横截引理的
+  四次核版本，同时继续保留真实位置、统一商标签、全部自动短块和
+  每个长补原子的内部子集和。
+- **NEXT FRONTIER FROZEN：**余三轨的字面 fringe 已分别参数化；共同
+  核平移为九维偶四次 \(q\)，完整 atomic 条件是六个统一尾零点、
+  每端点四个 incidence 零点与 \(q(\tau)=1\)。这给出了先做 exact
+  rank 分层、再接 mixed 纤维恢复和横截门的可执行顺序；尚无
+  \(m=4\) 排除结论。
+- **O1 PROVED REDUCTION：**exact rank-stratified 证书把
+  \(O_1=(0,1,1,4)\) 的 2,947,241,232 个合法 \((z,\tau)\) 对压到
+  四对、一个唯一且显式分解的偶四次 \(q\)。独立实现复得相同秩
+  分布、四例外和规范化系数。
+- **O1 STRICT BOUNDARY：**四例外的轻量 mixed 门仍余 4,576 个
+  pointed-direction 态；每个 pointed role 都有 230 个对角方向令
+  四个恢复纤维全空。因此 \(O_1\) 与 \(m=4\) 均保持
+  **INCOMPLETE**，下一门必须接 460 个真实核位置的生成积实现、
+  completion 删除内部结构或新的自动短块。

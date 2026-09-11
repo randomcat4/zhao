@@ -1,0 +1,2444 @@
+{
+  "final_survivors": 0,
+  "last_role_conflict": {
+    "F_minus_projection_labels": [
+      [
+        230,
+        24
+      ],
+      [
+        207,
+        18
+      ]
+    ],
+    "F_plus_projection_labels": [
+      [
+        172,
+        108
+      ],
+      [
+        90,
+        83
+      ]
+    ],
+    "c_delta_minus_s": 53,
+    "c_delta_plus_s": 225,
+    "completion_endpoint_one_based": 3,
+    "contradiction": "F_plus and F_minus are disjoint nonempty C-subsets with opposite sums; equivalently they violate the mixed cross-intersection gate and C zero-sum-freeness",
+    "delta": [
+      33,
+      168
+    ],
+    "four_label_sum": [
+      0,
+      0
+    ],
+    "four_labels_pairwise_distinct": true,
+    "s": [
+      29,
+      191
+    ]
+  },
+  "logical_boundary": {
+    "automatic_short_closure_needed": false,
+    "literal_bridge": "the mixed separator bounds every such F_r by two literal positions; cross-intersection with every opposite fringe pair then bounds an ordinary fibre",
+    "q_height_needed": false,
+    "quotient_lift_claimed": false,
+    "signed_coefficient_use": "c_delta(r) != 0 is used only to infer existence of at least one literal representation F_r"
+  },
+  "new_gate_counts_on_27_pointed_orbits": {
+    "capacity_gt_2_rejections": 25,
+    "failed_double_resonance_rejections": 1,
+    "survivors": 1
+  },
+  "new_gate_counts_on_324_pointed_pairs": {
+    "basic_rejections": 312,
+    "basic_survivors": 12,
+    "final_survivors": 0,
+    "last_four_label_rejections": 12
+  },
+  "pointed_gate_table": [
+    {
+      "capacities_order_plus_then_minus": [
+        3,
+        49,
+        73,
+        22,
+        11,
+        89
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 157,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 22,
+          "opposite_fibre_target": [
+            153,
+            76
+          ],
+          "r": [
+            69,
+            197
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 5,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 3,
+          "opposite_fibre_target": [
+            58,
+            4
+          ],
+          "r": [
+            164,
+            36
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 1,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          58,
+          4
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          60,
+          5
+        ],
+        [
+          153,
+          76
+        ],
+        [
+          154,
+          75
+        ],
+        [
+          155,
+          77
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        3,
+        49,
+        73,
+        22,
+        11,
+        89
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 157,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 11,
+          "opposite_fibre_target": [
+            154,
+            75
+          ],
+          "r": [
+            69,
+            197
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 5,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 49,
+          "opposite_fibre_target": [
+            59,
+            3
+          ],
+          "r": [
+            164,
+            36
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 1,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          58,
+          4
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          60,
+          5
+        ],
+        [
+          153,
+          76
+        ],
+        [
+          154,
+          75
+        ],
+        [
+          155,
+          77
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        3,
+        49,
+        73,
+        22,
+        11,
+        89
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 157,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 89,
+          "opposite_fibre_target": [
+            155,
+            77
+          ],
+          "r": [
+            69,
+            197
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 5,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 73,
+          "opposite_fibre_target": [
+            60,
+            5
+          ],
+          "r": [
+            164,
+            36
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 1,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          58,
+          4
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          60,
+          5
+        ],
+        [
+          153,
+          76
+        ],
+        [
+          154,
+          75
+        ],
+        [
+          155,
+          77
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        229,
+        151,
+        68
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 229,
+          "opposite_fibre_target": [
+            208,
+            183
+          ],
+          "r": [
+            12,
+            25
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            232,
+            0
+          ],
+          "r": [
+            221,
+            208
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 2,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          208,
+          183
+        ],
+        [
+          209,
+          182
+        ],
+        [
+          210,
+          184
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        229,
+        151,
+        68
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 151,
+          "opposite_fibre_target": [
+            209,
+            182
+          ],
+          "r": [
+            12,
+            25
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            0,
+            232
+          ],
+          "r": [
+            221,
+            208
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 2,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          208,
+          183
+        ],
+        [
+          209,
+          182
+        ],
+        [
+          210,
+          184
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        229,
+        151,
+        68
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 68,
+          "opposite_fibre_target": [
+            210,
+            184
+          ],
+          "r": [
+            12,
+            25
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            1,
+            1
+          ],
+          "r": [
+            221,
+            208
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 2,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          208,
+          183
+        ],
+        [
+          209,
+          182
+        ],
+        [
+          210,
+          184
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        51,
+        5,
+        159
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 51,
+          "opposite_fibre_target": [
+            196,
+            104
+          ],
+          "r": [
+            18,
+            181
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            232,
+            0
+          ],
+          "r": [
+            215,
+            52
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 3,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          196,
+          104
+        ],
+        [
+          197,
+          103
+        ],
+        [
+          198,
+          105
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        51,
+        5,
+        159
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 5,
+          "opposite_fibre_target": [
+            197,
+            103
+          ],
+          "r": [
+            18,
+            181
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            0,
+            232
+          ],
+          "r": [
+            215,
+            52
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 3,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          196,
+          104
+        ],
+        [
+          197,
+          103
+        ],
+        [
+          198,
+          105
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        51,
+        5,
+        159
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 159,
+          "opposite_fibre_target": [
+            198,
+            105
+          ],
+          "r": [
+            18,
+            181
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            1,
+            1
+          ],
+          "r": [
+            215,
+            52
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 3,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          196,
+          104
+        ],
+        [
+          197,
+          103
+        ],
+        [
+          198,
+          105
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        198,
+        0,
+        2,
+        7,
+        8,
+        0
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 225,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 7,
+          "opposite_fibre_target": [
+            202,
+            153
+          ],
+          "r": [
+            1,
+            2
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 4,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 198,
+          "opposite_fibre_target": [
+            204,
+            157
+          ],
+          "r": [
+            232,
+            231
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 4,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          204,
+          157
+        ],
+        [
+          205,
+          156
+        ],
+        [
+          206,
+          158
+        ],
+        [
+          202,
+          153
+        ],
+        [
+          203,
+          152
+        ],
+        [
+          204,
+          154
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        198,
+        0,
+        2,
+        7,
+        8,
+        0
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 225,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 8,
+          "opposite_fibre_target": [
+            203,
+            152
+          ],
+          "r": [
+            1,
+            2
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 4,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            205,
+            156
+          ],
+          "r": [
+            232,
+            231
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 4,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          204,
+          157
+        ],
+        [
+          205,
+          156
+        ],
+        [
+          206,
+          158
+        ],
+        [
+          202,
+          153
+        ],
+        [
+          203,
+          152
+        ],
+        [
+          204,
+          154
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        198,
+        0,
+        2,
+        7,
+        8,
+        0
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 225,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            204,
+            154
+          ],
+          "r": [
+            1,
+            2
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 4,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": false,
+          "opposite_fibre_capacity": 2,
+          "opposite_fibre_target": [
+            206,
+            158
+          ],
+          "r": [
+            232,
+            231
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 4,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          204,
+          157
+        ],
+        [
+          205,
+          156
+        ],
+        [
+          206,
+          158
+        ],
+        [
+          202,
+          153
+        ],
+        [
+          203,
+          152
+        ],
+        [
+          204,
+          154
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        38,
+        20,
+        77,
+        0,
+        0,
+        0
+      ],
+      "checks": [
+        {
+          "active": false,
+          "c_delta_r": 0,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            195,
+            83
+          ],
+          "r": [
+            8,
+            199
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 47,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 38,
+          "opposite_fibre_target": [
+            211,
+            15
+          ],
+          "r": [
+            225,
+            34
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 5,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          211,
+          15
+        ],
+        [
+          212,
+          14
+        ],
+        [
+          213,
+          16
+        ],
+        [
+          195,
+          83
+        ],
+        [
+          196,
+          82
+        ],
+        [
+          197,
+          84
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        38,
+        20,
+        77,
+        0,
+        0,
+        0
+      ],
+      "checks": [
+        {
+          "active": false,
+          "c_delta_r": 0,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            196,
+            82
+          ],
+          "r": [
+            8,
+            199
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 47,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 20,
+          "opposite_fibre_target": [
+            212,
+            14
+          ],
+          "r": [
+            225,
+            34
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 5,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          211,
+          15
+        ],
+        [
+          212,
+          14
+        ],
+        [
+          213,
+          16
+        ],
+        [
+          195,
+          83
+        ],
+        [
+          196,
+          82
+        ],
+        [
+          197,
+          84
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        38,
+        20,
+        77,
+        0,
+        0,
+        0
+      ],
+      "checks": [
+        {
+          "active": false,
+          "c_delta_r": 0,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            197,
+            84
+          ],
+          "r": [
+            8,
+            199
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 47,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 77,
+          "opposite_fibre_target": [
+            213,
+            16
+          ],
+          "r": [
+            225,
+            34
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 5,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          211,
+          15
+        ],
+        [
+          212,
+          14
+        ],
+        [
+          213,
+          16
+        ],
+        [
+          195,
+          83
+        ],
+        [
+          196,
+          82
+        ],
+        [
+          197,
+          84
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        114,
+        3,
+        1,
+        7,
+        3,
+        1
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 225,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 7,
+          "opposite_fibre_target": [
+            170,
+            107
+          ],
+          "r": [
+            29,
+            191
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 53,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 114,
+          "opposite_fibre_target": [
+            228,
+            23
+          ],
+          "r": [
+            204,
+            42
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 6,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          228,
+          23
+        ],
+        [
+          229,
+          22
+        ],
+        [
+          230,
+          24
+        ],
+        [
+          170,
+          107
+        ],
+        [
+          171,
+          106
+        ],
+        [
+          172,
+          108
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        114,
+        3,
+        1,
+        7,
+        3,
+        1
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 225,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 3,
+          "opposite_fibre_target": [
+            171,
+            106
+          ],
+          "r": [
+            29,
+            191
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 53,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 3,
+          "opposite_fibre_target": [
+            229,
+            22
+          ],
+          "r": [
+            204,
+            42
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 6,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          228,
+          23
+        ],
+        [
+          229,
+          22
+        ],
+        [
+          230,
+          24
+        ],
+        [
+          170,
+          107
+        ],
+        [
+          171,
+          106
+        ],
+        [
+          172,
+          108
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        114,
+        3,
+        1,
+        7,
+        3,
+        1
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 225,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 1,
+          "opposite_fibre_target": [
+            172,
+            108
+          ],
+          "r": [
+            29,
+            191
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 53,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 1,
+          "opposite_fibre_target": [
+            230,
+            24
+          ],
+          "r": [
+            204,
+            42
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 6,
+      "passed": true,
+      "targets_order_plus_then_minus": [
+        [
+          228,
+          23
+        ],
+        [
+          229,
+          22
+        ],
+        [
+          230,
+          24
+        ],
+        [
+          170,
+          107
+        ],
+        [
+          171,
+          106
+        ],
+        [
+          172,
+          108
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        126,
+        65,
+        26
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 152,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 126,
+          "opposite_fibre_target": [
+            149,
+            46
+          ],
+          "r": [
+            39,
+            33
+          ]
+        },
+        {
+          "active": false,
+          "c_delta_r": 0,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            227,
+            112
+          ],
+          "r": [
+            194,
+            200
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 7,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          227,
+          112
+        ],
+        [
+          228,
+          111
+        ],
+        [
+          229,
+          113
+        ],
+        [
+          149,
+          46
+        ],
+        [
+          150,
+          45
+        ],
+        [
+          151,
+          47
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        126,
+        65,
+        26
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 152,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 65,
+          "opposite_fibre_target": [
+            150,
+            45
+          ],
+          "r": [
+            39,
+            33
+          ]
+        },
+        {
+          "active": false,
+          "c_delta_r": 0,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            228,
+            111
+          ],
+          "r": [
+            194,
+            200
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 7,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          227,
+          112
+        ],
+        [
+          228,
+          111
+        ],
+        [
+          229,
+          113
+        ],
+        [
+          149,
+          46
+        ],
+        [
+          150,
+          45
+        ],
+        [
+          151,
+          47
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        126,
+        65,
+        26
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 152,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 26,
+          "opposite_fibre_target": [
+            151,
+            47
+          ],
+          "r": [
+            39,
+            33
+          ]
+        },
+        {
+          "active": false,
+          "c_delta_r": 0,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            229,
+            113
+          ],
+          "r": [
+            194,
+            200
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 7,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          227,
+          112
+        ],
+        [
+          228,
+          111
+        ],
+        [
+          229,
+          113
+        ],
+        [
+          149,
+          46
+        ],
+        [
+          150,
+          45
+        ],
+        [
+          151,
+          47
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        26,
+        60,
+        129
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 26,
+          "opposite_fibre_target": [
+            120,
+            210
+          ],
+          "r": [
+            56,
+            128
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            232,
+            0
+          ],
+          "r": [
+            177,
+            105
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 8,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          120,
+          210
+        ],
+        [
+          121,
+          209
+        ],
+        [
+          122,
+          211
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        26,
+        60,
+        129
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 60,
+          "opposite_fibre_target": [
+            121,
+            209
+          ],
+          "r": [
+            56,
+            128
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            0,
+            232
+          ],
+          "r": [
+            177,
+            105
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 8,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          120,
+          210
+        ],
+        [
+          121,
+          209
+        ],
+        [
+          122,
+          211
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        0,
+        0,
+        0,
+        26,
+        60,
+        129
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 230,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 129,
+          "opposite_fibre_target": [
+            122,
+            211
+          ],
+          "r": [
+            56,
+            128
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 232,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            1,
+            1
+          ],
+          "r": [
+            177,
+            105
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 8,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          120,
+          210
+        ],
+        [
+          121,
+          209
+        ],
+        [
+          122,
+          211
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        9,
+        0,
+        0,
+        7,
+        4,
+        143
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 124,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 7,
+          "opposite_fibre_target": [
+            163,
+            31
+          ],
+          "r": [
+            3,
+            60
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 10,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 9,
+          "opposite_fibre_target": [
+            169,
+            151
+          ],
+          "r": [
+            230,
+            173
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 1,
+      "orbit": 9,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          169,
+          151
+        ],
+        [
+          170,
+          150
+        ],
+        [
+          171,
+          152
+        ],
+        [
+          163,
+          31
+        ],
+        [
+          164,
+          30
+        ],
+        [
+          165,
+          32
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        9,
+        0,
+        0,
+        7,
+        4,
+        143
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 124,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 4,
+          "opposite_fibre_target": [
+            164,
+            30
+          ],
+          "r": [
+            3,
+            60
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 10,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            170,
+            150
+          ],
+          "r": [
+            230,
+            173
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 2,
+      "orbit": 9,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          169,
+          151
+        ],
+        [
+          170,
+          150
+        ],
+        [
+          171,
+          152
+        ],
+        [
+          163,
+          31
+        ],
+        [
+          164,
+          30
+        ],
+        [
+          165,
+          32
+        ]
+      ]
+    },
+    {
+      "capacities_order_plus_then_minus": [
+        9,
+        0,
+        0,
+        7,
+        4,
+        143
+      ],
+      "checks": [
+        {
+          "active": true,
+          "c_delta_r": 124,
+          "capacity_at_most_two": false,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 143,
+          "opposite_fibre_target": [
+            165,
+            32
+          ],
+          "r": [
+            3,
+            60
+          ]
+        },
+        {
+          "active": true,
+          "c_delta_r": 10,
+          "capacity_at_most_two": true,
+          "double_fibre_resonance": true,
+          "opposite_fibre_capacity": 0,
+          "opposite_fibre_target": [
+            171,
+            152
+          ],
+          "r": [
+            230,
+            173
+          ]
+        }
+      ],
+      "completion_endpoint_one_based": 3,
+      "orbit": 9,
+      "passed": false,
+      "targets_order_plus_then_minus": [
+        [
+          169,
+          151
+        ],
+        [
+          170,
+          150
+        ],
+        [
+          171,
+          152
+        ],
+        [
+          163,
+          31
+        ],
+        [
+          164,
+          30
+        ],
+        [
+          165,
+          32
+        ]
+      ]
+    }
+  ],
+  "quantifier_denominators": {
+    "admissible_directed_s_per_delta": 54282,
+    "generic_completion_pointed_pairs_before_core_fibre_recovery": 37128888,
+    "generic_delta": 228,
+    "generic_delta_s_pairs_before_core_fibre_recovery": 12376296,
+    "prior_completion_pointed_survivors": 324,
+    "prior_nine_orbit_delta_s_survivors": 108,
+    "prior_pointed_orbits": 27,
+    "prior_unpointed_orbits": 9
+  },
+  "representatives": [
+    {
+      "c_delta_plus_minus_s": [
+        157,
+        5
+      ],
+      "capacities_plus_then_minus": [
+        3,
+        49,
+        73,
+        22,
+        11,
+        89
+      ],
+      "delta": [
+        10,
+        193
+      ],
+      "orbit": 1,
+      "s": [
+        69,
+        197
+      ],
+      "targets_plus_then_minus": [
+        [
+          58,
+          4
+        ],
+        [
+          59,
+          3
+        ],
+        [
+          60,
+          5
+        ],
+        [
+          153,
+          76
+        ],
+        [
+          154,
+          75
+        ],
+        [
+          155,
+          77
+        ]
+      ],
+      "unique_forced_capacity": 247
+    },
+    {
+      "c_delta_plus_minus_s": [
+        230,
+        232
+      ],
+      "capacities_plus_then_minus": [
+        0,
+        0,
+        0,
+        229,
+        151,
+        68
+      ],
+      "delta": [
+        12,
+        25
+      ],
+      "orbit": 2,
+      "s": [
+        12,
+        25
+      ],
+      "targets_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          208,
+          183
+        ],
+        [
+          209,
+          182
+        ],
+        [
+          210,
+          184
+        ]
+      ],
+      "unique_forced_capacity": 448
+    },
+    {
+      "c_delta_plus_minus_s": [
+        230,
+        232
+      ],
+      "capacities_plus_then_minus": [
+        0,
+        0,
+        0,
+        51,
+        5,
+        159
+      ],
+      "delta": [
+        18,
+        181
+      ],
+      "orbit": 3,
+      "s": [
+        18,
+        181
+      ],
+      "targets_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          196,
+          104
+        ],
+        [
+          197,
+          103
+        ],
+        [
+          198,
+          105
+        ]
+      ],
+      "unique_forced_capacity": 215
+    },
+    {
+      "c_delta_plus_minus_s": [
+        225,
+        4
+      ],
+      "capacities_plus_then_minus": [
+        198,
+        0,
+        2,
+        7,
+        8,
+        0
+      ],
+      "delta": [
+        29,
+        78
+      ],
+      "orbit": 4,
+      "s": [
+        1,
+        2
+      ],
+      "targets_plus_then_minus": [
+        [
+          204,
+          157
+        ],
+        [
+          205,
+          156
+        ],
+        [
+          206,
+          158
+        ],
+        [
+          202,
+          153
+        ],
+        [
+          203,
+          152
+        ],
+        [
+          204,
+          154
+        ]
+      ],
+      "unique_forced_capacity": 215
+    },
+    {
+      "c_delta_plus_minus_s": [
+        0,
+        47
+      ],
+      "capacities_plus_then_minus": [
+        38,
+        20,
+        77,
+        0,
+        0,
+        0
+      ],
+      "delta": [
+        29,
+        184
+      ],
+      "orbit": 5,
+      "s": [
+        8,
+        199
+      ],
+      "targets_plus_then_minus": [
+        [
+          211,
+          15
+        ],
+        [
+          212,
+          14
+        ],
+        [
+          213,
+          16
+        ],
+        [
+          195,
+          83
+        ],
+        [
+          196,
+          82
+        ],
+        [
+          197,
+          84
+        ]
+      ],
+      "unique_forced_capacity": 135
+    },
+    {
+      "c_delta_plus_minus_s": [
+        225,
+        53
+      ],
+      "capacities_plus_then_minus": [
+        114,
+        3,
+        1,
+        7,
+        3,
+        1
+      ],
+      "delta": [
+        33,
+        168
+      ],
+      "orbit": 6,
+      "s": [
+        29,
+        191
+      ],
+      "targets_plus_then_minus": [
+        [
+          228,
+          23
+        ],
+        [
+          229,
+          22
+        ],
+        [
+          230,
+          24
+        ],
+        [
+          170,
+          107
+        ],
+        [
+          171,
+          106
+        ],
+        [
+          172,
+          108
+        ]
+      ],
+      "unique_forced_capacity": 129
+    },
+    {
+      "c_delta_plus_minus_s": [
+        152,
+        0
+      ],
+      "capacities_plus_then_minus": [
+        0,
+        0,
+        0,
+        126,
+        65,
+        26
+      ],
+      "delta": [
+        44,
+        154
+      ],
+      "orbit": 7,
+      "s": [
+        39,
+        33
+      ],
+      "targets_plus_then_minus": [
+        [
+          227,
+          112
+        ],
+        [
+          228,
+          111
+        ],
+        [
+          229,
+          113
+        ],
+        [
+          149,
+          46
+        ],
+        [
+          150,
+          45
+        ],
+        [
+          151,
+          47
+        ]
+      ],
+      "unique_forced_capacity": 217
+    },
+    {
+      "c_delta_plus_minus_s": [
+        230,
+        232
+      ],
+      "capacities_plus_then_minus": [
+        0,
+        0,
+        0,
+        26,
+        60,
+        129
+      ],
+      "delta": [
+        56,
+        128
+      ],
+      "orbit": 8,
+      "s": [
+        56,
+        128
+      ],
+      "targets_plus_then_minus": [
+        [
+          232,
+          0
+        ],
+        [
+          0,
+          232
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          120,
+          210
+        ],
+        [
+          121,
+          209
+        ],
+        [
+          122,
+          211
+        ]
+      ],
+      "unique_forced_capacity": 215
+    },
+    {
+      "c_delta_plus_minus_s": [
+        124,
+        10
+      ],
+      "capacities_plus_then_minus": [
+        9,
+        0,
+        0,
+        7,
+        4,
+        143
+      ],
+      "delta": [
+        66,
+        142
+      ],
+      "orbit": 9,
+      "s": [
+        3,
+        60
+      ],
+      "targets_plus_then_minus": [
+        [
+          169,
+          151
+        ],
+        [
+          170,
+          150
+        ],
+        [
+          171,
+          152
+        ],
+        [
+          163,
+          31
+        ],
+        [
+          164,
+          30
+        ],
+        [
+          165,
+          32
+        ]
+      ],
+      "unique_forced_capacity": 163
+    }
+  ],
+  "scope": "p=233, three length-eight singleton endpoints, unique m=3 mask",
+  "script_sha256": "0425eecf697dd1ed70813ea57eb173b18ace4c5f32f1b3ff340711b95882eb7a",
+  "status": "PROVED"
+}

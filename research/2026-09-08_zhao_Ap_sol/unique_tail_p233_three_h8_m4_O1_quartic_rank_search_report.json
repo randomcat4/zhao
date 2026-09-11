@@ -1,0 +1,4427 @@
+{
+  "P_shifts": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      -1,
+      -1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      -2
+    ]
+  ],
+  "basis": [
+    "1",
+    "x^2",
+    "xy",
+    "y^2",
+    "x^4",
+    "x^3y",
+    "x^2y^2",
+    "xy^3",
+    "y^4"
+  ],
+  "denominator": {
+    "nonzero_tau_per_z": 54288,
+    "ordered_z_nonzero_tau_pairs": 2947241232,
+    "z": 54289
+  },
+  "exceptional_compatible_pair_count": 4,
+  "exceptional_rows": [
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        0,
+        116
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        0,
+        117
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        1,
+        0
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        1,
+        1
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 4,
+      "rank": 5,
+      "z": [
+        1,
+        117
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        1,
+        118
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        2,
+        2
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        2,
+        118
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        3,
+        3
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        3,
+        119
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        4,
+        4
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        4,
+        120
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        5,
+        5
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        5,
+        121
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        6,
+        6
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        6,
+        122
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        7,
+        7
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        7,
+        123
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        8,
+        8
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        8,
+        124
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        9,
+        9
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        9,
+        125
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        10,
+        10
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        10,
+        126
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        11,
+        11
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        11,
+        127
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        12,
+        12
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        12,
+        128
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        13,
+        13
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        13,
+        129
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        14,
+        14
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        14,
+        130
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        15,
+        15
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        15,
+        131
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        16,
+        16
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        16,
+        132
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        17,
+        17
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        17,
+        133
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        18,
+        18
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        18,
+        134
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        19,
+        19
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        19,
+        135
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        20,
+        20
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        20,
+        136
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        21,
+        21
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        21,
+        137
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        22,
+        22
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        22,
+        138
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        23,
+        23
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        23,
+        139
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        24,
+        24
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        24,
+        140
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        25,
+        25
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        25,
+        141
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        26,
+        26
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        26,
+        142
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        27,
+        27
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        27,
+        143
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        28,
+        28
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        28,
+        144
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        29,
+        29
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        29,
+        145
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        30,
+        30
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        30,
+        146
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        31,
+        31
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        31,
+        147
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        32,
+        32
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        32,
+        148
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        33,
+        33
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        33,
+        149
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        34,
+        34
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        34,
+        150
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        35,
+        35
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        35,
+        151
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        36,
+        36
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        36,
+        152
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        37,
+        37
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        37,
+        153
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        38,
+        38
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        38,
+        154
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        39,
+        39
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        39,
+        155
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        40,
+        40
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        40,
+        156
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        41,
+        41
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        41,
+        157
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        42,
+        42
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        42,
+        158
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        43,
+        43
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        43,
+        159
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        44,
+        44
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        44,
+        160
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        45,
+        45
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        45,
+        161
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        46,
+        46
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        46,
+        162
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        47,
+        47
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        47,
+        163
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        48,
+        48
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        48,
+        164
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        49,
+        49
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        49,
+        165
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        50,
+        50
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        50,
+        166
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        51,
+        51
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        51,
+        167
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        52,
+        52
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        52,
+        168
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        53,
+        53
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        53,
+        169
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        54,
+        54
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        54,
+        170
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        55,
+        55
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        55,
+        171
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        56,
+        56
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        56,
+        172
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        57,
+        57
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        57,
+        173
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        58,
+        58
+      ]
+    },
+    {
+      "compatible_tau_count": 2,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        58,
+        174
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        59,
+        59
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        59,
+        175
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        60,
+        60
+      ]
+    },
+    {
+      "compatible_tau_count": 2,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        60,
+        176
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        61,
+        61
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        61,
+        177
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        62,
+        62
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        62,
+        178
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        63,
+        63
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        63,
+        179
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        64,
+        64
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        64,
+        180
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        65,
+        65
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        65,
+        181
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        66,
+        66
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        66,
+        182
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        67,
+        67
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        67,
+        183
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        68,
+        68
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        68,
+        184
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        69,
+        69
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        69,
+        185
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        70,
+        70
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        70,
+        186
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        71,
+        71
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        71,
+        187
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        72,
+        72
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        72,
+        188
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        73,
+        73
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        73,
+        189
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        74,
+        74
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        74,
+        190
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        75,
+        75
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        75,
+        191
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        76,
+        76
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        76,
+        192
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        77,
+        77
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        77,
+        193
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        78,
+        78
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        78,
+        194
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        79,
+        79
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        79,
+        195
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        80,
+        80
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        80,
+        196
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        81,
+        81
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        81,
+        197
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        82,
+        82
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        82,
+        198
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        83,
+        83
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        83,
+        199
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        84,
+        84
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        84,
+        200
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        85,
+        85
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        85,
+        201
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        86,
+        86
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        86,
+        202
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        87,
+        87
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        87,
+        203
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        88,
+        88
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        88,
+        204
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        89,
+        89
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        89,
+        205
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        90,
+        90
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        90,
+        206
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        91,
+        91
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        91,
+        207
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        92,
+        92
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        92,
+        208
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        93,
+        93
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        93,
+        209
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        94,
+        94
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        94,
+        210
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        95,
+        95
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        95,
+        211
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        96,
+        96
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        96,
+        212
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        97,
+        97
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        97,
+        213
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        98,
+        98
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        98,
+        214
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        99,
+        99
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        99,
+        215
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        100,
+        100
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        100,
+        216
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        101,
+        101
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        101,
+        217
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        102,
+        102
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        102,
+        218
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        103,
+        103
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        103,
+        219
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        104,
+        104
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        104,
+        220
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        105,
+        105
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        105,
+        221
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        106,
+        106
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        106,
+        222
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        107,
+        107
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        107,
+        223
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        108,
+        108
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        108,
+        224
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        109,
+        109
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        109,
+        225
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        110,
+        110
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        110,
+        226
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        111,
+        111
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        111,
+        227
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        112,
+        112
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        112,
+        228
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        113,
+        113
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        113,
+        229
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        114,
+        114
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        114,
+        230
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        115,
+        115
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        115,
+        231
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        116,
+        0
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        116,
+        116
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        116,
+        232
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 4,
+      "rank": 5,
+      "z": [
+        117,
+        0
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        117,
+        1
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        117,
+        116
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 4,
+      "rank": 5,
+      "z": [
+        117,
+        117
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        118,
+        1
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        118,
+        117
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        118,
+        118
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        119,
+        2
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        119,
+        119
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        120,
+        3
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        120,
+        120
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        121,
+        4
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        121,
+        121
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        122,
+        5
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        122,
+        122
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        123,
+        6
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        123,
+        123
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        124,
+        7
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        124,
+        124
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        125,
+        8
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        125,
+        125
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        126,
+        9
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        126,
+        126
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        127,
+        10
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        127,
+        127
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        128,
+        11
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        128,
+        128
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        129,
+        12
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        129,
+        129
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        130,
+        13
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        130,
+        130
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        131,
+        14
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        131,
+        131
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        132,
+        15
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        132,
+        132
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        133,
+        16
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        133,
+        133
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        134,
+        17
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        134,
+        134
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        135,
+        18
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        135,
+        135
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        136,
+        19
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        136,
+        136
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        137,
+        20
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        137,
+        137
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        138,
+        21
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        138,
+        138
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        139,
+        22
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        139,
+        139
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        140,
+        23
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        140,
+        140
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        141,
+        24
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        141,
+        141
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        142,
+        25
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        142,
+        142
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        143,
+        26
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        143,
+        143
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        144,
+        27
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        144,
+        144
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        145,
+        28
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        145,
+        145
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        146,
+        29
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        146,
+        146
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        147,
+        30
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        147,
+        147
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        148,
+        31
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        148,
+        148
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        149,
+        32
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        149,
+        149
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        150,
+        33
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        150,
+        150
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        151,
+        34
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        151,
+        151
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        152,
+        35
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        152,
+        152
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        153,
+        36
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        153,
+        153
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        154,
+        37
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        154,
+        154
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        155,
+        38
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        155,
+        155
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        156,
+        39
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        156,
+        156
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        157,
+        40
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        157,
+        157
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        158,
+        41
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        158,
+        158
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        159,
+        42
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        159,
+        159
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        160,
+        43
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        160,
+        160
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        161,
+        44
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        161,
+        161
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        162,
+        45
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        162,
+        162
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        163,
+        46
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        163,
+        163
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        164,
+        47
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        164,
+        164
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        165,
+        48
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        165,
+        165
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        166,
+        49
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        166,
+        166
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        167,
+        50
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        167,
+        167
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        168,
+        51
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        168,
+        168
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        169,
+        52
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        169,
+        169
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        170,
+        53
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        170,
+        170
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        171,
+        54
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        171,
+        171
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        172,
+        55
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        172,
+        172
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        173,
+        56
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        173,
+        173
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        174,
+        57
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        174,
+        174
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        175,
+        58
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        175,
+        175
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        176,
+        59
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        176,
+        176
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        177,
+        60
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        177,
+        177
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        178,
+        61
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        178,
+        178
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        179,
+        62
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        179,
+        179
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        180,
+        63
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        180,
+        180
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        181,
+        64
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        181,
+        181
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        182,
+        65
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        182,
+        182
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        183,
+        66
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        183,
+        183
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        184,
+        67
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        184,
+        184
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        185,
+        68
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        185,
+        185
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        186,
+        69
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        186,
+        186
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        187,
+        70
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        187,
+        187
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        188,
+        71
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        188,
+        188
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        189,
+        72
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        189,
+        189
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        190,
+        73
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        190,
+        190
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        191,
+        74
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        191,
+        191
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        192,
+        75
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        192,
+        192
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        193,
+        76
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        193,
+        193
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        194,
+        77
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        194,
+        194
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        195,
+        78
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        195,
+        195
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        196,
+        79
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        196,
+        196
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        197,
+        80
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        197,
+        197
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        198,
+        81
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        198,
+        198
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        199,
+        82
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        199,
+        199
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        200,
+        83
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        200,
+        200
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        201,
+        84
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        201,
+        201
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        202,
+        85
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        202,
+        202
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        203,
+        86
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        203,
+        203
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        204,
+        87
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        204,
+        204
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        205,
+        88
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        205,
+        205
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        206,
+        89
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        206,
+        206
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        207,
+        90
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        207,
+        207
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        208,
+        91
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        208,
+        208
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        209,
+        92
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        209,
+        209
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        210,
+        93
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        210,
+        210
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        211,
+        94
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        211,
+        211
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        212,
+        95
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        212,
+        212
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        213,
+        96
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        213,
+        213
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        214,
+        97
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        214,
+        214
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        215,
+        98
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        215,
+        215
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        216,
+        99
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        216,
+        216
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        217,
+        100
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        217,
+        217
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        218,
+        101
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        218,
+        218
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        219,
+        102
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        219,
+        219
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        220,
+        103
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        220,
+        220
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        221,
+        104
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        221,
+        221
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        222,
+        105
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        222,
+        222
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        223,
+        106
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        223,
+        223
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        224,
+        107
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        224,
+        224
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        225,
+        108
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        225,
+        225
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        226,
+        109
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        226,
+        226
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        227,
+        110
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        227,
+        227
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        228,
+        111
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        228,
+        228
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        229,
+        112
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        229,
+        229
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        230,
+        113
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        230,
+        230
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        231,
+        114
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        231,
+        231
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 3,
+      "rank": 6,
+      "z": [
+        232,
+        115
+      ]
+    },
+    {
+      "compatible_tau_count": 0,
+      "nullity": 2,
+      "rank": 7,
+      "z": [
+        232,
+        232
+      ]
+    }
+  ],
+  "exceptional_witnesses": [
+    {
+      "q": [
+        74,
+        201,
+        35,
+        201,
+        109,
+        146,
+        189,
+        146,
+        109
+      ],
+      "q_tau": 1,
+      "rank": 6,
+      "tau": [
+        59,
+        174
+      ],
+      "z": [
+        58,
+        174
+      ]
+    },
+    {
+      "q": [
+        74,
+        201,
+        35,
+        201,
+        109,
+        146,
+        189,
+        146,
+        109
+      ],
+      "q_tau": 1,
+      "rank": 6,
+      "tau": [
+        174,
+        59
+      ],
+      "z": [
+        58,
+        174
+      ]
+    },
+    {
+      "q": [
+        74,
+        201,
+        35,
+        201,
+        109,
+        146,
+        189,
+        146,
+        109
+      ],
+      "q_tau": 1,
+      "rank": 6,
+      "tau": [
+        59,
+        174
+      ],
+      "z": [
+        60,
+        176
+      ]
+    },
+    {
+      "q": [
+        74,
+        201,
+        35,
+        201,
+        109,
+        146,
+        189,
+        146,
+        109
+      ],
+      "q_tau": 1,
+      "rank": 6,
+      "tau": [
+        174,
+        59
+      ],
+      "z": [
+        60,
+        176
+      ]
+    }
+  ],
+  "exceptional_z_count": 473,
+  "generic_compatible_pair_count": 0,
+  "generic_witnesses": [],
+  "generic_z_count": 53816,
+  "logical_boundary": {
+    "completion_pointing_used": false,
+    "global_A_p_claimed": false,
+    "literal_fringe_incidence_used": true,
+    "mixed_fibre_gates_used": false,
+    "other_m4_orbits_used": false,
+    "q_tau_nonzero_is_normalized_to_one": true
+  },
+  "rank_histogram": {
+    "5": 3,
+    "6": 233,
+    "7": 237,
+    "8": 53816
+  },
+  "scope": "p=233, three length-eight singleton endpoints, m=4 mask orbit O1=(0,1,1,4), even-quartic atomic compatibility only",
+  "status": "SURVIVORS",
+  "total_compatible_pair_count": 4
+}

@@ -410,3 +410,35 @@
 - 参数化 Farkas 仍可作诊断实验，但旧 214,758 次特征计算属于
   \(p=5\) 平方自由终支；到 \(p=7\) 必须连同等值、比例、AP 修正项
   与新的局部下界一起重建，不能直接对齐旧乘子。
+
+## \(m=3\) 三次核—相反纤维横截路线（CLOSED AT \(p=233\)）
+
+- 本节取代上方 ACTIVE 状态。共同三次系数的非零性给真实核表示，
+  mixed 分离器把它压到至多两个位置；相反 fringe 双点族逐位置迫使
+  该表示横截整个相反纤维，得到容量二与共振门。
+- 九个未标点轨的 27 个 completion-pointed 角色按
+  `25 capacity + 1 resonance + 1 four-label zero-sum` 全部排除；精确
+  pointed 计数为 \(324\to12\to0\)。因此此前的 108 个形式对不再是
+  边界，而是空集。
+- 作用域严格限于固定 \(p=233\) 的三 singleton 长八块、\(m=3\)
+  掩码态。下一 ACTIVE 前沿是 \(m=4\) 剩余三个掩码轨；总 singleton
+  掩码数为 71，180 个 outer rows 仍开。
+
+## \(m=4\) 偶四次 incidence—纤维路线（ACTIVE）
+
+- 三个剩余掩码轨的字面 fringe 参数化与共同核完整原子零点已写成
+  九维偶四次评价系统；第一门是 exact rank stratification，而不是
+  再追加聚合计数。
+- 每个非空四次核族随后遍历 54,282 个 admissible 有向方向和三个
+  completion-pointed 角色，恢复四个 signed/fringe 目标纤维；重复
+  投影标签先合并，再执行重数 \(\le229\)、总容量 \(\le460\)、
+  bounded 零和自由与正负交叉横截。
+- 当前状态为 EXACT FINITE FRONTIER / INCOMPLETE；随机满秩现象不算
+  证明，单个 \(q\) 代表也不能替代整个零空间族。
+- \(O_1\) 的 exact rank-stratified 全扫已完成：
+  \(2,947,241,232\) 个合法 \((z,\tau)\) 只余四对，且共用一个显式
+  分解的 \(q\)。这是一项 PROVED_REDUCTION，不是 \(O_1\) closure。
+- 四例外的轻量 mixed 全扫仍余 4,576 个 pointed-direction 态；每个
+  pointed role 有 230 个对角方向令全部恢复纤维为空。\(O_1\) 当前
+  最小缺口是这一个真实核 \(q\) 的 460 位置生成积实现／complete
+  删除见证／新自动短块；\(O_2,O_3\) 仍从评价矩阵首门开始。

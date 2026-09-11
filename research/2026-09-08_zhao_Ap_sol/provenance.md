@@ -470,3 +470,63 @@
   `92ea6d42f54431cc243b3cbccc3d5acccfe3c7fe59d47cb1e8b176bfa61ee856`，
   审计证书
   `d9efb3c10e04f71f49cbe024c6f694d76de5272bce98f2817be8d2b93418bff6`。
+
+## 2026-09-11：\(m=3\) 九轨横截闭合
+
+- proof：
+  `proofs/unique_tail_p233_three_h8_m3_nine_orbit_short_closure.md`；
+  SHA-256
+  `4cad80a6813991a7725950f847ddcddcd24034882a1ed8393d51a11097702e9e`。
+- certificate script：
+  `unique_tail_p233_three_h8_m3_nine_orbit_short_closure.py`；SHA-256
+  `0425eecf697dd1ed70813ea57eb173b18ace4c5f32f1b3ff340711b95882eb7a`。
+- generated report：
+  `unique_tail_p233_three_h8_m3_nine_orbit_short_closure_report.json`；
+  SHA-256
+  `6bb6db5ee6f63f886aa88e5bfaf5fcfefad29c086b5a9a409639f94f624d8ea9`。
+- independent review：
+  `verifications/unique_tail_p233_three_h8_m3_nine_orbit_short_closure_independent_review.md`；
+  SHA-256
+  `c6428fcefa69b0c80726be7e182c11408574a0b30c3c2ed14d1a93af79df5d40`；
+  裁决 CORRECT。审计独立复算九个轨、27 个 completion-pointed 角色，
+  核对 25 个容量失败、一个共振失败和末个四标签零和，并重跑脚本得到
+  与冻结报告逐字节相同的 SHA-256。
+- 研究分工：`exchange_atom_attack` 形成横截引理、证明与自检证书；
+  `singleton_branch_attack` 在不改证明/脚本/报告的条件下做独立量词、
+  轨道、数值和逐字节复现审计；主实例绑定作用域、更新总账并执行
+  最终仓库回归。结论仅为固定 \(p=233,m=3\) 子分支闭合。
+
+## 2026-09-11：\(m=4\) 偶四次有限前沿
+
+- `doubleton_audit` 独立重建并只新增
+  `proofs/unique_tail_p233_three_h8_m4_three_orbit_quartic_frontier.md`；
+  主实例只修正三处 LaTeX 分隔符后复核逻辑接口。
+- 文件固定了 O1/O2/O3 的字面 incidence、共同偶四次全部原子零点、
+  mixed 纤维恢复与相反纤维横截门；没有运行完整枚举，也没有声称
+  排除任一 \(m=4\) 轨。最终 SHA-256 为
+  `0d6b5fdc11119297627d8b7696e89cdba9c313c639348815a732ad1e65b545a0`。
+
+## 2026-09-11：\(m=4\) 的 O1 四例外归约
+
+- proof：
+  `proofs/unique_tail_p233_three_h8_m4_O1_quartic_four_exception_reduction.md`；
+  SHA-256
+  `284dcf67ba82ee36af64fc8e0e8fe5faf110d518432139630550afcb8943924e`。
+- certificate script：
+  `unique_tail_p233_three_h8_m4_O1_quartic_rank_search.py`；SHA-256
+  `26e10f274399df0b9ae00940c11269de54b702ec4e2a259eee794cb3752b626a`。
+- generated report：
+  `unique_tail_p233_three_h8_m4_O1_quartic_rank_search_report.json`；
+  SHA-256
+  `a44e4cba9fa0c79e35e5581fd9a2659fd36e281882f504ed6795dd406aa47bc7`。
+- `doubleton_audit` 重建三轨字面系统并形成 O1 归约证明；
+  `singleton_branch_attack` 以独立实现复算正确秩分布、四例外、唯一
+  \(q\) 与 mixed 的 4,576 个边界态；主实例修复了首次快速消元中
+  重复乘逆元的实现错误，再建立不导入候选的全作用域证书。错误秩
+  统计未进入任何证明或总账。
+- independent review：
+  `verifications/unique_tail_p233_three_h8_m4_O1_quartic_four_exception_reduction_independent_review.md`；
+  SHA-256
+  `935cd6a6e29e1f0f31544f9af07e08586ad73ca0b6535089f7f44bc74cc75fff`；
+  裁决 CORRECT PROVED REDUCTION / O1 NOT CLOSED。独审另以通用 RREF
+  逐点复核 nullity-four 三点，确认最终行对覆盖修复不改变四例外。
