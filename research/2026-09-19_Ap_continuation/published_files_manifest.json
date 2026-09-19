@@ -1,0 +1,347 @@
+{
+  "commit": "adc60dab5ad511c55435124b7125c22766e99bd9",
+  "repository": "randomcat4/zhao",
+  "directory": "research/2026-09-19_Ap_continuation",
+  "files": [
+    {
+      "name": "Ap_progress_2026-09-19.md",
+      "sha": "6d5bc73abd8673523e420e2a4b8bbc11e87c0d5b",
+      "size": 12157
+    },
+    {
+      "name": "HANDOFF.md",
+      "sha": "aba71e5e0875a5683339cc9bc10d723dc27ec22d",
+      "size": 4186
+    },
+    {
+      "name": "K2L_path_certificate_report.json",
+      "sha": "7f5a286b7dd4dcbfe8a227dfd1cc2d3975aa6bc5",
+      "size": 422
+    },
+    {
+      "name": "K2L_path_certificates.jsonl.gz",
+      "sha": "0386285591b77101c035e097e5e474189ef5be3f",
+      "size": 80428
+    },
+    {
+      "name": "K2L_path_verification.json",
+      "sha": "e7b0a393f7af92634bac3412d324916067cad0a9",
+      "size": 565
+    },
+    {
+      "name": "M1_component_completion.json",
+      "sha": "f29f4b427dc09253cfc6288a31a3a117840e2bed",
+      "size": 15061
+    },
+    {
+      "name": "M1_generic_catalogue_verification.json",
+      "sha": "cdb426565a249743a9bc451160a42dfa3c12db50",
+      "size": 1023
+    },
+    {
+      "name": "M1_generic_scalar_probe.json",
+      "sha": "63179bad3db779970cf609a0486d6d7b10d74e7f",
+      "size": 4977
+    },
+    {
+      "name": "M1_generic_survivor_audit.json",
+      "sha": "792f1dfe2fd6f199c26a1a59ac20bcf149374d2c",
+      "size": 11466
+    },
+    {
+      "name": "M1_generic_survivors.json.gz",
+      "sha": "325926a350f7768131f160ab14f5cc3c76297e83",
+      "size": 36386
+    },
+    {
+      "name": "PROOF_INDEX.md",
+      "sha": "0f1eec68be4517da1043ab0a746ffccd648fa3b2",
+      "size": 4920
+    },
+    {
+      "name": "audit_M1_generic_survivors.py",
+      "sha": "917b291ddceefd2a6de847c9e1729957162a7960",
+      "size": 3502
+    },
+    {
+      "name": "catalogue_mixed_H.py",
+      "sha": "18504966c6b0315d7335fc858a90080be2b291b1",
+      "size": 3940
+    },
+    {
+      "name": "certify_K2L_paths.py",
+      "sha": "581d72ec7871a96441eda8ccc46f4fd96020c149",
+      "size": 3857
+    },
+    {
+      "name": "certify_two_active.py",
+      "sha": "77a43862a87daf13f74b1015ea67663a80442c3d",
+      "size": 6660
+    },
+    {
+      "name": "classify_two_active.py",
+      "sha": "c61123ac9c7ba3d69b78d048c842f7e8d615146a",
+      "size": 8743
+    },
+    {
+      "name": "complete_M1_components.py",
+      "sha": "7aa040655c6dec5e9ed05005433c9710f9e1a26f",
+      "size": 6769
+    },
+    {
+      "name": "double_star_catalogue_verification.json",
+      "sha": "7c9976b26e05e7bcd901decf301f6055bc2411ef",
+      "size": 688
+    },
+    {
+      "name": "double_star_scalar_probe.json",
+      "sha": "9b10c7016e8669faba0cef80d62296b54fa7e1fc",
+      "size": 35890
+    },
+    {
+      "name": "double_star_scalar_survivors.json.gz",
+      "sha": "7921141b086ffd9cb6d47c814e5c1e2562f34b16",
+      "size": 11493
+    },
+    {
+      "name": "double_star_survivor_verification.json",
+      "sha": "2aef8a81f3b5f9664431ffebd861808bbfdae058",
+      "size": 1282
+    },
+    {
+      "name": "general_star_verification.json",
+      "sha": "9b2d2be8ee207984be07a8f20a739c2f96b9c53b",
+      "size": 666
+    },
+    {
+      "name": "long_atom_moment_verification.json",
+      "sha": "a1aa14f3ab130f5d35c74aa26302e55861bcc07d",
+      "size": 531
+    },
+    {
+      "name": "mixed_H_graph_catalogue.json",
+      "sha": "3fb63eac76ca60424778f9783b9d684b54c249ac",
+      "size": 17722
+    },
+    {
+      "name": "probe_M1_generic.py",
+      "sha": "9a5b0cfd0dbf1c7f9358e6d85a19ad170b770f5e",
+      "size": 2125
+    },
+    {
+      "name": "probe_double_star.py",
+      "sha": "8bfb21878c565853c83bcc9544d00cdbd2ca4252",
+      "size": 3975
+    },
+    {
+      "name": "probe_two_active.py",
+      "sha": "c8c6475ccae82718a2f31ea08d7ae12dff1eaf85",
+      "size": 2292
+    },
+    {
+      "name": "small_star_constant_verification.json",
+      "sha": "36f8f95b789e8f76363b4d3b475e6c7639b348a0",
+      "size": 1720
+    },
+    {
+      "name": "star_exact_model.py",
+      "sha": "c04a57d33da652b4014d4cc8c801fa493e868a3a",
+      "size": 6475
+    },
+    {
+      "name": "three_leaf_affine_independence.md",
+      "sha": "08462f5bbff1e790b2cc60b298c803c4412fcb31",
+      "size": 5622
+    },
+    {
+      "name": "three_leaf_general_reduction.md",
+      "sha": "ae2e12f2a9e46e585b0c2f8e8625dab83de675e4",
+      "size": 5799
+    },
+    {
+      "name": "three_leaf_large_prime_exclusion.md",
+      "sha": "fa10cbe716decaca480c1c1eeaae19fa3c561fac",
+      "size": 8001
+    },
+    {
+      "name": "three_leaf_verification.json",
+      "sha": "c9f37bd6fb05daae1a0ba0cfa2843a2ff70a9bbe",
+      "size": 2623
+    },
+    {
+      "name": "two_active_collision_classification.json",
+      "sha": "0896c6cdad2366ab828bbb881da56d48b1492b92",
+      "size": 5690
+    },
+    {
+      "name": "two_active_exact_certificates.jsonl.gz",
+      "sha": "4944339f8d30b97bcad3c53a65a609aa0ed268cf",
+      "size": 54071
+    },
+    {
+      "name": "two_active_exact_report.json",
+      "sha": "b15537993ba19017c86f709ca8c1054ffeb80aee",
+      "size": 5253
+    },
+    {
+      "name": "two_active_exact_verification.json",
+      "sha": "fa9bef82449f7928cfa7ff5a14ce579b8dcaf3aa",
+      "size": 1543
+    },
+    {
+      "name": "two_active_scalar_probe.json",
+      "sha": "cfb4db8009d5730049b444a362a71a09a2779882",
+      "size": 15221
+    },
+    {
+      "name": "two_leaf_K2L_exclusion.md",
+      "sha": "a8b4563d3db307edecc18e7be821401b7e2e7a67",
+      "size": 4395
+    },
+    {
+      "name": "two_leaf_M1_generic_exclusion.md",
+      "sha": "3f762dd1504c5e3844af85e6d3571335edfef1a8",
+      "size": 5313
+    },
+    {
+      "name": "two_leaf_reduction.md",
+      "sha": "b5c3102a3a2e809e213f7e552031bbb7fda19bb9",
+      "size": 5349
+    },
+    {
+      "name": "two_leaf_small_star_constant_exclusion.md",
+      "sha": "2df1a8a26c521527132f818f9cf3ee0d2b0419e7",
+      "size": 2473
+    },
+    {
+      "name": "two_leaf_small_star_models.md",
+      "sha": "2c7a1c0d55ec118a315389ae5531a220a6a2e896",
+      "size": 3925
+    },
+    {
+      "name": "two_leaf_unique_cover_exclusion.md",
+      "sha": "ed4b7e27ec018ced823b5b32a795515f34abfaa4",
+      "size": 4885
+    },
+    {
+      "name": "two_leaf_verification.json",
+      "sha": "30320902c68e97eed07cf989799fce4fd4e97bd7",
+      "size": 518
+    },
+    {
+      "name": "verify_K2L_paths.py",
+      "sha": "2057e21c2a539239da1b69c40078b2ff6590ff06",
+      "size": 3333
+    },
+    {
+      "name": "verify_M1_generic_catalogue.py",
+      "sha": "533db314a12904655731d710e48e35f023e24f20",
+      "size": 5543
+    },
+    {
+      "name": "verify_double_star_catalogue.py",
+      "sha": "d07ade5744c34880f553f296feee1394f8812668",
+      "size": 6241
+    },
+    {
+      "name": "verify_double_star_survivors.py",
+      "sha": "2411d914cd4c3828efb6aaf322ab5951b9c45ebb",
+      "size": 4550
+    },
+    {
+      "name": "verify_general_star.py",
+      "sha": "335c5497b757867e2c6725430522455810da7903",
+      "size": 2971
+    },
+    {
+      "name": "verify_long_atom_moment_rank.py",
+      "sha": "b6bd6405a24db7ffb68cd15919ff2b4b98f1a581",
+      "size": 2705
+    },
+    {
+      "name": "verify_small_star_constant.py",
+      "sha": "681573cfc4152cd0aa07f2143a375d2b633c5e90",
+      "size": 5569
+    },
+    {
+      "name": "verify_three_leaf.py",
+      "sha": "c2c855b39ad0dce3f98b3bf1d0bd5993679e3baa",
+      "size": 5781
+    },
+    {
+      "name": "verify_two_active_exact.py",
+      "sha": "84872ef43c51d3d50eb0ba232b24ab34e7db895e",
+      "size": 6777
+    },
+    {
+      "name": "verify_two_leaf.py",
+      "sha": "6db9c0876438c39ab656cffaa5b5e9cd046906f8",
+      "size": 4089
+    },
+    {
+      "name": "verify_x0_fiber_algebra.py",
+      "sha": "3006aa389ad0cccc17e7d71d0e087586fcffd8ff",
+      "size": 3259
+    },
+    {
+      "name": "x0_B_projection_rank.md",
+      "sha": "5475813f60e7df354b78df7472738ca3ef07c192",
+      "size": 2864
+    },
+    {
+      "name": "x0_anchor_shift_multiplicity.md",
+      "sha": "e1fe48eb358cc2a09b86e6b54726dfcba4d88915",
+      "size": 4022
+    },
+    {
+      "name": "x0_doubleton_fiber_B_avoidance.md",
+      "sha": "42e6194c3b8f4df8641b55e01f45f29fd98f87a6",
+      "size": 3384
+    },
+    {
+      "name": "x0_fiber_algebra_verification.json",
+      "sha": "5784c59f3a838b509fb995e8b3ef7095f6172521",
+      "size": 799
+    },
+    {
+      "name": "x0_first_long_atom_reduction.md",
+      "sha": "77b4db26a861861c44bac0ab1b1a2222b194ac62",
+      "size": 6610
+    },
+    {
+      "name": "x0_mixed_transversal_structure.md",
+      "sha": "7b5e1300792cfad928cfd719aa000389a8708fdf",
+      "size": 9550
+    },
+    {
+      "name": "x0_projection_fiber_structure.md",
+      "sha": "d9a3fe88cb23e35539097e2beee4abe04917b511",
+      "size": 3913
+    },
+    {
+      "name": "x0_rank_one_B_PENDING_REVIEW.md",
+      "sha": "44b703b5f040a150ace602392f90de9330f1f567",
+      "size": 2750
+    },
+    {
+      "name": "x0_split_fiber_reduction.md",
+      "sha": "e4504b3474364f466a2b72966cfdf24207f6741c",
+      "size": 6544
+    },
+    {
+      "name": "x0_star_reduction.md",
+      "sha": "fc535a5c6fde6df3316e9918eb2cd66bf5affb11",
+      "size": 8961
+    },
+    {
+      "name": "x0_star_reduction_PENDING_REVIEW.md",
+      "sha": "56dd9c60d0a073495b279105be4c5432111103e1",
+      "size": 6342
+    },
+    {
+      "name": "x0_two_leaf_first_reduction.md",
+      "sha": "bf77b04658a59afc9bd14f2d23fcd4c8ec665b5a",
+      "size": 3390
+    }
+  ]
+}

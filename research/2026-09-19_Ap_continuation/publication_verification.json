@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "commit": "adc60dab5ad511c55435124b7125c22766e99bd9",
+  "remote_files_compared": 68,
+  "total_bytes": 530549,
+  "errors": [],
+  "scope": "Exact Git blob hash and byte count agreement between local files and the published GitHub snapshot; not a mathematical proof check."
+}

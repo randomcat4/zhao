@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "universal_residue_cases": [
+    {
+      "p_mod_12": 1,
+      "tail_type": "C",
+      "status": "PASS",
+      "counts_as_affine_p": {
+        "w": [
+          "3/4",
+          "-3/4"
+        ],
+        "tail": [
+          "1/4",
+          "3/4"
+        ],
+        "anchors": [
+          "1/2",
+          "-3/2"
+        ]
+      },
+      "b_count": 3
+    },
+    {
+      "p_mod_12": 1,
+      "tail_type": "D",
+      "status": "OPEN: tail mass insufficient"
+    },
+    {
+      "p_mod_12": 5,
+      "tail_type": "C",
+      "status": "PASS",
+      "counts_as_affine_p": {
+        "w": [
+          "3/4",
+          "-3/4"
+        ],
+        "tail": [
+          "1/4",
+          "3/4"
+        ],
+        "anchors": [
+          "1/2",
+          "-3/2"
+        ]
+      },
+      "b_count": 3
+    },
+    {
+      "p_mod_12": 5,
+      "tail_type": "D",
+      "status": "PASS",
+      "counts_as_affine_p": {
+        "w": [
+          "3/4",
+          "-3/4"
+        ],
+        "tail": [
+          "1/4",
+          "3/4"
+        ],
+        "anchors": [
+          "1/4",
+          "-9/4"
+        ]
+      },
+      "b_count": 3
+    },
+    {
+      "p_mod_12": 7,
+      "tail_type": "C",
+      "status": "PASS",
+      "counts_as_affine_p": {
+        "w": [
+          "3/4",
+          "-1/4"
+        ],
+        "tail": [
+          "1/4",
+          "1/4"
+        ],
+        "anchors": [
+          "1/2",
+          "-1/2"
+        ]
+      },
+      "b_count": 1
+    },
+    {
+      "p_mod_12": 7,
+      "tail_type": "D",
+      "status": "OPEN: tail mass insufficient"
+    },
+    {
+      "p_mod_12": 11,
+      "tail_type": "C",
+      "status": "PASS",
+      "counts_as_affine_p": {
+        "w": [
+          "3/4",
+          "-1/4"
+        ],
+        "tail": [
+          "1/4",
+          "1/4"
+        ],
+        "anchors": [
+          "1/2",
+          "-1/2"
+        ]
+      },
+      "b_count": 1
+    },
+    {
+      "p_mod_12": 11,
+      "tail_type": "D",
+      "status": "PASS",
+      "counts_as_affine_p": {
+        "w": [
+          "3/4",
+          "-1/4"
+        ],
+        "tail": [
+          "1/4",
+          "1/4"
+        ],
+        "anchors": [
+          "1/4",
+          "-3/4"
+        ]
+      },
+      "b_count": 1
+    }
+  ],
+  "scope": "Exact count bounds and actual zero-sum identity under the stated rank-one model assumptions; does not certify model completeness; D tail with p=1 mod6 remains open."
+}

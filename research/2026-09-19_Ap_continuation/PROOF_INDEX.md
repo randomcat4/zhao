@@ -1,6 +1,6 @@
 # 一般 A_p：本轮结果与重放索引
 
-更新时间：2026-09-19 07:34 UTC。相对于固定提交 `77c51458cdb943495d084ee3bfc82ebf810b3dcf` 的归档输入。
+更新时间：2026-09-19 07:42 UTC。相对于固定提交 `77c51458cdb943495d084ee3bfc82ebf810b3dcf` 的归档输入。
 
 ## 已完成的主要条件结论
 
@@ -65,5 +65,11 @@ python3 complete_M1_components.py
 `x0_B_projection_rank.md`：三个实际值互异的B投影秩为2；秩一B只能为b,b,a−2b，其中b全T重数为2或3，第三位置为全部B的唯一公共位置。因此两叶星m>0时两叶投影进一步要求线性无关。
 
 `x0_rank_one_B_PENDING_REVIEW.md` 保存三份b终支的进一步模型及显式短零和构造，标记为待完整复核，未纳入正式排除结论；残余p≡1 (mod6)模型仍开放。
+
+`verify_rank_one_short_zero.py` 对该待复核模型中的显式构造，精确核验全部素数模12类下的位置供给、锚点数、长度界和实际零和恒等式；结果保存在 `rank_one_short_zero_verification.json`。它不证明此前模型归约完整。
+
+`x0_two_sum_pair_graph_structure.md`：两个固定和值相差a时，实际值反射分量至多四顶点；非空半值环孤立，三点路径两端质量1，四点路径全部质量1。工具尚未用于关闭剩余星形。
+
+最终交接入口为 `HANDOFF.md`。`published_files_manifest.json` 和 `publication_verification.json` 记录固定提交adc60da中68个文件的精确发布一致性检查，不能解释为数学认证。
 
 `Ap_progress_2026-09-19.md` 记录持续进展和截止时间。小素数p<149、其他低高度情形及整个一般A_p仍未完成。
