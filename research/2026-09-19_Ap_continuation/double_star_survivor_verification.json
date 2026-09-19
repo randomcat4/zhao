@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "fixed_scalar_cases": 1427,
+  "free_scalar_cases": 10,
+  "all_prime_capacity_checks": 2854,
+  "cases_after_individual_capacity": [
+    {
+      "V": "1/2",
+      "mod4": 3,
+      "n": 5,
+      "positions": {
+        "x": 1,
+        "t": 4
+      },
+      "loop": true,
+      "p_interval": [
+        "149",
+        "None"
+      ]
+    },
+    {
+      "V": "1/2",
+      "mod4": 3,
+      "n": 6,
+      "positions": {
+        "x": 2,
+        "t": 5
+      },
+      "loop": false,
+      "p_interval": [
+        "149",
+        "None"
+      ]
+    },
+    {
+      "V": "1/2",
+      "mod4": 3,
+      "n": 6,
+      "positions": {
+        "x": 3,
+        "t": 0
+      },
+      "loop": false,
+      "p_interval": [
+        "149",
+        "None"
+      ]
+    },
+    {
+      "V": "5/2",
+      "mod4": 3,
+      "n": 7,
+      "positions": {
+        "x": 3,
+        "t": 6
+      },
+      "loop": true,
+      "p_interval": [
+        "149",
+        "None"
+      ]
+    }
+  ],
+  "cases_after_second_center_completion": 0,
+  "free_case_mandatory_mass_lower_bound": "4p+3 > 3p-3",
+  "scope": "Exact affine-in-p inequalities for both odd residue classes modulo 4, and rational second-component incompatibility. Conditional on the exhaustive scalar catalogue and the stated graph model."
+}

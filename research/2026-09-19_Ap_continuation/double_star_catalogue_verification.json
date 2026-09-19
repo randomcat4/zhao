@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "path_arrangements": 4340848,
+  "inconsistent_over_every_prime_ge149": 4339411,
+  "surviving_rational_parameter_cases": 1437,
+  "largest_contradiction_integer": 30,
+  "largest_pivot_determinant": 3,
+  "family_counts": {
+    "x": 272,
+    "xu": 2720,
+    "xv": 2720,
+    "xt": 2720,
+    "xz": 2720,
+    "xuv": 28560,
+    "xut": 28560,
+    "xuz": 28560,
+    "xvt": 28560,
+    "xvz": 28560,
+    "xtz": 28560,
+    "xuvt": 297024,
+    "xuvz": 297024,
+    "xutz": 297024,
+    "xvtz": 297024,
+    "xuvtz": 2970240
+  },
+  "scope": "Independent exhaustive recurrence reconstruction with bounded integer determinants; covers all p>=149, not a finite-prime extrapolation."
+}
