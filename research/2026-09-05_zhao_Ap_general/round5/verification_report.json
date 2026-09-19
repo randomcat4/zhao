@@ -1,0 +1,126 @@
+{
+  "status": "PARTIAL: neither A_p nor the entire h=p-4 branch is proved",
+  "construction_scope": "Actual x0=0 sequence, but height p-1; NOT an A_p counterexample",
+  "real_sequences": [
+    {
+      "p": 7,
+      "height": 6,
+      "zero_patterns": [
+        [4, 4, 4, 2, 3],
+        [3, 3, 3, 5, 4],
+        [6, 6, 6, 3, 1],
+        [5, 5, 5, 6, 2]
+      ],
+      "zero_lengths": [17, 18, 22, 23],
+      "four_layer_claim_applies": false
+    },
+    {
+      "p": 11,
+      "height": 10,
+      "zero_patterns": [
+        [7, 7, 7, 1, 4],
+        [10, 10, 10, 3, 1],
+        [9, 9, 9, 6, 2],
+        [8, 8, 8, 9, 3]
+      ],
+      "zero_lengths": [26, 34, 35, 36],
+      "four_layer_claim_applies": false
+    },
+    {
+      "p": 13,
+      "length": 52,
+      "height": 12,
+      "zero_lengths": [40, 41, 42, 43],
+      "x": [0, 880, 9580032, 252996480, 10648000],
+      "theta_mod_p": 12,
+      "all_point_pair_and_vector_checks": true,
+      "exact_deletion_orbits_checked": 56,
+      "satisfies_required_height": false,
+      "is_Ap_counterexample": false
+    },
+    {
+      "p": 17,
+      "length": 68,
+      "height": 16,
+      "zero_lengths": [52, 53, 54, 55],
+      "x": [0, 2240, 196804608, 79073280000, 319621120000],
+      "theta_mod_p": 16,
+      "all_point_pair_and_vector_checks": true,
+      "exact_deletion_orbits_checked": 56,
+      "satisfies_required_height": false,
+      "is_Ap_counterexample": false
+    },
+    {
+      "p": 23,
+      "length": 92,
+      "height": 22,
+      "zero_lengths": [70, 71, 72, 73],
+      "x": [0, 6160, 4766875344, 24525573644880, 2361721906544000],
+      "theta_mod_p": 22,
+      "all_point_pair_and_vector_checks": true,
+      "exact_deletion_orbits_checked": 56,
+      "satisfies_required_height": false,
+      "is_Ap_counterexample": false
+    },
+    {
+      "p": 31,
+      "length": 124,
+      "height": 30,
+      "zero_lengths": [94, 95, 96, 97],
+      "x": [0, 16240, 96191550000, 4710650598225000, 5788422077856600000],
+      "theta_mod_p": 30,
+      "all_point_pair_and_vector_checks": true,
+      "exact_deletion_orbits_checked": 56,
+      "satisfies_required_height": false,
+      "is_Ap_counterexample": false
+    },
+    {
+      "p": 47,
+      "length": 188,
+      "height": 46,
+      "zero_lengths": [142, 143, 144, 145],
+      "x": [0, 60720, 5470372165104, 4885970353001595000, 136107933237970653960000],
+      "theta_mod_p": 46,
+      "all_point_pair_and_vector_checks": true,
+      "exact_deletion_orbits_checked": 56,
+      "satisfies_required_height": false,
+      "is_Ap_counterexample": false
+    },
+    {
+      "p": 101,
+      "length": 404,
+      "height": 100,
+      "zero_lengths": [304, 305, 306, 307],
+      "x": [0, 646800, 7152314400000000, 922866810729355800000000, 4441129902566253253457100000000],
+      "theta_mod_p": 100,
+      "all_point_pair_and_vector_checks": true,
+      "exact_deletion_orbits_checked": 56,
+      "satisfies_required_height": false,
+      "is_Ap_counterexample": false
+    },
+    {
+      "p": 149,
+      "length": 596,
+      "height": 148,
+      "zero_lengths": [448, 449, 450, 451],
+      "x": [0, 2117584, 256213693908716544, 377205531100359074212619520, 21639807184956545556873879981447808],
+      "theta_mod_p": 148,
+      "all_point_pair_and_vector_checks": true,
+      "exact_deletion_orbits_checked": 56,
+      "satisfies_required_height": false,
+      "is_Ap_counterexample": false
+    }
+  ],
+  "cross_pair_lemma_regression": {
+    "p": 7,
+    "max_n": 7,
+    "cross_intersecting_complete_pair_graph_cases": 19005
+  },
+  "structural_arithmetic": {
+    "primes_checked": 300,
+    "maximum_prime_bound": 2000,
+    "p7_exceptional_block_checked": true,
+    "universal_proof_source": "research_note_zh.md (hand proof, not finite enumeration)"
+  },
+  "verifier_sha256": "4222e10ea33221f33df46cd02f2206529fc76f1ff0258f6b6ed6653c3ed1ceed"
+}

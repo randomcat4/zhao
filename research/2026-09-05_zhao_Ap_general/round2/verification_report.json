@@ -1,0 +1,23 @@
+{
+  "status": "ALL_EXACT_FINITE_INTERFACE_CHECKS_PASS",
+  "replayed_before_archive": true,
+  "universal_claim_proved_in_note": "Any A_p counterexample has h(S) <= p-4 (p >= 5).",
+  "not_claimed": [
+    "a complete A_p proof",
+    "a counterexample family",
+    "a full all-p profile Farkas certificate",
+    "exhaustive testing of sequences over F_p^4"
+  ],
+  "original_verifier_sha256": "576a5dc1579d373b92a5f1613d3a5fcc2b706711e4b3479933bf44861e8a66d8",
+  "original_full_report_sha256": "5cbe2aa41c6dda1bfe6bf899e5b5c868227f66b52a7f930fcd7ebee243e983fa",
+  "symbolic_interfaces_sha256": "af0a0a648222527558deb5d83c85f6625aea2e324cb2b5637d6fd5ea2d0b428a",
+  "key_counts": {
+    "primes_5_through_997": 166,
+    "compression_length_cases": 75292,
+    "literal_single_deletion_checks": 2760,
+    "first_moment_family_checks": 120,
+    "rational_cone_expansion_checks": 450,
+    "positional_AP_samples": 45
+  },
+  "scope": "Exact finite arithmetic/interface checks only; the universal theorem is the hand proof in research_note.md."
+}

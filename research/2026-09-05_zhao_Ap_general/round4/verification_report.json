@@ -1,0 +1,27 @@
+{
+  "status": "EXACT_FINITE_INTERFACES_PASS; UNIVERSAL_PROOFS_ARE_IN_NOTE",
+  "replayed_before_archive": true,
+  "not_claimed": [
+    "A_p proved",
+    "h <= p-5",
+    "theta=-1 excluded",
+    "enumeration of all sequences",
+    "formal kernel certification"
+  ],
+  "original_verifier_sha256": "504cb96943788d52c35c1c8dbbfbf313d407da5a3e81546147950a9ad840a691",
+  "original_full_report_sha256": "da153632715c1f0eeb703adba04b83e83b730b18c4f9976524eefa98a89e64fb",
+  "key_counts": {
+    "admissible_replacement_cases": 564,
+    "independent_positional_core_cases": 84,
+    "distinct_sum_fibre_checks": 78670,
+    "cover_tree_nodes": 84,
+    "outside_vertex_degree_cap": 64,
+    "tau4_edge_cap": 256
+  },
+  "key_thresholds": {
+    "tau_not_4_from_p": 29,
+    "tau_equals_2_from_p": 131,
+    "two_sided_link_fibre_restriction_from_p": 149
+  },
+  "scope": "Exact finite interfaces only. The new universal subbranch exclusions and the remaining h=p-4 gap are stated in research_note.md."
+}

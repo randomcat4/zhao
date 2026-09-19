@@ -1,0 +1,22 @@
+{
+  "research_status": "A_p_NOT_SOLVED",
+  "full_A_p_proof": false,
+  "verified_A_p_counterexample_family": false,
+  "finite_interfaces_passed": true,
+  "replayed_before_archive": true,
+  "original_verifier_sha256": "0bf317dfd87a35e1b72545b3f1d1ac62cc5eef99678e8e5a639cdd458e74e200",
+  "original_full_report_sha256": "7bfcf3de5e397a6e5ea411d97e3cb92ae0a9fe55c27a94687dd19eaa09f47ea6",
+  "key_counts": {
+    "deletion_layers": 276,
+    "homogeneous_basis_vectors": 3720,
+    "marked_quotient_moment_tests": 36,
+    "p7_formal_multiplicity_types_height_le_5": 748,
+    "p7_height_5_types_eliminated_by_uniform_proof": 427,
+    "p7_formal_types_remaining": 321,
+    "p7_height_4_formal_types": 225,
+    "local_witness_count_vectors_checked_including_empty": 5184,
+    "coefficient_type_patterns": 18,
+    "background_exception_identity_cases": 32
+  },
+  "scope": "Exact finite arithmetic/interface checks only; the all-prime statements are proved in research_note.md."
+}
