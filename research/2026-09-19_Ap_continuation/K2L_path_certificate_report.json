@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "cases": 20230,
+  "case_counts": {
+    "x": 210,
+    "xv": 1820,
+    "xz": 1820,
+    "xvz": 16380
+  },
+  "largest_absolute_integer_residual": 26,
+  "certificate_sha256": "4a44e573ec7b16c55463cbc635a0c2e61a2afb9d6542e493d05aadb9304f9857",
+  "scope": "Every path with at most 14 value vertices containing x, with zero or one endpoint loop; exact integer row identities exclude every prime p>=149."
+}

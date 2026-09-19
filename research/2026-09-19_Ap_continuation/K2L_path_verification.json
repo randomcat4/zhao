@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "cases_replayed": 20230,
+  "case_counts": {
+    "x": 210,
+    "xv": 1820,
+    "xz": 1820,
+    "xvz": 16380
+  },
+  "coverage": "All paths with <=14 vertices, containing x and any subset of v,z, and zero or one endpoint loop.",
+  "largest_absolute_integer_residual": 26,
+  "certificate_sha256": "4a44e573ec7b16c55463cbc635a0c2e61a2afb9d6542e493d05aadb9304f9857",
+  "scope": "Independent equation reconstruction and integer witness replay; common mathematical input is stated in two_leaf_K2L_exclusion.md. Not proof-assistant certification."
+}
