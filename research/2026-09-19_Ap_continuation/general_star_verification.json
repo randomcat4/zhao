@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Group-algebra affine-coefficient fixtures, scalar separations and arithmetic identities; not a proof-assistant certificate or exhaustive sequence search.",
+  "affine_group_algebra_fixtures": 40,
+  "prime_interfaces_checked": 164,
+  "small_prime_separation_checks": {
+    "11": {
+      "one_active_distinct": false,
+      "t_collision_distinct": false
+    },
+    "13": {
+      "one_active_distinct": false,
+      "t_collision_distinct": true
+    },
+    "17": {
+      "one_active_distinct": true,
+      "t_collision_distinct": true
+    },
+    "19": {
+      "one_active_distinct": false,
+      "t_collision_distinct": true
+    }
+  }
+}
