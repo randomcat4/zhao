@@ -1,0 +1,90 @@
+{
+  "M2_merged": {
+    "arrangements": 282144,
+    "bounded_integer_contradictions": 282144,
+    "maximum_contradiction_integer": 17,
+    "fixed_capacity_checks": 0,
+    "remaining": [],
+    "input_twice_mass_degree": {
+      "mass": {
+        "x": 2,
+        "u": 2,
+        "t": 4,
+        "v": -5
+      },
+      "degree": {
+        "x": 9,
+        "u": 2,
+        "t": -3,
+        "v": -3
+      }
+    }
+  },
+  "M2_distinct": {
+    "arrangements": 4340848,
+    "bounded_integer_contradictions": 4340804,
+    "maximum_contradiction_integer": 18,
+    "fixed_capacity_checks": 44,
+    "remaining": [],
+    "input_twice_mass_degree": {
+      "mass": {
+        "x": 2,
+        "u": 2,
+        "t": 4,
+        "v": -5,
+        "z": -5
+      },
+      "degree": {
+        "x": 9,
+        "u": 2,
+        "t": -3,
+        "v": -1,
+        "z": -1
+      }
+    }
+  },
+  "M1_merged": {
+    "arrangements": 282144,
+    "bounded_integer_contradictions": 282136,
+    "maximum_contradiction_integer": 15,
+    "fixed_capacity_checks": 8,
+    "remaining": [],
+    "input_twice_mass_degree": {
+      "mass": {
+        "x": 2,
+        "u": 2,
+        "t": 2,
+        "v": -3
+      },
+      "degree": {
+        "x": 7,
+        "u": 2,
+        "t": -1,
+        "v": -3
+      }
+    }
+  },
+  "M1_one_active": {
+    "arrangements": 4340848,
+    "bounded_integer_contradictions": 4340736,
+    "maximum_contradiction_integer": 15,
+    "fixed_capacity_checks": 112,
+    "remaining": [],
+    "input_twice_mass_degree": {
+      "mass": {
+        "x": 2,
+        "u": 2,
+        "t": 2,
+        "v": -3,
+        "z": -3
+      },
+      "degree": {
+        "x": 7,
+        "u": 2,
+        "t": -1,
+        "v": -1,
+        "z": -1
+      }
+    }
+  }
+}
