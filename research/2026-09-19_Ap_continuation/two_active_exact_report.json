@@ -1,0 +1,385 @@
+{
+  "status": "exact rational certificates generated and checked individually; independent replay pending",
+  "metadata": {
+    "threshold": 149,
+    "critical_residue_count": 41,
+    "max_exception_prime": 71,
+    "maximum_raw_difference_norm_squared": 18,
+    "permanent_difference_count": 0
+  },
+  "pattern_count": 81,
+  "case_count": 9828,
+  "certificate_count": 9823,
+  "remaining": [
+    {
+      "type": "case",
+      "pattern_index": 31,
+      "residue": "7/8",
+      "lift": 1,
+      "quotients": [
+        0,
+        0,
+        0
+      ],
+      "status": "requires_hand_closure",
+      "basis": [
+        [
+          "1",
+          "-1",
+          "-1/2",
+          "1/2"
+        ]
+      ],
+      "classes": [
+        [
+          "b1"
+        ],
+        [
+          "b2"
+        ],
+        [
+          "b3"
+        ],
+        [
+          "n12",
+          "r1"
+        ],
+        [
+          "n13"
+        ],
+        [
+          "n21"
+        ],
+        [
+          "n23"
+        ],
+        [
+          "r2"
+        ],
+        [
+          "r3"
+        ],
+        [
+          "t"
+        ],
+        [
+          "u1"
+        ],
+        [
+          "u2"
+        ],
+        [
+          "u3"
+        ],
+        [
+          "v1"
+        ],
+        [
+          "v2"
+        ],
+        [
+          "v3"
+        ],
+        [
+          "y"
+        ]
+      ]
+    },
+    {
+      "type": "case",
+      "pattern_index": 31,
+      "residue": "7/8",
+      "lift": 2,
+      "quotients": [
+        0,
+        0,
+        0
+      ],
+      "status": "requires_hand_closure",
+      "basis": [
+        [
+          "1",
+          "-1",
+          "-1/2",
+          "1/2"
+        ]
+      ],
+      "classes": [
+        [
+          "b1"
+        ],
+        [
+          "b2"
+        ],
+        [
+          "b3"
+        ],
+        [
+          "n12",
+          "r1"
+        ],
+        [
+          "n13"
+        ],
+        [
+          "n21"
+        ],
+        [
+          "n23"
+        ],
+        [
+          "r2"
+        ],
+        [
+          "r3"
+        ],
+        [
+          "t"
+        ],
+        [
+          "u1"
+        ],
+        [
+          "u2"
+        ],
+        [
+          "u3"
+        ],
+        [
+          "v1"
+        ],
+        [
+          "v2"
+        ],
+        [
+          "v3"
+        ],
+        [
+          "y"
+        ]
+      ]
+    },
+    {
+      "type": "case",
+      "pattern_index": 39,
+      "residue": "7/6",
+      "lift": 1,
+      "quotients": [
+        0,
+        0,
+        0
+      ],
+      "status": "requires_hand_closure",
+      "basis": [
+        [
+          "1",
+          "-2",
+          "0",
+          "1"
+        ]
+      ],
+      "classes": [
+        [
+          "b1"
+        ],
+        [
+          "b2"
+        ],
+        [
+          "b3"
+        ],
+        [
+          "n12",
+          "r3"
+        ],
+        [
+          "n13"
+        ],
+        [
+          "n21"
+        ],
+        [
+          "n23"
+        ],
+        [
+          "r1"
+        ],
+        [
+          "r2"
+        ],
+        [
+          "t"
+        ],
+        [
+          "u1"
+        ],
+        [
+          "u2"
+        ],
+        [
+          "u3"
+        ],
+        [
+          "v1"
+        ],
+        [
+          "v2"
+        ],
+        [
+          "v3"
+        ],
+        [
+          "y"
+        ]
+      ]
+    },
+    {
+      "type": "case",
+      "pattern_index": 50,
+      "residue": "13/8",
+      "lift": 1,
+      "quotients": [
+        0,
+        0,
+        0
+      ],
+      "status": "requires_hand_closure",
+      "basis": [
+        [
+          "1",
+          "-1",
+          "1/2",
+          "-1/2"
+        ]
+      ],
+      "classes": [
+        [
+          "b1"
+        ],
+        [
+          "b2"
+        ],
+        [
+          "b3"
+        ],
+        [
+          "n12"
+        ],
+        [
+          "n13"
+        ],
+        [
+          "n21",
+          "r2"
+        ],
+        [
+          "n23"
+        ],
+        [
+          "r1"
+        ],
+        [
+          "r3"
+        ],
+        [
+          "t"
+        ],
+        [
+          "u1"
+        ],
+        [
+          "u2"
+        ],
+        [
+          "u3"
+        ],
+        [
+          "v1"
+        ],
+        [
+          "v2"
+        ],
+        [
+          "v3"
+        ],
+        [
+          "y"
+        ]
+      ]
+    },
+    {
+      "type": "case",
+      "pattern_index": 61,
+      "residue": "13/6",
+      "lift": 1,
+      "quotients": [
+        0,
+        0,
+        0
+      ],
+      "status": "requires_hand_closure",
+      "basis": [
+        [
+          "1",
+          "-2",
+          "2",
+          "-1"
+        ]
+      ],
+      "classes": [
+        [
+          "b1"
+        ],
+        [
+          "b2"
+        ],
+        [
+          "b3"
+        ],
+        [
+          "n12"
+        ],
+        [
+          "n13"
+        ],
+        [
+          "n21"
+        ],
+        [
+          "n23",
+          "r2"
+        ],
+        [
+          "r1"
+        ],
+        [
+          "r3"
+        ],
+        [
+          "t"
+        ],
+        [
+          "u1"
+        ],
+        [
+          "u2"
+        ],
+        [
+          "u3"
+        ],
+        [
+          "v1"
+        ],
+        [
+          "v2"
+        ],
+        [
+          "v3"
+        ],
+        [
+          "y"
+        ]
+      ]
+    }
+  ]
+}

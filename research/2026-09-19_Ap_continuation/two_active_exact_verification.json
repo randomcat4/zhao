@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "scope": "Exact certificate replay plus modular catalogue checks and four symbolic hand closures; mathematical input reductions remain explicit dependencies.",
+  "critical_residues": 41,
+  "collision_patterns": 81,
+  "total_cases": 9828,
+  "exact_farkas_certificates": 9823,
+  "hand_closed_cases": [
+    {
+      "residue": "7/8",
+      "overlap": [
+        "n12",
+        "r1"
+      ],
+      "new_value_ell": "-11/8",
+      "maximum_separation_numerator": 25,
+      "capacity_margin": 5,
+      "lift": 1
+    },
+    {
+      "residue": "7/8",
+      "overlap": [
+        "n12",
+        "r1"
+      ],
+      "new_value_ell": "-11/8",
+      "maximum_separation_numerator": 25,
+      "capacity_margin": 5,
+      "lift": 2
+    },
+    {
+      "residue": "7/6",
+      "overlap": [
+        "n12",
+        "r3"
+      ],
+      "new_value_ell": "2/3",
+      "maximum_separation_numerator": 19,
+      "capacity_margin": 5,
+      "lift": 1
+    },
+    {
+      "residue": "13/8",
+      "overlap": [
+        "n21",
+        "r2"
+      ],
+      "new_value_ell": "-11/8",
+      "maximum_separation_numerator": 25,
+      "capacity_margin": 5,
+      "lift": 1
+    },
+    {
+      "residue": "13/6",
+      "overlap": [
+        "n23",
+        "r2"
+      ],
+      "new_value_ell": "4/3",
+      "maximum_separation_numerator": 20,
+      "capacity_margin": 5,
+      "lift": 1
+    }
+  ],
+  "independent_modular_catalogues": [
+    149,
+    151,
+    257
+  ],
+  "certificate_sha256": "95d64f0409630ddf7aaad4af6cf7d44137364cb832ea30793f23cdaf92ee66d2"
+}
