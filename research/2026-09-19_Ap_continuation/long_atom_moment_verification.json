@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "global_monomials_checked": 10,
+  "global_constraint_rank": 4,
+  "marked_monomials_checked": 6,
+  "marked_constraint_rank": 2,
+  "count_parameterization_as_constant_and_D_coefficients": [
+    [
+      "-1",
+      "-1"
+    ],
+    [
+      "1/3",
+      "7/3"
+    ],
+    [
+      "1/3",
+      "16/3"
+    ],
+    [
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "3"
+    ]
+  ],
+  "scope": "Exact rational monomial expansion and row rank; verifies the moment interface, not realizability or exclusion of x0=0."
+}
