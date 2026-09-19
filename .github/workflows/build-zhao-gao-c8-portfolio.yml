@@ -27,7 +27,18 @@ jobs:
       - name: Reassemble LaTeX source
         run: |
           cd docs/research-status
-          cat source-parts-20260919/part*.b64 | tr -d '[:space:]' | base64 -d > 2026-09-19-zhao-gao-portfolio.tex
+          cat \
+            source-parts-20260919/part00.b64 \
+            source-parts-20260919/part01.b64 \
+            source-parts-20260919/fix02.b64 \
+            source-parts-20260919/fix03.b64 \
+            source-parts-20260919/part03.b64 \
+            source-parts-20260919/part04.b64 \
+            source-parts-20260919/part05.b64 \
+            source-parts-20260919/part06.b64 \
+            source-parts-20260919/fix08.b64 \
+            source-parts-20260919/fix09.b64 \
+          | tr -d '[:space:]' | base64 -d > 2026-09-19-zhao-gao-portfolio.tex
           test "$(sha256sum 2026-09-19-zhao-gao-portfolio.tex | cut -d' ' -f1)" = "059ea1d2816efce3ee69e3c5a7735bbeb60b5abe2fdb477bafce169b2d76a3e3"
 
       - name: Build PDF
