@@ -19,30 +19,33 @@ jobs:
       - name: Install XeLaTeX and fonts
         run: |
           sudo apt-get update
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y             texlive-xetex texlive-lang-chinese texlive-latex-extra             texlive-fonts-recommended fonts-noto-cjk fonts-liberation             fonts-dejavu-core
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            texlive-xetex texlive-lang-chinese texlive-latex-extra \
+            texlive-fonts-recommended fonts-noto-cjk fonts-liberation \
+            fonts-dejavu-core
 
       - name: Reassemble LaTeX source
         run: |
           cd docs/research-status
-          cat source-parts/part*.b64 | tr -d '\n\r' | base64 -d > zhao-gao-c8-portfolio-2026-09-18.tex
-          test "$(sha256sum zhao-gao-c8-portfolio-2026-09-18.tex | cut -d' ' -f1)" = "14abb53928b00fec6d4bc7887b703410fc972465f40198017602dfddb18ba665"
+          cat source-parts-20260919/part*.b64 | tr -d '[:space:]' | base64 -d > 2026-09-19-zhao-gao-portfolio.tex
+          test "$(sha256sum 2026-09-19-zhao-gao-portfolio.tex | cut -d' ' -f1)" = "059ea1d2816efce3ee69e3c5a7735bbeb60b5abe2fdb477bafce169b2d76a3e3"
 
       - name: Build PDF
         run: |
           cd docs/research-status
           for i in 1 2 3 4; do
-            xelatex -interaction=nonstopmode -halt-on-error zhao-gao-c8-portfolio-2026-09-18.tex
+            xelatex -interaction=nonstopmode -halt-on-error 2026-09-19-zhao-gao-portfolio.tex
           done
-          test -s zhao-gao-c8-portfolio-2026-09-18.pdf
+          test -s 2026-09-19-zhao-gao-portfolio.pdf
 
       - name: Commit reproducible report
         run: |
-          rm -rf docs/research-status/source-parts docs/research-status/BUILD_PORTFOLIO
+          rm -rf docs/research-status/source-parts docs/research-status/source-parts-20260919 docs/research-status/BUILD_PORTFOLIO
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A docs/research-status
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "docs: build Zhao/Gao/C8 portfolio report [skip ci]"
+          git commit -m "docs: build 2026-09-19 Zhao/Gao/C8 portfolio [skip ci]"
           git push
