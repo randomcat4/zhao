@@ -1,0 +1,526 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2.15cm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{pifont}
+\setlength{\parindent}{2em}
+\setlength{\headheight}{14pt}
+\emergencystretch=2em
+\setlength{\parskip}{0.45em}
+\setlist[itemize]{leftmargin=2em,itemsep=0.25em,topsep=0.25em}
+\setlist[enumerate]{leftmargin=2.2em,itemsep=0.25em,topsep=0.25em}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,urlcolor=blue!55!black,citecolor=blue!55!black}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Zhao / Gao 研究线进展报告}
+\rhead{2026-09-19}
+\cfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.3pt}
+\definecolor{good}{RGB}{33,120,82}
+\definecolor{warn}{RGB}{173,104,0}
+\definecolor{bad}{RGB}{165,40,40}
+\definecolor{muted}{RGB}{90,90,90}
+\newcommand{\ok}{\textcolor{good}{\ding{51}}}
+\newcommand{\hold}{\textcolor{warn}{\ding{115}}}
+\newcommand{\no}{\textcolor{bad}{\ding{55}}}
+\newcommand{\repo}[2]{\href{#2}{\texttt{#1}}}
+\newcommand{\status}[1]{\textbf{#1}}
+\newcommand{\prob}[1]{\textbf{#1}}
+\titleformat{\section}{\Large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.8em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{0.8em}{}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Zhao / Gao 相关组合数论研究线：进展、完成度与成功概率}\\[0.5em]
+{\large 通俗中文总览 + English technical appendix}\\[0.8em]
+{\small 证据截点：2026-09-19；覆盖 main、开放/已关闭拉取请求、议题、游离分支 与后续形式化仓库}
+\end{center}
+
+\vspace{0.5em}
+\noindent\textbf{先说结论。} 这批研究已经不能再简单理解成“Zhao 问题”和“C8 问题”两条线。更准确的图景是：Zhao 原论文的若干猜想已有多条明确反例；从中抽出的 $C_p^4$ 精确阈值问题形成新的 $A_p/B_p$ 主线，其中 $p=5$ 已闭合，一般 $A_p$ 已推进很深而 $B_p$ 仍卡在全局拼接；Gao 方向则已经完成一个很强的正面结果——任意有限奇 $p$ 群核的广义二面体 Gao 公式已经无条件 Lean 核验——而真正未解的是混合素数核、C8 母题以及 extraspecial Davenport 方向。
+
+\tableofcontents
+\newpage
+
+\part*{第一部分：纯中文通俗版}
+\addcontentsline{toc}{part}{第一部分：纯中文通俗版}
+
+\section{怎么读“完成度”和“最后能证出来的概率”}
+
+这里的“完成度”不是代码量、文件数或做了多少轮实验，而是我对\textbf{承重数学义务已经关闭多少}的主观估计。一个问题可以有几百个引理，却仍然卡在一个与主问题同样难的统一引理上；这种情况下文件很多，但完成度不能按页数算。
+
+“最终能证出来的概率”也不是统计概率，而是基于当前结构、失败路线、已有反例、可复核证明资产和剩余缺口给出的研究赔率。它回答的是：\textbf{如果继续沿目前最好的思路推进，原目标按原样成立并最终被证明的可能性大概多高。} 如果把“找到反例也算把问题解决”，那么若干开放线的“最终解决概率”会比“最终证明概率”再高一截。
+
+\begin{longtable}{p{0.27\textwidth}p{0.13\textwidth}p{0.17\textwidth}p{0.33\textwidth}}
+\toprule
+问题线 & 完成度 & 最终证明概率 & 一句话判断\\
+\midrule
+\endhead
+Zhao 原论文反例包的已声明范围 & 100\% & 100\% & 已解决，不是预测。多个猜想或分支已有明确反例与独立核验。\\
+$K(C_5^4)=10$ & 100\% & 100\% & 两个端点都已终审闭合。\\
+一般 $A_p$ & 约 70\% & 约 60--70\% & 目前最值得继续押注的开放线；已有很多一般素数结构，但缺最后统一不相容定理。\\
+一般 $B_p$ & 约 45--50\% & 约 40--50\% & 已压到很窄的“两长度”分支，但仍缺跨原子/补集的干净拼接引理。\\
+$K(C_p^4)=2p$（全素数） & 约 45\% & 约 35--45\% & A 很可能先解决，真正风险点是 B。\\
+奇 $p$ 群核的广义二面体 Gao 公式 & 100\% & 100\% & 主定理已无条件 Lean 核验。\\
+一般奇阶混合素数核的 OA-PM & 约 55\% & 约 40--50\% & 已压到具体编码/覆盖残差，但命题本身仍可能为假。\\
+一般奇阶混合素数核的 Gao 公式 & 约 50\% & 约 45--55\% & 即使 OA-PM 失败，Gao 本身仍可能走别的前端。\\
+C8 母题 & 约 55--60\% & 约 30--40\% & 局部分支成果最多，但“同一位置/同一见证/同一提升”的接口债最重。\\
+额外特殊群的 Davenport 常数主线 & 约 40\% & 约 25--35\% & 工具变强，但当前 卡点 仍接近原问题本身。\\
+论文中一般权重定理的完整 Lean 化 & 约 85\% & $>90\%$ & 这是形式化工程概率，不是一个新的数学猜想赔率。\\
+\bottomrule
+\end{longtable}
+
+\section{Zhao 这棵树：哪些已经结束，哪些是后来抽出来的新问题}
+
+\subsection{原论文里的几个猜想并不是同一件事}
+
+Zhao 方向最容易产生误解的地方，是把“赵问题”当成一个单一猜想。实际上，现有档案已经明确处理了多个不同猜想或分支：
+
+\begin{itemize}
+\item \textbf{原 Conjecture 6.1 已被反驳。} 群 $C_2\oplus C_4^3$ 上有一条长度 12 的显式序列，没有长度至多 9 的非空零和位置子序列；结合已有上界得到
+\[
+s_{\le 9}(C_2\oplus C_4^3)=13.
+\]
+\item \textbf{Conjecture 6.2 的上分支已被反驳。} 对每个素数幂 $n\ge2$，$C_n^4$ 上有一个统一的无限反例族；另外还有 $C_2^2\oplus C_4^2$、$C_2^{12}$ 等有限见证。
+\item \textbf{Conjecture 6.2 的下分支也被反驳。} 在 $C_2^7$ 上，已经得到精确值 $s_{\le4}(C_2^7)=12$，与该分支的严格不等式冲突。
+\item \textbf{Conjecture 6.4 的下分支也失败。} 同样在 $C_2^7$，已知精确值 $s_4(C_2^7)=15$ 给出反例。
+\item \textbf{Conjecture 1.2 有一个补充的偶秩反例。} $C_2^8$ 的见证已经核验，但原论文自己也已经知道 Conjecture 1.2 不是普遍正确，所以这个例子是补充证据，不是“第一次发现猜想为假”。
+\end{itemize}
+
+这些结果说明：\textbf{“统一半值分界”作为全体有限阿贝尔群的普遍图景已经不成立。} 更简单地说，不能期待所有群的阈值都长期贴着 $D(G)/2$。例如
+\[
+K(C_2\oplus C_{2t})=2t,\qquad D=2t+1,
+\]
+所以 $K/D\to1$，而不是趋于 $1/2$。
+
+二元群里也已经得到一个更强的负面信号：对足够大的 $r$，仓库中有显式证明给出
+\[
+K(C_2^r)\le \lceil0.49r\rceil,
+\]
+这足以排除“普遍等于一半再加常数”的简单渐近猜想。不过真正的 $K(C_2^r)$ 渐近常数尚未求出。
+
+\subsection{$C_5^4$ 已经真正闭合}
+
+从失败的一般猜想中抽出的 $C_p^4$ 精确阈值问题是另一件事。对 $p=5$，两个最后端点都已经独立终审：
+\[
+s_{\le13}(C_5^4)\le21,
+\qquad
+s_{\le14}(C_5^4)\le20.
+\]
+结合前面的尾区间归约，得到
+\[
+\boxed{K(C_5^4)=10}.
+\]
+
+这个结论的证据并不是一条单薄的计算：A 端点按重数分成互斥区间，三重值、仅双重值、平方自由三类全部关闭；平方自由终支还有相互独立的投影证书路线和全量稠密纤维重放。B 端点也经过依赖感知的终审。
+
+\subsection{一般 $C_p^4$ 现在只剩两个端点}
+
+对每个素数 $p\ge5$，已有严格归约
+\[
+K(C_p^4)\in\{2p,3p-1,3p\}.
+\]
+因此只需要解决两个端点：
+\[
+A_p:\quad s_{\le3p-2}(C_p^4)\le5p-4,
+\]
+\[
+B_p:\quad s_{\le3p-1}(C_p^4)\le5p-5.
+\]
+两者都成立，才得到 $K(C_p^4)=2p$。
+
+\subsection{$A_p$：比主分支 README 看上去更靠前}
+
+只读 main 或 Draft PR \#7 会低估 $A_p$。Zhao 仓库里有一个没有挂在 PR 上的研究分支：
+\begin{center}
+\repo{research/ap-sol-xhigh-20260908}{https://github.com/randomcat4/zhao/tree/research/ap-sol-xhigh-20260908}
+\end{center}
+它相对 main 前进 43 个提交，并把研究一直推进到 9 月 10 日左右。
+
+目前稳定的主干结论至少包括：假想反例必须满足
+\[
+h(S)\le p-4.
+\]
+更深的分支工作又表明，在相应近 Davenport 的秩三补原子里，商值重数可以逐层从 $p-1,p-2,p-3$ 排到至多 $p-4$；等号层又被压成单高度结构。短块族不再只是“有很多块”，而是满足逐点、逐对、逐三点的固定带符号度，并形成四次量级的交换网络。
+
+另外，Property B、多最大原子的共同核、唯一尾的偏序与交换菱形、删点覆盖、低次群代数系数与实际位置之间的桥都已经形成可复用工具。固定素数 $p=233$ 上，若干极深的 $m=3$、$m=4$ 子前沿也被逐层关闭；这些固定素数结果不能冒充一般素数定理，但它们说明现有结构工具确实在工作，而不是纯粹无命中搜索。
+
+为什么我仍只给 $A_p$ 约 60--70\% 的最终证明概率？因为最后缺的不是一个单独的数值格，而是一个\textbf{统一位置不相容定理}：必须同时控制真实位置、统一商标签、实际高度、自动诱导的全部短零和块、多个长补的内部子集和与交换网络。现在已经知道很多“只看其中两三层”的加强命题是假的，所以最后那一步很可能需要新的统一语言，而不是再加一个局部计数恒等式。
+
+\subsection{$B_p$：真正的总题风险点}
+
+$B_p$ 已经被压到很窄的两长度分支。假设存在反例，当前主障碍可写成：所有非空零和长度都属于
+\[
+\{3p,4p-4\},
+\]
+并且确实存在长度 $4p-4$ 的零和原子。
+
+在这个分支中已经得到很多强约束，包括
+\[
+Z_{3p}(S)\ge8p+1,
+\]
+以及对每个 $4p-4$ 原子的 $p-1$ 元补集的等和等长性质、线性长度泛函、一次和二次纤维矩、退化二次型结构等。
+
+但独立审计已经指出，现有高阶删除同余、局部纤维矩和 成对完成条件 仍然可能在放宽模型里同时成立。真正缺的是一个\textbf{干净完成/跨链拼接引理}：必须迫使不同补集、不同原子或不同 完成纤维 在同一个全局位置序列上彼此兼容，而不能各自在局部模型里成立。这个缺口比 $A_p$ 当前缺口更“基础”，所以我对 B 更保守。
+
+\section{Gao 这棵树：真正已经证明了什么}
+
+\subsection{最重要的正面结果已经不是候选：奇 $p$ 群核公式已形式化}
+
+Gao 方向中最重要的成功链是：
+\[
+C_q^2\to C_q^3\to C_q^4\to C_q^r\to C_{p^k}^r\to A,
+\]
+其中 $A$ 是任意非平凡有限阿贝尔奇 $p$ 群。
+
+最终定理是
+\[
+\boxed{
+E\bigl(A\rtimes_{-1}C_2\bigr)
+=2|A|+D(A)
+=|A\rtimes_{-1}C_2|+d\bigl(A\rtimes_{-1}C_2\bigr).
+}
+\]
+
+这个结果现在已经在 \repo{randomcat4/gaoLEAN}{https://github.com/randomcat4/gaoLEAN} 中有稳定的无条件 Lean 入口。仓库整体仍写着“部分形式化”，原因不是这个 Gao 主定理还缺条件，而是论文还陈述了一个更一般的任意权重定理；主定理实际只需要普通权重和正负权重两个特化，这两个特化已经闭合。
+
+所以以后不能再把“奇 $p$ 群 Gao 公式”列在开放数学问题里。它现在主要是论文、先行工作、新颖性表达和一般权重形式化的出版工程问题。
+
+\subsection{一般权重定理：是形式化剩余，不是 Gao 主定理剩余}
+
+论文中的一般权重结论允许任意非空整数权集 $W$，结构分支还带有最大公约数条件。当前 Lean 已经完成大量基础设施、底层强状态、商群输入运输和跨类型强归纳调度，但还缺非平凡商群状态/输出的完整运输，以及无条件强状态的最终装配。
+
+这条线我给 $>90\%$ 的形式化完成概率，因为主要难点已经从“数学是否成立”变成“忠实地把来源定理的强状态一路搬过递归”。
+
+\section{Gao 的真正未解方向之一：混合素数的奇阶核}
+
+\subsection{OA-PM 是一个核心中间问题，但不是唯一道路}
+
+对一般有限非平凡奇阶阿贝尔群 $A$，一个重要中间猜想是
+\[
+D_{\pm}(A)\le \left\lceil\frac{D(A)}2\right\rceil.
+\]
+它可以驱动一般 混合素数核的广义二面体 Gao 证明，但现在还没有被证明。
+
+这条研究线已经不只是“随便试几个群”。在 \repo{randomcat4/gao0824}{https://github.com/randomcat4/gao0824} 的 PR \#9 中，已经证明并核验例如
+\[
+D_{\pm}(C_3^{10}\oplus C_5)
+\le18
+\le\left\lceil\frac{D(C_3^{10}\oplus C_5)}2\right\rceil.
+\]
+随后又发展了 Delsarte--Fourier 证书、pointed Davenport excess、三元码覆盖半径工具等，并把一个关键残差从权重 18/19 一路压到严格射影不可分解的 19 点结构，再进入 rank-$(3,6)$ 的局部分类。Round 10 已经把某些五点层完全分类，但还没有 FULL 候选。
+
+这条线的正面信号是：残差在变具体。负面信号是：已经发现多种“看起来足够强”的密度、立方体、平移交、补集对称等普适桥都是假的。因此 OA-PM 不能靠简单把 $p$ 群证明逐 Sylow 同步来完成。
+
+\subsection{混合素数核的 Gao 公式可能比 OA-PM 本身更容易}
+
+同一个仓库的 PR \#10--\#17 发展了另一套前端：固定目标子群下降、低反射仿射入口，以及恰 2、3、4、5、6 个反射时的可验证入口定理。这里还得到一个很重要的方法反例：\textbf{“任意极值序列都会自动提供所需 capacity entry”是假的}，而且在所有奇循环核上都有系统反例。
+
+这件事反而有助于判断路线：一般 Gao 公式不能把所有希望都押在 OA-PM 上，但低反射/子群下降等前端说明还有别的进入方式。因此我对 混合素数核的 Gao 公式本身的最终证明赔率略高于 OA-PM。
+
+\section{C8：局部成果很多，但总题仍然最吃接口}
+
+C8 母题是
+\[
+E(C_m\rtimes_{-1}C_8)=12m\qquad(m\ge3\text{ 为奇数}).
+\]
+
+它和上面的 generalized dihedral 奇 $p$ 群公式不是同一个群族，不能互相代替。
+
+\subsection{已经真正关闭的独立子分支}
+
+\begin{itemize}
+\item 六反射 选定原子 + \textbf{恰两反射伴随原子} 已经全参数证明并合并，对全部奇 $m\ge21$ 与合法参数成立。
+\item 六反射 选定原子 + 高反射伴随原子 已经关闭整个 $m=21$，并关闭 $q>2m/3$ 的无限子带；剩余 $m\ge23,\ 2\le q\le2m/3$。
+\item 周期商提升方面已经有一个明确的\textbf{方法反例}：商群里的碰撞不能自动提升为原群中同一个 labelled split。这个死路以后不应再复活。
+\end{itemize}
+
+\subsection{N8 又拆出了几条独立问题}
+
+N8 前沿后来独立出稠密商支持/电荷纤维、small-trace monochromatic slab/circuit-span、right-representation fibre 等子问题。它们现在仍是开放研究问题，不应和 D2--D5 混成一个“还没做完的 N8”。
+
+\subsection{8 月 30 日的 D2--D5 当前都停在精确卡点}
+
+\begin{longtable}{p{0.12\textwidth}p{0.78\textwidth}}
+\toprule
+线 & 当前最小缺口\\
+\midrule
+\endhead
+D2 & 需要从 ambient/core fibre 真正推出同一商像、半提升差为 2 的实际 \texttt{PAIR\_2}，最新单元既没有构造出，也没有证明不可能。\\
+D3 & 对给定排序可以定义状态，但缺少与排序无关的 规范选择器；H1/H2 主机接口没有被真正实现。\\
+D4 & 周期/复合壳已经压缩很多，但缺一个 实际对象桥接定理，把谱、原始标签、固定见证和 literal complement 在同一对象上同时消费。\\
+D5 & 一个五前提条件定理通过了窄范围新鲜复核，但五个前提本身没有被全局强迫，所以仍不能关闭 D5。\\
+\bottomrule
+\end{longtable}
+
+此外，$m=7$ sparse frontier 有一个大规模精确分类候选，但 tracker 仍要求独立最终审查，不能因为相关集成 PR 已合并就自动把这一候选升级成认证定理。
+
+C8 的危险之处在于：很多局部问题最后都变成“必须是同一位置、同一见证、同一排序或同一提升”的耦合问题。这样的接口债不会因为参数少而自动消失，所以我给它的最终证明概率明显低于 $A_p$。
+
+\section{另一个历史上归在 Gao 档案中的独立问题：额外特殊群的 Davenport 常数}
+
+这条线数学上应单独看。主目标是类似
+\[
+d(G^+_{2,p})=5(p-1)
+\]
+以及相关的 $\mathrm{MPV}(2,p,k)$ 结构问题。
+
+R12--R20 已经积累了 lower-staircase incompatibility、odd-ladder、若干 defect/capacity/carrier 工具，并永久排除了 KPACK、KEX0-MPV、无条件 factor convolution 等错误路线。当前 卡点 被明确命名为
+\[
+\texttt{UNSATURATED\_HEAVY\_FACE\_TRANSFER}.
+\]
+更关键的是，仓库自己已经标明所谓“普适完成引理”与原问题接近等价，而不是一个明显更弱的中间目标。因此这条线目前仍处在“工具很多，但最终桥还没有变简单”的阶段。
+
+\section{如果现在重新分配研究资源，我会怎么排}
+
+如果目标是“下一阶段最可能产出一个完整的新定理”，我的顺序是：
+
+\begin{enumerate}
+\item \textbf{一般 $A_p$。} 现在已经有足够多一般素数结构，最像一个能通过统一不相容定理收口的问题。
+\item \textbf{混合素数核 Gao 与 $B_p$。} 两者都已经把困难定位为“跨对象同步/干净拼接”，一旦找到正确结构引理，可能一次关闭很大范围。
+\item \textbf{C8。} 局部资产最多，但分支和接口债也最多；继续做必须坚持“同一对象上的统一见证”，否则很容易再堆一批不承重局部引理。
+\item \textbf{extraspecial Davenport。} 暂时不适合无边界扩大战线，除非先找到一个真正比主问题弱的 transfer 定理或可证伪有限门。
+\end{enumerate}
+
+Gao 的奇 $p$ 群 generalized-dihedral 线则不再属于“证明优先级”，而属于“论文、一般权重形式化、先行工作和发表表达”的收尾优先级。
+
+\section{本报告实际查了哪些位置}
+
+这次不是只读 main。主要证据来自以下仓库、PR/issue 和游离分支：
+
+\begin{itemize}
+\item \repo{randomcat4/zhao}{https://github.com/randomcat4/zhao}：主分支、拉取请求 \#1--\#7、议题 \#5/\#8、\path{research/ap-general-low-multiplicity-20260905}、\path{research/general-bp-thread-20260905}、\path{audit/independent-followup-rounds2-5-20260907}、\path{research/ap-sol-xhigh-20260908}。
+\item \repo{randomcat4/gaoLEAN}{https://github.com/randomcat4/gaoLEAN}：无条件主定理、当前一般权重形式化计划、manuscript-to-Lean 映射、最新构建/递归提交。
+\item \repo{randomcat4/gao0824}{https://github.com/randomcat4/gao0824}：mixed-prime OA-PM PR \#9，固定目标/低反射/2--6 反射拉取请求 \#10--\#17，以及 OA-PM 议题 \#1--\#5。
+\item \repo{randomcat4/gao0823}{https://github.com/randomcat4/gao0823}：任意秩、homocyclic、一般奇 $p$ 群的历史整合、publication/Lean packaging、mixed-prime 工具状态。
+\item \repo{randomcat4/gao0822}{https://github.com/randomcat4/gao0822}：arbitrary-rank 早期 R19、extraspecial Davenport R12--R20、C8 Kneser 卡点 attack。
+\item \repo{randomcat4/zhuang-gao-cyclic-index-two}{https://github.com/randomcat4/zhuang-gao-cyclic-index-two}：C8 主分支、拉取请求 \#27--\#30、\#51--\#54、\#59--\#62、N8 议题 \#41--\#43、$m=7$ Issue \#56，以及大量独立研究分支。
+\item \repo{randomcat4/euler-mathai2026-jcta-private}{https://github.com/randomcat4/euler-mathai2026-jcta-private}：Zhao 多猜想反例包与 Gao formalization case 的整理版证据。
+\end{itemize}
+
+旧档案里的状态若与后续更强仓库冲突，以后续更强证据为准。例如 \texttt{gao0823} 曾写“奇 $p$ 群公式尚未形式化”，这已经被后来的 \texttt{gaoLEAN} 无条件主定理覆盖。
+
+\newpage
+\part*{Part II: English technical appendix}
+\addcontentsline{toc}{part}{Part II: English technical appendix}
+
+\section{Scope, evidence hierarchy, and probability convention}
+
+This appendix records the same portfolio in a more technical form. The evidence hierarchy used throughout is:
+\begin{enumerate}
+\item unconditional formal theorem / clean build and axiom audit;
+\item self-contained proof with fresh independent mathematical verification;
+\item self-contained proof candidate with incomplete independent gate;
+\item strict partial theorem or verified structural reduction;
+\item exact finite certificate or 方法反例;
+\item heuristic/no-hit evidence.
+\end{enumerate}
+
+The completion percentages are subjective estimates of closed load-bearing obligations, not proportions of files or branches. The proof probabilities estimate the chance that the theorem as currently stated is true and can be completed along the current research program. They should not be interpreted as calibrated frequencies.
+
+\section{Zhao portfolio}
+
+\subsection{Disproved source conjectures and exact finite consequences}
+
+The independently checked release package contains the following results.
+
+\begin{enumerate}
+\item Conjecture 6.1 is false for $G=C_2\oplus C_4^3$. A length-12 occurrence sequence has no nonempty zero sum of length at most 9, and the matching source upper bound gives
+\[
+s_{\le9}(C_2\oplus C_4^3)=13.
+\]
+\item The upper branch of Conjecture 6.2 is false for the infinite family $C_n^4$, every prime-power $n\ge2$. The standard eight-type sequence of length $8(n-1)$ has no zero sum of length at most $2n-1$.
+\item Finite upper-branch witnesses also occur in $C_2^2\oplus C_4^2$ and $C_2^{12}$.
+\item The lower branch of Conjecture 6.2 is false at $C_2^7$, with exact value $s_{\le4}(C_2^7)=12$.
+\item The lower branch of Conjecture 6.4 is false at $C_2^7$ using $s_4(C_2^7)=15$.
+\item Conjecture 1.2 admits a supplemental even-rank witness in $C_2^8$; the source already records other failures of Conjecture 1.2.
+\end{enumerate}
+
+The general ``half-$D$'' threshold picture is also untenable over all finite abelian groups. In particular, rank-two groups $C_2\oplus C_{2t}$ satisfy $K=2t$ and $K/D\to1$. A separate binary-family argument gives $K(C_2^r)\le \lceil0.49r\rceil$ for sufficiently large $r$, enough to rule out a universal $1/2$ main term with bounded additive error.
+
+\subsection{The solved $C_5^4$ endpoint}
+
+The two terminal inequalities
+\[
+s_{\le13}(C_5^4)\le21,
+\qquad
+s_{\le14}(C_5^4)\le20
+\]
+are independently audited. Hence
+\[
+K(C_5^4)=10.
+\]
+The $A$ endpoint is covered by mutually exclusive multiplicity regimes: at least one triple value, double-only, and squarefree. The squarefree regime has two independent closing routes (projection certificate and dense-fibre replay). The $B$ endpoint depends on a previously audited finite-computation layer but has a dependency-aware terminal review.
+
+\subsection{General prime reduction}
+
+For every prime $p\ge5$ the research archive reduces the exact threshold to
+\[
+K(C_p^4)\in\{2p,3p-1,3p\}.
+\]
+Thus the two remaining endpoints are
+\[
+A_p:\ s_{\le3p-2}(C_p^4)\le5p-4,
+\qquad
+B_p:\ s_{\le3p-1}(C_p^4)\le5p-5.
+\]
+
+\subsection{Current $A_p$ frontier, including the non-PR branch}
+
+The branch \path{research/ap-sol-xhigh-20260908} is 43 commits ahead of main and materially supersedes a reading based only on Draft PR \#7. The frozen contradiction problem assumes a counterexample $S$ of length $5p-4$ with $h(S)=p-4$ after the general height reduction.
+
+Verified or independently audited structures include:
+\begin{itemize}
+\item exclusion of multiplicity levels $p-1,p-2,p-3$ in the relevant near-Davenport rank-three complements for $p\ge11$, with the $p-4$ equality layer forced into a single-height regime;
+\item fixed signed point/pair/triple incidence identities for the short-block families;
+\item quartic-scale exchange networks and multiple explicit local countermodels showing that low-order incidence alone is insufficient;
+\item Property-B based multi-atom restrictions, common-kernel rigidity, unique-tail partial orders, exchange diamonds, and complete-deletion/coverage dichotomies;
+\item exact fixed-prime reductions at $p=7,13,233$, used as discovery and falsification infrastructure rather than as universal proof.
+\end{itemize}
+
+The remaining global issue is not another scalar congruence. It is a unified occurrence-level incompatibility theorem coupling the same labelled positions, quotient labels, heights, automatically induced short blocks, mixed targets, complement internal sums, Hasse identities, and atom constraints.
+
+\subsection{Current $B_p$ frontier}
+
+The general-prime $B_p$ thread reduces the top obstruction to the two-length branch where all nonempty zero sums have lengths in $\{3p,4p-4\}$ and a $4p-4$ atom exists. Established inputs include
+\[
+Z_{3p}(S)\ge8p+1,
+\]
+completion congruences through high deletion order, equal-sum/equal-length restrictions on $(p-1)$-complements, a length functional $\ell_R$, first/second fibre moments, and degeneracy constraints for the induced quadratic form.
+
+The independent follow-up audit shows that local moment/PSD/Moebius consistency and even pair-completion can survive in relaxed common-label models. The missing theorem is a clean-completion/cross-link statement forcing value-changing maximum-support completions and compatibility across multiple complements. This is the principal reason the $B_p$ probability is lower than the $A_p$ probability.
+
+\section{Gao: solved odd-primary generalized dihedral theorem}
+
+For every nontrivial finite abelian odd $p$-group
+\[
+A=\bigoplus_i C_{p^{\lambda_i}},
+\qquad
+\operatorname{Dih}(A)=A\rtimes_{-1}C_2,
+\]
+\repo{randomcat4/gaoLEAN}{https://github.com/randomcat4/gaoLEAN} contains an unconditional Lean proof of
+\[
+E(\operatorname{Dih}(A))
+=2|A|+D(A)
+=|\operatorname{Dih}(A)|+d(\operatorname{Dih}(A)).
+\]
+The stable endpoint is \texttt{GaoLean.ConcreteGDihedral.gaoGeneralizedDihedralOddPGroup}. Clean-build and axiom-audit records report no \texttt{sorry}, \texttt{admit}, project axiom, \texttt{unsafe}, \texttt{native\_decide}, or \texttt{sorryAx} escape in the release surface.
+
+Historically, the route progressed through rank 2, rank 3, rank 4, arbitrary elementary-abelian rank, homocyclic prime-power groups, and general odd $p$-groups. Those earlier repository statuses are now superseded by the formal endpoint.
+
+\section{General-weight GMO formalization boundary}
+
+The manuscript-wide verdict remains partially verified only because its Theorem 2.2 is stated for arbitrary nonempty integer weight sets $W$, with a structural clause under $\gcd(W)=1$. The $W=\{1\}$ and $W=\{\pm1\}$ specializations needed for the Gao theorem are already internal and unconditional.
+
+The remaining formalization work is concentrated in nontrivial quotient strong-state transport and unconditional strong-state assembly. This is why the estimated completion probability for the formalization is high even though the manuscript-wide label is not yet ``fully checked''.
+
+\section{Mixed-prime odd kernels: OA-PM and OA-GAO}
+
+\subsection{OA-PM}
+
+The central intermediate inequality is
+\[
+D_{\pm}(A)\le\left\lceil\frac{D(A)}2\right\rceil
+\]
+for arbitrary finite nontrivial odd-order abelian $A$.
+
+Verified progress in gao0824 PR \#9 includes an exact case
+\[
+D_{\pm}(C_3^{10}\oplus C_5)\le18
+\le\left\lceil\frac{D(C_3^{10}\oplus C_5)}2\right\rceil,
+\]
+a ternary Delsarte--Fourier certificate framework, pointed Davenport excess reductions, covering/lift equivalences, elimination of the weight-18 projective-sign-transform residual, elimination of projectively decomposable weight-19 supports, and further rank-$(3,6)$ interface classification. Round 10 still leaves a genuine unresolved layer; no full OA-PM candidate is currently certified.
+
+Several natural proof bridges have explicit countermodels. In particular, independent Sylow coefficient choices do not synchronize automatically, density/cube arguments do not force the required mixed-prime labels, and $D(A)$ cannot be silently replaced by $D^*(A)$.
+
+\subsection{OA-GAO without assuming OA-PM}
+
+PRs \#10--\#17 in gao0824 develop a fixed-target labelled subgroup-descent backend and low-reflection front ends. They also record a systematic counterexample to an unconditional capacity-entry principle for all odd cyclic kernels. Verified low-reflection results cover at most one reflection and then exactly 2, 3, 4, 5, and 6 reflections under carefully stated interfaces and exceptions.
+
+These results do not prove the full mixed-prime Gao formula, but they are evidence that OA-PM is not the only possible front end. Consequently the probability assigned to OA-GAO is slightly higher than the probability assigned to OA-PM itself.
+
+\section{C8 portfolio}
+
+The main target is
+\[
+E(C_m\rtimes_{-1}C_8)=12m
+\qquad(m\ge3\text{ odd}).
+\]
+
+\subsection{Closed or sharply advanced subbranches}
+
+\begin{itemize}
+\item The six-reflection selected / exactly-two-reflection companion branch is proved for all odd $m\ge21$ and legal odd parameters (merged PR \#27).
+\item The high-reflection companion branch is closed at $m=21$ and on the infinite subband $q>2m/3$ (merged PR \#30). The residual remains $m\ge23$ and $2\le q\le2m/3$.
+\item PR \#28 gives an explicit periodic lift-defect certificate showing that a quotient collision does not automatically lift to the same labelled original-group split. This is a method falsifier, not a C8 counterexample.
+\end{itemize}
+
+\subsection{Independent N8-derived problems}
+
+Open subproblems include the dense quotient-support/charge-fibre slice (Issue \#41), the small-trace monochromatic slab/circuit-span inverse problem (Issue \#42), and right-representation fibre packing (Issue \#43). These should be tracked as independent obligations rather than collapsed into a generic N8 label.
+
+\subsection{D2--D5 generation-5 卡点s}
+
+\begin{itemize}
+\item D2: actual same-occurrence core-core \texttt{PAIR\_2} production requires an ambient-to-core fibre coupling; the latest unit returned incomplete with no promotable claim.
+\item D3: source-relative ordering states exist, but no canonical ordering-independent selector is available for the required host interface.
+\item D4: periodic/composite structure is heavily compressed, but an 实际对象桥接定理 from spectra/raw labels/fixed witnesses/literal complements to a registered endpoint is missing.
+\item D5: a narrow 五前提条件定理 passed fresh review, but the antecedents are not universally forced, so the lane remains open.
+\end{itemize}
+
+A separate $m=7$ sparse candidate has a large exact classifier but still carries an explicit independent-review requirement.
+
+\section{Extraspecial Davenport / symplectic line}
+
+The extraspecial project, historically archived beside Gao, is mathematically separate. The targets $d(G^+_{2,p})=5(p-1)$ and the relevant $\mathrm{MPV}(2,p,k)$ statements remain unresolved.
+
+R12--R20 produce reusable local tools (LSI, odd-ladder, defect/capacity/carrier interfaces) and explicit refutations of several attractive but false routes (KPACK, KEX0-MPV, unconditional factor convolution). The current gate is \texttt{UNSATURATED\_HEAVY\_FACE\_TRANSFER}. The archive itself classifies the universal completion lemma as an equivalent 卡点 rather than a clearly weaker theorem, which explains the conservative probability estimate.
+
+\section{Consolidated technical status table}
+
+\begin{longtable}{p{0.25\textwidth}p{0.14\textwidth}p{0.15\textwidth}p{0.36\textwidth}}
+\toprule
+Line & Completion & Proof chance & Current decisive boundary\\
+\midrule
+\endhead
+Zhao source-conjecture counterexample package & 100\% & 100\% & Released scope is already proved/disproved with exact certificates.\\
+$K(C_5^4)=10$ & 100\% & 100\% & Closed endpoint pair.\\
+General $A_p$ & $\sim70\%$ & 60--70\% & Need one uniform occurrence/label/height incompatibility theorem.\\
+General $B_p$ & $\sim45$--50\% & 40--50\% & Need clean-completion/cross-link across maximal-support complements.\\
+$K(C_p^4)=2p$ & $\sim45\%$ & 35--45\% & Bottleneck dominated by $B_p$.\\
+Odd-primary generalized-dihedral Gao & 100\% & 100\% & Unconditional Lean endpoint exists.\\
+General-weight GMO Lean coverage & $\sim85\%$ & $>90\%$ & Nontrivial quotient strong-state transport and assembly.\\
+Mixed-prime OA-PM & $\sim55\%$ & 40--50\% & Irreducible weight-19/rank-interface style residuals; theorem may be false.\\
+Mixed-prime OA-GAO & $\sim50\%$ & 45--55\% & OA-PM incomplete, but low-reflection/descent alternatives exist.\\
+C8 main theorem & $\sim55$--60\% & 30--40\% & Same-object interface coupling across N8/N-LOCK/C0 style lanes.\\
+Extraspecial Davenport & $\sim40\%$ & 25--35\% & Unsaturated heavy-face transfer remains near-equivalent to the target.\\
+\bottomrule
+\end{longtable}
+
+\section{Repository and branch map}
+
+\begin{itemize}
+\item Zhao main archive: \url{https://github.com/randomcat4/zhao}
+\item Zhao deep $A_p$ branch: \url{https://github.com/randomcat4/zhao/tree/research/ap-sol-xhigh-20260908}
+\item Gao formal endpoint: \url{https://github.com/randomcat4/gaoLEAN}
+\item Mixed-prime / fixed-target work: \url{https://github.com/randomcat4/gao0824}
+\item Integrated Gao research archive: \url{https://github.com/randomcat4/gao0823}
+\item Earlier Gao/extraspecial archive: \url{https://github.com/randomcat4/gao0822}
+\item C8 main research repository: \url{https://github.com/randomcat4/zhuang-gao-cyclic-index-two}
+\item MATH-AI case collection: \url{https://github.com/randomcat4/euler-mathai2026-jcta-private}
+\end{itemize}
+
+\section{Final caution}
+
+A closed local branch, a green checker, or a large finite classification is not automatically a proof of the parent theorem. Conversely, an old archive label such as ``not formalized'' can become stale after a stronger downstream repository lands a formal endpoint. The portfolio above therefore resolves status by the strongest later evidence and records 方法反例s separately from theorem counterexamples.
+
+\end{document}
