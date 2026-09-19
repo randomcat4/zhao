@@ -61,9 +61,21 @@ def main():
             q['exclusion']=None
             survivors.append(q)
     assert len(report)==32 and len(survivors)==9 and max(q['n'] for q in survivors)==5
+    final_survivors=[]
+    for q in report:
+        es={frozenset(e) for e in q['edges']}
+        triangle=any(all(frozenset(e) in es for e in combinations(c,2))
+                     for c in combinations(range(q['n']),3))
+        matching_two=any(not e & f for e,f in combinations(es,2))
+        q['star_reduction_exclusion']=(q['exclusion'] or
+            ('triangle' if triangle else 'two_disjoint_edges' if matching_two else None))
+        if q['star_reduction_exclusion'] is None:
+            final_survivors.append(q)
+    assert sorted((q['n'],len(q['edges'])) for q in final_survivors)==[(2,1),(3,2),(4,3)]
     Path(__file__).with_name("mixed_H_graph_catalogue.json").write_text(json.dumps(report,indent=2)+"\n")
     print('graph shapes',len(report))
     print('remaining shapes',len(survivors),'maximum active vertices',max(q['n'] for q in survivors))
+    print('after hand-proved triangle and matching exclusions:',len(final_survivors),'stars')
     for q in report:
         if q['vertex_cover_number']==2:
             print(q['canonical'],'n',q['n'],'two',len(q['two_covers']),'minimal3',len(q['minimal_three_covers']))

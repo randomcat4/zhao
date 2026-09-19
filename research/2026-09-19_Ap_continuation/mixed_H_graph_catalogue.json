@@ -37,7 +37,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": "two_disjoint_edges"
   },
   {
     "canonical": [
@@ -84,7 +85,8 @@
         4
       ]
     ],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": "two_disjoint_edges"
   },
   {
     "canonical": [
@@ -124,7 +126,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "degree_three_with_distant_edge"
+    "exclusion": "degree_three_with_distant_edge",
+    "star_reduction_exclusion": "degree_three_with_distant_edge"
   },
   {
     "canonical": [
@@ -168,7 +171,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "degree_four"
+    "exclusion": "degree_four",
+    "star_reduction_exclusion": "degree_four"
   },
   {
     "canonical": [
@@ -215,7 +219,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -261,7 +266,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -311,7 +317,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -355,7 +362,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -403,7 +411,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -455,7 +464,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -491,7 +501,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": null
   },
   {
     "canonical": [
@@ -531,7 +542,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": "two_disjoint_edges"
   },
   {
     "canonical": [
@@ -577,7 +589,8 @@
         4
       ]
     ],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": "two_disjoint_edges"
   },
   {
     "canonical": [
@@ -621,7 +634,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "degree_four"
+    "exclusion": "degree_four",
+    "star_reduction_exclusion": "degree_four"
   },
   {
     "canonical": [
@@ -673,7 +687,8 @@
         4
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -719,7 +734,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -769,7 +785,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -813,7 +830,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -861,7 +879,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -913,7 +932,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -937,7 +957,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": null
   },
   {
     "canonical": [
@@ -983,7 +1004,8 @@
         3
       ]
     ],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": null
   },
   {
     "canonical": [
@@ -1031,7 +1053,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "degree_four"
+    "exclusion": "degree_four",
+    "star_reduction_exclusion": "degree_four"
   },
   {
     "canonical": [
@@ -1082,7 +1105,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -1132,7 +1156,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -1180,7 +1205,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -1220,7 +1246,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": "triangle"
   },
   {
     "canonical": [
@@ -1266,7 +1293,8 @@
         3
       ]
     ],
-    "exclusion": null
+    "exclusion": null,
+    "star_reduction_exclusion": "triangle"
   },
   {
     "canonical": [
@@ -1310,7 +1338,8 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "degree_four"
+    "exclusion": "degree_four",
+    "star_reduction_exclusion": "degree_four"
   },
   {
     "canonical": [
@@ -1361,7 +1390,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -1411,7 +1441,8 @@
         3
       ]
     ],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   },
   {
     "canonical": [
@@ -1459,6 +1490,7 @@
       ]
     ],
     "minimal_three_covers": [],
-    "exclusion": "unique_two_cover"
+    "exclusion": "unique_two_cover",
+    "star_reduction_exclusion": "unique_two_cover"
   }
 ]
