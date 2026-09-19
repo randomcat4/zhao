@@ -1,0 +1,1045 @@
+[
+  {
+    "input": {
+      "V": "-7",
+      "T": "1",
+      "n": 6,
+      "positions": {
+        "x": 1,
+        "t": 5
+      },
+      "loop": true,
+      "mod4": 1,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          7
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          -6
+        ],
+        [
+          -1,
+          0,
+          3
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 67584,
+      "raw_free_cases": 0,
+      "max_residual": 32,
+      "necessary_candidates": 9
+    },
+    "unrepresented_special_values": [
+      "u",
+      "z"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-7",
+      "T": "1",
+      "n": 6,
+      "positions": {
+        "x": 1,
+        "t": 5
+      },
+      "loop": true,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          7
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          -6
+        ],
+        [
+          -1,
+          0,
+          3
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 67584,
+      "raw_free_cases": 0,
+      "max_residual": 32,
+      "necessary_candidates": 9
+    },
+    "unrepresented_special_values": [
+      "u",
+      "z"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-5",
+      "T": "1",
+      "n": 5,
+      "positions": {
+        "x": 1,
+        "z": 4
+      },
+      "loop": true,
+      "mod4": 1,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          7
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          -6
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 103584,
+      "raw_free_cases": 0,
+      "max_residual": 26,
+      "necessary_candidates": 17
+    },
+    "unrepresented_special_values": [
+      "h"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-5",
+      "T": "1",
+      "n": 5,
+      "positions": {
+        "x": 1,
+        "z": 4
+      },
+      "loop": true,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          7
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          -6
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 103584,
+      "raw_free_cases": 0,
+      "max_residual": 26,
+      "necessary_candidates": 17
+    },
+    "unrepresented_special_values": [
+      "h"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-5",
+      "T": "-1",
+      "n": 6,
+      "positions": {
+        "x": 2,
+        "z": 5
+      },
+      "loop": false,
+      "mod4": 1,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -5
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 67584,
+      "raw_free_cases": 0,
+      "max_residual": 26,
+      "necessary_candidates": 15
+    },
+    "unrepresented_special_values": [
+      "h"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-5",
+      "T": "-1",
+      "n": 6,
+      "positions": {
+        "x": 2,
+        "z": 5
+      },
+      "loop": false,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -5
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 67584,
+      "raw_free_cases": 0,
+      "max_residual": 26,
+      "necessary_candidates": 15
+    },
+    "unrepresented_special_values": [
+      "h"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-5",
+      "T": "-5",
+      "n": 6,
+      "positions": {
+        "x": 3,
+        "z": 0
+      },
+      "loop": false,
+      "mod4": 1,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 67584,
+      "raw_free_cases": 0,
+      "max_residual": 26,
+      "necessary_candidates": 15
+    },
+    "unrepresented_special_values": [
+      "h"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-5",
+      "T": "-5",
+      "n": 6,
+      "positions": {
+        "x": 3,
+        "z": 0
+      },
+      "loop": false,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 67584,
+      "raw_free_cases": 0,
+      "max_residual": 26,
+      "necessary_candidates": 15
+    },
+    "unrepresented_special_values": [
+      "h"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-9",
+      "T": "4",
+      "n": 7,
+      "positions": {
+        "x": 3,
+        "z": 6
+      },
+      "loop": true,
+      "mod4": 1,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          -5
+        ]
+      ]
+    },
+    "status": "EXCLUDED_LOOP_RANK_TWO"
+  },
+  {
+    "input": {
+      "V": "-9",
+      "T": "4",
+      "n": 7,
+      "positions": {
+        "x": 3,
+        "z": 6
+      },
+      "loop": true,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          -5
+        ]
+      ]
+    },
+    "status": "EXCLUDED_LOOP_RANK_TWO"
+  },
+  {
+    "input": {
+      "V": "-9",
+      "T": "-3",
+      "n": 5,
+      "positions": {
+        "x": 2,
+        "h": 1
+      },
+      "loop": true,
+      "mod4": 1,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 103584,
+      "raw_free_cases": 0,
+      "max_residual": 42,
+      "necessary_candidates": 8
+    },
+    "unrepresented_special_values": [
+      "z"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "-9",
+      "T": "-3",
+      "n": 5,
+      "positions": {
+        "x": 2,
+        "h": 1
+      },
+      "loop": true,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 103584,
+      "raw_free_cases": 0,
+      "max_residual": 42,
+      "necessary_candidates": 8
+    },
+    "unrepresented_special_values": [
+      "z"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "1/2",
+      "T": "-7/2",
+      "n": 8,
+      "positions": {
+        "x": 3,
+        "u": 7,
+        "h": 0
+      },
+      "loop": false,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -5
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 4230,
+      "raw_free_cases": 0,
+      "max_residual": 16,
+      "necessary_candidates": 1
+    },
+    "unrepresented_special_values": [
+      "t",
+      "z"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "1/2",
+      "T": "2",
+      "n": 8,
+      "positions": {
+        "x": 4,
+        "u": 0,
+        "h": 7
+      },
+      "loop": false,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          5
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -4
+        ]
+      ]
+    },
+    "catalogue_stats": {
+      "arrangements": 4230,
+      "raw_free_cases": 0,
+      "max_residual": 16,
+      "necessary_candidates": 1
+    },
+    "unrepresented_special_values": [
+      "t",
+      "z"
+    ],
+    "status": "EXCLUDED_NO_COMPLETION",
+    "complete_partition_certificates": []
+  },
+  {
+    "input": {
+      "V": "1/2",
+      "T": "2",
+      "n": 8,
+      "positions": {
+        "x": 4,
+        "u": 0,
+        "h": 7
+      },
+      "loop": true,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          -1,
+          7
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -6
+        ]
+      ]
+    },
+    "status": "EXCLUDED_LOOP_RANK_TWO"
+  },
+  {
+    "input": {
+      "V": "-7",
+      "T": "-3",
+      "n": 10,
+      "positions": {
+        "x": 6,
+        "u": 2,
+        "v": 0,
+        "z": 9,
+        "h": 1
+      },
+      "loop": true,
+      "mod4": 1,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          -1,
+          1,
+          3
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          4
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          -1,
+          1,
+          -3
+        ]
+      ]
+    },
+    "status": "EXCLUDED_LOOP_RANK_TWO"
+  },
+  {
+    "input": {
+      "V": "-7",
+      "T": "-3",
+      "n": 10,
+      "positions": {
+        "x": 6,
+        "u": 2,
+        "v": 0,
+        "z": 9,
+        "h": 1
+      },
+      "loop": true,
+      "mod4": 3,
+      "p_interval": [
+        "149",
+        "None"
+      ],
+      "forms": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          -1,
+          1,
+          3
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          4
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          -1,
+          1,
+          -3
+        ]
+      ]
+    },
+    "status": "EXCLUDED_LOOP_RANK_TWO"
+  }
+]
