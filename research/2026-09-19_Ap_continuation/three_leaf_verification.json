@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "scope": "Finite coordinate, positional-incidence, and integer-capacity interfaces only; not an exhaustive A_p search.",
+  "named_external_value_count": 16,
+  "allowed_four_block_templates": [
+    {
+      "y": 1,
+      "b0": 1,
+      "b1": 1,
+      "u2": 1
+    },
+    {
+      "y": 1,
+      "b0": 1,
+      "b2": 1,
+      "u1": 1
+    },
+    {
+      "y": 1,
+      "b0": 1,
+      "t": 1,
+      "r0": 1
+    },
+    {
+      "y": 1,
+      "b0": 1,
+      "u0": 1,
+      "v0": 1
+    },
+    {
+      "y": 1,
+      "b0": 1,
+      "v1": 1,
+      "n10": 1
+    },
+    {
+      "y": 1,
+      "b0": 1,
+      "v2": 1,
+      "n20": 1
+    },
+    {
+      "y": 1,
+      "b1": 1,
+      "b2": 1,
+      "u0": 1
+    },
+    {
+      "y": 1,
+      "b1": 1,
+      "t": 1,
+      "r1": 1
+    },
+    {
+      "y": 1,
+      "b1": 1,
+      "v0": 1,
+      "n01": 1
+    },
+    {
+      "y": 1,
+      "b1": 1,
+      "u1": 1,
+      "v1": 1
+    },
+    {
+      "y": 1,
+      "b1": 1,
+      "v2": 1,
+      "n21": 1
+    },
+    {
+      "y": 1,
+      "b2": 1,
+      "t": 1,
+      "r2": 1
+    },
+    {
+      "y": 1,
+      "b2": 1,
+      "v0": 1,
+      "n02": 1
+    },
+    {
+      "y": 1,
+      "b2": 1,
+      "v1": 1,
+      "n12": 1
+    },
+    {
+      "y": 1,
+      "b2": 1,
+      "u2": 1,
+      "v2": 1
+    },
+    {
+      "b0": 1,
+      "b1": 1,
+      "b2": 1,
+      "t": 1
+    }
+  ],
+  "forbidden_actual_templates_in_named_alphabet": [
+    {
+      "t": 1,
+      "v0": 1,
+      "v1": 1,
+      "v2": 1
+    }
+  ],
+  "random_positional_degree_checks": 100,
+  "arithmetic_checks": [
+    {
+      "p": 11,
+      "triples_checked": 48,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 13,
+      "triples_checked": 76,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 17,
+      "triples_checked": 156,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 19,
+      "triples_checked": 211,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 23,
+      "triples_checked": 348,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 29,
+      "triples_checked": 607,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 31,
+      "triples_checked": 709,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 47,
+      "triples_checked": 1813,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 101,
+      "triples_checked": 9319,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 149,
+      "triples_checked": 20887,
+      "minimum_capacity_margin": 3
+    },
+    {
+      "p": 251,
+      "triples_checked": 60769,
+      "minimum_capacity_margin": 3
+    }
+  ],
+  "total_triples_checked": 94943
+}
