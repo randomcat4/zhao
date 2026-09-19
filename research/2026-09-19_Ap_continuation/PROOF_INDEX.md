@@ -1,6 +1,6 @@
 # 一般 A_p：本轮结果与重放索引
 
-更新时间：2026-09-19 07:23 UTC。相对于固定提交 `77c51458cdb943495d084ee3bfc82ebf810b3dcf` 的归档输入。
+更新时间：2026-09-19 07:34 UTC。相对于固定提交 `77c51458cdb943495d084ee3bfc82ebf810b3dcf` 的归档输入。
 
 ## 已完成的主要条件结论
 
@@ -59,5 +59,11 @@ python3 complete_M1_components.py
 `x0_split_fiber_reduction.md`：进一步排除上述两种混合重复型。因此任何重复实际值独占T内的投影纤维；混合纤维只能为两个不同实际值各一份。证明经公共B位置和大配对星归约，末步给0=1或p整除5/14的矛盾。`verify_x0_fiber_algebra.py` 的24项精确位置代数检查和末步消元通过，结果在 `x0_fiber_algebra_verification.json`；组合论证仍为手证。
 
 `x0_two_leaf_first_reduction.md`：两叶星中非星心B数量m≤3；m>0时两叶投影不同；m=3时进一步得到唯一附加位置及非星心C/D数量二分。以上均为手证的必要条件，剩余星形仍开放。
+
+`x0_doubleton_fiber_B_avoidance.md`：B必须避开由两个不同实际值各一份组成的投影纤维；相应t=a−r−s不出现。
+
+`x0_B_projection_rank.md`：三个实际值互异的B投影秩为2；秩一B只能为b,b,a−2b，其中b全T重数为2或3，第三位置为全部B的唯一公共位置。因此两叶星m>0时两叶投影进一步要求线性无关。
+
+`x0_rank_one_B_PENDING_REVIEW.md` 保存三份b终支的进一步模型及显式短零和构造，标记为待完整复核，未纳入正式排除结论；残余p≡1 (mod6)模型仍开放。
 
 `Ap_progress_2026-09-19.md` 记录持续进展和截止时间。小素数p<149、其他低高度情形及整个一般A_p仍未完成。
