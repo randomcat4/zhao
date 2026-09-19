@@ -1,6 +1,6 @@
 # 一般 A_p：本轮结果与重放索引
 
-更新时间：2026-09-19 07:18 UTC。相对于固定提交 `77c51458cdb943495d084ee3bfc82ebf810b3dcf` 的归档输入。
+更新时间：2026-09-19 07:23 UTC。相对于固定提交 `77c51458cdb943495d084ee3bfc82ebf810b3dcf` 的归档输入。
 
 ## 已完成的主要条件结论
 
@@ -54,7 +54,9 @@ python3 complete_M1_components.py
 
 `x0_anchor_shift_multiplicity.md`：相差a的两个实际值若都存在，重数总和≤3且分别≤2；推出三叶星的非星心C/D数量只能为(1,0)或(0,(p−1)/2)。
 
-`x0_projection_fiber_structure.md`：每个非零商群投影纤维最多两种实际值；若有重复且有第二实际值，只能为两份r加一份r±a。单实际值纤维仍允许原有重数界。
+`x0_projection_fiber_structure.md`：每个非零商群投影纤维最多两种实际值，先将混合重复型压缩为两份r加一份r±a。
+
+`x0_split_fiber_reduction.md`：进一步排除上述两种混合重复型。因此任何重复实际值独占T内的投影纤维；混合纤维只能为两个不同实际值各一份。证明经公共B位置和大配对星归约，末步给0=1或p整除5/14的矛盾。`verify_x0_fiber_algebra.py` 的24项精确位置代数检查和末步消元通过，结果在 `x0_fiber_algebra_verification.json`；组合论证仍为手证。
 
 `x0_two_leaf_first_reduction.md`：两叶星中非星心B数量m≤3；m>0时两叶投影不同；m=3时进一步得到唯一附加位置及非星心C/D数量二分。以上均为手证的必要条件，剩余星形仍开放。
 
