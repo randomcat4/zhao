@@ -1,0 +1,1464 @@
+[
+  {
+    "canonical": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "n": 4,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      1,
+      2
+    ],
+    "n": 5,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      1,
+      3
+    ],
+    "n": 6,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "degree_three_with_distant_edge"
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      1,
+      4
+    ],
+    "n": 7,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "degree_four"
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "n": 6,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      2,
+      3
+    ],
+    "n": 7,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      2,
+      4
+    ],
+    "n": 8,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      3,
+      3
+    ],
+    "n": 8,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      3,
+      4
+    ],
+    "n": 9,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      0,
+      4,
+      4
+    ],
+    "n": 10,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "vertex_cover_number": 1,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "n": 4,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "n": 5,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      0,
+      3
+    ],
+    "n": 6,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "degree_four"
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "n": 5,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      1,
+      2
+    ],
+    "n": 6,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      1,
+      3
+    ],
+    "n": 7,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      2,
+      2
+    ],
+    "n": 7,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "n": 8,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      0,
+      1,
+      3,
+      3
+    ],
+    "n": 9,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "n": 2,
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "vertex_cover_number": 1,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "n": 4,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "vertex_cover_number": 1,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "n": 5,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "vertex_cover_number": 1,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "degree_four"
+  },
+  {
+    "canonical": [
+      1,
+      0,
+      2,
+      2
+    ],
+    "n": 6,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "n": 7,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      1,
+      0,
+      3,
+      3
+    ],
+    "n": 8,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "n": 4,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        0,
+        2,
+        3
+      ]
+    ],
+    "exclusion": null
+  },
+  {
+    "canonical": [
+      1,
+      1,
+      0,
+      2
+    ],
+    "n": 5,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "degree_four"
+  },
+  {
+    "canonical": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "n": 5,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      1,
+      1,
+      1,
+      2
+    ],
+    "n": 6,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "exclusion": "unique_two_cover"
+  },
+  {
+    "canonical": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "n": 7,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "vertex_cover_number": 2,
+    "two_covers": [
+      [
+        0,
+        1
+      ]
+    ],
+    "minimal_three_covers": [],
+    "exclusion": "unique_two_cover"
+  }
+]
